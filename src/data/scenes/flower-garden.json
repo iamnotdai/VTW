@@ -1,0 +1,15 @@
+{
+  "id": "flower-garden",
+  "title": "Flower Garden",
+  "group": "garden",
+  "order": 2,
+  "description": "Words for flowers, trees and playing outside.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+  "background": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

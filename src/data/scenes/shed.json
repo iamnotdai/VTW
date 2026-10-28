@@ -1,0 +1,15 @@
+{
+  "id": "shed",
+  "title": "Shed",
+  "group": "garden",
+  "order": 4,
+  "description": "Words for the little wooden shed and what is inside.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/shed/shed-desktop.webp",
+  "background": "/assets/scenes/shed/shed-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

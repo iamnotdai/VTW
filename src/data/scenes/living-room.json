@@ -1,0 +1,15 @@
+{
+  "id": "living-room",
+  "title": "Living Room",
+  "group": "home",
+  "order": 1,
+  "description": "Words for the sofa, the TV and family time.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/living-room/living-room-desktop.webp",
+  "background": "/assets/scenes/living-room/living-room-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bathroom",
+  "title": "Bathroom",
+  "group": "home",
+  "order": 5,
+  "description": "Words for the bathtub, the sink and bath time.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/bathroom/bathroom-desktop.webp",
+  "background": "/assets/scenes/bathroom/bathroom-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

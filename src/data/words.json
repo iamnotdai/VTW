@@ -1,0 +1,519 @@
+{
+  "bed": {
+    "id": "bed",
+    "text": "bed",
+    "ipa": "/bed/",
+    "meaningVi": "cái giường",
+    "image": "/assets/scenes/bedroom/objects/01_bed.webp",
+    "acceptedAnswers": ["bed", "a bed"],
+    "examples": [
+      {
+        "en": "I sleep in my bed every night.",
+        "vi": "Mình ngủ trên giường mỗi tối."
+      },
+      {
+        "en": "My bed is soft and warm.",
+        "vi": "Giường của mình mềm và ấm."
+      }
+    ],
+    "relatedWordIds": ["pillow", "blanket", "nightstand"],
+    "distractorWordIds": ["desk", "chair", "rug"]
+  },
+  "pillow": {
+    "id": "pillow",
+    "text": "pillow",
+    "ipa": "/ˈpɪl.oʊ/",
+    "meaningVi": "cái gối",
+    "image": "/assets/scenes/bedroom/objects/02_pillow.webp",
+    "acceptedAnswers": ["pillow", "a pillow"],
+    "examples": [
+      {
+        "en": "My pillow is white and fluffy.",
+        "vi": "Chiếc gối của mình trắng và êm."
+      },
+      {
+        "en": "Put your head on the pillow.",
+        "vi": "Hãy đặt đầu lên gối."
+      }
+    ],
+    "relatedWordIds": ["bed", "blanket", "bunny"],
+    "distractorWordIds": ["blanket", "rug", "laptop"]
+  },
+  "blanket": {
+    "id": "blanket",
+    "text": "blanket",
+    "ipa": "/ˈblæŋ.kɪt/",
+    "meaningVi": "cái chăn (mền)",
+    "image": "/assets/scenes/bedroom/objects/03_blanket.webp",
+    "acceptedAnswers": ["blanket", "a blanket"],
+    "examples": [
+      {
+        "en": "The blanket keeps me warm.",
+        "vi": "Chiếc chăn giữ ấm cho mình."
+      },
+      {
+        "en": "Please fold your blanket.",
+        "vi": "Con hãy gấp chăn lại nhé."
+      }
+    ],
+    "relatedWordIds": ["bed", "pillow"],
+    "distractorWordIds": ["pillow", "rug", "laptop"]
+  },
+  "lamp": {
+    "id": "lamp",
+    "text": "lamp",
+    "ipa": "/læmp/",
+    "meaningVi": "cái đèn",
+    "image": "/assets/scenes/bedroom/objects/04_lamp.webp",
+    "acceptedAnswers": ["lamp", "a lamp"],
+    "examples": [
+      {
+        "en": "The lamp is on the nightstand.",
+        "vi": "Chiếc đèn ở trên tủ đầu giường."
+      },
+      {
+        "en": "Please turn on the lamp.",
+        "vi": "Hãy bật đèn lên."
+      }
+    ],
+    "relatedWordIds": ["nightstand", "desk", "bed"],
+    "distractorWordIds": ["clock", "pencil-cup", "plant"]
+  },
+  "nightstand": {
+    "id": "nightstand",
+    "text": "nightstand",
+    "ipa": "/ˈnaɪt.stænd/",
+    "meaningVi": "tủ đầu giường",
+    "image": "/assets/scenes/bedroom/objects/05_nightstand.webp",
+    "acceptedAnswers": [
+      "nightstand",
+      "a nightstand",
+      "night stand",
+      "a night stand",
+      "bedside table",
+      "a bedside table"
+    ],
+    "examples": [
+      {
+        "en": "My lamp is on the nightstand.",
+        "vi": "Đèn của mình ở trên tủ đầu giường."
+      },
+      {
+        "en": "The nightstand is next to the bed.",
+        "vi": "Tủ đầu giường ở cạnh giường."
+      }
+    ],
+    "relatedWordIds": ["lamp", "mug", "bed"],
+    "distractorWordIds": ["desk", "wardrobe", "mattress"]
+  },
+  "mug": {
+    "id": "mug",
+    "text": "mug",
+    "ipa": "/mʌɡ/",
+    "meaningVi": "cái cốc (ca)",
+    "image": "/assets/scenes/bedroom/objects/06_mug.webp",
+    "acceptedAnswers": ["mug", "a mug", "cup", "a cup"],
+    "examples": [
+      {
+        "en": "I drink milk from my mug.",
+        "vi": "Mình uống sữa bằng chiếc cốc của mình."
+      },
+      {
+        "en": "My mug has a red heart on it.",
+        "vi": "Chiếc cốc của mình có hình trái tim màu đỏ."
+      }
+    ],
+    "relatedWordIds": ["nightstand", "pencil-cup", "desk"],
+    "distractorWordIds": ["pencil-cup", "lamp", "clock"]
+  },
+  "fan": {
+    "id": "fan",
+    "text": "fan",
+    "ipa": "/fæn/",
+    "meaningVi": "cái quạt",
+    "image": "/assets/scenes/bedroom/objects/07_fan.webp",
+    "acceptedAnswers": ["fan", "a fan"],
+    "examples": [
+      {
+        "en": "The fan keeps me cool.",
+        "vi": "Chiếc quạt giúp mình mát mẻ."
+      },
+      {
+        "en": "Please turn on the fan.",
+        "vi": "Làm ơn bật quạt lên."
+      }
+    ],
+    "relatedWordIds": ["desk", "laptop"],
+    "distractorWordIds": ["clock", "lamp", "laptop"]
+  },
+  "laptop": {
+    "id": "laptop",
+    "text": "laptop",
+    "ipa": "/ˈlæp.tɑːp/",
+    "meaningVi": "máy tính xách tay",
+    "image": "/assets/scenes/bedroom/objects/08_laptop.webp",
+    "acceptedAnswers": ["laptop", "a laptop", "computer", "a computer"],
+    "examples": [
+      {
+        "en": "I watch cartoons on my laptop.",
+        "vi": "Mình xem phim hoạt hình trên máy tính xách tay."
+      },
+      {
+        "en": "The laptop is on the desk.",
+        "vi": "Máy tính xách tay ở trên bàn học."
+      }
+    ],
+    "relatedWordIds": ["desk", "chair", "fan"],
+    "distractorWordIds": ["book", "clock", "picture"]
+  },
+  "turtle": {
+    "id": "turtle",
+    "text": "turtle",
+    "ipa": "/ˈtɝː.t̬əl/",
+    "meaningVi": "con rùa",
+    "image": "/assets/scenes/bedroom/objects/09_turtle.webp",
+    "acceptedAnswers": ["turtle", "a turtle", "tortoise", "a tortoise"],
+    "examples": [
+      {
+        "en": "My turtle is soft and green.",
+        "vi": "Bạn rùa của mình mềm và có màu xanh lá."
+      },
+      {
+        "en": "The turtle is on the rug.",
+        "vi": "Bạn rùa đang ở trên tấm thảm."
+      }
+    ],
+    "relatedWordIds": ["rug", "bunny"],
+    "distractorWordIds": ["bunny", "slippers", "backpack"]
+  },
+  "wardrobe": {
+    "id": "wardrobe",
+    "text": "wardrobe",
+    "ipa": "/ˈwɔːr.droʊb/",
+    "meaningVi": "tủ quần áo",
+    "image": "/assets/scenes/bedroom/objects/10_wardrobe.webp",
+    "acceptedAnswers": ["wardrobe", "a wardrobe", "closet", "a closet"],
+    "examples": [
+      {
+        "en": "My clothes are in the wardrobe.",
+        "vi": "Quần áo của mình ở trong tủ."
+      },
+      {
+        "en": "The wardrobe has two doors.",
+        "vi": "Tủ quần áo có hai cánh cửa."
+      }
+    ],
+    "relatedWordIds": ["mirror", "turtle"],
+    "distractorWordIds": ["bookshelf", "turtle", "nightstand"]
+  },
+  "mirror": {
+    "id": "mirror",
+    "text": "mirror",
+    "ipa": "/ˈmɪr.ɚ/",
+    "meaningVi": "cái gương",
+    "image": "/assets/scenes/bedroom/objects/11_mirror.webp",
+    "acceptedAnswers": ["mirror", "a mirror"],
+    "examples": [
+      {
+        "en": "I look in the mirror and smile.",
+        "vi": "Mình nhìn vào gương và mỉm cười."
+      },
+      {
+        "en": "The mirror is on the wardrobe.",
+        "vi": "Chiếc gương ở trên tủ quần áo."
+      }
+    ],
+    "relatedWordIds": ["wardrobe"],
+    "distractorWordIds": ["fan", "picture", "clock"]
+  },
+  "desk": {
+    "id": "desk",
+    "text": "desk",
+    "ipa": "/desk/",
+    "meaningVi": "bàn học",
+    "image": "/assets/scenes/bedroom/objects/12_desk.webp",
+    "acceptedAnswers": ["desk", "a desk"],
+    "examples": [
+      {
+        "en": "I do my homework at my desk.",
+        "vi": "Mình làm bài tập ở bàn học."
+      },
+      {
+        "en": "The globe is on the desk.",
+        "vi": "Quả địa cầu ở trên bàn học."
+      }
+    ],
+    "relatedWordIds": ["chair", "book", "pencil-cup"],
+    "distractorWordIds": ["bed", "chair", "nightstand"]
+  },
+  "chair": {
+    "id": "chair",
+    "text": "chair",
+    "ipa": "/tʃer/",
+    "meaningVi": "cái ghế",
+    "image": "/assets/scenes/bedroom/objects/13_chair.webp",
+    "acceptedAnswers": ["chair", "a chair"],
+    "examples": [
+      {
+        "en": "Sit on the chair, please.",
+        "vi": "Con ngồi lên ghế nhé."
+      },
+      {
+        "en": "The chair is in front of the desk.",
+        "vi": "Cái ghế ở phía trước bàn học."
+      }
+    ],
+    "relatedWordIds": ["desk"],
+    "distractorWordIds": ["desk", "bed", "mattress"]
+  },
+  "book": {
+    "id": "book",
+    "text": "book",
+    "ipa": "/bʊk/",
+    "meaningVi": "quyển sách",
+    "image": "/assets/scenes/bedroom/objects/14_book.webp",
+    "acceptedAnswers": ["book", "a book"],
+    "examples": [
+      {
+        "en": "I read a book before bed.",
+        "vi": "Mình đọc sách trước khi đi ngủ."
+      },
+      {
+        "en": "This book is about animals.",
+        "vi": "Quyển sách này nói về các con vật."
+      }
+    ],
+    "relatedWordIds": ["bookshelf", "desk"],
+    "distractorWordIds": ["backpack", "picture", "pencil-cup"]
+  },
+  "bookshelf": {
+    "id": "bookshelf",
+    "text": "bookshelf",
+    "ipa": "/ˈbʊk.ʃelf/",
+    "meaningVi": "giá sách",
+    "image": "/assets/scenes/bedroom/objects/15_bookshelf.webp",
+    "acceptedAnswers": ["bookshelf", "a bookshelf", "book shelf", "bookcase", "a bookcase"],
+    "examples": [
+      {
+        "en": "There are many books on the bookshelf.",
+        "vi": "Có nhiều sách trên giá sách."
+      },
+      {
+        "en": "Put the book back on the bookshelf.",
+        "vi": "Hãy đặt cuốn sách trở lại giá sách."
+      }
+    ],
+    "relatedWordIds": ["book", "desk"],
+    "distractorWordIds": ["wardrobe", "fan", "picture"]
+  },
+  "pencil-cup": {
+    "id": "pencil-cup",
+    "text": "pencil cup",
+    "ipa": "/ˈpen.səl ˌkʌp/",
+    "meaningVi": "ống đựng bút",
+    "image": "/assets/scenes/bedroom/objects/16_pencil-cup.webp",
+    "acceptedAnswers": [
+      "pencil cup",
+      "a pencil cup",
+      "pencil holder",
+      "a pencil holder",
+      "pen holder",
+      "a pen holder"
+    ],
+    "examples": [
+      {
+        "en": "My pencils are in the pencil cup.",
+        "vi": "Bút chì của mình ở trong ống đựng bút."
+      },
+      {
+        "en": "The pencil cup is on the desk.",
+        "vi": "Ống đựng bút ở trên bàn học."
+      }
+    ],
+    "relatedWordIds": ["desk", "book", "mug"],
+    "distractorWordIds": ["mug", "clock", "lamp"]
+  },
+  "clock": {
+    "id": "clock",
+    "text": "clock",
+    "ipa": "/klɑːk/",
+    "meaningVi": "đồng hồ",
+    "image": "/assets/scenes/bedroom/objects/17_clock.webp",
+    "acceptedAnswers": ["clock", "a clock", "wall clock", "a wall clock"],
+    "examples": [
+      {
+        "en": "The clock is on the wall.",
+        "vi": "Đồng hồ ở trên tường."
+      },
+      {
+        "en": "Look at the clock. It's eight o'clock!",
+        "vi": "Nhìn đồng hồ kìa. Tám giờ rồi!"
+      }
+    ],
+    "relatedWordIds": ["picture", "fan"],
+    "distractorWordIds": ["picture", "mirror", "pencil-cup"]
+  },
+  "picture": {
+    "id": "picture",
+    "text": "picture",
+    "ipa": "/ˈpɪk.tʃɚ/",
+    "meaningVi": "bức tranh",
+    "image": "/assets/scenes/bedroom/objects/18_picture.webp",
+    "acceptedAnswers": [
+      "picture",
+      "a picture",
+      "painting",
+      "a painting",
+      "picture frame",
+      "a picture frame"
+    ],
+    "examples": [
+      {
+        "en": "There is a picture on the wall.",
+        "vi": "Có một bức tranh trên tường."
+      },
+      {
+        "en": "I love this picture of the mountains.",
+        "vi": "Mình rất thích bức tranh núi này."
+      }
+    ],
+    "relatedWordIds": ["clock", "fan"],
+    "distractorWordIds": ["mirror", "fan", "clock"]
+  },
+  "rug": {
+    "id": "rug",
+    "text": "rug",
+    "ipa": "/rʌɡ/",
+    "meaningVi": "tấm thảm",
+    "image": "/assets/scenes/bedroom/objects/19_rug.webp",
+    "acceptedAnswers": ["rug", "a rug", "carpet", "a carpet"],
+    "examples": [
+      {
+        "en": "The rug is soft under my feet.",
+        "vi": "Tấm thảm mềm mại dưới chân mình."
+      },
+      {
+        "en": "My slippers are on the rug.",
+        "vi": "Đôi dép của mình ở trên thảm."
+      }
+    ],
+    "relatedWordIds": ["slippers", "bed"],
+    "distractorWordIds": ["blanket", "laptop", "pillow"]
+  },
+  "slippers": {
+    "id": "slippers",
+    "text": "slippers",
+    "plural": true,
+    "ipa": "/ˈslɪp.ɚz/",
+    "meaningVi": "dép đi trong nhà",
+    "image": "/assets/scenes/bedroom/objects/20_slippers.webp",
+    "acceptedAnswers": ["slippers", "the slippers", "slipper", "a slipper"],
+    "examples": [
+      {
+        "en": "I wear my slippers at home.",
+        "vi": "Mình đi dép trong nhà."
+      },
+      {
+        "en": "Where are my slippers?",
+        "vi": "Dép của mình đâu rồi nhỉ?"
+      }
+    ],
+    "relatedWordIds": ["rug", "bed"],
+    "distractorWordIds": ["backpack", "rug", "pillow"]
+  },
+  "bunny": {
+    "id": "bunny",
+    "text": "bunny",
+    "ipa": "/ˈbʌn.i/",
+    "meaningVi": "thỏ bông",
+    "image": "/assets/scenes/bedroom/objects/21_bunny.webp",
+    "acceptedAnswers": ["bunny", "a bunny", "rabbit", "a rabbit"],
+    "examples": [
+      {
+        "en": "I hug my bunny at night.",
+        "vi": "Mình ôm bạn thỏ bông vào ban đêm."
+      },
+      {
+        "en": "My bunny is pink and soft.",
+        "vi": "Bạn thỏ bông của mình màu hồng và mềm."
+      }
+    ],
+    "relatedWordIds": ["turtle", "bed", "pillow"],
+    "distractorWordIds": ["turtle", "pillow", "backpack"]
+  },
+  "mattress": {
+    "id": "mattress",
+    "text": "mattress",
+    "ipa": "/ˈmæt.rəs/",
+    "meaningVi": "cái nệm (đệm)",
+    "image": "/assets/scenes/bedroom/objects/22_mattress.webp",
+    "acceptedAnswers": ["mattress", "a mattress"],
+    "examples": [
+      {
+        "en": "The mattress is soft.",
+        "vi": "Chiếc nệm rất êm."
+      },
+      {
+        "en": "I sleep on a soft mattress.",
+        "vi": "Mình ngủ trên một chiếc nệm êm."
+      }
+    ],
+    "relatedWordIds": ["bed", "pillow", "blanket"],
+    "distractorWordIds": ["pillow", "blanket", "rug"]
+  },
+  "backpack": {
+    "id": "backpack",
+    "text": "backpack",
+    "ipa": "/ˈbæk.pæk/",
+    "meaningVi": "ba lô",
+    "image": "/assets/scenes/bedroom/objects/23_backpack.webp",
+    "acceptedAnswers": [
+      "backpack",
+      "a backpack",
+      "school bag",
+      "a school bag",
+      "schoolbag",
+      "bag",
+      "a bag"
+    ],
+    "examples": [
+      {
+        "en": "My books are in my backpack.",
+        "vi": "Sách của mình ở trong ba lô."
+      },
+      {
+        "en": "Don't forget your backpack!",
+        "vi": "Đừng quên ba lô nhé!"
+      }
+    ],
+    "relatedWordIds": ["book", "desk"],
+    "distractorWordIds": ["mattress", "slippers", "book"]
+  },
+  "plant": {
+    "id": "plant",
+    "text": "plant",
+    "ipa": "/plænt/",
+    "meaningVi": "chậu cây",
+    "image": "/assets/scenes/bedroom/objects/24_plant.webp",
+    "acceptedAnswers": [
+      "plant",
+      "a plant",
+      "houseplant",
+      "a houseplant",
+      "potted plant",
+      "a potted plant"
+    ],
+    "examples": [
+      {
+        "en": "The plant needs some water.",
+        "vi": "Cái cây cần một chút nước."
+      },
+      {
+        "en": "My plant has big green leaves.",
+        "vi": "Cây của mình có những chiếc lá xanh to."
+      }
+    ],
+    "relatedWordIds": ["fan"],
+    "distractorWordIds": ["lamp", "bunny", "pencil-cup"]
+  }
+}

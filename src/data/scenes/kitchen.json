@@ -1,0 +1,15 @@
+{
+  "id": "kitchen",
+  "title": "Kitchen",
+  "group": "home",
+  "order": 3,
+  "description": "Words for cooking, the fridge and the stove.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/kitchen/kitchen-desktop.webp",
+  "background": "/assets/scenes/kitchen/kitchen-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

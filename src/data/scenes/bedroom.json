@@ -1,0 +1,178 @@
+{
+  "id": "bedroom",
+  "title": "Bedroom",
+  "group": "home",
+  "order": 4,
+  "description": "Learn words and practice conversations in the bedroom.",
+  "status": "available",
+  "thumbnail": "/assets/scenes/bedroom/bedroom-desktop.webp",
+  "background": "/assets/scenes/bedroom/bedroom-desktop.webp",
+  "width": 1672,
+  "height": 941,
+  "wordIds": [
+    "bed",
+    "pillow",
+    "blanket",
+    "lamp",
+    "nightstand",
+    "mug",
+    "fan",
+    "laptop",
+    "turtle",
+    "wardrobe",
+    "mirror",
+    "desk",
+    "chair",
+    "book",
+    "bookshelf",
+    "pencil-cup",
+    "clock",
+    "picture",
+    "rug",
+    "slippers",
+    "bunny",
+    "mattress",
+    "backpack",
+    "plant"
+  ],
+  "conversationIds": [
+    "my-bedroom",
+    "making-the-bed",
+    "where-is-my-book",
+    "time-for-bed",
+    "tidy-up-time",
+    "good-morning",
+    "turn-on-the-lamp",
+    "my-favorite-toy",
+    "getting-ready-for-school",
+    "look-in-the-mirror"
+  ],
+  "hotspots": [
+    {
+      "wordId": "bed",
+      "svgPath": "M 248 330 L 255 305 L 285 300 L 330 305 L 400 290 L 500 292 L 590 305 L 595 268 L 615 262 L 622 320 L 622 400 L 665 428 L 810 455 L 1090 560 L 1130 620 L 1135 650 L 1100 680 L 1095 718 L 1070 722 L 1065 690 L 840 790 L 760 830 L 735 832 L 735 800 L 680 835 L 620 830 L 612 805 L 412 640 L 340 610 L 300 590 L 300 540 L 280 500 L 280 470 L 250 480 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "pillow",
+      "svgPath": "M 416 398 L 590 355 L 668 428 L 480 475 Z M 452 345 L 560 328 L 595 358 L 520 380 Z M 315 372 L 400 352 L 500 345 L 512 372 L 450 468 L 405 482 L 360 450 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "blanket",
+      "svgPath": "M 345 600 L 380 520 L 440 470 L 560 438 L 800 432 L 905 460 L 1070 545 L 1130 600 L 1130 660 L 1085 650 L 1060 618 L 960 640 L 740 790 L 700 830 L 640 810 L 615 790 L 540 700 L 420 640 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "lamp",
+      "svgPath": "M 160 332 L 248 332 L 266 430 L 238 440 L 236 468 L 250 485 L 240 510 L 175 510 L 168 485 L 172 465 L 170 440 L 142 430 Z M 690 262 L 730 262 L 755 335 L 735 345 L 733 372 L 745 385 L 735 398 L 685 398 L 678 385 L 690 372 L 688 345 L 662 335 Z",
+      "zIndex": 5
+    },
+    {
+      "wordId": "nightstand",
+      "svgPath": "M 40 530 L 100 497 L 305 497 L 298 672 L 270 675 L 262 650 L 150 650 L 148 675 L 90 680 L 60 670 L 45 565 Z M 650 392 L 700 385 L 835 385 L 842 395 L 838 445 L 800 455 L 700 430 L 655 415 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "mug",
+      "svgPath": "M 742 374 L 760 370 L 775 376 L 776 390 L 760 395 L 745 392 Z",
+      "zIndex": 5,
+      "touchPadding": 12
+    },
+    {
+      "wordId": "fan",
+      "svgPath": "M 1190 295 L 1235 300 L 1252 330 L 1250 365 L 1232 385 L 1215 392 L 1205 402 L 1180 402 L 1178 385 L 1168 350 L 1172 315 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "laptop",
+      "svgPath": "M 1218 340 L 1295 345 L 1298 400 L 1285 415 L 1240 432 L 1195 425 L 1205 400 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "turtle",
+      "svgPath": "M 1362 750 L 1385 718 L 1430 702 L 1470 705 L 1500 730 L 1525 765 L 1548 780 L 1535 795 L 1490 805 L 1460 790 L 1430 800 L 1400 790 L 1375 775 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "wardrobe",
+      "svgPath": "M 808 125 L 1010 112 L 1150 118 L 1162 128 L 1150 205 L 1122 215 L 1120 420 L 1010 470 L 1010 515 L 960 520 L 840 470 L 812 440 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "mirror",
+      "svgPath": "M 1485 280 L 1520 265 L 1560 268 L 1595 295 L 1612 330 L 1600 460 L 1585 560 L 1570 650 L 1555 710 L 1530 712 L 1520 690 L 1450 685 L 1428 680 L 1425 640 L 1450 480 L 1470 340 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "desk",
+      "svgPath": "M 1020 395 L 1120 388 L 1300 410 L 1472 430 L 1478 445 L 1360 470 L 1355 635 L 1328 640 L 1325 500 L 1250 465 L 1090 470 L 1085 560 L 1050 545 L 1045 440 L 1022 415 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "chair",
+      "svgPath": "M 1072 415 L 1095 405 L 1170 410 L 1190 455 L 1230 478 L 1238 520 L 1255 608 L 1240 612 L 1225 565 L 1175 570 L 1168 625 L 1150 632 L 1145 580 L 1100 560 L 1085 565 L 1085 535 L 1075 470 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "book",
+      "svgPath": "M 108 515 L 150 503 L 186 510 L 184 525 L 150 532 L 112 530 Z",
+      "zIndex": 5,
+      "touchPadding": 10
+    },
+    {
+      "wordId": "bookshelf",
+      "svgPath": "M 1122 208 L 1335 220 L 1340 268 L 1335 350 L 1300 380 L 1180 385 L 1140 378 L 1125 330 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "pencil-cup",
+      "svgPath": "M 1062 320 L 1075 316 L 1085 340 L 1100 305 L 1114 304 L 1110 345 L 1118 352 L 1118 385 L 1100 393 L 1070 392 L 1062 378 Z",
+      "zIndex": 4,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "clock",
+      "svgPath": "M 1305 382 L 1325 378 L 1342 390 L 1345 415 L 1330 430 L 1308 430 L 1298 412 Z",
+      "zIndex": 4,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "picture",
+      "svgPath": "M 447 42 L 665 25 L 668 200 L 450 232 Z M 220 97 L 404 82 L 402 232 L 222 258 Z M 60 78 L 168 68 L 168 210 L 62 216 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "rug",
+      "svgPath": "M 258 762 L 330 718 L 345 712 L 1090 672 L 1372 765 L 1300 800 L 1100 850 L 1000 941 L 640 941 L 450 870 L 262 780 Z",
+      "zIndex": 0
+    },
+    {
+      "wordId": "slippers",
+      "svgPath": "M 288 750 L 310 712 L 350 700 L 388 705 L 392 725 L 420 735 L 458 748 L 456 775 L 420 790 L 390 788 L 360 785 L 335 790 L 300 768 Z",
+      "zIndex": 2,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "bunny",
+      "svgPath": "M 1100 55 L 1112 48 L 1122 68 L 1135 52 L 1145 56 L 1138 82 L 1152 105 L 1148 122 L 1128 128 L 1105 125 L 1090 118 L 1092 98 L 1105 85 Z",
+      "zIndex": 5,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "mattress",
+      "svgPath": "M 800 705 L 940 650 L 1068 590 L 1085 640 L 1075 665 L 890 715 L 810 735 Z M 280 470 L 380 465 L 400 485 L 345 530 L 300 540 L 280 500 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "backpack",
+      "svgPath": "M 1285 300 L 1325 292 L 1345 300 L 1385 335 L 1412 360 L 1415 400 L 1400 425 L 1345 428 L 1305 425 L 1285 400 L 1262 360 L 1268 325 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "plant",
+      "svgPath": "M 1535 625 L 1580 585 L 1630 560 L 1672 548 L 1672 755 L 1605 760 L 1600 678 L 1570 648 Z",
+      "zIndex": 3
+    }
+  ]
+}

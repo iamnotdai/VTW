@@ -1,0 +1,600 @@
+[
+  {
+    "id": "my-bedroom",
+    "sceneId": "bedroom",
+    "title": "My Bedroom",
+    "order": 1,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily shows Ben around her bedroom.",
+    "lines": [
+      {
+        "id": "my-bedroom-l1",
+        "speakerId": "ben",
+        "textEn": "Lily, is this your bedroom?",
+        "textVi": "Lily, đây là phòng ngủ của bạn à?"
+      },
+      {
+        "id": "my-bedroom-l2",
+        "speakerId": "lily",
+        "textEn": "Yes, it is. Come in!",
+        "textVi": "Đúng rồi. Vào đi!"
+      },
+      {
+        "id": "my-bedroom-l3",
+        "speakerId": "ben",
+        "textEn": "Wow, your bed is so big!",
+        "textVi": "Ồ, giường của bạn to quá!"
+      },
+      {
+        "id": "my-bedroom-l4",
+        "speakerId": "lily",
+        "textEn": "And this is my bunny. Her name is Bobo.",
+        "textVi": "Còn đây là thỏ bông của mình. Tên bạn ấy là Bobo."
+      },
+      {
+        "id": "my-bedroom-l5",
+        "speakerId": "ben",
+        "textEn": "What is on the desk?",
+        "textVi": "Có gì trên bàn học vậy?"
+      },
+      {
+        "id": "my-bedroom-l6",
+        "speakerId": "lily",
+        "textEn": "A laptop and a book. I love my bedroom!",
+        "textVi": "Một chiếc máy tính xách tay và một quyển sách. Mình rất yêu phòng ngủ của mình!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-bedroom-q1",
+        "prompt": "What is in the bedroom?",
+        "suggestedAnswer": "There is a bed, a desk and a lamp in the bedroom."
+      },
+      {
+        "id": "my-bedroom-q2",
+        "prompt": "What is your favorite thing in your bedroom?",
+        "suggestedAnswer": "My favorite thing is my bunny."
+      }
+    ]
+  },
+  {
+    "id": "making-the-bed",
+    "sceneId": "bedroom",
+    "title": "Making the Bed",
+    "order": 2,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Ben learns how to make his bed.",
+    "lines": [
+      {
+        "id": "making-the-bed-l1",
+        "speakerId": "mom",
+        "textEn": "Good morning, Ben. Please make your bed.",
+        "textVi": "Chào buổi sáng, Ben. Con dọn giường đi nhé."
+      },
+      {
+        "id": "making-the-bed-l2",
+        "speakerId": "ben",
+        "textEn": "Okay, Mom. What do I do first?",
+        "textVi": "Vâng ạ. Con làm gì trước hả mẹ?"
+      },
+      {
+        "id": "making-the-bed-l3",
+        "speakerId": "mom",
+        "textEn": "First, put the pillow at the top.",
+        "textVi": "Đầu tiên, đặt gối ở phía đầu giường."
+      },
+      {
+        "id": "making-the-bed-l4",
+        "speakerId": "ben",
+        "textEn": "Done! Now the blanket?",
+        "textVi": "Xong rồi! Giờ đến chăn ạ?"
+      },
+      {
+        "id": "making-the-bed-l5",
+        "speakerId": "mom",
+        "textEn": "Yes. Pull the blanket up and make it flat.",
+        "textVi": "Đúng rồi. Kéo chăn lên và làm cho phẳng."
+      },
+      {
+        "id": "making-the-bed-l6",
+        "speakerId": "ben",
+        "textEn": "Look, Mom! My bed looks great.",
+        "textVi": "Mẹ nhìn này! Giường của con trông đẹp quá."
+      },
+      {
+        "id": "making-the-bed-l7",
+        "speakerId": "mom",
+        "textEn": "Great job, Ben!",
+        "textVi": "Con giỏi lắm, Ben!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-the-bed-q1",
+        "prompt": "What do you put at the top of the bed?",
+        "suggestedAnswer": "I put the pillow at the top of the bed."
+      },
+      {
+        "id": "making-the-bed-q2",
+        "prompt": "Do you make your bed every morning?",
+        "suggestedAnswer": "Yes, I make my bed every morning."
+      }
+    ]
+  },
+  {
+    "id": "where-is-my-book",
+    "sceneId": "bedroom",
+    "title": "Where Is My Book?",
+    "order": 3,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily looks for her favorite book.",
+    "lines": [
+      {
+        "id": "where-is-my-book-l1",
+        "speakerId": "lily",
+        "textEn": "Mom, where is my book?",
+        "textVi": "Mẹ ơi, quyển sách của con đâu rồi?"
+      },
+      {
+        "id": "where-is-my-book-l2",
+        "speakerId": "mom",
+        "textEn": "Is it on the bookshelf?",
+        "textVi": "Có phải ở trên giá sách không?"
+      },
+      {
+        "id": "where-is-my-book-l3",
+        "speakerId": "lily",
+        "textEn": "No, it isn't.",
+        "textVi": "Không có ạ."
+      },
+      {
+        "id": "where-is-my-book-l4",
+        "speakerId": "mom",
+        "textEn": "Look on your desk.",
+        "textVi": "Con nhìn trên bàn học xem."
+      },
+      {
+        "id": "where-is-my-book-l5",
+        "speakerId": "lily",
+        "textEn": "Yes! It's on my desk, next to the laptop.",
+        "textVi": "Có rồi! Nó ở trên bàn học, cạnh máy tính xách tay."
+      },
+      {
+        "id": "where-is-my-book-l6",
+        "speakerId": "mom",
+        "textEn": "Good. Please put it back on the bookshelf after reading.",
+        "textVi": "Tốt lắm. Đọc xong con nhớ cất lại lên giá sách nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-my-book-q1",
+        "prompt": "Where is the book?",
+        "suggestedAnswer": "The book is on the desk, next to the laptop."
+      },
+      {
+        "id": "where-is-my-book-q2",
+        "prompt": "Where do you put your books?",
+        "suggestedAnswer": "I put my books on the bookshelf."
+      }
+    ]
+  },
+  {
+    "id": "time-for-bed",
+    "sceneId": "bedroom",
+    "title": "Time for Bed",
+    "order": 4,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Ben gets ready to sleep.",
+    "lines": [
+      {
+        "id": "time-for-bed-l1",
+        "speakerId": "dad",
+        "textEn": "Ben, it's nine o'clock. Time for bed.",
+        "textVi": "Ben, chín giờ rồi. Đến giờ đi ngủ rồi con."
+      },
+      {
+        "id": "time-for-bed-l2",
+        "speakerId": "ben",
+        "textEn": "Can I read a story first?",
+        "textVi": "Con đọc một câu chuyện trước được không ạ?"
+      },
+      {
+        "id": "time-for-bed-l3",
+        "speakerId": "dad",
+        "textEn": "Okay, just one story.",
+        "textVi": "Được, chỉ một câu chuyện thôi nhé."
+      },
+      {
+        "id": "time-for-bed-l4",
+        "speakerId": "ben",
+        "textEn": "Thank you, Dad!",
+        "textVi": "Con cảm ơn bố!"
+      },
+      {
+        "id": "time-for-bed-l5",
+        "speakerId": "dad",
+        "textEn": "Now lie down. I'll turn off the lamp.",
+        "textVi": "Giờ nằm xuống nào. Bố sẽ tắt đèn."
+      },
+      {
+        "id": "time-for-bed-l6",
+        "speakerId": "ben",
+        "textEn": "Good night, Dad.",
+        "textVi": "Chúc bố ngủ ngon."
+      },
+      {
+        "id": "time-for-bed-l7",
+        "speakerId": "dad",
+        "textEn": "Good night. Sweet dreams!",
+        "textVi": "Chúc con ngủ ngon. Mơ đẹp nhé!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "time-for-bed-q1",
+        "prompt": "What time do you go to bed?",
+        "suggestedAnswer": "I go to bed at nine o'clock."
+      },
+      {
+        "id": "time-for-bed-q2",
+        "prompt": "What do you say before you sleep?",
+        "suggestedAnswer": "I say good night."
+      }
+    ]
+  },
+  {
+    "id": "tidy-up-time",
+    "sceneId": "bedroom",
+    "title": "Tidy Up Time",
+    "order": 5,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily tidies up her messy room.",
+    "lines": [
+      {
+        "id": "tidy-up-time-l1",
+        "speakerId": "mom",
+        "textEn": "Lily, your room is very messy!",
+        "textVi": "Lily, phòng con bừa bộn quá!"
+      },
+      {
+        "id": "tidy-up-time-l2",
+        "speakerId": "lily",
+        "textEn": "Sorry, Mom. I'll tidy it up.",
+        "textVi": "Con xin lỗi mẹ. Con sẽ dọn dẹp ạ."
+      },
+      {
+        "id": "tidy-up-time-l3",
+        "speakerId": "mom",
+        "textEn": "Put your bunny on the bed.",
+        "textVi": "Cất bạn thỏ bông lên giường nhé."
+      },
+      {
+        "id": "tidy-up-time-l4",
+        "speakerId": "lily",
+        "textEn": "Okay. Where do my clothes go?",
+        "textVi": "Vâng ạ. Quần áo của con để đâu ạ?"
+      },
+      {
+        "id": "tidy-up-time-l5",
+        "speakerId": "mom",
+        "textEn": "Your clothes go in the wardrobe.",
+        "textVi": "Quần áo để trong tủ quần áo."
+      },
+      {
+        "id": "tidy-up-time-l6",
+        "speakerId": "lily",
+        "textEn": "All done! My room is clean now.",
+        "textVi": "Xong hết rồi! Giờ phòng con sạch rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tidy-up-time-q1",
+        "prompt": "Where do you put your bunny?",
+        "suggestedAnswer": "I put my bunny on the bed."
+      },
+      {
+        "id": "tidy-up-time-q2",
+        "prompt": "Where do your clothes go?",
+        "suggestedAnswer": "My clothes go in the wardrobe."
+      }
+    ]
+  },
+  {
+    "id": "good-morning",
+    "sceneId": "bedroom",
+    "title": "Good Morning!",
+    "order": 6,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily wakes up on a sunny morning.",
+    "lines": [
+      {
+        "id": "good-morning-l1",
+        "speakerId": "mom",
+        "textEn": "Good morning, Lily! Time to wake up.",
+        "textVi": "Chào buổi sáng, Lily! Đến giờ dậy rồi."
+      },
+      {
+        "id": "good-morning-l2",
+        "speakerId": "lily",
+        "textEn": "Good morning, Mom. I'm still sleepy.",
+        "textVi": "Con chào mẹ. Con vẫn còn buồn ngủ."
+      },
+      {
+        "id": "good-morning-l3",
+        "speakerId": "mom",
+        "textEn": "Look, the sun is shining.",
+        "textVi": "Nhìn kìa, mặt trời đang chiếu sáng."
+      },
+      {
+        "id": "good-morning-l4",
+        "speakerId": "lily",
+        "textEn": "Can you pass me my slippers, please?",
+        "textVi": "Mẹ đưa giúp con đôi dép được không ạ?"
+      },
+      {
+        "id": "good-morning-l5",
+        "speakerId": "mom",
+        "textEn": "Sure. What a beautiful day!",
+        "textVi": "Được chứ. Hôm nay đẹp trời quá!"
+      },
+      {
+        "id": "good-morning-l6",
+        "speakerId": "lily",
+        "textEn": "Yes! Let's have breakfast.",
+        "textVi": "Vâng! Mình đi ăn sáng thôi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "good-morning-q1",
+        "prompt": "What do you say in the morning?",
+        "suggestedAnswer": "I say good morning."
+      },
+      {
+        "id": "good-morning-q2",
+        "prompt": "What is the weather like today?",
+        "suggestedAnswer": "It is sunny today."
+      }
+    ]
+  },
+  {
+    "id": "turn-on-the-lamp",
+    "sceneId": "bedroom",
+    "title": "Turn On the Lamp",
+    "order": 7,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Ben turns on the lamp in a dark room.",
+    "lines": [
+      {
+        "id": "turn-on-the-lamp-l1",
+        "speakerId": "ben",
+        "textEn": "Dad, it's so dark in here.",
+        "textVi": "Bố ơi, trong này tối quá."
+      },
+      {
+        "id": "turn-on-the-lamp-l2",
+        "speakerId": "dad",
+        "textEn": "Turn on the lamp, then.",
+        "textVi": "Vậy thì con bật đèn lên."
+      },
+      {
+        "id": "turn-on-the-lamp-l3",
+        "speakerId": "ben",
+        "textEn": "How do I turn it on?",
+        "textVi": "Bật đèn thế nào hả bố?"
+      },
+      {
+        "id": "turn-on-the-lamp-l4",
+        "speakerId": "dad",
+        "textEn": "There's a button on the lamp. Press it.",
+        "textVi": "Có một cái nút trên đèn. Con bấm vào đó."
+      },
+      {
+        "id": "turn-on-the-lamp-l5",
+        "speakerId": "ben",
+        "textEn": "Wow, now I can see everything!",
+        "textVi": "Ồ, giờ con nhìn thấy mọi thứ rồi!"
+      },
+      {
+        "id": "turn-on-the-lamp-l6",
+        "speakerId": "dad",
+        "textEn": "Remember to turn it off when you sleep.",
+        "textVi": "Nhớ tắt đèn khi đi ngủ nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "turn-on-the-lamp-q1",
+        "prompt": "What do you do when it is dark?",
+        "suggestedAnswer": "I turn on the lamp."
+      },
+      {
+        "id": "turn-on-the-lamp-q2",
+        "prompt": "Where is the lamp?",
+        "suggestedAnswer": "The lamp is on the nightstand."
+      }
+    ]
+  },
+  {
+    "id": "my-favorite-toy",
+    "sceneId": "bedroom",
+    "title": "My Favorite Toy",
+    "order": 8,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily and Ben talk about their favorite toys.",
+    "lines": [
+      {
+        "id": "my-favorite-toy-l1",
+        "speakerId": "ben",
+        "textEn": "Lily, what is your favorite toy?",
+        "textVi": "Lily, đồ chơi bạn thích nhất là gì?"
+      },
+      {
+        "id": "my-favorite-toy-l2",
+        "speakerId": "lily",
+        "textEn": "My bunny. She is soft and pink.",
+        "textVi": "Thỏ bông của mình. Bạn ấy mềm và màu hồng."
+      },
+      {
+        "id": "my-favorite-toy-l3",
+        "speakerId": "ben",
+        "textEn": "Where do you keep her?",
+        "textVi": "Bạn để bạn ấy ở đâu?"
+      },
+      {
+        "id": "my-favorite-toy-l4",
+        "speakerId": "lily",
+        "textEn": "On my bed, next to my pillow.",
+        "textVi": "Trên giường, cạnh cái gối của mình."
+      },
+      {
+        "id": "my-favorite-toy-l5",
+        "speakerId": "ben",
+        "textEn": "My favorite toy is a red car.",
+        "textVi": "Đồ chơi mình thích nhất là một chiếc ô tô màu đỏ."
+      },
+      {
+        "id": "my-favorite-toy-l6",
+        "speakerId": "lily",
+        "textEn": "Cool! Is it on your desk?",
+        "textVi": "Tuyệt! Nó ở trên bàn học của bạn à?"
+      },
+      {
+        "id": "my-favorite-toy-l7",
+        "speakerId": "ben",
+        "textEn": "Yes, it is.",
+        "textVi": "Đúng vậy."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-favorite-toy-q1",
+        "prompt": "What is your favorite toy?",
+        "suggestedAnswer": "My favorite toy is my bunny."
+      },
+      {
+        "id": "my-favorite-toy-q2",
+        "prompt": "Where is the bunny?",
+        "suggestedAnswer": "The bunny is on the bed."
+      }
+    ]
+  },
+  {
+    "id": "getting-ready-for-school",
+    "sceneId": "bedroom",
+    "title": "Getting Ready for School",
+    "order": 9,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Ben looks for his backpack before school.",
+    "lines": [
+      {
+        "id": "getting-ready-for-school-l1",
+        "speakerId": "mom",
+        "textEn": "Ben, are you ready for school?",
+        "textVi": "Ben, con chuẩn bị đi học xong chưa?"
+      },
+      {
+        "id": "getting-ready-for-school-l2",
+        "speakerId": "ben",
+        "textEn": "Almost! Where is my backpack?",
+        "textVi": "Gần xong rồi ạ! Ba lô của con đâu rồi?"
+      },
+      {
+        "id": "getting-ready-for-school-l3",
+        "speakerId": "mom",
+        "textEn": "It's on the floor, next to your desk.",
+        "textVi": "Nó ở trên sàn, cạnh bàn học của con."
+      },
+      {
+        "id": "getting-ready-for-school-l4",
+        "speakerId": "ben",
+        "textEn": "Found it! My books are inside.",
+        "textVi": "Thấy rồi! Sách của con ở bên trong."
+      },
+      {
+        "id": "getting-ready-for-school-l5",
+        "speakerId": "mom",
+        "textEn": "Did you take off your slippers?",
+        "textVi": "Con đã cởi dép đi trong nhà chưa?"
+      },
+      {
+        "id": "getting-ready-for-school-l6",
+        "speakerId": "ben",
+        "textEn": "Oops! Now I'm wearing my shoes. Bye, Mom!",
+        "textVi": "Ối! Giờ con đi giày rồi. Con chào mẹ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "getting-ready-for-school-q1",
+        "prompt": "What do you put in your backpack?",
+        "suggestedAnswer": "I put my books in my backpack."
+      },
+      {
+        "id": "getting-ready-for-school-q2",
+        "prompt": "Where is the backpack?",
+        "suggestedAnswer": "The backpack is next to the desk."
+      }
+    ]
+  },
+  {
+    "id": "look-in-the-mirror",
+    "sceneId": "bedroom",
+    "title": "Look in the Mirror",
+    "order": 10,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "Lily needs help with her messy hair.",
+    "lines": [
+      {
+        "id": "look-in-the-mirror-l1",
+        "speakerId": "dad",
+        "textEn": "Lily, your hair is messy.",
+        "textVi": "Lily, tóc con rối quá."
+      },
+      {
+        "id": "look-in-the-mirror-l2",
+        "speakerId": "lily",
+        "textEn": "Really? Let me look in the mirror.",
+        "textVi": "Thật ạ? Để con soi gương xem."
+      },
+      {
+        "id": "look-in-the-mirror-l3",
+        "speakerId": "dad",
+        "textEn": "The mirror is on the wardrobe.",
+        "textVi": "Gương ở trên tủ quần áo đó."
+      },
+      {
+        "id": "look-in-the-mirror-l4",
+        "speakerId": "lily",
+        "textEn": "Oh no! Can you help me, Dad?",
+        "textVi": "Ôi không! Bố giúp con được không ạ?"
+      },
+      {
+        "id": "look-in-the-mirror-l5",
+        "speakerId": "dad",
+        "textEn": "Of course. Let's brush your hair.",
+        "textVi": "Tất nhiên rồi. Mình chải tóc nào."
+      },
+      {
+        "id": "look-in-the-mirror-l6",
+        "speakerId": "lily",
+        "textEn": "Thank you! Now I look nice.",
+        "textVi": "Con cảm ơn bố! Giờ trông con xinh rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "look-in-the-mirror-q1",
+        "prompt": "Where is the mirror?",
+        "suggestedAnswer": "The mirror is on the wardrobe."
+      },
+      {
+        "id": "look-in-the-mirror-q2",
+        "prompt": "What do you do in front of the mirror?",
+        "suggestedAnswer": "I brush my hair in front of the mirror."
+      }
+    ]
+  }
+]

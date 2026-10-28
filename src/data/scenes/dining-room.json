@@ -1,0 +1,15 @@
+{
+  "id": "dining-room",
+  "title": "Dining Room",
+  "group": "home",
+  "order": 2,
+  "description": "Words for the table, the chairs and mealtimes.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/dining-room/dining-room-desktop.webp",
+  "background": "/assets/scenes/dining-room/dining-room-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

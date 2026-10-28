@@ -1,0 +1,15 @@
+{
+  "id": "garden-tools",
+  "title": "Garden Tools",
+  "group": "garden",
+  "order": 3,
+  "description": "Words for the shovel, the rake and the watering can.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/garden-tools/garden-tools-desktop.webp",
+  "background": "/assets/scenes/garden-tools/garden-tools-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

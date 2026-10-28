@@ -1,0 +1,15 @@
+{
+  "id": "vegetable-garden",
+  "title": "Vegetable Garden",
+  "group": "garden",
+  "order": 1,
+  "description": "Words for carrots, cabbages and tomatoes.",
+  "status": "coming-soon",
+  "thumbnail": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+  "background": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+  "width": 640,
+  "height": 400,
+  "wordIds": [],
+  "conversationIds": [],
+  "hotspots": []
+}

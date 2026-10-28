@@ -1,0 +1,240 @@
+@import 'tailwindcss';
+
+/*
+ * Village to World design tokens, measured from the approved design board (flow.png, spec §5.1):
+ * deep-teal navy menu, vivid blue CTAs, white cards on a pale sky canvas, indigo text, green
+ * progress, 12–16px radii and soft shadows. Use them through Tailwind utilities, e.g.
+ * `bg-sidebar`, `bg-brand-500`, `text-navy-900`, `bg-mist`, `rounded-card`, `shadow-soft`.
+ */
+@theme {
+  --font-sans: 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
+  /* Rounded "toy" lettering of the Village to World wordmark only. */
+  --font-brand: 'Baloo 2 Variable', 'Arial Rounded MT Bold', ui-rounded, system-ui, sans-serif;
+
+  /* Text and neutral surfaces (indigo-tinted). 900 = headings, 600 = body, 400 = hints. */
+  --color-navy-50: #f1f6fd;
+  --color-navy-100: #e3ebf8;
+  --color-navy-200: #cad7ee;
+  --color-navy-300: #a5b6da;
+  --color-navy-400: #7c93c6;
+  --color-navy-500: #5a72ab;
+  --color-navy-600: #3c5494;
+  --color-navy-700: #283f86;
+  --color-navy-800: #1a2e72;
+  --color-navy-900: #101f5e;
+  --color-navy-950: #0a1445;
+
+  /* Main menu. */
+  --color-sidebar: #133457;
+  --color-sidebar-deep: #0f2b4a;
+
+  /* Primary blue (buttons, active menu item, links). */
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #dcecff;
+  --color-brand-200: #b9d8ff;
+  --color-brand-300: #86bcff;
+  --color-brand-400: #4a9cff;
+  --color-brand-500: #0b7ffe;
+  --color-brand-600: #0a6fe3;
+  --color-brand-700: #0b5cbd;
+  --color-brand-800: #0f4c94;
+
+  --color-sun-50: #fffbea;
+  --color-sun-100: #fff6cc;
+  --color-sun-200: #ffec99;
+  --color-sun-300: #ffdc64;
+  --color-sun-400: #ffd84d;
+  --color-sun-500: #f5c518;
+  --color-sun-600: #c99a00;
+  --color-sun-700: #8a6a00;
+
+  --color-leaf-50: #e9f8f0;
+  --color-leaf-100: #d0f1df;
+  --color-leaf-200: #a3e2bf;
+  --color-leaf-400: #34c287;
+  --color-leaf-500: #12b573;
+  --color-leaf-600: #0f9c5f;
+  --color-leaf-700: #0c7f4d;
+
+  --color-coral-50: #fff3ee;
+  --color-coral-100: #ffe1d6;
+  --color-coral-200: #ffc4ae;
+  --color-coral-400: #ff9a76;
+  --color-coral-500: #ef6a4a;
+  --color-coral-600: #d9523a;
+  --color-coral-700: #a8402a;
+
+  --color-cream-50: #fffaf2;
+  --color-cream-100: #fdf1dc;
+
+  /* App background, and the pale blue of chips, stat boxes and dialogue bubbles. */
+  --color-canvas: #f6f9fd;
+  --color-mist: #eef4fc;
+  /* Warm grey behind object pictures (quiz and answer cards). */
+  --color-stone: #f4f3f1;
+
+  --radius-card: 1rem;
+
+  --shadow-soft: 0 6px 22px -10px rgb(16 40 100 / 0.22);
+  --shadow-lift: 0 24px 50px -20px rgb(10 25 80 / 0.45);
+  --shadow-nav: 0 -8px 24px -12px rgb(16 32 74 / 0.25);
+  --shadow-cta: 0 10px 22px -10px rgb(11 127 254 / 0.65);
+
+  --animate-pop-in: pop-in 280ms cubic-bezier(0.2, 0.9, 0.3, 1.25) both;
+  --animate-fade-in: fade-in 200ms ease-out both;
+  --animate-slide-up: slide-up 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-wiggle: wiggle 420ms ease-in-out;
+  --animate-float: float 3.2s ease-in-out infinite;
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(0.94);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(32px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-6px);
+    }
+    75% {
+      transform: translateX(6px);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    /* Height of the fixed bottom navigation on phones (< md). */
+    --mobile-nav-height: calc(4.5rem + env(safe-area-inset-bottom));
+    /* Height of the top bar (breadcrumb / back link + learner) on tablet and desktop. */
+    --top-bar-height: 4.75rem;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-navy-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  /* Always-visible keyboard focus (spec §13 Accessibility). */
+  :focus-visible {
+    outline: 3px solid var(--color-brand-500);
+    outline-offset: 3px;
+  }
+
+  button:not(:disabled),
+  [role='button'] {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .vtw-hotspot {
+    cursor: pointer;
+    outline: none;
+  }
+
+  .vtw-outline {
+    stroke: var(--color-sun-300);
+    fill: rgb(255 238 120 / 0.16);
+    stroke-linejoin: round;
+  }
+
+  .vtw-outline-focus {
+    stroke: var(--color-navy-900);
+    fill: rgb(255 238 120 / 0.18);
+    stroke-dasharray: 10 8;
+    stroke-linejoin: round;
+  }
+
+  .vtw-sprite {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(1.035);
+    transition: transform 180ms ease;
+  }
+
+  /* Hides a scrollbar while keeping the strip scrollable (thumbnail and tile rows). */
+  .vtw-no-scrollbar {
+    scrollbar-width: none;
+  }
+  .vtw-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .vtw-outline {
+      animation: vtw-glow-pulse 1.6s ease-in-out infinite;
+    }
+  }
+
+  @keyframes vtw-glow-pulse {
+    0%,
+    100% {
+      stroke-opacity: 1;
+    }
+    50% {
+      stroke-opacity: 0.55;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .vtw-sprite {
+    transform: none;
+  }
+}
