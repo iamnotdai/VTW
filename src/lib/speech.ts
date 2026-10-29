@@ -1,4 +1,6 @@
 import { SPEECH_CONFIG } from '@/config/app';
+import type { VoiceStyle } from '@/types/models';
+import { isChildVoice, voiceStyleOf } from './voices';
 
 /* -------------------------------------------------------------------------------------------------
  * Playback: recorded audio files first (consistent voice), browser text-to-speech as fallback.
@@ -12,6 +14,10 @@ export interface SoundRequest {
   src?: string;
   rate?: number;
   pitch?: number;
+  /** Preferred browser voice (`SpeechSynthesisVoice.voiceURI`); ignored when a recorded file plays. */
+  voiceURI?: string | null;
+  /** Boy/girl voice from Settings; its pitch applies only when `pitch` is not set (e.g. by a speaker). */
+  voiceStyle?: VoiceStyle | null;
 }
 
 export interface PlaybackCallbacks {
@@ -41,16 +47,56 @@ if (isSpeechSynthesisSupported()) {
   window.speechSynthesis.addEventListener?.('voiceschanged', getVoices);
 }
 
-function pickVoice(lang: string): SpeechSynthesisVoice | null {
-  const voices = getVoices();
-  const normalized = (voice: SpeechSynthesisVoice) => voice.lang.replace('_', '-').toLowerCase();
-  const target = lang.toLowerCase();
+const normalizedLang = (voice: SpeechSynthesisVoice) => voice.lang.replace('_', '-').toLowerCase();
+
+/** Higher = clearer, more natural-sounding voices first (neural/Google/Apple voices over robotic ones). */
+function voiceQuality(voice: SpeechSynthesisVoice): number {
+  const name = voice.name.toLowerCase();
+  let score = 0;
+  if (/natural|neural|online/.test(name)) score += 4;
+  if (/google|samantha|aria|jenny|ava|emma|andrew|brian|guy|allison|ana\b/.test(name)) score += 2;
+  if (voice.localService) score += 1;
+  return score;
+}
+
+/**
+ * US-English browser voices only (spec: American accent), best sounding first. With a `style`, only
+ * voices that sound like it; when the device has none, all US voices (better than silence).
+ */
+export function listUsVoices(style?: VoiceStyle | null): SpeechSynthesisVoice[] {
+  const target = SPEECH_CONFIG.lang.toLowerCase();
+  const all = getVoices()
+    .filter((voice) => normalizedLang(voice) === target)
+    .sort((a, b) => voiceQuality(b) - voiceQuality(a) || a.name.localeCompare(b.name));
+  if (!style) return all;
+  const matching = all.filter((voice) => voiceStyleOf(voice.name) === style);
+  return matching.length > 0 ? matching : all;
+}
+
+/** The voice chosen in Settings if it is still available, else the best US voice, else any English one. */
+function pickVoice(
+  voiceURI?: string | null,
+  style?: VoiceStyle | null,
+): SpeechSynthesisVoice | null {
+  const usVoices = listUsVoices(style);
   return (
-    voices.find((voice) => normalized(voice) === target && voice.localService) ??
-    voices.find((voice) => normalized(voice) === target) ??
-    voices.find((voice) => normalized(voice).startsWith(target.slice(0, 2))) ??
+    usVoices.find((voice) => voice.voiceURI === voiceURI) ??
+    usVoices[0] ??
+    getVoices().find((voice) => normalizedLang(voice).startsWith('en')) ??
     null
   );
+}
+
+/** Subscribes to the (asynchronous) arrival of voices. Returns an unsubscribe function. */
+export function onVoicesChanged(listener: () => void): () => void {
+  if (!isSpeechSynthesisSupported()) return () => {};
+  const synth = window.speechSynthesis;
+  const handler = () => {
+    getVoices();
+    listener();
+  };
+  synth.addEventListener?.('voiceschanged', handler);
+  return () => synth.removeEventListener?.('voiceschanged', handler);
 }
 
 // Chrome may garbage-collect an utterance before `end` fires unless something references it.
@@ -59,7 +105,12 @@ let currentUtterance: SpeechSynthesisUtterance | null = null;
 /** Speaks `text` with the browser voice. Returns a cancel function. */
 export function speakText(
   text: string,
-  options: { rate?: number; pitch?: number } & PlaybackCallbacks = {},
+  options: {
+    rate?: number;
+    pitch?: number;
+    voiceURI?: string | null;
+    voiceStyle?: VoiceStyle | null;
+  } & PlaybackCallbacks = {},
 ): () => void {
   if (!isSpeechSynthesisSupported() || !text.trim()) {
     options.onError?.();
@@ -69,8 +120,11 @@ export function speakText(
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = SPEECH_CONFIG.lang;
   utterance.rate = options.rate ?? SPEECH_CONFIG.rate;
-  utterance.pitch = options.pitch ?? 1;
-  const voice = pickVoice(SPEECH_CONFIG.lang);
+  const voice = pickVoice(options.voiceURI, options.voiceStyle);
+  const raisePitch = options.voiceStyle && !(voice && isChildVoice(voice.name));
+  utterance.pitch =
+    options.pitch ??
+    (raisePitch && options.voiceStyle ? SPEECH_CONFIG.stylePitch[options.voiceStyle] : 1);
   if (voice) utterance.voice = voice;
 
   let settled = false;
@@ -161,6 +215,8 @@ export function playSound(request: SoundRequest, callbacks: PlaybackCallbacks = 
     cancelCurrent = speakText(request.text, {
       rate: request.rate,
       pitch: request.pitch,
+      voiceURI: request.voiceURI,
+      voiceStyle: request.voiceStyle,
       onEnd: () => settle(callbacks.onEnd),
       onError: () => settle(callbacks.onError),
     });

@@ -117,3 +117,18 @@ Tất cả đều là WebP và phải render qua `assetUrl()`.
 - Thêm icon cho nhóm khác (`village`, `school`, `town`): chép file vào `public/assets/icons/` rồi thêm
   `icon: '/assets/icons/group-village.webp'` vào dòng nhóm đó trong `SCENE_GROUPS`. Nhóm chưa có
   `icon` vẫn hiển thị bình thường, chỉ không có ảnh.
+
+## 8. Giọng đọc tiếng Anh (Anh-Mỹ)
+
+App đọc theo thứ tự: **file audio thu sẵn** → nếu không có hoặc lỗi thì dùng **giọng của trình duyệt**.
+
+- **Giọng trình duyệt**: chỉ liệt kê giọng `en-US`. Người học chọn trong **Settings → Reading voice**
+  (có nút nghe thử); mặc định "Automatic" chọn giọng nghe tự nhiên nhất của máy đó (Google, Microsoft
+  Natural, Apple…). Danh sách giọng khác nhau tùy máy và trình duyệt.
+- **Từ quan trọng**: thu sẵn giọng Anh-Mỹ để mọi máy nghe giống nhau. Đặt file MP3 (mono, ~64 kbps,
+  một từ/câu một file) vào `public/assets/audio/words/<wordId>.mp3` (câu ví dụ: `…/examples/`,
+  hội thoại: `…/conversations/`), rồi điền đường dẫn vào trường `audio` tương ứng trong
+  `src/data/**/*.json`, ví dụ `"audio": "/assets/audio/words/lamp.mp3"`. Từ nào chưa có `audio` vẫn
+  dùng giọng trình duyệt. Chạy `npm run content:check` để chắc chắn file tồn tại.
+- Khi thu: dùng người đọc giọng Mỹ, đọc chậm và rõ, nghỉ ~0.2 s ở đầu/cuối file, cùng một người cho
+  cả bộ để giọng nhất quán.

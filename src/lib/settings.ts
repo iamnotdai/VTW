@@ -17,5 +17,13 @@ export function sanitizeSettings(raw: unknown): AppSettings | null {
       typeof probability === 'number' && probability >= 0 && probability <= 1
         ? probability
         : DEFAULT_SETTINGS.quizTypingProbability,
+    voiceURI:
+      typeof value.voiceURI === 'string' && value.voiceURI !== ''
+        ? value.voiceURI
+        : DEFAULT_SETTINGS.voiceURI,
+    voiceStyle:
+      value.voiceStyle === 'boy' || value.voiceStyle === 'girl'
+        ? value.voiceStyle
+        : DEFAULT_SETTINGS.voiceStyle,
   };
 }

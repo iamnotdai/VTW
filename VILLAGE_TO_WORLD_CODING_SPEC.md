@@ -418,6 +418,8 @@ export interface AppSettings {
   soundEnabled: boolean;
   showVietnameseMeaning: boolean;
   quizTypingProbability: number; // mặc định 0.5; hiệu lực khi canTypeWords=true
+  voiceURI: string | null; // giọng en-US của trình duyệt; null = tự chọn giọng tốt nhất
+  voiceStyle: 'boy' | 'girl' | null; // giọng bé trai/bé gái (giọng nam/nữ + nâng cao độ); null = không chọn
 }
 ```
 

@@ -13,19 +13,23 @@ interface AudioState {
 export const useAudioStore = create<AudioState>()((set, get) => ({
   playingKey: null,
   play: (key, request, onEnd) => {
-    if (!useSettingsStore.getState().settings.soundEnabled) return;
+    const { soundEnabled, voiceURI, voiceStyle } = useSettingsStore.getState().settings;
+    if (!soundEnabled) return;
     const finish = () => {
       if (get().playingKey === key) set({ playingKey: null });
     };
     // Set the key first: playback may fail synchronously and call `finish` immediately.
     set({ playingKey: key });
-    playSound(request, {
-      onEnd: () => {
-        finish();
-        onEnd?.();
+    playSound(
+      { voiceURI, voiceStyle, ...request },
+      {
+        onEnd: () => {
+          finish();
+          onEnd?.();
+        },
+        onError: finish,
       },
-      onError: finish,
-    });
+    );
   },
   stop: () => {
     stopSound();

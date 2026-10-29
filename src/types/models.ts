@@ -155,9 +155,16 @@ export interface LearningProgress {
   updatedAt: string;
 }
 
+/** Boy = male-sounding browser voice, girl = female-sounding one, both with a child-like pitch. */
+export type VoiceStyle = 'boy' | 'girl';
+
 export interface AppSettings {
   soundEnabled: boolean;
   showVietnameseMeaning: boolean;
   /** Default 0.5; only used when `canTypeWords` is true. */
   quizTypingProbability: number;
+  /** `voiceURI` of the chosen US-English browser voice; `null` = pick the best one automatically. */
+  voiceURI: string | null;
+  /** `null` = no preference (adult voice, normal pitch). */
+  voiceStyle: VoiceStyle | null;
 }

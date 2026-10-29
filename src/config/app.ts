@@ -51,6 +51,8 @@ export const DEFAULT_SETTINGS: AppSettings = {
   soundEnabled: true,
   showVietnameseMeaning: true,
   quizTypingProbability: 0.5,
+  voiceURI: null,
+  voiceStyle: null,
 };
 
 /** Explore scene zoom limits (spec §7.4 item 8). */
@@ -70,6 +72,8 @@ export const SPEECH_CONFIG = {
   lang: 'en-US',
   /** Slightly slower than normal for young learners. */
   rate: 0.9,
+  /** Pitch that makes an adult browser voice sound like a boy / girl (1 = unchanged). */
+  stylePitch: { boy: 1.25, girl: 1.4 },
 } as const;
 
 /** Thresholds for the simple word-match feedback in Speaking Practice (not pronunciation scoring). */

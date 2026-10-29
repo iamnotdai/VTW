@@ -224,6 +224,11 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
 ### Âm thanh và giọng nói (spec §9.4)
 
 - Không tự phát âm thanh. Mỗi lúc chỉ phát một âm thanh.
+- Giọng đọc: file audio thu sẵn nếu có, không thì giọng **Anh-Mỹ (`en-US`)** của trình duyệt.
+  _Settings → Reading voice_ cho chọn _Automatic_ / _Boy voice_ / _Girl voice_ (giọng nam/nữ nâng
+  cao độ cho giống giọng trẻ em) và một giọng cụ thể của máy, có nút nghe thử; lưu ngay vào
+  `voiceURI` / `voiceStyle` của `AppSettings`. Hội thoại đặt cao độ riêng cho từng nhân vật vẫn giữ
+  cao độ đó. Chi tiết và cách thu âm: `docs/asset-pipeline.md` mục 8.
 - Speaking: chỉ xin quyền micro khi người học bấm _Tap to speak_, không ghi âm hay upload gì. Kết quả
   so khớp các từ nghe được với câu mẫu, **không phải chấm phát âm** (app có ghi rõ trên màn hình).
   Trình duyệt không hỗ trợ, bị chặn micro hoặc lỗi mạng thì chuyển sang _Listen & Repeat_ →
@@ -257,8 +262,9 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
     không phải radio, để phím mũi tên không gửi nhầm); phím Enter ở màn "Correct!" = Next Object.
   - Danh sách Vocabulary: mỗi nhóm đóng/mở được (nhóm đầu mở sẵn), lưới 4/2/1 thẻ theo chiều rộng,
     % hoàn thành hiện ngay cạnh tên scene.
-  - Màn Settings chỉ có các trường như thiết kế; tuỳ chọn âm thanh / nghĩa tiếng Việt vẫn nằm trong
-    `AppSettings` (mặc định bật) nhưng không còn công tắc trên giao diện.
+  - Màn Settings có các trường như thiết kế, thêm mục _Reading voice_ (chọn giọng đọc) ở trên cùng;
+    tuỳ chọn âm thanh / nghĩa tiếng Việt vẫn nằm trong `AppSettings` (mặc định bật) nhưng không có
+    công tắc trên giao diện.
   - Transcript, Detail có thêm nút "Practice Speaking" / "View Conversation" để đi tiếp hành trình.
   - Tranh, nhân vật, thumbnail, video là **placeholder**; chữ (tên hội thoại, câu thoại, từ liên
     quan…) là dữ liệu mẫu — ảnh thiết kế dùng ví dụ khác (Emma, "Choosing Clothes"…).

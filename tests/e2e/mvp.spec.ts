@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 
 /**
  * The MVP journey of spec §22, on desktop (mouse) and phone (touch):
@@ -6,6 +6,25 @@ import { expect, test, type Page } from '@playwright/test';
  * → quiz that matches the setting → result "lamp" → Objects Found +1 → reload keeps progress →
  * My Bedroom video → transcript → speaking practice, all without a backend.
  */
+
+/**
+ * A point inside a hotspot, relative to its box. The default (box centre) can fall between the
+ * sub-paths of a multi-part object — the lamp is two lamps, and its centre lies on the pillow.
+ */
+async function pointOn(hotspot: Locator, x: number, y: number) {
+  return hotspot.evaluate(
+    (element, [px, py]) => {
+      const path = element as SVGGraphicsElement;
+      const point = path.ownerSVGElement!.createSVGPoint();
+      point.x = px;
+      point.y = py;
+      const screen = point.matrixTransform(path.getScreenCTM()!);
+      const box = path.getBoundingClientRect();
+      return { x: screen.x - box.left, y: screen.y - box.top };
+    },
+    [x, y],
+  );
+}
 
 async function completeSetup(page: Page) {
   await page.goto('/');
@@ -48,15 +67,21 @@ test('MVP journey: setup → explore → quiz → progress → conversation', as
 
   // Explore: highlight the lamp, then open its question.
   const lamp = page.locator('[data-hotspot="lamp"]');
+  // The shade of the lamp on the left nightstand (viewBox units).
+  const lampShade = await pointOn(lamp, 205, 380);
   if (isMobile) {
-    await lamp.tap();
+    await lamp.tap({ position: lampShade });
     await expect(page.getByText('What is this?')).toBeVisible();
     await page.getByRole('button', { name: 'Learn', exact: true }).tap();
   } else {
-    await lamp.hover();
+    await lamp.hover({ position: lampShade });
     await expect(page.locator('.vtw-outline')).toHaveCount(1);
-    await expect(page.locator('image.vtw-sprite')).toHaveAttribute('href', /04_lamp\.webp$/);
-    await lamp.click();
+    // The glowing outline is the lamp's own contour (sprites are optional; Bedroom has none).
+    await expect(page.locator('.vtw-outline')).toHaveAttribute(
+      'd',
+      (await lamp.getAttribute('d'))!,
+    );
+    await lamp.click({ position: lampShade });
   }
 
   // "Not yet" → multiple choice only.
