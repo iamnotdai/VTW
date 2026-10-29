@@ -3,13 +3,178 @@
   "title": "Bathroom",
   "group": "home",
   "order": 5,
-  "description": "Words for the bathtub, the sink and bath time.",
-  "status": "coming-soon",
+  "description": "Learn words and practice conversations in the bathroom.",
+  "status": "available",
   "thumbnail": "/assets/scenes/bathroom/bathroom-desktop.webp",
   "background": "/assets/scenes/bathroom/bathroom-desktop.webp",
-  "width": 640,
-  "height": 400,
-  "wordIds": [],
-  "conversationIds": [],
-  "hotspots": []
+  "width": 1672,
+  "height": 941,
+  "wordIds": [
+    "toilet",
+    "toothbrush-holder",
+    "bathtub",
+    "soap",
+    "shower",
+    "sink",
+    "faucet",
+    "toothbrush",
+    "toothpaste",
+    "shampoo",
+    "towel-rack",
+    "toilet-paper",
+    "toilet-brush",
+    "trash-can",
+    "bath-mat",
+    "shower-curtain",
+    "comb",
+    "hair-dryer",
+    "razor",
+    "shaving-cream",
+    "laundry-basket",
+    "bucket",
+    "towel",
+    "bathroom-cabinet"
+  ],
+  "conversationIds": [
+    "my-bathroom",
+    "brushing-my-teeth",
+    "bath-time",
+    "wash-your-hands",
+    "where-is-the-towel",
+    "washing-my-hair",
+    "drying-my-hair",
+    "dad-is-shaving",
+    "cleaning-the-bathroom",
+    "getting-ready-for-bed"
+  ],
+  "hotspots": [
+    {
+      "wordId": "toilet",
+      "svgPath": "M 1280 466 L 1300 446 L 1330 443 L 1360 452 L 1385 466 L 1395 462 L 1484 464 L 1486 495 L 1474 535 L 1472 628 L 1430 640 L 1432 676 L 1415 720 L 1400 745 L 1398 790 L 1390 815 L 1370 840 L 1330 853 L 1240 862 L 1192 852 L 1182 830 L 1200 790 L 1212 750 L 1170 718 L 1150 690 L 1147 655 L 1160 625 L 1200 610 L 1265 605 L 1266 520 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "toothbrush-holder",
+      "svgPath": "M 322 386 L 334 382 L 360 382 L 372 386 L 372 440 L 366 447 L 330 447 L 323 440 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "bathtub",
+      "svgPath": "M 535 500 L 555 478 L 590 468 L 900 466 L 900 645 L 1068 650 L 1068 690 L 900 692 L 600 682 L 548 675 L 532 640 L 530 560 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "soap",
+      "svgPath": "M 120 490 L 126 484 L 172 483 L 178 490 L 178 502 L 172 506 L 124 506 L 119 500 Z",
+      "zIndex": 4,
+      "touchPadding": 10
+    },
+    {
+      "wordId": "shower",
+      "svgPath": "M 596 90 L 600 76 L 612 70 L 680 70 L 690 78 L 692 88 L 712 88 L 730 100 L 736 112 L 725 130 L 690 138 L 672 132 L 676 112 L 684 98 L 684 82 L 614 82 L 608 92 L 608 145 L 614 150 L 614 168 L 608 172 L 608 370 L 600 370 L 596 172 L 584 168 L 582 150 L 596 145 Z M 572 380 L 580 370 L 595 372 L 610 372 L 625 375 L 640 380 L 642 398 L 630 405 L 615 405 L 618 440 L 614 470 L 604 482 L 592 476 L 590 440 L 594 408 L 580 410 L 572 400 Z",
+      "zIndex": 2,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "sink",
+      "svgPath": "M 200 445 L 240 438 L 330 436 L 420 440 L 490 446 L 518 456 L 522 475 L 505 520 L 475 552 L 440 580 L 420 600 L 410 640 L 412 740 L 420 800 L 440 860 L 440 893 L 400 900 L 330 900 L 308 890 L 312 860 L 318 820 L 318 740 L 310 680 L 290 640 L 268 610 L 268 560 L 287 545 L 287 505 L 200 500 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "faucet",
+      "svgPath": "M 205 377 L 215 368 L 245 370 L 285 371 L 288 378 L 272 382 L 248 385 L 246 398 L 280 402 L 300 408 L 305 420 L 296 428 L 284 422 L 250 422 L 246 445 L 245 465 L 200 467 L 202 440 L 204 400 L 207 385 Z",
+      "zIndex": 3,
+      "touchPadding": 4
+    },
+    {
+      "wordId": "toothbrush",
+      "svgPath": "M 324 345 L 330 338 L 342 340 L 345 352 L 340 362 L 340 384 L 333 384 L 330 362 L 323 352 Z M 362 336 L 372 330 L 382 334 L 380 352 L 372 360 L 362 384 L 355 384 L 362 358 L 360 345 Z",
+      "zIndex": 4,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "toothpaste",
+      "svgPath": "M 382 360 L 396 350 L 412 356 L 408 380 L 404 402 L 385 402 L 383 380 Z",
+      "zIndex": 4,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "shampoo",
+      "svgPath": "M 627 210 L 637 195 L 640 180 L 656 178 L 660 192 L 675 200 L 680 190 L 696 190 L 702 200 L 728 200 L 732 186 L 755 186 L 758 200 L 768 215 L 770 275 L 625 275 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "towel-rack",
+      "svgPath": "M 1289 340 L 1302 334 L 1318 340 L 1330 336 L 1478 336 L 1490 345 L 1512 345 L 1530 338 L 1555 336 L 1564 350 L 1560 368 L 1540 370 L 1520 362 L 1482 362 L 1480 452 L 1460 455 L 1330 445 L 1328 362 L 1305 365 L 1290 360 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "toilet-paper",
+      "svgPath": "M 1488 525 L 1505 512 L 1540 510 L 1542 496 L 1585 494 L 1595 505 L 1594 555 L 1577 560 L 1572 585 L 1550 592 L 1520 590 L 1498 580 L 1487 555 Z M 1604 575 L 1625 565 L 1672 563 L 1672 645 L 1630 645 L 1606 638 L 1602 610 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "toilet-brush",
+      "svgPath": "M 1443 612 L 1462 612 L 1462 690 L 1458 720 L 1478 725 L 1480 790 L 1485 800 L 1484 835 L 1470 840 L 1420 840 L 1409 830 L 1410 800 L 1414 790 L 1414 728 L 1440 718 L 1444 690 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "trash-can",
+      "svgPath": "M 1070 655 L 1095 642 L 1140 640 L 1168 650 L 1172 670 L 1170 760 L 1172 785 L 1160 797 L 1110 797 L 1080 792 L 1065 780 L 1068 760 L 1068 670 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "bath-mat",
+      "svgPath": "M 560 760 L 640 699 L 660 696 L 1030 728 L 1048 742 L 1046 820 L 1030 843 L 1010 846 L 560 805 L 538 795 L 540 780 Z",
+      "zIndex": 0
+    },
+    {
+      "wordId": "shower-curtain",
+      "svgPath": "M 927 50 L 940 30 L 960 26 L 1205 22 L 1207 60 L 1207 640 L 1180 648 L 1140 642 L 1100 650 L 1060 643 L 1020 650 L 980 643 L 940 650 L 900 646 L 884 625 L 890 500 L 905 380 L 915 250 L 925 120 Z M 548 44 L 556 40 L 570 44 L 930 30 L 932 42 L 570 56 L 558 66 L 548 60 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "comb",
+      "svgPath": "M 8 528 L 18 512 L 40 506 L 70 506 L 92 512 L 112 518 L 120 525 L 116 535 L 100 533 L 80 526 L 75 532 L 40 534 L 15 538 Z",
+      "zIndex": 3,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "hair-dryer",
+      "svgPath": "M 0 630 L 30 615 L 80 600 L 120 600 L 138 612 L 143 635 L 135 668 L 112 680 L 100 682 L 115 710 L 132 725 L 138 742 L 128 750 L 115 745 L 95 722 L 70 700 L 60 680 L 40 682 L 20 690 L 0 700 Z",
+      "zIndex": 4
+    },
+    {
+      "wordId": "razor",
+      "svgPath": "M 104 692 L 108 684 L 135 677 L 145 680 L 147 695 L 160 702 L 188 712 L 193 722 L 188 730 L 175 728 L 150 716 L 140 710 L 135 702 L 110 705 Z",
+      "zIndex": 5,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "shaving-cream",
+      "svgPath": "M 180 606 L 188 598 L 212 596 L 218 610 L 224 625 L 226 700 L 218 708 L 186 708 L 176 700 L 176 625 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "laundry-basket",
+      "svgPath": "M 1484 712 L 1500 692 L 1550 684 L 1620 685 L 1672 690 L 1672 941 L 1515 941 L 1500 860 L 1490 780 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "bucket",
+      "svgPath": "M 448 615 L 460 602 L 520 595 L 580 598 L 594 612 L 590 640 L 594 690 L 588 700 L 580 742 L 560 755 L 490 755 L 468 745 L 460 700 L 452 640 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "towel",
+      "svgPath": "M 0 700 L 40 698 L 70 706 L 78 722 L 80 740 L 82 760 L 76 775 L 40 785 L 0 792 Z M 336 488 L 345 482 L 400 484 L 418 486 L 425 495 L 428 580 L 410 586 L 360 590 L 345 585 L 340 520 Z M 570 510 L 590 500 L 640 502 L 660 512 L 650 525 L 640 525 L 638 570 L 620 573 L 568 565 L 566 535 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "bathroom-cabinet",
+      "svgPath": "M 1258 30 L 1275 14 L 1580 6 L 1594 20 L 1597 280 L 1585 305 L 1560 316 L 1270 318 L 1248 308 L 1240 285 L 1240 50 Z",
+      "zIndex": 1
+    }
+  ]
 }

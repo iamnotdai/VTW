@@ -515,5 +515,532 @@
     ],
     "relatedWordIds": ["fan"],
     "distractorWordIds": ["lamp", "bunny", "pencil-cup"]
+  },
+  "toilet": {
+    "id": "toilet",
+    "text": "toilet",
+    "ipa": "/ˈtɔɪlət/",
+    "meaningVi": "bồn cầu",
+    "image": "/assets/scenes/bathroom/objects/01_toilet.webp",
+    "acceptedAnswers": ["toilet", "a toilet"],
+    "examples": [
+      {
+        "en": "I flush the toilet after I use it.",
+        "vi": "Mình xả nước bồn cầu sau khi dùng."
+      },
+      {
+        "en": "The toilet is white and clean.",
+        "vi": "Bồn cầu màu trắng và sạch sẽ."
+      }
+    ],
+    "relatedWordIds": ["toilet-paper", "toilet-brush", "trash-can"],
+    "distractorWordIds": ["sink", "bathtub", "bucket"]
+  },
+  "toothbrush-holder": {
+    "id": "toothbrush-holder",
+    "text": "toothbrush holder",
+    "ipa": "/ˈtuːθbrʌʃ ˌhoʊldər/",
+    "meaningVi": "cốc đựng bàn chải",
+    "image": "/assets/scenes/bathroom/objects/02_toothbrush-holder.webp",
+    "acceptedAnswers": [
+      "toothbrush holder",
+      "a toothbrush holder",
+      "toothbrush cup",
+      "a toothbrush cup"
+    ],
+    "examples": [
+      {
+        "en": "I put my toothbrush in the toothbrush holder.",
+        "vi": "Mình cắm bàn chải vào cốc đựng bàn chải."
+      },
+      {
+        "en": "There are two toothbrushes in the toothbrush holder.",
+        "vi": "Có hai cái bàn chải trong cốc đựng bàn chải."
+      }
+    ],
+    "relatedWordIds": ["toothbrush", "toothpaste", "sink"],
+    "distractorWordIds": ["bucket", "trash-can", "shampoo"]
+  },
+  "bathtub": {
+    "id": "bathtub",
+    "text": "bathtub",
+    "ipa": "/ˈbæθtʌb/",
+    "meaningVi": "bồn tắm",
+    "image": "/assets/scenes/bathroom/objects/03_bathtub.webp",
+    "acceptedAnswers": ["bathtub", "a bathtub", "bath tub", "a bath tub", "tub", "a tub"],
+    "examples": [
+      {
+        "en": "I take a bath in the bathtub.",
+        "vi": "Mình tắm trong bồn tắm."
+      },
+      {
+        "en": "The bathtub is full of warm water.",
+        "vi": "Bồn tắm đầy nước ấm."
+      }
+    ],
+    "relatedWordIds": ["shower", "shower-curtain", "bath-mat"],
+    "distractorWordIds": ["sink", "toilet", "bucket"]
+  },
+  "soap": {
+    "id": "soap",
+    "text": "soap",
+    "uncountable": true,
+    "ipa": "/soʊp/",
+    "meaningVi": "xà phòng",
+    "image": "/assets/scenes/bathroom/objects/04_soap.webp",
+    "acceptedAnswers": ["soap", "a soap", "bar of soap", "a bar of soap"],
+    "examples": [
+      {
+        "en": "I wash my hands with soap.",
+        "vi": "Mình rửa tay bằng xà phòng."
+      },
+      {
+        "en": "The soap smells like flowers.",
+        "vi": "Xà phòng có mùi thơm như hoa."
+      }
+    ],
+    "relatedWordIds": ["sink", "faucet", "towel"],
+    "distractorWordIds": ["shampoo", "toothpaste", "shaving-cream"]
+  },
+  "shower": {
+    "id": "shower",
+    "text": "shower",
+    "ipa": "/ˈʃaʊər/",
+    "meaningVi": "vòi sen",
+    "image": "/assets/scenes/bathroom/objects/05_shower.webp",
+    "acceptedAnswers": ["shower", "a shower", "shower head", "a shower head"],
+    "examples": [
+      {
+        "en": "I take a shower every evening.",
+        "vi": "Mình tắm vòi sen mỗi tối."
+      },
+      {
+        "en": "Turn on the shower, please.",
+        "vi": "Bạn bật vòi sen lên nhé."
+      }
+    ],
+    "relatedWordIds": ["shower-curtain", "shampoo", "bathtub"],
+    "distractorWordIds": ["faucet", "hair-dryer", "sink"]
+  },
+  "sink": {
+    "id": "sink",
+    "text": "sink",
+    "ipa": "/sɪŋk/",
+    "meaningVi": "bồn rửa mặt",
+    "image": "/assets/scenes/bathroom/objects/06_sink.webp",
+    "acceptedAnswers": ["sink", "a sink", "washbasin", "a washbasin"],
+    "examples": [
+      {
+        "en": "I wash my face at the sink.",
+        "vi": "Mình rửa mặt ở bồn rửa mặt."
+      },
+      {
+        "en": "The sink is white and round.",
+        "vi": "Bồn rửa mặt màu trắng và tròn."
+      }
+    ],
+    "relatedWordIds": ["faucet", "soap", "toothbrush-holder"],
+    "distractorWordIds": ["bathtub", "toilet", "bucket"]
+  },
+  "faucet": {
+    "id": "faucet",
+    "text": "faucet",
+    "ipa": "/ˈfɔːsət/",
+    "meaningVi": "vòi nước",
+    "image": "/assets/scenes/bathroom/objects/07_faucet.webp",
+    "acceptedAnswers": ["faucet", "a faucet", "tap", "a tap"],
+    "examples": [
+      {
+        "en": "Water comes out of the faucet.",
+        "vi": "Nước chảy ra từ vòi nước."
+      },
+      {
+        "en": "Turn off the faucet when you brush your teeth.",
+        "vi": "Hãy khoá vòi nước khi đánh răng nhé."
+      }
+    ],
+    "relatedWordIds": ["sink", "soap", "towel"],
+    "distractorWordIds": ["shower", "hair-dryer", "razor"]
+  },
+  "toothbrush": {
+    "id": "toothbrush",
+    "text": "toothbrush",
+    "ipa": "/ˈtuːθbrʌʃ/",
+    "meaningVi": "bàn chải đánh răng",
+    "image": "/assets/scenes/bathroom/objects/08_toothbrush.webp",
+    "acceptedAnswers": ["toothbrush", "a toothbrush", "tooth brush", "a tooth brush"],
+    "examples": [
+      {
+        "en": "I brush my teeth with my toothbrush.",
+        "vi": "Mình đánh răng bằng bàn chải đánh răng."
+      },
+      {
+        "en": "My toothbrush is blue.",
+        "vi": "Bàn chải đánh răng của mình màu xanh dương."
+      }
+    ],
+    "relatedWordIds": ["toothpaste", "toothbrush-holder", "sink"],
+    "distractorWordIds": ["toilet-brush", "comb", "razor"]
+  },
+  "toothpaste": {
+    "id": "toothpaste",
+    "text": "toothpaste",
+    "uncountable": true,
+    "ipa": "/ˈtuːθpeɪst/",
+    "meaningVi": "kem đánh răng",
+    "image": "/assets/scenes/bathroom/objects/09_toothpaste.webp",
+    "acceptedAnswers": ["toothpaste", "tooth paste", "a tube of toothpaste"],
+    "examples": [
+      {
+        "en": "I put toothpaste on my toothbrush.",
+        "vi": "Mình bóp kem đánh răng lên bàn chải."
+      },
+      {
+        "en": "This toothpaste tastes like mint.",
+        "vi": "Kem đánh răng này có vị bạc hà."
+      }
+    ],
+    "relatedWordIds": ["toothbrush", "toothbrush-holder", "sink"],
+    "distractorWordIds": ["shaving-cream", "shampoo", "soap"]
+  },
+  "shampoo": {
+    "id": "shampoo",
+    "text": "shampoo",
+    "uncountable": true,
+    "ipa": "/ʃæmˈpuː/",
+    "meaningVi": "dầu gội",
+    "image": "/assets/scenes/bathroom/objects/10_shampoo.webp",
+    "acceptedAnswers": ["shampoo", "a bottle of shampoo"],
+    "examples": [
+      {
+        "en": "I wash my hair with shampoo.",
+        "vi": "Mình gội đầu bằng dầu gội."
+      },
+      {
+        "en": "The shampoo is on the shelf in the shower.",
+        "vi": "Dầu gội ở trên kệ chỗ tắm vòi sen."
+      }
+    ],
+    "relatedWordIds": ["shower", "comb", "hair-dryer"],
+    "distractorWordIds": ["soap", "toothpaste", "shaving-cream"]
+  },
+  "towel-rack": {
+    "id": "towel-rack",
+    "text": "towel rack",
+    "ipa": "/ˈtaʊəl ræk/",
+    "meaningVi": "giá treo khăn",
+    "image": "/assets/scenes/bathroom/objects/11_towel-rack.webp",
+    "acceptedAnswers": [
+      "towel rack",
+      "a towel rack",
+      "towel bar",
+      "a towel bar",
+      "towel rail",
+      "a towel rail"
+    ],
+    "examples": [
+      {
+        "en": "Hang your towel on the towel rack.",
+        "vi": "Hãy treo khăn lên giá treo khăn."
+      },
+      {
+        "en": "There is a blue towel on the towel rack.",
+        "vi": "Có một chiếc khăn xanh trên giá treo khăn."
+      }
+    ],
+    "relatedWordIds": ["towel", "bathroom-cabinet", "bath-mat"],
+    "distractorWordIds": ["shower-curtain", "toilet-paper", "laundry-basket"]
+  },
+  "toilet-paper": {
+    "id": "toilet-paper",
+    "text": "toilet paper",
+    "uncountable": true,
+    "ipa": "/ˈtɔɪlət ˌpeɪpər/",
+    "meaningVi": "giấy vệ sinh",
+    "image": "/assets/scenes/bathroom/objects/12_toilet-paper.webp",
+    "acceptedAnswers": ["toilet paper", "toilet roll", "a toilet roll", "a roll of toilet paper"],
+    "examples": [
+      {
+        "en": "We need more toilet paper.",
+        "vi": "Nhà mình cần thêm giấy vệ sinh."
+      },
+      {
+        "en": "The toilet paper is next to the toilet.",
+        "vi": "Giấy vệ sinh ở cạnh bồn cầu."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-brush", "trash-can"],
+    "distractorWordIds": ["towel", "soap", "bath-mat"]
+  },
+  "toilet-brush": {
+    "id": "toilet-brush",
+    "text": "toilet brush",
+    "ipa": "/ˈtɔɪlət brʌʃ/",
+    "meaningVi": "chổi cọ bồn cầu",
+    "image": "/assets/scenes/bathroom/objects/13_toilet-brush.webp",
+    "acceptedAnswers": ["toilet brush", "a toilet brush"],
+    "examples": [
+      {
+        "en": "Dad cleans the toilet with the toilet brush.",
+        "vi": "Bố cọ bồn cầu bằng chổi cọ bồn cầu."
+      },
+      {
+        "en": "The toilet brush stands next to the toilet.",
+        "vi": "Chổi cọ bồn cầu đứng cạnh bồn cầu."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-paper", "bucket"],
+    "distractorWordIds": ["toothbrush", "comb", "hair-dryer"]
+  },
+  "trash-can": {
+    "id": "trash-can",
+    "text": "trash can",
+    "ipa": "/ˈtræʃ kæn/",
+    "meaningVi": "thùng rác",
+    "image": "/assets/scenes/bathroom/objects/14_trash-can.webp",
+    "acceptedAnswers": [
+      "trash can",
+      "a trash can",
+      "trash bin",
+      "a trash bin",
+      "garbage can",
+      "a garbage can",
+      "bin",
+      "a bin"
+    ],
+    "examples": [
+      {
+        "en": "Put the paper in the trash can.",
+        "vi": "Hãy bỏ giấy vào thùng rác."
+      },
+      {
+        "en": "Step on the pedal to open the trash can.",
+        "vi": "Đạp vào bàn đạp để mở thùng rác."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-paper", "bucket"],
+    "distractorWordIds": ["laundry-basket", "bathroom-cabinet", "sink"]
+  },
+  "bath-mat": {
+    "id": "bath-mat",
+    "text": "bath mat",
+    "ipa": "/ˈbæθ mæt/",
+    "meaningVi": "thảm nhà tắm",
+    "image": "/assets/scenes/bathroom/objects/15_bath-mat.webp",
+    "acceptedAnswers": ["bath mat", "a bath mat", "bathmat", "a bathmat", "mat", "a mat"],
+    "examples": [
+      {
+        "en": "I stand on the bath mat after my bath.",
+        "vi": "Mình đứng trên thảm nhà tắm sau khi tắm."
+      },
+      {
+        "en": "The bath mat is soft and blue.",
+        "vi": "Thảm nhà tắm mềm và có màu xanh."
+      }
+    ],
+    "relatedWordIds": ["bathtub", "towel", "shower"],
+    "distractorWordIds": ["towel", "shower-curtain", "laundry-basket"]
+  },
+  "shower-curtain": {
+    "id": "shower-curtain",
+    "text": "shower curtain",
+    "ipa": "/ˈʃaʊər ˌkɝːtn/",
+    "meaningVi": "rèm tắm",
+    "image": "/assets/scenes/bathroom/objects/16_shower-curtain.webp",
+    "acceptedAnswers": ["shower curtain", "a shower curtain", "curtain", "a curtain"],
+    "examples": [
+      {
+        "en": "Close the shower curtain before you take a shower.",
+        "vi": "Kéo rèm tắm lại trước khi tắm nhé."
+      },
+      {
+        "en": "My shower curtain has blue raindrops on it.",
+        "vi": "Rèm tắm của mình có hình những giọt nước màu xanh."
+      }
+    ],
+    "relatedWordIds": ["shower", "bathtub", "bath-mat"],
+    "distractorWordIds": ["towel", "towel-rack", "bathroom-cabinet"]
+  },
+  "comb": {
+    "id": "comb",
+    "text": "comb",
+    "ipa": "/koʊm/",
+    "meaningVi": "cái lược",
+    "image": "/assets/scenes/bathroom/objects/17_comb.webp",
+    "acceptedAnswers": ["comb", "a comb"],
+    "examples": [
+      {
+        "en": "I comb my hair with a comb.",
+        "vi": "Mình chải tóc bằng lược."
+      },
+      {
+        "en": "The comb is next to the soap.",
+        "vi": "Chiếc lược ở cạnh xà phòng."
+      }
+    ],
+    "relatedWordIds": ["hair-dryer", "shampoo", "towel"],
+    "distractorWordIds": ["toothbrush", "razor", "toilet-brush"]
+  },
+  "hair-dryer": {
+    "id": "hair-dryer",
+    "text": "hair dryer",
+    "ipa": "/ˈher ˌdraɪər/",
+    "meaningVi": "máy sấy tóc",
+    "image": "/assets/scenes/bathroom/objects/18_hair-dryer.webp",
+    "acceptedAnswers": [
+      "hair dryer",
+      "a hair dryer",
+      "hairdryer",
+      "a hairdryer",
+      "hair drier",
+      "a hair drier"
+    ],
+    "examples": [
+      {
+        "en": "Mom dries my hair with the hair dryer.",
+        "vi": "Mẹ sấy tóc cho mình bằng máy sấy tóc."
+      },
+      {
+        "en": "The hair dryer blows warm air.",
+        "vi": "Máy sấy tóc thổi ra gió ấm."
+      }
+    ],
+    "relatedWordIds": ["comb", "shampoo", "towel"],
+    "distractorWordIds": ["shower", "faucet", "razor"]
+  },
+  "razor": {
+    "id": "razor",
+    "text": "razor",
+    "ipa": "/ˈreɪzər/",
+    "meaningVi": "dao cạo râu",
+    "image": "/assets/scenes/bathroom/objects/19_razor.webp",
+    "acceptedAnswers": ["razor", "a razor"],
+    "examples": [
+      {
+        "en": "Dad shaves with a razor.",
+        "vi": "Bố cạo râu bằng dao cạo."
+      },
+      {
+        "en": "A razor is sharp, so don’t touch it.",
+        "vi": "Dao cạo rất sắc, nên đừng chạm vào nhé."
+      }
+    ],
+    "relatedWordIds": ["shaving-cream", "sink", "towel"],
+    "distractorWordIds": ["comb", "toothbrush", "hair-dryer"]
+  },
+  "shaving-cream": {
+    "id": "shaving-cream",
+    "text": "shaving cream",
+    "uncountable": true,
+    "ipa": "/ˈʃeɪvɪŋ kriːm/",
+    "meaningVi": "kem cạo râu",
+    "image": "/assets/scenes/bathroom/objects/20_shaving-cream.webp",
+    "acceptedAnswers": ["shaving cream", "shaving foam", "a can of shaving cream"],
+    "examples": [
+      {
+        "en": "Dad puts shaving cream on his face.",
+        "vi": "Bố thoa kem cạo râu lên mặt."
+      },
+      {
+        "en": "Shaving cream is white and fluffy.",
+        "vi": "Kem cạo râu màu trắng và xốp."
+      }
+    ],
+    "relatedWordIds": ["razor", "sink", "towel"],
+    "distractorWordIds": ["toothpaste", "shampoo", "soap"]
+  },
+  "laundry-basket": {
+    "id": "laundry-basket",
+    "text": "laundry basket",
+    "ipa": "/ˈlɔːndri ˌbæskət/",
+    "meaningVi": "giỏ đựng quần áo",
+    "image": "/assets/scenes/bathroom/objects/21_laundry-basket.webp",
+    "acceptedAnswers": [
+      "laundry basket",
+      "a laundry basket",
+      "clothes basket",
+      "a clothes basket",
+      "basket",
+      "a basket"
+    ],
+    "examples": [
+      {
+        "en": "Put your dirty clothes in the laundry basket.",
+        "vi": "Bỏ quần áo bẩn vào giỏ đựng quần áo nhé."
+      },
+      {
+        "en": "The laundry basket is full of towels.",
+        "vi": "Giỏ đựng quần áo đầy khăn tắm."
+      }
+    ],
+    "relatedWordIds": ["towel", "bucket", "bath-mat"],
+    "distractorWordIds": ["trash-can", "bucket", "bathroom-cabinet"]
+  },
+  "bucket": {
+    "id": "bucket",
+    "text": "bucket",
+    "ipa": "/ˈbʌkət/",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/bathroom/objects/22_bucket.webp",
+    "acceptedAnswers": ["bucket", "a bucket", "pail", "a pail"],
+    "examples": [
+      {
+        "en": "I fill the bucket with water.",
+        "vi": "Mình đổ đầy nước vào xô."
+      },
+      {
+        "en": "The bucket is next to the bathtub.",
+        "vi": "Cái xô ở cạnh bồn tắm."
+      }
+    ],
+    "relatedWordIds": ["bathtub", "faucet", "toilet-brush"],
+    "distractorWordIds": ["trash-can", "laundry-basket", "toothbrush-holder"]
+  },
+  "towel": {
+    "id": "towel",
+    "text": "towel",
+    "ipa": "/ˈtaʊəl/",
+    "meaningVi": "khăn tắm",
+    "image": "/assets/scenes/bathroom/objects/23_towel.webp",
+    "acceptedAnswers": ["towel", "a towel", "bath towel", "a bath towel"],
+    "examples": [
+      {
+        "en": "I dry my body with a towel.",
+        "vi": "Mình lau khô người bằng khăn tắm."
+      },
+      {
+        "en": "The towels are soft and fluffy.",
+        "vi": "Những chiếc khăn tắm mềm và xốp."
+      }
+    ],
+    "relatedWordIds": ["towel-rack", "bathtub", "bath-mat"],
+    "distractorWordIds": ["bath-mat", "shower-curtain", "toilet-paper"]
+  },
+  "bathroom-cabinet": {
+    "id": "bathroom-cabinet",
+    "text": "bathroom cabinet",
+    "ipa": "/ˈbæθruːm ˌkæbənət/",
+    "meaningVi": "tủ nhà tắm",
+    "image": "/assets/scenes/bathroom/objects/24_bathroom-cabinet.webp",
+    "acceptedAnswers": [
+      "bathroom cabinet",
+      "a bathroom cabinet",
+      "cabinet",
+      "a cabinet",
+      "medicine cabinet",
+      "a medicine cabinet"
+    ],
+    "examples": [
+      {
+        "en": "We keep towels in the bathroom cabinet.",
+        "vi": "Nhà mình cất khăn trong tủ nhà tắm."
+      },
+      {
+        "en": "The bathroom cabinet has two mirror doors.",
+        "vi": "Tủ nhà tắm có hai cánh cửa gương."
+      }
+    ],
+    "relatedWordIds": ["towel-rack", "towel", "shampoo"],
+    "distractorWordIds": ["laundry-basket", "trash-can", "shower-curtain"]
   }
 }

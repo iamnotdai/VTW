@@ -74,3 +74,24 @@ describe('Bedroom (the complete MVP scene)', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Bathroom', () => {
+  const bathroom = getScene('bathroom')!;
+
+  it('is available with 24 words, 10 conversations and one hotspot per word', () => {
+    expect(bathroom.status).toBe('available');
+    expect(getSceneWords(bathroom)).toHaveLength(24);
+    expect(getSceneConversations(bathroom)).toHaveLength(10);
+    expect(bathroom.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...bathroom.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    const oversized = bathroom.hotspots.filter((hotspot) => {
+      const bounds = getPathBounds(hotspot.svgPath)!;
+      return (bounds.width * bounds.height) / (bathroom.width * bathroom.height) >= 0.35;
+    });
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

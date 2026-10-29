@@ -13,4 +13,9 @@ describe('describeWord', () => {
     expect(describeWord({ text: 'curtains', plural: true })).toBe('They’re curtains.');
     expect(describeWord(getWord('slippers')!)).toBe('They’re slippers.');
   });
+
+  it('uses no article for words marked uncountable', () => {
+    expect(describeWord({ text: 'milk', uncountable: true })).toBe('It’s milk.');
+    expect(describeWord(getWord('toothpaste')!)).toBe('It’s toothpaste.');
+  });
 });

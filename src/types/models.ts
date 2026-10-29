@@ -33,6 +33,8 @@ export interface Word {
   text: string;
   /** @extension The word names several things ("curtains") → "They’re curtains." */
   plural?: boolean;
+  /** @extension The word takes no article ("toothpaste") → "It’s toothpaste." */
+  uncountable?: boolean;
   /** e.g. "/læmp/" */
   ipa?: string;
   /** e.g. "đèn" */

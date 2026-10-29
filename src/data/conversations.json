@@ -596,5 +596,603 @@
         "suggestedAnswer": "I brush my hair in front of the mirror."
       }
     ]
+  },
+  {
+    "id": "my-bathroom",
+    "sceneId": "bathroom",
+    "title": "My Bathroom",
+    "order": 1,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Ben shows Lily around his bathroom.",
+    "lines": [
+      {
+        "id": "my-bathroom-l1",
+        "speakerId": "lily",
+        "textEn": "Ben, is this your bathroom?",
+        "textVi": "Ben ơi, đây là phòng tắm của bạn à?"
+      },
+      {
+        "id": "my-bathroom-l2",
+        "speakerId": "ben",
+        "textEn": "Yes, it is. It’s blue and white.",
+        "textVi": "Đúng rồi. Nó màu xanh và trắng."
+      },
+      {
+        "id": "my-bathroom-l3",
+        "speakerId": "lily",
+        "textEn": "Wow, you have a big bathtub!",
+        "textVi": "Ồ, bạn có một cái bồn tắm to quá!"
+      },
+      {
+        "id": "my-bathroom-l4",
+        "speakerId": "ben",
+        "textEn": "And there is a shower, too.",
+        "textVi": "Và còn có cả vòi sen nữa."
+      },
+      {
+        "id": "my-bathroom-l5",
+        "speakerId": "lily",
+        "textEn": "What is on the sink?",
+        "textVi": "Có gì ở trên bồn rửa mặt vậy?"
+      },
+      {
+        "id": "my-bathroom-l6",
+        "speakerId": "ben",
+        "textEn": "My toothbrush and the soap.",
+        "textVi": "Bàn chải đánh răng của mình và xà phòng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-bathroom-q1",
+        "prompt": "What is in the bathroom?",
+        "suggestedAnswer": "There is a bathtub, a sink and a toilet in the bathroom."
+      },
+      {
+        "id": "my-bathroom-q2",
+        "prompt": "What color is your bathroom?",
+        "suggestedAnswer": "My bathroom is blue and white."
+      }
+    ]
+  },
+  {
+    "id": "brushing-my-teeth",
+    "sceneId": "bathroom",
+    "title": "Brushing My Teeth",
+    "order": 2,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Mom helps Lily brush her teeth.",
+    "lines": [
+      {
+        "id": "brushing-my-teeth-l1",
+        "speakerId": "mom",
+        "textEn": "Lily, it’s time to brush your teeth.",
+        "textVi": "Lily ơi, đến giờ đánh răng rồi con."
+      },
+      {
+        "id": "brushing-my-teeth-l2",
+        "speakerId": "lily",
+        "textEn": "Where is my toothbrush?",
+        "textVi": "Bàn chải đánh răng của con đâu ạ?"
+      },
+      {
+        "id": "brushing-my-teeth-l3",
+        "speakerId": "mom",
+        "textEn": "It’s in the toothbrush holder.",
+        "textVi": "Nó ở trong cốc đựng bàn chải đó."
+      },
+      {
+        "id": "brushing-my-teeth-l4",
+        "speakerId": "lily",
+        "textEn": "I found it! The pink one is mine.",
+        "textVi": "Con thấy rồi! Cái màu hồng là của con."
+      },
+      {
+        "id": "brushing-my-teeth-l5",
+        "speakerId": "mom",
+        "textEn": "Put a little toothpaste on it.",
+        "textVi": "Con bóp một chút kem đánh răng lên nhé."
+      },
+      {
+        "id": "brushing-my-teeth-l6",
+        "speakerId": "lily",
+        "textEn": "Okay. I brush up and down.",
+        "textVi": "Vâng ạ. Con chải lên rồi chải xuống."
+      },
+      {
+        "id": "brushing-my-teeth-l7",
+        "speakerId": "mom",
+        "textEn": "Good job! Your teeth are so clean.",
+        "textVi": "Giỏi lắm! Răng của con sạch quá."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "brushing-my-teeth-q1",
+        "prompt": "Where is the toothbrush?",
+        "suggestedAnswer": "The toothbrush is in the toothbrush holder."
+      },
+      {
+        "id": "brushing-my-teeth-q2",
+        "prompt": "What do you put on your toothbrush?",
+        "suggestedAnswer": "I put toothpaste on my toothbrush."
+      }
+    ]
+  },
+  {
+    "id": "bath-time",
+    "sceneId": "bathroom",
+    "title": "Bath Time",
+    "order": 3,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Dad gets the bath ready for Ben.",
+    "lines": [
+      {
+        "id": "bath-time-l1",
+        "speakerId": "dad",
+        "textEn": "Ben, your bath is ready.",
+        "textVi": "Ben ơi, nước tắm của con sẵn sàng rồi."
+      },
+      {
+        "id": "bath-time-l2",
+        "speakerId": "ben",
+        "textEn": "Is the water warm?",
+        "textVi": "Nước có ấm không bố?"
+      },
+      {
+        "id": "bath-time-l3",
+        "speakerId": "dad",
+        "textEn": "Yes, it is. Get in the bathtub.",
+        "textVi": "Ấm rồi. Con vào bồn tắm đi."
+      },
+      {
+        "id": "bath-time-l4",
+        "speakerId": "ben",
+        "textEn": "Can I play with my duck?",
+        "textVi": "Con chơi với con vịt được không ạ?"
+      },
+      {
+        "id": "bath-time-l5",
+        "speakerId": "dad",
+        "textEn": "Sure. But wash your body with soap first.",
+        "textVi": "Được chứ. Nhưng con kỳ người bằng xà phòng trước nhé."
+      },
+      {
+        "id": "bath-time-l6",
+        "speakerId": "ben",
+        "textEn": "I’m all done, Dad!",
+        "textVi": "Con tắm xong rồi, bố ơi!"
+      },
+      {
+        "id": "bath-time-l7",
+        "speakerId": "dad",
+        "textEn": "Here is your towel. Stand on the bath mat.",
+        "textVi": "Khăn tắm của con đây. Con đứng lên thảm nhà tắm nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "bath-time-q1",
+        "prompt": "Where do you take a bath?",
+        "suggestedAnswer": "I take a bath in the bathtub."
+      },
+      {
+        "id": "bath-time-q2",
+        "prompt": "What do you stand on after your bath?",
+        "suggestedAnswer": "I stand on the bath mat."
+      }
+    ]
+  },
+  {
+    "id": "wash-your-hands",
+    "sceneId": "bathroom",
+    "title": "Wash Your Hands",
+    "order": 4,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Lily reminds Ben to wash his hands.",
+    "lines": [
+      {
+        "id": "wash-your-hands-l1",
+        "speakerId": "lily",
+        "textEn": "Ben, wash your hands before lunch!",
+        "textVi": "Ben ơi, rửa tay trước khi ăn trưa đi!"
+      },
+      {
+        "id": "wash-your-hands-l2",
+        "speakerId": "ben",
+        "textEn": "Okay. I turn on the faucet.",
+        "textVi": "Được rồi. Mình mở vòi nước."
+      },
+      {
+        "id": "wash-your-hands-l3",
+        "speakerId": "lily",
+        "textEn": "Use the soap, too.",
+        "textVi": "Dùng cả xà phòng nữa nhé."
+      },
+      {
+        "id": "wash-your-hands-l4",
+        "speakerId": "ben",
+        "textEn": "Look, so many bubbles!",
+        "textVi": "Nhìn này, nhiều bong bóng quá!"
+      },
+      {
+        "id": "wash-your-hands-l5",
+        "speakerId": "lily",
+        "textEn": "Now turn off the faucet.",
+        "textVi": "Bây giờ khoá vòi nước lại đi."
+      },
+      {
+        "id": "wash-your-hands-l6",
+        "speakerId": "ben",
+        "textEn": "My hands are clean. Where is the towel?",
+        "textVi": "Tay mình sạch rồi. Khăn ở đâu nhỉ?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "wash-your-hands-q1",
+        "prompt": "What do you wash your hands with?",
+        "suggestedAnswer": "I wash my hands with soap and water."
+      },
+      {
+        "id": "wash-your-hands-q2",
+        "prompt": "When do you wash your hands?",
+        "suggestedAnswer": "I wash my hands before lunch."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-towel",
+    "sceneId": "bathroom",
+    "title": "Where Is the Towel?",
+    "order": 5,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Ben looks for a towel after his shower.",
+    "lines": [
+      {
+        "id": "where-is-the-towel-l1",
+        "speakerId": "ben",
+        "textEn": "Mom, where is my towel?",
+        "textVi": "Mẹ ơi, khăn tắm của con đâu rồi ạ?"
+      },
+      {
+        "id": "where-is-the-towel-l2",
+        "speakerId": "mom",
+        "textEn": "Is it on the towel rack?",
+        "textVi": "Nó có ở trên giá treo khăn không con?"
+      },
+      {
+        "id": "where-is-the-towel-l3",
+        "speakerId": "ben",
+        "textEn": "No, it isn’t. The towel rack is empty.",
+        "textVi": "Không có ạ. Giá treo khăn trống trơn."
+      },
+      {
+        "id": "where-is-the-towel-l4",
+        "speakerId": "mom",
+        "textEn": "Look in the bathroom cabinet.",
+        "textVi": "Con tìm trong tủ nhà tắm xem."
+      },
+      {
+        "id": "where-is-the-towel-l5",
+        "speakerId": "ben",
+        "textEn": "I see it! It’s on the shelf.",
+        "textVi": "Con thấy rồi! Nó ở trên kệ."
+      },
+      {
+        "id": "where-is-the-towel-l6",
+        "speakerId": "mom",
+        "textEn": "Put your wet towel in the laundry basket, please.",
+        "textVi": "Con bỏ khăn ướt vào giỏ đựng quần áo nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-towel-q1",
+        "prompt": "Where is the towel?",
+        "suggestedAnswer": "The towel is in the bathroom cabinet."
+      },
+      {
+        "id": "where-is-the-towel-q2",
+        "prompt": "Where do you put a wet towel?",
+        "suggestedAnswer": "I put a wet towel in the laundry basket."
+      }
+    ]
+  },
+  {
+    "id": "washing-my-hair",
+    "sceneId": "bathroom",
+    "title": "Washing My Hair",
+    "order": 6,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Mom washes Lily’s hair in the shower.",
+    "lines": [
+      {
+        "id": "washing-my-hair-l1",
+        "speakerId": "mom",
+        "textEn": "Lily, let’s wash your hair.",
+        "textVi": "Lily ơi, mình gội đầu nào."
+      },
+      {
+        "id": "washing-my-hair-l2",
+        "speakerId": "lily",
+        "textEn": "Can I use the shower?",
+        "textVi": "Con dùng vòi sen được không mẹ?"
+      },
+      {
+        "id": "washing-my-hair-l3",
+        "speakerId": "mom",
+        "textEn": "Yes. Close the shower curtain first.",
+        "textVi": "Được. Con kéo rèm tắm lại trước nhé."
+      },
+      {
+        "id": "washing-my-hair-l4",
+        "speakerId": "lily",
+        "textEn": "Where is the shampoo?",
+        "textVi": "Dầu gội ở đâu ạ?"
+      },
+      {
+        "id": "washing-my-hair-l5",
+        "speakerId": "mom",
+        "textEn": "It’s on the shelf. Close your eyes.",
+        "textVi": "Nó ở trên kệ. Con nhắm mắt lại nhé."
+      },
+      {
+        "id": "washing-my-hair-l6",
+        "speakerId": "lily",
+        "textEn": "It smells so good!",
+        "textVi": "Thơm quá mẹ ơi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-my-hair-q1",
+        "prompt": "What do you wash your hair with?",
+        "suggestedAnswer": "I wash my hair with shampoo."
+      },
+      {
+        "id": "washing-my-hair-q2",
+        "prompt": "What do you close before a shower?",
+        "suggestedAnswer": "I close the shower curtain."
+      }
+    ]
+  },
+  {
+    "id": "drying-my-hair",
+    "sceneId": "bathroom",
+    "title": "Drying My Hair",
+    "order": 7,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Lily dries and combs her hair.",
+    "lines": [
+      {
+        "id": "drying-my-hair-l1",
+        "speakerId": "lily",
+        "textEn": "Mom, my hair is wet.",
+        "textVi": "Mẹ ơi, tóc con bị ướt."
+      },
+      {
+        "id": "drying-my-hair-l2",
+        "speakerId": "mom",
+        "textEn": "Let’s use the hair dryer.",
+        "textVi": "Mình dùng máy sấy tóc nhé."
+      },
+      {
+        "id": "drying-my-hair-l3",
+        "speakerId": "lily",
+        "textEn": "It’s loud, but the air is warm.",
+        "textVi": "Nó kêu to, nhưng gió ấm lắm."
+      },
+      {
+        "id": "drying-my-hair-l4",
+        "speakerId": "mom",
+        "textEn": "Now your hair is dry. Where is the comb?",
+        "textVi": "Giờ tóc con khô rồi. Cái lược đâu nhỉ?"
+      },
+      {
+        "id": "drying-my-hair-l5",
+        "speakerId": "lily",
+        "textEn": "It’s next to the soap.",
+        "textVi": "Nó ở cạnh xà phòng ạ."
+      },
+      {
+        "id": "drying-my-hair-l6",
+        "speakerId": "mom",
+        "textEn": "Comb your hair, please.",
+        "textVi": "Con chải tóc đi nhé."
+      },
+      {
+        "id": "drying-my-hair-l7",
+        "speakerId": "lily",
+        "textEn": "Thank you, Mom. I look nice!",
+        "textVi": "Con cảm ơn mẹ. Trông con xinh quá!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "drying-my-hair-q1",
+        "prompt": "What do you use to dry your hair?",
+        "suggestedAnswer": "I use a hair dryer."
+      },
+      {
+        "id": "drying-my-hair-q2",
+        "prompt": "What do you comb your hair with?",
+        "suggestedAnswer": "I comb my hair with a comb."
+      }
+    ]
+  },
+  {
+    "id": "dad-is-shaving",
+    "sceneId": "bathroom",
+    "title": "Dad Is Shaving",
+    "order": 8,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Ben watches Dad shave at the sink.",
+    "lines": [
+      {
+        "id": "dad-is-shaving-l1",
+        "speakerId": "ben",
+        "textEn": "Dad, what are you doing?",
+        "textVi": "Bố ơi, bố đang làm gì vậy?"
+      },
+      {
+        "id": "dad-is-shaving-l2",
+        "speakerId": "dad",
+        "textEn": "I’m shaving, Ben.",
+        "textVi": "Bố đang cạo râu, Ben ạ."
+      },
+      {
+        "id": "dad-is-shaving-l3",
+        "speakerId": "ben",
+        "textEn": "What is that white cream?",
+        "textVi": "Kem trắng đó là gì vậy bố?"
+      },
+      {
+        "id": "dad-is-shaving-l4",
+        "speakerId": "dad",
+        "textEn": "It’s shaving cream. It’s soft and fluffy.",
+        "textVi": "Đó là kem cạo râu. Nó mềm và xốp."
+      },
+      {
+        "id": "dad-is-shaving-l5",
+        "speakerId": "ben",
+        "textEn": "Can I use the razor?",
+        "textVi": "Con dùng dao cạo được không ạ?"
+      },
+      {
+        "id": "dad-is-shaving-l6",
+        "speakerId": "dad",
+        "textEn": "No, Ben. A razor is sharp. It’s only for grown-ups.",
+        "textVi": "Không được con ạ. Dao cạo rất sắc. Chỉ người lớn mới được dùng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "dad-is-shaving-q1",
+        "prompt": "What does Dad put on his face?",
+        "suggestedAnswer": "Dad puts shaving cream on his face."
+      },
+      {
+        "id": "dad-is-shaving-q2",
+        "prompt": "Why can’t children use a razor?",
+        "suggestedAnswer": "Because a razor is sharp."
+      }
+    ]
+  },
+  {
+    "id": "cleaning-the-bathroom",
+    "sceneId": "bathroom",
+    "title": "Cleaning the Bathroom",
+    "order": 9,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Ben and Dad clean the bathroom together.",
+    "lines": [
+      {
+        "id": "cleaning-the-bathroom-l1",
+        "speakerId": "dad",
+        "textEn": "Ben, let’s clean the bathroom.",
+        "textVi": "Ben ơi, mình cùng dọn phòng tắm nào."
+      },
+      {
+        "id": "cleaning-the-bathroom-l2",
+        "speakerId": "ben",
+        "textEn": "Okay! I can fill the bucket with water.",
+        "textVi": "Vâng ạ! Con đổ đầy nước vào xô được."
+      },
+      {
+        "id": "cleaning-the-bathroom-l3",
+        "speakerId": "dad",
+        "textEn": "Great. I clean the toilet with the toilet brush.",
+        "textVi": "Tuyệt. Bố cọ bồn cầu bằng chổi cọ bồn cầu."
+      },
+      {
+        "id": "cleaning-the-bathroom-l4",
+        "speakerId": "ben",
+        "textEn": "I put the old paper in the trash can.",
+        "textVi": "Con bỏ giấy cũ vào thùng rác."
+      },
+      {
+        "id": "cleaning-the-bathroom-l5",
+        "speakerId": "dad",
+        "textEn": "We need a new roll of toilet paper, too.",
+        "textVi": "Mình cũng cần một cuộn giấy vệ sinh mới nữa."
+      },
+      {
+        "id": "cleaning-the-bathroom-l6",
+        "speakerId": "ben",
+        "textEn": "Here it is. The bathroom is clean now!",
+        "textVi": "Đây ạ. Phòng tắm sạch rồi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cleaning-the-bathroom-q1",
+        "prompt": "What does Dad clean the toilet with?",
+        "suggestedAnswer": "Dad cleans the toilet with the toilet brush."
+      },
+      {
+        "id": "cleaning-the-bathroom-q2",
+        "prompt": "Where do you put old paper?",
+        "suggestedAnswer": "I put old paper in the trash can."
+      }
+    ]
+  },
+  {
+    "id": "getting-ready-for-bed",
+    "sceneId": "bathroom",
+    "title": "Getting Ready for Bed",
+    "order": 10,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "Lily gets ready for bed in the bathroom.",
+    "lines": [
+      {
+        "id": "getting-ready-for-bed-l1",
+        "speakerId": "mom",
+        "textEn": "Lily, it’s eight o’clock. Time to get ready for bed.",
+        "textVi": "Lily ơi, tám giờ rồi. Đến giờ chuẩn bị đi ngủ."
+      },
+      {
+        "id": "getting-ready-for-bed-l2",
+        "speakerId": "lily",
+        "textEn": "First, I take a shower.",
+        "textVi": "Đầu tiên, con tắm vòi sen."
+      },
+      {
+        "id": "getting-ready-for-bed-l3",
+        "speakerId": "mom",
+        "textEn": "Then brush your teeth.",
+        "textVi": "Sau đó con đánh răng nhé."
+      },
+      {
+        "id": "getting-ready-for-bed-l4",
+        "speakerId": "lily",
+        "textEn": "I use my toothbrush and toothpaste.",
+        "textVi": "Con dùng bàn chải và kem đánh răng."
+      },
+      {
+        "id": "getting-ready-for-bed-l5",
+        "speakerId": "mom",
+        "textEn": "Don’t forget to wash your face at the sink.",
+        "textVi": "Đừng quên rửa mặt ở bồn rửa mặt nhé."
+      },
+      {
+        "id": "getting-ready-for-bed-l6",
+        "speakerId": "lily",
+        "textEn": "All done! Good night, Mom.",
+        "textVi": "Xong hết rồi! Chúc mẹ ngủ ngon."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "getting-ready-for-bed-q1",
+        "prompt": "What do you do before bed?",
+        "suggestedAnswer": "I take a shower and brush my teeth."
+      },
+      {
+        "id": "getting-ready-for-bed-q2",
+        "prompt": "Where do you wash your face?",
+        "suggestedAnswer": "I wash my face at the sink."
+      }
+    ]
   }
 ]

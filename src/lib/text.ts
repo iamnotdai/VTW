@@ -19,10 +19,15 @@ export function characterCount(value: string): number {
 
 /**
  * The short answer sentence of the answer card, e.g. "It’s a lamp.", "It’s an armchair." or
- * "They’re curtains." for words marked `plural`.
+ * "They’re curtains." for words marked `plural`, "It’s toothpaste." for words marked `uncountable`.
  */
-export function describeWord(word: { text: string; plural?: boolean }): string {
+export function describeWord(word: {
+  text: string;
+  plural?: boolean;
+  uncountable?: boolean;
+}): string {
   if (word.plural) return `They’re ${word.text}.`;
+  if (word.uncountable) return `It’s ${word.text}.`;
   const article = /^[aeiou]/i.test(word.text) ? 'an' : 'a';
   return `It’s ${article} ${word.text}.`;
 }
