@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, CircleCheck, MessagesSquare } from 'lucide-react';
-import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { ButtonLink } from '@/components/common/Button';
 import { IconButton } from '@/components/common/IconButton';
 import { getWord } from '@/data/content';
@@ -16,6 +16,11 @@ interface ObjectsFoundBarProps {
   onHighlight: (wordId: string | null) => void;
   /** Shown when every object is found. */
   conversationsHref?: string;
+  /**
+   * Keeps the tile row scrolled where the learner left it (e.g. after learning an object far to
+   * the right and coming back). One position is remembered per key, for this visit of the app.
+   */
+  scrollKey?: string;
   /** Left end of the header row, e.g. a Back button. */
   leading?: ReactNode;
   className?: string;
@@ -25,7 +30,9 @@ interface ObjectsFoundBarProps {
 const PAGE_SHARE = 0.8;
 
 /** Whether the tile row can scroll further to the left / right, kept fresh on scroll and resize. */
-function useScrollEdges() {
+const rememberedScroll = new Map<string, number>();
+
+function useScrollEdges(scrollKey?: string) {
   const ref = useRef<HTMLUListElement>(null);
   const [edges, setEdges] = useState({ start: true, end: true });
 
@@ -39,18 +46,28 @@ function useScrollEdges() {
     );
   }, []);
 
+  useLayoutEffect(() => {
+    const element = ref.current;
+    const saved = scrollKey === undefined ? undefined : rememberedScroll.get(scrollKey);
+    if (element && saved !== undefined) element.scrollLeft = saved;
+  }, [scrollKey]);
+
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
     update();
-    element.addEventListener('scroll', update, { passive: true });
+    const onScroll = () => {
+      if (scrollKey !== undefined) rememberedScroll.set(scrollKey, element.scrollLeft);
+      update();
+    };
+    element.addEventListener('scroll', onScroll, { passive: true });
     const observer = new ResizeObserver(update);
     observer.observe(element);
     return () => {
-      element.removeEventListener('scroll', update);
+      element.removeEventListener('scroll', onScroll);
       observer.disconnect();
     };
-  }, [update]);
+  }, [update, scrollKey]);
 
   const scrollPage = (direction: 1 | -1) => {
     const element = ref.current;
@@ -76,13 +93,14 @@ export function ObjectsFoundBar({
   onOpen,
   onHighlight,
   conversationsHref,
+  scrollKey,
   leading,
   className,
 }: ObjectsFoundBarProps) {
   const total = wordIds.length;
   const found = wordIds.filter((id) => foundWordIds.has(id)).length;
   const complete = total > 0 && found === total;
-  const { ref: listRef, edges, scrollPage } = useScrollEdges();
+  const { ref: listRef, edges, scrollPage } = useScrollEdges(scrollKey);
 
   return (
     <section

@@ -24,9 +24,9 @@ Bộ khung đã chạy được **hành trình MVP của spec §22 từ đầu �
 - Conversation: danh sách theo scene, chi tiết, video (có fallback), transcript (phát từng câu,
   dịch tĩnh), Speaking Practice (SpeechRecognition + fallback _Listen & Repeat_), Speaking Result.
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
-- Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu, thanh trên
-  có avatar + Level, thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **95 test Vitest** (71 unit + 24 component, gồm kiểm tra nội dung JSON và asset) và
+- Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
+  ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
+- Test tự động: **99 test Vitest** (73 unit + 26 component, gồm kiểm tra nội dung JSON và asset) và
   **4 kịch bản E2E Playwright**, mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
@@ -112,9 +112,9 @@ npm run test:e2e
 │   │   ├── conversation/          # pages, components, speaking session
 │   │   ├── settings/
 │   │   └── misc/                  # NotFound / Coming soon / lỗi route
-│   ├── hooks/                     # useSpeechRecognition, useMediaQuery, useDocumentTitle
+│   ├── hooks/                     # useSpeechRecognition, useMediaQuery, useAppFullscreen, useDocumentTitle
 │   ├── lib/                       # storage, quiz, progress, speech, speechMatch, svgPath,
-│   │                              # viewTransform, fullscreen, assets…
+│   │                              # viewTransform, savedView, fullscreen, assets…
 │   ├── stores/                    # Zustand stores
 │   ├── styles/index.css           # Tailwind + design tokens
 │   └── types/models.ts            # Data model (spec §10.1)
@@ -205,7 +205,8 @@ Viewport (aspect-ratio = width/height của scene, vừa khít chiều cao màn 
 ├── Layer 4  bong bóng "Click on an object!" / "What is this? · Learn" / tên vật đã tìm,
 │            gắn vào vật đang chọn (không nhận click, trừ nút Learn)
 └── Layer 5  nút tròn navy zoom in / zoom out / reset / fullscreen ở góc trên phải
-Layer 6  thanh Objects Found ngay dưới tranh: mỗi vật một ô (ảnh khi đã tìm, "?" khi chưa)
+Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (giữa) · bộ đếm (phải), rồi hàng
+         ô mỗi vật một ô (ảnh khi đã tìm, "?" khi chưa) với nút Previous/Next ở hai đầu
 ```
 
 - Chuột: hover thì sáng, click thì mở câu hỏi. Cảm ứng: chạm lần đầu thì chọn và hiện nút **Learn**,
@@ -214,6 +215,9 @@ Layer 6  thanh Objects Found ngay dưới tranh: mỗi vật một ô (ảnh khi
   tìm có tên "Object 3"; focus/hover một ô sẽ làm sáng vật đó trên tranh).
 - Kéo hoặc pinch không bị tính là chạm vào vật. `touchPadding` chỉ nới vùng chạm trên thiết bị cảm
   ứng, không làm sai đường viền.
+- Mức zoom/pan được nhớ theo scene trong bộ nhớ (`lib/savedView.ts`), nên quay lại từ câu hỏi hoặc
+  đáp án vẫn đúng chỗ cũ; tải lại trang thì về ban đầu. Toàn màn hình đặt trên cả trang
+  (`hooks/useAppFullscreen.ts`) nên không bị thoát khi chuyển màn.
 - Vật đã học vẫn mở lại được (Word Detail → _Practice Again_), không cộng tiến độ lần nữa.
 
 ### Âm thanh và giọng nói (spec §9.4)
@@ -233,8 +237,9 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   (#133457), nút `brand-500` (#0B7FFE), chữ `navy-900`, tiến độ `leaf-500`, nền chip/ô `mist`, nền
   ảnh đồ vật `stone`. Font **Inter** cho giao diện; logo chữ "Village to World" vẽ bằng **Baloo 2**
   (quả địa cầu thay chữ "o") cho tới khi có file logo chính thức (`components/layout/Logo.tsx`).
-- **Khung**: sidebar navy với 4 mục và người học (avatar, tên, **Level**) ở dưới; phần lớn màn có
-  thanh trên (breadcrumb / Back / tiêu đề); Flashcards và Topic Overview không có header. **Level** = 1 + số từ
+- **Khung**: sidebar navy (nền ảnh ngôi làng) với 4 mục (Journey, Vocabulary, Conversation, Settings)
+  và người học (avatar, tên, **Level**) ở dưới; phần lớn màn có thanh trên (breadcrumb / Back /
+  tiêu đề, không có avatar); Flashcards, Topic Overview và Explore không có header. **Level** = 1 + số từ
   đã học / `LEVEL_CONFIG.wordsPerLevel` (mặc định 10), luôn tính từ tiến độ, không lưu riêng.
 - **Menu thu gọn / mở rộng**: một sidebar dùng chung cho mọi màn, logo luôn ghim ở góc trái; nút ở
   cuối menu thu menu về chỉ còn icon hoặc mở lại đủ 4 mục kèm chữ (mặc định mở trên desktop, thu gọn
@@ -243,7 +248,14 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   - Setup **không có nút "Upload Photo"** và nhãn là "Profile Picture" (bắt buộc chọn boy/girl) —
     spec §2.1, §6 cấm upload. Settings có "Change Photo" nhưng chỉ đổi giữa 2 nhân vật.
   - Thanh Objects Found nằm **ngay dưới** tranh thay vì đè lên mép dưới tranh, để không che vật ở
-    sát đáy (thảm, dép). Tranh co theo chiều cao màn hình, hai bên là nền mờ.
+    sát đáy (thảm, dép). Tranh co theo chiều cao màn hình, hai bên là ảnh nền đồng cỏ (giống trang
+    Vocabulary). Nút Back nằm trong thanh (bên trái, tên "Objects Found" ở giữa) và hàng ô có nút
+    Previous/Next. Khi **toàn màn hình** (áp dụng cho cả trang nên giữ nguyên khi trả lời câu hỏi)
+    chỉ còn bức tranh và các nút zoom.
+  - Câu hỏi trắc nghiệm **không có nút "Check Answer"**: bấm đáp án là chấm ngay (đáp án là button,
+    không phải radio, để phím mũi tên không gửi nhầm); phím Enter ở màn "Correct!" = Next Object.
+  - Danh sách Vocabulary: mỗi nhóm đóng/mở được (nhóm đầu mở sẵn), lưới 4/2/1 thẻ theo chiều rộng,
+    % hoàn thành hiện ngay cạnh tên scene.
   - Màn Settings chỉ có các trường như thiết kế; tuỳ chọn âm thanh / nghĩa tiếng Việt vẫn nằm trong
     `AppSettings` (mặc định bật) nhưng không còn công tắc trên giao diện.
   - Transcript, Detail có thêm nút "Practice Speaking" / "View Conversation" để đi tiếp hành trình.

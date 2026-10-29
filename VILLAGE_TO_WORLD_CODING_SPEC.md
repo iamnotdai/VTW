@@ -129,7 +129,7 @@ First launch
 
 ### 5.1. Khung layout chung
 
-- **Desktop:** Sidebar dọc bên trái, logo đầu menu, avatar/tên người học phía dưới; header/breadcrumb ở nội dung nếu màn có nội dung phụ; scene là vùng trung tâm.
+- **Desktop:** Sidebar dọc bên trái (nền là ảnh ngôi làng, phần trên giữ màu navy để menu dễ đọc), logo đầu menu, avatar/tên/Level người học phía dưới (chỉ nằm ở sidebar, không lặp ở header); header/breadcrumb ở nội dung nếu màn có nội dung phụ (Topic Overview, Flashcards, Explore **không có header**); scene là vùng trung tâm.
 - **Tablet:** Sidebar thu gọn theo độ rộng, vẫn dễ sử dụng bằng cảm ứng.
 - **Mobile:** Sidebar chuyển thành drawer hoặc bottom navigation phù hợp; không để sidebar chiếm hết diện tích scene. Các nút tối thiểu khoảng 44×44 CSS px.
 - **Home:** Giữ hình nền như ảnh đã chốt và không thêm UI điều hướng ở nội dung; vẫn có menu chính của ứng dụng.
@@ -164,18 +164,23 @@ First launch
 ### 7.1. Vocabulary Scene List
 
 - Group theo vùng: `Home`, `Garden`, có thể bổ sung `Village`, `School`, `Town`...
-- Mỗi scene card: thumbnail, tên, số từ, `% completed`, biểu tượng/nút truy cập.
+- Mỗi nhóm là một thanh trắng **đóng/mở được** (accordion): icon của nhóm (khai báo `icon` trong `SCENE_GROUPS`, nhóm chưa có ảnh thì bỏ trống), tên nhóm, số scene, nút mũi tên. Nhóm đầu tiên mở sẵn, các nhóm mở độc lập; thanh là `button` có `aria-expanded`/`aria-controls`.
+- Lưới thẻ dùng chung cho mọi nhóm: dưới 480px 1 thẻ/hàng, từ 480px đến dưới 1024px 2 thẻ/hàng, từ 1024px 4 thẻ/hàng.
+- Mỗi scene card: thumbnail, tên, `% completed` (số % màu xanh ở bên phải tên), thanh tiến độ.
+- Trang full chiều rộng, nền là ảnh đồng cỏ ở độ mờ 80%; tiêu đề trang (header trong suốt, có đường kẻ mỏng) đứng cố định, chỉ danh sách bên dưới cuộn.
 - Hiển thị progress bar dựa trên số từ đã hoàn thành trong scene.
 - Ví dụ: Bedroom có 24 từ; 6 từ đã học → **25%**.
 - Với scene chưa có nội dung thật, đánh dấu `Coming soon` hoặc ẩn, không đưa người dùng vào trang rỗng.
 
 ### 7.2. Topic Overview
 
-- Ảnh lớn Bedroom.
+- Không có header; nền cùng ảnh với trang Vocabulary. Từ tablet trở lên trang cao đúng một màn hình, chừa dải trống ở đầu trang bằng chỗ header của trang Vocabulary.
+- Một thẻ trắng chia 60/40: ảnh lớn Bedroom bên trái, thông tin bên phải (điện thoại thì xếp dọc).
 - Tên scene, mô tả ngắn.
-- Các chỉ số: `24 Words`, `10 Conversations`, phần trăm hoàn thành.
+- Ba ô chỉ số: `24 Words`, `10 Conversations`, vòng tròn hiển thị phần trăm hoàn thành.
 - `Start Learning`: vào flashcards nếu lần đầu; về sau có thể Resume theo tiến độ.
 - `View Conversations`: vào danh sách hội thoại tương ứng.
+- `Back`: nút thứ ba trong cùng khối nút, về danh sách Vocabulary.
 
 ### 7.3. Flashcards
 
@@ -198,7 +203,7 @@ Tâm điểm của trải nghiệm:
 5. Khi di chuột ra: tắt hover, không ảnh hưởng các đồ vật khác.
 6. Khi click/tap: lưu `selectedWordId`, tạm khóa chọn đồ vật khác, mở Quiz (overlay hoặc route).
 7. Sau câu trả lời đúng: đánh dấu đồ vật đã tìm, cập nhật progress và thanh **Objects Found**.
-8. Có zoom in/out/reset và fullscreen **nếu trình duyệt hỗ trợ**.
+8. Có zoom in/out/reset và fullscreen **nếu trình duyệt hỗ trợ**. Mức zoom và vị trí kéo được nhớ theo scene (trong bộ nhớ, không lưu) nên quay lại từ câu hỏi/đáp án vẫn như cũ.
 9. Trên mobile **không dựa vào hover**: chạm lần đầu nên chọn và highlight/hiện label; chạm tiếp hoặc nút “Learn” để mở câu hỏi. Có thể dùng single-tap mở câu hỏi nếu UX test thấy dễ dùng.
 10. Các vùng mục tiêu phải đủ rộng cho cảm ứng; nếu vật nhỏ, có thể mở rộng `hitArea` nhưng không làm viền highlight sai hình.
 
@@ -209,6 +214,12 @@ Tâm điểm của trải nghiệm:
 - Muốn **viền đúng biên vật thể**, dùng contour/path SVG hoặc mask, không chỉ vẽ border hình chữ nhật.
 - Không thể tự động có highlight đúng mọi đồ vật chỉ từ một ảnh JPG/WebP chung nếu chưa có tọa độ/mask/sprite cho từng đồ vật.
 - Cần xử lý thứ tự chồng lớp (`zIndex`) và đồ vật bị che một phần.
+
+**Bố cục màn Explore (không header):**
+
+- Ảnh vừa khít (không cắt) trên nền ảnh giống trang Vocabulary; ảnh co theo chiều cao màn hình, chừa chỗ cho thanh Objects Found.
+- Thanh **Objects Found** rộng bằng ảnh, nằm ngay dưới ảnh. Hàng tiêu đề chia ba: nút `Back` (về Topic Overview) ở bên trái, tên "Objects Found" ở giữa, bộ đếm `x / 24` (và `View Conversations` khi đã tìm đủ) ở bên phải. Hàng ô đồ vật có nút Previous/Next ở hai đầu, cuộn khoảng 80% chiều rộng mỗi lần bấm.
+- **Fullscreen** áp dụng cho cả trang (không chỉ khung ảnh) nên giữ nguyên khi chuyển sang câu hỏi và đáp án rồi quay lại. Khi fullscreen: ẩn sidebar/menu dưới, ẩn thanh Objects Found và nút Back, ảnh lớn hết cỡ trên nền navy; thoát bằng nút thu nhỏ ở góc ảnh hoặc phím Esc. Hotspot vẫn dùng được bằng chuột, chạm và bàn phím.
 
 ### 7.5. Quy chuẩn asset cho scene
 
@@ -276,7 +287,7 @@ export function pickAnswerMode(
 
 ### Feedback
 
-- **Correct:** icon check, từ, IPA, meaning, example sentences, related words, `Next Object`.
+- **Correct:** icon check, từ, IPA, meaning, example sentences, related words, `Next Object` (phím Enter cũng làm việc của nút này, trừ khi đang focus vào một nút/link/ô nhập khác).
 - **Incorrect:** báo nhẹ nhàng, không gây cảm giác thất bại; cho `Try Again` và/hoặc `Show Answer`, tùy config.
 - Chỉ đánh dấu `completedWordIds` khi trả lời **đúng**, không khi xem flashcard hoặc xem đáp án.
 - Đồ vật đã học vẫn bấm xem lại được; không cộng tiến độ lần nữa.
@@ -595,13 +606,14 @@ export function InteractiveScene({
 
 - Sidebar đủ rộng cho logo và 4 menu.
 - Scene giữ tỷ lệ gốc và tận dụng chiều rộng, không kéo méo.
-- Objects Found ở cạnh dưới vùng scene; quiz có thể xuất hiện dạng card nổi hoặc màn riêng.
+- Objects Found ở cạnh dưới vùng scene (kèm Back và nút Previous/Next); quiz có thể xuất hiện dạng card nổi hoặc màn riêng.
+- Danh sách scene: 4 thẻ/hàng.
 - Flashcard lớn căn giữa, nền scene blur nhẹ phía sau (nếu máy đủ mạnh).
 
 ### Tablet (gợi ý 768–1023px)
 
 - Sidebar rút gọn hoặc chuyển sang drawer.
-- Card grid 2 cột hoặc 3 cột tùy chiều ngang.
+- Card grid 2 cột.
 - Scene scale đều, nút zoom lớn để chạm.
 
 ### Mobile (dưới 768px)
@@ -609,7 +621,8 @@ export function InteractiveScene({
 - Dùng asset **mobile riêng** cho Setup/Home nếu được cung cấp.
 - Scene Bedroom bản desktop có thể hiển thị `contain` và zoom/pan; **không crop làm mất đồ vật tương tác**.
 - Quiz nên dùng bottom sheet hoặc màn full screen dễ bấm.
-- Objects Found có horizontal scroll; nhãn rõ và không che scene quá nhiều.
+- Danh sách scene: 1 thẻ/hàng dưới 480px, 2 thẻ/hàng từ 480px.
+- Objects Found có horizontal scroll (và nút Previous/Next); nhãn rõ và không che scene quá nhiều. Trên điện thoại ảnh ở trên, thanh Objects Found ngay dưới ảnh.
 - Không dùng hover là hành động duy nhất; mọi chức năng phải thực hiện được qua touch.
 
 ### Accessibility

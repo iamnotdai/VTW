@@ -8,6 +8,7 @@ export function createEmptyProgress(now: Date = new Date()): LearningProgress {
     completedConversationIds: [],
     lastFlashcardIndexByScene: {},
     favoriteWordIds: [],
+    celebratedSceneIds: [],
     updatedAt: now.toISOString(),
   };
 }
@@ -135,6 +136,38 @@ export function toggleFavoriteWord(
   };
 }
 
+/** The "Completed!" popup of a scene was shown (or dismissed) in the current Explore round. */
+export function markSceneCelebrated(
+  progress: LearningProgress,
+  sceneId: string,
+  now: Date = new Date(),
+): LearningProgress {
+  if (progress.celebratedSceneIds.includes(sceneId)) return progress;
+  return {
+    ...progress,
+    celebratedSceneIds: [...progress.celebratedSceneIds, sceneId],
+    updatedAt: now.toISOString(),
+  };
+}
+
+/**
+ * "Play again": empties the Explore round of one scene (Objects Found + the popup flag). The
+ * learned words (`completedWordIdsByScene`) stay, so the % and the level only ever count the first
+ * completion.
+ */
+export function resetSceneRound(
+  progress: LearningProgress,
+  sceneId: string,
+  now: Date = new Date(),
+): LearningProgress {
+  return {
+    ...progress,
+    foundWordIdsByScene: { ...progress.foundWordIdsByScene, [sceneId]: [] },
+    celebratedSceneIds: progress.celebratedSceneIds.filter((id) => id !== sceneId),
+    updatedAt: now.toISOString(),
+  };
+}
+
 /** Number of different words learned in every scene. */
 export function getTotalCompletedWords(progress: LearningProgress): number {
   return new Set(Object.values(progress.completedWordIdsByScene).flat()).size;
@@ -172,6 +205,7 @@ export function mergeProgress(a: LearningProgress, b: LearningProgress): Learnin
     },
     // Hearts can be removed, so the newest list wins instead of a union.
     favoriteWordIds: [...newer.favoriteWordIds],
+    celebratedSceneIds: unique([...a.celebratedSceneIds, ...b.celebratedSceneIds]),
     updatedAt: newer.updatedAt,
   };
 }
@@ -202,6 +236,7 @@ export function sanitizeProgress(raw: unknown): LearningProgress | null {
       typeof raw.lastVisitedSceneId === 'string' ? raw.lastVisitedSceneId : undefined,
     lastFlashcardIndexByScene: sanitizeIndexRecord(raw.lastFlashcardIndexByScene),
     favoriteWordIds: sanitizeStringList(raw.favoriteWordIds),
+    celebratedSceneIds: sanitizeStringList(raw.celebratedSceneIds),
     updatedAt: typeof raw.updatedAt === 'string' ? raw.updatedAt : new Date(0).toISOString(),
   };
 }

@@ -16,6 +16,12 @@ export const AVATAR_IMAGES: Record<AvatarChoice, string> = {
   girl: '/assets/branding/avatar-girl.webp',
 };
 
+/** Celebration artwork of the "Completed!" popup (Explore), matching the learner's picture. */
+export const COMPLETED_IMAGES: Record<AvatarChoice, string> = {
+  boy: '/assets/branding/completed-boy.webp',
+  girl: '/assets/branding/completed-girl.webp',
+};
+
 export const AVATAR_LABELS: Record<AvatarChoice, string> = {
   boy: 'Boy',
   girl: 'Girl',

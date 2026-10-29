@@ -3,8 +3,10 @@ import {
   createEmptyProgress,
   isWordCompleted,
   markConversationCompleted,
+  markSceneCelebrated,
   markWordCompleted,
   mergeProgress,
+  resetSceneRound,
   setLastFlashcardIndex,
   setLastVisitedScene,
   toggleFavoriteWord,
@@ -20,6 +22,10 @@ interface ProgressState {
   setFlashcardIndex: (sceneId: string, index: number) => void;
   visitScene: (sceneId: string) => void;
   toggleFavorite: (wordId: string) => void;
+  /** The "Completed!" popup was shown for this scene; it stays closed until the next round. */
+  celebrateScene: (sceneId: string) => void;
+  /** Starts the scene's Explore over. Learned words (% and level) are kept. */
+  resetScene: (sceneId: string) => void;
   reload: () => void;
 }
 
@@ -48,6 +54,13 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       commit(setLastFlashcardIndex(get().progress, sceneId, index)),
     visitScene: (sceneId) => commit(setLastVisitedScene(get().progress, sceneId)),
     toggleFavorite: (wordId) => commit(toggleFavoriteWord(get().progress, wordId)),
+    celebrateScene: (sceneId) => commit(markSceneCelebrated(get().progress, sceneId)),
+    resetScene: (sceneId) => {
+      // Saved as is: `commit` merges lists by union and would bring the found objects back.
+      const next = resetSceneRound(get().progress, sceneId);
+      progressRepository.save(next);
+      set({ progress: next });
+    },
     reload: () => set({ progress: loadProgress() }),
   };
 });

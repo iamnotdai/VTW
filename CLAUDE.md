@@ -38,6 +38,6 @@ differences). Team docs: `README.md` (Vietnamese), asset workflow: `docs/asset-p
   `coral`, `cream`, `mist`, `stone`, `canvas`); font Inter, `font-brand` (Baloo 2) only for the logo.
   There is no tailwind-merge: don't pass a class that conflicts with a component's base display/size
   (use the component's `size`/`variant` props instead).
-- Every screen except Journey (`/`) starts with `TopBar` (`components/layout/PageHeader.tsx`). The menu is one
+- Every screen except Journey (`/`), Topic Overview, Flashcards and Explore starts with `TopBar` (`components/layout/PageHeader.tsx`). The menu is one
   collapsible sidebar (`components/layout/Sidebar.tsx`) shared by all screens: logo pinned on top,
   a button collapses it to icons only.

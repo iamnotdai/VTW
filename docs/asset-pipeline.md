@@ -81,3 +81,39 @@ tranh, nên dễ soát hết 24 vật xem viền có khớp không.
 
 Không còn ảnh SVG tự sinh. Chép file WebP vào đúng tên ở mục 1 (scene khác đặt `<id>-desktop.webp`,
 `<id>-mobile.webp`), rồi chạy `npm run content:check`. Cho tới khi đủ file, check sẽ báo thiếu ảnh.
+
+## 7. Ảnh giao diện (ngoài scene)
+
+Ba loại ảnh này không nằm trong `src/data/scenes/*.json` mà khai báo trong code, nên
+`npm run content:check` **không kiểm tra** chúng: sau khi thay file phải mở app xem bằng mắt.
+Tất cả đều là WebP và phải render qua `assetUrl()`.
+
+| File                                                               | Khai báo                                     | Dùng ở                                                                       |
+| ------------------------------------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------- |
+| `public/assets/backgrounds/vocabulary-desktop.webp`                | `VOCABULARY_BACKGROUND` (`config/assets.ts`) | Nền trang Vocabulary, Topic Overview, Explore                                |
+| `public/assets/backgrounds/sidebar.webp`                           | `SIDEBAR_BACKGROUND` (`config/assets.ts`)    | Nền sidebar (menu bên trái)                                                  |
+| `public/assets/branding/completed-boy.webp`, `completed-girl.webp` | `COMPLETED_IMAGES` (`config/assets.ts`)      | Hình bé trong popup "Completed!" của Explore (theo hình bé trai/gái đã chọn) |
+| `public/assets/icons/group-<id>.webp`                              | `SCENE_GROUPS[].icon` (`config/app.ts`)      | Icon cạnh tên nhóm scene (Vocabulary, Conversation)                          |
+
+### Nền Vocabulary
+
+- Tỉ lệ **16:9** (hiện 1672×941). Hiển thị `cover`, căn từ trên, ở độ mờ 80% (`VocabularyBackdrop`).
+- Phần giữa ảnh nên là vùng **sáng, gần như trống** (kem/vàng nhạt): thẻ scene, tiêu đề và chữ phụ
+  nằm đè lên đó. Cảnh chi tiết (cây, nhà, hoa) đặt ở mép trời và mép dưới.
+- Chưa có bản dọc cho điện thoại: mobile dùng chung ảnh này và bị cắt hai bên.
+
+### Nền sidebar
+
+- Ảnh **dọc 1:3** (hiện 480×1440). Hiển thị `cover`, căn đáy, nên khi sidebar thu gọn (80px) chỉ thấy
+  phần giữa ảnh.
+- **Phần trên phải là navy trơn** (khoảng 60% chiều cao) để logo và 4 mục menu dễ đọc; cảnh ngôi làng
+  chỉ nằm ở phần dưới, nơi có avatar và tên người học (chữ trắng đè lên, tránh vùng quá sáng).
+
+### Icon nhóm scene
+
+- Vuông **256×256**, **nền trong suốt**, WebP (khoảng 10–15 KB). Hiển thị 48px nên chọn hình đơn
+  giản, đậm nét, không chữ.
+- Tên file theo id nhóm: `group-home.webp`, `group-garden.webp`. Hiện có Home và Garden.
+- Thêm icon cho nhóm khác (`village`, `school`, `town`): chép file vào `public/assets/icons/` rồi thêm
+  `icon: '/assets/icons/group-village.webp'` vào dòng nhóm đó trong `SCENE_GROUPS`. Nhóm chưa có
+  `icon` vẫn hiển thị bình thường, chỉ không có ảnh.

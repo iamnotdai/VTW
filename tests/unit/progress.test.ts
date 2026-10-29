@@ -1,11 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import {
   createEmptyProgress,
+  getFoundWordIds,
   getLearnerLevel,
+  getTotalCompletedWords,
   getSceneProgressPercent,
   markConversationCompleted,
+  markSceneCelebrated,
   markWordCompleted,
   mergeProgress,
+  resetSceneRound,
   sanitizeProgress,
   setLastFlashcardIndex,
   toggleFavoriteWord,
@@ -130,5 +134,32 @@ describe('sanitizeProgress', () => {
     expect(result!.completedConversationIds).toEqual([]);
     expect(result!.lastFlashcardIndexByScene).toEqual({ bedroom: 4 });
     expect(result!.favoriteWordIds).toEqual([]);
+  });
+});
+
+describe('Explore round (Completed popup + Play again)', () => {
+  it('celebrates a scene once until it is reset', () => {
+    const once = markSceneCelebrated(createEmptyProgress(), 'bedroom');
+    expect(once.celebratedSceneIds).toEqual(['bedroom']);
+    expect(markSceneCelebrated(once, 'bedroom')).toBe(once);
+  });
+
+  it('reset empties Objects Found but keeps learned words, the % and the level', () => {
+    let progress = createEmptyProgress();
+    for (const id of SCENE) progress = markWordCompleted(progress, 'bedroom', id);
+    progress = markSceneCelebrated(progress, 'bedroom');
+    const level = getLearnerLevel(progress);
+
+    const reset = resetSceneRound(progress, 'bedroom');
+    expect(getFoundWordIds(reset, 'bedroom')).toEqual([]);
+    expect(reset.celebratedSceneIds).toEqual([]);
+    expect(reset.completedWordIdsByScene.bedroom).toHaveLength(24);
+    expect(getTotalCompletedWords(reset)).toBe(24);
+    expect(getLearnerLevel(reset)).toBe(level);
+
+    // Answering again refills Objects Found without counting the word twice.
+    const again = markWordCompleted(reset, 'bedroom', 'w1');
+    expect(getFoundWordIds(again, 'bedroom')).toEqual(['w1']);
+    expect(getTotalCompletedWords(again)).toBe(24);
   });
 });

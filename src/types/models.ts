@@ -145,6 +145,11 @@ export interface LearningProgress {
   lastFlashcardIndexByScene: Record<string, number>;
   /** @extension Words the learner marked with the heart on a flashcard. */
   favoriteWordIds: string[];
+  /**
+   * @extension Scenes whose "Completed!" popup was already shown for the current Explore round.
+   * Cleared by "Play again" so the next round celebrates again.
+   */
+  celebratedSceneIds: string[];
   updatedAt: string;
 }
 
