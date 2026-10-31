@@ -3,12 +3,15 @@ import { useState, type ReactNode } from 'react';
 import { AudioButton } from '@/components/common/AudioButton';
 import { Button } from '@/components/common/Button';
 import { IconButton } from '@/components/common/IconButton';
+import { FLASHCARD_TITLE_MIN_SCALE } from '@/config/app';
 import { getWord } from '@/data/content';
+import { useFitText } from '@/hooks/useFitText';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore } from '@/stores/settingsStore';
 import type { Word } from '@/types/models';
+import { RelatedWordChip } from './RelatedWordChip';
 
 interface FlashcardProps {
   word: Word;
@@ -29,6 +32,7 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
   const favorite = useProgressStore((state) => state.progress.favoriteWordIds.includes(word.id));
   const toggleFavorite = useProgressStore((state) => state.toggleFavorite);
   const [meaningVisible, setMeaningVisible] = useState(false);
+  const titleRef = useFitText<HTMLHeadingElement>(word.text, FLASHCARD_TITLE_MIN_SCALE);
   const related = word.relatedWordIds
     .map((id) => getWord(id))
     .filter((item): item is Word => !!item)
@@ -58,8 +62,9 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
 
       <div className="mt-2 flex items-center justify-center gap-3">
         <h2
+          ref={titleRef}
           lang="en"
-          className="text-[2.75rem] leading-none font-extrabold text-navy-900 sm:text-[3.25rem]"
+          className="min-w-0 overflow-hidden text-[2.75rem] leading-tight font-extrabold whitespace-nowrap text-navy-900 sm:text-[3.25rem]"
         >
           {word.text}
         </h2>
@@ -107,8 +112,8 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
 
       <hr className="my-4 border-navy-100" />
 
-      <h3 className="text-lg font-bold text-navy-900">Example Sentences</h3>
-      <ul className="mt-1 flex flex-col">
+      <h3 className="text-lg font-bold text-navy-900">Example</h3>
+      <ul className="mt-2 flex flex-col gap-2">
         {word.examples.map((example, exampleIndex) => (
           <li key={example.en} className="flex items-center gap-1.5">
             <AudioButton
@@ -137,21 +142,7 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
           <h3 className="mt-3 text-lg font-bold text-navy-900">Related Words</h3>
           <ul className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">
             {related.map((item) => (
-              <li
-                key={item.id}
-                className="flex h-13 min-w-0 items-center gap-2.5 rounded-xl bg-mist px-2.5 sm:px-3.5"
-              >
-                <img
-                  src={assetUrl(item.image)}
-                  alt=""
-                  className="size-8 shrink-0 object-contain"
-                  loading="lazy"
-                  draggable={false}
-                />
-                <span lang="en" className="truncate text-[1.0625rem] font-semibold text-navy-700">
-                  {item.text}
-                </span>
-              </li>
+              <RelatedWordChip key={item.id} word={item} />
             ))}
           </ul>
         </>

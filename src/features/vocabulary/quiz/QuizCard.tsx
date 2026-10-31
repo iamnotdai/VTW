@@ -54,20 +54,25 @@ export function QuizCard({
   );
 }
 
-/** Warm grey tile with the object picture (left column of the question and answer cards). */
+/**
+ * Warm grey tile with the object picture (left column of the question and answer cards).
+ * `corner` sits in its top-right corner (the quiz's listen button).
+ */
 export function ObjectTile({
   image,
   alt,
+  corner,
   className,
 }: {
   image: string;
   alt: string;
+  corner?: ReactNode;
   className?: string;
 }) {
   return (
     <div
       className={cn(
-        'flex aspect-square w-full items-center justify-center rounded-2xl bg-stone',
+        'relative flex aspect-square w-full items-center justify-center rounded-2xl bg-stone',
         className,
       )}
     >
@@ -77,6 +82,7 @@ export function ObjectTile({
         className="max-h-[74%] max-w-[74%] object-contain drop-shadow-[0_14px_14px_rgb(60_40_20/0.18)]"
         draggable={false}
       />
+      {corner && <div className="absolute top-3 right-3">{corner}</div>}
     </div>
   );
 }

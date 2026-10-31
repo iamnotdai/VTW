@@ -5,6 +5,7 @@ import { Button } from '@/components/common/Button';
 import { getWord } from '@/data/content';
 import { useSettingsStore } from '@/stores/settingsStore';
 import type { Word } from '@/types/models';
+import { RelatedWordChip } from './RelatedWordChip';
 
 /** Word, listen button, "Show Meaning" and IPA (top of the answer card, spec §8 Feedback). */
 export function WordHeadline({ word }: { word: Word }) {
@@ -58,8 +59,8 @@ export function WordExtras({ word }: { word: Word }) {
   return (
     <div className="flex flex-col gap-4">
       <div>
-        <h2 className="text-lg font-bold text-navy-900">Example Sentences</h2>
-        <ul className="mt-1 flex flex-col">
+        <h2 className="text-lg font-bold text-navy-900">Example</h2>
+        <ul className="mt-2 flex flex-col gap-2">
           {word.examples.map((example, index) => (
             <li key={example.en} className="flex items-center gap-2">
               <AudioButton
@@ -82,13 +83,7 @@ export function WordExtras({ word }: { word: Word }) {
           <h2 className="text-lg font-bold text-navy-900">Related Words</h2>
           <ul className="mt-2.5 grid grid-cols-2 gap-2.5 sm:grid-cols-4">
             {related.map((item) => (
-              <li
-                key={item.id}
-                lang="en"
-                className="flex h-15 items-center justify-center rounded-xl bg-mist px-3 text-lg font-semibold text-brand-700"
-              >
-                {item.text}
-              </li>
+              <RelatedWordChip key={item.id} word={item} />
             ))}
           </ul>
         </div>

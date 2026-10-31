@@ -65,9 +65,8 @@ function TopicOverview({ scene }: { scene: Scene }) {
   return (
     <div className="relative flex flex-1 flex-col">
       <VocabularyBackdrop />
+      {/* No header here: the card fills the screen with the same margin on every side. */}
       <PageContainer width="full" className="relative flex flex-col gap-5 md:h-dvh">
-        {/* No header here, but keep the blank band the Vocabulary list's header occupies. */}
-        <div aria-hidden className="-mb-5 hidden h-24 shrink-0 md:block" />
         <div className="grid gap-5 rounded-3xl bg-white p-4 shadow-soft sm:p-6 md:min-h-0 md:flex-1 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:grid-rows-1 md:gap-8">
           <div className="relative overflow-hidden rounded-2xl bg-cream-100">
             <img

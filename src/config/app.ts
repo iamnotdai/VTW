@@ -45,6 +45,8 @@ export const QUIZ_CONFIG = {
   minChoiceCount: 3,
   /** Offer "Show Answer" after a wrong answer. Showing the answer never completes the word. */
   allowShowAnswer: true,
+  /** Read "What is this?" aloud when a question appears (only if sound is on in Settings). */
+  speakQuestion: true,
 } as const;
 
 export const DEFAULT_SETTINGS: AppSettings = {
@@ -61,6 +63,12 @@ export const ZOOM_CONFIG = {
   max: 3,
   step: 0.5,
 } as const;
+
+/** Flashcard word title: kept on one line, shrunk to fit the card down to this fraction of its size. */
+export const FLASHCARD_TITLE_MIN_SCALE = 0.4;
+
+/** Related word chips: a long word shrinks to fit its chip, down to this fraction of its size. */
+export const RELATED_WORD_MIN_SCALE = 0.6;
 
 /** Conversation video player: speeds offered by the "1.0x" button, and what counts as "HD". */
 export const VIDEO_CONFIG = {

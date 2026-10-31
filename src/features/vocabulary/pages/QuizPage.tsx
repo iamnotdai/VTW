@@ -7,6 +7,7 @@ import { Button } from '@/components/common/Button';
 import { QUIZ_CONFIG } from '@/config/app';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { useAudioStore } from '@/stores/audioStore';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Scene, Word } from '@/types/models';
 import { MultipleChoiceQuestion } from '../quiz/MultipleChoiceQuestion';
@@ -15,6 +16,9 @@ import { isSessionFor, useQuizSessionStore, type QuizAnswer } from '../quiz/quiz
 import { startQuestion } from '../quiz/startQuestion';
 import { TypingQuestion } from '../quiz/TypingQuestion';
 import { useSceneParam, useSceneWordParam } from '../useSceneParam';
+
+const QUESTION_TEXT = 'What is this?';
+const QUESTION_SOUND_KEY = 'quiz:question';
 
 /** Screen 07 — Vocabulary Quiz (`/vocabulary/:sceneId/quiz/:wordId`). */
 export function QuizPage() {
@@ -27,7 +31,7 @@ export function QuizPage() {
 }
 
 function Quiz({ scene, word }: { scene: Scene; word: Word }) {
-  useDocumentTitle('What is this?');
+  useDocumentTitle(QUESTION_TEXT);
   const navigate = useNavigate();
   const location = useLocation();
   const navState = getNavigationState(location.state);
@@ -50,6 +54,18 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
       (current.status === 'answering' || current.status === 'incorrect');
     if (!reusable) startQuestion(scene, word);
   }, [scene, word]);
+
+  // Read the question aloud when it appears (the learner just tapped an object, so the browser
+  // allows it). "Try Again" keeps the same question and does not repeat it.
+  const questionId = active?.question.id;
+  useEffect(() => {
+    if (!questionId || !QUIZ_CONFIG.speakQuestion) return;
+    const audio = useAudioStore.getState();
+    audio.play(QUESTION_SOUND_KEY, { text: QUESTION_TEXT });
+    return () => {
+      if (useAudioStore.getState().playingKey === QUESTION_SOUND_KEY) audio.stop();
+    };
+  }, [questionId]);
 
   const backToScene = () => {
     useQuizSessionStore.getState().clear();
@@ -80,26 +96,25 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
         <ObjectTile
           image={word.image}
           alt="The object you chose"
-          className="mx-auto max-w-56 sm:max-w-none"
-        />
-
-        <div className="flex flex-col justify-center">
-          <div className="flex items-center gap-3 pr-10 sm:pr-8">
+          corner={
             <AudioButton
               soundKey={`word:${word.id}`}
               text={word.text}
               src={word.audio}
               label="Listen to the word"
               variant="brand"
-              size="lg"
             />
-            <h1
-              id="quiz-title"
-              className="text-[2.125rem] leading-tight font-extrabold text-navy-900"
-            >
-              What is this?
-            </h1>
-          </div>
+          }
+          className="mx-auto max-w-56 sm:max-w-none"
+        />
+
+        <div className="flex flex-col justify-center">
+          <h1
+            id="quiz-title"
+            className="pr-10 text-[2.125rem] leading-tight font-extrabold text-navy-900 sm:pr-8"
+          >
+            {QUESTION_TEXT}
+          </h1>
           <p className="sr-only">
             {question.mode === 'typing' ? 'Type the word in English.' : 'Choose the right word.'}
           </p>
