@@ -49,6 +49,8 @@ export const QUIZ_CONFIG = {
   speakQuestion: true,
   /** No prompt appears twice within this many consecutive questions. */
   promptNoRepeatWindow: 5,
+  /** When the learner can type: share of typing questions (30%); the rest are multiple-choice. */
+  typingProbability: 0.3,
 } as const;
 
 /** Feedback sounds: correct / wrong answer, completed (synthesized, see `src/lib/sfx.ts`). */
@@ -103,7 +105,6 @@ export const QUIZ_PROMPTS = [
 export const DEFAULT_SETTINGS: AppSettings = {
   soundEnabled: true,
   showVietnameseMeaning: true,
-  quizTypingProbability: 0.5,
   voiceURI: null,
   voiceStyle: null,
 };

@@ -5,7 +5,6 @@ import type { AppSettings } from '@/types/models';
 export function sanitizeSettings(raw: unknown): AppSettings | null {
   if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null;
   const value = raw as Record<string, unknown>;
-  const probability = value.quizTypingProbability;
   return {
     soundEnabled:
       typeof value.soundEnabled === 'boolean' ? value.soundEnabled : DEFAULT_SETTINGS.soundEnabled,
@@ -13,10 +12,6 @@ export function sanitizeSettings(raw: unknown): AppSettings | null {
       typeof value.showVietnameseMeaning === 'boolean'
         ? value.showVietnameseMeaning
         : DEFAULT_SETTINGS.showVietnameseMeaning,
-    quizTypingProbability:
-      typeof probability === 'number' && probability >= 0 && probability <= 1
-        ? probability
-        : DEFAULT_SETTINGS.quizTypingProbability,
     voiceURI:
       typeof value.voiceURI === 'string' && value.voiceURI !== ''
         ? value.voiceURI

@@ -190,7 +190,7 @@ describe('Explore → Quiz → Result (screens 06–08)', () => {
 
   it('learner who can type may get a typing question that accepts declared answers', async () => {
     const user = userEvent.setup();
-    vi.spyOn(Math, 'random').mockReturnValue(0.1); // < 0.5 → typing
+    vi.spyOn(Math, 'random').mockReturnValue(0.1); // < 0.3 → typing
     seedProfile({ canTypeWords: true });
     renderApp('/vocabulary/bedroom/quiz/lamp');
 

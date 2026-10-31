@@ -22,9 +22,10 @@ describe('pickAnswerMode (spec §8)', () => {
     }
   });
 
-  it('splits 50/50 by default when the learner can type', () => {
+  it('asks 30% typing / 70% multiple-choice by default when the learner can type', () => {
     expect(pickAnswerMode(true, 0.2)).toBe('typing');
-    expect(pickAnswerMode(true, 0.49)).toBe('typing');
+    expect(pickAnswerMode(true, 0.29)).toBe('typing');
+    expect(pickAnswerMode(true, 0.3)).toBe('multiple-choice');
     expect(pickAnswerMode(true, 0.5)).toBe('multiple-choice');
     expect(pickAnswerMode(true, 0.9)).toBe('multiple-choice');
   });

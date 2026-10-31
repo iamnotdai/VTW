@@ -1,4 +1,4 @@
-import { DEFAULT_SETTINGS, QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
+import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
 import type { Word } from '@/types/models';
 import { shuffle, type RandomFn } from './random';
 import { normalizeAnswer } from './text';
@@ -8,18 +8,18 @@ export type AnswerMode = 'typing' | 'multiple-choice';
 /**
  * Picks the question type (spec §8):
  * - `canTypeWords = false` → always multiple-choice.
- * - `canTypeWords = true`  → typing with probability `typingProbability` (default 50%).
+ * - `canTypeWords = true`  → typing with probability `typingProbability` (default 30%, so 70% multiple-choice).
  * Call it ONCE when the question is created, never during render.
  */
 export function pickAnswerMode(
   canTypeWords: boolean,
   randomValue: number = Math.random(),
-  typingProbability: number = DEFAULT_SETTINGS.quizTypingProbability,
+  typingProbability: number = QUIZ_CONFIG.typingProbability,
 ): AnswerMode {
   if (!canTypeWords) return 'multiple-choice';
   const probability = Number.isFinite(typingProbability)
     ? Math.min(1, Math.max(0, typingProbability))
-    : DEFAULT_SETTINGS.quizTypingProbability;
+    : QUIZ_CONFIG.typingProbability;
   return randomValue < probability ? 'typing' : 'multiple-choice';
 }
 

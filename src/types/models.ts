@@ -161,8 +161,6 @@ export type VoiceStyle = 'boy' | 'girl';
 export interface AppSettings {
   soundEnabled: boolean;
   showVietnameseMeaning: boolean;
-  /** Default 0.5; only used when `canTypeWords` is true. */
-  quizTypingProbability: number;
   /** `voiceURI` of the chosen US-English browser voice; `null` = pick the best one automatically. */
   voiceURI: string | null;
   /** `null` = no preference (adult voice, normal pitch). */

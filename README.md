@@ -183,8 +183,8 @@ Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đ
 
 ### Quiz (spec §8)
 
-- `pickAnswerMode`: `canTypeWords = false` thì 100% trắc nghiệm; `true` thì gõ với xác suất
-  `quizTypingProbability` (mặc định 0.5).
+- `pickAnswerMode`: `canTypeWords = false` thì 100% trắc nghiệm; `true` thì 30% câu gõ đáp án,
+  70% trắc nghiệm (`QUIZ_CONFIG.typingProbability = 0.3` trong `src/config/app.ts`).
 - Câu hỏi (mode + thứ tự đáp án) được tạo **một lần** và đóng băng (`Object.freeze`), lưu trong
   session store, nên re-render hay refresh giữa chừng không random lại.
 - Trắc nghiệm: 3 đáp án A/B/C như thiết kế (`QUIZ_CONFIG.choiceCount`, đổi được thành 4), đáp án nhiễu lấy theo thứ tự `distractorWordIds`
