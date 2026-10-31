@@ -1,7 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { QUIZ_CONFIG } from '@/config/app';
+import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
 import { content, getAllWordIds, getScene, getWord } from '@/data/content';
-import { buildChoices, createQuizQuestion, isTypedAnswerCorrect, pickAnswerMode } from '@/lib/quiz';
+import {
+  buildChoices,
+  createQuizQuestion,
+  isTypedAnswerCorrect,
+  pickAnswerMode,
+  pickQuizPrompt,
+} from '@/lib/quiz';
 import { createSeededRandom } from '@/lib/random';
 import { normalizeAnswer } from '@/lib/text';
 import type { Word } from '@/types/models';
@@ -158,5 +164,39 @@ describe('createQuizQuestion', () => {
     const question = createQuizQuestion({ ...base, canTypeWords: false });
     expect(Object.isFrozen(question)).toBe(true);
     expect(Object.isFrozen(question.choices)).toBe(true);
+  });
+});
+
+describe('pickQuizPrompt', () => {
+  it('never repeats a prompt within the no-repeat window', () => {
+    const window = QUIZ_CONFIG.promptNoRepeatWindow;
+    const random = createSeededRandom(7);
+    const picked: string[] = [];
+    for (let i = 0; i < 500; i += 1)
+      picked.push(pickQuizPrompt(picked, QUIZ_PROMPTS, window, random).id);
+    for (let i = 0; i + window <= picked.length; i += 1) {
+      expect(new Set(picked.slice(i, i + window)).size).toBe(window);
+    }
+    // Every prompt gets used.
+    expect(new Set(picked)).toEqual(new Set(QUIZ_PROMPTS.map((prompt) => prompt.id)));
+  });
+
+  it('still avoids the previous prompt when there are fewer prompts than the window', () => {
+    const two = QUIZ_PROMPTS.slice(0, 2);
+    expect(pickQuizPrompt([two[0].id, two[1].id], two, 5, () => 0).id).toBe(two[0].id);
+    expect(pickQuizPrompt([two[1].id, two[0].id], two, 5, () => 0).id).toBe(two[1].id);
+  });
+
+  it('is fixed on the question when it is created', () => {
+    const question = createQuizQuestion({
+      sceneId: 'bedroom',
+      word: lamp,
+      getWord,
+      sceneWordIds: bedroom.wordIds,
+      canTypeWords: false,
+      recentPromptIds: QUIZ_PROMPTS.slice(1, 5).map((prompt) => prompt.id),
+      random: () => 0,
+    });
+    expect(question.prompt.id).toBe(QUIZ_PROMPTS[0].id);
   });
 });

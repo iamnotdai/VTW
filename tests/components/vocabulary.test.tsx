@@ -1,7 +1,7 @@
 import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
-import { QUIZ_CONFIG } from '@/config/app';
+import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
 import { readStoredProgress, renderApp, seedProfile, seedProgress } from '../helpers';
 
 describe('Vocabulary Scene List (screen 03)', () => {
@@ -122,7 +122,11 @@ describe('Explore → Quiz → Result (screens 06–08)', () => {
     lamp.focus();
     await user.keyboard('{Enter}');
 
-    expect(await screen.findByRole('heading', { name: 'What is this?' })).toBeInTheDocument();
+    // The prompt is one of the 10 questions, picked at random.
+    const promptTexts: string[] = QUIZ_PROMPTS.map((prompt) => prompt.text);
+    expect(
+      await screen.findByRole('heading', { name: (name) => promptTexts.includes(name) }),
+    ).toBeInTheDocument();
     expect(screen.queryByRole('textbox')).toBeNull();
     const group = screen.getByRole('group', { name: 'Choose the right word' });
     expect(within(group).getAllByRole('button')).toHaveLength(QUIZ_CONFIG.choiceCount);

@@ -1,4 +1,4 @@
-import { DEFAULT_SETTINGS, QUIZ_CONFIG } from '@/config/app';
+import { DEFAULT_SETTINGS, QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
 import type { Word } from '@/types/models';
 import { shuffle, type RandomFn } from './random';
 import { normalizeAnswer } from './text';
@@ -86,10 +86,36 @@ export function buildChoices({
   return shuffle([{ wordId: word.id, text: word.text }, ...distractors], random);
 }
 
+export interface QuizPrompt {
+  id: string;
+  text: string;
+  textVi: string;
+}
+
+/**
+ * Picks the question prompt at random, skipping the ones used in the last `window - 1` questions,
+ * so no prompt repeats within `window` consecutive questions. `recentIds` is oldest first.
+ */
+export function pickQuizPrompt(
+  recentIds: readonly string[],
+  prompts: readonly QuizPrompt[] = QUIZ_PROMPTS,
+  window: number = QUIZ_CONFIG.promptNoRepeatWindow,
+  random: RandomFn = Math.random,
+): QuizPrompt {
+  const blocked = new Set(window > 1 ? recentIds.slice(-(window - 1)) : []);
+  const fresh = prompts.filter((prompt) => !blocked.has(prompt.id));
+  // Fewer prompts than the window: settle for anything but the previous one.
+  const pool = fresh.length > 0 ? fresh : prompts.filter((p) => p.id !== recentIds.at(-1));
+  const candidates = pool.length > 0 ? pool : prompts;
+  return candidates[Math.floor(random() * candidates.length)];
+}
+
 export interface QuizQuestion {
   id: string;
   sceneId: string;
   wordId: string;
+  /** The question asked ("What is this object?"), picked once at creation. */
+  prompt: QuizPrompt;
   mode: AnswerMode;
   /** Shuffled once at creation and never re-shuffled. Empty in typing mode. */
   choices: readonly Choice[];
@@ -105,13 +131,15 @@ export interface CreateQuizQuestionParams {
   typingProbability?: number;
   choiceCount?: number;
   minChoiceCount?: number;
+  /** Prompt ids of the previous questions (oldest first), so a prompt isn't repeated too soon. */
+  recentPromptIds?: readonly string[];
   random?: RandomFn;
 }
 
 let questionCounter = 0;
 
 /**
- * Creates an immutable question: the answer mode and the option order are fixed here, so
+ * Creates an immutable question: the prompt, the answer mode and the option order are fixed here, so
  * re-renders cannot change them (spec §8, §16).
  */
 export function createQuizQuestion({
@@ -124,8 +152,10 @@ export function createQuizQuestion({
   typingProbability,
   choiceCount = QUIZ_CONFIG.choiceCount,
   minChoiceCount = QUIZ_CONFIG.minChoiceCount,
+  recentPromptIds = [],
   random = Math.random,
 }: CreateQuizQuestionParams): QuizQuestion {
+  const prompt = pickQuizPrompt(recentPromptIds, QUIZ_PROMPTS, undefined, random);
   let mode = pickAnswerMode(canTypeWords, random(), typingProbability);
   let choices: Choice[] = [];
 
@@ -150,6 +180,7 @@ export function createQuizQuestion({
     id: `${sceneId}:${word.id}:${questionCounter}`,
     sceneId,
     wordId: word.id,
+    prompt,
     mode,
     choices: Object.freeze(choices),
   });

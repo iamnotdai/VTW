@@ -4,6 +4,8 @@ import { paths } from '@/app/paths';
 import { Button, ButtonLink } from '@/components/common/Button';
 import { COMPLETED_IMAGES } from '@/config/assets';
 import { assetUrl } from '@/lib/assets';
+import { playSfx } from '@/lib/sfx';
+import { useSettingsStore } from '@/stores/settingsStore';
 import type { AvatarChoice } from '@/types/models';
 
 interface SceneCompletedDialogProps {
@@ -26,6 +28,11 @@ export function SceneCompletedDialog({
   onReset,
 }: SceneCompletedDialogProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
+
+  // A little fanfare when the popup appears (only if sound is on in Settings).
+  useEffect(() => {
+    if (useSettingsStore.getState().settings.soundEnabled) return playSfx('completed');
+  }, []);
 
   useEffect(() => {
     dialogRef.current?.querySelector('a')?.focus();

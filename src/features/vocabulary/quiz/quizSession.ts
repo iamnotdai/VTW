@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { QUIZ_CONFIG } from '@/config/app';
 import { isChoiceCorrect, isTypedAnswerCorrect, type QuizQuestion } from '@/lib/quiz';
 import type { Word } from '@/types/models';
 
@@ -58,6 +59,8 @@ export function quizReducer(session: QuizSession, action: QuizAction): QuizSessi
 
 interface QuizSessionState {
   session: QuizSession | null;
+  /** Prompt ids of the latest questions (oldest first, in memory only) so prompts don't repeat. */
+  recentPromptIds: readonly string[];
   start: (question: QuizQuestion) => void;
   dispatch: (action: QuizAction) => QuizSession | null;
   setNewlyCompleted: (newlyCompleted: boolean) => void;
@@ -66,7 +69,14 @@ interface QuizSessionState {
 
 export const useQuizSessionStore = create<QuizSessionState>()((set, get) => ({
   session: null,
-  start: (question) => set({ session: createSession(question) }),
+  recentPromptIds: [],
+  start: (question) =>
+    set((state) => ({
+      session: createSession(question),
+      recentPromptIds: [...state.recentPromptIds, question.prompt.id].slice(
+        -QUIZ_CONFIG.promptNoRepeatWindow,
+      ),
+    })),
   dispatch: (action) => {
     const current = get().session;
     if (!current) return null;

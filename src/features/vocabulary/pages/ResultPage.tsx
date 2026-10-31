@@ -7,8 +7,10 @@ import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { cn } from '@/lib/cn';
 import { getFoundWordIds } from '@/lib/progress';
+import { playSfx } from '@/lib/sfx';
 import { describeWord } from '@/lib/text';
 import { useProgressStore } from '@/stores/progressStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import type { Scene, Word } from '@/types/models';
 import { WordExtras, WordHeadline } from '../components/WordDetail';
 import { ObjectTile, QuizCard } from '../quiz/QuizCard';
@@ -83,6 +85,12 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
     if (navState.from === 'explore') navigate(-1);
     else navigate(paths.explore(scene.id), { replace: true });
   };
+
+  // A chime for a correct answer (only if sound is on in Settings).
+  useEffect(() => {
+    if (mode !== 'correct' || !useSettingsStore.getState().settings.soundEnabled) return;
+    return playSfx('correct');
+  }, [mode]);
 
   // Enter does what the big "Next Object" button does, unless it is pressing a control itself.
   useEffect(() => {

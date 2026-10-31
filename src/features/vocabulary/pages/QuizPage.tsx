@@ -7,8 +7,10 @@ import { Button } from '@/components/common/Button';
 import { QUIZ_CONFIG } from '@/config/app';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { playSfx } from '@/lib/sfx';
 import { useAudioStore } from '@/stores/audioStore';
 import { useProgressStore } from '@/stores/progressStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import type { Scene, Word } from '@/types/models';
 import { MultipleChoiceQuestion } from '../quiz/MultipleChoiceQuestion';
 import { ObjectTile, QuizCard } from '../quiz/QuizCard';
@@ -17,7 +19,6 @@ import { startQuestion } from '../quiz/startQuestion';
 import { TypingQuestion } from '../quiz/TypingQuestion';
 import { useSceneParam, useSceneWordParam } from '../useSceneParam';
 
-const QUESTION_TEXT = 'What is this?';
 const QUESTION_SOUND_KEY = 'quiz:question';
 
 /** Screen 07 — Vocabulary Quiz (`/vocabulary/:sceneId/quiz/:wordId`). */
@@ -31,7 +32,6 @@ export function QuizPage() {
 }
 
 function Quiz({ scene, word }: { scene: Scene; word: Word }) {
-  useDocumentTitle(QUESTION_TEXT);
   const navigate = useNavigate();
   const location = useLocation();
   const navState = getNavigationState(location.state);
@@ -45,6 +45,8 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
     (session.status === 'answering' || session.status === 'incorrect')
       ? session
       : null;
+  const prompt = active?.question.prompt;
+  useDocumentTitle(prompt?.text ?? 'Quiz');
 
   // Opened by URL (refresh, deep link): create the question once.
   useEffect(() => {
@@ -58,14 +60,15 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
   // Read the question aloud when it appears (the learner just tapped an object, so the browser
   // allows it). "Try Again" keeps the same question and does not repeat it.
   const questionId = active?.question.id;
+  const promptText = prompt?.text;
   useEffect(() => {
-    if (!questionId || !QUIZ_CONFIG.speakQuestion) return;
+    if (!questionId || !promptText || !QUIZ_CONFIG.speakQuestion) return;
     const audio = useAudioStore.getState();
-    audio.play(QUESTION_SOUND_KEY, { text: QUESTION_TEXT });
+    audio.play(QUESTION_SOUND_KEY, { text: promptText });
     return () => {
       if (useAudioStore.getState().playingKey === QUESTION_SOUND_KEY) audio.stop();
     };
-  }, [questionId]);
+  }, [questionId, promptText]);
 
   const backToScene = () => {
     useQuizSessionStore.getState().clear();
@@ -79,6 +82,8 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
       // Only a correct answer completes the word — once (spec §8 Feedback).
       setNewlyCompleted(completeWord(scene.id, word.id));
       navigate(paths.result(scene.id, word.id), { replace: true, state: navState });
+    } else if (next?.status === 'incorrect' && useSettingsStore.getState().settings.soundEnabled) {
+      playSfx('wrong');
     }
   };
 
@@ -111,9 +116,9 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
         <div className="flex flex-col justify-center">
           <h1
             id="quiz-title"
-            className="pr-10 text-[2.125rem] leading-tight font-extrabold text-navy-900 sm:pr-8"
+            className="pr-10 text-2xl leading-tight font-extrabold text-navy-900 sm:pr-8"
           >
-            {QUESTION_TEXT}
+            {question.prompt.text}
           </h1>
           <p className="sr-only">
             {question.mode === 'typing' ? 'Type the word in English.' : 'Choose the right word.'}

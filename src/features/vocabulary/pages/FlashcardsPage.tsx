@@ -18,7 +18,9 @@ import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
+import { playSfx } from '@/lib/sfx';
 import { useProgressStore } from '@/stores/progressStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import type { Scene } from '@/types/models';
 import { Flashcard } from '../components/Flashcard';
 import { FlashcardStrip } from '../components/FlashcardStrip';
@@ -56,6 +58,7 @@ function Flashcards({ scene }: { scene: Scene }) {
   const finish = useCallback(() => {
     setFlashcardIndex(scene.id, words.length - 1);
     setFinished(true);
+    if (useSettingsStore.getState().settings.soundEnabled) playSfx('completed');
   }, [setFlashcardIndex, scene.id, words.length]);
 
   // Next only moves between cards: it never marks a word as learned (spec §7.3).

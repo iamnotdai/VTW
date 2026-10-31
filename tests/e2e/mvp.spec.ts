@@ -84,8 +84,8 @@ test('MVP journey: setup → explore → quiz → progress → conversation', as
     await lamp.click({ position: lampShade });
   }
 
-  // "Not yet" → multiple choice only.
-  await expect(page.getByRole('heading', { name: 'What is this?' })).toBeVisible();
+  // "Not yet" → multiple choice only. The question is one of several random prompts.
+  await expect(page.locator('#quiz-title')).toBeVisible();
   await expect(page.getByRole('textbox')).toHaveCount(0);
   await page
     .getByRole('group', { name: 'Choose the right word' })
