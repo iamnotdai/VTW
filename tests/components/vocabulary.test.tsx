@@ -19,7 +19,7 @@ describe('Vocabulary Scene List (screen 03)', () => {
     expect(within(bedroomLink).getByText(/25% completed/)).toBeInTheDocument();
     expect(within(bedroomLink).getByRole('progressbar')).toHaveAttribute('aria-valuenow', '25');
     expect(screen.getAllByText('Coming soon').length).toBeGreaterThanOrEqual(5);
-    expect(screen.queryByRole('link', { name: /Kitchen/ })).toBeNull();
+    expect(screen.queryByRole('link', { name: /Dining Room/ })).toBeNull();
   });
 
   it('opens the first area and expands or collapses areas with their header', async () => {
@@ -43,9 +43,9 @@ describe('Vocabulary Scene List (screen 03)', () => {
 
   it('does not open a scene that has no content yet', async () => {
     seedProfile();
-    renderApp('/vocabulary/kitchen/explore');
+    renderApp('/vocabulary/dining-room/explore');
     expect(
-      await screen.findByRole('heading', { name: 'Kitchen is coming soon' }),
+      await screen.findByRole('heading', { name: 'Dining Room is coming soon' }),
     ).toBeInTheDocument();
   });
 });

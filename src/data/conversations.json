@@ -1786,5 +1786,591 @@
         "suggestedAnswer": "I can see trees out of the window."
       }
     ]
+  },
+  {
+    "id": "my-kitchen",
+    "sceneId": "kitchen",
+    "title": "My Kitchen",
+    "order": 1,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Ben shows Lily around his kitchen.",
+    "lines": [
+      {
+        "id": "my-kitchen-l1",
+        "speakerId": "lily",
+        "textEn": "Ben, is this your kitchen?",
+        "textVi": "Ben ơi, đây là phòng bếp nhà bạn à?"
+      },
+      {
+        "id": "my-kitchen-l2",
+        "speakerId": "ben",
+        "textEn": "Yes, it is. It’s pink and green.",
+        "textVi": "Đúng rồi. Nó màu hồng và xanh lá."
+      },
+      {
+        "id": "my-kitchen-l3",
+        "speakerId": "lily",
+        "textEn": "Wow, your fridge is green!",
+        "textVi": "Ồ, tủ lạnh nhà bạn màu xanh lá!"
+      },
+      {
+        "id": "my-kitchen-l4",
+        "speakerId": "ben",
+        "textEn": "And the kettle is pink.",
+        "textVi": "Còn ấm đun nước thì màu hồng."
+      },
+      {
+        "id": "my-kitchen-l5",
+        "speakerId": "lily",
+        "textEn": "What is on the table?",
+        "textVi": "Trên bàn có gì vậy?"
+      },
+      {
+        "id": "my-kitchen-l6",
+        "speakerId": "ben",
+        "textEn": "A fruit bowl and a basket of bread.",
+        "textVi": "Một tô trái cây và một giỏ bánh mì."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-kitchen-q1",
+        "prompt": "What is in your kitchen?",
+        "suggestedAnswer": "There is a fridge, a stove and a sink in my kitchen."
+      },
+      {
+        "id": "my-kitchen-q2",
+        "prompt": "What color is the fridge?",
+        "suggestedAnswer": "The fridge is green."
+      }
+    ]
+  },
+  {
+    "id": "breakfast-time",
+    "sceneId": "kitchen",
+    "title": "Breakfast Time",
+    "order": 2,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Mom makes toast for Ben’s breakfast.",
+    "lines": [
+      {
+        "id": "breakfast-time-l1",
+        "speakerId": "mom",
+        "textEn": "Good morning, Ben! Are you hungry?",
+        "textVi": "Chào buổi sáng, Ben! Con đói chưa?"
+      },
+      {
+        "id": "breakfast-time-l2",
+        "speakerId": "ben",
+        "textEn": "Yes, Mom. Can I have some toast?",
+        "textVi": "Dạ rồi mẹ. Con ăn bánh mì nướng được không ạ?"
+      },
+      {
+        "id": "breakfast-time-l3",
+        "speakerId": "mom",
+        "textEn": "Sure. I’ll put the bread in the toaster.",
+        "textVi": "Được chứ. Mẹ cho bánh mì vào máy nướng nhé."
+      },
+      {
+        "id": "breakfast-time-l4",
+        "speakerId": "ben",
+        "textEn": "Can I get a plate?",
+        "textVi": "Con lấy một cái đĩa nhé?"
+      },
+      {
+        "id": "breakfast-time-l5",
+        "speakerId": "mom",
+        "textEn": "Yes, please. The plates are in the dish rack.",
+        "textVi": "Ừ, con lấy đi. Đĩa ở trong giá úp bát đĩa đấy."
+      },
+      {
+        "id": "breakfast-time-l6",
+        "speakerId": "ben",
+        "textEn": "Pop! The toast is ready!",
+        "textVi": "Bụp! Bánh mì nướng xong rồi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "breakfast-time-q1",
+        "prompt": "What do you eat for breakfast?",
+        "suggestedAnswer": "I eat toast for breakfast."
+      },
+      {
+        "id": "breakfast-time-q2",
+        "prompt": "Where are the plates?",
+        "suggestedAnswer": "The plates are in the dish rack."
+      }
+    ]
+  },
+  {
+    "id": "cooking-soup",
+    "sceneId": "kitchen",
+    "title": "Cooking Soup",
+    "order": 3,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Lily helps Mom cook soup on the stove.",
+    "lines": [
+      {
+        "id": "cooking-soup-l1",
+        "speakerId": "lily",
+        "textEn": "Mom, what are you cooking?",
+        "textVi": "Mẹ ơi, mẹ đang nấu gì thế?"
+      },
+      {
+        "id": "cooking-soup-l2",
+        "speakerId": "mom",
+        "textEn": "I’m cooking vegetable soup.",
+        "textVi": "Mẹ đang nấu canh rau."
+      },
+      {
+        "id": "cooking-soup-l3",
+        "speakerId": "lily",
+        "textEn": "Can I help?",
+        "textVi": "Con giúp mẹ được không ạ?"
+      },
+      {
+        "id": "cooking-soup-l4",
+        "speakerId": "mom",
+        "textEn": "Yes. Stir the pot with the wooden spoon.",
+        "textVi": "Được. Con khuấy nồi bằng muỗng gỗ nhé."
+      },
+      {
+        "id": "cooking-soup-l5",
+        "speakerId": "lily",
+        "textEn": "Does it need salt?",
+        "textVi": "Có cần thêm muối không mẹ?"
+      },
+      {
+        "id": "cooking-soup-l6",
+        "speakerId": "mom",
+        "textEn": "A little. The salt is in the spice jar.",
+        "textVi": "Một chút thôi. Muối ở trong lọ gia vị."
+      },
+      {
+        "id": "cooking-soup-l7",
+        "speakerId": "lily",
+        "textEn": "Mmm, it smells good!",
+        "textVi": "Ừm, thơm quá!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cooking-soup-q1",
+        "prompt": "What does Mom cook?",
+        "suggestedAnswer": "She cooks vegetable soup."
+      },
+      {
+        "id": "cooking-soup-q2",
+        "prompt": "How do you help in the kitchen?",
+        "suggestedAnswer": "I stir the soup with a wooden spoon."
+      }
+    ]
+  },
+  {
+    "id": "frying-eggs",
+    "sceneId": "kitchen",
+    "title": "Frying Eggs",
+    "order": 4,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Dad shows Ben how to fry eggs safely.",
+    "lines": [
+      {
+        "id": "frying-eggs-l1",
+        "speakerId": "dad",
+        "textEn": "Let’s fry some eggs, Ben.",
+        "textVi": "Mình rán trứng nhé, Ben."
+      },
+      {
+        "id": "frying-eggs-l2",
+        "speakerId": "ben",
+        "textEn": "OK! Do I need an apron?",
+        "textVi": "Vâng ạ! Con có cần mặc tạp dề không?"
+      },
+      {
+        "id": "frying-eggs-l3",
+        "speakerId": "dad",
+        "textEn": "Yes. Put on your apron first.",
+        "textVi": "Có. Con mặc tạp dề vào trước đã."
+      },
+      {
+        "id": "frying-eggs-l4",
+        "speakerId": "ben",
+        "textEn": "Here is the frying pan.",
+        "textVi": "Cái chảo rán đây bố."
+      },
+      {
+        "id": "frying-eggs-l5",
+        "speakerId": "dad",
+        "textEn": "Thank you. Please turn on the range hood.",
+        "textVi": "Cảm ơn con. Con bật máy hút mùi lên nhé."
+      },
+      {
+        "id": "frying-eggs-l6",
+        "speakerId": "ben",
+        "textEn": "Wow, the eggs look yummy!",
+        "textVi": "Ồ, trứng trông ngon quá!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "frying-eggs-q1",
+        "prompt": "What do you wear when you cook?",
+        "suggestedAnswer": "I wear an apron."
+      },
+      {
+        "id": "frying-eggs-q2",
+        "prompt": "What do we use to fry eggs?",
+        "suggestedAnswer": "We use a frying pan."
+      }
+    ]
+  },
+  {
+    "id": "making-a-smoothie",
+    "sceneId": "kitchen",
+    "title": "Making a Smoothie",
+    "order": 5,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Lily and Ben make a fruit smoothie.",
+    "lines": [
+      {
+        "id": "making-a-smoothie-l1",
+        "speakerId": "lily",
+        "textEn": "Ben, let’s make a smoothie!",
+        "textVi": "Ben ơi, mình làm sinh tố đi!"
+      },
+      {
+        "id": "making-a-smoothie-l2",
+        "speakerId": "ben",
+        "textEn": "Good idea! Let’s take a banana from the fruit bowl.",
+        "textVi": "Ý hay đấy! Mình lấy một quả chuối trong tô trái cây nhé."
+      },
+      {
+        "id": "making-a-smoothie-l3",
+        "speakerId": "lily",
+        "textEn": "Can we cut it with the knife?",
+        "textVi": "Mình cắt nó bằng dao được không?"
+      },
+      {
+        "id": "making-a-smoothie-l4",
+        "speakerId": "ben",
+        "textEn": "No, knives are sharp. Let’s ask Mom.",
+        "textVi": "Không, dao sắc lắm. Mình nhờ mẹ đi."
+      },
+      {
+        "id": "making-a-smoothie-l5",
+        "speakerId": "lily",
+        "textEn": "OK. Then we put it in the blender.",
+        "textVi": "Ừ. Rồi mình cho vào máy xay sinh tố."
+      },
+      {
+        "id": "making-a-smoothie-l6",
+        "speakerId": "ben",
+        "textEn": "It’s loud, but the smoothie is delicious!",
+        "textVi": "Kêu to quá, nhưng sinh tố ngon tuyệt!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-a-smoothie-q1",
+        "prompt": "What fruit do you like?",
+        "suggestedAnswer": "I like bananas."
+      },
+      {
+        "id": "making-a-smoothie-q2",
+        "prompt": "Why do we ask Mom to use the knife?",
+        "suggestedAnswer": "Because knives are sharp."
+      }
+    ]
+  },
+  {
+    "id": "rice-for-dinner",
+    "sceneId": "kitchen",
+    "title": "Rice for Dinner",
+    "order": 6,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Ben helps Mom get the rice ready for dinner.",
+    "lines": [
+      {
+        "id": "rice-for-dinner-l1",
+        "speakerId": "mom",
+        "textEn": "Ben, is the rice ready?",
+        "textVi": "Ben ơi, cơm chín chưa con?"
+      },
+      {
+        "id": "rice-for-dinner-l2",
+        "speakerId": "ben",
+        "textEn": "Let me check the rice cooker.",
+        "textVi": "Để con xem nồi cơm điện ạ."
+      },
+      {
+        "id": "rice-for-dinner-l3",
+        "speakerId": "mom",
+        "textEn": "Is the light green?",
+        "textVi": "Đèn có màu xanh không con?"
+      },
+      {
+        "id": "rice-for-dinner-l4",
+        "speakerId": "ben",
+        "textEn": "Yes, the rice is ready!",
+        "textVi": "Có ạ, cơm chín rồi!"
+      },
+      {
+        "id": "rice-for-dinner-l5",
+        "speakerId": "mom",
+        "textEn": "Great. Please get four bowls.",
+        "textVi": "Tốt quá. Con lấy bốn cái bát nhé."
+      },
+      {
+        "id": "rice-for-dinner-l6",
+        "speakerId": "ben",
+        "textEn": "One for Mom, one for Dad, one for Lily and one for me.",
+        "textVi": "Một cho mẹ, một cho bố, một cho Lily và một cho con."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "rice-for-dinner-q1",
+        "prompt": "How do you cook rice?",
+        "suggestedAnswer": "We cook rice in a rice cooker."
+      },
+      {
+        "id": "rice-for-dinner-q2",
+        "prompt": "How many bowls does Ben get?",
+        "suggestedAnswer": "He gets four bowls."
+      }
+    ]
+  },
+  {
+    "id": "warm-milk",
+    "sceneId": "kitchen",
+    "title": "Warm Milk",
+    "order": 7,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Dad warms a cup of milk for Lily.",
+    "lines": [
+      {
+        "id": "warm-milk-l1",
+        "speakerId": "lily",
+        "textEn": "Dad, can I have some milk?",
+        "textVi": "Bố ơi, con uống sữa được không ạ?"
+      },
+      {
+        "id": "warm-milk-l2",
+        "speakerId": "dad",
+        "textEn": "Sure. It’s in the fridge.",
+        "textVi": "Được chứ. Sữa ở trong tủ lạnh đấy."
+      },
+      {
+        "id": "warm-milk-l3",
+        "speakerId": "lily",
+        "textEn": "It’s very cold.",
+        "textVi": "Lạnh quá bố ạ."
+      },
+      {
+        "id": "warm-milk-l4",
+        "speakerId": "dad",
+        "textEn": "Let’s warm it in the microwave.",
+        "textVi": "Mình hâm nóng nó bằng lò vi sóng nhé."
+      },
+      {
+        "id": "warm-milk-l5",
+        "speakerId": "lily",
+        "textEn": "How long?",
+        "textVi": "Bao lâu ạ?"
+      },
+      {
+        "id": "warm-milk-l6",
+        "speakerId": "dad",
+        "textEn": "Thirty seconds. Ding! Here you are.",
+        "textVi": "Ba mươi giây. Ting! Của con đây."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "warm-milk-q1",
+        "prompt": "Where is the milk?",
+        "suggestedAnswer": "The milk is in the fridge."
+      },
+      {
+        "id": "warm-milk-q2",
+        "prompt": "What do you drink in the morning?",
+        "suggestedAnswer": "I drink warm milk."
+      }
+    ]
+  },
+  {
+    "id": "setting-the-table",
+    "sceneId": "kitchen",
+    "title": "Setting the Table",
+    "order": 8,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Ben sets the table for dinner.",
+    "lines": [
+      {
+        "id": "setting-the-table-l1",
+        "speakerId": "mom",
+        "textEn": "Ben, can you set the table, please?",
+        "textVi": "Ben ơi, con dọn bàn ăn giúp mẹ được không?"
+      },
+      {
+        "id": "setting-the-table-l2",
+        "speakerId": "ben",
+        "textEn": "Sure, Mom. How many plates?",
+        "textVi": "Dạ được mẹ. Bao nhiêu cái đĩa ạ?"
+      },
+      {
+        "id": "setting-the-table-l3",
+        "speakerId": "mom",
+        "textEn": "Four plates and four bowls.",
+        "textVi": "Bốn cái đĩa và bốn cái bát."
+      },
+      {
+        "id": "setting-the-table-l4",
+        "speakerId": "ben",
+        "textEn": "I put them on the dining table.",
+        "textVi": "Con đặt chúng lên bàn ăn rồi."
+      },
+      {
+        "id": "setting-the-table-l5",
+        "speakerId": "mom",
+        "textEn": "Good job! Now push in the chairs.",
+        "textVi": "Giỏi lắm! Giờ con kéo ghế vào nhé."
+      },
+      {
+        "id": "setting-the-table-l6",
+        "speakerId": "ben",
+        "textEn": "Dinner time! Let’s eat!",
+        "textVi": "Đến giờ ăn tối rồi! Mình ăn thôi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "setting-the-table-q1",
+        "prompt": "How do you help at dinner time?",
+        "suggestedAnswer": "I set the table."
+      },
+      {
+        "id": "setting-the-table-q2",
+        "prompt": "What do you put on the table?",
+        "suggestedAnswer": "I put plates and bowls on the table."
+      }
+    ]
+  },
+  {
+    "id": "washing-the-dishes",
+    "sceneId": "kitchen",
+    "title": "Washing the Dishes",
+    "order": 9,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Lily and Dad wash the dishes after dinner.",
+    "lines": [
+      {
+        "id": "washing-the-dishes-l1",
+        "speakerId": "dad",
+        "textEn": "Let’s wash the dishes, Lily.",
+        "textVi": "Mình rửa bát nhé, Lily."
+      },
+      {
+        "id": "washing-the-dishes-l2",
+        "speakerId": "lily",
+        "textEn": "OK! I’ll take the plates to the kitchen sink.",
+        "textVi": "Vâng ạ! Con mang đĩa ra bồn rửa bát."
+      },
+      {
+        "id": "washing-the-dishes-l3",
+        "speakerId": "dad",
+        "textEn": "Here is the dishwashing liquid.",
+        "textVi": "Nước rửa bát đây con."
+      },
+      {
+        "id": "washing-the-dishes-l4",
+        "speakerId": "lily",
+        "textEn": "Look, so many bubbles!",
+        "textVi": "Bố nhìn kìa, nhiều bọt quá!"
+      },
+      {
+        "id": "washing-the-dishes-l5",
+        "speakerId": "dad",
+        "textEn": "Now put the clean plates in the dish rack.",
+        "textVi": "Giờ con úp đĩa sạch lên giá úp bát đĩa nhé."
+      },
+      {
+        "id": "washing-the-dishes-l6",
+        "speakerId": "lily",
+        "textEn": "All clean! That was fun.",
+        "textVi": "Sạch hết rồi! Vui ghê."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-the-dishes-q1",
+        "prompt": "Where do we wash the dishes?",
+        "suggestedAnswer": "We wash the dishes in the kitchen sink."
+      },
+      {
+        "id": "washing-the-dishes-q2",
+        "prompt": "Where do we put clean plates?",
+        "suggestedAnswer": "We put clean plates in the dish rack."
+      }
+    ]
+  },
+  {
+    "id": "going-to-the-market",
+    "sceneId": "kitchen",
+    "title": "Going to the Market",
+    "order": 10,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "Mom and Lily get ready to go to the market.",
+    "lines": [
+      {
+        "id": "going-to-the-market-l1",
+        "speakerId": "mom",
+        "textEn": "Lily, let’s go to the market.",
+        "textVi": "Lily ơi, mình đi chợ nhé."
+      },
+      {
+        "id": "going-to-the-market-l2",
+        "speakerId": "lily",
+        "textEn": "Yay! What do we need?",
+        "textVi": "Yeah! Mình cần mua gì ạ?"
+      },
+      {
+        "id": "going-to-the-market-l3",
+        "speakerId": "mom",
+        "textEn": "Let’s look in the fridge first.",
+        "textVi": "Mình xem trong tủ lạnh trước đã."
+      },
+      {
+        "id": "going-to-the-market-l4",
+        "speakerId": "lily",
+        "textEn": "We need eggs and carrots.",
+        "textVi": "Mình cần trứng và cà rốt."
+      },
+      {
+        "id": "going-to-the-market-l5",
+        "speakerId": "mom",
+        "textEn": "Right. Please bring the basket.",
+        "textVi": "Đúng rồi. Con mang theo cái giỏ nhé."
+      },
+      {
+        "id": "going-to-the-market-l6",
+        "speakerId": "lily",
+        "textEn": "Here it is. Let’s go!",
+        "textVi": "Đây ạ. Mình đi thôi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "going-to-the-market-q1",
+        "prompt": "What do you buy at the market?",
+        "suggestedAnswer": "I buy eggs and carrots at the market."
+      },
+      {
+        "id": "going-to-the-market-q2",
+        "prompt": "What do we take to the market?",
+        "suggestedAnswer": "We take a basket."
+      }
+    ]
   }
 ]

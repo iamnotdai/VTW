@@ -13,8 +13,8 @@ phong cách _Cozy 3D Village_, chạm vào đồ vật để học từ, xem h�
 
 ## Trạng thái hiện tại
 
-Bộ khung đã chạy được **hành trình MVP của spec §22 từ đầu đến cuối** cho scene Bedroom, Bathroom và Living
-Room:
+Bộ khung đã chạy được **hành trình MVP của spec §22 từ đầu đến cuối** cho scene Bedroom, Bathroom, Living
+Room và Kitchen:
 
 - Đủ **16 màn hình** (bảng route bên dưới), layout responsive: sidebar trên desktop, rail icon
   trên tablet, bottom navigation trên mobile.
@@ -32,7 +32,7 @@ Room:
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
-> thoại của Bedroom và Bathroom, 30 từ và 10 hội thoại của Living Room là **nội dung mẫu**, cần
+> thoại của Bedroom, Bathroom và Kitchen, 30 từ và 10 hội thoại của Living Room là **nội dung mẫu**, cần
 > giáo viên/biên tập duyệt lại trước khi phát
 > hành. Chưa có
 > file video và audio thu âm: app dùng giọng đọc của trình duyệt (Web Speech) làm fallback.
@@ -320,6 +320,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Bedroom đủ 24 từ / 10 hội thoại / 24 hotspot                         | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Bathroom đủ 24 từ / 10 hội thoại / 24 hotspot                        | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Living Room đủ 30 từ / 10 hội thoại / 30 hotspot                     | ✅ dữ liệu mẫu, cần duyệt nội dung |
+| Kitchen đủ 24 từ / 10 hội thoại / 24 hotspot                         | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Flashcards có Next / Finish                                          | ✅ (test)                          |
 | Video luôn có đường vào transcript                                   | ✅ (test)                          |
 | Đổi `canTypeWords` áp dụng cho câu tiếp theo                         | ✅ (test)                          |

@@ -1664,5 +1664,486 @@
     ],
     "relatedWordIds": ["tv", "tv-stand", "robot-mop"],
     "distractorWordIds": ["light-switch", "speaker", "wi-fi-router"]
+  },
+  "fridge": {
+    "id": "fridge",
+    "text": "fridge",
+    "ipa": "/frɪdʒ/",
+    "meaningVi": "tủ lạnh",
+    "image": "/assets/scenes/kitchen/objects/01_fridge.webp",
+    "acceptedAnswers": ["fridge", "a fridge", "refrigerator", "a refrigerator"],
+    "examples": [
+      {
+        "en": "The milk is in the fridge.",
+        "vi": "Sữa ở trong tủ lạnh."
+      },
+      {
+        "en": "Please close the fridge door.",
+        "vi": "Làm ơn đóng cửa tủ lạnh lại."
+      }
+    ],
+    "relatedWordIds": ["basket", "fruit-bowl", "blender"],
+    "distractorWordIds": ["stove", "dish-rack", "range-hood"]
+  },
+  "stove": {
+    "id": "stove",
+    "text": "stove",
+    "ipa": "/stoʊv/",
+    "meaningVi": "bếp nấu",
+    "image": "/assets/scenes/kitchen/objects/02_stove.webp",
+    "acceptedAnswers": ["stove", "a stove"],
+    "examples": [
+      {
+        "en": "Mom cooks soup on the stove.",
+        "vi": "Mẹ nấu canh trên bếp."
+      },
+      {
+        "en": "Don’t touch the stove. It’s hot!",
+        "vi": "Đừng chạm vào bếp. Nóng đấy!"
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "range-hood"],
+    "distractorWordIds": ["fridge", "microwave", "toaster"]
+  },
+  "dining-table": {
+    "id": "dining-table",
+    "text": "dining table",
+    "ipa": "/ˈdaɪnɪŋ ˌteɪbəl/",
+    "meaningVi": "bàn ăn",
+    "image": "/assets/scenes/kitchen/objects/03_dining-table.webp",
+    "acceptedAnswers": ["dining table", "a dining table", "table", "a table"],
+    "examples": [
+      {
+        "en": "We eat dinner at the dining table.",
+        "vi": "Cả nhà ăn tối ở bàn ăn."
+      },
+      {
+        "en": "There is a fruit bowl on the dining table.",
+        "vi": "Có một tô trái cây trên bàn ăn."
+      }
+    ],
+    "relatedWordIds": ["kitchen-chair", "fruit-bowl", "basket"],
+    "distractorWordIds": ["dish-rack", "cutting-board", "kitchen-sink"]
+  },
+  "kitchen-chair": {
+    "id": "kitchen-chair",
+    "text": "chair",
+    "ipa": "/tʃer/",
+    "meaningVi": "ghế ăn",
+    "image": "/assets/scenes/kitchen/objects/04_kitchen-chair.webp",
+    "acceptedAnswers": ["chair", "a chair", "dining chair", "a dining chair"],
+    "examples": [
+      {
+        "en": "Please sit on the chair.",
+        "vi": "Mời bạn ngồi lên ghế."
+      },
+      {
+        "en": "The chair has a pink cushion.",
+        "vi": "Chiếc ghế có đệm màu hồng."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "plate", "bowl"],
+    "distractorWordIds": ["stove", "dish-rack", "fridge"]
+  },
+  "frying-pan": {
+    "id": "frying-pan",
+    "text": "frying pan",
+    "ipa": "/ˈfraɪɪŋ pæn/",
+    "meaningVi": "chảo rán",
+    "image": "/assets/scenes/kitchen/objects/05_frying-pan.webp",
+    "acceptedAnswers": ["frying pan", "a frying pan", "pan", "a pan"],
+    "examples": [
+      {
+        "en": "Dad fries eggs in the frying pan.",
+        "vi": "Bố rán trứng bằng chảo."
+      },
+      {
+        "en": "The frying pan is blue.",
+        "vi": "Cái chảo rán màu xanh dương."
+      }
+    ],
+    "relatedWordIds": ["stove", "wooden-spoon", "range-hood"],
+    "distractorWordIds": ["cooking-pot", "kettle", "plate"]
+  },
+  "kettle": {
+    "id": "kettle",
+    "text": "kettle",
+    "ipa": "/ˈketəl/",
+    "meaningVi": "ấm đun nước",
+    "image": "/assets/scenes/kitchen/objects/06_kettle.webp",
+    "acceptedAnswers": ["kettle", "a kettle"],
+    "examples": [
+      {
+        "en": "The kettle is boiling water.",
+        "vi": "Ấm đang đun sôi nước."
+      },
+      {
+        "en": "Be careful, the kettle is hot.",
+        "vi": "Cẩn thận, ấm nước đang nóng."
+      }
+    ],
+    "relatedWordIds": ["stove", "range-hood", "toaster"],
+    "distractorWordIds": ["cooking-pot", "blender", "rice-cooker"]
+  },
+  "fruit-bowl": {
+    "id": "fruit-bowl",
+    "text": "fruit bowl",
+    "ipa": "/ˈfruːt boʊl/",
+    "meaningVi": "tô trái cây",
+    "image": "/assets/scenes/kitchen/objects/07_fruit-bowl.webp",
+    "acceptedAnswers": ["fruit bowl", "a fruit bowl"],
+    "examples": [
+      {
+        "en": "There are apples and bananas in the fruit bowl.",
+        "vi": "Có táo và chuối trong tô trái cây."
+      },
+      {
+        "en": "The fruit bowl is on the table.",
+        "vi": "Tô trái cây ở trên bàn."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "basket", "knife"],
+    "distractorWordIds": ["bowl", "plate", "cooking-pot"]
+  },
+  "spice-jar": {
+    "id": "spice-jar",
+    "text": "spice jar",
+    "ipa": "/ˈspaɪs dʒɑːr/",
+    "meaningVi": "lọ gia vị",
+    "image": "/assets/scenes/kitchen/objects/08_spice-jar.webp",
+    "acceptedAnswers": ["spice jar", "a spice jar", "spice jars"],
+    "examples": [
+      {
+        "en": "Salt and pepper are in the spice jars.",
+        "vi": "Muối và tiêu ở trong các lọ gia vị."
+      },
+      {
+        "en": "The spice jars are on the shelf.",
+        "vi": "Các lọ gia vị ở trên kệ."
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "cutting-board"],
+    "distractorWordIds": ["dishwashing-liquid", "blender", "bowl"]
+  },
+  "cutting-board": {
+    "id": "cutting-board",
+    "text": "cutting board",
+    "ipa": "/ˈkʌtɪŋ bɔːrd/",
+    "meaningVi": "thớt gỗ",
+    "image": "/assets/scenes/kitchen/objects/09_cutting-board.webp",
+    "acceptedAnswers": ["cutting board", "a cutting board", "chopping board", "a chopping board"],
+    "examples": [
+      {
+        "en": "I cut carrots on the cutting board.",
+        "vi": "Mình thái cà rốt trên thớt."
+      },
+      {
+        "en": "The cutting board is made of wood.",
+        "vi": "Cái thớt làm bằng gỗ."
+      }
+    ],
+    "relatedWordIds": ["knife", "wooden-spoon", "kitchen-sink"],
+    "distractorWordIds": ["plate", "dish-rack", "apron"]
+  },
+  "wooden-spoon": {
+    "id": "wooden-spoon",
+    "text": "wooden spoon",
+    "ipa": "/ˌwʊdən ˈspuːn/",
+    "meaningVi": "muỗng gỗ",
+    "image": "/assets/scenes/kitchen/objects/10_wooden-spoon.webp",
+    "acceptedAnswers": ["wooden spoon", "a wooden spoon", "spoon", "a spoon"],
+    "examples": [
+      {
+        "en": "Mom stirs the soup with a wooden spoon.",
+        "vi": "Mẹ khuấy canh bằng muỗng gỗ."
+      },
+      {
+        "en": "The wooden spoons are in a cup.",
+        "vi": "Mấy cái muỗng gỗ ở trong một chiếc cốc."
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "cutting-board"],
+    "distractorWordIds": ["knife", "plate", "spice-jar"]
+  },
+  "plate": {
+    "id": "plate",
+    "text": "plate",
+    "ipa": "/pleɪt/",
+    "meaningVi": "đĩa ăn",
+    "image": "/assets/scenes/kitchen/objects/11_plate.webp",
+    "acceptedAnswers": ["plate", "a plate"],
+    "examples": [
+      {
+        "en": "Put the cake on the plate.",
+        "vi": "Đặt bánh lên đĩa nhé."
+      },
+      {
+        "en": "The plates are in the dish rack.",
+        "vi": "Những chiếc đĩa ở trong giá úp bát đĩa."
+      }
+    ],
+    "relatedWordIds": ["dish-rack", "bowl", "dining-table"],
+    "distractorWordIds": ["cutting-board", "frying-pan", "basket"]
+  },
+  "bowl": {
+    "id": "bowl",
+    "text": "bowl",
+    "ipa": "/boʊl/",
+    "meaningVi": "bát ăn",
+    "image": "/assets/scenes/kitchen/objects/12_bowl.webp",
+    "acceptedAnswers": ["bowl", "a bowl"],
+    "examples": [
+      {
+        "en": "I eat rice from a bowl.",
+        "vi": "Mình ăn cơm bằng bát."
+      },
+      {
+        "en": "There are oranges in the bowl.",
+        "vi": "Có cam trong cái bát."
+      }
+    ],
+    "relatedWordIds": ["plate", "rice-cooker", "dish-rack"],
+    "distractorWordIds": ["fruit-bowl", "cooking-pot", "basket"]
+  },
+  "range-hood": {
+    "id": "range-hood",
+    "text": "range hood",
+    "ipa": "/ˈreɪndʒ hʊd/",
+    "meaningVi": "máy hút mùi",
+    "image": "/assets/scenes/kitchen/objects/13_range-hood.webp",
+    "acceptedAnswers": ["range hood", "a range hood", "cooker hood", "a cooker hood"],
+    "examples": [
+      {
+        "en": "The range hood is above the stove.",
+        "vi": "Máy hút mùi ở phía trên bếp."
+      },
+      {
+        "en": "Turn on the range hood when you cook.",
+        "vi": "Bật máy hút mùi khi nấu ăn nhé."
+      }
+    ],
+    "relatedWordIds": ["stove", "frying-pan", "kettle"],
+    "distractorWordIds": ["microwave", "fridge", "toaster"]
+  },
+  "dish-rack": {
+    "id": "dish-rack",
+    "text": "dish rack",
+    "ipa": "/ˈdɪʃ ræk/",
+    "meaningVi": "giá úp bát đĩa",
+    "image": "/assets/scenes/kitchen/objects/14_dish-rack.webp",
+    "acceptedAnswers": ["dish rack", "a dish rack", "dish drainer", "a dish drainer"],
+    "examples": [
+      {
+        "en": "Put the clean plates in the dish rack.",
+        "vi": "Úp đĩa sạch lên giá úp bát đĩa."
+      },
+      {
+        "en": "The dish rack is next to the sink.",
+        "vi": "Giá úp bát đĩa ở cạnh bồn rửa."
+      }
+    ],
+    "relatedWordIds": ["plate", "kitchen-sink", "dishwashing-liquid"],
+    "distractorWordIds": ["basket", "spice-jar", "cutting-board"]
+  },
+  "apron": {
+    "id": "apron",
+    "text": "apron",
+    "ipa": "/ˈeɪprən/",
+    "meaningVi": "tạp dề",
+    "image": "/assets/scenes/kitchen/objects/15_apron.webp",
+    "acceptedAnswers": ["apron", "an apron"],
+    "examples": [
+      {
+        "en": "Mom wears an apron when she cooks.",
+        "vi": "Mẹ mặc tạp dề khi nấu ăn."
+      },
+      {
+        "en": "My apron is pink and white.",
+        "vi": "Tạp dề của mình màu hồng và trắng."
+      }
+    ],
+    "relatedWordIds": ["stove", "cutting-board", "kitchen-sink"],
+    "distractorWordIds": ["basket", "range-hood", "dishwashing-liquid"]
+  },
+  "knife": {
+    "id": "knife",
+    "text": "knife",
+    "ipa": "/naɪf/",
+    "meaningVi": "con dao",
+    "image": "/assets/scenes/kitchen/objects/16_knife.webp",
+    "acceptedAnswers": ["knife", "a knife"],
+    "examples": [
+      {
+        "en": "Be careful with the knife!",
+        "vi": "Cẩn thận với con dao nhé!"
+      },
+      {
+        "en": "Dad cuts the bread with a knife.",
+        "vi": "Bố cắt bánh mì bằng dao."
+      }
+    ],
+    "relatedWordIds": ["cutting-board", "fruit-bowl", "plate"],
+    "distractorWordIds": ["wooden-spoon", "frying-pan", "spice-jar"]
+  },
+  "dishwashing-liquid": {
+    "id": "dishwashing-liquid",
+    "text": "dishwashing liquid",
+    "uncountable": true,
+    "ipa": "/ˈdɪʃwɑːʃɪŋ ˌlɪkwɪd/",
+    "meaningVi": "nước rửa bát",
+    "image": "/assets/scenes/kitchen/objects/17_dishwashing-liquid.webp",
+    "acceptedAnswers": ["dishwashing liquid", "dish soap", "washing-up liquid"],
+    "examples": [
+      {
+        "en": "Put some dishwashing liquid on the sponge.",
+        "vi": "Cho một ít nước rửa bát lên miếng bọt biển."
+      },
+      {
+        "en": "The dishwashing liquid smells like lemon.",
+        "vi": "Nước rửa bát có mùi chanh."
+      }
+    ],
+    "relatedWordIds": ["kitchen-sink", "dish-rack", "plate"],
+    "distractorWordIds": ["spice-jar", "blender", "kettle"]
+  },
+  "rice-cooker": {
+    "id": "rice-cooker",
+    "text": "rice cooker",
+    "ipa": "/ˈraɪs ˌkʊkər/",
+    "meaningVi": "nồi cơm điện",
+    "image": "/assets/scenes/kitchen/objects/18_rice-cooker.webp",
+    "acceptedAnswers": ["rice cooker", "a rice cooker"],
+    "examples": [
+      {
+        "en": "Mom cooks rice in the rice cooker.",
+        "vi": "Mẹ nấu cơm bằng nồi cơm điện."
+      },
+      {
+        "en": "The rice cooker is pink.",
+        "vi": "Nồi cơm điện màu hồng."
+      }
+    ],
+    "relatedWordIds": ["bowl", "toaster", "microwave"],
+    "distractorWordIds": ["cooking-pot", "kettle", "blender"]
+  },
+  "toaster": {
+    "id": "toaster",
+    "text": "toaster",
+    "ipa": "/ˈtoʊstər/",
+    "meaningVi": "máy nướng bánh mì",
+    "image": "/assets/scenes/kitchen/objects/19_toaster.webp",
+    "acceptedAnswers": ["toaster", "a toaster"],
+    "examples": [
+      {
+        "en": "I make toast in the toaster.",
+        "vi": "Mình nướng bánh mì bằng máy nướng bánh mì."
+      },
+      {
+        "en": "The toast pops out of the toaster.",
+        "vi": "Bánh mì nướng bật ra khỏi máy."
+      }
+    ],
+    "relatedWordIds": ["plate", "kettle", "microwave"],
+    "distractorWordIds": ["rice-cooker", "blender", "range-hood"]
+  },
+  "microwave": {
+    "id": "microwave",
+    "text": "microwave",
+    "ipa": "/ˈmaɪkrəweɪv/",
+    "meaningVi": "lò vi sóng",
+    "image": "/assets/scenes/kitchen/objects/20_microwave.webp",
+    "acceptedAnswers": ["microwave", "a microwave", "microwave oven", "a microwave oven"],
+    "examples": [
+      {
+        "en": "Mom warms the milk in the microwave.",
+        "vi": "Mẹ hâm nóng sữa bằng lò vi sóng."
+      },
+      {
+        "en": "The microwave is on the shelf.",
+        "vi": "Lò vi sóng ở trên kệ."
+      }
+    ],
+    "relatedWordIds": ["fridge", "bowl", "toaster"],
+    "distractorWordIds": ["stove", "range-hood", "rice-cooker"]
+  },
+  "kitchen-sink": {
+    "id": "kitchen-sink",
+    "text": "kitchen sink",
+    "ipa": "/ˌkɪtʃən ˈsɪŋk/",
+    "meaningVi": "bồn rửa bát",
+    "image": "/assets/scenes/kitchen/objects/21_kitchen-sink.webp",
+    "acceptedAnswers": ["kitchen sink", "a kitchen sink", "sink", "a sink"],
+    "examples": [
+      {
+        "en": "We wash the dishes in the kitchen sink.",
+        "vi": "Chúng mình rửa bát ở bồn rửa bát."
+      },
+      {
+        "en": "The kitchen sink is under the window.",
+        "vi": "Bồn rửa bát ở dưới cửa sổ."
+      }
+    ],
+    "relatedWordIds": ["dishwashing-liquid", "dish-rack", "apron"],
+    "distractorWordIds": ["stove", "fridge", "dining-table"]
+  },
+  "cooking-pot": {
+    "id": "cooking-pot",
+    "text": "cooking pot",
+    "ipa": "/ˈkʊkɪŋ pɑːt/",
+    "meaningVi": "nồi nấu ăn",
+    "image": "/assets/scenes/kitchen/objects/22_cooking-pot.webp",
+    "acceptedAnswers": ["cooking pot", "a cooking pot", "pot", "a pot"],
+    "examples": [
+      {
+        "en": "The soup is in the cooking pot.",
+        "vi": "Canh ở trong nồi."
+      },
+      {
+        "en": "The cooking pot is on the stove.",
+        "vi": "Cái nồi ở trên bếp."
+      }
+    ],
+    "relatedWordIds": ["stove", "wooden-spoon", "spice-jar"],
+    "distractorWordIds": ["frying-pan", "kettle", "rice-cooker"]
+  },
+  "blender": {
+    "id": "blender",
+    "text": "blender",
+    "ipa": "/ˈblendər/",
+    "meaningVi": "máy xay sinh tố",
+    "image": "/assets/scenes/kitchen/objects/23_blender.webp",
+    "acceptedAnswers": ["blender", "a blender"],
+    "examples": [
+      {
+        "en": "I make a strawberry smoothie in the blender.",
+        "vi": "Mình làm sinh tố dâu bằng máy xay sinh tố."
+      },
+      {
+        "en": "The blender is very loud.",
+        "vi": "Máy xay sinh tố kêu rất to."
+      }
+    ],
+    "relatedWordIds": ["fruit-bowl", "fridge", "bowl"],
+    "distractorWordIds": ["kettle", "toaster", "rice-cooker"]
+  },
+  "basket": {
+    "id": "basket",
+    "text": "basket",
+    "ipa": "/ˈbæskɪt/",
+    "meaningVi": "giỏ đựng thực phẩm",
+    "image": "/assets/scenes/kitchen/objects/24_basket.webp",
+    "acceptedAnswers": ["basket", "a basket"],
+    "examples": [
+      {
+        "en": "There is bread in the basket.",
+        "vi": "Có bánh mì trong giỏ."
+      },
+      {
+        "en": "We take the basket to the market.",
+        "vi": "Chúng mình mang giỏ đi chợ."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "fruit-bowl", "fridge"],
+    "distractorWordIds": ["bowl", "dish-rack", "cooking-pot"]
   }
 }
