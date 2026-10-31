@@ -1042,5 +1042,627 @@
     ],
     "relatedWordIds": ["towel-rack", "towel", "shampoo"],
     "distractorWordIds": ["laundry-basket", "trash-can", "shower-curtain"]
+  },
+  "sofa": {
+    "id": "sofa",
+    "text": "sofa",
+    "ipa": "/ˈsoʊfə/",
+    "meaningVi": "ghế sofa",
+    "image": "/assets/scenes/living-room/objects/01_sofa.webp",
+    "acceptedAnswers": ["sofa", "a sofa", "couch", "a couch"],
+    "examples": [
+      {
+        "en": "We sit on the sofa to watch TV.",
+        "vi": "Chúng mình ngồi trên ghế sofa để xem tivi."
+      },
+      {
+        "en": "The sofa is big and soft.",
+        "vi": "Ghế sofa to và mềm."
+      }
+    ],
+    "relatedWordIds": ["cushion", "ottoman", "coffee-table"],
+    "distractorWordIds": ["armchair", "cabinet", "side-table"]
+  },
+  "armchair": {
+    "id": "armchair",
+    "text": "armchair",
+    "ipa": "/ˈɑːrmtʃer/",
+    "meaningVi": "ghế bành",
+    "image": "/assets/scenes/living-room/objects/02_armchair.webp",
+    "acceptedAnswers": ["armchair", "an armchair"],
+    "examples": [
+      {
+        "en": "Dad reads in the armchair.",
+        "vi": "Bố đọc sách trên ghế bành."
+      },
+      {
+        "en": "The armchair is yellow.",
+        "vi": "Ghế bành màu vàng."
+      }
+    ],
+    "relatedWordIds": ["cushion", "newspaper", "side-table"],
+    "distractorWordIds": ["sofa", "ottoman", "cabinet"]
+  },
+  "ottoman": {
+    "id": "ottoman",
+    "text": "ottoman",
+    "ipa": "/ˈɑːtəmən/",
+    "meaningVi": "ghế đôn",
+    "image": "/assets/scenes/living-room/objects/03_ottoman.webp",
+    "acceptedAnswers": ["ottoman", "an ottoman", "footstool", "a footstool"],
+    "examples": [
+      {
+        "en": "I put my feet on the ottoman.",
+        "vi": "Mình gác chân lên ghế đôn."
+      },
+      {
+        "en": "The ottoman is next to the sofa.",
+        "vi": "Ghế đôn ở cạnh ghế sofa."
+      }
+    ],
+    "relatedWordIds": ["sofa", "coffee-table", "floor"],
+    "distractorWordIds": ["armchair", "cushion", "side-table"]
+  },
+  "coffee-table": {
+    "id": "coffee-table",
+    "text": "coffee table",
+    "ipa": "/ˈkɔːfi ˌteɪbəl/",
+    "meaningVi": "bàn trà",
+    "image": "/assets/scenes/living-room/objects/04_coffee-table.webp",
+    "acceptedAnswers": ["coffee table", "a coffee table"],
+    "examples": [
+      {
+        "en": "The cup is on the coffee table.",
+        "vi": "Cái cốc ở trên bàn trà."
+      },
+      {
+        "en": "Our coffee table is round.",
+        "vi": "Bàn trà nhà mình hình tròn."
+      }
+    ],
+    "relatedWordIds": ["cup", "coaster", "tissue-box"],
+    "distractorWordIds": ["side-table", "tv-stand", "cabinet"]
+  },
+  "side-table": {
+    "id": "side-table",
+    "text": "side table",
+    "ipa": "/ˈsaɪd ˌteɪbəl/",
+    "meaningVi": "bàn phụ",
+    "image": "/assets/scenes/living-room/objects/05_side-table.webp",
+    "acceptedAnswers": ["side table", "a side table"],
+    "examples": [
+      {
+        "en": "The plant is on the side table.",
+        "vi": "Chậu cây ở trên bàn phụ."
+      },
+      {
+        "en": "The side table is next to the sofa.",
+        "vi": "Bàn phụ ở cạnh ghế sofa."
+      }
+    ],
+    "relatedWordIds": ["sofa", "armchair", "floor-lamp"],
+    "distractorWordIds": ["coffee-table", "wall-shelf", "ottoman"]
+  },
+  "tv": {
+    "id": "tv",
+    "text": "TV",
+    "ipa": "/ˌtiːˈviː/",
+    "meaningVi": "tivi",
+    "image": "/assets/scenes/living-room/objects/06_tv.webp",
+    "acceptedAnswers": ["TV", "a TV", "television", "a television"],
+    "examples": [
+      {
+        "en": "We watch cartoons on TV.",
+        "vi": "Chúng mình xem hoạt hình trên tivi."
+      },
+      {
+        "en": "Please turn off the TV.",
+        "vi": "Làm ơn tắt tivi đi."
+      }
+    ],
+    "relatedWordIds": ["remote-control", "tv-stand", "speaker"],
+    "distractorWordIds": ["painting", "window", "air-conditioner"]
+  },
+  "remote-control": {
+    "id": "remote-control",
+    "text": "remote control",
+    "ipa": "/rɪˌmoʊt kənˈtroʊl/",
+    "meaningVi": "điều khiển từ xa",
+    "image": "/assets/scenes/living-room/objects/07_remote-control.webp",
+    "acceptedAnswers": ["remote control", "a remote control", "remote", "a remote"],
+    "examples": [
+      {
+        "en": "Where is the remote control?",
+        "vi": "Điều khiển từ xa ở đâu rồi?"
+      },
+      {
+        "en": "I press a button on the remote control.",
+        "vi": "Mình bấm một nút trên điều khiển từ xa."
+      }
+    ],
+    "relatedWordIds": ["tv", "coffee-table", "air-conditioner"],
+    "distractorWordIds": ["light-switch", "wi-fi-router", "speaker"]
+  },
+  "tv-stand": {
+    "id": "tv-stand",
+    "text": "TV stand",
+    "ipa": "/ˌtiːˈviː stænd/",
+    "meaningVi": "kệ tivi",
+    "image": "/assets/scenes/living-room/objects/08_tv-stand.webp",
+    "acceptedAnswers": ["TV stand", "a TV stand", "television stand", "a television stand"],
+    "examples": [
+      {
+        "en": "The TV is on the TV stand.",
+        "vi": "Tivi ở trên kệ tivi."
+      },
+      {
+        "en": "The TV stand has two doors.",
+        "vi": "Kệ tivi có hai cánh cửa."
+      }
+    ],
+    "relatedWordIds": ["tv", "wi-fi-router", "power-outlet"],
+    "distractorWordIds": ["cabinet", "wall-shelf", "coffee-table"]
+  },
+  "cabinet": {
+    "id": "cabinet",
+    "text": "cabinet",
+    "ipa": "/ˈkæbɪnət/",
+    "meaningVi": "tủ đựng đồ",
+    "image": "/assets/scenes/living-room/objects/09_cabinet.webp",
+    "acceptedAnswers": ["cabinet", "a cabinet", "cupboard", "a cupboard"],
+    "examples": [
+      {
+        "en": "We keep our board games in the cabinet.",
+        "vi": "Chúng mình cất đồ chơi cờ trong tủ."
+      },
+      {
+        "en": "The cabinet has four drawers.",
+        "vi": "Cái tủ có bốn ngăn kéo."
+      }
+    ],
+    "relatedWordIds": ["speaker", "painting", "wall-shelf"],
+    "distractorWordIds": ["tv-stand", "side-table", "door"]
+  },
+  "newspaper": {
+    "id": "newspaper",
+    "text": "newspaper",
+    "ipa": "/ˈnuːzˌpeɪpər/",
+    "meaningVi": "tờ báo",
+    "image": "/assets/scenes/living-room/objects/10_newspaper.webp",
+    "acceptedAnswers": ["newspaper", "a newspaper", "the newspaper"],
+    "examples": [
+      {
+        "en": "Dad reads the newspaper every morning.",
+        "vi": "Bố đọc báo mỗi sáng."
+      },
+      {
+        "en": "The newspaper is on the coffee table.",
+        "vi": "Tờ báo ở trên bàn trà."
+      }
+    ],
+    "relatedWordIds": ["armchair", "cup", "coffee-table"],
+    "distractorWordIds": ["painting", "tissue-box", "coaster"]
+  },
+  "floor-lamp": {
+    "id": "floor-lamp",
+    "text": "floor lamp",
+    "ipa": "/ˈflɔːr læmp/",
+    "meaningVi": "đèn cây",
+    "image": "/assets/scenes/living-room/objects/11_floor-lamp.webp",
+    "acceptedAnswers": ["floor lamp", "a floor lamp", "standing lamp", "a standing lamp"],
+    "examples": [
+      {
+        "en": "Turn on the floor lamp, please.",
+        "vi": "Bật đèn cây lên nhé."
+      },
+      {
+        "en": "The floor lamp is next to the window.",
+        "vi": "Đèn cây ở cạnh cửa sổ."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "sofa", "side-table"],
+    "distractorWordIds": ["ceiling-light", "ceiling-fan", "vase"]
+  },
+  "ceiling-light": {
+    "id": "ceiling-light",
+    "text": "ceiling light",
+    "ipa": "/ˈsiːlɪŋ laɪt/",
+    "meaningVi": "đèn trần",
+    "image": "/assets/scenes/living-room/objects/12_ceiling-light.webp",
+    "acceptedAnswers": ["ceiling light", "a ceiling light"],
+    "examples": [
+      {
+        "en": "The ceiling light is very bright.",
+        "vi": "Đèn trần rất sáng."
+      },
+      {
+        "en": "Mom turns on the ceiling light at night.",
+        "vi": "Mẹ bật đèn trần vào buổi tối."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "ceiling-fan", "floor-lamp"],
+    "distractorWordIds": ["air-conditioner", "speaker", "robot-mop"]
+  },
+  "ceiling-fan": {
+    "id": "ceiling-fan",
+    "text": "ceiling fan",
+    "ipa": "/ˈsiːlɪŋ fæn/",
+    "meaningVi": "quạt trần",
+    "image": "/assets/scenes/living-room/objects/13_ceiling-fan.webp",
+    "acceptedAnswers": ["ceiling fan", "a ceiling fan"],
+    "examples": [
+      {
+        "en": "The ceiling fan goes round and round.",
+        "vi": "Quạt trần quay vòng vòng."
+      },
+      {
+        "en": "It’s hot. Let’s turn on the ceiling fan!",
+        "vi": "Nóng quá. Mình bật quạt trần lên nhé!"
+      }
+    ],
+    "relatedWordIds": ["air-conditioner", "ceiling-light", "light-switch"],
+    "distractorWordIds": ["floor-lamp", "wi-fi-router", "speaker"]
+  },
+  "air-conditioner": {
+    "id": "air-conditioner",
+    "text": "air conditioner",
+    "ipa": "/ˈer kənˌdɪʃənər/",
+    "meaningVi": "máy điều hòa",
+    "image": "/assets/scenes/living-room/objects/14_air-conditioner.webp",
+    "acceptedAnswers": [
+      "air conditioner",
+      "an air conditioner",
+      "air con",
+      "an air con",
+      "AC",
+      "an AC"
+    ],
+    "examples": [
+      {
+        "en": "The air conditioner keeps the room cool.",
+        "vi": "Máy điều hòa giữ cho phòng mát."
+      },
+      {
+        "en": "Close the window when the air conditioner is on.",
+        "vi": "Đóng cửa sổ lại khi máy điều hòa đang bật."
+      }
+    ],
+    "relatedWordIds": ["ceiling-fan", "remote-control", "window"],
+    "distractorWordIds": ["ceiling-light", "speaker", "tv"]
+  },
+  "robot-mop": {
+    "id": "robot-mop",
+    "text": "robot mop",
+    "ipa": "/ˈroʊbɑːt mɑːp/",
+    "meaningVi": "robot lau sàn",
+    "image": "/assets/scenes/living-room/objects/15_robot-mop.webp",
+    "acceptedAnswers": ["robot mop", "a robot mop"],
+    "examples": [
+      {
+        "en": "The robot mop cleans the floor.",
+        "vi": "Robot lau sàn lau sạch sàn nhà."
+      },
+      {
+        "en": "The robot mop moves by itself.",
+        "vi": "Robot lau sàn tự di chuyển."
+      }
+    ],
+    "relatedWordIds": ["floor", "power-outlet", "tv-stand"],
+    "distractorWordIds": ["speaker", "wi-fi-router", "ottoman"]
+  },
+  "coaster": {
+    "id": "coaster",
+    "text": "coaster",
+    "ipa": "/ˈkoʊstər/",
+    "meaningVi": "miếng lót ly",
+    "image": "/assets/scenes/living-room/objects/16_coaster.webp",
+    "acceptedAnswers": ["coaster", "a coaster"],
+    "examples": [
+      {
+        "en": "Put your cup on the coaster.",
+        "vi": "Đặt cốc của bạn lên miếng lót ly."
+      },
+      {
+        "en": "The coaster keeps the table dry.",
+        "vi": "Miếng lót ly giúp mặt bàn luôn khô."
+      }
+    ],
+    "relatedWordIds": ["cup", "coffee-table", "vase"],
+    "distractorWordIds": ["tissue-box", "newspaper", "remote-control"]
+  },
+  "curtains": {
+    "id": "curtains",
+    "text": "curtains",
+    "plural": true,
+    "ipa": "/ˈkɜːrtənz/",
+    "meaningVi": "rèm cửa",
+    "image": "/assets/scenes/living-room/objects/17_curtains.webp",
+    "acceptedAnswers": ["curtains", "the curtains", "curtain", "a curtain"],
+    "examples": [
+      {
+        "en": "Please open the curtains.",
+        "vi": "Làm ơn kéo rèm cửa ra."
+      },
+      {
+        "en": "The curtains are green.",
+        "vi": "Rèm cửa màu xanh lá."
+      }
+    ],
+    "relatedWordIds": ["window", "floor-lamp", "sofa"],
+    "distractorWordIds": ["painting", "door", "cushion"]
+  },
+  "window": {
+    "id": "window",
+    "text": "window",
+    "ipa": "/ˈwɪndoʊ/",
+    "meaningVi": "cửa sổ",
+    "image": "/assets/scenes/living-room/objects/18_window.webp",
+    "acceptedAnswers": ["window", "a window"],
+    "examples": [
+      {
+        "en": "I can see trees out of the window.",
+        "vi": "Mình nhìn thấy cây qua cửa sổ."
+      },
+      {
+        "en": "Please open the window.",
+        "vi": "Làm ơn mở cửa sổ ra."
+      }
+    ],
+    "relatedWordIds": ["curtains", "air-conditioner", "floor-lamp"],
+    "distractorWordIds": ["door", "painting", "tv"]
+  },
+  "door": {
+    "id": "door",
+    "text": "door",
+    "ipa": "/dɔːr/",
+    "meaningVi": "cửa ra vào",
+    "image": "/assets/scenes/living-room/objects/19_door.webp",
+    "acceptedAnswers": ["door", "a door", "the door"],
+    "examples": [
+      {
+        "en": "Please close the door.",
+        "vi": "Làm ơn đóng cửa lại."
+      },
+      {
+        "en": "Someone is knocking on the door.",
+        "vi": "Có ai đó đang gõ cửa."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "floor", "cabinet"],
+    "distractorWordIds": ["window", "painting", "tv-stand"]
+  },
+  "cushion": {
+    "id": "cushion",
+    "text": "cushion",
+    "ipa": "/ˈkʊʃən/",
+    "meaningVi": "gối tựa",
+    "image": "/assets/scenes/living-room/objects/20_cushion.webp",
+    "acceptedAnswers": ["cushion", "a cushion"],
+    "examples": [
+      {
+        "en": "There is a green cushion on the armchair.",
+        "vi": "Có một chiếc gối tựa màu xanh trên ghế bành."
+      },
+      {
+        "en": "I hug a soft cushion.",
+        "vi": "Mình ôm một chiếc gối tựa mềm."
+      }
+    ],
+    "relatedWordIds": ["sofa", "armchair", "ottoman"],
+    "distractorWordIds": ["curtains", "tissue-box", "newspaper"]
+  },
+  "cup": {
+    "id": "cup",
+    "text": "cup",
+    "ipa": "/kʌp/",
+    "meaningVi": "cốc",
+    "image": "/assets/scenes/living-room/objects/21_cup.webp",
+    "acceptedAnswers": ["cup", "a cup"],
+    "examples": [
+      {
+        "en": "Mom drinks tea from a cup.",
+        "vi": "Mẹ uống trà bằng cốc."
+      },
+      {
+        "en": "The cup is on the coaster.",
+        "vi": "Cái cốc ở trên miếng lót ly."
+      }
+    ],
+    "relatedWordIds": ["coaster", "coffee-table", "newspaper"],
+    "distractorWordIds": ["vase", "tissue-box", "speaker"]
+  },
+  "wall-shelf": {
+    "id": "wall-shelf",
+    "text": "wall shelf",
+    "ipa": "/ˈwɔːl ʃelf/",
+    "meaningVi": "kệ treo tường",
+    "image": "/assets/scenes/living-room/objects/22_wall-shelf.webp",
+    "acceptedAnswers": ["wall shelf", "a wall shelf", "shelf", "a shelf"],
+    "examples": [
+      {
+        "en": "My books are on the wall shelf.",
+        "vi": "Sách của mình ở trên kệ treo tường."
+      },
+      {
+        "en": "There is a small plant on the wall shelf.",
+        "vi": "Có một chậu cây nhỏ trên kệ treo tường."
+      }
+    ],
+    "relatedWordIds": ["painting", "cabinet", "vase"],
+    "distractorWordIds": ["tv-stand", "side-table", "window"]
+  },
+  "painting": {
+    "id": "painting",
+    "text": "painting",
+    "ipa": "/ˈpeɪntɪŋ/",
+    "meaningVi": "bức tranh",
+    "image": "/assets/scenes/living-room/objects/23_painting.webp",
+    "acceptedAnswers": ["painting", "a painting"],
+    "examples": [
+      {
+        "en": "There is a house in the painting.",
+        "vi": "Có một ngôi nhà trong bức tranh."
+      },
+      {
+        "en": "The painting is on the wall.",
+        "vi": "Bức tranh được treo trên tường."
+      }
+    ],
+    "relatedWordIds": ["wall-shelf", "cabinet", "door"],
+    "distractorWordIds": ["window", "tv", "newspaper"]
+  },
+  "wi-fi-router": {
+    "id": "wi-fi-router",
+    "text": "Wi-Fi router",
+    "ipa": "/ˈwaɪ faɪ ˌruːtər/",
+    "meaningVi": "bộ phát Wi-Fi",
+    "image": "/assets/scenes/living-room/objects/24_wi-fi-router.webp",
+    "acceptedAnswers": [
+      "Wi-Fi router",
+      "a Wi-Fi router",
+      "wifi router",
+      "a wifi router",
+      "router",
+      "a router"
+    ],
+    "examples": [
+      {
+        "en": "The Wi-Fi router has two antennas.",
+        "vi": "Bộ phát Wi-Fi có hai ăng-ten."
+      },
+      {
+        "en": "The lights on the Wi-Fi router are green.",
+        "vi": "Đèn trên bộ phát Wi-Fi màu xanh lá."
+      }
+    ],
+    "relatedWordIds": ["tv", "tv-stand", "speaker"],
+    "distractorWordIds": ["remote-control", "light-switch", "robot-mop"]
+  },
+  "floor": {
+    "id": "floor",
+    "text": "floor",
+    "ipa": "/flɔːr/",
+    "meaningVi": "sàn nhà",
+    "image": "/assets/scenes/living-room/objects/25_floor.webp",
+    "acceptedAnswers": ["floor", "a floor", "the floor"],
+    "examples": [
+      {
+        "en": "The floor is made of wood.",
+        "vi": "Sàn nhà làm bằng gỗ."
+      },
+      {
+        "en": "Don’t leave your toys on the floor.",
+        "vi": "Đừng để đồ chơi trên sàn nhà."
+      }
+    ],
+    "relatedWordIds": ["robot-mop", "ottoman", "door"],
+    "distractorWordIds": ["window", "wall-shelf", "cabinet"]
+  },
+  "vase": {
+    "id": "vase",
+    "text": "vase",
+    "ipa": "/veɪs/",
+    "meaningVi": "bình hoa",
+    "image": "/assets/scenes/living-room/objects/26_vase.webp",
+    "acceptedAnswers": ["vase", "a vase"],
+    "examples": [
+      {
+        "en": "There are white flowers in the vase.",
+        "vi": "Có hoa trắng trong bình hoa."
+      },
+      {
+        "en": "Be careful! Don’t break the vase.",
+        "vi": "Cẩn thận! Đừng làm vỡ bình hoa."
+      }
+    ],
+    "relatedWordIds": ["coffee-table", "coaster", "wall-shelf"],
+    "distractorWordIds": ["cup", "speaker", "floor-lamp"]
+  },
+  "speaker": {
+    "id": "speaker",
+    "text": "speaker",
+    "ipa": "/ˈspiːkər/",
+    "meaningVi": "loa",
+    "image": "/assets/scenes/living-room/objects/27_speaker.webp",
+    "acceptedAnswers": ["speaker", "a speaker"],
+    "examples": [
+      {
+        "en": "Music is playing from the speaker.",
+        "vi": "Nhạc đang phát ra từ cái loa."
+      },
+      {
+        "en": "Please turn down the speaker.",
+        "vi": "Làm ơn vặn nhỏ loa xuống."
+      }
+    ],
+    "relatedWordIds": ["tv", "cabinet", "wi-fi-router"],
+    "distractorWordIds": ["vase", "tissue-box", "robot-mop"]
+  },
+  "tissue-box": {
+    "id": "tissue-box",
+    "text": "tissue box",
+    "ipa": "/ˈtɪʃuː bɑːks/",
+    "meaningVi": "hộp khăn giấy",
+    "image": "/assets/scenes/living-room/objects/28_tissue-box.webp",
+    "acceptedAnswers": ["tissue box", "a tissue box", "box of tissues", "a box of tissues"],
+    "examples": [
+      {
+        "en": "Can you pass me the tissue box?",
+        "vi": "Bạn đưa mình hộp khăn giấy được không?"
+      },
+      {
+        "en": "The tissue box is on the coffee table.",
+        "vi": "Hộp khăn giấy ở trên bàn trà."
+      }
+    ],
+    "relatedWordIds": ["coffee-table", "cup", "sofa"],
+    "distractorWordIds": ["speaker", "newspaper", "cabinet"]
+  },
+  "light-switch": {
+    "id": "light-switch",
+    "text": "light switch",
+    "ipa": "/ˈlaɪt swɪtʃ/",
+    "meaningVi": "công tắc đèn",
+    "image": "/assets/scenes/living-room/objects/29_light-switch.webp",
+    "acceptedAnswers": ["light switch", "a light switch", "switch", "a switch"],
+    "examples": [
+      {
+        "en": "Press the light switch to turn on the light.",
+        "vi": "Bấm công tắc đèn để bật đèn."
+      },
+      {
+        "en": "The light switch is on the wall.",
+        "vi": "Công tắc đèn ở trên tường."
+      }
+    ],
+    "relatedWordIds": ["ceiling-light", "floor-lamp", "door"],
+    "distractorWordIds": ["power-outlet", "remote-control", "wi-fi-router"]
+  },
+  "power-outlet": {
+    "id": "power-outlet",
+    "text": "power outlet",
+    "ipa": "/ˈpaʊər ˌaʊtlet/",
+    "meaningVi": "ổ cắm điện",
+    "image": "/assets/scenes/living-room/objects/30_power-outlet.webp",
+    "acceptedAnswers": [
+      "power outlet",
+      "a power outlet",
+      "outlet",
+      "an outlet",
+      "socket",
+      "a socket"
+    ],
+    "examples": [
+      {
+        "en": "Don’t touch the power outlet!",
+        "vi": "Đừng chạm vào ổ cắm điện!"
+      },
+      {
+        "en": "The TV is plugged into the power outlet.",
+        "vi": "Tivi được cắm vào ổ cắm điện."
+      }
+    ],
+    "relatedWordIds": ["tv", "tv-stand", "robot-mop"],
+    "distractorWordIds": ["light-switch", "speaker", "wi-fi-router"]
   }
 }

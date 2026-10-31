@@ -3,13 +3,215 @@
   "title": "Living Room",
   "group": "home",
   "order": 1,
-  "description": "Words for the sofa, the TV and family time.",
-  "status": "coming-soon",
+  "description": "Learn words and practice conversations in the living room.",
+  "status": "available",
   "thumbnail": "/assets/scenes/living-room/living-room-desktop.webp",
   "background": "/assets/scenes/living-room/living-room-desktop.webp",
-  "width": 640,
-  "height": 400,
-  "wordIds": [],
-  "conversationIds": [],
-  "hotspots": []
+  "width": 1672,
+  "height": 941,
+  "wordIds": [
+    "sofa",
+    "armchair",
+    "ottoman",
+    "coffee-table",
+    "side-table",
+    "tv",
+    "remote-control",
+    "tv-stand",
+    "cabinet",
+    "newspaper",
+    "floor-lamp",
+    "ceiling-light",
+    "ceiling-fan",
+    "air-conditioner",
+    "robot-mop",
+    "coaster",
+    "curtains",
+    "window",
+    "door",
+    "cushion",
+    "cup",
+    "wall-shelf",
+    "painting",
+    "wi-fi-router",
+    "floor",
+    "vase",
+    "speaker",
+    "tissue-box",
+    "light-switch",
+    "power-outlet"
+  ],
+  "conversationIds": [
+    "my-living-room",
+    "watching-tv",
+    "where-is-the-remote",
+    "it-is-so-hot",
+    "turn-on-the-light",
+    "reading-the-newspaper",
+    "cleaning-the-living-room",
+    "flowers-in-the-vase",
+    "music-time",
+    "good-morning-sunshine"
+  ],
+  "hotspots": [
+    {
+      "wordId": "sofa",
+      "svgPath": "M 0 402 L 30 393 L 65 388 L 100 392 L 120 397 L 150 393 L 175 398 L 185 420 L 230 418 L 290 412 L 305 420 L 322 465 L 420 466 L 430 478 L 432 540 L 442 570 L 444 620 L 438 660 L 430 698 L 370 716 L 300 740 L 245 768 L 214 795 L 208 860 L 210 912 L 150 920 L 60 925 L 0 925 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "armchair",
+      "svgPath": "M 480 378 L 492 366 L 520 364 L 600 364 L 640 366 L 652 380 L 658 430 L 700 434 L 726 438 L 738 455 L 738 505 L 732 545 L 718 552 L 717 560 L 702 560 L 698 553 L 640 557 L 638 565 L 630 565 L 625 557 L 580 562 L 577 590 L 563 590 L 560 562 L 515 555 L 506 575 L 498 580 L 503 545 L 482 528 L 478 470 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "ottoman",
+      "svgPath": "M 212 790 L 225 760 L 260 735 L 310 712 L 370 700 L 430 694 L 500 696 L 560 702 L 610 715 L 660 740 L 700 770 L 720 800 L 728 840 L 722 890 L 710 920 L 700 941 L 215 941 L 208 870 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "coffee-table",
+      "svgPath": "M 548 600 L 575 585 L 640 568 L 720 558 L 780 556 L 860 560 L 940 572 L 990 590 L 1008 612 L 1000 635 L 975 650 L 952 658 L 962 700 L 980 772 L 970 780 L 955 760 L 940 722 L 905 740 L 830 762 L 740 768 L 735 790 L 712 792 L 705 768 L 650 752 L 615 735 L 612 712 L 600 700 L 592 720 L 582 718 L 590 668 L 560 645 L 546 620 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "side-table",
+      "svgPath": "M 366 458 L 385 449 L 430 446 L 482 448 L 496 456 L 490 466 L 476 471 L 494 590 L 486 593 L 466 520 L 454 522 L 454 603 L 441 605 L 440 522 L 444 471 L 400 470 L 372 466 Z",
+      "zIndex": 0
+    },
+    {
+      "wordId": "tv",
+      "svgPath": "M 1343 259 L 1557 229 L 1560 236 L 1558 495 L 1550 498 L 1550 510 L 1554 513 L 1520 513 L 1492 515 L 1500 506 L 1515 494 L 1400 473 L 1398 477 L 1342 478 L 1355 470 L 1365 462 L 1343 456 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "remote-control",
+      "svgPath": "M 802 614 L 810 607 L 840 611 L 880 620 L 886 627 L 882 635 L 860 635 L 830 628 L 806 622 Z",
+      "zIndex": 3,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "tv-stand",
+      "svgPath": "M 1244 465 L 1260 460 L 1290 462 L 1340 470 L 1400 478 L 1480 492 L 1550 510 L 1600 525 L 1640 535 L 1666 542 L 1666 690 L 1650 693 L 1647 728 L 1637 730 L 1625 693 L 1545 698 L 1540 745 L 1525 747 L 1518 697 L 1490 688 L 1400 645 L 1330 610 L 1275 585 L 1270 602 L 1260 602 L 1257 578 L 1245 570 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "cabinet",
+      "svgPath": "M 725 388 L 1056 390 L 1058 505 L 1046 512 L 1042 532 L 1036 532 L 1030 516 L 1022 518 L 1020 546 L 1012 546 L 1008 518 L 750 514 L 747 532 L 740 532 L 738 512 L 726 510 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "newspaper",
+      "svgPath": "M 588 597 L 640 585 L 690 582 L 725 586 L 726 620 L 700 625 L 660 630 L 610 635 L 590 630 L 583 612 Z",
+      "zIndex": 3,
+      "touchPadding": 4
+    },
+    {
+      "wordId": "floor-lamp",
+      "svgPath": "M 112 196 L 222 197 L 232 294 L 172 297 L 172 312 L 185 318 L 200 410 L 193 412 L 175 340 L 170 410 L 162 410 L 160 340 L 142 412 L 135 410 L 155 318 L 162 312 L 162 297 L 99 294 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "ceiling-light",
+      "svgPath": "M 930 22 L 960 14 L 990 12 L 1030 14 L 1055 22 L 1057 62 L 1050 75 L 1020 83 L 990 85 L 955 82 L 930 75 L 925 62 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "ceiling-fan",
+      "svgPath": "M 692 0 L 735 0 L 735 14 L 722 18 L 722 40 L 745 45 L 750 65 L 800 50 L 860 33 L 885 31 L 898 40 L 900 48 L 880 56 L 820 70 L 755 80 L 750 92 L 768 100 L 786 108 L 782 118 L 756 121 L 740 112 L 725 102 L 700 102 L 680 95 L 676 80 L 650 75 L 590 62 L 530 54 L 522 48 L 530 45 L 600 52 L 676 66 L 678 45 L 705 38 L 705 18 L 692 14 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "air-conditioner",
+      "svgPath": "M 1368 88 L 1385 75 L 1520 30 L 1580 6 L 1590 10 L 1592 110 L 1580 122 L 1460 150 L 1420 162 L 1390 158 L 1370 148 L 1366 120 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "robot-mop",
+      "svgPath": "M 1320 728 L 1335 716 L 1383 707 L 1440 710 L 1475 718 L 1494 732 L 1498 748 L 1498 770 L 1503 785 L 1495 800 L 1470 806 L 1460 812 L 1420 813 L 1370 808 L 1358 800 L 1335 794 L 1314 780 L 1312 768 L 1320 755 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "coaster",
+      "svgPath": "M 712 628 L 725 620 L 732 625 L 742 632 L 760 633 L 775 628 L 783 620 L 790 625 L 788 637 L 770 645 L 750 646 L 725 644 L 712 638 Z",
+      "zIndex": 3,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "curtains",
+      "svgPath": "M 152 38 L 175 32 L 220 42 L 270 50 L 280 58 L 282 380 L 270 400 L 200 400 L 160 400 L 152 380 Z M 280 54 L 535 98 L 535 106 L 280 62 Z M 535 100 L 560 105 L 600 112 L 626 118 L 626 128 L 620 132 L 620 365 L 605 372 L 545 372 L 533 368 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "window",
+      "svgPath": "M 277 82 L 400 102 L 536 124 L 534 370 L 280 372 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "door",
+      "svgPath": "M 1094 146 L 1252 132 L 1253 536 L 1095 537 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "cushion",
+      "svgPath": "M 578 406 L 600 404 L 640 402 L 658 403 L 660 430 L 663 466 L 640 468 L 600 472 L 584 475 L 580 440 Z M 250 425 L 282 413 L 298 416 L 312 440 L 325 470 L 340 500 L 354 530 L 330 538 L 304 544 L 280 500 L 262 465 L 247 438 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "cup",
+      "svgPath": "M 727 580 L 740 575 L 770 575 L 783 580 L 785 586 L 793 588 L 792 610 L 783 620 L 775 628 L 760 633 L 740 632 L 730 625 L 726 605 Z",
+      "zIndex": 4,
+      "touchPadding": 4
+    },
+    {
+      "wordId": "wall-shelf",
+      "svgPath": "M 712 232 L 762 230 L 763 200 L 806 201 L 832 200 L 834 230 L 848 230 L 849 244 L 740 245 L 712 244 Z M 731 302 L 750 302 L 750 266 L 798 265 L 800 275 L 822 275 L 823 302 L 849 302 L 849 312 L 735 312 Z",
+      "zIndex": 1,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "painting",
+      "svgPath": "M 880 163 L 1040 152 L 1040 298 L 882 300 Z",
+      "zIndex": 1
+    },
+    {
+      "wordId": "wi-fi-router",
+      "svgPath": "M 1295 397 L 1300 396 L 1301 452 L 1327 452 L 1328 399 L 1334 398 L 1334 455 L 1337 460 L 1336 470 L 1330 473 L 1278 473 L 1271 468 L 1272 456 L 1280 452 L 1294 452 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "floor",
+      "svgPath": "M 1012 550 L 1100 540 L 1244 542 L 1245 570 L 1257 578 L 1275 586 L 1330 611 L 1400 646 L 1490 689 L 1518 698 L 1545 699 L 1625 694 L 1650 694 L 1672 705 L 1672 941 L 1318 941 L 1366 893 L 1200 760 L 1100 680 L 1010 612 L 1005 590 Z",
+      "zIndex": 0
+    },
+    {
+      "wordId": "vase",
+      "svgPath": "M 730 455 L 760 440 L 790 420 L 840 440 L 875 450 L 900 482 L 880 495 L 840 495 L 815 520 L 830 528 L 832 540 L 842 555 L 843 575 L 835 590 L 815 593 L 795 590 L 787 575 L 788 552 L 798 540 L 800 530 L 760 515 L 725 505 L 722 485 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "speaker",
+      "svgPath": "M 926 362 L 932 354 L 946 351 L 960 352 L 966 358 L 967 384 L 962 390 L 930 390 L 925 384 Z",
+      "zIndex": 2,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "tissue-box",
+      "svgPath": "M 880 532 L 900 530 L 920 535 L 912 556 L 950 562 L 953 600 L 945 612 L 860 610 L 852 602 L 853 560 L 875 552 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "light-switch",
+      "svgPath": "M 1280 309 L 1282 307 L 1297 307 L 1299 309 L 1299 337 L 1297 339 L 1282 339 L 1280 337 Z",
+      "zIndex": 2,
+      "touchPadding": 12
+    },
+    {
+      "wordId": "power-outlet",
+      "svgPath": "M 1606 619 L 1608 617 L 1641 617 L 1643 620 L 1643 668 L 1641 671 L 1608 671 L 1606 668 Z",
+      "zIndex": 2,
+      "touchPadding": 8
+    }
+  ]
 }

@@ -95,3 +95,24 @@ describe('Bathroom', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Living Room', () => {
+  const livingRoom = getScene('living-room')!;
+
+  it('is available with 30 words, 10 conversations and one hotspot per word', () => {
+    expect(livingRoom.status).toBe('available');
+    expect(getSceneWords(livingRoom)).toHaveLength(30);
+    expect(getSceneConversations(livingRoom)).toHaveLength(10);
+    expect(livingRoom.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...livingRoom.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    const oversized = livingRoom.hotspots.filter((hotspot) => {
+      const bounds = getPathBounds(hotspot.svgPath)!;
+      return (bounds.width * bounds.height) / (livingRoom.width * livingRoom.height) >= 0.35;
+    });
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

@@ -1194,5 +1194,597 @@
         "suggestedAnswer": "I wash my face at the sink."
       }
     ]
+  },
+  {
+    "id": "my-living-room",
+    "sceneId": "living-room",
+    "title": "My Living Room",
+    "order": 1,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Lily shows Ben around her living room.",
+    "lines": [
+      {
+        "id": "my-living-room-l1",
+        "speakerId": "ben",
+        "textEn": "Lily, is this your living room?",
+        "textVi": "Lily ơi, đây là phòng khách nhà bạn à?"
+      },
+      {
+        "id": "my-living-room-l2",
+        "speakerId": "lily",
+        "textEn": "Yes, it is. Come in!",
+        "textVi": "Đúng rồi. Vào đi!"
+      },
+      {
+        "id": "my-living-room-l3",
+        "speakerId": "ben",
+        "textEn": "Wow, your sofa is so big!",
+        "textVi": "Ồ, ghế sofa nhà bạn to quá!"
+      },
+      {
+        "id": "my-living-room-l4",
+        "speakerId": "lily",
+        "textEn": "And this yellow armchair is my favorite.",
+        "textVi": "Còn chiếc ghế bành màu vàng này là chỗ mình thích nhất."
+      },
+      {
+        "id": "my-living-room-l5",
+        "speakerId": "ben",
+        "textEn": "What is on the wall?",
+        "textVi": "Trên tường có gì vậy?"
+      },
+      {
+        "id": "my-living-room-l6",
+        "speakerId": "lily",
+        "textEn": "A painting of a little house.",
+        "textVi": "Một bức tranh vẽ ngôi nhà nhỏ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-living-room-q1",
+        "prompt": "What is in your living room?",
+        "suggestedAnswer": "There is a sofa, an armchair and a TV in my living room."
+      },
+      {
+        "id": "my-living-room-q2",
+        "prompt": "What color is the armchair?",
+        "suggestedAnswer": "The armchair is yellow."
+      }
+    ]
+  },
+  {
+    "id": "watching-tv",
+    "sceneId": "living-room",
+    "title": "Watching TV",
+    "order": 2,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Ben asks Mom if he can watch cartoons.",
+    "lines": [
+      {
+        "id": "watching-tv-l1",
+        "speakerId": "ben",
+        "textEn": "Mom, can I watch TV?",
+        "textVi": "Mẹ ơi, con xem tivi được không ạ?"
+      },
+      {
+        "id": "watching-tv-l2",
+        "speakerId": "mom",
+        "textEn": "Did you finish your homework?",
+        "textVi": "Con làm xong bài tập chưa?"
+      },
+      {
+        "id": "watching-tv-l3",
+        "speakerId": "ben",
+        "textEn": "Yes, I did!",
+        "textVi": "Con làm xong rồi ạ!"
+      },
+      {
+        "id": "watching-tv-l4",
+        "speakerId": "mom",
+        "textEn": "OK. You can watch for thirty minutes.",
+        "textVi": "Được. Con được xem ba mươi phút nhé."
+      },
+      {
+        "id": "watching-tv-l5",
+        "speakerId": "ben",
+        "textEn": "Thank you! Where is the remote control?",
+        "textVi": "Con cảm ơn mẹ! Điều khiển từ xa ở đâu ạ?"
+      },
+      {
+        "id": "watching-tv-l6",
+        "speakerId": "mom",
+        "textEn": "It’s on the coffee table.",
+        "textVi": "Nó ở trên bàn trà đấy."
+      },
+      {
+        "id": "watching-tv-l7",
+        "speakerId": "ben",
+        "textEn": "Got it! Let’s watch cartoons.",
+        "textVi": "Con thấy rồi! Mình xem hoạt hình thôi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "watching-tv-q1",
+        "prompt": "What do you like to watch on TV?",
+        "suggestedAnswer": "I like to watch cartoons."
+      },
+      {
+        "id": "watching-tv-q2",
+        "prompt": "Where is the remote control?",
+        "suggestedAnswer": "It’s on the coffee table."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-remote",
+    "sceneId": "living-room",
+    "title": "Where Is the Remote?",
+    "order": 3,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Dad and Lily look for the remote control.",
+    "lines": [
+      {
+        "id": "where-is-the-remote-l1",
+        "speakerId": "dad",
+        "textEn": "Lily, have you seen the remote?",
+        "textVi": "Lily ơi, con có thấy cái điều khiển không?"
+      },
+      {
+        "id": "where-is-the-remote-l2",
+        "speakerId": "lily",
+        "textEn": "Is it on the sofa?",
+        "textVi": "Nó có ở trên ghế sofa không bố?"
+      },
+      {
+        "id": "where-is-the-remote-l3",
+        "speakerId": "dad",
+        "textEn": "No, it isn’t.",
+        "textVi": "Không, không có con ạ."
+      },
+      {
+        "id": "where-is-the-remote-l4",
+        "speakerId": "lily",
+        "textEn": "Look under the cushion!",
+        "textVi": "Bố xem dưới gối tựa đi!"
+      },
+      {
+        "id": "where-is-the-remote-l5",
+        "speakerId": "dad",
+        "textEn": "Not there. Is it on the TV stand?",
+        "textVi": "Không có. Có ở trên kệ tivi không nhỉ?"
+      },
+      {
+        "id": "where-is-the-remote-l6",
+        "speakerId": "lily",
+        "textEn": "Here it is! Next to the cup.",
+        "textVi": "Đây rồi! Ở cạnh cái cốc."
+      },
+      {
+        "id": "where-is-the-remote-l7",
+        "speakerId": "dad",
+        "textEn": "Thank you, Lily!",
+        "textVi": "Cảm ơn con, Lily!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-remote-q1",
+        "prompt": "Where do you look for lost things?",
+        "suggestedAnswer": "I look under the cushion and on the sofa."
+      },
+      {
+        "id": "where-is-the-remote-q2",
+        "prompt": "Where was the remote?",
+        "suggestedAnswer": "It was on the coffee table, next to the cup."
+      }
+    ]
+  },
+  {
+    "id": "it-is-so-hot",
+    "sceneId": "living-room",
+    "title": "It’s So Hot!",
+    "order": 4,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Ben feels hot and Dad helps him cool down.",
+    "lines": [
+      {
+        "id": "it-is-so-hot-l1",
+        "speakerId": "ben",
+        "textEn": "Dad, it’s so hot today!",
+        "textVi": "Bố ơi, hôm nay nóng quá!"
+      },
+      {
+        "id": "it-is-so-hot-l2",
+        "speakerId": "dad",
+        "textEn": "Let’s turn on the ceiling fan.",
+        "textVi": "Mình bật quạt trần lên nhé."
+      },
+      {
+        "id": "it-is-so-hot-l3",
+        "speakerId": "ben",
+        "textEn": "It’s still hot.",
+        "textVi": "Vẫn còn nóng ạ."
+      },
+      {
+        "id": "it-is-so-hot-l4",
+        "speakerId": "dad",
+        "textEn": "OK. I’ll turn on the air conditioner, too.",
+        "textVi": "Được rồi. Bố bật cả máy điều hòa nữa."
+      },
+      {
+        "id": "it-is-so-hot-l5",
+        "speakerId": "ben",
+        "textEn": "Should I close the window?",
+        "textVi": "Con có nên đóng cửa sổ không ạ?"
+      },
+      {
+        "id": "it-is-so-hot-l6",
+        "speakerId": "dad",
+        "textEn": "Yes, please. Then the room stays cool.",
+        "textVi": "Có, con đóng giúp bố. Như vậy phòng sẽ mát."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "it-is-so-hot-q1",
+        "prompt": "What do you do when it is hot?",
+        "suggestedAnswer": "I turn on the fan."
+      },
+      {
+        "id": "it-is-so-hot-q2",
+        "prompt": "Why do we close the window?",
+        "suggestedAnswer": "We close the window to keep the room cool."
+      }
+    ]
+  },
+  {
+    "id": "turn-on-the-light",
+    "sceneId": "living-room",
+    "title": "Turn On the Light",
+    "order": 5,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "It is getting dark, so Lily turns on the lights.",
+    "lines": [
+      {
+        "id": "turn-on-the-light-l1",
+        "speakerId": "mom",
+        "textEn": "It’s getting dark, Lily.",
+        "textVi": "Trời đang tối dần rồi, Lily."
+      },
+      {
+        "id": "turn-on-the-light-l2",
+        "speakerId": "lily",
+        "textEn": "I can’t see my book.",
+        "textVi": "Con không nhìn rõ sách ạ."
+      },
+      {
+        "id": "turn-on-the-light-l3",
+        "speakerId": "mom",
+        "textEn": "Please turn on the light.",
+        "textVi": "Con bật đèn lên đi."
+      },
+      {
+        "id": "turn-on-the-light-l4",
+        "speakerId": "lily",
+        "textEn": "Where is the light switch?",
+        "textVi": "Công tắc đèn ở đâu ạ?"
+      },
+      {
+        "id": "turn-on-the-light-l5",
+        "speakerId": "mom",
+        "textEn": "It’s on the wall, next to the TV.",
+        "textVi": "Nó ở trên tường, cạnh cái tivi."
+      },
+      {
+        "id": "turn-on-the-light-l6",
+        "speakerId": "lily",
+        "textEn": "Now I can turn on the floor lamp, too.",
+        "textVi": "Giờ con bật cả đèn cây nữa."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "turn-on-the-light-q1",
+        "prompt": "What do you do when it is dark?",
+        "suggestedAnswer": "I turn on the light."
+      },
+      {
+        "id": "turn-on-the-light-q2",
+        "prompt": "Where is the light switch?",
+        "suggestedAnswer": "It’s on the wall."
+      }
+    ]
+  },
+  {
+    "id": "reading-the-newspaper",
+    "sceneId": "living-room",
+    "title": "Reading the Newspaper",
+    "order": 6,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Ben brings Dad the newspaper and a cup of tea.",
+    "lines": [
+      {
+        "id": "reading-the-newspaper-l1",
+        "speakerId": "dad",
+        "textEn": "Ben, can you bring me the newspaper?",
+        "textVi": "Ben ơi, con mang tờ báo cho bố được không?"
+      },
+      {
+        "id": "reading-the-newspaper-l2",
+        "speakerId": "ben",
+        "textEn": "Sure! Here you are.",
+        "textVi": "Dạ được ạ! Của bố đây."
+      },
+      {
+        "id": "reading-the-newspaper-l3",
+        "speakerId": "dad",
+        "textEn": "Thank you. I like to read in the armchair.",
+        "textVi": "Cảm ơn con. Bố thích đọc báo trên ghế bành."
+      },
+      {
+        "id": "reading-the-newspaper-l4",
+        "speakerId": "ben",
+        "textEn": "Would you like a cup of tea?",
+        "textVi": "Bố có muốn một cốc trà không ạ?"
+      },
+      {
+        "id": "reading-the-newspaper-l5",
+        "speakerId": "dad",
+        "textEn": "Yes, please. Put it on the coaster.",
+        "textVi": "Có, con. Con đặt nó lên miếng lót ly nhé."
+      },
+      {
+        "id": "reading-the-newspaper-l6",
+        "speakerId": "ben",
+        "textEn": "OK, Dad. Enjoy your tea!",
+        "textVi": "Vâng ạ. Bố uống trà ngon nhé!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "reading-the-newspaper-q1",
+        "prompt": "Where does Dad like to read?",
+        "suggestedAnswer": "He likes to read in the armchair."
+      },
+      {
+        "id": "reading-the-newspaper-q2",
+        "prompt": "Why do we put a cup on a coaster?",
+        "suggestedAnswer": "We put a cup on a coaster to keep the table dry."
+      }
+    ]
+  },
+  {
+    "id": "cleaning-the-living-room",
+    "sceneId": "living-room",
+    "title": "Cleaning the Living Room",
+    "order": 7,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Mom and Lily tidy up the living room together.",
+    "lines": [
+      {
+        "id": "cleaning-the-living-room-l1",
+        "speakerId": "mom",
+        "textEn": "Let’s clean the living room, Lily.",
+        "textVi": "Mình dọn phòng khách nào, Lily."
+      },
+      {
+        "id": "cleaning-the-living-room-l2",
+        "speakerId": "lily",
+        "textEn": "OK! I’ll put the toys away.",
+        "textVi": "Vâng ạ! Con sẽ cất đồ chơi."
+      },
+      {
+        "id": "cleaning-the-living-room-l3",
+        "speakerId": "mom",
+        "textEn": "Good girl. Pick them up from the floor.",
+        "textVi": "Ngoan lắm. Con nhặt chúng lên khỏi sàn nhà nhé."
+      },
+      {
+        "id": "cleaning-the-living-room-l4",
+        "speakerId": "lily",
+        "textEn": "Can the robot mop clean the floor?",
+        "textVi": "Robot lau sàn có lau sàn nhà được không ạ?"
+      },
+      {
+        "id": "cleaning-the-living-room-l5",
+        "speakerId": "mom",
+        "textEn": "Yes! Press the button and it starts.",
+        "textVi": "Được chứ! Con bấm nút là nó chạy."
+      },
+      {
+        "id": "cleaning-the-living-room-l6",
+        "speakerId": "lily",
+        "textEn": "Look, it’s moving by itself!",
+        "textVi": "Mẹ nhìn kìa, nó tự đi được!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cleaning-the-living-room-q1",
+        "prompt": "How do you help clean your home?",
+        "suggestedAnswer": "I put my toys away."
+      },
+      {
+        "id": "cleaning-the-living-room-q2",
+        "prompt": "What does the robot mop do?",
+        "suggestedAnswer": "It cleans the floor."
+      }
+    ]
+  },
+  {
+    "id": "flowers-in-the-vase",
+    "sceneId": "living-room",
+    "title": "Flowers in the Vase",
+    "order": 8,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Lily picks flowers and puts them in a vase.",
+    "lines": [
+      {
+        "id": "flowers-in-the-vase-l1",
+        "speakerId": "lily",
+        "textEn": "Mom, I picked some flowers for you.",
+        "textVi": "Mẹ ơi, con hái mấy bông hoa tặng mẹ."
+      },
+      {
+        "id": "flowers-in-the-vase-l2",
+        "speakerId": "mom",
+        "textEn": "They’re beautiful! Thank you, Lily.",
+        "textVi": "Đẹp quá! Cảm ơn con, Lily."
+      },
+      {
+        "id": "flowers-in-the-vase-l3",
+        "speakerId": "lily",
+        "textEn": "Can we put them in a vase?",
+        "textVi": "Mình cắm chúng vào bình hoa được không ạ?"
+      },
+      {
+        "id": "flowers-in-the-vase-l4",
+        "speakerId": "mom",
+        "textEn": "Yes. Let’s use the green vase.",
+        "textVi": "Được. Mình dùng bình hoa màu xanh nhé."
+      },
+      {
+        "id": "flowers-in-the-vase-l5",
+        "speakerId": "lily",
+        "textEn": "Where should I put it?",
+        "textVi": "Con đặt nó ở đâu ạ?"
+      },
+      {
+        "id": "flowers-in-the-vase-l6",
+        "speakerId": "mom",
+        "textEn": "On the coffee table. Be careful!",
+        "textVi": "Trên bàn trà. Cẩn thận nhé con!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "flowers-in-the-vase-q1",
+        "prompt": "What color are the flowers?",
+        "suggestedAnswer": "The flowers are white."
+      },
+      {
+        "id": "flowers-in-the-vase-q2",
+        "prompt": "Where is the vase?",
+        "suggestedAnswer": "The vase is on the coffee table."
+      }
+    ]
+  },
+  {
+    "id": "music-time",
+    "sceneId": "living-room",
+    "title": "Music Time",
+    "order": 9,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Ben and Lily play music on the speaker.",
+    "lines": [
+      {
+        "id": "music-time-l1",
+        "speakerId": "ben",
+        "textEn": "Lily, let’s listen to some music!",
+        "textVi": "Lily ơi, mình nghe nhạc đi!"
+      },
+      {
+        "id": "music-time-l2",
+        "speakerId": "lily",
+        "textEn": "Good idea! Turn on the speaker.",
+        "textVi": "Ý hay đấy! Bạn bật loa lên đi."
+      },
+      {
+        "id": "music-time-l3",
+        "speakerId": "ben",
+        "textEn": "Hmm, it isn’t playing.",
+        "textVi": "Ơ, nó không phát nhạc."
+      },
+      {
+        "id": "music-time-l4",
+        "speakerId": "lily",
+        "textEn": "Is the Wi-Fi router on?",
+        "textVi": "Bộ phát Wi-Fi có đang bật không?"
+      },
+      {
+        "id": "music-time-l5",
+        "speakerId": "ben",
+        "textEn": "Yes, the lights are green now.",
+        "textVi": "Có rồi, đèn đã chuyển màu xanh."
+      },
+      {
+        "id": "music-time-l6",
+        "speakerId": "lily",
+        "textEn": "Yay! Let’s sing and dance!",
+        "textVi": "Yeah! Mình cùng hát và nhảy nào!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "music-time-q1",
+        "prompt": "What kind of music do you like?",
+        "suggestedAnswer": "I like happy songs."
+      },
+      {
+        "id": "music-time-q2",
+        "prompt": "Where is the speaker?",
+        "suggestedAnswer": "The speaker is on the cabinet."
+      }
+    ]
+  },
+  {
+    "id": "good-morning-sunshine",
+    "sceneId": "living-room",
+    "title": "Good Morning, Sunshine",
+    "order": 10,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "Mom and Ben open the curtains to let the sun in.",
+    "lines": [
+      {
+        "id": "good-morning-sunshine-l1",
+        "speakerId": "mom",
+        "textEn": "Good morning, Ben!",
+        "textVi": "Chào buổi sáng, Ben!"
+      },
+      {
+        "id": "good-morning-sunshine-l2",
+        "speakerId": "ben",
+        "textEn": "Good morning, Mom. It’s dark in here.",
+        "textVi": "Chào buổi sáng mẹ. Trong này tối quá."
+      },
+      {
+        "id": "good-morning-sunshine-l3",
+        "speakerId": "mom",
+        "textEn": "Let’s open the curtains.",
+        "textVi": "Mình kéo rèm cửa ra nhé."
+      },
+      {
+        "id": "good-morning-sunshine-l4",
+        "speakerId": "ben",
+        "textEn": "Wow, the sun is shining!",
+        "textVi": "Ồ, mặt trời đang chiếu sáng!"
+      },
+      {
+        "id": "good-morning-sunshine-l5",
+        "speakerId": "mom",
+        "textEn": "Can you open the window, too?",
+        "textVi": "Con mở cả cửa sổ được không?"
+      },
+      {
+        "id": "good-morning-sunshine-l6",
+        "speakerId": "ben",
+        "textEn": "Sure. I can see the trees outside!",
+        "textVi": "Dạ được ạ. Con nhìn thấy cây ở bên ngoài!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "good-morning-sunshine-q1",
+        "prompt": "What do you do in the morning?",
+        "suggestedAnswer": "I open the curtains."
+      },
+      {
+        "id": "good-morning-sunshine-q2",
+        "prompt": "What can you see out of the window?",
+        "suggestedAnswer": "I can see trees out of the window."
+      }
+    ]
   }
 ]
