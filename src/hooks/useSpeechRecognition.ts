@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { SPEECH_CONFIG } from '@/config/app';
+import { getCourseConfig } from '@/lib/course';
 import {
   getSpeechRecognitionConstructor,
   toSpeechErrorKind,
@@ -69,7 +69,7 @@ export function useSpeechRecognition() {
     abortCurrent();
 
     const recognition = new Recognition();
-    recognition.lang = SPEECH_CONFIG.lang;
+    recognition.lang = getCourseConfig().lang;
     recognition.continuous = false;
     recognition.interimResults = true;
     recognition.maxAlternatives = 3;

@@ -16,6 +16,7 @@ import { SceneBackdrop } from '@/components/common/SceneBackdrop';
 import { getSceneWords } from '@/data/content';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { playSfx } from '@/lib/sfx';
@@ -35,7 +36,7 @@ export function FlashcardsPage() {
 }
 
 function Flashcards({ scene }: { scene: Scene }) {
-  useDocumentTitle(`Flashcards · ${scene.title}`);
+  useDocumentTitle(t('Flashcards · {scene}', { scene: scene.title }));
   const words = useMemo(() => getSceneWords(scene), [scene]);
   const setFlashcardIndex = useProgressStore((state) => state.setFlashcardIndex);
   const [index, setIndex] = useState(() => {
@@ -87,7 +88,7 @@ function Flashcards({ scene }: { scene: Scene }) {
 
   return (
     <>
-      <h1 className="sr-only">{scene.title} flashcards</h1>
+      <h1 className="sr-only">{t('{scene} flashcards', { scene: scene.title })}</h1>
 
       {/* --card-width: the card, and the gap it leaves in the picture strip behind it. */}
       <div className="relative flex flex-1 flex-col overflow-hidden [--card-width:min(38rem,100%)] xl:[--card-width:36rem]">
@@ -113,10 +114,12 @@ function Flashcards({ scene }: { scene: Scene }) {
                 aria-hidden
                 className="size-28 object-contain"
               />
-              <h2 className="text-3xl font-extrabold text-navy-900">Great job!</h2>
+              <h2 className="text-3xl font-extrabold text-navy-900">{t('Great job!')}</h2>
               <p className="max-w-sm font-medium text-navy-500">
-                Now find these {words.length} things in the {scene.title.toLowerCase()} and answer a
-                question about each one.
+                {t(
+                  'Now find these {count} things in the {scene} and answer a question about each one.',
+                  { count: words.length, scene: scene.title.toLowerCase() },
+                )}
               </p>
               <div className="mt-2 flex w-full flex-col gap-3 sm:w-fit">
                 <div className="flex flex-col gap-3 sm:flex-row">
@@ -125,7 +128,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                     size="lg"
                     leftIcon={<Search aria-hidden className="size-5" />}
                   >
-                    Explore the {scene.title}
+                    {t('Explore the {scene}', { scene: scene.title })}
                   </ButtonLink>
                   <ButtonLink
                     to={paths.topic(scene.id)}
@@ -133,7 +136,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                     variant="soft"
                     leftIcon={<ArrowLeft aria-hidden className="size-5" strokeWidth={2.5} />}
                   >
-                    Back to Overview
+                    {t('Back to Overview')}
                   </ButtonLink>
                 </div>
                 <Button
@@ -146,7 +149,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                     goTo(0);
                   }}
                 >
-                  Start the cards again
+                  {t('Start the cards again')}
                 </Button>
               </div>
             </section>
@@ -154,7 +157,7 @@ function Flashcards({ scene }: { scene: Scene }) {
             word && (
               <div className="relative w-(--card-width)">
                 <IconButton
-                  label="Previous card"
+                  label={t('Previous card')}
                   onClick={previous}
                   disabled={index === 0}
                   size="lg"
@@ -175,7 +178,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                         className="inline-flex h-10 items-center gap-1.5 rounded-full bg-leaf-50 px-4 text-[0.9375rem] font-bold text-leaf-700 transition hover:bg-leaf-100"
                       >
                         <CircleCheck aria-hidden className="size-4.5 fill-leaf-500 text-white" />
-                        Finish
+                        {t('Finish')}
                       </button>
                     )
                   }
@@ -188,7 +191,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                         onClick={finish}
                         rightIcon={<Flag aria-hidden className="size-5" />}
                       >
-                        Finish
+                        {t('Finish')}
                       </Button>
                     ) : (
                       <Button
@@ -197,13 +200,13 @@ function Flashcards({ scene }: { scene: Scene }) {
                         onClick={next}
                         rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
                       >
-                        Next
+                        {t('Next')}
                       </Button>
                     )
                   }
                 />
                 <IconButton
-                  label="Next card"
+                  label={t('Next card')}
                   onClick={next}
                   disabled={last}
                   size="lg"

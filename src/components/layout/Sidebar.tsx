@@ -1,6 +1,7 @@
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 import { NavLink } from 'react-router';
 import { SIDEBAR_BACKGROUND } from '@/config/assets';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useProfileStore } from '@/stores/profileStore';
@@ -16,7 +17,7 @@ function MenuList({ iconOnly }: { iconOnly: boolean }) {
           <NavLink
             to={to}
             end={end}
-            title={iconOnly ? label : undefined}
+            title={iconOnly ? t(label) : undefined}
             className={({ isActive }) =>
               cn(
                 'flex h-14 items-center rounded-xl font-semibold transition',
@@ -28,7 +29,7 @@ function MenuList({ iconOnly }: { iconOnly: boolean }) {
             }
           >
             <Icon aria-hidden className="size-6.5 shrink-0" />
-            <span className={iconOnly ? 'sr-only' : undefined}>{label}</span>
+            <span className={iconOnly ? 'sr-only' : undefined}>{t(label)}</span>
           </NavLink>
         </li>
       ))}
@@ -68,8 +69,8 @@ export function Sidebar({ collapsed, onToggle }: { collapsed: boolean; onToggle:
           <button
             type="button"
             aria-expanded={false}
-            aria-label="Expand menu"
-            title="Expand menu"
+            aria-label={t('Expand menu')}
+            title={t('Expand menu')}
             onClick={onToggle}
             className="group relative flex size-14 items-center justify-center rounded-xl transition hover:bg-white/10"
           >
@@ -88,8 +89,8 @@ export function Sidebar({ collapsed, onToggle }: { collapsed: boolean; onToggle:
             <button
               type="button"
               aria-expanded
-              aria-label="Collapse menu"
-              title="Collapse menu"
+              aria-label={t('Collapse menu')}
+              title={t('Collapse menu')}
               onClick={onToggle}
               className="flex size-10 shrink-0 items-center justify-center rounded-xl text-white/80 transition hover:bg-white/10 hover:text-white"
             >
@@ -99,7 +100,7 @@ export function Sidebar({ collapsed, onToggle }: { collapsed: boolean; onToggle:
         )}
       </div>
 
-      <nav aria-label="Main" className="relative flex-1 px-3 pt-1">
+      <nav aria-label={t('Main')} className="relative flex-1 px-3 pt-1">
         <MenuList iconOnly={collapsed} />
       </nav>
 

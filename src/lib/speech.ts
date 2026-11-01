@@ -1,5 +1,6 @@
 import { SPEECH_CONFIG } from '@/config/app';
 import type { VoiceStyle } from '@/types/models';
+import { getCourseConfig } from './course';
 import { isChildVoice, voiceStyleOf } from './voices';
 
 /* -------------------------------------------------------------------------------------------------
@@ -54,35 +55,49 @@ function voiceQuality(voice: SpeechSynthesisVoice): number {
   const name = voice.name.toLowerCase();
   let score = 0;
   if (/natural|neural|online/.test(name)) score += 4;
-  if (/google|samantha|aria|jenny|ava|emma|andrew|brian|guy|allison|ana\b/.test(name)) score += 2;
+  if (
+    /google|samantha|aria|jenny|ava|emma|andrew|brian|guy|allison|ana\b|xiaoxiao|yunxi/.test(name)
+  )
+    score += 2;
   if (voice.localService) score += 1;
   return score;
 }
 
+/** Position of the voice's language in `langs` (lower-case prefixes), or -1 when it is not there. */
+const langRank = (voice: SpeechSynthesisVoice, langs: readonly string[]) =>
+  langs.findIndex((prefix) => normalizedLang(voice).startsWith(prefix));
+
 /**
- * US-English browser voices only (spec: American accent), best sounding first. With a `style`, only
- * voices that sound like it; when the device has none, all US voices (better than silence).
+ * Browser voices of the active course only — US English (spec: American accent) or Mandarin —
+ * preferred language first, then best sounding. With a `style`, only voices that sound like it;
+ * when the device has none, all of the course's voices (better than silence).
  */
-export function listUsVoices(style?: VoiceStyle | null): SpeechSynthesisVoice[] {
-  const target = SPEECH_CONFIG.lang.toLowerCase();
+export function listCourseVoices(style?: VoiceStyle | null): SpeechSynthesisVoice[] {
+  const { voiceLangs } = getCourseConfig();
   const all = getVoices()
-    .filter((voice) => normalizedLang(voice) === target)
-    .sort((a, b) => voiceQuality(b) - voiceQuality(a) || a.name.localeCompare(b.name));
+    .filter((voice) => langRank(voice, voiceLangs) >= 0)
+    .sort(
+      (a, b) =>
+        langRank(a, voiceLangs) - langRank(b, voiceLangs) ||
+        voiceQuality(b) - voiceQuality(a) ||
+        a.name.localeCompare(b.name),
+    );
   if (!style) return all;
   const matching = all.filter((voice) => voiceStyleOf(voice.name) === style);
   return matching.length > 0 ? matching : all;
 }
 
-/** The voice chosen in Settings if it is still available, else the best US voice, else any English one. */
+/** The voice chosen in Settings if it is still available, else the best course voice, else a near one. */
 function pickVoice(
   voiceURI?: string | null,
   style?: VoiceStyle | null,
 ): SpeechSynthesisVoice | null {
-  const usVoices = listUsVoices(style);
+  const voices = listCourseVoices(style);
+  const { fallbackVoiceLangs } = getCourseConfig();
   return (
-    usVoices.find((voice) => voice.voiceURI === voiceURI) ??
-    usVoices[0] ??
-    getVoices().find((voice) => normalizedLang(voice).startsWith('en')) ??
+    voices.find((voice) => voice.voiceURI === voiceURI) ??
+    voices[0] ??
+    getVoices().find((voice) => langRank(voice, fallbackVoiceLangs) >= 0) ??
     null
   );
 }
@@ -118,7 +133,7 @@ export function speakText(
   }
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = SPEECH_CONFIG.lang;
+  utterance.lang = getCourseConfig().lang;
   utterance.rate = options.rate ?? SPEECH_CONFIG.rate;
   const voice = pickVoice(options.voiceURI, options.voiceStyle);
   const raisePitch = options.voiceStyle && !(voice && isChildVoice(voice.name));

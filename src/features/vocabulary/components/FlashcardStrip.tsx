@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLayoutEffect, useRef, useState } from 'react';
 import { IconButton } from '@/components/common/IconButton';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import type { Word } from '@/types/models';
@@ -59,7 +60,7 @@ export function FlashcardStrip({ words, index, onSelect }: FlashcardStripProps) 
         <button
           type="button"
           onClick={() => onSelect(position)}
-          aria-label={`Card ${position + 1}: ${word.text}`}
+          aria-label={t('Card {number}: {word}', { number: position + 1, word: word.text })}
           aria-current={current ? 'true' : undefined}
           className={cn(
             'flex size-18 items-center justify-center rounded-xl border bg-white p-2 transition',
@@ -82,12 +83,12 @@ export function FlashcardStrip({ words, index, onSelect }: FlashcardStripProps) 
 
   return (
     <nav
-      aria-label="All cards"
+      aria-label={t('All cards')}
       className="flex h-28 items-center justify-between gap-3 rounded-2xl bg-white/95 px-4 shadow-soft backdrop-blur"
     >
       <div className="flex min-w-0 flex-1 items-center gap-3">
         <IconButton
-          label="Earlier cards"
+          label={t('Earlier cards')}
           size="sm"
           disabled={windowStart === 0}
           onClick={() => setWindow({ start: Math.max(0, windowStart - page), forIndex: index })}
@@ -107,7 +108,7 @@ export function FlashcardStrip({ words, index, onSelect }: FlashcardStripProps) 
           </ul>
         </div>
         <IconButton
-          label="Later cards"
+          label={t('Later cards')}
           size="sm"
           disabled={windowStart >= maxStart}
           onClick={() =>

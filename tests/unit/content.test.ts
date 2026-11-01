@@ -2,9 +2,10 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { BACKGROUNDS, AVATAR_IMAGES, BRAND_ASSETS } from '@/config/assets';
-import { content, getScene, getSceneConversations, getSceneWords } from '@/data/content';
+import { contentByCourse, getScene, getSceneConversations, getSceneWords } from '@/data/content';
 import { collectAssetPaths, validateContent } from '@/data/validateContent';
 import { getPathBounds } from '@/lib/svgPath';
+import { describeWordPinyin } from '@/lib/text';
 
 /**
  * Content check (spec §10.3): run with `npm run content:check` after editing JSON or assets.
@@ -13,7 +14,7 @@ const ROOT = resolve(__dirname, '../..');
 const PUBLIC = join(ROOT, 'public');
 const DATA = join(ROOT, 'src/data');
 
-describe('static content', () => {
+describe.each(Object.entries(contentByCourse))('static content (%s course)', (_course, content) => {
   it('has no broken references, duplicates or out-of-bounds hotspots', () => {
     expect(validateContent(content)).toEqual([]);
   });
@@ -29,7 +30,9 @@ describe('static content', () => {
     );
     expect(missing).toEqual([]);
   });
+});
 
+describe('content files', () => {
   it('has no duplicate ids hidden by JSON parsing', () => {
     const duplicatesIn = (file: string) => {
       const ids = [...readFileSync(file, 'utf8').matchAll(/"id":\s*"([^"]+)"/g)].map(
@@ -37,9 +40,11 @@ describe('static content', () => {
       );
       return ids.filter((id, index) => ids.indexOf(id) !== index);
     };
-    expect(duplicatesIn(join(DATA, 'words.json'))).toEqual([]);
-    expect(duplicatesIn(join(DATA, 'conversations.json'))).toEqual([]);
-    expect(duplicatesIn(join(DATA, 'speakers.json'))).toEqual([]);
+    for (const dir of [DATA, join(DATA, 'zh')]) {
+      expect(duplicatesIn(join(dir, 'words.json'))).toEqual([]);
+      expect(duplicatesIn(join(dir, 'conversations.json'))).toEqual([]);
+      expect(duplicatesIn(join(dir, 'speakers.json'))).toEqual([]);
+    }
     const sceneIds = readdirSync(join(DATA, 'scenes')).map(
       (file) => JSON.parse(readFileSync(join(DATA, 'scenes', file), 'utf8')).id as string,
     );
@@ -135,5 +140,36 @@ describe('Kitchen', () => {
       return (bounds.width * bounds.height) / (kitchen.width * kitchen.height) >= 0.35;
     });
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});
+
+describe('Chinese course', () => {
+  const { scenes, words } = contentByCourse.zh;
+  const available = scenes.filter((scene) => scene.status === 'available');
+
+  it('has every word and conversation of the English scenes', () => {
+    for (const scene of available) {
+      expect(scene.wordIds.filter((id) => !words[id])).toEqual([]);
+      expect(scene.title).toMatch(/\p{Script=Han}/u);
+    }
+  });
+
+  it('gives each word of a scene a different text (they are quiz options)', () => {
+    for (const scene of available) {
+      const texts = scene.wordIds.map((id) => words[id].text);
+      expect(texts.filter((text, index) => texts.indexOf(text) !== index)).toEqual([]);
+    }
+  });
+
+  it('reads every answer sentence aloud with pinyin (known measure words)', () => {
+    const missing = Object.values(words).filter((word) => !describeWordPinyin(word, 'zh'));
+    expect(missing.map((word) => `${word.id} (${word.measure})`)).toEqual([]);
+  });
+
+  it('accepts only Chinese characters as typed answers', () => {
+    const notChinese = Object.values(words).flatMap((word) =>
+      word.acceptedAnswers.filter((answer) => !/^\p{Script=Han}+$/u.test(answer)),
+    );
+    expect(notChinese).toEqual([]);
   });
 });

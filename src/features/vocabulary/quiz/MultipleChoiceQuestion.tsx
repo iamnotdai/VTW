@@ -1,5 +1,8 @@
 import { ChevronRight, X } from 'lucide-react';
 import { useState } from 'react';
+import { getWord } from '@/data/content';
+import { useCourse } from '@/hooks/useCourse';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import type { Choice } from '@/lib/quiz';
 import type { QuizStatus } from './quizSession';
@@ -19,6 +22,8 @@ const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1
  * Multiple-choice mode (spec §8; design screen 07 B): a letter badge, the word and an arrow. Tapping a choice checks
  * it right away — there is no "Check Answer" button. The choices are plain buttons, not radios,
  * so moving through them with the arrow keys never submits an answer by accident.
+ * In the Chinese course each word shows its pinyin underneath, for children who can't read the
+ * characters yet; the button is still named by the word alone.
  */
 export function MultipleChoiceQuestion({
   choices,
@@ -26,6 +31,7 @@ export function MultipleChoiceQuestion({
   lastAnswer,
   onSubmit,
 }: MultipleChoiceQuestionProps) {
+  const course = useCourse();
   const [wrongIds, setWrongIds] = useState<ReadonlySet<string>>(new Set());
   const answering = status === 'answering';
 
@@ -40,9 +46,10 @@ export function MultipleChoiceQuestion({
   };
 
   return (
-    <div role="group" aria-label="Choose the right word" className="flex flex-col gap-2.5">
+    <div role="group" aria-label={t('Choose the right word')} className="flex flex-col gap-2.5">
       {choices.map((choice, index) => {
         const isWrong = wrongIds.has(choice.wordId);
+        const pinyin = getWord(choice.wordId)?.pinyin;
         return (
           <button
             key={choice.wordId}
@@ -65,8 +72,20 @@ export function MultipleChoiceQuestion({
             >
               {isWrong ? <X className="size-4" strokeWidth={3} /> : LETTERS[index]}
             </span>
-            <span lang="en" className={cn('min-w-0 flex-1', isWrong && 'line-through')}>
+            <span lang={course.lang} className={cn('min-w-0 flex-1', isWrong && 'line-through')}>
               {capitalize(choice.text)}
+              {pinyin && (
+                <span
+                  aria-hidden
+                  lang="zh-Latn-pinyin"
+                  className={cn(
+                    'block text-sm font-medium',
+                    isWrong ? 'text-navy-300' : 'text-navy-400',
+                  )}
+                >
+                  {pinyin}
+                </span>
+              )}
             </span>
             {!isWrong && (
               <ChevronRight

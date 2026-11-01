@@ -22,3 +22,11 @@ describe('sanitizeSettings voiceURI', () => {
     expect(sanitizeSettings({ voiceURI: 42 })?.voiceURI).toBeNull();
   });
 });
+
+describe('sanitizeSettings course', () => {
+  it('keeps a known course and defaults to English', () => {
+    expect(sanitizeSettings({ course: 'zh' })?.course).toBe('zh');
+    expect(sanitizeSettings({ course: 'fr' })?.course).toBe('en');
+    expect(sanitizeSettings({})?.course).toBe(DEFAULT_SETTINGS.course);
+  });
+});

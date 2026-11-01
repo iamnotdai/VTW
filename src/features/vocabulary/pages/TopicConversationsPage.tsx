@@ -4,6 +4,7 @@ import { getSceneConversations, getSceneGroupTitle } from '@/data/content';
 import { ConversationRow } from '@/features/conversation/components/ConversationRow';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Scene } from '@/types/models';
 import { useSceneParam } from '../useSceneParam';
@@ -20,7 +21,7 @@ export function TopicConversationsPage() {
 }
 
 function TopicConversations({ scene }: { scene: Scene }) {
-  useDocumentTitle(`${scene.title} · Conversations`);
+  useDocumentTitle(t('{scene} · Conversations', { scene: scene.title }));
   const completedIds = useProgressStore((state) => state.progress.completedConversationIds);
   const conversations = getSceneConversations(scene);
   const upNextId = conversations.find((item) => !completedIds.includes(item.id))?.id;
@@ -30,17 +31,19 @@ function TopicConversations({ scene }: { scene: Scene }) {
       <TopBar>
         <Breadcrumb
           items={[
-            { label: 'Vocabulary', to: paths.vocabulary },
+            { label: t('Vocabulary'), to: paths.vocabulary },
             { label: getSceneGroupTitle(scene), to: `${paths.vocabulary}#group-${scene.group}` },
             { label: scene.title, to: paths.topic(scene.id) },
-            { label: 'Conversations' },
+            { label: t('Conversations') },
           ]}
         />
       </TopBar>
       <PageContainer width="full" className="max-w-4xl lg:mx-0">
         <PageTitle
-          title={`${scene.title} Conversations`}
-          description={`${conversations.length} conversations in this scene.`}
+          title={t('{scene} Conversations', { scene: scene.title })}
+          description={t('{count} conversations in this scene.', {
+            count: conversations.length,
+          })}
         />
         <ol className="mt-6 flex flex-col gap-2.5">
           {conversations.map((conversation) => (

@@ -8,6 +8,7 @@ import {
   NameField,
 } from '@/features/onboarding/components/ProfileFields';
 import { FIELD_IDS } from '@/features/onboarding/components/profileFieldIds';
+import { t } from '@/i18n';
 import {
   profileToFormValues,
   toProfileInput,
@@ -69,28 +70,30 @@ export function SettingsForm({ profile }: { profile: UserProfile }) {
 
       <div className="mt-3 flex flex-col gap-3">
         <Button type="submit" size="lg" fullWidth>
-          Save Changes
+          {t('Save Changes')}
         </Button>
         <p role="status" className="min-h-6 text-center text-sm font-semibold">
           {status === 'saved' && (
             <span className="inline-flex items-center gap-1.5 text-leaf-600">
-              <CircleCheck aria-hidden className="size-4" /> Your changes are saved.
+              <CircleCheck aria-hidden className="size-4" /> {t('Your changes are saved.')}
             </span>
           )}
           {status === 'not-persisted' && (
             <span className="text-sun-700">
-              Saved for now, but this browser could not store it.
+              {t('Saved for now, but this browser could not store it.')}
             </span>
           )}
         </p>
         {!isPersistentStorage() && (
           <p className="flex gap-2 rounded-xl bg-sun-50 p-4 text-sm font-semibold text-sun-700">
             <TriangleAlert aria-hidden className="mt-0.5 size-4 shrink-0" />
-            This browser is blocking storage, so your progress will be lost when you close the app.
+            {t(
+              'This browser is blocking storage, so your progress will be lost when you close the app.',
+            )}
           </p>
         )}
         <p className="text-center text-xs font-medium text-navy-400">
-          Your profile and progress are saved in this browser on this device only.
+          {t('Your profile and progress are saved in this browser on this device only.')}
         </p>
       </div>
     </form>

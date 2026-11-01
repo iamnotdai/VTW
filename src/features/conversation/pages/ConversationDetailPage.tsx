@@ -7,6 +7,7 @@ import { Breadcrumb, PageContainer, TopBar } from '@/components/layout/PageHeade
 import { getSceneConversations } from '@/data/content';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation, Scene } from '@/types/models';
@@ -36,7 +37,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
       <TopBar>
         <Breadcrumb
           items={[
-            { label: 'Conversation', to: paths.conversations },
+            { label: t('Conversation'), to: paths.conversations },
             { label: scene.title, to: paths.topicConversations(scene.id) },
             { label: conversation.title },
           ]}
@@ -49,7 +50,9 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
             className="flex animate-pop-in items-center gap-3 rounded-2xl bg-leaf-500 p-4 font-bold text-white shadow-soft"
           >
             <CircleCheck aria-hidden className="size-6 shrink-0" />
-            Lesson complete! You practiced every question in “{conversation.title}”.
+            {t('Lesson complete! You practiced every question in “{title}”.', {
+              title: conversation.title,
+            })}
           </div>
         )}
 
@@ -73,7 +76,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
                     <Play aria-hidden className="ml-1 size-7 fill-current" />
                   </span>
                 </span>
-                <span className="sr-only">Watch the video</span>
+                <span className="sr-only">{t('Watch the video')}</span>
               </Link>
             )}
             <div className="flex items-center gap-3 px-2 pt-3 pb-1">
@@ -82,10 +85,10 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
                   {conversation.title}
                 </h1>
                 <p className="text-[15px] font-medium text-navy-400">
-                  Conversation {conversation.order} of {total}
+                  {t('Conversation {number} of {total}', { number: conversation.order, total })}
                   {completed && (
                     <span className="ml-2 inline-flex items-center gap-1 font-bold text-leaf-600">
-                      <CircleCheck aria-hidden className="size-4" /> Completed
+                      <CircleCheck aria-hidden className="size-4" /> {t('Completed')}
                     </span>
                   )}
                 </p>
@@ -95,7 +98,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
           </Card>
 
           <Card className="p-5 sm:p-6">
-            <h2 className="sr-only">Transcript</h2>
+            <h2 className="sr-only">{t('Transcript')}</h2>
             <TranscriptViewer conversation={conversation} variant="compact" />
           </Card>
         </div>
@@ -106,7 +109,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
             size="lg"
             rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
           >
-            View Conversation
+            {t('View Conversation')}
           </ButtonLink>
           <ButtonLink
             to={paths.practice(conversation.id)}
@@ -114,7 +117,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
             variant="secondary"
             leftIcon={<Mic aria-hidden className="size-5" />}
           >
-            Practice Speaking
+            {t('Practice Speaking')}
           </ButtonLink>
         </div>
       </PageContainer>

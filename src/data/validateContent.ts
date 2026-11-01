@@ -35,8 +35,14 @@ export function validateContent(bundle: ContentBundle): string[] {
 
     if (!Array.isArray(word.examples) || word.examples.length === 0)
       errors.push(`${at}: needs at least one example sentence`);
-    else if (word.examples.some((example) => !example.en?.trim()))
-      errors.push(`${at}: every example needs an "en" sentence`);
+    else if (word.examples.some((example) => !example.text?.trim()))
+      errors.push(`${at}: every example needs a "text" sentence`);
+    else if (word.examples.some((example) => needsPinyin(example.text, example.pinyin)))
+      errors.push(`${at}: every Chinese example needs "pinyin" (npm run content:pinyin)`);
+
+    if (needsPinyin(word.text, word.pinyin)) errors.push(`${at}: Chinese words need "pinyin"`);
+    if (word.measure !== undefined && !/^\p{Script=Han}$/u.test(word.measure))
+      errors.push(`${at}: "measure" must be one Chinese character, e.g. "张"`);
 
     for (const field of ['relatedWordIds', 'distractorWordIds'] as const) {
       for (const id of word[field] ?? []) {
@@ -73,7 +79,9 @@ export function validateContent(bundle: ContentBundle): string[] {
         lineIds.add(line.id);
         if (!bundle.speakers[line.speakerId])
           errors.push(`${at} › ${line.id}: unknown speakerId "${line.speakerId}"`);
-        if (!line.textEn?.trim()) errors.push(`${at} › ${line.id}: "textEn" is required`);
+        if (!line.text?.trim()) errors.push(`${at} › ${line.id}: "text" is required`);
+        else if (needsPinyin(line.text, line.pinyin))
+          errors.push(`${at} › ${line.id}: Chinese lines need "pinyin" (npm run content:pinyin)`);
         if (
           line.startSeconds !== undefined &&
           line.endSeconds !== undefined &&
@@ -90,6 +98,13 @@ export function validateContent(bundle: ContentBundle): string[] {
       questionIds.add(question.id);
       if (!question.prompt?.trim() || !question.suggestedAnswer?.trim())
         errors.push(`${at} › ${question.id}: "prompt" and "suggestedAnswer" are required`);
+      else if (
+        needsPinyin(question.prompt, question.promptPinyin) ||
+        needsPinyin(question.suggestedAnswer, question.suggestedAnswerPinyin)
+      )
+        errors.push(
+          `${at} › ${question.id}: Chinese questions need "promptPinyin" and "suggestedAnswerPinyin"`,
+        );
     }
   }
 
@@ -192,6 +207,11 @@ export function collectAssetPaths(bundle: ContentBundle): string[] {
   }
   for (const speaker of Object.values(bundle.speakers)) add(speaker.avatar);
   return [...paths].sort();
+}
+
+/** Chinese course text is always shown with its pinyin. */
+function needsPinyin(text: string | undefined, pinyin: string | undefined): boolean {
+  return !!text && /\p{Script=Han}/u.test(text) && !pinyin?.trim();
 }
 
 const TOLERANCE = 1;

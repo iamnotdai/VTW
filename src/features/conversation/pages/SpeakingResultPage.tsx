@@ -7,6 +7,7 @@ import { Breadcrumb, PageContainer, TopBar } from '@/components/layout/PageHeade
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
+import { t } from '@/i18n';
 import { getSpeechFeedbackLevel, scoreSpeechMatch } from '@/lib/speechMatch';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation } from '@/types/models';
@@ -18,7 +19,7 @@ import {
   SpeakingNote,
   YourAnswerCard,
 } from '../components/SpeakingParts';
-import { practiceCrumbs, SPEECH_ERROR_TEXT } from '../speakingCopy';
+import { practiceCrumbs, speechErrorText } from '../speakingCopy';
 import { useSpeakingSessionStore } from '../speakingSession';
 import { useConversationParam } from '../useConversationParam';
 
@@ -34,7 +35,7 @@ export function SpeakingResultPage() {
  * word-match feedback. Tapping the microphone again replaces the answer in place.
  */
 function SpeakingResult({ conversation }: { conversation: Conversation }) {
-  useDocumentTitle(`${conversation.title} · Result`);
+  useDocumentTitle(t('{title} · Result', { title: conversation.title }));
   const navigate = useNavigate();
   const location = useLocation();
   const navState = getNavigationState(location.state);
@@ -101,7 +102,7 @@ function SpeakingResult({ conversation }: { conversation: Conversation }) {
       </TopBar>
       <div className="md:pt-20">
         <PageContainer width="narrow" className="flex flex-col gap-5">
-          <h1 className="sr-only">Speaking Result</h1>
+          <h1 className="sr-only">{t('Speaking Result')}</h1>
           <QuestionHeader question={question} index={questionIndex} total={questions.length} />
 
           {speech.supported && !micBlocked ? (
@@ -110,11 +111,11 @@ function SpeakingResult({ conversation }: { conversation: Conversation }) {
                 status={speech.status}
                 onStart={speech.start}
                 onStop={speech.stop}
-                idleLabel="Tap to speak again"
+                idleLabel={t('Tap to speak again')}
               />
               {speech.status === 'error' && speech.error === 'no-speech' && (
                 <p role="alert" className="text-center font-semibold text-navy-600">
-                  {SPEECH_ERROR_TEXT['no-speech']}
+                  {speechErrorText('no-speech')}
                 </p>
               )}
             </div>
@@ -127,7 +128,7 @@ function SpeakingResult({ conversation }: { conversation: Conversation }) {
                   className="flex items-start justify-center gap-2 text-center font-semibold text-navy-700"
                 >
                   <MicOff aria-hidden className="mt-0.5 size-5 shrink-0 text-coral-500" />
-                  {SPEECH_ERROR_TEXT[speech.error]}
+                  {speechErrorText(speech.error)}
                 </p>
               )}
             </>
@@ -144,7 +145,7 @@ function SpeakingResult({ conversation }: { conversation: Conversation }) {
               rightIcon={<Flag aria-hidden className="size-5" />}
               onClick={finish}
             >
-              Finish Lesson
+              {t('Finish Lesson')}
             </Button>
           ) : (
             <Button
@@ -153,7 +154,7 @@ function SpeakingResult({ conversation }: { conversation: Conversation }) {
               rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
               onClick={nextQuestion}
             >
-              Next Question
+              {t('Next Question')}
             </Button>
           )}
           <SpeakingNote />

@@ -47,8 +47,37 @@ const NUMBER_WORDS: Record<string, string> = {
   '12': 'twelve',
 };
 
-/** Lower-cases, strips punctuation, expands common contractions and small numbers. */
+/* Chinese has no spaces between words: each character is matched on its own. Recognizers often
+ * write numbers as digits ("3个") and say 两 or 二 for "two" — both are counted as the same. */
+const HAN = /\p{Script=Han}/u;
+const HAN_NUMBERS: Record<string, string> = {
+  '0': '零',
+  '1': '一',
+  '2': '二',
+  '3': '三',
+  '4': '四',
+  '5': '五',
+  '6': '六',
+  '7': '七',
+  '8': '八',
+  '9': '九',
+  '10': '十',
+  两: '二',
+};
+
+function hanTokens(word: string): string[] {
+  const parts = HAN_NUMBERS[word]
+    ? [word]
+    : (word.match(/\p{Script=Han}|[^\p{Script=Han}]+/gu) ?? []);
+  return parts.map((part) => HAN_NUMBERS[part] ?? part);
+}
+
+/**
+ * Lower-cases, strips punctuation, expands common contractions and small numbers. Text with Chinese
+ * characters is split into single characters instead.
+ */
 export function speechTokens(text: string): string[] {
+  const han = HAN.test(text);
   return text
     .normalize('NFC')
     .toLowerCase()
@@ -57,7 +86,15 @@ export function speechTokens(text: string): string[] {
     .split(/\s+/)
     .map((word) => word.replace(/^'+|'+$/g, ''))
     .filter(Boolean)
-    .flatMap((word) => CONTRACTIONS[word] ?? [NUMBER_WORDS[word] ?? word]);
+    .flatMap((word) =>
+      han ? hanTokens(word) : (CONTRACTIONS[word] ?? [NUMBER_WORDS[word] ?? word]),
+    );
+}
+
+/** The sample's words as written; for Chinese, one character each (punctuation stays attached). */
+function displayWords(expected: string): string[] {
+  if (!HAN.test(expected)) return expected.trim().split(/\s+/).filter(Boolean);
+  return expected.match(/\p{Script=Han}[^\p{Script=Han}\s]*|[^\p{Script=Han}\s]+/gu) ?? [];
 }
 
 export interface SpeechMatchWord {
@@ -81,11 +118,11 @@ export function scoreSpeechMatch(
   const alternatives = (
     typeof heardAlternatives === 'string' ? [heardAlternatives] : [...heardAlternatives]
   ).filter((value) => value.trim() !== '');
-  const displayWords = expected.trim().split(/\s+/).filter(Boolean);
+  const sampleWords = displayWords(expected);
 
   let best: SpeechMatchResult = {
     score: 0,
-    words: displayWords.map((text) => ({ text, matched: false })),
+    words: sampleWords.map((text) => ({ text, matched: false })),
     heard: alternatives[0] ?? '',
   };
 
@@ -93,7 +130,7 @@ export function scoreSpeechMatch(
     const pool = countTokens(speechTokens(heard));
     let scoredWords = 0;
     let matchedWords = 0;
-    const words = displayWords.map((text) => {
+    const words = sampleWords.map((text) => {
       const needed = countTokens(speechTokens(text));
       if (needed.size === 0) return { text, matched: true };
       scoredWords += 1;

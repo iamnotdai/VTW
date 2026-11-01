@@ -1,4 +1,5 @@
 import { AGE_GROUP_OPTIONS, PROFILE_NAME_MAX_LENGTH } from '@/config/app';
+import { t } from '@/i18n';
 import type { AgeGroup, AvatarChoice, UserProfile } from '@/types/models';
 import { characterCount, cleanSpaces } from './text';
 
@@ -109,6 +110,8 @@ export function sanitizeProfile(raw: unknown): UserProfile | null {
   };
 }
 
+/** Age group as shown to the learner ("Under 6"), in the language of the course. */
 export function getAgeGroupLabel(ageGroup: AgeGroup): string {
-  return AGE_GROUP_OPTIONS.find((option) => option.value === ageGroup)?.label ?? ageGroup;
+  const label = AGE_GROUP_OPTIONS.find((option) => option.value === ageGroup)?.label;
+  return label ? t(label) : ageGroup;
 }

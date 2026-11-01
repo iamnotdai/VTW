@@ -4,5 +4,6 @@ playwright-report
 test-results
 node_modules
 package-lock.json
+pnpm-lock.yaml
 public/assets
 VILLAGE_TO_WORLD_CODING_SPEC.md

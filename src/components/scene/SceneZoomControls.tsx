@@ -1,5 +1,6 @@
 import { Maximize, Minimize, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import { IconButton } from '@/components/common/IconButton';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 
 interface SceneZoomControlsProps {
@@ -29,15 +30,15 @@ export function SceneZoomControls({
     <div
       className={cn('flex shrink-0 items-center gap-2.5', className)}
       role="toolbar"
-      aria-label="Zoom"
+      aria-label={t('Zoom')}
     >
       {isZoomed && (
-        <IconButton label="Reset zoom" variant="dark" size="fluid" onClick={onReset}>
+        <IconButton label={t('Reset zoom')} variant="dark" size="fluid" onClick={onReset}>
           <RotateCcw aria-hidden />
         </IconButton>
       )}
       <IconButton
-        label="Zoom in"
+        label={t('Zoom in')}
         variant="dark"
         size="fluid"
         onClick={onZoomIn}
@@ -46,7 +47,7 @@ export function SceneZoomControls({
         <ZoomIn aria-hidden />
       </IconButton>
       <IconButton
-        label="Zoom out"
+        label={t('Zoom out')}
         variant="dark"
         size="fluid"
         onClick={onZoomOut}
@@ -56,7 +57,7 @@ export function SceneZoomControls({
       </IconButton>
       {fullscreen && (
         <IconButton
-          label={fullscreen.active ? 'Exit full screen' : 'Full screen'}
+          label={fullscreen.active ? t('Exit full screen') : t('Full screen')}
           variant="dark"
           size="fluid"
           onClick={fullscreen.toggle}

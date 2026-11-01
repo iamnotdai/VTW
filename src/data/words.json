@@ -8,11 +8,11 @@
     "acceptedAnswers": ["bed", "a bed"],
     "examples": [
       {
-        "en": "I sleep in my bed every night.",
+        "text": "I sleep in my bed every night.",
         "vi": "Mình ngủ trên giường mỗi tối."
       },
       {
-        "en": "My bed is soft and warm.",
+        "text": "My bed is soft and warm.",
         "vi": "Giường của mình mềm và ấm."
       }
     ],
@@ -28,11 +28,11 @@
     "acceptedAnswers": ["pillow", "a pillow"],
     "examples": [
       {
-        "en": "My pillow is white and fluffy.",
+        "text": "My pillow is white and fluffy.",
         "vi": "Chiếc gối của mình trắng và êm."
       },
       {
-        "en": "Put your head on the pillow.",
+        "text": "Put your head on the pillow.",
         "vi": "Hãy đặt đầu lên gối."
       }
     ],
@@ -48,11 +48,11 @@
     "acceptedAnswers": ["blanket", "a blanket"],
     "examples": [
       {
-        "en": "The blanket keeps me warm.",
+        "text": "The blanket keeps me warm.",
         "vi": "Chiếc chăn giữ ấm cho mình."
       },
       {
-        "en": "Please fold your blanket.",
+        "text": "Please fold your blanket.",
         "vi": "Con hãy gấp chăn lại nhé."
       }
     ],
@@ -68,11 +68,11 @@
     "acceptedAnswers": ["lamp", "a lamp"],
     "examples": [
       {
-        "en": "The lamp is on the nightstand.",
+        "text": "The lamp is on the nightstand.",
         "vi": "Chiếc đèn ở trên tủ đầu giường."
       },
       {
-        "en": "Please turn on the lamp.",
+        "text": "Please turn on the lamp.",
         "vi": "Hãy bật đèn lên."
       }
     ],
@@ -95,11 +95,11 @@
     ],
     "examples": [
       {
-        "en": "My lamp is on the nightstand.",
+        "text": "My lamp is on the nightstand.",
         "vi": "Đèn của mình ở trên tủ đầu giường."
       },
       {
-        "en": "The nightstand is next to the bed.",
+        "text": "The nightstand is next to the bed.",
         "vi": "Tủ đầu giường ở cạnh giường."
       }
     ],
@@ -115,11 +115,11 @@
     "acceptedAnswers": ["mug", "a mug", "cup", "a cup"],
     "examples": [
       {
-        "en": "I drink milk from my mug.",
+        "text": "I drink milk from my mug.",
         "vi": "Mình uống sữa bằng chiếc cốc của mình."
       },
       {
-        "en": "My mug has a red heart on it.",
+        "text": "My mug has a red heart on it.",
         "vi": "Chiếc cốc của mình có hình trái tim màu đỏ."
       }
     ],
@@ -135,11 +135,11 @@
     "acceptedAnswers": ["fan", "a fan"],
     "examples": [
       {
-        "en": "The fan keeps me cool.",
+        "text": "The fan keeps me cool.",
         "vi": "Chiếc quạt giúp mình mát mẻ."
       },
       {
-        "en": "Please turn on the fan.",
+        "text": "Please turn on the fan.",
         "vi": "Làm ơn bật quạt lên."
       }
     ],
@@ -155,11 +155,11 @@
     "acceptedAnswers": ["laptop", "a laptop", "computer", "a computer"],
     "examples": [
       {
-        "en": "I watch cartoons on my laptop.",
+        "text": "I watch cartoons on my laptop.",
         "vi": "Mình xem phim hoạt hình trên máy tính xách tay."
       },
       {
-        "en": "The laptop is on the desk.",
+        "text": "The laptop is on the desk.",
         "vi": "Máy tính xách tay ở trên bàn học."
       }
     ],
@@ -175,11 +175,11 @@
     "acceptedAnswers": ["turtle", "a turtle", "tortoise", "a tortoise"],
     "examples": [
       {
-        "en": "My turtle is soft and green.",
+        "text": "My turtle is soft and green.",
         "vi": "Bạn rùa của mình mềm và có màu xanh lá."
       },
       {
-        "en": "The turtle is on the rug.",
+        "text": "The turtle is on the rug.",
         "vi": "Bạn rùa đang ở trên tấm thảm."
       }
     ],
@@ -195,11 +195,11 @@
     "acceptedAnswers": ["wardrobe", "a wardrobe", "closet", "a closet"],
     "examples": [
       {
-        "en": "My clothes are in the wardrobe.",
+        "text": "My clothes are in the wardrobe.",
         "vi": "Quần áo của mình ở trong tủ."
       },
       {
-        "en": "The wardrobe has two doors.",
+        "text": "The wardrobe has two doors.",
         "vi": "Tủ quần áo có hai cánh cửa."
       }
     ],
@@ -215,11 +215,11 @@
     "acceptedAnswers": ["mirror", "a mirror"],
     "examples": [
       {
-        "en": "I look in the mirror and smile.",
+        "text": "I look in the mirror and smile.",
         "vi": "Mình nhìn vào gương và mỉm cười."
       },
       {
-        "en": "The mirror is on the wardrobe.",
+        "text": "The mirror is on the wardrobe.",
         "vi": "Chiếc gương ở trên tủ quần áo."
       }
     ],
@@ -235,11 +235,11 @@
     "acceptedAnswers": ["desk", "a desk"],
     "examples": [
       {
-        "en": "I do my homework at my desk.",
+        "text": "I do my homework at my desk.",
         "vi": "Mình làm bài tập ở bàn học."
       },
       {
-        "en": "The globe is on the desk.",
+        "text": "The globe is on the desk.",
         "vi": "Quả địa cầu ở trên bàn học."
       }
     ],
@@ -255,11 +255,11 @@
     "acceptedAnswers": ["chair", "a chair"],
     "examples": [
       {
-        "en": "Sit on the chair, please.",
+        "text": "Sit on the chair, please.",
         "vi": "Con ngồi lên ghế nhé."
       },
       {
-        "en": "The chair is in front of the desk.",
+        "text": "The chair is in front of the desk.",
         "vi": "Cái ghế ở phía trước bàn học."
       }
     ],
@@ -275,11 +275,11 @@
     "acceptedAnswers": ["book", "a book"],
     "examples": [
       {
-        "en": "I read a book before bed.",
+        "text": "I read a book before bed.",
         "vi": "Mình đọc sách trước khi đi ngủ."
       },
       {
-        "en": "This book is about animals.",
+        "text": "This book is about animals.",
         "vi": "Quyển sách này nói về các con vật."
       }
     ],
@@ -295,11 +295,11 @@
     "acceptedAnswers": ["bookshelf", "a bookshelf", "book shelf", "bookcase", "a bookcase"],
     "examples": [
       {
-        "en": "There are many books on the bookshelf.",
+        "text": "There are many books on the bookshelf.",
         "vi": "Có nhiều sách trên giá sách."
       },
       {
-        "en": "Put the book back on the bookshelf.",
+        "text": "Put the book back on the bookshelf.",
         "vi": "Hãy đặt cuốn sách trở lại giá sách."
       }
     ],
@@ -322,11 +322,11 @@
     ],
     "examples": [
       {
-        "en": "My pencils are in the pencil cup.",
+        "text": "My pencils are in the pencil cup.",
         "vi": "Bút chì của mình ở trong ống đựng bút."
       },
       {
-        "en": "The pencil cup is on the desk.",
+        "text": "The pencil cup is on the desk.",
         "vi": "Ống đựng bút ở trên bàn học."
       }
     ],
@@ -342,11 +342,11 @@
     "acceptedAnswers": ["clock", "a clock", "wall clock", "a wall clock"],
     "examples": [
       {
-        "en": "The clock is on the wall.",
+        "text": "The clock is on the wall.",
         "vi": "Đồng hồ ở trên tường."
       },
       {
-        "en": "Look at the clock. It's eight o'clock!",
+        "text": "Look at the clock. It's eight o'clock!",
         "vi": "Nhìn đồng hồ kìa. Tám giờ rồi!"
       }
     ],
@@ -369,11 +369,11 @@
     ],
     "examples": [
       {
-        "en": "There is a picture on the wall.",
+        "text": "There is a picture on the wall.",
         "vi": "Có một bức tranh trên tường."
       },
       {
-        "en": "I love this picture of the mountains.",
+        "text": "I love this picture of the mountains.",
         "vi": "Mình rất thích bức tranh núi này."
       }
     ],
@@ -389,11 +389,11 @@
     "acceptedAnswers": ["rug", "a rug", "carpet", "a carpet"],
     "examples": [
       {
-        "en": "The rug is soft under my feet.",
+        "text": "The rug is soft under my feet.",
         "vi": "Tấm thảm mềm mại dưới chân mình."
       },
       {
-        "en": "My slippers are on the rug.",
+        "text": "My slippers are on the rug.",
         "vi": "Đôi dép của mình ở trên thảm."
       }
     ],
@@ -410,11 +410,11 @@
     "acceptedAnswers": ["slippers", "the slippers", "slipper", "a slipper"],
     "examples": [
       {
-        "en": "I wear my slippers at home.",
+        "text": "I wear my slippers at home.",
         "vi": "Mình đi dép trong nhà."
       },
       {
-        "en": "Where are my slippers?",
+        "text": "Where are my slippers?",
         "vi": "Dép của mình đâu rồi nhỉ?"
       }
     ],
@@ -430,11 +430,11 @@
     "acceptedAnswers": ["bunny", "a bunny", "rabbit", "a rabbit"],
     "examples": [
       {
-        "en": "I hug my bunny at night.",
+        "text": "I hug my bunny at night.",
         "vi": "Mình ôm bạn thỏ bông vào ban đêm."
       },
       {
-        "en": "My bunny is pink and soft.",
+        "text": "My bunny is pink and soft.",
         "vi": "Bạn thỏ bông của mình màu hồng và mềm."
       }
     ],
@@ -450,11 +450,11 @@
     "acceptedAnswers": ["mattress", "a mattress"],
     "examples": [
       {
-        "en": "The mattress is soft.",
+        "text": "The mattress is soft.",
         "vi": "Chiếc nệm rất êm."
       },
       {
-        "en": "I sleep on a soft mattress.",
+        "text": "I sleep on a soft mattress.",
         "vi": "Mình ngủ trên một chiếc nệm êm."
       }
     ],
@@ -478,11 +478,11 @@
     ],
     "examples": [
       {
-        "en": "My books are in my backpack.",
+        "text": "My books are in my backpack.",
         "vi": "Sách của mình ở trong ba lô."
       },
       {
-        "en": "Don't forget your backpack!",
+        "text": "Don't forget your backpack!",
         "vi": "Đừng quên ba lô nhé!"
       }
     ],
@@ -505,11 +505,11 @@
     ],
     "examples": [
       {
-        "en": "The plant needs some water.",
+        "text": "The plant needs some water.",
         "vi": "Cái cây cần một chút nước."
       },
       {
-        "en": "My plant has big green leaves.",
+        "text": "My plant has big green leaves.",
         "vi": "Cây của mình có những chiếc lá xanh to."
       }
     ],
@@ -525,11 +525,11 @@
     "acceptedAnswers": ["toilet", "a toilet"],
     "examples": [
       {
-        "en": "I flush the toilet after I use it.",
+        "text": "I flush the toilet after I use it.",
         "vi": "Mình xả nước bồn cầu sau khi dùng."
       },
       {
-        "en": "The toilet is white and clean.",
+        "text": "The toilet is white and clean.",
         "vi": "Bồn cầu màu trắng và sạch sẽ."
       }
     ],
@@ -550,11 +550,11 @@
     ],
     "examples": [
       {
-        "en": "I put my toothbrush in the toothbrush holder.",
+        "text": "I put my toothbrush in the toothbrush holder.",
         "vi": "Mình cắm bàn chải vào cốc đựng bàn chải."
       },
       {
-        "en": "There are two toothbrushes in the toothbrush holder.",
+        "text": "There are two toothbrushes in the toothbrush holder.",
         "vi": "Có hai cái bàn chải trong cốc đựng bàn chải."
       }
     ],
@@ -570,11 +570,11 @@
     "acceptedAnswers": ["bathtub", "a bathtub", "bath tub", "a bath tub", "tub", "a tub"],
     "examples": [
       {
-        "en": "I take a bath in the bathtub.",
+        "text": "I take a bath in the bathtub.",
         "vi": "Mình tắm trong bồn tắm."
       },
       {
-        "en": "The bathtub is full of warm water.",
+        "text": "The bathtub is full of warm water.",
         "vi": "Bồn tắm đầy nước ấm."
       }
     ],
@@ -591,11 +591,11 @@
     "acceptedAnswers": ["soap", "a soap", "bar of soap", "a bar of soap"],
     "examples": [
       {
-        "en": "I wash my hands with soap.",
+        "text": "I wash my hands with soap.",
         "vi": "Mình rửa tay bằng xà phòng."
       },
       {
-        "en": "The soap smells like flowers.",
+        "text": "The soap smells like flowers.",
         "vi": "Xà phòng có mùi thơm như hoa."
       }
     ],
@@ -611,11 +611,11 @@
     "acceptedAnswers": ["shower", "a shower", "shower head", "a shower head"],
     "examples": [
       {
-        "en": "I take a shower every evening.",
+        "text": "I take a shower every evening.",
         "vi": "Mình tắm vòi sen mỗi tối."
       },
       {
-        "en": "Turn on the shower, please.",
+        "text": "Turn on the shower, please.",
         "vi": "Bạn bật vòi sen lên nhé."
       }
     ],
@@ -631,11 +631,11 @@
     "acceptedAnswers": ["sink", "a sink", "washbasin", "a washbasin"],
     "examples": [
       {
-        "en": "I wash my face at the sink.",
+        "text": "I wash my face at the sink.",
         "vi": "Mình rửa mặt ở bồn rửa mặt."
       },
       {
-        "en": "The sink is white and round.",
+        "text": "The sink is white and round.",
         "vi": "Bồn rửa mặt màu trắng và tròn."
       }
     ],
@@ -651,11 +651,11 @@
     "acceptedAnswers": ["faucet", "a faucet", "tap", "a tap"],
     "examples": [
       {
-        "en": "Water comes out of the faucet.",
+        "text": "Water comes out of the faucet.",
         "vi": "Nước chảy ra từ vòi nước."
       },
       {
-        "en": "Turn off the faucet when you brush your teeth.",
+        "text": "Turn off the faucet when you brush your teeth.",
         "vi": "Hãy khoá vòi nước khi đánh răng nhé."
       }
     ],
@@ -671,11 +671,11 @@
     "acceptedAnswers": ["toothbrush", "a toothbrush", "tooth brush", "a tooth brush"],
     "examples": [
       {
-        "en": "I brush my teeth with my toothbrush.",
+        "text": "I brush my teeth with my toothbrush.",
         "vi": "Mình đánh răng bằng bàn chải đánh răng."
       },
       {
-        "en": "My toothbrush is blue.",
+        "text": "My toothbrush is blue.",
         "vi": "Bàn chải đánh răng của mình màu xanh dương."
       }
     ],
@@ -692,11 +692,11 @@
     "acceptedAnswers": ["toothpaste", "tooth paste", "a tube of toothpaste"],
     "examples": [
       {
-        "en": "I put toothpaste on my toothbrush.",
+        "text": "I put toothpaste on my toothbrush.",
         "vi": "Mình bóp kem đánh răng lên bàn chải."
       },
       {
-        "en": "This toothpaste tastes like mint.",
+        "text": "This toothpaste tastes like mint.",
         "vi": "Kem đánh răng này có vị bạc hà."
       }
     ],
@@ -713,11 +713,11 @@
     "acceptedAnswers": ["shampoo", "a bottle of shampoo"],
     "examples": [
       {
-        "en": "I wash my hair with shampoo.",
+        "text": "I wash my hair with shampoo.",
         "vi": "Mình gội đầu bằng dầu gội."
       },
       {
-        "en": "The shampoo is on the shelf in the shower.",
+        "text": "The shampoo is on the shelf in the shower.",
         "vi": "Dầu gội ở trên kệ chỗ tắm vòi sen."
       }
     ],
@@ -740,11 +740,11 @@
     ],
     "examples": [
       {
-        "en": "Hang your towel on the towel rack.",
+        "text": "Hang your towel on the towel rack.",
         "vi": "Hãy treo khăn lên giá treo khăn."
       },
       {
-        "en": "There is a blue towel on the towel rack.",
+        "text": "There is a blue towel on the towel rack.",
         "vi": "Có một chiếc khăn xanh trên giá treo khăn."
       }
     ],
@@ -761,11 +761,11 @@
     "acceptedAnswers": ["toilet paper", "toilet roll", "a toilet roll", "a roll of toilet paper"],
     "examples": [
       {
-        "en": "We need more toilet paper.",
+        "text": "We need more toilet paper.",
         "vi": "Nhà mình cần thêm giấy vệ sinh."
       },
       {
-        "en": "The toilet paper is next to the toilet.",
+        "text": "The toilet paper is next to the toilet.",
         "vi": "Giấy vệ sinh ở cạnh bồn cầu."
       }
     ],
@@ -781,11 +781,11 @@
     "acceptedAnswers": ["toilet brush", "a toilet brush"],
     "examples": [
       {
-        "en": "Dad cleans the toilet with the toilet brush.",
+        "text": "Dad cleans the toilet with the toilet brush.",
         "vi": "Bố cọ bồn cầu bằng chổi cọ bồn cầu."
       },
       {
-        "en": "The toilet brush stands next to the toilet.",
+        "text": "The toilet brush stands next to the toilet.",
         "vi": "Chổi cọ bồn cầu đứng cạnh bồn cầu."
       }
     ],
@@ -810,11 +810,11 @@
     ],
     "examples": [
       {
-        "en": "Put the paper in the trash can.",
+        "text": "Put the paper in the trash can.",
         "vi": "Hãy bỏ giấy vào thùng rác."
       },
       {
-        "en": "Step on the pedal to open the trash can.",
+        "text": "Step on the pedal to open the trash can.",
         "vi": "Đạp vào bàn đạp để mở thùng rác."
       }
     ],
@@ -830,11 +830,11 @@
     "acceptedAnswers": ["bath mat", "a bath mat", "bathmat", "a bathmat", "mat", "a mat"],
     "examples": [
       {
-        "en": "I stand on the bath mat after my bath.",
+        "text": "I stand on the bath mat after my bath.",
         "vi": "Mình đứng trên thảm nhà tắm sau khi tắm."
       },
       {
-        "en": "The bath mat is soft and blue.",
+        "text": "The bath mat is soft and blue.",
         "vi": "Thảm nhà tắm mềm và có màu xanh."
       }
     ],
@@ -850,11 +850,11 @@
     "acceptedAnswers": ["shower curtain", "a shower curtain", "curtain", "a curtain"],
     "examples": [
       {
-        "en": "Close the shower curtain before you take a shower.",
+        "text": "Close the shower curtain before you take a shower.",
         "vi": "Kéo rèm tắm lại trước khi tắm nhé."
       },
       {
-        "en": "My shower curtain has blue raindrops on it.",
+        "text": "My shower curtain has blue raindrops on it.",
         "vi": "Rèm tắm của mình có hình những giọt nước màu xanh."
       }
     ],
@@ -870,11 +870,11 @@
     "acceptedAnswers": ["comb", "a comb"],
     "examples": [
       {
-        "en": "I comb my hair with a comb.",
+        "text": "I comb my hair with a comb.",
         "vi": "Mình chải tóc bằng lược."
       },
       {
-        "en": "The comb is next to the soap.",
+        "text": "The comb is next to the soap.",
         "vi": "Chiếc lược ở cạnh xà phòng."
       }
     ],
@@ -897,11 +897,11 @@
     ],
     "examples": [
       {
-        "en": "Mom dries my hair with the hair dryer.",
+        "text": "Mom dries my hair with the hair dryer.",
         "vi": "Mẹ sấy tóc cho mình bằng máy sấy tóc."
       },
       {
-        "en": "The hair dryer blows warm air.",
+        "text": "The hair dryer blows warm air.",
         "vi": "Máy sấy tóc thổi ra gió ấm."
       }
     ],
@@ -917,11 +917,11 @@
     "acceptedAnswers": ["razor", "a razor"],
     "examples": [
       {
-        "en": "Dad shaves with a razor.",
+        "text": "Dad shaves with a razor.",
         "vi": "Bố cạo râu bằng dao cạo."
       },
       {
-        "en": "A razor is sharp, so don’t touch it.",
+        "text": "A razor is sharp, so don’t touch it.",
         "vi": "Dao cạo rất sắc, nên đừng chạm vào nhé."
       }
     ],
@@ -938,11 +938,11 @@
     "acceptedAnswers": ["shaving cream", "shaving foam", "a can of shaving cream"],
     "examples": [
       {
-        "en": "Dad puts shaving cream on his face.",
+        "text": "Dad puts shaving cream on his face.",
         "vi": "Bố thoa kem cạo râu lên mặt."
       },
       {
-        "en": "Shaving cream is white and fluffy.",
+        "text": "Shaving cream is white and fluffy.",
         "vi": "Kem cạo râu màu trắng và xốp."
       }
     ],
@@ -965,11 +965,11 @@
     ],
     "examples": [
       {
-        "en": "Put your dirty clothes in the laundry basket.",
+        "text": "Put your dirty clothes in the laundry basket.",
         "vi": "Bỏ quần áo bẩn vào giỏ đựng quần áo nhé."
       },
       {
-        "en": "The laundry basket is full of towels.",
+        "text": "The laundry basket is full of towels.",
         "vi": "Giỏ đựng quần áo đầy khăn tắm."
       }
     ],
@@ -985,11 +985,11 @@
     "acceptedAnswers": ["bucket", "a bucket", "pail", "a pail"],
     "examples": [
       {
-        "en": "I fill the bucket with water.",
+        "text": "I fill the bucket with water.",
         "vi": "Mình đổ đầy nước vào xô."
       },
       {
-        "en": "The bucket is next to the bathtub.",
+        "text": "The bucket is next to the bathtub.",
         "vi": "Cái xô ở cạnh bồn tắm."
       }
     ],
@@ -1005,11 +1005,11 @@
     "acceptedAnswers": ["towel", "a towel", "bath towel", "a bath towel"],
     "examples": [
       {
-        "en": "I dry my body with a towel.",
+        "text": "I dry my body with a towel.",
         "vi": "Mình lau khô người bằng khăn tắm."
       },
       {
-        "en": "The towels are soft and fluffy.",
+        "text": "The towels are soft and fluffy.",
         "vi": "Những chiếc khăn tắm mềm và xốp."
       }
     ],
@@ -1032,11 +1032,11 @@
     ],
     "examples": [
       {
-        "en": "We keep towels in the bathroom cabinet.",
+        "text": "We keep towels in the bathroom cabinet.",
         "vi": "Nhà mình cất khăn trong tủ nhà tắm."
       },
       {
-        "en": "The bathroom cabinet has two mirror doors.",
+        "text": "The bathroom cabinet has two mirror doors.",
         "vi": "Tủ nhà tắm có hai cánh cửa gương."
       }
     ],
@@ -1052,11 +1052,11 @@
     "acceptedAnswers": ["sofa", "a sofa", "couch", "a couch"],
     "examples": [
       {
-        "en": "We sit on the sofa to watch TV.",
+        "text": "We sit on the sofa to watch TV.",
         "vi": "Chúng mình ngồi trên ghế sofa để xem tivi."
       },
       {
-        "en": "The sofa is big and soft.",
+        "text": "The sofa is big and soft.",
         "vi": "Ghế sofa to và mềm."
       }
     ],
@@ -1072,11 +1072,11 @@
     "acceptedAnswers": ["armchair", "an armchair"],
     "examples": [
       {
-        "en": "Dad reads in the armchair.",
+        "text": "Dad reads in the armchair.",
         "vi": "Bố đọc sách trên ghế bành."
       },
       {
-        "en": "The armchair is yellow.",
+        "text": "The armchair is yellow.",
         "vi": "Ghế bành màu vàng."
       }
     ],
@@ -1092,11 +1092,11 @@
     "acceptedAnswers": ["ottoman", "an ottoman", "footstool", "a footstool"],
     "examples": [
       {
-        "en": "I put my feet on the ottoman.",
+        "text": "I put my feet on the ottoman.",
         "vi": "Mình gác chân lên ghế đôn."
       },
       {
-        "en": "The ottoman is next to the sofa.",
+        "text": "The ottoman is next to the sofa.",
         "vi": "Ghế đôn ở cạnh ghế sofa."
       }
     ],
@@ -1112,11 +1112,11 @@
     "acceptedAnswers": ["coffee table", "a coffee table"],
     "examples": [
       {
-        "en": "The cup is on the coffee table.",
+        "text": "The cup is on the coffee table.",
         "vi": "Cái cốc ở trên bàn trà."
       },
       {
-        "en": "Our coffee table is round.",
+        "text": "Our coffee table is round.",
         "vi": "Bàn trà nhà mình hình tròn."
       }
     ],
@@ -1132,11 +1132,11 @@
     "acceptedAnswers": ["side table", "a side table"],
     "examples": [
       {
-        "en": "The plant is on the side table.",
+        "text": "The plant is on the side table.",
         "vi": "Chậu cây ở trên bàn phụ."
       },
       {
-        "en": "The side table is next to the sofa.",
+        "text": "The side table is next to the sofa.",
         "vi": "Bàn phụ ở cạnh ghế sofa."
       }
     ],
@@ -1152,11 +1152,11 @@
     "acceptedAnswers": ["TV", "a TV", "television", "a television"],
     "examples": [
       {
-        "en": "We watch cartoons on TV.",
+        "text": "We watch cartoons on TV.",
         "vi": "Chúng mình xem hoạt hình trên tivi."
       },
       {
-        "en": "Please turn off the TV.",
+        "text": "Please turn off the TV.",
         "vi": "Làm ơn tắt tivi đi."
       }
     ],
@@ -1172,11 +1172,11 @@
     "acceptedAnswers": ["remote control", "a remote control", "remote", "a remote"],
     "examples": [
       {
-        "en": "Where is the remote control?",
+        "text": "Where is the remote control?",
         "vi": "Điều khiển từ xa ở đâu rồi?"
       },
       {
-        "en": "I press a button on the remote control.",
+        "text": "I press a button on the remote control.",
         "vi": "Mình bấm một nút trên điều khiển từ xa."
       }
     ],
@@ -1192,11 +1192,11 @@
     "acceptedAnswers": ["TV stand", "a TV stand", "television stand", "a television stand"],
     "examples": [
       {
-        "en": "The TV is on the TV stand.",
+        "text": "The TV is on the TV stand.",
         "vi": "Tivi ở trên kệ tivi."
       },
       {
-        "en": "The TV stand has two doors.",
+        "text": "The TV stand has two doors.",
         "vi": "Kệ tivi có hai cánh cửa."
       }
     ],
@@ -1212,11 +1212,11 @@
     "acceptedAnswers": ["cabinet", "a cabinet", "cupboard", "a cupboard"],
     "examples": [
       {
-        "en": "We keep our board games in the cabinet.",
+        "text": "We keep our board games in the cabinet.",
         "vi": "Chúng mình cất đồ chơi cờ trong tủ."
       },
       {
-        "en": "The cabinet has four drawers.",
+        "text": "The cabinet has four drawers.",
         "vi": "Cái tủ có bốn ngăn kéo."
       }
     ],
@@ -1232,11 +1232,11 @@
     "acceptedAnswers": ["newspaper", "a newspaper", "the newspaper"],
     "examples": [
       {
-        "en": "Dad reads the newspaper every morning.",
+        "text": "Dad reads the newspaper every morning.",
         "vi": "Bố đọc báo mỗi sáng."
       },
       {
-        "en": "The newspaper is on the coffee table.",
+        "text": "The newspaper is on the coffee table.",
         "vi": "Tờ báo ở trên bàn trà."
       }
     ],
@@ -1252,11 +1252,11 @@
     "acceptedAnswers": ["floor lamp", "a floor lamp", "standing lamp", "a standing lamp"],
     "examples": [
       {
-        "en": "Turn on the floor lamp, please.",
+        "text": "Turn on the floor lamp, please.",
         "vi": "Bật đèn cây lên nhé."
       },
       {
-        "en": "The floor lamp is next to the window.",
+        "text": "The floor lamp is next to the window.",
         "vi": "Đèn cây ở cạnh cửa sổ."
       }
     ],
@@ -1272,11 +1272,11 @@
     "acceptedAnswers": ["ceiling light", "a ceiling light"],
     "examples": [
       {
-        "en": "The ceiling light is very bright.",
+        "text": "The ceiling light is very bright.",
         "vi": "Đèn trần rất sáng."
       },
       {
-        "en": "Mom turns on the ceiling light at night.",
+        "text": "Mom turns on the ceiling light at night.",
         "vi": "Mẹ bật đèn trần vào buổi tối."
       }
     ],
@@ -1292,11 +1292,11 @@
     "acceptedAnswers": ["ceiling fan", "a ceiling fan"],
     "examples": [
       {
-        "en": "The ceiling fan goes round and round.",
+        "text": "The ceiling fan goes round and round.",
         "vi": "Quạt trần quay vòng vòng."
       },
       {
-        "en": "It’s hot. Let’s turn on the ceiling fan!",
+        "text": "It’s hot. Let’s turn on the ceiling fan!",
         "vi": "Nóng quá. Mình bật quạt trần lên nhé!"
       }
     ],
@@ -1319,11 +1319,11 @@
     ],
     "examples": [
       {
-        "en": "The air conditioner keeps the room cool.",
+        "text": "The air conditioner keeps the room cool.",
         "vi": "Máy điều hòa giữ cho phòng mát."
       },
       {
-        "en": "Close the window when the air conditioner is on.",
+        "text": "Close the window when the air conditioner is on.",
         "vi": "Đóng cửa sổ lại khi máy điều hòa đang bật."
       }
     ],
@@ -1339,11 +1339,11 @@
     "acceptedAnswers": ["robot mop", "a robot mop"],
     "examples": [
       {
-        "en": "The robot mop cleans the floor.",
+        "text": "The robot mop cleans the floor.",
         "vi": "Robot lau sàn lau sạch sàn nhà."
       },
       {
-        "en": "The robot mop moves by itself.",
+        "text": "The robot mop moves by itself.",
         "vi": "Robot lau sàn tự di chuyển."
       }
     ],
@@ -1359,11 +1359,11 @@
     "acceptedAnswers": ["coaster", "a coaster"],
     "examples": [
       {
-        "en": "Put your cup on the coaster.",
+        "text": "Put your cup on the coaster.",
         "vi": "Đặt cốc của bạn lên miếng lót ly."
       },
       {
-        "en": "The coaster keeps the table dry.",
+        "text": "The coaster keeps the table dry.",
         "vi": "Miếng lót ly giúp mặt bàn luôn khô."
       }
     ],
@@ -1380,11 +1380,11 @@
     "acceptedAnswers": ["curtains", "the curtains", "curtain", "a curtain"],
     "examples": [
       {
-        "en": "Please open the curtains.",
+        "text": "Please open the curtains.",
         "vi": "Làm ơn kéo rèm cửa ra."
       },
       {
-        "en": "The curtains are green.",
+        "text": "The curtains are green.",
         "vi": "Rèm cửa màu xanh lá."
       }
     ],
@@ -1400,11 +1400,11 @@
     "acceptedAnswers": ["window", "a window"],
     "examples": [
       {
-        "en": "I can see trees out of the window.",
+        "text": "I can see trees out of the window.",
         "vi": "Mình nhìn thấy cây qua cửa sổ."
       },
       {
-        "en": "Please open the window.",
+        "text": "Please open the window.",
         "vi": "Làm ơn mở cửa sổ ra."
       }
     ],
@@ -1420,11 +1420,11 @@
     "acceptedAnswers": ["door", "a door", "the door"],
     "examples": [
       {
-        "en": "Please close the door.",
+        "text": "Please close the door.",
         "vi": "Làm ơn đóng cửa lại."
       },
       {
-        "en": "Someone is knocking on the door.",
+        "text": "Someone is knocking on the door.",
         "vi": "Có ai đó đang gõ cửa."
       }
     ],
@@ -1440,11 +1440,11 @@
     "acceptedAnswers": ["cushion", "a cushion"],
     "examples": [
       {
-        "en": "There is a green cushion on the armchair.",
+        "text": "There is a green cushion on the armchair.",
         "vi": "Có một chiếc gối tựa màu xanh trên ghế bành."
       },
       {
-        "en": "I hug a soft cushion.",
+        "text": "I hug a soft cushion.",
         "vi": "Mình ôm một chiếc gối tựa mềm."
       }
     ],
@@ -1460,11 +1460,11 @@
     "acceptedAnswers": ["cup", "a cup"],
     "examples": [
       {
-        "en": "Mom drinks tea from a cup.",
+        "text": "Mom drinks tea from a cup.",
         "vi": "Mẹ uống trà bằng cốc."
       },
       {
-        "en": "The cup is on the coaster.",
+        "text": "The cup is on the coaster.",
         "vi": "Cái cốc ở trên miếng lót ly."
       }
     ],
@@ -1480,11 +1480,11 @@
     "acceptedAnswers": ["wall shelf", "a wall shelf", "shelf", "a shelf"],
     "examples": [
       {
-        "en": "My books are on the wall shelf.",
+        "text": "My books are on the wall shelf.",
         "vi": "Sách của mình ở trên kệ treo tường."
       },
       {
-        "en": "There is a small plant on the wall shelf.",
+        "text": "There is a small plant on the wall shelf.",
         "vi": "Có một chậu cây nhỏ trên kệ treo tường."
       }
     ],
@@ -1500,11 +1500,11 @@
     "acceptedAnswers": ["painting", "a painting"],
     "examples": [
       {
-        "en": "There is a house in the painting.",
+        "text": "There is a house in the painting.",
         "vi": "Có một ngôi nhà trong bức tranh."
       },
       {
-        "en": "The painting is on the wall.",
+        "text": "The painting is on the wall.",
         "vi": "Bức tranh được treo trên tường."
       }
     ],
@@ -1527,11 +1527,11 @@
     ],
     "examples": [
       {
-        "en": "The Wi-Fi router has two antennas.",
+        "text": "The Wi-Fi router has two antennas.",
         "vi": "Bộ phát Wi-Fi có hai ăng-ten."
       },
       {
-        "en": "The lights on the Wi-Fi router are green.",
+        "text": "The lights on the Wi-Fi router are green.",
         "vi": "Đèn trên bộ phát Wi-Fi màu xanh lá."
       }
     ],
@@ -1547,11 +1547,11 @@
     "acceptedAnswers": ["floor", "a floor", "the floor"],
     "examples": [
       {
-        "en": "The floor is made of wood.",
+        "text": "The floor is made of wood.",
         "vi": "Sàn nhà làm bằng gỗ."
       },
       {
-        "en": "Don’t leave your toys on the floor.",
+        "text": "Don’t leave your toys on the floor.",
         "vi": "Đừng để đồ chơi trên sàn nhà."
       }
     ],
@@ -1567,11 +1567,11 @@
     "acceptedAnswers": ["vase", "a vase"],
     "examples": [
       {
-        "en": "There are white flowers in the vase.",
+        "text": "There are white flowers in the vase.",
         "vi": "Có hoa trắng trong bình hoa."
       },
       {
-        "en": "Be careful! Don’t break the vase.",
+        "text": "Be careful! Don’t break the vase.",
         "vi": "Cẩn thận! Đừng làm vỡ bình hoa."
       }
     ],
@@ -1587,11 +1587,11 @@
     "acceptedAnswers": ["speaker", "a speaker"],
     "examples": [
       {
-        "en": "Music is playing from the speaker.",
+        "text": "Music is playing from the speaker.",
         "vi": "Nhạc đang phát ra từ cái loa."
       },
       {
-        "en": "Please turn down the speaker.",
+        "text": "Please turn down the speaker.",
         "vi": "Làm ơn vặn nhỏ loa xuống."
       }
     ],
@@ -1607,11 +1607,11 @@
     "acceptedAnswers": ["tissue box", "a tissue box", "box of tissues", "a box of tissues"],
     "examples": [
       {
-        "en": "Can you pass me the tissue box?",
+        "text": "Can you pass me the tissue box?",
         "vi": "Bạn đưa mình hộp khăn giấy được không?"
       },
       {
-        "en": "The tissue box is on the coffee table.",
+        "text": "The tissue box is on the coffee table.",
         "vi": "Hộp khăn giấy ở trên bàn trà."
       }
     ],
@@ -1627,11 +1627,11 @@
     "acceptedAnswers": ["light switch", "a light switch", "switch", "a switch"],
     "examples": [
       {
-        "en": "Press the light switch to turn on the light.",
+        "text": "Press the light switch to turn on the light.",
         "vi": "Bấm công tắc đèn để bật đèn."
       },
       {
-        "en": "The light switch is on the wall.",
+        "text": "The light switch is on the wall.",
         "vi": "Công tắc đèn ở trên tường."
       }
     ],
@@ -1654,11 +1654,11 @@
     ],
     "examples": [
       {
-        "en": "Don’t touch the power outlet!",
+        "text": "Don’t touch the power outlet!",
         "vi": "Đừng chạm vào ổ cắm điện!"
       },
       {
-        "en": "The TV is plugged into the power outlet.",
+        "text": "The TV is plugged into the power outlet.",
         "vi": "Tivi được cắm vào ổ cắm điện."
       }
     ],
@@ -1674,11 +1674,11 @@
     "acceptedAnswers": ["fridge", "a fridge", "refrigerator", "a refrigerator"],
     "examples": [
       {
-        "en": "The milk is in the fridge.",
+        "text": "The milk is in the fridge.",
         "vi": "Sữa ở trong tủ lạnh."
       },
       {
-        "en": "Please close the fridge door.",
+        "text": "Please close the fridge door.",
         "vi": "Làm ơn đóng cửa tủ lạnh lại."
       }
     ],
@@ -1694,11 +1694,11 @@
     "acceptedAnswers": ["stove", "a stove"],
     "examples": [
       {
-        "en": "Mom cooks soup on the stove.",
+        "text": "Mom cooks soup on the stove.",
         "vi": "Mẹ nấu canh trên bếp."
       },
       {
-        "en": "Don’t touch the stove. It’s hot!",
+        "text": "Don’t touch the stove. It’s hot!",
         "vi": "Đừng chạm vào bếp. Nóng đấy!"
       }
     ],
@@ -1714,11 +1714,11 @@
     "acceptedAnswers": ["dining table", "a dining table", "table", "a table"],
     "examples": [
       {
-        "en": "We eat dinner at the dining table.",
+        "text": "We eat dinner at the dining table.",
         "vi": "Cả nhà ăn tối ở bàn ăn."
       },
       {
-        "en": "There is a fruit bowl on the dining table.",
+        "text": "There is a fruit bowl on the dining table.",
         "vi": "Có một tô trái cây trên bàn ăn."
       }
     ],
@@ -1734,11 +1734,11 @@
     "acceptedAnswers": ["chair", "a chair", "dining chair", "a dining chair"],
     "examples": [
       {
-        "en": "Please sit on the chair.",
+        "text": "Please sit on the chair.",
         "vi": "Mời bạn ngồi lên ghế."
       },
       {
-        "en": "The chair has a pink cushion.",
+        "text": "The chair has a pink cushion.",
         "vi": "Chiếc ghế có đệm màu hồng."
       }
     ],
@@ -1754,11 +1754,11 @@
     "acceptedAnswers": ["frying pan", "a frying pan", "pan", "a pan"],
     "examples": [
       {
-        "en": "Dad fries eggs in the frying pan.",
+        "text": "Dad fries eggs in the frying pan.",
         "vi": "Bố rán trứng bằng chảo."
       },
       {
-        "en": "The frying pan is blue.",
+        "text": "The frying pan is blue.",
         "vi": "Cái chảo rán màu xanh dương."
       }
     ],
@@ -1774,11 +1774,11 @@
     "acceptedAnswers": ["kettle", "a kettle"],
     "examples": [
       {
-        "en": "The kettle is boiling water.",
+        "text": "The kettle is boiling water.",
         "vi": "Ấm đang đun sôi nước."
       },
       {
-        "en": "Be careful, the kettle is hot.",
+        "text": "Be careful, the kettle is hot.",
         "vi": "Cẩn thận, ấm nước đang nóng."
       }
     ],
@@ -1794,11 +1794,11 @@
     "acceptedAnswers": ["fruit bowl", "a fruit bowl"],
     "examples": [
       {
-        "en": "There are apples and bananas in the fruit bowl.",
+        "text": "There are apples and bananas in the fruit bowl.",
         "vi": "Có táo và chuối trong tô trái cây."
       },
       {
-        "en": "The fruit bowl is on the table.",
+        "text": "The fruit bowl is on the table.",
         "vi": "Tô trái cây ở trên bàn."
       }
     ],
@@ -1814,11 +1814,11 @@
     "acceptedAnswers": ["spice jar", "a spice jar", "spice jars"],
     "examples": [
       {
-        "en": "Salt and pepper are in the spice jars.",
+        "text": "Salt and pepper are in the spice jars.",
         "vi": "Muối và tiêu ở trong các lọ gia vị."
       },
       {
-        "en": "The spice jars are on the shelf.",
+        "text": "The spice jars are on the shelf.",
         "vi": "Các lọ gia vị ở trên kệ."
       }
     ],
@@ -1834,11 +1834,11 @@
     "acceptedAnswers": ["cutting board", "a cutting board", "chopping board", "a chopping board"],
     "examples": [
       {
-        "en": "I cut carrots on the cutting board.",
+        "text": "I cut carrots on the cutting board.",
         "vi": "Mình thái cà rốt trên thớt."
       },
       {
-        "en": "The cutting board is made of wood.",
+        "text": "The cutting board is made of wood.",
         "vi": "Cái thớt làm bằng gỗ."
       }
     ],
@@ -1854,11 +1854,11 @@
     "acceptedAnswers": ["wooden spoon", "a wooden spoon", "spoon", "a spoon"],
     "examples": [
       {
-        "en": "Mom stirs the soup with a wooden spoon.",
+        "text": "Mom stirs the soup with a wooden spoon.",
         "vi": "Mẹ khuấy canh bằng muỗng gỗ."
       },
       {
-        "en": "The wooden spoons are in a cup.",
+        "text": "The wooden spoons are in a cup.",
         "vi": "Mấy cái muỗng gỗ ở trong một chiếc cốc."
       }
     ],
@@ -1874,11 +1874,11 @@
     "acceptedAnswers": ["plate", "a plate"],
     "examples": [
       {
-        "en": "Put the cake on the plate.",
+        "text": "Put the cake on the plate.",
         "vi": "Đặt bánh lên đĩa nhé."
       },
       {
-        "en": "The plates are in the dish rack.",
+        "text": "The plates are in the dish rack.",
         "vi": "Những chiếc đĩa ở trong giá úp bát đĩa."
       }
     ],
@@ -1894,11 +1894,11 @@
     "acceptedAnswers": ["bowl", "a bowl"],
     "examples": [
       {
-        "en": "I eat rice from a bowl.",
+        "text": "I eat rice from a bowl.",
         "vi": "Mình ăn cơm bằng bát."
       },
       {
-        "en": "There are oranges in the bowl.",
+        "text": "There are oranges in the bowl.",
         "vi": "Có cam trong cái bát."
       }
     ],
@@ -1914,11 +1914,11 @@
     "acceptedAnswers": ["range hood", "a range hood", "cooker hood", "a cooker hood"],
     "examples": [
       {
-        "en": "The range hood is above the stove.",
+        "text": "The range hood is above the stove.",
         "vi": "Máy hút mùi ở phía trên bếp."
       },
       {
-        "en": "Turn on the range hood when you cook.",
+        "text": "Turn on the range hood when you cook.",
         "vi": "Bật máy hút mùi khi nấu ăn nhé."
       }
     ],
@@ -1934,11 +1934,11 @@
     "acceptedAnswers": ["dish rack", "a dish rack", "dish drainer", "a dish drainer"],
     "examples": [
       {
-        "en": "Put the clean plates in the dish rack.",
+        "text": "Put the clean plates in the dish rack.",
         "vi": "Úp đĩa sạch lên giá úp bát đĩa."
       },
       {
-        "en": "The dish rack is next to the sink.",
+        "text": "The dish rack is next to the sink.",
         "vi": "Giá úp bát đĩa ở cạnh bồn rửa."
       }
     ],
@@ -1954,11 +1954,11 @@
     "acceptedAnswers": ["apron", "an apron"],
     "examples": [
       {
-        "en": "Mom wears an apron when she cooks.",
+        "text": "Mom wears an apron when she cooks.",
         "vi": "Mẹ mặc tạp dề khi nấu ăn."
       },
       {
-        "en": "My apron is pink and white.",
+        "text": "My apron is pink and white.",
         "vi": "Tạp dề của mình màu hồng và trắng."
       }
     ],
@@ -1974,11 +1974,11 @@
     "acceptedAnswers": ["knife", "a knife"],
     "examples": [
       {
-        "en": "Be careful with the knife!",
+        "text": "Be careful with the knife!",
         "vi": "Cẩn thận với con dao nhé!"
       },
       {
-        "en": "Dad cuts the bread with a knife.",
+        "text": "Dad cuts the bread with a knife.",
         "vi": "Bố cắt bánh mì bằng dao."
       }
     ],
@@ -1995,11 +1995,11 @@
     "acceptedAnswers": ["dishwashing liquid", "dish soap", "washing-up liquid"],
     "examples": [
       {
-        "en": "Put some dishwashing liquid on the sponge.",
+        "text": "Put some dishwashing liquid on the sponge.",
         "vi": "Cho một ít nước rửa bát lên miếng bọt biển."
       },
       {
-        "en": "The dishwashing liquid smells like lemon.",
+        "text": "The dishwashing liquid smells like lemon.",
         "vi": "Nước rửa bát có mùi chanh."
       }
     ],
@@ -2015,11 +2015,11 @@
     "acceptedAnswers": ["rice cooker", "a rice cooker"],
     "examples": [
       {
-        "en": "Mom cooks rice in the rice cooker.",
+        "text": "Mom cooks rice in the rice cooker.",
         "vi": "Mẹ nấu cơm bằng nồi cơm điện."
       },
       {
-        "en": "The rice cooker is pink.",
+        "text": "The rice cooker is pink.",
         "vi": "Nồi cơm điện màu hồng."
       }
     ],
@@ -2035,11 +2035,11 @@
     "acceptedAnswers": ["toaster", "a toaster"],
     "examples": [
       {
-        "en": "I make toast in the toaster.",
+        "text": "I make toast in the toaster.",
         "vi": "Mình nướng bánh mì bằng máy nướng bánh mì."
       },
       {
-        "en": "The toast pops out of the toaster.",
+        "text": "The toast pops out of the toaster.",
         "vi": "Bánh mì nướng bật ra khỏi máy."
       }
     ],
@@ -2055,11 +2055,11 @@
     "acceptedAnswers": ["microwave", "a microwave", "microwave oven", "a microwave oven"],
     "examples": [
       {
-        "en": "Mom warms the milk in the microwave.",
+        "text": "Mom warms the milk in the microwave.",
         "vi": "Mẹ hâm nóng sữa bằng lò vi sóng."
       },
       {
-        "en": "The microwave is on the shelf.",
+        "text": "The microwave is on the shelf.",
         "vi": "Lò vi sóng ở trên kệ."
       }
     ],
@@ -2075,11 +2075,11 @@
     "acceptedAnswers": ["kitchen sink", "a kitchen sink", "sink", "a sink"],
     "examples": [
       {
-        "en": "We wash the dishes in the kitchen sink.",
+        "text": "We wash the dishes in the kitchen sink.",
         "vi": "Chúng mình rửa bát ở bồn rửa bát."
       },
       {
-        "en": "The kitchen sink is under the window.",
+        "text": "The kitchen sink is under the window.",
         "vi": "Bồn rửa bát ở dưới cửa sổ."
       }
     ],
@@ -2095,11 +2095,11 @@
     "acceptedAnswers": ["cooking pot", "a cooking pot", "pot", "a pot"],
     "examples": [
       {
-        "en": "The soup is in the cooking pot.",
+        "text": "The soup is in the cooking pot.",
         "vi": "Canh ở trong nồi."
       },
       {
-        "en": "The cooking pot is on the stove.",
+        "text": "The cooking pot is on the stove.",
         "vi": "Cái nồi ở trên bếp."
       }
     ],
@@ -2115,11 +2115,11 @@
     "acceptedAnswers": ["blender", "a blender"],
     "examples": [
       {
-        "en": "I make a strawberry smoothie in the blender.",
+        "text": "I make a strawberry smoothie in the blender.",
         "vi": "Mình làm sinh tố dâu bằng máy xay sinh tố."
       },
       {
-        "en": "The blender is very loud.",
+        "text": "The blender is very loud.",
         "vi": "Máy xay sinh tố kêu rất to."
       }
     ],
@@ -2135,11 +2135,11 @@
     "acceptedAnswers": ["basket", "a basket"],
     "examples": [
       {
-        "en": "There is bread in the basket.",
+        "text": "There is bread in the basket.",
         "vi": "Có bánh mì trong giỏ."
       },
       {
-        "en": "We take the basket to the market.",
+        "text": "We take the basket to the market.",
         "vi": "Chúng mình mang giỏ đi chợ."
       }
     ],

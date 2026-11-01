@@ -5,9 +5,9 @@ import type { VoiceStyle } from '@/types/models';
  * adult voice by its name and raises the pitch (see `SPEECH_CONFIG.stylePitch`). */
 
 const FEMALE_NAMES =
-  /\b(female|ana\b|zira|aria|jenny|michelle|ava|emma|samantha|allison|susan|hazel|heera|joanna|ivy|kendra|kimberly|salli|nicole|victoria|karen|moira|tessa|google us english)/;
+  /\b(female|ana\b|zira|aria|jenny|michelle|ava|emma|samantha|allison|susan|hazel|heera|joanna|ivy|kendra|kimberly|salli|nicole|victoria|karen|moira|tessa|google us english|xiaoxiao|xiaoyi|xiaohan|xiaomo|xiaoxuan|huihui|yaoyao|tingting|meijia|hanhan|google 普通话|google 國語)/;
 const MALE_NAMES =
-  /\b(male|david|mark|guy|eric|davis|tony|jason|christopher|roger|steffan|alex|fred|tom|daniel|ryan|joey|matthew|justin|kevin|andrew|brian|brandon)/;
+  /\b(male|david|mark|guy|eric|davis|tony|jason|christopher|roger|steffan|alex|fred|tom|daniel|ryan|joey|matthew|justin|kevin|andrew|brian|brandon|yunxi|yunjian|yunyang|yunye|yunze|kangkang|zhiwei|li-mu)/;
 
 /** Voices that already sound like a child (Edge's Ana), so they need no extra pitch. */
 export const isChildVoice = (voiceName: string): boolean => /\bana\b/i.test(voiceName);

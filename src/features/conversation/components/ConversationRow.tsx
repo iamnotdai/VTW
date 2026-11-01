@@ -1,5 +1,6 @@
 import { Check, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import type { Conversation } from '@/types/models';
 
@@ -18,10 +19,15 @@ export function ConversationRow({
   completed: boolean;
   upNext: boolean;
 }) {
+  const values = { number: conversation.order, title: conversation.title };
   return (
     <Link
       to={to}
-      aria-label={`Conversation ${conversation.order}: ${conversation.title}${completed ? ' (completed)' : ''}`}
+      aria-label={
+        completed
+          ? t('Conversation {number}: {title} (completed)', values)
+          : t('Conversation {number}: {title}', values)
+      }
       className="group flex items-center gap-2.5 rounded-xl"
     >
       <span

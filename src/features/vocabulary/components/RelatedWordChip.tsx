@@ -1,13 +1,16 @@
 import { RELATED_WORD_MIN_SCALE } from '@/config/app';
+import { useCourse } from '@/hooks/useCourse';
 import { useFitText } from '@/hooks/useFitText';
 import { assetUrl } from '@/lib/assets';
 import type { Word } from '@/types/models';
 
 /**
  * Related word with its picture (flashcard and answer card). A long word wraps onto a second line,
- * and only shrinks if it still does not fit the chip — never cut off with "…".
+ * and only shrinks if it still does not fit the chip — never cut off with "…". In the Chinese
+ * course the pinyin sits under the word, sized in `em` so it shrinks along with it.
  */
 export function RelatedWordChip({ word }: { word: Word }) {
+  const course = useCourse();
   const textRef = useFitText<HTMLSpanElement>(word.text, RELATED_WORD_MIN_SCALE);
   return (
     <li className="flex h-13 min-w-0 items-center gap-2.5 rounded-xl bg-mist px-2.5 sm:px-3.5">
@@ -20,10 +23,18 @@ export function RelatedWordChip({ word }: { word: Word }) {
       />
       <span
         ref={textRef}
-        lang="en"
+        lang={course.lang}
         className="max-h-full min-w-0 overflow-hidden text-[1.0625rem] leading-tight font-semibold wrap-break-word text-navy-700"
       >
         {word.text}
+        {word.pinyin && (
+          <span
+            lang="zh-Latn-pinyin"
+            className="block text-[0.8em] font-medium whitespace-nowrap text-navy-400"
+          >
+            {word.pinyin}
+          </span>
+        )}
       </span>
     </li>
   );

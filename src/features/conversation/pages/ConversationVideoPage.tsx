@@ -6,6 +6,7 @@ import { Breadcrumb, PageContainer, TopBar } from '@/components/layout/PageHeade
 import { getSceneConversations } from '@/data/content';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import type { Conversation, Scene } from '@/types/models';
 import { ConversationPlayer } from '../components/ConversationPlayer';
 import { useConversationParam } from '../useConversationParam';
@@ -18,7 +19,7 @@ export function ConversationVideoPage() {
 }
 
 function ConversationVideo({ conversation, scene }: { conversation: Conversation; scene: Scene }) {
-  useDocumentTitle(`${conversation.title} · Video`);
+  useDocumentTitle(t('{title} · Video', { title: conversation.title }));
   const [ended, setEnded] = useState(false);
   const total = getSceneConversations(scene).length;
 
@@ -27,7 +28,7 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
       <TopBar>
         <Breadcrumb
           items={[
-            { label: 'Conversation', to: paths.conversations },
+            { label: t('Conversation'), to: paths.conversations },
             { label: scene.title, to: paths.topicConversations(scene.id) },
             { label: `${conversation.order}. ${conversation.title}` },
           ]}
@@ -40,7 +41,7 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
           {conversation.title}
         </h1>
         <p className="text-lg font-medium text-navy-400">
-          Conversation {conversation.order} of {total}
+          {t('Conversation {number} of {total}', { number: conversation.order, total })}
         </p>
 
         {ended && (
@@ -49,7 +50,7 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
             className="mt-4 flex animate-pop-in items-center gap-2 font-bold text-navy-800"
           >
             <PartyPopper aria-hidden className="size-5 text-sun-500" />
-            Nice watching! Now read the conversation.
+            {t('Nice watching! Now read the conversation.')}
           </p>
         )}
 
@@ -60,7 +61,7 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
           className="mt-5"
           rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
         >
-          View Conversation
+          {t('View Conversation')}
         </ButtonLink>
       </PageContainer>
     </>

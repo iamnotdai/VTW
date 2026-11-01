@@ -1,4 +1,5 @@
-import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
+import { QUIZ_CONFIG } from '@/config/app';
+import { getCourseConfig } from './course';
 import type { Word } from '@/types/models';
 import { shuffle, type RandomFn } from './random';
 import { normalizeAnswer } from './text';
@@ -89,6 +90,7 @@ export function buildChoices({
 export interface QuizPrompt {
   id: string;
   text: string;
+  pinyin?: string;
   textVi: string;
 }
 
@@ -98,7 +100,7 @@ export interface QuizPrompt {
  */
 export function pickQuizPrompt(
   recentIds: readonly string[],
-  prompts: readonly QuizPrompt[] = QUIZ_PROMPTS,
+  prompts: readonly QuizPrompt[] = getCourseConfig().quizPrompts,
   window: number = QUIZ_CONFIG.promptNoRepeatWindow,
   random: RandomFn = Math.random,
 ): QuizPrompt {
@@ -133,6 +135,8 @@ export interface CreateQuizQuestionParams {
   minChoiceCount?: number;
   /** Prompt ids of the previous questions (oldest first), so a prompt isn't repeated too soon. */
   recentPromptIds?: readonly string[];
+  /** Defaults to the active course's prompts. */
+  prompts?: readonly QuizPrompt[];
   random?: RandomFn;
 }
 
@@ -153,9 +157,10 @@ export function createQuizQuestion({
   choiceCount = QUIZ_CONFIG.choiceCount,
   minChoiceCount = QUIZ_CONFIG.minChoiceCount,
   recentPromptIds = [],
+  prompts = getCourseConfig().quizPrompts,
   random = Math.random,
 }: CreateQuizQuestionParams): QuizQuestion {
-  const prompt = pickQuizPrompt(recentPromptIds, QUIZ_PROMPTS, undefined, random);
+  const prompt = pickQuizPrompt(recentPromptIds, prompts, undefined, random);
   let mode = pickAnswerMode(canTypeWords, random(), typingProbability);
   let choices: Choice[] = [];
 

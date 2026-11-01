@@ -1,0 +1,11 @@
+{
+  "bathroom": { "title": "浴室", "description": "在浴室里学词语，练对话。" },
+  "bedroom": { "title": "卧室", "description": "在卧室里学词语，练对话。" },
+  "dining-room": { "title": "餐厅", "description": "学习餐桌、椅子和吃饭时用的词语。" },
+  "flower-garden": { "title": "花园", "description": "学习花、树和在外面玩的词语。" },
+  "garden-tools": { "title": "园艺工具", "description": "学习铲子、耙子和喷壶的词语。" },
+  "kitchen": { "title": "厨房", "description": "在厨房里学词语，练对话。" },
+  "living-room": { "title": "客厅", "description": "在客厅里学词语，练对话。" },
+  "shed": { "title": "小木屋", "description": "学习小木屋和里面东西的词语。" },
+  "vegetable-garden": { "title": "菜园", "description": "学习胡萝卜、白菜和西红柿的词语。" }
+}

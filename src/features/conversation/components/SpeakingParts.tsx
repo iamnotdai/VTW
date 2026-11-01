@@ -10,7 +10,10 @@ import {
 import type { ReactNode } from 'react';
 import { AudioButton } from '@/components/common/AudioButton';
 import { Avatar } from '@/components/common/Avatar';
+import { Pinyin } from '@/components/common/Pinyin';
+import { useCourse } from '@/hooks/useCourse';
 import type { SpeechStatus } from '@/hooks/useSpeechRecognition';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import type { SpeechFeedbackLevel } from '@/lib/speechMatch';
 import { useProfileStore } from '@/stores/profileStore';
@@ -26,35 +29,43 @@ export function QuestionHeader({
   index: number;
   total: number;
 }) {
+  const course = useCourse();
   return (
     <div className="flex flex-col items-center text-center">
       <p className="text-base font-bold text-navy-800">
-        Question {index + 1} of {total}
+        {t('Question {number} of {total}', { number: index + 1, total })}
       </p>
       <div className="mt-3 flex items-center gap-4 text-left">
         <AudioButton
           soundKey={`prompt:${question.id}`}
           text={question.prompt}
           src={question.audio}
-          label="Listen to the question"
+          label={t('Listen to the question')}
           variant="soft"
           size="lg"
         />
-        <h2 lang="en" className="text-[1.75rem] leading-snug font-extrabold text-navy-900">
-          {question.prompt}
-        </h2>
+        <div>
+          <h2
+            lang={course.lang}
+            className="text-[1.75rem] leading-snug font-extrabold text-navy-900"
+          >
+            {question.prompt}
+          </h2>
+          <Pinyin text={question.promptPinyin} className="mt-0.5" />
+        </div>
       </div>
     </div>
   );
 }
 
-const MIC_LABEL: Partial<Record<SpeechStatus, string>> = {
-  idle: 'Tap to speak',
-  result: 'Tap to speak',
-  error: 'Tap to speak',
-  'requesting-permission': 'Please allow the microphone…',
-  listening: 'Listening… tap to stop',
-  processing: 'Checking what you said…',
+/** Functions, so the copy is looked up in the active course when it is shown. */
+const MIC_LABEL: Partial<Record<SpeechStatus, () => string>> = {
+  idle: () => t('Tap to speak'),
+  result: () => t('Tap to speak'),
+  error: () => t('Tap to speak'),
+  'requesting-permission': () => t('Please allow the microphone…'),
+  listening: () => t('Listening… tap to stop'),
+  processing: () => t('Checking what you said…'),
 };
 
 /** Big round microphone with its light-blue halo. */
@@ -62,7 +73,7 @@ export function MicButton({
   status,
   onStart,
   onStop,
-  idleLabel = 'Tap to speak',
+  idleLabel = t('Tap to speak'),
 }: {
   status: SpeechStatus;
   onStart: () => void;
@@ -71,7 +82,7 @@ export function MicButton({
 }) {
   const busy = status === 'requesting-permission' || status === 'processing';
   const listening = status === 'listening';
-  const label = listening || busy ? MIC_LABEL[status] : idleLabel;
+  const label = listening || busy ? MIC_LABEL[status]?.() : idleLabel;
   return (
     <div className="flex flex-col items-center">
       <div className="relative flex size-44 items-center justify-center">
@@ -87,7 +98,7 @@ export function MicButton({
           type="button"
           onClick={listening ? onStop : onStart}
           disabled={busy}
-          aria-label={listening ? 'Stop listening' : idleLabel}
+          aria-label={listening ? t('Stop listening') : idleLabel}
           className={cn(
             'relative flex size-24 items-center justify-center rounded-full text-white transition active:scale-95 disabled:opacity-80',
             listening
@@ -122,24 +133,28 @@ export function ListenRepeatBadge() {
           <Headphones aria-hidden className="size-10" />
         </span>
       </div>
-      <h3 className="mt-1 text-lg font-bold text-navy-900">Listen &amp; Repeat</h3>
+      <h3 className="mt-1 text-lg font-bold text-navy-900">{t('Listen & Repeat')}</h3>
     </div>
   );
 }
 
 /** Pale card with the sample answer and a listen button. */
 export function ExampleAnswerCard({ question }: { question: PracticeQuestion }) {
+  const course = useCourse();
   return (
     <section className="rounded-2xl bg-mist px-5 py-4">
-      <h3 className="text-lg font-bold text-navy-900">Example Answer</h3>
+      <h3 className="text-lg font-bold text-navy-900">{t('Example Answer')}</h3>
       <div className="mt-1 flex items-center justify-between gap-3">
-        <p lang="en" className="text-[1.0625rem] font-medium text-navy-600 sm:text-lg">
-          {question.suggestedAnswer}
-        </p>
+        <div>
+          <p lang={course.lang} className="text-[1.0625rem] font-medium text-navy-600 sm:text-lg">
+            {question.suggestedAnswer}
+          </p>
+          <Pinyin text={question.suggestedAnswerPinyin} className="mt-0.5" />
+        </div>
         <AudioButton
           soundKey={`answer:${question.id}`}
           text={question.suggestedAnswer}
-          label="Listen to the example answer"
+          label={t('Listen to the example answer')}
           variant="plain"
         />
       </div>
@@ -147,22 +162,23 @@ export function ExampleAnswerCard({ question }: { question: PracticeQuestion }) 
   );
 }
 
+/** `title` is a function, so the copy is looked up in the active course when it is shown. */
 const FEEDBACK: Record<
   SpeechFeedbackLevel | 'practiced',
-  { title: string; icon: LucideIcon; tone: string }
+  { title: () => string; icon: LucideIcon; tone: string }
 > = {
   great: {
-    title: 'Great job! That sounds just like the example.',
+    title: () => t('Great job! That sounds just like the example.'),
     icon: Check,
     tone: 'text-leaf-600',
   },
-  good: { title: 'Good! Very close to the example.', icon: Check, tone: 'text-leaf-600' },
+  good: { title: () => t('Good! Very close to the example.'), icon: Check, tone: 'text-leaf-600' },
   'try-again': {
-    title: 'Let’s try again! Listen to the example, then say it slowly.',
+    title: () => t('Let’s try again! Listen to the example, then say it slowly.'),
     icon: RotateCcw,
     tone: 'text-brand-600',
   },
-  practiced: { title: 'Well done for practicing!', icon: Check, tone: 'text-leaf-600' },
+  practiced: { title: () => t('Well done for practicing!'), icon: Check, tone: 'text-leaf-600' },
 };
 
 /** White card with what the learner said (or a placeholder) and the simple word-match feedback. */
@@ -176,28 +192,29 @@ export function YourAnswerCard({
   feedback?: SpeechFeedbackLevel | 'practiced';
   placeholder?: ReactNode;
 }) {
+  const course = useCourse();
   const avatar = useProfileStore((state) => state.profile?.avatar);
   const result = feedback ? FEEDBACK[feedback] : null;
   const ResultIcon = result?.icon;
 
   return (
     <section className="rounded-2xl bg-white px-5 py-4 shadow-soft ring-1 ring-navy-100">
-      <h3 className="text-lg font-bold text-navy-900">Your Answer</h3>
+      <h3 className="text-lg font-bold text-navy-900">{t('Your Answer')}</h3>
       {result || heard ? (
         <>
           <div className="mt-2 flex items-center gap-3 border-b border-navy-100 pb-3">
             {avatar && <Avatar avatar={avatar} size={32} ring="brand" />}
             <p
-              lang="en"
+              lang={course.lang}
               className="min-w-0 flex-1 text-[1.0625rem] font-medium text-navy-600 sm:text-lg"
             >
-              {heard ? heard : 'You said the example answer out loud.'}
+              {heard ? heard : t('You said the example answer out loud.')}
             </p>
             {heard && (
               <AudioButton
                 soundKey="answer:heard"
                 text={heard}
-                label="Listen to what we heard"
+                label={t('Listen to what we heard')}
                 variant="plain"
               />
             )}
@@ -218,7 +235,7 @@ export function YourAnswerCard({
                 >
                   <ResultIcon aria-hidden className="size-4" strokeWidth={3} />
                 </span>
-                {result.title}
+                {result.title()}
               </h2>
             </div>
           )}
@@ -234,7 +251,7 @@ export function YourAnswerCard({
 export function SpeakingNote() {
   return (
     <p className="text-center text-xs font-medium text-navy-400">
-      We check the words we heard — not your pronunciation. Nothing is recorded or saved.
+      {t('We check the words we heard — not your pronunciation. Nothing is recorded or saved.')}
     </p>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/cn';
 import { Outlet, ScrollRestoration } from 'react-router';
 import { useAppFullscreen } from '@/hooks/useAppFullscreen';
+import { t } from '@/i18n';
 import { MobileNav } from './MobileNav';
 import { Sidebar } from './Sidebar';
 
@@ -23,7 +24,7 @@ export function AppShell() {
         href="#main"
         className="sr-only z-50 rounded-full bg-white px-4 py-2 font-bold text-brand-700 shadow-lift focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
       >
-        Skip to content
+        {t('Skip to content')}
       </a>
       {!fullscreen && (
         <Sidebar collapsed={menuCollapsed} onToggle={() => setMenuCollapsed((value) => !value)} />

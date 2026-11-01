@@ -2,6 +2,7 @@ import { X } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { IconButton } from '@/components/common/IconButton';
 import { SceneBackdrop } from '@/components/common/SceneBackdrop';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 
@@ -22,7 +23,7 @@ export function QuizCard({
   backdrop,
   titleId,
   onClose,
-  closeLabel = 'Back to the room',
+  closeLabel = t('Back to the room'),
   children,
   className,
 }: QuizCardProps) {

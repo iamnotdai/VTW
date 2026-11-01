@@ -3,6 +3,9 @@
  * Additions beyond the spec are marked with `@extension`.
  */
 
+/** @extension The language being learned. Meanings and translations stay in Vietnamese. */
+export type CourseId = 'en' | 'zh';
+
 export type AgeGroup = 'under-6' | '6-8' | '9-12' | '13-17' | '18-plus';
 export type AvatarChoice = 'boy' | 'girl';
 export type SceneGroup = 'home' | 'garden' | 'village' | 'school' | 'town';
@@ -21,7 +24,10 @@ export interface UserProfile {
 }
 
 export interface WordExample {
-  en: string;
+  /** Sentence in the course language. */
+  text: string;
+  /** @extension Pinyin of `text` (Chinese course). */
+  pinyin?: string;
   vi?: string;
   audio?: string;
 }
@@ -29,7 +35,7 @@ export interface WordExample {
 export interface Word {
   /** e.g. "lamp" */
   id: string;
-  /** e.g. "lamp" */
+  /** e.g. "lamp" (or "台灯" in the Chinese course) */
   text: string;
   /** @extension The word names several things ("curtains") → "They’re curtains." */
   plural?: boolean;
@@ -37,6 +43,10 @@ export interface Word {
   uncountable?: boolean;
   /** e.g. "/læmp/" */
   ipa?: string;
+  /** @extension Chinese course: e.g. "táidēng" — shown instead of `ipa`. */
+  pinyin?: string;
+  /** @extension Chinese course: classifier of the answer sentence, e.g. "盏" → "这是一盏台灯。" */
+  measure?: string;
   /** e.g. "đèn" */
   meaningVi: string;
   /** e.g. "/assets/scenes/bedroom/objects/04_lamp.webp" */
@@ -109,7 +119,10 @@ export interface Speaker {
 export interface DialogueLine {
   id: string;
   speakerId: string;
-  textEn: string;
+  /** Line in the course language. */
+  text: string;
+  /** @extension Pinyin of `text` (Chinese course). */
+  pinyin?: string;
   textVi?: string;
   audio?: string;
   startSeconds?: number;
@@ -120,6 +133,9 @@ export interface PracticeQuestion {
   id: string;
   prompt: string;
   suggestedAnswer: string;
+  /** @extension Pinyin of `prompt` / `suggestedAnswer` (Chinese course). */
+  promptPinyin?: string;
+  suggestedAnswerPinyin?: string;
   audio?: string;
 }
 
@@ -159,9 +175,11 @@ export interface LearningProgress {
 export type VoiceStyle = 'boy' | 'girl';
 
 export interface AppSettings {
+  /** @extension The course being learned. Each course keeps its own progress. */
+  course: CourseId;
   soundEnabled: boolean;
   showVietnameseMeaning: boolean;
-  /** `voiceURI` of the chosen US-English browser voice; `null` = pick the best one automatically. */
+  /** `voiceURI` of the chosen browser voice (US English or Mandarin, per course); `null` = pick the best one automatically. */
   voiceURI: string | null;
   /** `null` = no preference (adult voice, normal pitch). */
   voiceStyle: VoiceStyle | null;

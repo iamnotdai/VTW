@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { IconButton } from '@/components/common/IconButton';
 import { SpeakerMutedIcon, SpeakerSolidIcon } from '@/components/icons/AppIcons';
 import { getSpeaker } from '@/data/content';
+import { t } from '@/i18n';
 import { optionalAssetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useAudioStore } from '@/stores/audioStore';
@@ -27,7 +28,7 @@ export function PlayConversationButton({ conversation }: { conversation: Convers
     play(
       `line:${line.id}`,
       {
-        text: line.textEn,
+        text: line.text,
         src: optionalAssetUrl(line.audio),
         pitch: voice?.pitch,
         rate: voice?.rate,
@@ -38,7 +39,7 @@ export function PlayConversationButton({ conversation }: { conversation: Convers
 
   return (
     <IconButton
-      label={active ? 'Stop' : 'Listen to the whole conversation'}
+      label={active ? t('Stop') : t('Listen to the whole conversation')}
       variant="plain"
       disabled={!soundEnabled}
       aria-pressed={active}

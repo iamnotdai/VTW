@@ -3,6 +3,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNo
 import { ButtonLink } from '@/components/common/Button';
 import { IconButton } from '@/components/common/IconButton';
 import { getWord } from '@/data/content';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 
@@ -113,7 +114,7 @@ export function ObjectsFoundBar({
           id="objects-found-title"
           className="text-center text-lg font-bold text-navy-900 sm:text-xl"
         >
-          Objects Found
+          {t('Objects Found')}
         </h2>
         <div className="flex items-center justify-end gap-3">
           {complete && conversationsHref && (
@@ -124,7 +125,7 @@ export function ObjectsFoundBar({
               shape="pill"
               leftIcon={<MessagesSquare aria-hidden className="size-4" />}
             >
-              View Conversations
+              {t('View Conversations')}
             </ButtonLink>
           )}
           <p
@@ -135,14 +136,14 @@ export function ObjectsFoundBar({
           >
             {complete && <CircleCheck aria-hidden className="size-5" />}
             {found} / {total}
-            <span className="sr-only"> found</span>
+            <span className="sr-only"> {t('found')}</span>
           </p>
         </div>
       </div>
 
       <div className="mt-2.5 flex items-center gap-2">
         <IconButton
-          label="Previous objects"
+          label={t('Previous objects')}
           size="sm"
           disabled={edges.start}
           onClick={() => scrollPage(-1)}
@@ -166,8 +167,8 @@ export function ObjectsFoundBar({
                   onMouseLeave={() => onHighlight(null)}
                   aria-label={
                     word
-                      ? `${word.text} — found. Review it.`
-                      : `Object ${index + 1} — not found yet`
+                      ? t('{word} — found. Review it.', { word: word.text })
+                      : t('Object {number} — not found yet', { number: index + 1 })
                   }
                   className={cn(
                     'flex size-14 items-center justify-center rounded-xl transition hover:ring-2 hover:ring-brand-300 sm:size-16',
@@ -193,7 +194,7 @@ export function ObjectsFoundBar({
           })}
         </ul>
         <IconButton
-          label="Next objects"
+          label={t('Next objects')}
           size="sm"
           disabled={edges.end}
           onClick={() => scrollPage(1)}

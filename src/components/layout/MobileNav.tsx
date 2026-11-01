@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { NAV_ITEMS } from './navItems';
 
@@ -6,7 +7,7 @@ import { NAV_ITEMS } from './navItems';
 export function MobileNav() {
   return (
     <nav
-      aria-label="Main"
+      aria-label={t('Main')}
       className="fixed inset-x-0 bottom-0 z-40 border-t border-navy-100 bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-nav backdrop-blur md:hidden"
     >
       <ul className="mx-auto flex h-18 max-w-lg items-stretch justify-around px-2">
@@ -33,7 +34,7 @@ export function MobileNav() {
                   >
                     <Icon aria-hidden className="size-5.5" />
                   </span>
-                  {label}
+                  {t(label)}
                 </>
               )}
             </NavLink>

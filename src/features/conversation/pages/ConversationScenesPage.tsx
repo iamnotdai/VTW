@@ -6,6 +6,7 @@ import { PageContainer, PageTitle, TopBar } from '@/components/layout/PageHeader
 import { SCENE_GRID_CLASS } from '@/config/app';
 import { getSceneConversations, getSceneGroups, getScenes, isSceneAvailable } from '@/data/content';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useProgressStore } from '@/stores/progressStore';
@@ -21,7 +22,7 @@ const hasConversations = (scene: Scene) =>
  * finished conversations. Choosing a place lists its conversations underneath.
  */
 export function ConversationScenesPage() {
-  useDocumentTitle('Conversation');
+  useDocumentTitle(t('Conversation'));
   const groups = getSceneGroups();
   const completedIds = useProgressStore((state) => state.progress.completedConversationIds);
   const lastVisitedId = useProgressStore((state) => state.progress.lastVisitedSceneId);
@@ -34,8 +35,8 @@ export function ConversationScenesPage() {
     <>
       <TopBar variant="title">
         <PageTitle
-          title="Conversation"
-          description="Watch, listen and practice real conversations."
+          title={t('Conversation')}
+          description={t('Watch, listen and practice real conversations.')}
         />
       </TopBar>
       <PageContainer width="full" className="flex flex-col gap-8">
@@ -108,7 +109,7 @@ function SceneTile({
             icon={<Lock aria-hidden />}
             className="absolute top-2 left-2"
           >
-            Coming soon
+            {t('Coming soon')}
           </Badge>
         )}
       </div>
@@ -133,7 +134,7 @@ function SceneTile({
             )}
           >
             {done}/{conversations.length}
-            <span className="sr-only"> conversations done</span>
+            <span className="sr-only"> {t('conversations done')}</span>
           </span>
         )}
       </div>
@@ -175,9 +176,11 @@ function SceneConversationList({
   const upNextId = conversations.find((item) => !completedIds.includes(item.id))?.id;
   return (
     <div className="mt-6 animate-fade-in">
-      <h3 className="text-2xl font-extrabold text-navy-900">{scene.title} Conversations</h3>
+      <h3 className="text-2xl font-extrabold text-navy-900">
+        {t('{scene} Conversations', { scene: scene.title })}
+      </h3>
       <p className="text-base font-medium text-navy-400 sm:text-lg">
-        {conversations.length} conversations in this scene.
+        {t('{count} conversations in this scene.', { count: conversations.length })}
       </p>
       <ol className="mt-4 grid gap-2.5 lg:grid-cols-2 lg:gap-x-6">
         {conversations.map((conversation) => (

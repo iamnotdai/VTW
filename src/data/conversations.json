@@ -10,37 +10,37 @@
       {
         "id": "my-bedroom-l1",
         "speakerId": "ben",
-        "textEn": "Lily, is this your bedroom?",
+        "text": "Lily, is this your bedroom?",
         "textVi": "Lily, đây là phòng ngủ của bạn à?"
       },
       {
         "id": "my-bedroom-l2",
         "speakerId": "lily",
-        "textEn": "Yes, it is. Come in!",
+        "text": "Yes, it is. Come in!",
         "textVi": "Đúng rồi. Vào đi!"
       },
       {
         "id": "my-bedroom-l3",
         "speakerId": "ben",
-        "textEn": "Wow, your bed is so big!",
+        "text": "Wow, your bed is so big!",
         "textVi": "Ồ, giường của bạn to quá!"
       },
       {
         "id": "my-bedroom-l4",
         "speakerId": "lily",
-        "textEn": "And this is my bunny. Her name is Bobo.",
+        "text": "And this is my bunny. Her name is Bobo.",
         "textVi": "Còn đây là thỏ bông của mình. Tên bạn ấy là Bobo."
       },
       {
         "id": "my-bedroom-l5",
         "speakerId": "ben",
-        "textEn": "What is on the desk?",
+        "text": "What is on the desk?",
         "textVi": "Có gì trên bàn học vậy?"
       },
       {
         "id": "my-bedroom-l6",
         "speakerId": "lily",
-        "textEn": "A laptop and a book. I love my bedroom!",
+        "text": "A laptop and a book. I love my bedroom!",
         "textVi": "Một chiếc máy tính xách tay và một quyển sách. Mình rất yêu phòng ngủ của mình!"
       }
     ],
@@ -68,43 +68,43 @@
       {
         "id": "making-the-bed-l1",
         "speakerId": "mom",
-        "textEn": "Good morning, Ben. Please make your bed.",
+        "text": "Good morning, Ben. Please make your bed.",
         "textVi": "Chào buổi sáng, Ben. Con dọn giường đi nhé."
       },
       {
         "id": "making-the-bed-l2",
         "speakerId": "ben",
-        "textEn": "Okay, Mom. What do I do first?",
+        "text": "Okay, Mom. What do I do first?",
         "textVi": "Vâng ạ. Con làm gì trước hả mẹ?"
       },
       {
         "id": "making-the-bed-l3",
         "speakerId": "mom",
-        "textEn": "First, put the pillow at the top.",
+        "text": "First, put the pillow at the top.",
         "textVi": "Đầu tiên, đặt gối ở phía đầu giường."
       },
       {
         "id": "making-the-bed-l4",
         "speakerId": "ben",
-        "textEn": "Done! Now the blanket?",
+        "text": "Done! Now the blanket?",
         "textVi": "Xong rồi! Giờ đến chăn ạ?"
       },
       {
         "id": "making-the-bed-l5",
         "speakerId": "mom",
-        "textEn": "Yes. Pull the blanket up and make it flat.",
+        "text": "Yes. Pull the blanket up and make it flat.",
         "textVi": "Đúng rồi. Kéo chăn lên và làm cho phẳng."
       },
       {
         "id": "making-the-bed-l6",
         "speakerId": "ben",
-        "textEn": "Look, Mom! My bed looks great.",
+        "text": "Look, Mom! My bed looks great.",
         "textVi": "Mẹ nhìn này! Giường của con trông đẹp quá."
       },
       {
         "id": "making-the-bed-l7",
         "speakerId": "mom",
-        "textEn": "Great job, Ben!",
+        "text": "Great job, Ben!",
         "textVi": "Con giỏi lắm, Ben!"
       }
     ],
@@ -132,37 +132,37 @@
       {
         "id": "where-is-my-book-l1",
         "speakerId": "lily",
-        "textEn": "Mom, where is my book?",
+        "text": "Mom, where is my book?",
         "textVi": "Mẹ ơi, quyển sách của con đâu rồi?"
       },
       {
         "id": "where-is-my-book-l2",
         "speakerId": "mom",
-        "textEn": "Is it on the bookshelf?",
+        "text": "Is it on the bookshelf?",
         "textVi": "Có phải ở trên giá sách không?"
       },
       {
         "id": "where-is-my-book-l3",
         "speakerId": "lily",
-        "textEn": "No, it isn't.",
+        "text": "No, it isn't.",
         "textVi": "Không có ạ."
       },
       {
         "id": "where-is-my-book-l4",
         "speakerId": "mom",
-        "textEn": "Look on your desk.",
+        "text": "Look on your desk.",
         "textVi": "Con nhìn trên bàn học xem."
       },
       {
         "id": "where-is-my-book-l5",
         "speakerId": "lily",
-        "textEn": "Yes! It's on my desk, next to the laptop.",
+        "text": "Yes! It's on my desk, next to the laptop.",
         "textVi": "Có rồi! Nó ở trên bàn học, cạnh máy tính xách tay."
       },
       {
         "id": "where-is-my-book-l6",
         "speakerId": "mom",
-        "textEn": "Good. Please put it back on the bookshelf after reading.",
+        "text": "Good. Please put it back on the bookshelf after reading.",
         "textVi": "Tốt lắm. Đọc xong con nhớ cất lại lên giá sách nhé."
       }
     ],
@@ -190,43 +190,43 @@
       {
         "id": "time-for-bed-l1",
         "speakerId": "dad",
-        "textEn": "Ben, it's nine o'clock. Time for bed.",
+        "text": "Ben, it's nine o'clock. Time for bed.",
         "textVi": "Ben, chín giờ rồi. Đến giờ đi ngủ rồi con."
       },
       {
         "id": "time-for-bed-l2",
         "speakerId": "ben",
-        "textEn": "Can I read a story first?",
+        "text": "Can I read a story first?",
         "textVi": "Con đọc một câu chuyện trước được không ạ?"
       },
       {
         "id": "time-for-bed-l3",
         "speakerId": "dad",
-        "textEn": "Okay, just one story.",
+        "text": "Okay, just one story.",
         "textVi": "Được, chỉ một câu chuyện thôi nhé."
       },
       {
         "id": "time-for-bed-l4",
         "speakerId": "ben",
-        "textEn": "Thank you, Dad!",
+        "text": "Thank you, Dad!",
         "textVi": "Con cảm ơn bố!"
       },
       {
         "id": "time-for-bed-l5",
         "speakerId": "dad",
-        "textEn": "Now lie down. I'll turn off the lamp.",
+        "text": "Now lie down. I'll turn off the lamp.",
         "textVi": "Giờ nằm xuống nào. Bố sẽ tắt đèn."
       },
       {
         "id": "time-for-bed-l6",
         "speakerId": "ben",
-        "textEn": "Good night, Dad.",
+        "text": "Good night, Dad.",
         "textVi": "Chúc bố ngủ ngon."
       },
       {
         "id": "time-for-bed-l7",
         "speakerId": "dad",
-        "textEn": "Good night. Sweet dreams!",
+        "text": "Good night. Sweet dreams!",
         "textVi": "Chúc con ngủ ngon. Mơ đẹp nhé!"
       }
     ],
@@ -254,37 +254,37 @@
       {
         "id": "tidy-up-time-l1",
         "speakerId": "mom",
-        "textEn": "Lily, your room is very messy!",
+        "text": "Lily, your room is very messy!",
         "textVi": "Lily, phòng con bừa bộn quá!"
       },
       {
         "id": "tidy-up-time-l2",
         "speakerId": "lily",
-        "textEn": "Sorry, Mom. I'll tidy it up.",
+        "text": "Sorry, Mom. I'll tidy it up.",
         "textVi": "Con xin lỗi mẹ. Con sẽ dọn dẹp ạ."
       },
       {
         "id": "tidy-up-time-l3",
         "speakerId": "mom",
-        "textEn": "Put your bunny on the bed.",
+        "text": "Put your bunny on the bed.",
         "textVi": "Cất bạn thỏ bông lên giường nhé."
       },
       {
         "id": "tidy-up-time-l4",
         "speakerId": "lily",
-        "textEn": "Okay. Where do my clothes go?",
+        "text": "Okay. Where do my clothes go?",
         "textVi": "Vâng ạ. Quần áo của con để đâu ạ?"
       },
       {
         "id": "tidy-up-time-l5",
         "speakerId": "mom",
-        "textEn": "Your clothes go in the wardrobe.",
+        "text": "Your clothes go in the wardrobe.",
         "textVi": "Quần áo để trong tủ quần áo."
       },
       {
         "id": "tidy-up-time-l6",
         "speakerId": "lily",
-        "textEn": "All done! My room is clean now.",
+        "text": "All done! My room is clean now.",
         "textVi": "Xong hết rồi! Giờ phòng con sạch rồi."
       }
     ],
@@ -312,37 +312,37 @@
       {
         "id": "good-morning-l1",
         "speakerId": "mom",
-        "textEn": "Good morning, Lily! Time to wake up.",
+        "text": "Good morning, Lily! Time to wake up.",
         "textVi": "Chào buổi sáng, Lily! Đến giờ dậy rồi."
       },
       {
         "id": "good-morning-l2",
         "speakerId": "lily",
-        "textEn": "Good morning, Mom. I'm still sleepy.",
+        "text": "Good morning, Mom. I'm still sleepy.",
         "textVi": "Con chào mẹ. Con vẫn còn buồn ngủ."
       },
       {
         "id": "good-morning-l3",
         "speakerId": "mom",
-        "textEn": "Look, the sun is shining.",
+        "text": "Look, the sun is shining.",
         "textVi": "Nhìn kìa, mặt trời đang chiếu sáng."
       },
       {
         "id": "good-morning-l4",
         "speakerId": "lily",
-        "textEn": "Can you pass me my slippers, please?",
+        "text": "Can you pass me my slippers, please?",
         "textVi": "Mẹ đưa giúp con đôi dép được không ạ?"
       },
       {
         "id": "good-morning-l5",
         "speakerId": "mom",
-        "textEn": "Sure. What a beautiful day!",
+        "text": "Sure. What a beautiful day!",
         "textVi": "Được chứ. Hôm nay đẹp trời quá!"
       },
       {
         "id": "good-morning-l6",
         "speakerId": "lily",
-        "textEn": "Yes! Let's have breakfast.",
+        "text": "Yes! Let's have breakfast.",
         "textVi": "Vâng! Mình đi ăn sáng thôi."
       }
     ],
@@ -370,37 +370,37 @@
       {
         "id": "turn-on-the-lamp-l1",
         "speakerId": "ben",
-        "textEn": "Dad, it's so dark in here.",
+        "text": "Dad, it's so dark in here.",
         "textVi": "Bố ơi, trong này tối quá."
       },
       {
         "id": "turn-on-the-lamp-l2",
         "speakerId": "dad",
-        "textEn": "Turn on the lamp, then.",
+        "text": "Turn on the lamp, then.",
         "textVi": "Vậy thì con bật đèn lên."
       },
       {
         "id": "turn-on-the-lamp-l3",
         "speakerId": "ben",
-        "textEn": "How do I turn it on?",
+        "text": "How do I turn it on?",
         "textVi": "Bật đèn thế nào hả bố?"
       },
       {
         "id": "turn-on-the-lamp-l4",
         "speakerId": "dad",
-        "textEn": "There's a button on the lamp. Press it.",
+        "text": "There's a button on the lamp. Press it.",
         "textVi": "Có một cái nút trên đèn. Con bấm vào đó."
       },
       {
         "id": "turn-on-the-lamp-l5",
         "speakerId": "ben",
-        "textEn": "Wow, now I can see everything!",
+        "text": "Wow, now I can see everything!",
         "textVi": "Ồ, giờ con nhìn thấy mọi thứ rồi!"
       },
       {
         "id": "turn-on-the-lamp-l6",
         "speakerId": "dad",
-        "textEn": "Remember to turn it off when you sleep.",
+        "text": "Remember to turn it off when you sleep.",
         "textVi": "Nhớ tắt đèn khi đi ngủ nhé."
       }
     ],
@@ -428,43 +428,43 @@
       {
         "id": "my-favorite-toy-l1",
         "speakerId": "ben",
-        "textEn": "Lily, what is your favorite toy?",
+        "text": "Lily, what is your favorite toy?",
         "textVi": "Lily, đồ chơi bạn thích nhất là gì?"
       },
       {
         "id": "my-favorite-toy-l2",
         "speakerId": "lily",
-        "textEn": "My bunny. She is soft and pink.",
+        "text": "My bunny. She is soft and pink.",
         "textVi": "Thỏ bông của mình. Bạn ấy mềm và màu hồng."
       },
       {
         "id": "my-favorite-toy-l3",
         "speakerId": "ben",
-        "textEn": "Where do you keep her?",
+        "text": "Where do you keep her?",
         "textVi": "Bạn để bạn ấy ở đâu?"
       },
       {
         "id": "my-favorite-toy-l4",
         "speakerId": "lily",
-        "textEn": "On my bed, next to my pillow.",
+        "text": "On my bed, next to my pillow.",
         "textVi": "Trên giường, cạnh cái gối của mình."
       },
       {
         "id": "my-favorite-toy-l5",
         "speakerId": "ben",
-        "textEn": "My favorite toy is a red car.",
+        "text": "My favorite toy is a red car.",
         "textVi": "Đồ chơi mình thích nhất là một chiếc ô tô màu đỏ."
       },
       {
         "id": "my-favorite-toy-l6",
         "speakerId": "lily",
-        "textEn": "Cool! Is it on your desk?",
+        "text": "Cool! Is it on your desk?",
         "textVi": "Tuyệt! Nó ở trên bàn học của bạn à?"
       },
       {
         "id": "my-favorite-toy-l7",
         "speakerId": "ben",
-        "textEn": "Yes, it is.",
+        "text": "Yes, it is.",
         "textVi": "Đúng vậy."
       }
     ],
@@ -492,37 +492,37 @@
       {
         "id": "getting-ready-for-school-l1",
         "speakerId": "mom",
-        "textEn": "Ben, are you ready for school?",
+        "text": "Ben, are you ready for school?",
         "textVi": "Ben, con chuẩn bị đi học xong chưa?"
       },
       {
         "id": "getting-ready-for-school-l2",
         "speakerId": "ben",
-        "textEn": "Almost! Where is my backpack?",
+        "text": "Almost! Where is my backpack?",
         "textVi": "Gần xong rồi ạ! Ba lô của con đâu rồi?"
       },
       {
         "id": "getting-ready-for-school-l3",
         "speakerId": "mom",
-        "textEn": "It's on the floor, next to your desk.",
+        "text": "It's on the floor, next to your desk.",
         "textVi": "Nó ở trên sàn, cạnh bàn học của con."
       },
       {
         "id": "getting-ready-for-school-l4",
         "speakerId": "ben",
-        "textEn": "Found it! My books are inside.",
+        "text": "Found it! My books are inside.",
         "textVi": "Thấy rồi! Sách của con ở bên trong."
       },
       {
         "id": "getting-ready-for-school-l5",
         "speakerId": "mom",
-        "textEn": "Did you take off your slippers?",
+        "text": "Did you take off your slippers?",
         "textVi": "Con đã cởi dép đi trong nhà chưa?"
       },
       {
         "id": "getting-ready-for-school-l6",
         "speakerId": "ben",
-        "textEn": "Oops! Now I'm wearing my shoes. Bye, Mom!",
+        "text": "Oops! Now I'm wearing my shoes. Bye, Mom!",
         "textVi": "Ối! Giờ con đi giày rồi. Con chào mẹ!"
       }
     ],
@@ -550,37 +550,37 @@
       {
         "id": "look-in-the-mirror-l1",
         "speakerId": "dad",
-        "textEn": "Lily, your hair is messy.",
+        "text": "Lily, your hair is messy.",
         "textVi": "Lily, tóc con rối quá."
       },
       {
         "id": "look-in-the-mirror-l2",
         "speakerId": "lily",
-        "textEn": "Really? Let me look in the mirror.",
+        "text": "Really? Let me look in the mirror.",
         "textVi": "Thật ạ? Để con soi gương xem."
       },
       {
         "id": "look-in-the-mirror-l3",
         "speakerId": "dad",
-        "textEn": "The mirror is on the wardrobe.",
+        "text": "The mirror is on the wardrobe.",
         "textVi": "Gương ở trên tủ quần áo đó."
       },
       {
         "id": "look-in-the-mirror-l4",
         "speakerId": "lily",
-        "textEn": "Oh no! Can you help me, Dad?",
+        "text": "Oh no! Can you help me, Dad?",
         "textVi": "Ôi không! Bố giúp con được không ạ?"
       },
       {
         "id": "look-in-the-mirror-l5",
         "speakerId": "dad",
-        "textEn": "Of course. Let's brush your hair.",
+        "text": "Of course. Let's brush your hair.",
         "textVi": "Tất nhiên rồi. Mình chải tóc nào."
       },
       {
         "id": "look-in-the-mirror-l6",
         "speakerId": "lily",
-        "textEn": "Thank you! Now I look nice.",
+        "text": "Thank you! Now I look nice.",
         "textVi": "Con cảm ơn bố! Giờ trông con xinh rồi."
       }
     ],
@@ -608,37 +608,37 @@
       {
         "id": "my-bathroom-l1",
         "speakerId": "lily",
-        "textEn": "Ben, is this your bathroom?",
+        "text": "Ben, is this your bathroom?",
         "textVi": "Ben ơi, đây là phòng tắm của bạn à?"
       },
       {
         "id": "my-bathroom-l2",
         "speakerId": "ben",
-        "textEn": "Yes, it is. It’s blue and white.",
+        "text": "Yes, it is. It’s blue and white.",
         "textVi": "Đúng rồi. Nó màu xanh và trắng."
       },
       {
         "id": "my-bathroom-l3",
         "speakerId": "lily",
-        "textEn": "Wow, you have a big bathtub!",
+        "text": "Wow, you have a big bathtub!",
         "textVi": "Ồ, bạn có một cái bồn tắm to quá!"
       },
       {
         "id": "my-bathroom-l4",
         "speakerId": "ben",
-        "textEn": "And there is a shower, too.",
+        "text": "And there is a shower, too.",
         "textVi": "Và còn có cả vòi sen nữa."
       },
       {
         "id": "my-bathroom-l5",
         "speakerId": "lily",
-        "textEn": "What is on the sink?",
+        "text": "What is on the sink?",
         "textVi": "Có gì ở trên bồn rửa mặt vậy?"
       },
       {
         "id": "my-bathroom-l6",
         "speakerId": "ben",
-        "textEn": "My toothbrush and the soap.",
+        "text": "My toothbrush and the soap.",
         "textVi": "Bàn chải đánh răng của mình và xà phòng."
       }
     ],
@@ -666,43 +666,43 @@
       {
         "id": "brushing-my-teeth-l1",
         "speakerId": "mom",
-        "textEn": "Lily, it’s time to brush your teeth.",
+        "text": "Lily, it’s time to brush your teeth.",
         "textVi": "Lily ơi, đến giờ đánh răng rồi con."
       },
       {
         "id": "brushing-my-teeth-l2",
         "speakerId": "lily",
-        "textEn": "Where is my toothbrush?",
+        "text": "Where is my toothbrush?",
         "textVi": "Bàn chải đánh răng của con đâu ạ?"
       },
       {
         "id": "brushing-my-teeth-l3",
         "speakerId": "mom",
-        "textEn": "It’s in the toothbrush holder.",
+        "text": "It’s in the toothbrush holder.",
         "textVi": "Nó ở trong cốc đựng bàn chải đó."
       },
       {
         "id": "brushing-my-teeth-l4",
         "speakerId": "lily",
-        "textEn": "I found it! The pink one is mine.",
+        "text": "I found it! The pink one is mine.",
         "textVi": "Con thấy rồi! Cái màu hồng là của con."
       },
       {
         "id": "brushing-my-teeth-l5",
         "speakerId": "mom",
-        "textEn": "Put a little toothpaste on it.",
+        "text": "Put a little toothpaste on it.",
         "textVi": "Con bóp một chút kem đánh răng lên nhé."
       },
       {
         "id": "brushing-my-teeth-l6",
         "speakerId": "lily",
-        "textEn": "Okay. I brush up and down.",
+        "text": "Okay. I brush up and down.",
         "textVi": "Vâng ạ. Con chải lên rồi chải xuống."
       },
       {
         "id": "brushing-my-teeth-l7",
         "speakerId": "mom",
-        "textEn": "Good job! Your teeth are so clean.",
+        "text": "Good job! Your teeth are so clean.",
         "textVi": "Giỏi lắm! Răng của con sạch quá."
       }
     ],
@@ -730,43 +730,43 @@
       {
         "id": "bath-time-l1",
         "speakerId": "dad",
-        "textEn": "Ben, your bath is ready.",
+        "text": "Ben, your bath is ready.",
         "textVi": "Ben ơi, nước tắm của con sẵn sàng rồi."
       },
       {
         "id": "bath-time-l2",
         "speakerId": "ben",
-        "textEn": "Is the water warm?",
+        "text": "Is the water warm?",
         "textVi": "Nước có ấm không bố?"
       },
       {
         "id": "bath-time-l3",
         "speakerId": "dad",
-        "textEn": "Yes, it is. Get in the bathtub.",
+        "text": "Yes, it is. Get in the bathtub.",
         "textVi": "Ấm rồi. Con vào bồn tắm đi."
       },
       {
         "id": "bath-time-l4",
         "speakerId": "ben",
-        "textEn": "Can I play with my duck?",
+        "text": "Can I play with my duck?",
         "textVi": "Con chơi với con vịt được không ạ?"
       },
       {
         "id": "bath-time-l5",
         "speakerId": "dad",
-        "textEn": "Sure. But wash your body with soap first.",
+        "text": "Sure. But wash your body with soap first.",
         "textVi": "Được chứ. Nhưng con kỳ người bằng xà phòng trước nhé."
       },
       {
         "id": "bath-time-l6",
         "speakerId": "ben",
-        "textEn": "I’m all done, Dad!",
+        "text": "I’m all done, Dad!",
         "textVi": "Con tắm xong rồi, bố ơi!"
       },
       {
         "id": "bath-time-l7",
         "speakerId": "dad",
-        "textEn": "Here is your towel. Stand on the bath mat.",
+        "text": "Here is your towel. Stand on the bath mat.",
         "textVi": "Khăn tắm của con đây. Con đứng lên thảm nhà tắm nhé."
       }
     ],
@@ -794,37 +794,37 @@
       {
         "id": "wash-your-hands-l1",
         "speakerId": "lily",
-        "textEn": "Ben, wash your hands before lunch!",
+        "text": "Ben, wash your hands before lunch!",
         "textVi": "Ben ơi, rửa tay trước khi ăn trưa đi!"
       },
       {
         "id": "wash-your-hands-l2",
         "speakerId": "ben",
-        "textEn": "Okay. I turn on the faucet.",
+        "text": "Okay. I turn on the faucet.",
         "textVi": "Được rồi. Mình mở vòi nước."
       },
       {
         "id": "wash-your-hands-l3",
         "speakerId": "lily",
-        "textEn": "Use the soap, too.",
+        "text": "Use the soap, too.",
         "textVi": "Dùng cả xà phòng nữa nhé."
       },
       {
         "id": "wash-your-hands-l4",
         "speakerId": "ben",
-        "textEn": "Look, so many bubbles!",
+        "text": "Look, so many bubbles!",
         "textVi": "Nhìn này, nhiều bong bóng quá!"
       },
       {
         "id": "wash-your-hands-l5",
         "speakerId": "lily",
-        "textEn": "Now turn off the faucet.",
+        "text": "Now turn off the faucet.",
         "textVi": "Bây giờ khoá vòi nước lại đi."
       },
       {
         "id": "wash-your-hands-l6",
         "speakerId": "ben",
-        "textEn": "My hands are clean. Where is the towel?",
+        "text": "My hands are clean. Where is the towel?",
         "textVi": "Tay mình sạch rồi. Khăn ở đâu nhỉ?"
       }
     ],
@@ -852,37 +852,37 @@
       {
         "id": "where-is-the-towel-l1",
         "speakerId": "ben",
-        "textEn": "Mom, where is my towel?",
+        "text": "Mom, where is my towel?",
         "textVi": "Mẹ ơi, khăn tắm của con đâu rồi ạ?"
       },
       {
         "id": "where-is-the-towel-l2",
         "speakerId": "mom",
-        "textEn": "Is it on the towel rack?",
+        "text": "Is it on the towel rack?",
         "textVi": "Nó có ở trên giá treo khăn không con?"
       },
       {
         "id": "where-is-the-towel-l3",
         "speakerId": "ben",
-        "textEn": "No, it isn’t. The towel rack is empty.",
+        "text": "No, it isn’t. The towel rack is empty.",
         "textVi": "Không có ạ. Giá treo khăn trống trơn."
       },
       {
         "id": "where-is-the-towel-l4",
         "speakerId": "mom",
-        "textEn": "Look in the bathroom cabinet.",
+        "text": "Look in the bathroom cabinet.",
         "textVi": "Con tìm trong tủ nhà tắm xem."
       },
       {
         "id": "where-is-the-towel-l5",
         "speakerId": "ben",
-        "textEn": "I see it! It’s on the shelf.",
+        "text": "I see it! It’s on the shelf.",
         "textVi": "Con thấy rồi! Nó ở trên kệ."
       },
       {
         "id": "where-is-the-towel-l6",
         "speakerId": "mom",
-        "textEn": "Put your wet towel in the laundry basket, please.",
+        "text": "Put your wet towel in the laundry basket, please.",
         "textVi": "Con bỏ khăn ướt vào giỏ đựng quần áo nhé."
       }
     ],
@@ -910,37 +910,37 @@
       {
         "id": "washing-my-hair-l1",
         "speakerId": "mom",
-        "textEn": "Lily, let’s wash your hair.",
+        "text": "Lily, let’s wash your hair.",
         "textVi": "Lily ơi, mình gội đầu nào."
       },
       {
         "id": "washing-my-hair-l2",
         "speakerId": "lily",
-        "textEn": "Can I use the shower?",
+        "text": "Can I use the shower?",
         "textVi": "Con dùng vòi sen được không mẹ?"
       },
       {
         "id": "washing-my-hair-l3",
         "speakerId": "mom",
-        "textEn": "Yes. Close the shower curtain first.",
+        "text": "Yes. Close the shower curtain first.",
         "textVi": "Được. Con kéo rèm tắm lại trước nhé."
       },
       {
         "id": "washing-my-hair-l4",
         "speakerId": "lily",
-        "textEn": "Where is the shampoo?",
+        "text": "Where is the shampoo?",
         "textVi": "Dầu gội ở đâu ạ?"
       },
       {
         "id": "washing-my-hair-l5",
         "speakerId": "mom",
-        "textEn": "It’s on the shelf. Close your eyes.",
+        "text": "It’s on the shelf. Close your eyes.",
         "textVi": "Nó ở trên kệ. Con nhắm mắt lại nhé."
       },
       {
         "id": "washing-my-hair-l6",
         "speakerId": "lily",
-        "textEn": "It smells so good!",
+        "text": "It smells so good!",
         "textVi": "Thơm quá mẹ ơi!"
       }
     ],
@@ -968,43 +968,43 @@
       {
         "id": "drying-my-hair-l1",
         "speakerId": "lily",
-        "textEn": "Mom, my hair is wet.",
+        "text": "Mom, my hair is wet.",
         "textVi": "Mẹ ơi, tóc con bị ướt."
       },
       {
         "id": "drying-my-hair-l2",
         "speakerId": "mom",
-        "textEn": "Let’s use the hair dryer.",
+        "text": "Let’s use the hair dryer.",
         "textVi": "Mình dùng máy sấy tóc nhé."
       },
       {
         "id": "drying-my-hair-l3",
         "speakerId": "lily",
-        "textEn": "It’s loud, but the air is warm.",
+        "text": "It’s loud, but the air is warm.",
         "textVi": "Nó kêu to, nhưng gió ấm lắm."
       },
       {
         "id": "drying-my-hair-l4",
         "speakerId": "mom",
-        "textEn": "Now your hair is dry. Where is the comb?",
+        "text": "Now your hair is dry. Where is the comb?",
         "textVi": "Giờ tóc con khô rồi. Cái lược đâu nhỉ?"
       },
       {
         "id": "drying-my-hair-l5",
         "speakerId": "lily",
-        "textEn": "It’s next to the soap.",
+        "text": "It’s next to the soap.",
         "textVi": "Nó ở cạnh xà phòng ạ."
       },
       {
         "id": "drying-my-hair-l6",
         "speakerId": "mom",
-        "textEn": "Comb your hair, please.",
+        "text": "Comb your hair, please.",
         "textVi": "Con chải tóc đi nhé."
       },
       {
         "id": "drying-my-hair-l7",
         "speakerId": "lily",
-        "textEn": "Thank you, Mom. I look nice!",
+        "text": "Thank you, Mom. I look nice!",
         "textVi": "Con cảm ơn mẹ. Trông con xinh quá!"
       }
     ],
@@ -1032,37 +1032,37 @@
       {
         "id": "dad-is-shaving-l1",
         "speakerId": "ben",
-        "textEn": "Dad, what are you doing?",
+        "text": "Dad, what are you doing?",
         "textVi": "Bố ơi, bố đang làm gì vậy?"
       },
       {
         "id": "dad-is-shaving-l2",
         "speakerId": "dad",
-        "textEn": "I’m shaving, Ben.",
+        "text": "I’m shaving, Ben.",
         "textVi": "Bố đang cạo râu, Ben ạ."
       },
       {
         "id": "dad-is-shaving-l3",
         "speakerId": "ben",
-        "textEn": "What is that white cream?",
+        "text": "What is that white cream?",
         "textVi": "Kem trắng đó là gì vậy bố?"
       },
       {
         "id": "dad-is-shaving-l4",
         "speakerId": "dad",
-        "textEn": "It’s shaving cream. It’s soft and fluffy.",
+        "text": "It’s shaving cream. It’s soft and fluffy.",
         "textVi": "Đó là kem cạo râu. Nó mềm và xốp."
       },
       {
         "id": "dad-is-shaving-l5",
         "speakerId": "ben",
-        "textEn": "Can I use the razor?",
+        "text": "Can I use the razor?",
         "textVi": "Con dùng dao cạo được không ạ?"
       },
       {
         "id": "dad-is-shaving-l6",
         "speakerId": "dad",
-        "textEn": "No, Ben. A razor is sharp. It’s only for grown-ups.",
+        "text": "No, Ben. A razor is sharp. It’s only for grown-ups.",
         "textVi": "Không được con ạ. Dao cạo rất sắc. Chỉ người lớn mới được dùng."
       }
     ],
@@ -1090,37 +1090,37 @@
       {
         "id": "cleaning-the-bathroom-l1",
         "speakerId": "dad",
-        "textEn": "Ben, let’s clean the bathroom.",
+        "text": "Ben, let’s clean the bathroom.",
         "textVi": "Ben ơi, mình cùng dọn phòng tắm nào."
       },
       {
         "id": "cleaning-the-bathroom-l2",
         "speakerId": "ben",
-        "textEn": "Okay! I can fill the bucket with water.",
+        "text": "Okay! I can fill the bucket with water.",
         "textVi": "Vâng ạ! Con đổ đầy nước vào xô được."
       },
       {
         "id": "cleaning-the-bathroom-l3",
         "speakerId": "dad",
-        "textEn": "Great. I clean the toilet with the toilet brush.",
+        "text": "Great. I clean the toilet with the toilet brush.",
         "textVi": "Tuyệt. Bố cọ bồn cầu bằng chổi cọ bồn cầu."
       },
       {
         "id": "cleaning-the-bathroom-l4",
         "speakerId": "ben",
-        "textEn": "I put the old paper in the trash can.",
+        "text": "I put the old paper in the trash can.",
         "textVi": "Con bỏ giấy cũ vào thùng rác."
       },
       {
         "id": "cleaning-the-bathroom-l5",
         "speakerId": "dad",
-        "textEn": "We need a new roll of toilet paper, too.",
+        "text": "We need a new roll of toilet paper, too.",
         "textVi": "Mình cũng cần một cuộn giấy vệ sinh mới nữa."
       },
       {
         "id": "cleaning-the-bathroom-l6",
         "speakerId": "ben",
-        "textEn": "Here it is. The bathroom is clean now!",
+        "text": "Here it is. The bathroom is clean now!",
         "textVi": "Đây ạ. Phòng tắm sạch rồi!"
       }
     ],
@@ -1148,37 +1148,37 @@
       {
         "id": "getting-ready-for-bed-l1",
         "speakerId": "mom",
-        "textEn": "Lily, it’s eight o’clock. Time to get ready for bed.",
+        "text": "Lily, it’s eight o’clock. Time to get ready for bed.",
         "textVi": "Lily ơi, tám giờ rồi. Đến giờ chuẩn bị đi ngủ."
       },
       {
         "id": "getting-ready-for-bed-l2",
         "speakerId": "lily",
-        "textEn": "First, I take a shower.",
+        "text": "First, I take a shower.",
         "textVi": "Đầu tiên, con tắm vòi sen."
       },
       {
         "id": "getting-ready-for-bed-l3",
         "speakerId": "mom",
-        "textEn": "Then brush your teeth.",
+        "text": "Then brush your teeth.",
         "textVi": "Sau đó con đánh răng nhé."
       },
       {
         "id": "getting-ready-for-bed-l4",
         "speakerId": "lily",
-        "textEn": "I use my toothbrush and toothpaste.",
+        "text": "I use my toothbrush and toothpaste.",
         "textVi": "Con dùng bàn chải và kem đánh răng."
       },
       {
         "id": "getting-ready-for-bed-l5",
         "speakerId": "mom",
-        "textEn": "Don’t forget to wash your face at the sink.",
+        "text": "Don’t forget to wash your face at the sink.",
         "textVi": "Đừng quên rửa mặt ở bồn rửa mặt nhé."
       },
       {
         "id": "getting-ready-for-bed-l6",
         "speakerId": "lily",
-        "textEn": "All done! Good night, Mom.",
+        "text": "All done! Good night, Mom.",
         "textVi": "Xong hết rồi! Chúc mẹ ngủ ngon."
       }
     ],
@@ -1206,37 +1206,37 @@
       {
         "id": "my-living-room-l1",
         "speakerId": "ben",
-        "textEn": "Lily, is this your living room?",
+        "text": "Lily, is this your living room?",
         "textVi": "Lily ơi, đây là phòng khách nhà bạn à?"
       },
       {
         "id": "my-living-room-l2",
         "speakerId": "lily",
-        "textEn": "Yes, it is. Come in!",
+        "text": "Yes, it is. Come in!",
         "textVi": "Đúng rồi. Vào đi!"
       },
       {
         "id": "my-living-room-l3",
         "speakerId": "ben",
-        "textEn": "Wow, your sofa is so big!",
+        "text": "Wow, your sofa is so big!",
         "textVi": "Ồ, ghế sofa nhà bạn to quá!"
       },
       {
         "id": "my-living-room-l4",
         "speakerId": "lily",
-        "textEn": "And this yellow armchair is my favorite.",
+        "text": "And this yellow armchair is my favorite.",
         "textVi": "Còn chiếc ghế bành màu vàng này là chỗ mình thích nhất."
       },
       {
         "id": "my-living-room-l5",
         "speakerId": "ben",
-        "textEn": "What is on the wall?",
+        "text": "What is on the wall?",
         "textVi": "Trên tường có gì vậy?"
       },
       {
         "id": "my-living-room-l6",
         "speakerId": "lily",
-        "textEn": "A painting of a little house.",
+        "text": "A painting of a little house.",
         "textVi": "Một bức tranh vẽ ngôi nhà nhỏ."
       }
     ],
@@ -1264,43 +1264,43 @@
       {
         "id": "watching-tv-l1",
         "speakerId": "ben",
-        "textEn": "Mom, can I watch TV?",
+        "text": "Mom, can I watch TV?",
         "textVi": "Mẹ ơi, con xem tivi được không ạ?"
       },
       {
         "id": "watching-tv-l2",
         "speakerId": "mom",
-        "textEn": "Did you finish your homework?",
+        "text": "Did you finish your homework?",
         "textVi": "Con làm xong bài tập chưa?"
       },
       {
         "id": "watching-tv-l3",
         "speakerId": "ben",
-        "textEn": "Yes, I did!",
+        "text": "Yes, I did!",
         "textVi": "Con làm xong rồi ạ!"
       },
       {
         "id": "watching-tv-l4",
         "speakerId": "mom",
-        "textEn": "OK. You can watch for thirty minutes.",
+        "text": "OK. You can watch for thirty minutes.",
         "textVi": "Được. Con được xem ba mươi phút nhé."
       },
       {
         "id": "watching-tv-l5",
         "speakerId": "ben",
-        "textEn": "Thank you! Where is the remote control?",
+        "text": "Thank you! Where is the remote control?",
         "textVi": "Con cảm ơn mẹ! Điều khiển từ xa ở đâu ạ?"
       },
       {
         "id": "watching-tv-l6",
         "speakerId": "mom",
-        "textEn": "It’s on the coffee table.",
+        "text": "It’s on the coffee table.",
         "textVi": "Nó ở trên bàn trà đấy."
       },
       {
         "id": "watching-tv-l7",
         "speakerId": "ben",
-        "textEn": "Got it! Let’s watch cartoons.",
+        "text": "Got it! Let’s watch cartoons.",
         "textVi": "Con thấy rồi! Mình xem hoạt hình thôi."
       }
     ],
@@ -1328,43 +1328,43 @@
       {
         "id": "where-is-the-remote-l1",
         "speakerId": "dad",
-        "textEn": "Lily, have you seen the remote?",
+        "text": "Lily, have you seen the remote?",
         "textVi": "Lily ơi, con có thấy cái điều khiển không?"
       },
       {
         "id": "where-is-the-remote-l2",
         "speakerId": "lily",
-        "textEn": "Is it on the sofa?",
+        "text": "Is it on the sofa?",
         "textVi": "Nó có ở trên ghế sofa không bố?"
       },
       {
         "id": "where-is-the-remote-l3",
         "speakerId": "dad",
-        "textEn": "No, it isn’t.",
+        "text": "No, it isn’t.",
         "textVi": "Không, không có con ạ."
       },
       {
         "id": "where-is-the-remote-l4",
         "speakerId": "lily",
-        "textEn": "Look under the cushion!",
+        "text": "Look under the cushion!",
         "textVi": "Bố xem dưới gối tựa đi!"
       },
       {
         "id": "where-is-the-remote-l5",
         "speakerId": "dad",
-        "textEn": "Not there. Is it on the TV stand?",
+        "text": "Not there. Is it on the TV stand?",
         "textVi": "Không có. Có ở trên kệ tivi không nhỉ?"
       },
       {
         "id": "where-is-the-remote-l6",
         "speakerId": "lily",
-        "textEn": "Here it is! Next to the cup.",
+        "text": "Here it is! Next to the cup.",
         "textVi": "Đây rồi! Ở cạnh cái cốc."
       },
       {
         "id": "where-is-the-remote-l7",
         "speakerId": "dad",
-        "textEn": "Thank you, Lily!",
+        "text": "Thank you, Lily!",
         "textVi": "Cảm ơn con, Lily!"
       }
     ],
@@ -1392,37 +1392,37 @@
       {
         "id": "it-is-so-hot-l1",
         "speakerId": "ben",
-        "textEn": "Dad, it’s so hot today!",
+        "text": "Dad, it’s so hot today!",
         "textVi": "Bố ơi, hôm nay nóng quá!"
       },
       {
         "id": "it-is-so-hot-l2",
         "speakerId": "dad",
-        "textEn": "Let’s turn on the ceiling fan.",
+        "text": "Let’s turn on the ceiling fan.",
         "textVi": "Mình bật quạt trần lên nhé."
       },
       {
         "id": "it-is-so-hot-l3",
         "speakerId": "ben",
-        "textEn": "It’s still hot.",
+        "text": "It’s still hot.",
         "textVi": "Vẫn còn nóng ạ."
       },
       {
         "id": "it-is-so-hot-l4",
         "speakerId": "dad",
-        "textEn": "OK. I’ll turn on the air conditioner, too.",
+        "text": "OK. I’ll turn on the air conditioner, too.",
         "textVi": "Được rồi. Bố bật cả máy điều hòa nữa."
       },
       {
         "id": "it-is-so-hot-l5",
         "speakerId": "ben",
-        "textEn": "Should I close the window?",
+        "text": "Should I close the window?",
         "textVi": "Con có nên đóng cửa sổ không ạ?"
       },
       {
         "id": "it-is-so-hot-l6",
         "speakerId": "dad",
-        "textEn": "Yes, please. Then the room stays cool.",
+        "text": "Yes, please. Then the room stays cool.",
         "textVi": "Có, con đóng giúp bố. Như vậy phòng sẽ mát."
       }
     ],
@@ -1450,37 +1450,37 @@
       {
         "id": "turn-on-the-light-l1",
         "speakerId": "mom",
-        "textEn": "It’s getting dark, Lily.",
+        "text": "It’s getting dark, Lily.",
         "textVi": "Trời đang tối dần rồi, Lily."
       },
       {
         "id": "turn-on-the-light-l2",
         "speakerId": "lily",
-        "textEn": "I can’t see my book.",
+        "text": "I can’t see my book.",
         "textVi": "Con không nhìn rõ sách ạ."
       },
       {
         "id": "turn-on-the-light-l3",
         "speakerId": "mom",
-        "textEn": "Please turn on the light.",
+        "text": "Please turn on the light.",
         "textVi": "Con bật đèn lên đi."
       },
       {
         "id": "turn-on-the-light-l4",
         "speakerId": "lily",
-        "textEn": "Where is the light switch?",
+        "text": "Where is the light switch?",
         "textVi": "Công tắc đèn ở đâu ạ?"
       },
       {
         "id": "turn-on-the-light-l5",
         "speakerId": "mom",
-        "textEn": "It’s on the wall, next to the TV.",
+        "text": "It’s on the wall, next to the TV.",
         "textVi": "Nó ở trên tường, cạnh cái tivi."
       },
       {
         "id": "turn-on-the-light-l6",
         "speakerId": "lily",
-        "textEn": "Now I can turn on the floor lamp, too.",
+        "text": "Now I can turn on the floor lamp, too.",
         "textVi": "Giờ con bật cả đèn cây nữa."
       }
     ],
@@ -1508,37 +1508,37 @@
       {
         "id": "reading-the-newspaper-l1",
         "speakerId": "dad",
-        "textEn": "Ben, can you bring me the newspaper?",
+        "text": "Ben, can you bring me the newspaper?",
         "textVi": "Ben ơi, con mang tờ báo cho bố được không?"
       },
       {
         "id": "reading-the-newspaper-l2",
         "speakerId": "ben",
-        "textEn": "Sure! Here you are.",
+        "text": "Sure! Here you are.",
         "textVi": "Dạ được ạ! Của bố đây."
       },
       {
         "id": "reading-the-newspaper-l3",
         "speakerId": "dad",
-        "textEn": "Thank you. I like to read in the armchair.",
+        "text": "Thank you. I like to read in the armchair.",
         "textVi": "Cảm ơn con. Bố thích đọc báo trên ghế bành."
       },
       {
         "id": "reading-the-newspaper-l4",
         "speakerId": "ben",
-        "textEn": "Would you like a cup of tea?",
+        "text": "Would you like a cup of tea?",
         "textVi": "Bố có muốn một cốc trà không ạ?"
       },
       {
         "id": "reading-the-newspaper-l5",
         "speakerId": "dad",
-        "textEn": "Yes, please. Put it on the coaster.",
+        "text": "Yes, please. Put it on the coaster.",
         "textVi": "Có, con. Con đặt nó lên miếng lót ly nhé."
       },
       {
         "id": "reading-the-newspaper-l6",
         "speakerId": "ben",
-        "textEn": "OK, Dad. Enjoy your tea!",
+        "text": "OK, Dad. Enjoy your tea!",
         "textVi": "Vâng ạ. Bố uống trà ngon nhé!"
       }
     ],
@@ -1566,37 +1566,37 @@
       {
         "id": "cleaning-the-living-room-l1",
         "speakerId": "mom",
-        "textEn": "Let’s clean the living room, Lily.",
+        "text": "Let’s clean the living room, Lily.",
         "textVi": "Mình dọn phòng khách nào, Lily."
       },
       {
         "id": "cleaning-the-living-room-l2",
         "speakerId": "lily",
-        "textEn": "OK! I’ll put the toys away.",
+        "text": "OK! I’ll put the toys away.",
         "textVi": "Vâng ạ! Con sẽ cất đồ chơi."
       },
       {
         "id": "cleaning-the-living-room-l3",
         "speakerId": "mom",
-        "textEn": "Good girl. Pick them up from the floor.",
+        "text": "Good girl. Pick them up from the floor.",
         "textVi": "Ngoan lắm. Con nhặt chúng lên khỏi sàn nhà nhé."
       },
       {
         "id": "cleaning-the-living-room-l4",
         "speakerId": "lily",
-        "textEn": "Can the robot mop clean the floor?",
+        "text": "Can the robot mop clean the floor?",
         "textVi": "Robot lau sàn có lau sàn nhà được không ạ?"
       },
       {
         "id": "cleaning-the-living-room-l5",
         "speakerId": "mom",
-        "textEn": "Yes! Press the button and it starts.",
+        "text": "Yes! Press the button and it starts.",
         "textVi": "Được chứ! Con bấm nút là nó chạy."
       },
       {
         "id": "cleaning-the-living-room-l6",
         "speakerId": "lily",
-        "textEn": "Look, it’s moving by itself!",
+        "text": "Look, it’s moving by itself!",
         "textVi": "Mẹ nhìn kìa, nó tự đi được!"
       }
     ],
@@ -1624,37 +1624,37 @@
       {
         "id": "flowers-in-the-vase-l1",
         "speakerId": "lily",
-        "textEn": "Mom, I picked some flowers for you.",
+        "text": "Mom, I picked some flowers for you.",
         "textVi": "Mẹ ơi, con hái mấy bông hoa tặng mẹ."
       },
       {
         "id": "flowers-in-the-vase-l2",
         "speakerId": "mom",
-        "textEn": "They’re beautiful! Thank you, Lily.",
+        "text": "They’re beautiful! Thank you, Lily.",
         "textVi": "Đẹp quá! Cảm ơn con, Lily."
       },
       {
         "id": "flowers-in-the-vase-l3",
         "speakerId": "lily",
-        "textEn": "Can we put them in a vase?",
+        "text": "Can we put them in a vase?",
         "textVi": "Mình cắm chúng vào bình hoa được không ạ?"
       },
       {
         "id": "flowers-in-the-vase-l4",
         "speakerId": "mom",
-        "textEn": "Yes. Let’s use the green vase.",
+        "text": "Yes. Let’s use the green vase.",
         "textVi": "Được. Mình dùng bình hoa màu xanh nhé."
       },
       {
         "id": "flowers-in-the-vase-l5",
         "speakerId": "lily",
-        "textEn": "Where should I put it?",
+        "text": "Where should I put it?",
         "textVi": "Con đặt nó ở đâu ạ?"
       },
       {
         "id": "flowers-in-the-vase-l6",
         "speakerId": "mom",
-        "textEn": "On the coffee table. Be careful!",
+        "text": "On the coffee table. Be careful!",
         "textVi": "Trên bàn trà. Cẩn thận nhé con!"
       }
     ],
@@ -1682,37 +1682,37 @@
       {
         "id": "music-time-l1",
         "speakerId": "ben",
-        "textEn": "Lily, let’s listen to some music!",
+        "text": "Lily, let’s listen to some music!",
         "textVi": "Lily ơi, mình nghe nhạc đi!"
       },
       {
         "id": "music-time-l2",
         "speakerId": "lily",
-        "textEn": "Good idea! Turn on the speaker.",
+        "text": "Good idea! Turn on the speaker.",
         "textVi": "Ý hay đấy! Bạn bật loa lên đi."
       },
       {
         "id": "music-time-l3",
         "speakerId": "ben",
-        "textEn": "Hmm, it isn’t playing.",
+        "text": "Hmm, it isn’t playing.",
         "textVi": "Ơ, nó không phát nhạc."
       },
       {
         "id": "music-time-l4",
         "speakerId": "lily",
-        "textEn": "Is the Wi-Fi router on?",
+        "text": "Is the Wi-Fi router on?",
         "textVi": "Bộ phát Wi-Fi có đang bật không?"
       },
       {
         "id": "music-time-l5",
         "speakerId": "ben",
-        "textEn": "Yes, the lights are green now.",
+        "text": "Yes, the lights are green now.",
         "textVi": "Có rồi, đèn đã chuyển màu xanh."
       },
       {
         "id": "music-time-l6",
         "speakerId": "lily",
-        "textEn": "Yay! Let’s sing and dance!",
+        "text": "Yay! Let’s sing and dance!",
         "textVi": "Yeah! Mình cùng hát và nhảy nào!"
       }
     ],
@@ -1740,37 +1740,37 @@
       {
         "id": "good-morning-sunshine-l1",
         "speakerId": "mom",
-        "textEn": "Good morning, Ben!",
+        "text": "Good morning, Ben!",
         "textVi": "Chào buổi sáng, Ben!"
       },
       {
         "id": "good-morning-sunshine-l2",
         "speakerId": "ben",
-        "textEn": "Good morning, Mom. It’s dark in here.",
+        "text": "Good morning, Mom. It’s dark in here.",
         "textVi": "Chào buổi sáng mẹ. Trong này tối quá."
       },
       {
         "id": "good-morning-sunshine-l3",
         "speakerId": "mom",
-        "textEn": "Let’s open the curtains.",
+        "text": "Let’s open the curtains.",
         "textVi": "Mình kéo rèm cửa ra nhé."
       },
       {
         "id": "good-morning-sunshine-l4",
         "speakerId": "ben",
-        "textEn": "Wow, the sun is shining!",
+        "text": "Wow, the sun is shining!",
         "textVi": "Ồ, mặt trời đang chiếu sáng!"
       },
       {
         "id": "good-morning-sunshine-l5",
         "speakerId": "mom",
-        "textEn": "Can you open the window, too?",
+        "text": "Can you open the window, too?",
         "textVi": "Con mở cả cửa sổ được không?"
       },
       {
         "id": "good-morning-sunshine-l6",
         "speakerId": "ben",
-        "textEn": "Sure. I can see the trees outside!",
+        "text": "Sure. I can see the trees outside!",
         "textVi": "Dạ được ạ. Con nhìn thấy cây ở bên ngoài!"
       }
     ],
@@ -1798,37 +1798,37 @@
       {
         "id": "my-kitchen-l1",
         "speakerId": "lily",
-        "textEn": "Ben, is this your kitchen?",
+        "text": "Ben, is this your kitchen?",
         "textVi": "Ben ơi, đây là phòng bếp nhà bạn à?"
       },
       {
         "id": "my-kitchen-l2",
         "speakerId": "ben",
-        "textEn": "Yes, it is. It’s pink and green.",
+        "text": "Yes, it is. It’s pink and green.",
         "textVi": "Đúng rồi. Nó màu hồng và xanh lá."
       },
       {
         "id": "my-kitchen-l3",
         "speakerId": "lily",
-        "textEn": "Wow, your fridge is green!",
+        "text": "Wow, your fridge is green!",
         "textVi": "Ồ, tủ lạnh nhà bạn màu xanh lá!"
       },
       {
         "id": "my-kitchen-l4",
         "speakerId": "ben",
-        "textEn": "And the kettle is pink.",
+        "text": "And the kettle is pink.",
         "textVi": "Còn ấm đun nước thì màu hồng."
       },
       {
         "id": "my-kitchen-l5",
         "speakerId": "lily",
-        "textEn": "What is on the table?",
+        "text": "What is on the table?",
         "textVi": "Trên bàn có gì vậy?"
       },
       {
         "id": "my-kitchen-l6",
         "speakerId": "ben",
-        "textEn": "A fruit bowl and a basket of bread.",
+        "text": "A fruit bowl and a basket of bread.",
         "textVi": "Một tô trái cây và một giỏ bánh mì."
       }
     ],
@@ -1856,37 +1856,37 @@
       {
         "id": "breakfast-time-l1",
         "speakerId": "mom",
-        "textEn": "Good morning, Ben! Are you hungry?",
+        "text": "Good morning, Ben! Are you hungry?",
         "textVi": "Chào buổi sáng, Ben! Con đói chưa?"
       },
       {
         "id": "breakfast-time-l2",
         "speakerId": "ben",
-        "textEn": "Yes, Mom. Can I have some toast?",
+        "text": "Yes, Mom. Can I have some toast?",
         "textVi": "Dạ rồi mẹ. Con ăn bánh mì nướng được không ạ?"
       },
       {
         "id": "breakfast-time-l3",
         "speakerId": "mom",
-        "textEn": "Sure. I’ll put the bread in the toaster.",
+        "text": "Sure. I’ll put the bread in the toaster.",
         "textVi": "Được chứ. Mẹ cho bánh mì vào máy nướng nhé."
       },
       {
         "id": "breakfast-time-l4",
         "speakerId": "ben",
-        "textEn": "Can I get a plate?",
+        "text": "Can I get a plate?",
         "textVi": "Con lấy một cái đĩa nhé?"
       },
       {
         "id": "breakfast-time-l5",
         "speakerId": "mom",
-        "textEn": "Yes, please. The plates are in the dish rack.",
+        "text": "Yes, please. The plates are in the dish rack.",
         "textVi": "Ừ, con lấy đi. Đĩa ở trong giá úp bát đĩa đấy."
       },
       {
         "id": "breakfast-time-l6",
         "speakerId": "ben",
-        "textEn": "Pop! The toast is ready!",
+        "text": "Pop! The toast is ready!",
         "textVi": "Bụp! Bánh mì nướng xong rồi!"
       }
     ],
@@ -1914,43 +1914,43 @@
       {
         "id": "cooking-soup-l1",
         "speakerId": "lily",
-        "textEn": "Mom, what are you cooking?",
+        "text": "Mom, what are you cooking?",
         "textVi": "Mẹ ơi, mẹ đang nấu gì thế?"
       },
       {
         "id": "cooking-soup-l2",
         "speakerId": "mom",
-        "textEn": "I’m cooking vegetable soup.",
+        "text": "I’m cooking vegetable soup.",
         "textVi": "Mẹ đang nấu canh rau."
       },
       {
         "id": "cooking-soup-l3",
         "speakerId": "lily",
-        "textEn": "Can I help?",
+        "text": "Can I help?",
         "textVi": "Con giúp mẹ được không ạ?"
       },
       {
         "id": "cooking-soup-l4",
         "speakerId": "mom",
-        "textEn": "Yes. Stir the pot with the wooden spoon.",
+        "text": "Yes. Stir the pot with the wooden spoon.",
         "textVi": "Được. Con khuấy nồi bằng muỗng gỗ nhé."
       },
       {
         "id": "cooking-soup-l5",
         "speakerId": "lily",
-        "textEn": "Does it need salt?",
+        "text": "Does it need salt?",
         "textVi": "Có cần thêm muối không mẹ?"
       },
       {
         "id": "cooking-soup-l6",
         "speakerId": "mom",
-        "textEn": "A little. The salt is in the spice jar.",
+        "text": "A little. The salt is in the spice jar.",
         "textVi": "Một chút thôi. Muối ở trong lọ gia vị."
       },
       {
         "id": "cooking-soup-l7",
         "speakerId": "lily",
-        "textEn": "Mmm, it smells good!",
+        "text": "Mmm, it smells good!",
         "textVi": "Ừm, thơm quá!"
       }
     ],
@@ -1978,37 +1978,37 @@
       {
         "id": "frying-eggs-l1",
         "speakerId": "dad",
-        "textEn": "Let’s fry some eggs, Ben.",
+        "text": "Let’s fry some eggs, Ben.",
         "textVi": "Mình rán trứng nhé, Ben."
       },
       {
         "id": "frying-eggs-l2",
         "speakerId": "ben",
-        "textEn": "OK! Do I need an apron?",
+        "text": "OK! Do I need an apron?",
         "textVi": "Vâng ạ! Con có cần mặc tạp dề không?"
       },
       {
         "id": "frying-eggs-l3",
         "speakerId": "dad",
-        "textEn": "Yes. Put on your apron first.",
+        "text": "Yes. Put on your apron first.",
         "textVi": "Có. Con mặc tạp dề vào trước đã."
       },
       {
         "id": "frying-eggs-l4",
         "speakerId": "ben",
-        "textEn": "Here is the frying pan.",
+        "text": "Here is the frying pan.",
         "textVi": "Cái chảo rán đây bố."
       },
       {
         "id": "frying-eggs-l5",
         "speakerId": "dad",
-        "textEn": "Thank you. Please turn on the range hood.",
+        "text": "Thank you. Please turn on the range hood.",
         "textVi": "Cảm ơn con. Con bật máy hút mùi lên nhé."
       },
       {
         "id": "frying-eggs-l6",
         "speakerId": "ben",
-        "textEn": "Wow, the eggs look yummy!",
+        "text": "Wow, the eggs look yummy!",
         "textVi": "Ồ, trứng trông ngon quá!"
       }
     ],
@@ -2036,37 +2036,37 @@
       {
         "id": "making-a-smoothie-l1",
         "speakerId": "lily",
-        "textEn": "Ben, let’s make a smoothie!",
+        "text": "Ben, let’s make a smoothie!",
         "textVi": "Ben ơi, mình làm sinh tố đi!"
       },
       {
         "id": "making-a-smoothie-l2",
         "speakerId": "ben",
-        "textEn": "Good idea! Let’s take a banana from the fruit bowl.",
+        "text": "Good idea! Let’s take a banana from the fruit bowl.",
         "textVi": "Ý hay đấy! Mình lấy một quả chuối trong tô trái cây nhé."
       },
       {
         "id": "making-a-smoothie-l3",
         "speakerId": "lily",
-        "textEn": "Can we cut it with the knife?",
+        "text": "Can we cut it with the knife?",
         "textVi": "Mình cắt nó bằng dao được không?"
       },
       {
         "id": "making-a-smoothie-l4",
         "speakerId": "ben",
-        "textEn": "No, knives are sharp. Let’s ask Mom.",
+        "text": "No, knives are sharp. Let’s ask Mom.",
         "textVi": "Không, dao sắc lắm. Mình nhờ mẹ đi."
       },
       {
         "id": "making-a-smoothie-l5",
         "speakerId": "lily",
-        "textEn": "OK. Then we put it in the blender.",
+        "text": "OK. Then we put it in the blender.",
         "textVi": "Ừ. Rồi mình cho vào máy xay sinh tố."
       },
       {
         "id": "making-a-smoothie-l6",
         "speakerId": "ben",
-        "textEn": "It’s loud, but the smoothie is delicious!",
+        "text": "It’s loud, but the smoothie is delicious!",
         "textVi": "Kêu to quá, nhưng sinh tố ngon tuyệt!"
       }
     ],
@@ -2094,37 +2094,37 @@
       {
         "id": "rice-for-dinner-l1",
         "speakerId": "mom",
-        "textEn": "Ben, is the rice ready?",
+        "text": "Ben, is the rice ready?",
         "textVi": "Ben ơi, cơm chín chưa con?"
       },
       {
         "id": "rice-for-dinner-l2",
         "speakerId": "ben",
-        "textEn": "Let me check the rice cooker.",
+        "text": "Let me check the rice cooker.",
         "textVi": "Để con xem nồi cơm điện ạ."
       },
       {
         "id": "rice-for-dinner-l3",
         "speakerId": "mom",
-        "textEn": "Is the light green?",
+        "text": "Is the light green?",
         "textVi": "Đèn có màu xanh không con?"
       },
       {
         "id": "rice-for-dinner-l4",
         "speakerId": "ben",
-        "textEn": "Yes, the rice is ready!",
+        "text": "Yes, the rice is ready!",
         "textVi": "Có ạ, cơm chín rồi!"
       },
       {
         "id": "rice-for-dinner-l5",
         "speakerId": "mom",
-        "textEn": "Great. Please get four bowls.",
+        "text": "Great. Please get four bowls.",
         "textVi": "Tốt quá. Con lấy bốn cái bát nhé."
       },
       {
         "id": "rice-for-dinner-l6",
         "speakerId": "ben",
-        "textEn": "One for Mom, one for Dad, one for Lily and one for me.",
+        "text": "One for Mom, one for Dad, one for Lily and one for me.",
         "textVi": "Một cho mẹ, một cho bố, một cho Lily và một cho con."
       }
     ],
@@ -2152,37 +2152,37 @@
       {
         "id": "warm-milk-l1",
         "speakerId": "lily",
-        "textEn": "Dad, can I have some milk?",
+        "text": "Dad, can I have some milk?",
         "textVi": "Bố ơi, con uống sữa được không ạ?"
       },
       {
         "id": "warm-milk-l2",
         "speakerId": "dad",
-        "textEn": "Sure. It’s in the fridge.",
+        "text": "Sure. It’s in the fridge.",
         "textVi": "Được chứ. Sữa ở trong tủ lạnh đấy."
       },
       {
         "id": "warm-milk-l3",
         "speakerId": "lily",
-        "textEn": "It’s very cold.",
+        "text": "It’s very cold.",
         "textVi": "Lạnh quá bố ạ."
       },
       {
         "id": "warm-milk-l4",
         "speakerId": "dad",
-        "textEn": "Let’s warm it in the microwave.",
+        "text": "Let’s warm it in the microwave.",
         "textVi": "Mình hâm nóng nó bằng lò vi sóng nhé."
       },
       {
         "id": "warm-milk-l5",
         "speakerId": "lily",
-        "textEn": "How long?",
+        "text": "How long?",
         "textVi": "Bao lâu ạ?"
       },
       {
         "id": "warm-milk-l6",
         "speakerId": "dad",
-        "textEn": "Thirty seconds. Ding! Here you are.",
+        "text": "Thirty seconds. Ding! Here you are.",
         "textVi": "Ba mươi giây. Ting! Của con đây."
       }
     ],
@@ -2210,37 +2210,37 @@
       {
         "id": "setting-the-table-l1",
         "speakerId": "mom",
-        "textEn": "Ben, can you set the table, please?",
+        "text": "Ben, can you set the table, please?",
         "textVi": "Ben ơi, con dọn bàn ăn giúp mẹ được không?"
       },
       {
         "id": "setting-the-table-l2",
         "speakerId": "ben",
-        "textEn": "Sure, Mom. How many plates?",
+        "text": "Sure, Mom. How many plates?",
         "textVi": "Dạ được mẹ. Bao nhiêu cái đĩa ạ?"
       },
       {
         "id": "setting-the-table-l3",
         "speakerId": "mom",
-        "textEn": "Four plates and four bowls.",
+        "text": "Four plates and four bowls.",
         "textVi": "Bốn cái đĩa và bốn cái bát."
       },
       {
         "id": "setting-the-table-l4",
         "speakerId": "ben",
-        "textEn": "I put them on the dining table.",
+        "text": "I put them on the dining table.",
         "textVi": "Con đặt chúng lên bàn ăn rồi."
       },
       {
         "id": "setting-the-table-l5",
         "speakerId": "mom",
-        "textEn": "Good job! Now push in the chairs.",
+        "text": "Good job! Now push in the chairs.",
         "textVi": "Giỏi lắm! Giờ con kéo ghế vào nhé."
       },
       {
         "id": "setting-the-table-l6",
         "speakerId": "ben",
-        "textEn": "Dinner time! Let’s eat!",
+        "text": "Dinner time! Let’s eat!",
         "textVi": "Đến giờ ăn tối rồi! Mình ăn thôi!"
       }
     ],
@@ -2268,37 +2268,37 @@
       {
         "id": "washing-the-dishes-l1",
         "speakerId": "dad",
-        "textEn": "Let’s wash the dishes, Lily.",
+        "text": "Let’s wash the dishes, Lily.",
         "textVi": "Mình rửa bát nhé, Lily."
       },
       {
         "id": "washing-the-dishes-l2",
         "speakerId": "lily",
-        "textEn": "OK! I’ll take the plates to the kitchen sink.",
+        "text": "OK! I’ll take the plates to the kitchen sink.",
         "textVi": "Vâng ạ! Con mang đĩa ra bồn rửa bát."
       },
       {
         "id": "washing-the-dishes-l3",
         "speakerId": "dad",
-        "textEn": "Here is the dishwashing liquid.",
+        "text": "Here is the dishwashing liquid.",
         "textVi": "Nước rửa bát đây con."
       },
       {
         "id": "washing-the-dishes-l4",
         "speakerId": "lily",
-        "textEn": "Look, so many bubbles!",
+        "text": "Look, so many bubbles!",
         "textVi": "Bố nhìn kìa, nhiều bọt quá!"
       },
       {
         "id": "washing-the-dishes-l5",
         "speakerId": "dad",
-        "textEn": "Now put the clean plates in the dish rack.",
+        "text": "Now put the clean plates in the dish rack.",
         "textVi": "Giờ con úp đĩa sạch lên giá úp bát đĩa nhé."
       },
       {
         "id": "washing-the-dishes-l6",
         "speakerId": "lily",
-        "textEn": "All clean! That was fun.",
+        "text": "All clean! That was fun.",
         "textVi": "Sạch hết rồi! Vui ghê."
       }
     ],
@@ -2326,37 +2326,37 @@
       {
         "id": "going-to-the-market-l1",
         "speakerId": "mom",
-        "textEn": "Lily, let’s go to the market.",
+        "text": "Lily, let’s go to the market.",
         "textVi": "Lily ơi, mình đi chợ nhé."
       },
       {
         "id": "going-to-the-market-l2",
         "speakerId": "lily",
-        "textEn": "Yay! What do we need?",
+        "text": "Yay! What do we need?",
         "textVi": "Yeah! Mình cần mua gì ạ?"
       },
       {
         "id": "going-to-the-market-l3",
         "speakerId": "mom",
-        "textEn": "Let’s look in the fridge first.",
+        "text": "Let’s look in the fridge first.",
         "textVi": "Mình xem trong tủ lạnh trước đã."
       },
       {
         "id": "going-to-the-market-l4",
         "speakerId": "lily",
-        "textEn": "We need eggs and carrots.",
+        "text": "We need eggs and carrots.",
         "textVi": "Mình cần trứng và cà rốt."
       },
       {
         "id": "going-to-the-market-l5",
         "speakerId": "mom",
-        "textEn": "Right. Please bring the basket.",
+        "text": "Right. Please bring the basket.",
         "textVi": "Đúng rồi. Con mang theo cái giỏ nhé."
       },
       {
         "id": "going-to-the-market-l6",
         "speakerId": "lily",
-        "textEn": "Here it is. Let’s go!",
+        "text": "Here it is. Let’s go!",
         "textVi": "Đây ạ. Mình đi thôi!"
       }
     ],

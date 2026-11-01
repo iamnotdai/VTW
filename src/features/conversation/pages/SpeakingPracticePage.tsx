@@ -8,6 +8,7 @@ import { Breadcrumb, PageContainer, TopBar } from '@/components/layout/PageHeade
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
+import { t } from '@/i18n';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation } from '@/types/models';
 import {
@@ -18,7 +19,7 @@ import {
   SpeakingNote,
   YourAnswerCard,
 } from '../components/SpeakingParts';
-import { practiceCrumbs, SPEECH_ERROR_TEXT } from '../speakingCopy';
+import { practiceCrumbs, speechErrorText } from '../speakingCopy';
 import { useSpeakingSessionStore } from '../speakingSession';
 import { useConversationParam } from '../useConversationParam';
 
@@ -31,14 +32,14 @@ export function SpeakingPracticePage() {
 
 const FROM_PRACTICE: NavigationState = { from: 'practice' };
 
-const LISTEN_STEPS = [
-  'Tap the speaker next to “Example Answer” and listen.',
-  'Say the sentence out loud, slowly and clearly.',
-  'When you are ready, tap “Mark as Practiced”.',
+const listenSteps = () => [
+  t('Tap the speaker next to “Example Answer” and listen.'),
+  t('Say the sentence out loud, slowly and clearly.'),
+  t('When you are ready, tap “Mark as Practiced”.'),
 ];
 
 function SpeakingPractice({ conversation }: { conversation: Conversation }) {
-  useDocumentTitle(`${conversation.title} · Speaking`);
+  useDocumentTitle(t('{title} · Speaking', { title: conversation.title }));
   const navigate = useNavigate();
   const begin = useSpeakingSessionStore((state) => state.begin);
   const setResult = useSpeakingSessionStore((state) => state.setResult);
@@ -72,11 +73,11 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
           <Breadcrumb items={breadcrumbs} />
         </TopBar>
         <PageContainer width="narrow">
-          <h1 className="sr-only">Speaking Practice</h1>
+          <h1 className="sr-only">{t('Speaking Practice')}</h1>
           <EmptyState
             icon={<Mic aria-hidden />}
-            title="No speaking questions yet"
-            message="You can still mark this conversation as done."
+            title={t('No speaking questions yet')}
+            message={t('You can still mark this conversation as done.')}
             actions={
               <Button
                 onClick={() => {
@@ -87,7 +88,7 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
                   });
                 }}
               >
-                Mark as Completed
+                {t('Mark as Completed')}
               </Button>
             }
           />
@@ -112,7 +113,7 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
       {/* The content starts under the folded menu card, as in the design. */}
       <div className="md:pt-20">
         <PageContainer width="narrow" className="flex flex-col gap-5">
-          <h1 className="sr-only">Speaking Practice</h1>
+          <h1 className="sr-only">{t('Speaking Practice')}</h1>
           <QuestionHeader question={question} index={questionIndex} total={questions.length} />
 
           {showFallback ? (
@@ -124,14 +125,15 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
                   className="flex items-start justify-center gap-2 text-center font-semibold text-navy-700"
                 >
                   <MicOff aria-hidden className="mt-0.5 size-5 shrink-0 text-coral-500" />
-                  {SPEECH_ERROR_TEXT[speech.error]}
+                  {speechErrorText(speech.error)}
                 </p>
               )}
               {!speech.supported && (
                 <p className="flex items-start justify-center gap-2 text-center font-semibold text-navy-700">
                   <Info aria-hidden className="mt-0.5 size-5 shrink-0 text-brand-500" />
-                  This browser can’t listen to your voice, so let’s practice by listening and
-                  repeating.
+                  {t(
+                    'This browser can’t listen to your voice, so let’s practice by listening and repeating.',
+                  )}
                 </p>
               )}
             </>
@@ -140,7 +142,7 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
               <MicButton status={speech.status} onStart={speech.start} onStop={speech.stop} />
               {speech.status === 'error' && speech.error === 'no-speech' && (
                 <p role="alert" className="text-center font-semibold text-navy-600">
-                  {SPEECH_ERROR_TEXT['no-speech']}
+                  {speechErrorText('no-speech')}
                 </p>
               )}
             </div>
@@ -156,12 +158,12 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
             placeholder={
               showFallback ? (
                 <ol className="list-inside list-decimal space-y-0.5">
-                  {LISTEN_STEPS.map((step) => (
+                  {listenSteps().map((step) => (
                     <li key={step}>{step}</li>
                   ))}
                 </ol>
               ) : (
-                'Tap the microphone and say your answer.'
+                t('Tap the microphone and say your answer.')
               )
             }
           />
@@ -175,7 +177,7 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
                 leftIcon={<CircleCheck aria-hidden className="size-5" />}
                 onClick={markPracticed}
               >
-                Mark as Practiced
+                {t('Mark as Practiced')}
               </Button>
               {speech.supported && (
                 <Button
@@ -186,13 +188,13 @@ function SpeakingPractice({ conversation }: { conversation: Conversation }) {
                     speech.reset();
                   }}
                 >
-                  Use the microphone
+                  {t('Use the microphone')}
                 </Button>
               )}
             </div>
           ) : (
             <Button variant="ghost" size="sm" onClick={() => setListenMode(true)}>
-              Can’t use the microphone? Listen &amp; Repeat instead
+              {t('Can’t use the microphone? Listen & Repeat instead')}
             </Button>
           )}
           <SpeakingNote />

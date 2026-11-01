@@ -3,6 +3,7 @@ import { isRouteErrorResponse, useRouteError } from 'react-router';
 import { paths } from '@/app/paths';
 import { Button, ButtonLink } from '@/components/common/Button';
 import { EmptyState } from '@/components/common/EmptyState';
+import { t } from '@/i18n';
 import { NotFoundPage } from './NotFoundPage';
 
 /** Friendly fallback instead of a blank screen when something unexpected breaks. */
@@ -15,18 +16,18 @@ export function RouteErrorPage() {
     <div className="flex min-h-dvh items-center justify-center bg-canvas p-4">
       <EmptyState
         icon={<TriangleAlert aria-hidden />}
-        title="Oops! Something went wrong"
-        message="Please try again. Your progress is safe on this device."
+        title={t('Oops! Something went wrong')}
+        message={t('Please try again. Your progress is safe on this device.')}
         actions={
           <>
             <Button
               leftIcon={<RefreshCw aria-hidden className="size-5" />}
               onClick={() => window.location.reload()}
             >
-              Reload
+              {t('Reload')}
             </Button>
             <ButtonLink to={paths.vocabulary} variant="secondary" reloadDocument>
-              Go to Vocabulary
+              {t('Go to Vocabulary')}
             </ButtonLink>
           </>
         }

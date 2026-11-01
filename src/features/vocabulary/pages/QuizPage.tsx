@@ -4,9 +4,11 @@ import { useLocation, useNavigate } from 'react-router';
 import { getNavigationState, paths } from '@/app/paths';
 import { AudioButton } from '@/components/common/AudioButton';
 import { Button } from '@/components/common/Button';
+import { Pinyin } from '@/components/common/Pinyin';
 import { QUIZ_CONFIG } from '@/config/app';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { playSfx } from '@/lib/sfx';
 import { useAudioStore } from '@/stores/audioStore';
 import { useProgressStore } from '@/stores/progressStore';
@@ -46,7 +48,7 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
       ? session
       : null;
   const prompt = active?.question.prompt;
-  useDocumentTitle(prompt?.text ?? 'Quiz');
+  useDocumentTitle(prompt?.text ?? t('Quiz'));
 
   // Opened by URL (refresh, deep link): create the question once.
   useEffect(() => {
@@ -100,13 +102,13 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
       <div className="grid gap-5 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] sm:gap-8">
         <ObjectTile
           image={word.image}
-          alt="The object you chose"
+          alt={t('The object you chose')}
           corner={
             <AudioButton
               soundKey={`word:${word.id}`}
               text={word.text}
               src={word.audio}
-              label="Listen to the word"
+              label={t('Listen to the word')}
               variant="brand"
             />
           }
@@ -120,8 +122,11 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
           >
             {question.prompt.text}
           </h1>
+          <Pinyin text={question.prompt.pinyin} className="mt-1 text-base" />
           <p className="sr-only">
-            {question.mode === 'typing' ? 'Type the word in English.' : 'Choose the right word.'}
+            {question.mode === 'typing'
+              ? t('Type the word in English.')
+              : t('Choose the right word.')}
           </p>
 
           <div className="mt-5">
@@ -146,7 +151,7 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
             <div role="status" className="mt-4 rounded-xl bg-sun-50 p-4 ring-1 ring-sun-200">
               <p className="flex items-center gap-2 font-bold text-sun-700">
                 <Lightbulb aria-hidden className="size-5 shrink-0" />
-                Not quite — have another try!
+                {t('Not quite — have another try!')}
               </p>
               <div className="mt-3 grid gap-2 sm:grid-cols-2">
                 <Button
@@ -154,7 +159,7 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
                   leftIcon={<RotateCcw aria-hidden className="size-4" />}
                   onClick={() => dispatch({ type: 'retry' })}
                 >
-                  Try Again
+                  {t('Try Again')}
                 </Button>
                 {QUIZ_CONFIG.allowShowAnswer && (
                   <Button
@@ -163,7 +168,7 @@ function Quiz({ scene, word }: { scene: Scene; word: Word }) {
                     leftIcon={<Eye aria-hidden className="size-4" />}
                     onClick={showAnswer}
                   >
-                    Show Answer
+                    {t('Show Answer')}
                   </Button>
                 )}
               </div>

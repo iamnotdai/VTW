@@ -11,7 +11,8 @@ import {
   setLastVisitedScene,
   toggleFavoriteWord,
 } from '@/lib/progress';
-import { progressRepository } from '@/lib/repositories';
+import { getActiveCourse } from '@/lib/course';
+import { getProgressRepository } from '@/lib/repositories';
 import type { LearningProgress } from '@/types/models';
 
 interface ProgressState {
@@ -26,18 +27,21 @@ interface ProgressState {
   celebrateScene: (sceneId: string) => void;
   /** Starts the scene's Explore over. Learned words (% and level) are kept. */
   resetScene: (sceneId: string) => void;
+  /** Re-reads storage, e.g. after another tab saved or the course changed. */
   reload: () => void;
 }
 
-const loadProgress = () => progressRepository.load() ?? createEmptyProgress();
+/** Progress of the active course. */
+const progressRepository = () => getProgressRepository(getActiveCourse());
+const loadProgress = () => progressRepository().load() ?? createEmptyProgress();
 
 export const useProgressStore = create<ProgressState>()((set, get) => {
   const commit = (next: LearningProgress) => {
     if (next === get().progress) return;
     // Merge with what another tab may have saved meanwhile, so learned items are never lost.
-    const stored = progressRepository.load();
+    const stored = progressRepository().load();
     const merged = stored ? mergeProgress(stored, next) : next;
-    progressRepository.save(merged);
+    progressRepository().save(merged);
     set({ progress: merged });
   };
 
@@ -58,7 +62,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
     resetScene: (sceneId) => {
       // Saved as is: `commit` merges lists by union and would bring the found objects back.
       const next = resetSceneRound(get().progress, sceneId);
-      progressRepository.save(next);
+      progressRepository().save(next);
       set({ progress: next });
     },
     reload: () => set({ progress: loadProgress() }),

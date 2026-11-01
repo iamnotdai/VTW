@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 
 export interface Crumb {
@@ -10,7 +11,7 @@ export interface Crumb {
 
 export function Breadcrumb({ items, className }: { items: Crumb[]; className?: string }) {
   return (
-    <nav aria-label="Breadcrumb" className={cn('min-w-0', className)}>
+    <nav aria-label={t('Breadcrumb')} className={cn('min-w-0', className)}>
       <ol className="flex min-w-0 items-center gap-1.5 text-base font-semibold whitespace-nowrap">
         {items.map((item, index) => {
           const last = index === items.length - 1;
@@ -52,7 +53,7 @@ export function Breadcrumb({ items, className }: { items: Crumb[]; className?: s
 }
 
 /** "‹ Back" link of the Topic Overview top bar. */
-export function BackLink({ to, label = 'Back' }: { to: string; label?: string }) {
+export function BackLink({ to, label = t('Back') }: { to: string; label?: string }) {
   return (
     <Link
       to={to}

@@ -3,9 +3,12 @@ import { useState, type ReactNode } from 'react';
 import { AudioButton } from '@/components/common/AudioButton';
 import { Button } from '@/components/common/Button';
 import { IconButton } from '@/components/common/IconButton';
+import { Pinyin } from '@/components/common/Pinyin';
 import { FLASHCARD_TITLE_MIN_SCALE } from '@/config/app';
 import { getWord } from '@/data/content';
+import { useCourse } from '@/hooks/useCourse';
 import { useFitText } from '@/hooks/useFitText';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useProgressStore } from '@/stores/progressStore';
@@ -24,10 +27,11 @@ interface FlashcardProps {
 }
 
 /**
- * One big flashcard (spec §7.3, design screen 05): number, picture, word, IPA, listen, Show
- * Meaning, heart, example sentences, related words with pictures.
+ * One big flashcard (spec §7.3, design screen 05): number, picture, word, IPA (pinyin in the
+ * Chinese course), listen, Show Meaning, heart, example sentences, related words with pictures.
  */
 export function Flashcard({ word, index, total, corner, footer }: FlashcardProps) {
+  const course = useCourse();
   const showVietnamese = useSettingsStore((state) => state.settings.showVietnameseMeaning);
   const favorite = useProgressStore((state) => state.progress.favoriteWordIds.includes(word.id));
   const toggleFavorite = useProgressStore((state) => state.toggleFavorite);
@@ -37,11 +41,16 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
     .map((id) => getWord(id))
     .filter((item): item is Word => !!item)
     .slice(0, 3);
+  const pronunciation = word.pinyin ?? word.ipa;
 
   return (
     <article
-      aria-roledescription="flashcard"
-      aria-label={`Card ${index + 1} of ${total}: ${word.text}`}
+      aria-roledescription={t('flashcard')}
+      aria-label={t('Card {number} of {total}: {word}', {
+        number: index + 1,
+        total,
+        word: word.text,
+      })}
       className="flex w-full animate-pop-in flex-col rounded-[1.25rem] bg-white px-5 pt-4 pb-5 shadow-lift sm:px-8 sm:pt-6 sm:pb-6"
     >
       <div className="flex min-h-9 items-center justify-between gap-3">
@@ -63,7 +72,7 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
       <div className="mt-2 flex items-center justify-center gap-3">
         <h2
           ref={titleRef}
-          lang="en"
+          lang={course.lang}
           className="min-w-0 overflow-hidden text-[2.75rem] leading-tight font-extrabold whitespace-nowrap text-navy-900 sm:text-[3.25rem]"
         >
           {word.text}
@@ -72,13 +81,18 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
           soundKey={`word:${word.id}`}
           text={word.text}
           src={word.audio}
-          label={`Listen to “${word.text}”`}
+          label={t('Listen to “{word}”', { word: word.text })}
           variant="brand"
           size="lg"
         />
       </div>
-      {word.ipa && (
-        <p className="mt-1.5 text-center text-lg font-medium text-navy-400">{word.ipa}</p>
+      {pronunciation && (
+        <p
+          lang={word.pinyin ? 'zh-Latn-pinyin' : undefined}
+          className="mt-1.5 text-center text-lg font-medium text-navy-400"
+        >
+          {pronunciation}
+        </p>
       )}
 
       <div className="mt-3 flex items-center justify-center gap-2.5">
@@ -90,11 +104,11 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
             leftIcon={<Languages aria-hidden className="size-5" />}
             onClick={() => setMeaningVisible((visible) => !visible)}
           >
-            {meaningVisible ? 'Hide Meaning' : 'Show Meaning'}
+            {meaningVisible ? t('Hide Meaning') : t('Show Meaning')}
           </Button>
         )}
         <IconButton
-          label={favorite ? 'Remove from favorites' : 'Add to favorites'}
+          label={favorite ? t('Remove from favorites') : t('Add to favorites')}
           aria-pressed={favorite}
           onClick={() => toggleFavorite(word.id)}
         >
@@ -112,21 +126,22 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
 
       <hr className="my-4 border-navy-100" />
 
-      <h3 className="text-lg font-bold text-navy-900">Example</h3>
+      <h3 className="text-lg font-bold text-navy-900">{t('Example')}</h3>
       <ul className="mt-2 flex flex-col gap-2">
         {word.examples.map((example, exampleIndex) => (
-          <li key={example.en} className="flex items-center gap-1.5">
+          <li key={example.text} className="flex items-center gap-1.5">
             <AudioButton
               soundKey={`example:${word.id}:${exampleIndex}`}
-              text={example.en}
+              text={example.text}
               src={example.audio}
-              label="Listen to the example"
+              label={t('Listen to the example')}
               variant="plain"
             />
             <div className="min-w-0">
-              <p lang="en" className="text-[1.0625rem] font-medium text-navy-600">
-                {example.en}
+              <p lang={course.lang} className="text-[1.0625rem] font-medium text-navy-600">
+                {example.text}
               </p>
+              <Pinyin text={example.pinyin} />
               {showVietnamese && meaningVisible && example.vi && (
                 <p lang="vi" className="text-sm font-medium text-navy-400">
                   {example.vi}
@@ -139,7 +154,7 @@ export function Flashcard({ word, index, total, corner, footer }: FlashcardProps
 
       {related.length > 0 && (
         <>
-          <h3 className="mt-3 text-lg font-bold text-navy-900">Related Words</h3>
+          <h3 className="mt-3 text-lg font-bold text-navy-900">{t('Related Words')}</h3>
           <ul className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">
             {related.map((item) => (
               <RelatedWordChip key={item.id} word={item} />

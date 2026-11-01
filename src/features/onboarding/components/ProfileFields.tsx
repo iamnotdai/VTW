@@ -3,9 +3,10 @@ import type { ReactNode } from 'react';
 import { Avatar } from '@/components/common/Avatar';
 import { AGE_GROUP_OPTIONS, PROFILE_NAME_MAX_LENGTH } from '@/config/app';
 import { AVATAR_IMAGES, AVATAR_LABELS } from '@/config/assets';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
-import type { ProfileErrors, ProfileFormValues } from '@/lib/profile';
+import { getAgeGroupLabel, type ProfileErrors, type ProfileFormValues } from '@/lib/profile';
 import type { AgeGroup, AvatarChoice } from '@/types/models';
 import { FIELD_IDS } from './profileFieldIds';
 
@@ -17,11 +18,12 @@ interface FieldProps {
 
 const LABEL = 'mb-2 block text-base font-bold text-navy-800';
 
+/** `message` is the English text of `validateProfileForm`, translated here. */
 function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) return null;
   return (
     <p id={id} className="mt-1.5 text-sm font-semibold text-coral-600">
-      {message}
+      {t(message)}
     </p>
   );
 }
@@ -35,7 +37,7 @@ export function NameField({ values, errors, onChange }: FieldProps) {
   return (
     <div>
       <label htmlFor={FIELD_IDS.fullName} className={LABEL}>
-        Full Name
+        {t('Full Name')}
       </label>
       <input
         id={FIELD_IDS.fullName}
@@ -43,7 +45,7 @@ export function NameField({ values, errors, onChange }: FieldProps) {
         type="text"
         autoComplete="name"
         maxLength={PROFILE_NAME_MAX_LENGTH}
-        placeholder="Type your name"
+        placeholder={t('Type your name')}
         value={values.fullName}
         onChange={(event) => onChange({ fullName: event.target.value })}
         aria-invalid={errors.fullName ? true : undefined}
@@ -63,7 +65,7 @@ export function AgeGroupField({ values, errors, onChange }: FieldProps) {
   const errorId = `${FIELD_IDS.ageGroup}-error`;
   return (
     <fieldset aria-describedby={errors.ageGroup ? errorId : undefined}>
-      <Legend>Age Group</Legend>
+      <Legend>{t('Age Group')}</Legend>
       <div className="grid grid-cols-5 gap-1.5 sm:flex sm:gap-2">
         {AGE_GROUP_OPTIONS.map((option, index) => {
           const checked = values.ageGroup === option.value;
@@ -86,7 +88,7 @@ export function AgeGroupField({ values, errors, onChange }: FieldProps) {
                 onChange={() => onChange({ ageGroup: option.value })}
                 className="sr-only"
               />
-              {option.label}
+              {getAgeGroupLabel(option.value)}
             </label>
           );
         })}
@@ -102,7 +104,7 @@ export function AgeGroupSelect({ values, errors, onChange }: FieldProps) {
   return (
     <div>
       <label htmlFor={FIELD_IDS.ageGroup} className={LABEL}>
-        Age Group
+        {t('Age Group')}
       </label>
       <div className="relative">
         <select
@@ -117,11 +119,11 @@ export function AgeGroupSelect({ values, errors, onChange }: FieldProps) {
           )}
         >
           <option value="" disabled>
-            Choose your age group
+            {t('Choose your age group')}
           </option>
           {AGE_GROUP_OPTIONS.map((option) => (
             <option key={option.value} value={option.value}>
-              {option.label} years
+              {t('{label} years', { label: getAgeGroupLabel(option.value) })}
             </option>
           ))}
         </select>
@@ -135,18 +137,17 @@ export function AgeGroupSelect({ values, errors, onChange }: FieldProps) {
   );
 }
 
-const TYPING_OPTIONS = [
-  { value: true, title: 'Yes, I can type words' },
-  { value: false, title: 'Not yet, I prefer choosing answers' },
-] as const;
-
 export function CanTypeField({ values, errors, onChange }: FieldProps) {
   const errorId = `${FIELD_IDS.canTypeWords}-error`;
+  const options = [
+    { value: true, title: t('Yes, I can type words') },
+    { value: false, title: t('Not yet, I prefer choosing answers') },
+  ];
   return (
     <fieldset aria-describedby={errors.canTypeWords ? errorId : undefined}>
-      <Legend>Can you type words?</Legend>
+      <Legend>{t('Can you type words?')}</Legend>
       <div className="flex flex-col gap-3">
-        {TYPING_OPTIONS.map(({ value, title }, index) => {
+        {options.map(({ value, title }, index) => {
           const checked = values.canTypeWords === value;
           return (
             <label
@@ -199,7 +200,7 @@ export function AvatarPicker({
   values,
   errors,
   onChange,
-  legend = 'Profile Picture',
+  legend = t('Profile Picture'),
 }: FieldProps & { legend?: string }) {
   const errorId = `${FIELD_IDS.avatar}-error`;
   return (
@@ -228,7 +229,7 @@ export function AvatarPicker({
                 onChange={() => onChange({ avatar: choice })}
                 className="sr-only"
               />
-              <span className="sr-only">{AVATAR_LABELS[choice]}</span>
+              <span className="sr-only">{t(AVATAR_LABELS[choice])}</span>
               <img
                 src={assetUrl(AVATAR_IMAGES[choice])}
                 alt=""
@@ -264,7 +265,7 @@ export function AvatarChanger({
     <div>
       <div className="flex items-center gap-5">
         {values.avatar ? (
-          <Avatar avatar={values.avatar} size={104} ring="brand" alt="Your picture" />
+          <Avatar avatar={values.avatar} size={104} ring="brand" alt={t('Your picture')} />
         ) : (
           <span className="size-26 rounded-full bg-navy-100" />
         )}
@@ -275,7 +276,7 @@ export function AvatarChanger({
           onClick={onToggle}
           className="inline-flex h-13 items-center rounded-full bg-brand-50 px-7 text-[1.0625rem] font-bold text-brand-600 transition hover:bg-brand-100"
         >
-          Change Photo
+          {t('Change Photo')}
         </button>
       </div>
       {open && (
@@ -284,7 +285,7 @@ export function AvatarChanger({
             values={values}
             errors={errors}
             onChange={onChange}
-            legend="Choose your picture"
+            legend={t('Choose your picture')}
           />
         </div>
       )}

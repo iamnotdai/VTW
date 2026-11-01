@@ -1,4 +1,5 @@
 import { SpeakerMutedIcon, SpeakerSolidIcon } from '@/components/icons/AppIcons';
+import { t } from '@/i18n';
 import { optionalAssetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useAudioStore } from '@/stores/audioStore';
@@ -43,7 +44,7 @@ export function AudioButton({
   if (!soundEnabled) {
     return (
       <IconButton
-        label="Sound is off in Settings"
+        label={t('Sound is off in Settings')}
         size={size}
         variant={variant}
         disabled
@@ -56,7 +57,7 @@ export function AudioButton({
 
   return (
     <IconButton
-      label={playing ? 'Stop' : label}
+      label={playing ? t('Stop') : label}
       size={size}
       variant={variant}
       aria-pressed={playing}

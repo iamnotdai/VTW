@@ -60,7 +60,10 @@ export const SFX_CONFIG = {
   volume: 0.45,
 } as const;
 
-/** Questions asked on a quiz card: one is picked at random per question (see `pickQuizPrompt`). */
+/**
+ * Questions asked on an English quiz card: one is picked at random per question (see
+ * `pickQuizPrompt`). Each course has its own list in `COURSES`.
+ */
 export const QUIZ_PROMPTS = [
   { id: 'what-object', text: 'What is this object?', textVi: 'Đồ vật này là gì?' },
   { id: 'know-what', text: 'Do you know what this is?', textVi: 'Bạn có biết đây là gì không?' },
@@ -103,6 +106,7 @@ export const QUIZ_PROMPTS = [
 ] as const satisfies readonly { id: string; text: string; textVi: string }[];
 
 export const DEFAULT_SETTINGS: AppSettings = {
+  course: 'en',
   soundEnabled: true,
   showVietnameseMeaning: true,
   voiceURI: null,
@@ -128,8 +132,8 @@ export const VIDEO_CONFIG = {
   hdMinHeight: 720,
 } as const;
 
+/** The spoken language comes from the course (`COURSES[course].lang`). */
 export const SPEECH_CONFIG = {
-  lang: 'en-US',
   /** Slightly slower than normal for young learners. */
   rate: 0.9,
   /** Pitch that makes an adult browser voice sound like a boy / girl (1 = unchanged). */

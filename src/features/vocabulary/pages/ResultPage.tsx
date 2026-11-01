@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router';
 import { getNavigationState, paths } from '@/app/paths';
 import { Button } from '@/components/common/Button';
+import { Pinyin } from '@/components/common/Pinyin';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { getFoundWordIds } from '@/lib/progress';
 import { playSfx } from '@/lib/sfx';
-import { describeWord } from '@/lib/text';
+import { describeWord, describeWordPinyin } from '@/lib/text';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore } from '@/stores/settingsStore';
 import type { Scene, Word } from '@/types/models';
@@ -30,14 +32,25 @@ export function ResultPage() {
 
 type ResultMode = 'correct' | 'revealed' | 'review';
 
+/** `title` is a function so the copy is translated when the card renders, in the active course. */
 const HEADINGS: Record<
   ResultMode,
-  { title: string; icon: typeof Check; badge: string; text: string }
+  { title: () => string; icon: typeof Check; badge: string; text: string }
 > = {
-  correct: { title: 'Correct!', icon: Check, badge: 'bg-leaf-500', text: 'text-leaf-600' },
-  revealed: { title: 'Here’s the answer', icon: Eye, badge: 'bg-sun-500', text: 'text-navy-900' },
+  correct: {
+    title: () => t('Correct!'),
+    icon: Check,
+    badge: 'bg-leaf-500',
+    text: 'text-leaf-600',
+  },
+  revealed: {
+    title: () => t('Here’s the answer'),
+    icon: Eye,
+    badge: 'bg-sun-500',
+    text: 'text-navy-900',
+  },
   review: {
-    title: 'Word details',
+    title: () => t('Word details'),
     icon: BookOpenText,
     badge: 'bg-brand-500',
     text: 'text-navy-900',
@@ -66,18 +79,19 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
 
   const heading = HEADINGS[mode];
   const HeadingIcon = heading.icon;
-  useDocumentTitle(`${heading.title} · ${word.text}`);
+  const title = heading.title();
+  useDocumentTitle(`${title} · ${word.text}`);
 
   const sceneComplete = foundCount === scene.wordIds.length;
   const note =
     mode === 'correct'
       ? newlyCompleted
         ? sceneComplete
-          ? 'You found every object in this room!'
+          ? t('You found every object in this room!')
           : null
-        : 'You already knew this one. Great memory!'
+        : t('You already knew this one. Great memory!')
       : mode === 'revealed'
-        ? 'Try again to add it to your Objects Found.'
+        ? t('Try again to add it to your Objects Found.')
         : null;
 
   const backToScene = () => {
@@ -132,11 +146,12 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
                 id="result-title"
                 className={cn('text-[2.125rem] leading-tight font-extrabold', heading.text)}
               >
-                {heading.title}
+                {title}
               </h1>
             </div>
             <p role="status" className="mt-1 pl-14 text-lg font-bold text-navy-800">
               {describeWord(word)}
+              <Pinyin as="span" text={describeWordPinyin(word)} />
               {note && (
                 <span className="block text-[0.9375rem] font-medium text-navy-500">{note}</span>
               )}
@@ -158,7 +173,7 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
             rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
             onClick={backToScene}
           >
-            {sceneComplete ? 'Back to the Room' : 'Next Object'}
+            {sceneComplete ? t('Back to the Room') : t('Next Object')}
           </Button>
         )}
         {mode === 'revealed' && (
@@ -168,7 +183,7 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
               leftIcon={<RotateCcw aria-hidden className="size-5" />}
               onClick={practiceAgain}
             >
-              Try Again
+              {t('Try Again')}
             </Button>
             <Button
               size="lg"
@@ -176,7 +191,7 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
               leftIcon={<Search aria-hidden className="size-5" />}
               onClick={backToScene}
             >
-              Back to the Room
+              {t('Back to the Room')}
             </Button>
           </>
         )}
@@ -187,7 +202,7 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
               leftIcon={<RotateCcw aria-hidden className="size-5" />}
               onClick={practiceAgain}
             >
-              Practice Again
+              {t('Practice Again')}
             </Button>
             <Button
               size="lg"
@@ -195,7 +210,7 @@ function Result({ scene, word }: { scene: Scene; word: Word }) {
               leftIcon={<Search aria-hidden className="size-5" />}
               onClick={backToScene}
             >
-              Back to the Room
+              {t('Back to the Room')}
             </Button>
           </>
         )}

@@ -1,6 +1,8 @@
 import { Clapperboard, Maximize, Minimize, Pause, Play, VideoOff } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { VIDEO_CONFIG } from '@/config/app';
+import { useCourse } from '@/hooks/useCourse';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import {
@@ -53,7 +55,7 @@ export function ConversationPlayer({ conversation, onEnded, className }: Convers
         <iframe
           className="h-full w-full"
           src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(conversation.youtubeId)}?rel=0`}
-          title={`Video: ${conversation.title}`}
+          title={t('Video: {title}', { title: conversation.title })}
           loading="lazy"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           referrerPolicy="strict-origin-when-cross-origin"
@@ -80,10 +82,10 @@ export function ConversationPlayer({ conversation, onEnded, className }: Convers
           )}
         </span>
         <p className="text-2xl font-extrabold drop-shadow">
-          {failed ? 'This video can’t play right now' : 'Video coming soon'}
+          {failed ? t('This video can’t play right now') : t('Video coming soon')}
         </p>
         <p className="max-w-md font-semibold text-white/90 drop-shadow">
-          You can still read and listen to the conversation.
+          {t('You can still read and listen to the conversation.')}
         </p>
       </div>
       <ControlBar disabled playing={false} time={0} duration={0} />
@@ -102,6 +104,7 @@ function LocalVideo({
   onError: () => void;
   className?: string;
 }) {
+  const course = useCourse();
   const frameRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
@@ -160,8 +163,8 @@ function LocalVideo({
           <track
             kind="captions"
             src={assetUrl(conversation.captionsSrc)}
-            srcLang="en"
-            label="English"
+            srcLang={course.lang}
+            label={course.label}
             default
           />
         )}
@@ -231,8 +234,11 @@ function ControlBar({
         value={Math.min(time, duration || 0)}
         disabled={disabled || duration === 0}
         onChange={(event) => onSeek?.(Number(event.target.value))}
-        aria-label="Seek"
-        aria-valuetext={`${formatTime(time)} of ${formatTime(duration)}`}
+        aria-label={t('Seek')}
+        aria-valuetext={t('{time} of {duration}', {
+          time: formatTime(time),
+          duration: formatTime(duration),
+        })}
         className="block h-1.5 w-full cursor-pointer appearance-none rounded-full bg-white/30 accent-[#3fb6ff] disabled:cursor-default [&::-moz-range-thumb]:size-3.5 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:bg-white [&::-webkit-slider-thumb]:size-3.5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:shadow"
         style={{
           background: `linear-gradient(to right, #3fb6ff ${percent}%, rgb(255 255 255 / 0.3) ${percent}%)`,
@@ -244,7 +250,7 @@ function ControlBar({
           className={button}
           onClick={onTogglePlay}
           disabled={disabled}
-          aria-label={playing ? 'Pause' : 'Play'}
+          aria-label={playing ? t('Pause') : t('Play')}
         >
           {playing ? (
             <Pause aria-hidden className="size-5 fill-current" />
@@ -261,17 +267,17 @@ function ControlBar({
           className={button}
           onClick={onRate}
           disabled={disabled}
-          aria-label={`Playback speed ${rate.toFixed(1)}x`}
+          aria-label={t('Playback speed {rate}x', { rate: rate.toFixed(1) })}
         >
           {rate.toFixed(1)}x
         </button>
-        {hd && <span className="px-1.5 text-sm font-extrabold">HD</span>}
+        {hd && <span className="px-1.5 text-sm font-extrabold">{t('HD')}</span>}
         {fullscreen && (
           <button
             type="button"
             className={button}
             onClick={fullscreen.toggle}
-            aria-label={fullscreen.active ? 'Exit full screen' : 'Full screen'}
+            aria-label={fullscreen.active ? t('Exit full screen') : t('Full screen')}
           >
             {fullscreen.active ? (
               <Minimize aria-hidden className="size-5" />

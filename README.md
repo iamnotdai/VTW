@@ -2,8 +2,9 @@
 
 > **Explore Life. Learn English.**
 
-Web app học tiếng Anh cho mọi lứa tuổi (ưu tiên trẻ em và người mới bắt đầu): khám phá các khung cảnh
-phong cách _Cozy 3D Village_, chạm vào đồ vật để học từ, xem hội thoại và luyện nói. Ứng dụng chạy
+Web app học **tiếng Anh** và **tiếng Trung** cho mọi lứa tuổi (ưu tiên trẻ em và người mới bắt đầu):
+khám phá các khung cảnh phong cách _Cozy 3D Village_, chạm vào đồ vật để học từ, xem hội thoại và luyện
+nói. Nghĩa và bản dịch luôn là tiếng Việt. Ứng dụng chạy
 **hoàn toàn trên trình duyệt**: không backend, không database; hồ sơ và tiến độ lưu trong
 `localStorage` của thiết bị.
 
@@ -24,17 +25,21 @@ Room và Kitchen:
   Answer/Word Detail, Objects Found.
 - Conversation: danh sách theo scene, chi tiết, video (có fallback), transcript (phát từng câu,
   dịch tĩnh), Speaking Practice (SpeechRecognition + fallback _Listen & Repeat_), Speaking Result.
+- **Hai khóa học**: Tiếng Anh và Tiếng Trung (chọn ở đầu Profile Setup hoặc trong Settings). Hai khóa
+  dùng chung ảnh và hotspot; từ, câu, hội thoại, giọng đọc và **toàn bộ giao diện** đổi theo khóa;
+  tiến độ lưu riêng từng khóa. Xem mục [Khóa học](#khóa-học-tiếng-anh--tiếng-trung).
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **99 test Vitest** (73 unit + 26 component, gồm kiểm tra nội dung JSON và asset) và
-  **4 kịch bản E2E Playwright**, mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **153 test Vitest** (118 unit + 35 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **10 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
 > thoại của Bedroom, Bathroom và Kitchen, 30 từ và 10 hội thoại của Living Room là **nội dung mẫu**, cần
 > giáo viên/biên tập duyệt lại trước khi phát
-> hành. Chưa có
+> hành. Nội dung **khóa tiếng Trung** (102 từ, pinyin, câu ví dụ, 40 hội thoại) là **bản nháp do AI soạn**,
+> pinyin câu sinh tự động: bắt buộc người bản ngữ/giáo viên tiếng Trung duyệt trước khi phát hành. Chưa có
 > file video và audio thu âm: app dùng giọng đọc của trình duyệt (Web Speech) làm fallback.
 
 ## Bắt đầu nhanh
@@ -71,6 +76,7 @@ npm run test:e2e
 | `npm run test:run`       | Unit + component test một lần                                       |
 | `npm run test:e2e`       | Playwright (tự build và chạy `vite preview`)                        |
 | `npm run content:check`  | Kiểm tra dữ liệu JSON: tham chiếu, trùng id, hotspot, asset tồn tại |
+| `npm run content:pinyin` | Điền pinyin còn thiếu cho câu của khóa tiếng Trung (`src/data/zh/`) |
 
 ## Công nghệ
 
@@ -168,11 +174,12 @@ Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đ
 
 ### Lưu trữ (spec §11)
 
-| Key               | Nội dung           |
-| ----------------- | ------------------ |
-| `vtw:v1:profile`  | `UserProfile`      |
-| `vtw:v1:progress` | `LearningProgress` |
-| `vtw:v1:settings` | `AppSettings`      |
+| Key                  | Nội dung                                  |
+| -------------------- | ----------------------------------------- |
+| `vtw:v1:profile`     | `UserProfile`                             |
+| `vtw:v1:progress`    | `LearningProgress` của khóa tiếng Anh     |
+| `vtw:v1:zh:progress` | `LearningProgress` của khóa tiếng Trung   |
+| `vtw:v1:settings`    | `AppSettings` (gồm `course`: `en` / `zh`) |
 
 - Chỉ `src/lib/storage.ts` được chạm vào `localStorage`. Mọi lệnh đọc/ghi đều bọc `try/catch` và
   kiểm tra dữ liệu (`sanitize*`). Dữ liệu hỏng thì trả về mặc định; storage bị chặn thì chạy trong
@@ -226,7 +233,9 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
 ### Âm thanh và giọng nói (spec §9.4)
 
 - Không tự phát âm thanh. Mỗi lúc chỉ phát một âm thanh.
-- Giọng đọc: file audio thu sẵn nếu có, không thì giọng **Anh-Mỹ (`en-US`)** của trình duyệt.
+- Giọng đọc: file audio thu sẵn nếu có, không thì giọng **Anh-Mỹ (`en-US`)** của trình duyệt (khóa
+  tiếng Trung: giọng **phổ thông `zh-CN`**, không có thì `zh-TW`; không bao giờ dùng `zh-HK` vì đó là
+  tiếng Quảng Đông).
   _Settings → Reading voice_ cho chọn _Automatic_ / _Boy voice_ / _Girl voice_ (giọng nam/nữ nâng
   cao độ cho giống giọng trẻ em) và một giọng cụ thể của máy, có nút nghe thử; lưu ngay vào
   `voiceURI` / `voiceStyle` của `AppSettings`. Hội thoại đặt cao độ riêng cho từng nhân vật vẫn giữ
@@ -236,6 +245,31 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
   Trình duyệt không hỗ trợ, bị chặn micro hoặc lỗi mạng thì chuyển sang _Listen & Repeat_ →
   _Mark as Practiced_.
 - Bài hội thoại được đánh dấu hoàn thành khi người học xong câu luyện nói cuối cùng.
+
+### Khóa học (Tiếng Anh / Tiếng Trung)
+
+- **Cấu hình**: `src/config/courses.ts` (`COURSES`): tên khóa, `lang` (`en-US` / `zh-CN`), giọng đọc được
+  phép, khẩu hiệu, bộ câu hỏi quiz. Khóa đang học nằm trong `AppSettings.course`; `src/lib/course.ts`
+  giữ khóa hiện tại cho các hàm thường (tra nội dung, `t()`, giọng đọc). Đổi khóa thì `App` remount
+  toàn bộ màn hình (RouterProvider có `key` = khóa) và nạp tiến độ của khóa đó.
+- **Nội dung**: scene (ảnh, hotspot, `wordIds`, `conversationIds`) dùng chung. Khóa tiếng Anh ở
+  `src/data/*.json`, khóa tiếng Trung ở `src/data/zh/` với **cùng id**: `words.json`, `conversations.json`,
+  `speakers.json` (莉莉, 小本, 妈妈, 爸爸) và `scenes.json` (chỉ dịch tên/mô tả scene). Các hàm trong
+  `src/data/content.ts` tự trả nội dung của khóa đang học.
+- **Trường riêng cho tiếng Trung**: `Word.pinyin` (hiện thay IPA), `Word.measure` (lượng từ cho câu đáp án
+  "这是一盏台灯。"; bỏ trống với danh từ không đếm được: "这是牙膏。"), `pinyin` của câu ví dụ và câu thoại,
+  `promptPinyin` / `suggestedAnswerPinyin` của câu hỏi luyện nói. `content:check` báo lỗi nếu chữ Hán
+  thiếu pinyin.
+- **Giao diện**: chữ trong component viết bằng tiếng Anh và bọc `t('Start Quiz')`; câu tiếng Anh chính là
+  khóa tra từ điển. Bản tiếng Trung nằm ở `src/i18n/zh/` (mỗi khu vực một file: `common`, `vocabulary`,
+  `conversation`, `profile`). Thiếu bản dịch thì hiện tiếng Anh và cảnh báo trong console (dev);
+  `tests/unit/i18n.test.ts` kiểm tra mọi `t('...')` đều có bản dịch.
+- **Quiz**: trắc nghiệm hoặc gõ **chữ Hán** (bằng bộ gõ pinyin của máy; Enter để chọn chữ trong bộ gõ
+  không bị tính là nộp bài). `acceptedAnswers` chỉ chứa chữ Hán.
+- **Luyện nói**: nhận dạng giọng `zh-CN`; so khớp **từng chữ Hán** (tiếng Trung không có dấu cách), số
+  "3" được hiểu là "三", "两" và "二" coi như nhau. Vẫn chỉ là so khớp chữ, không chấm phát âm.
+- **Font**: Inter không có chữ Hán nên trình duyệt dùng font hệ thống (PingFang SC, Microsoft YaHei,
+  Noto Sans SC…), không tải thêm font.
 
 ## Giao diện theo bản thiết kế (`flow.png`)
 
@@ -280,6 +314,13 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   `public/assets/videos/` và khai báo `videoSrc`; phụ đề `.vtt` khai báo ở `captionsSrc`.
 - **Thêm scene**: tạo `src/data/scenes/<id>.json`; để `"status": "coming-soon"` cho tới khi có đủ
   ảnh, từ và hotspot.
+- **Nội dung tiếng Trung**: sửa `src/data/zh/words.json` / `conversations.json` với **cùng id** như bản
+  tiếng Anh (từ mới của scene phải có ở cả hai khóa). Viết tay `pinyin` của từ (vd. `"táidēng"`) và
+  `measure` nếu có; pinyin của câu thì chạy `npm run content:pinyin` (chỉ điền chỗ còn thiếu, không ghi
+  đè chỗ đã sửa tay; câu dùng đúng cách đọc của từ đã viết tay). Sửa cách đọc sai của một từ thông dụng
+  trong `READINGS` ở `scripts/zh-pinyin.mjs`. Cuối cùng chạy `npm run content:check`.
+- **Thêm chữ giao diện**: viết `t('English text')` trong component và thêm bản dịch vào file tương ứng
+  trong `src/i18n/zh/`.
 - **Thay ảnh placeholder bằng art thật**: làm theo [docs/asset-pipeline.md](docs/asset-pipeline.md).
   Đường dẫn ảnh thương hiệu và nền nằm ở `src/config/assets.ts`.
 
@@ -335,6 +376,10 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 
 1. Nhận art chính thức (spec §20), thay placeholder, trace lại hotspot (xem `docs/asset-pipeline.md`).
 2. Giáo viên/biên tập duyệt 24 từ, IPA, ví dụ, bản dịch và 10 hội thoại.
-3. Thu âm audio từ/câu (giọng thống nhất), thêm video + phụ đề `.vtt`.
-4. QA trên thiết bị thật (iOS Safari, Android Chrome), đo hiệu năng với ảnh WebP/AVIF thật.
-5. Tuỳ chọn: tách code theo route (lazy) nếu bundle tăng, export/import tiến độ dạng JSON.
+3. Người bản ngữ/giáo viên tiếng Trung duyệt khóa tiếng Trung: tên gọi đồ vật, lượng từ, pinyin (nhất
+   là thanh nhẹ, ví dụ 上/里 chỉ vị trí), câu ví dụ, hội thoại, bản dịch tiếng Việt và chữ giao diện
+   (`src/i18n/zh/`).
+4. Thu âm audio từ/câu (giọng thống nhất, cả tiếng Anh lẫn tiếng Trung: giọng trình duyệt hay đọc sai
+   thanh điệu của từ đơn lẻ), thêm video + phụ đề `.vtt`.
+5. QA trên thiết bị thật (iOS Safari, Android Chrome), đo hiệu năng với ảnh WebP/AVIF thật.
+6. Tuỳ chọn: tách code theo route (lazy) nếu bundle tăng, export/import tiến độ dạng JSON.

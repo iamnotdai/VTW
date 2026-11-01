@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import { Button } from '@/components/common/Button';
 import { toggleAppFullscreen, useAppFullscreen } from '@/hooks/useAppFullscreen';
 import { useCoarsePointer } from '@/hooks/useMediaQuery';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { isFullscreenSupported } from '@/lib/fullscreen';
@@ -150,18 +151,18 @@ export function InteractiveScene({
     (wordId: string) => {
       const number = scene.wordIds.indexOf(wordId) + 1;
       return foundWordIds.has(wordId)
-        ? `${getWordText(wordId)} — found. Press Enter to review.`
-        : `Object ${number} — not found yet. Press Enter to learn it.`;
+        ? t('{word} — found. Press Enter to review.', { word: getWordText(wordId) })
+        : t('Object {number} — not found yet. Press Enter to learn it.', { number });
     },
     [scene.wordIds, foundWordIds, getWordText],
   );
 
   const allFound = scene.wordIds.every((id) => foundWordIds.has(id));
   const hint = allFound
-    ? 'You found everything!'
+    ? t('You found everything!')
     : coarsePointer
-      ? 'Tap an object, then tap Learn!'
-      : 'Click on an object!';
+      ? t('Tap an object, then tap Learn!')
+      : t('Click on an object!');
 
   // Layer 4: the bubble sits on the highlighted object (never reveals the word of an unfound
   // object); with nothing highlighted it shows the hint in the bottom-left corner.
@@ -169,10 +170,10 @@ export function InteractiveScene({
     ? foundWordIds.has(highlight.wordId)
       ? getWordText(highlight.wordId)
       : highlight.mode === 'selected'
-        ? 'What is this?'
+        ? t('What is this?')
         : highlight.mode === 'focus'
-          ? 'Press Enter to learn!'
-          : 'Click on an object!'
+          ? t('Press Enter to learn!')
+          : t('Click on an object!')
     : hint;
   const anchor = highlight ? anchorById.get(highlight.wordId) : undefined;
   let pinned: { x: number; y: number; below: boolean; wordId: string } | null = null;
@@ -218,7 +219,7 @@ export function InteractiveScene({
         >
           <img
             src={assetUrl(scene.background)}
-            alt={`${scene.title} scene`}
+            alt={t('{title} scene', { title: scene.title })}
             className="absolute inset-0 h-full w-full object-contain"
             draggable={false}
             fetchPriority="high"
@@ -270,7 +271,7 @@ export function InteractiveScene({
                 className="pointer-events-auto"
                 onClick={() => open(pinned.wordId)}
               >
-                {foundWordIds.has(pinned.wordId) ? 'Review' : 'Learn'}
+                {foundWordIds.has(pinned.wordId) ? t('Review') : t('Learn')}
               </Button>
             )}
             {pinned && (

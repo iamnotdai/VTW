@@ -7,8 +7,13 @@
  * `bg-sidebar`, `bg-brand-500`, `text-navy-900`, `bg-mist`, `rounded-card`, `shadow-soft`.
  */
 @theme {
-  --font-sans: 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
-  --font-display: 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
+  /* Inter has no Chinese characters: the Chinese course falls back to each system's CJK font. */
+  --font-sans:
+    'Inter Variable', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC',
+    'Noto Sans CJK SC', system-ui, sans-serif;
+  --font-display:
+    'Inter Variable', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC',
+    'Noto Sans CJK SC', system-ui, sans-serif;
   /* Rounded "toy" lettering of the Village to World wordmark only. */
   --font-brand: 'Baloo 2 Variable', 'Arial Rounded MT Bold', ui-rounded, system-ui, sans-serif;
 

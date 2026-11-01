@@ -12,7 +12,9 @@ export const STORAGE_VERSION = 1;
 
 export const STORAGE_KEYS = {
   profile: `vtw:v${STORAGE_VERSION}:profile`,
+  /** English course progress (the key predates the other courses, so it has no course id). */
   progress: `vtw:v${STORAGE_VERSION}:progress`,
+  progressZh: `vtw:v${STORAGE_VERSION}:zh:progress`,
   settings: `vtw:v${STORAGE_VERSION}:settings`,
 } as const;
 

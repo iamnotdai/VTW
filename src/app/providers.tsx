@@ -1,4 +1,6 @@
 import { useEffect, type ReactNode } from 'react';
+import { getActiveCourse } from '@/lib/course';
+import { PROGRESS_KEYS } from '@/lib/repositories';
 import { STORAGE_KEYS } from '@/lib/storage';
 import { useProfileStore } from '@/stores/profileStore';
 import { useProgressStore } from '@/stores/progressStore';
@@ -10,7 +12,7 @@ function useCrossTabSync() {
     const onStorage = (event: StorageEvent) => {
       if (event.key === null || event.key === STORAGE_KEYS.profile)
         useProfileStore.getState().reload();
-      if (event.key === null || event.key === STORAGE_KEYS.progress)
+      if (event.key === null || event.key === PROGRESS_KEYS[getActiveCourse()])
         useProgressStore.getState().reload();
       if (event.key === null || event.key === STORAGE_KEYS.settings)
         useSettingsStore.getState().reload();

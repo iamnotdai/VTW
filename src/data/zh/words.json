@@ -1,0 +1,2340 @@
+{
+  "bed": {
+    "id": "bed",
+    "text": "床",
+    "pinyin": "chuáng",
+    "measure": "张",
+    "meaningVi": "cái giường",
+    "image": "/assets/scenes/bedroom/objects/01_bed.webp",
+    "acceptedAnswers": ["床"],
+    "examples": [
+      {
+        "text": "我每天晚上睡在床上。",
+        "vi": "Mình ngủ trên giường mỗi tối.",
+        "pinyin": "Wǒ měi tiān wǎn shang shuì zài chuáng shàng."
+      },
+      {
+        "text": "我的床又软又暖和。",
+        "vi": "Giường của mình vừa mềm vừa ấm.",
+        "pinyin": "Wǒ de chuáng yòu ruǎn yòu nuǎn huo."
+      }
+    ],
+    "relatedWordIds": ["pillow", "blanket", "nightstand"],
+    "distractorWordIds": ["desk", "chair", "rug"]
+  },
+  "pillow": {
+    "id": "pillow",
+    "text": "枕头",
+    "pinyin": "zhěntou",
+    "measure": "个",
+    "meaningVi": "cái gối",
+    "image": "/assets/scenes/bedroom/objects/02_pillow.webp",
+    "acceptedAnswers": ["枕头"],
+    "examples": [
+      {
+        "text": "我的枕头又白又软。",
+        "vi": "Chiếc gối của mình vừa trắng vừa êm.",
+        "pinyin": "Wǒ de zhěn tou yòu bái yòu ruǎn."
+      },
+      {
+        "text": "躺下，把头放在枕头上。",
+        "vi": "Nằm xuống, đặt đầu lên gối nào.",
+        "pinyin": "Tǎng xià, bǎ tóu fàng zài zhěn tou shàng."
+      }
+    ],
+    "relatedWordIds": ["bed", "blanket", "bunny"],
+    "distractorWordIds": ["blanket", "rug", "laptop"]
+  },
+  "blanket": {
+    "id": "blanket",
+    "text": "被子",
+    "pinyin": "bèizi",
+    "measure": "条",
+    "meaningVi": "cái chăn (mền)",
+    "image": "/assets/scenes/bedroom/objects/03_blanket.webp",
+    "acceptedAnswers": ["被子", "棉被"],
+    "examples": [
+      {
+        "text": "盖上被子，好暖和呀。",
+        "vi": "Đắp chăn lên, ấm áp quá!",
+        "pinyin": "Gài shàng bèi zi, hǎo nuǎn huo ya."
+      },
+      {
+        "text": "请把被子叠好。",
+        "vi": "Con gấp chăn cho gọn nhé.",
+        "pinyin": "Qǐng bǎ bèi zi dié hǎo."
+      }
+    ],
+    "relatedWordIds": ["bed", "pillow"],
+    "distractorWordIds": ["pillow", "rug", "laptop"]
+  },
+  "lamp": {
+    "id": "lamp",
+    "text": "台灯",
+    "pinyin": "táidēng",
+    "measure": "盏",
+    "meaningVi": "cái đèn",
+    "image": "/assets/scenes/bedroom/objects/04_lamp.webp",
+    "acceptedAnswers": ["台灯", "床头灯"],
+    "examples": [
+      {
+        "text": "台灯在床头柜上。",
+        "vi": "Chiếc đèn ở trên tủ đầu giường.",
+        "pinyin": "Tái dēng zài chuáng tóu guì shàng."
+      },
+      {
+        "text": "请打开台灯。",
+        "vi": "Hãy bật đèn lên nhé.",
+        "pinyin": "Qǐng dǎ kāi tái dēng."
+      }
+    ],
+    "relatedWordIds": ["nightstand", "desk", "bed"],
+    "distractorWordIds": ["clock", "pencil-cup", "plant"]
+  },
+  "nightstand": {
+    "id": "nightstand",
+    "text": "床头柜",
+    "pinyin": "chuángtóuguì",
+    "measure": "个",
+    "meaningVi": "tủ đầu giường",
+    "image": "/assets/scenes/bedroom/objects/05_nightstand.webp",
+    "acceptedAnswers": ["床头柜"],
+    "examples": [
+      {
+        "text": "床头柜上有一盏台灯。",
+        "vi": "Trên tủ đầu giường có một chiếc đèn.",
+        "pinyin": "Chuáng tóu guì shàng yǒu yì zhǎn tái dēng."
+      },
+      {
+        "text": "床头柜在床的旁边。",
+        "vi": "Tủ đầu giường ở cạnh giường.",
+        "pinyin": "Chuáng tóu guì zài chuáng de páng biān."
+      }
+    ],
+    "relatedWordIds": ["lamp", "mug", "bed"],
+    "distractorWordIds": ["desk", "wardrobe", "mattress"]
+  },
+  "mug": {
+    "id": "mug",
+    "text": "杯子",
+    "pinyin": "bēizi",
+    "measure": "个",
+    "meaningVi": "cái cốc (ca)",
+    "image": "/assets/scenes/bedroom/objects/06_mug.webp",
+    "acceptedAnswers": ["杯子", "马克杯"],
+    "examples": [
+      {
+        "text": "我用这个杯子喝牛奶。",
+        "vi": "Mình uống sữa bằng chiếc cốc này.",
+        "pinyin": "Wǒ yòng zhè ge bēi zi hē niú nǎi."
+      },
+      {
+        "text": "我的杯子上有一个红色的爱心。",
+        "vi": "Trên cốc của mình có một hình trái tim màu đỏ.",
+        "pinyin": "Wǒ de bēi zi shàng yǒu yí gè hóng sè de ài xīn."
+      }
+    ],
+    "relatedWordIds": ["nightstand", "pencil-cup", "desk"],
+    "distractorWordIds": ["pencil-cup", "lamp", "clock"]
+  },
+  "fan": {
+    "id": "fan",
+    "text": "风扇",
+    "pinyin": "fēngshàn",
+    "measure": "台",
+    "meaningVi": "cái quạt",
+    "image": "/assets/scenes/bedroom/objects/07_fan.webp",
+    "acceptedAnswers": ["风扇", "电风扇"],
+    "examples": [
+      {
+        "text": "开了风扇，好凉快呀！",
+        "vi": "Bật quạt lên rồi, mát quá!",
+        "pinyin": "Kāi le fēng shàn, hǎo liáng kuai ya!"
+      },
+      {
+        "text": "请打开风扇。",
+        "vi": "Hãy bật quạt lên nhé.",
+        "pinyin": "Qǐng dǎ kāi fēng shàn."
+      }
+    ],
+    "relatedWordIds": ["desk", "laptop"],
+    "distractorWordIds": ["clock", "lamp", "laptop"]
+  },
+  "laptop": {
+    "id": "laptop",
+    "text": "电脑",
+    "pinyin": "diànnǎo",
+    "measure": "台",
+    "meaningVi": "máy tính",
+    "image": "/assets/scenes/bedroom/objects/08_laptop.webp",
+    "acceptedAnswers": ["电脑", "笔记本电脑"],
+    "examples": [
+      {
+        "text": "我在电脑上看动画片。",
+        "vi": "Mình xem phim hoạt hình trên máy tính.",
+        "pinyin": "Wǒ zài diàn nǎo shàng kàn dòng huà piàn."
+      },
+      {
+        "text": "电脑在书桌上。",
+        "vi": "Máy tính ở trên bàn học.",
+        "pinyin": "Diàn nǎo zài shū zhuō shàng."
+      }
+    ],
+    "relatedWordIds": ["desk", "chair", "fan"],
+    "distractorWordIds": ["book", "clock", "picture"]
+  },
+  "turtle": {
+    "id": "turtle",
+    "text": "乌龟",
+    "pinyin": "wūguī",
+    "measure": "只",
+    "meaningVi": "con rùa",
+    "image": "/assets/scenes/bedroom/objects/09_turtle.webp",
+    "acceptedAnswers": ["乌龟", "小乌龟"],
+    "examples": [
+      {
+        "text": "我的小乌龟是绿色的，软软的。",
+        "vi": "Chú rùa của mình màu xanh lá, mềm mềm.",
+        "pinyin": "Wǒ de xiǎo wū guī shì lǜ sè de, ruǎn ruǎn de."
+      },
+      {
+        "text": "小乌龟在地毯旁边。",
+        "vi": "Chú rùa ở cạnh tấm thảm.",
+        "pinyin": "Xiǎo wū guī zài dì tǎn páng biān."
+      }
+    ],
+    "relatedWordIds": ["rug", "bunny"],
+    "distractorWordIds": ["bunny", "slippers", "backpack"]
+  },
+  "wardrobe": {
+    "id": "wardrobe",
+    "text": "衣柜",
+    "pinyin": "yīguì",
+    "measure": "个",
+    "meaningVi": "tủ quần áo",
+    "image": "/assets/scenes/bedroom/objects/10_wardrobe.webp",
+    "acceptedAnswers": ["衣柜", "衣橱"],
+    "examples": [
+      {
+        "text": "我的衣服在衣柜里。",
+        "vi": "Quần áo của mình ở trong tủ.",
+        "pinyin": "Wǒ de yī fu zài yī guì lǐ."
+      },
+      {
+        "text": "衣柜有两扇门。",
+        "vi": "Tủ quần áo có hai cánh cửa.",
+        "pinyin": "Yī guì yǒu liǎng shàn mén."
+      }
+    ],
+    "relatedWordIds": ["mirror", "turtle"],
+    "distractorWordIds": ["bookshelf", "turtle", "nightstand"]
+  },
+  "mirror": {
+    "id": "mirror",
+    "text": "镜子",
+    "pinyin": "jìngzi",
+    "measure": "面",
+    "meaningVi": "cái gương",
+    "image": "/assets/scenes/bedroom/objects/11_mirror.webp",
+    "acceptedAnswers": ["镜子"],
+    "examples": [
+      {
+        "text": "我照着镜子笑一笑。",
+        "vi": "Mình soi gương và mỉm cười.",
+        "pinyin": "Wǒ zhào zhe jìng zi xiào yi xiào."
+      },
+      {
+        "text": "镜子在窗户旁边。",
+        "vi": "Chiếc gương ở cạnh cửa sổ.",
+        "pinyin": "Jìng zi zài chuāng hu páng biān."
+      }
+    ],
+    "relatedWordIds": ["wardrobe"],
+    "distractorWordIds": ["fan", "picture", "clock"]
+  },
+  "desk": {
+    "id": "desk",
+    "text": "书桌",
+    "pinyin": "shūzhuō",
+    "measure": "张",
+    "meaningVi": "bàn học",
+    "image": "/assets/scenes/bedroom/objects/12_desk.webp",
+    "acceptedAnswers": ["书桌"],
+    "examples": [
+      {
+        "text": "我在书桌前写作业。",
+        "vi": "Mình làm bài tập ở bàn học.",
+        "pinyin": "Wǒ zài shū zhuō qián xiě zuò yè."
+      },
+      {
+        "text": "书桌上有一个闹钟。",
+        "vi": "Trên bàn học có một chiếc đồng hồ báo thức.",
+        "pinyin": "Shū zhuō shàng yǒu yí gè nào zhōng."
+      }
+    ],
+    "relatedWordIds": ["chair", "book", "pencil-cup"],
+    "distractorWordIds": ["bed", "chair", "nightstand"]
+  },
+  "chair": {
+    "id": "chair",
+    "text": "椅子",
+    "pinyin": "yǐzi",
+    "measure": "把",
+    "meaningVi": "cái ghế",
+    "image": "/assets/scenes/bedroom/objects/13_chair.webp",
+    "acceptedAnswers": ["椅子"],
+    "examples": [
+      {
+        "text": "请坐在椅子上。",
+        "vi": "Con ngồi lên ghế nhé.",
+        "pinyin": "Qǐng zuò zài yǐ zi shàng."
+      },
+      {
+        "text": "椅子在书桌前面。",
+        "vi": "Cái ghế ở phía trước bàn học.",
+        "pinyin": "Yǐ zi zài shū zhuō qián miàn."
+      }
+    ],
+    "relatedWordIds": ["desk"],
+    "distractorWordIds": ["desk", "bed", "mattress"]
+  },
+  "book": {
+    "id": "book",
+    "text": "书",
+    "pinyin": "shū",
+    "measure": "本",
+    "meaningVi": "quyển sách",
+    "image": "/assets/scenes/bedroom/objects/14_book.webp",
+    "acceptedAnswers": ["书"],
+    "examples": [
+      {
+        "text": "睡觉前，我看一会儿书。",
+        "vi": "Trước khi ngủ, mình đọc sách một lát.",
+        "pinyin": "Shuì jiào qián, wǒ kàn yí huìr shū."
+      },
+      {
+        "text": "这本书讲的是动物。",
+        "vi": "Quyển sách này kể về các con vật.",
+        "pinyin": "Zhè běn shū jiǎng de shì dòng wù."
+      }
+    ],
+    "relatedWordIds": ["bookshelf", "desk"],
+    "distractorWordIds": ["backpack", "picture", "pencil-cup"]
+  },
+  "bookshelf": {
+    "id": "bookshelf",
+    "text": "书架",
+    "pinyin": "shūjià",
+    "measure": "个",
+    "meaningVi": "giá sách",
+    "image": "/assets/scenes/bedroom/objects/15_bookshelf.webp",
+    "acceptedAnswers": ["书架", "书柜"],
+    "examples": [
+      {
+        "text": "书架上有很多书。",
+        "vi": "Trên giá sách có rất nhiều sách.",
+        "pinyin": "Shū jià shàng yǒu hěn duō shū."
+      },
+      {
+        "text": "请把书放回书架上。",
+        "vi": "Hãy đặt sách trở lại giá sách nhé.",
+        "pinyin": "Qǐng bǎ shū fàng huí shū jià shàng."
+      }
+    ],
+    "relatedWordIds": ["book", "desk"],
+    "distractorWordIds": ["wardrobe", "fan", "picture"]
+  },
+  "pencil-cup": {
+    "id": "pencil-cup",
+    "text": "笔筒",
+    "pinyin": "bǐtǒng",
+    "measure": "个",
+    "meaningVi": "ống đựng bút",
+    "image": "/assets/scenes/bedroom/objects/16_pencil-cup.webp",
+    "acceptedAnswers": ["笔筒"],
+    "examples": [
+      {
+        "text": "我的铅笔在笔筒里。",
+        "vi": "Bút chì của mình ở trong ống đựng bút.",
+        "pinyin": "Wǒ de qiān bǐ zài bǐ tǒng lǐ."
+      },
+      {
+        "text": "笔筒在书桌上。",
+        "vi": "Ống đựng bút ở trên bàn học.",
+        "pinyin": "Bǐ tǒng zài shū zhuō shàng."
+      }
+    ],
+    "relatedWordIds": ["desk", "book", "mug"],
+    "distractorWordIds": ["mug", "clock", "lamp"]
+  },
+  "clock": {
+    "id": "clock",
+    "text": "闹钟",
+    "pinyin": "nàozhōng",
+    "measure": "个",
+    "meaningVi": "đồng hồ báo thức",
+    "image": "/assets/scenes/bedroom/objects/17_clock.webp",
+    "acceptedAnswers": ["闹钟"],
+    "examples": [
+      {
+        "text": "闹钟响了，该起床了！",
+        "vi": "Đồng hồ báo thức kêu rồi, đến giờ dậy thôi!",
+        "pinyin": "Nào zhōng xiǎng le, gāi qǐ chuáng le!"
+      },
+      {
+        "text": "看看闹钟，八点了！",
+        "vi": "Nhìn đồng hồ kìa, tám giờ rồi!",
+        "pinyin": "Kàn kàn nào zhōng, bā diǎn le!"
+      }
+    ],
+    "relatedWordIds": ["picture", "fan"],
+    "distractorWordIds": ["picture", "mirror", "pencil-cup"]
+  },
+  "picture": {
+    "id": "picture",
+    "text": "画",
+    "pinyin": "huà",
+    "measure": "幅",
+    "meaningVi": "bức tranh",
+    "image": "/assets/scenes/bedroom/objects/18_picture.webp",
+    "acceptedAnswers": ["画", "图画"],
+    "examples": [
+      {
+        "text": "墙上有一幅画。",
+        "vi": "Trên tường có một bức tranh.",
+        "pinyin": "Qiáng shàng yǒu yì fú huà."
+      },
+      {
+        "text": "这幅画上有一座小房子。",
+        "vi": "Trong bức tranh này có một ngôi nhà nhỏ.",
+        "pinyin": "Zhè fú huà shàng yǒu yí zuò xiǎo fáng zi."
+      }
+    ],
+    "relatedWordIds": ["clock", "fan"],
+    "distractorWordIds": ["mirror", "fan", "clock"]
+  },
+  "rug": {
+    "id": "rug",
+    "text": "地毯",
+    "pinyin": "dìtǎn",
+    "measure": "块",
+    "meaningVi": "tấm thảm",
+    "image": "/assets/scenes/bedroom/objects/19_rug.webp",
+    "acceptedAnswers": ["地毯"],
+    "examples": [
+      {
+        "text": "地毯软软的，真舒服。",
+        "vi": "Tấm thảm mềm mềm, thật dễ chịu.",
+        "pinyin": "Dì tǎn ruǎn ruǎn de, zhēn shū fu."
+      },
+      {
+        "text": "我的拖鞋在地毯上。",
+        "vi": "Đôi dép của mình ở trên thảm.",
+        "pinyin": "Wǒ de tuō xié zài dì tǎn shàng."
+      }
+    ],
+    "relatedWordIds": ["slippers", "bed"],
+    "distractorWordIds": ["blanket", "laptop", "pillow"]
+  },
+  "slippers": {
+    "id": "slippers",
+    "text": "拖鞋",
+    "pinyin": "tuōxié",
+    "measure": "双",
+    "meaningVi": "dép đi trong nhà",
+    "image": "/assets/scenes/bedroom/objects/20_slippers.webp",
+    "acceptedAnswers": ["拖鞋"],
+    "examples": [
+      {
+        "text": "在家里我穿拖鞋。",
+        "vi": "Ở nhà, mình đi dép.",
+        "pinyin": "Zài jiā lǐ wǒ chuān tuō xié."
+      },
+      {
+        "text": "我的拖鞋在哪儿？",
+        "vi": "Dép của mình đâu rồi nhỉ?",
+        "pinyin": "Wǒ de tuō xié zài nǎr?"
+      }
+    ],
+    "relatedWordIds": ["rug", "bed"],
+    "distractorWordIds": ["backpack", "rug", "pillow"]
+  },
+  "bunny": {
+    "id": "bunny",
+    "text": "兔子",
+    "pinyin": "tùzi",
+    "measure": "只",
+    "meaningVi": "thỏ bông",
+    "image": "/assets/scenes/bedroom/objects/21_bunny.webp",
+    "acceptedAnswers": ["兔子", "小兔子"],
+    "examples": [
+      {
+        "text": "晚上我抱着小兔子睡觉。",
+        "vi": "Buổi tối mình ôm thỏ bông đi ngủ.",
+        "pinyin": "Wǎn shang wǒ bào zhe xiǎo tù zi shuì jiào."
+      },
+      {
+        "text": "我的小兔子是粉色的。",
+        "vi": "Thỏ bông của mình màu hồng.",
+        "pinyin": "Wǒ de xiǎo tù zi shì fěn sè de."
+      }
+    ],
+    "relatedWordIds": ["turtle", "bed", "pillow"],
+    "distractorWordIds": ["turtle", "pillow", "backpack"]
+  },
+  "mattress": {
+    "id": "mattress",
+    "text": "床垫",
+    "pinyin": "chuángdiàn",
+    "measure": "张",
+    "meaningVi": "cái nệm (đệm)",
+    "image": "/assets/scenes/bedroom/objects/22_mattress.webp",
+    "acceptedAnswers": ["床垫"],
+    "examples": [
+      {
+        "text": "这个床垫很软。",
+        "vi": "Chiếc nệm này rất êm.",
+        "pinyin": "Zhè ge chuáng diàn hěn ruǎn."
+      },
+      {
+        "text": "我睡在软软的床垫上。",
+        "vi": "Mình ngủ trên chiếc nệm êm êm.",
+        "pinyin": "Wǒ shuì zài ruǎn ruǎn de chuáng diàn shàng."
+      }
+    ],
+    "relatedWordIds": ["bed", "pillow", "blanket"],
+    "distractorWordIds": ["pillow", "blanket", "rug"]
+  },
+  "backpack": {
+    "id": "backpack",
+    "text": "书包",
+    "pinyin": "shūbāo",
+    "measure": "个",
+    "meaningVi": "cặp sách",
+    "image": "/assets/scenes/bedroom/objects/23_backpack.webp",
+    "acceptedAnswers": ["书包", "背包"],
+    "examples": [
+      {
+        "text": "我的书在书包里。",
+        "vi": "Sách của mình ở trong cặp.",
+        "pinyin": "Wǒ de shū zài shū bāo lǐ."
+      },
+      {
+        "text": "别忘了带书包！",
+        "vi": "Đừng quên mang cặp nhé!",
+        "pinyin": "Bié wàng le dài shū bāo!"
+      }
+    ],
+    "relatedWordIds": ["book", "desk"],
+    "distractorWordIds": ["mattress", "slippers", "book"]
+  },
+  "plant": {
+    "id": "plant",
+    "text": "植物",
+    "pinyin": "zhíwù",
+    "measure": "盆",
+    "meaningVi": "chậu cây",
+    "image": "/assets/scenes/bedroom/objects/24_plant.webp",
+    "acceptedAnswers": ["植物", "盆栽"],
+    "examples": [
+      {
+        "text": "这盆植物该浇水了。",
+        "vi": "Chậu cây này đến lúc tưới nước rồi.",
+        "pinyin": "Zhè pén zhí wù gāi jiāo shuǐ le."
+      },
+      {
+        "text": "这盆植物的叶子又大又绿。",
+        "vi": "Lá của chậu cây này vừa to vừa xanh.",
+        "pinyin": "Zhè pén zhí wù de yè zi yòu dà yòu lǜ."
+      }
+    ],
+    "relatedWordIds": ["fan"],
+    "distractorWordIds": ["lamp", "bunny", "pencil-cup"]
+  },
+  "toilet": {
+    "id": "toilet",
+    "text": "马桶",
+    "pinyin": "mǎtǒng",
+    "measure": "个",
+    "meaningVi": "bồn cầu",
+    "image": "/assets/scenes/bathroom/objects/01_toilet.webp",
+    "acceptedAnswers": ["马桶", "坐便器", "抽水马桶"],
+    "examples": [
+      {
+        "text": "上完厕所，要冲马桶。",
+        "vi": "Đi vệ sinh xong thì phải xả nước bồn cầu nhé.",
+        "pinyin": "Shàng wán cè suǒ, yào chōng mǎ tǒng."
+      },
+      {
+        "text": "马桶是白色的，很干净。",
+        "vi": "Bồn cầu màu trắng, rất sạch sẽ.",
+        "pinyin": "Mǎ tǒng shì bái sè de, hěn gān jing."
+      }
+    ],
+    "relatedWordIds": ["toilet-paper", "toilet-brush", "trash-can"],
+    "distractorWordIds": ["sink", "bathtub", "bucket"]
+  },
+  "toothbrush-holder": {
+    "id": "toothbrush-holder",
+    "text": "牙刷杯",
+    "pinyin": "yáshuābēi",
+    "measure": "个",
+    "meaningVi": "cốc đựng bàn chải",
+    "image": "/assets/scenes/bathroom/objects/02_toothbrush-holder.webp",
+    "acceptedAnswers": ["牙刷杯", "刷牙杯", "漱口杯", "牙刷架"],
+    "examples": [
+      {
+        "text": "我把牙刷放进牙刷杯里。",
+        "vi": "Mình cắm bàn chải vào cốc đựng bàn chải.",
+        "pinyin": "Wǒ bǎ yá shuā fàng jìn yá shuā bēi lǐ."
+      },
+      {
+        "text": "牙刷杯里有两把牙刷。",
+        "vi": "Trong cốc đựng bàn chải có hai cái bàn chải.",
+        "pinyin": "Yá shuā bēi lǐ yǒu liǎng bǎ yá shuā."
+      }
+    ],
+    "relatedWordIds": ["toothbrush", "toothpaste", "sink"],
+    "distractorWordIds": ["bucket", "trash-can", "shampoo"]
+  },
+  "bathtub": {
+    "id": "bathtub",
+    "text": "浴缸",
+    "pinyin": "yùgāng",
+    "measure": "个",
+    "meaningVi": "bồn tắm",
+    "image": "/assets/scenes/bathroom/objects/03_bathtub.webp",
+    "acceptedAnswers": ["浴缸", "浴盆"],
+    "examples": [
+      {
+        "text": "我在浴缸里洗澡。",
+        "vi": "Mình tắm trong bồn tắm.",
+        "pinyin": "Wǒ zài yù gāng lǐ xǐ zǎo."
+      },
+      {
+        "text": "浴缸里的水暖暖的。",
+        "vi": "Nước trong bồn tắm ấm áp.",
+        "pinyin": "Yù gāng lǐ de shuǐ nuǎn nuǎn de."
+      }
+    ],
+    "relatedWordIds": ["shower", "shower-curtain", "bath-mat"],
+    "distractorWordIds": ["sink", "toilet", "bucket"]
+  },
+  "soap": {
+    "id": "soap",
+    "text": "肥皂",
+    "pinyin": "féizào",
+    "meaningVi": "xà phòng",
+    "image": "/assets/scenes/bathroom/objects/04_soap.webp",
+    "acceptedAnswers": ["肥皂", "香皂"],
+    "examples": [
+      {
+        "text": "我用肥皂洗手。",
+        "vi": "Mình rửa tay bằng xà phòng.",
+        "pinyin": "Wǒ yòng féi zào xǐ shǒu."
+      },
+      {
+        "text": "这块肥皂香香的，像花一样。",
+        "vi": "Bánh xà phòng này thơm thơm, giống như hoa vậy.",
+        "pinyin": "Zhè kuài féi zào xiāng xiāng de, xiàng huā yí yàng."
+      }
+    ],
+    "relatedWordIds": ["sink", "faucet", "towel"],
+    "distractorWordIds": ["shampoo", "toothpaste", "shaving-cream"]
+  },
+  "shower": {
+    "id": "shower",
+    "text": "花洒",
+    "pinyin": "huāsǎ",
+    "measure": "个",
+    "meaningVi": "vòi sen",
+    "image": "/assets/scenes/bathroom/objects/05_shower.webp",
+    "acceptedAnswers": ["花洒", "莲蓬头", "淋浴喷头"],
+    "examples": [
+      {
+        "text": "我每天晚上用花洒洗澡。",
+        "vi": "Tối nào mình cũng tắm bằng vòi sen.",
+        "pinyin": "Wǒ měi tiān wǎn shang yòng huā sǎ xǐ zǎo."
+      },
+      {
+        "text": "请帮我打开花洒。",
+        "vi": "Bạn mở vòi sen giúp mình nhé.",
+        "pinyin": "Qǐng bāng wǒ dǎ kāi huā sǎ."
+      }
+    ],
+    "relatedWordIds": ["shower-curtain", "shampoo", "bathtub"],
+    "distractorWordIds": ["faucet", "hair-dryer", "sink"]
+  },
+  "sink": {
+    "id": "sink",
+    "text": "洗手池",
+    "pinyin": "xǐshǒuchí",
+    "measure": "个",
+    "meaningVi": "bồn rửa mặt",
+    "image": "/assets/scenes/bathroom/objects/06_sink.webp",
+    "acceptedAnswers": ["洗手池", "洗脸池", "洗手盆", "洗脸盆"],
+    "examples": [
+      {
+        "text": "我在洗手池洗脸。",
+        "vi": "Mình rửa mặt ở bồn rửa mặt.",
+        "pinyin": "Wǒ zài xǐ shǒu chí xǐ liǎn."
+      },
+      {
+        "text": "洗手池是白色的，圆圆的。",
+        "vi": "Bồn rửa mặt màu trắng, tròn tròn.",
+        "pinyin": "Xǐ shǒu chí shì bái sè de, yuán yuán de."
+      }
+    ],
+    "relatedWordIds": ["faucet", "soap", "toothbrush-holder"],
+    "distractorWordIds": ["bathtub", "toilet", "bucket"]
+  },
+  "faucet": {
+    "id": "faucet",
+    "text": "水龙头",
+    "pinyin": "shuǐlóngtóu",
+    "measure": "个",
+    "meaningVi": "vòi nước",
+    "image": "/assets/scenes/bathroom/objects/07_faucet.webp",
+    "acceptedAnswers": ["水龙头"],
+    "examples": [
+      {
+        "text": "水从水龙头里流出来。",
+        "vi": "Nước chảy ra từ vòi nước.",
+        "pinyin": "Shuǐ cóng shuǐ lóng tóu lǐ liú chū lái."
+      },
+      {
+        "text": "刷牙的时候，要关上水龙头。",
+        "vi": "Khi đánh răng, nhớ khoá vòi nước lại nhé.",
+        "pinyin": "Shuā yá de shí hou, yào guān shàng shuǐ lóng tóu."
+      }
+    ],
+    "relatedWordIds": ["sink", "soap", "towel"],
+    "distractorWordIds": ["shower", "hair-dryer", "razor"]
+  },
+  "toothbrush": {
+    "id": "toothbrush",
+    "text": "牙刷",
+    "pinyin": "yáshuā",
+    "measure": "把",
+    "meaningVi": "bàn chải đánh răng",
+    "image": "/assets/scenes/bathroom/objects/08_toothbrush.webp",
+    "acceptedAnswers": ["牙刷"],
+    "examples": [
+      {
+        "text": "我用牙刷刷牙。",
+        "vi": "Mình đánh răng bằng bàn chải đánh răng.",
+        "pinyin": "Wǒ yòng yá shuā shuā yá."
+      },
+      {
+        "text": "我的牙刷是蓝色的。",
+        "vi": "Bàn chải đánh răng của mình màu xanh dương.",
+        "pinyin": "Wǒ de yá shuā shì lán sè de."
+      }
+    ],
+    "relatedWordIds": ["toothpaste", "toothbrush-holder", "sink"],
+    "distractorWordIds": ["toilet-brush", "comb", "razor"]
+  },
+  "toothpaste": {
+    "id": "toothpaste",
+    "text": "牙膏",
+    "pinyin": "yágāo",
+    "meaningVi": "kem đánh răng",
+    "image": "/assets/scenes/bathroom/objects/09_toothpaste.webp",
+    "acceptedAnswers": ["牙膏"],
+    "examples": [
+      {
+        "text": "我把牙膏挤在牙刷上。",
+        "vi": "Mình bóp kem đánh răng lên bàn chải.",
+        "pinyin": "Wǒ bǎ yá gāo jǐ zài yá shuā shàng."
+      },
+      {
+        "text": "我的牙膏是草莓味的。",
+        "vi": "Kem đánh răng của mình có vị dâu tây.",
+        "pinyin": "Wǒ de yá gāo shì cǎo méi wèi de."
+      }
+    ],
+    "relatedWordIds": ["toothbrush", "toothbrush-holder", "sink"],
+    "distractorWordIds": ["shaving-cream", "shampoo", "soap"]
+  },
+  "shampoo": {
+    "id": "shampoo",
+    "text": "洗发水",
+    "pinyin": "xǐfàshuǐ",
+    "meaningVi": "dầu gội",
+    "image": "/assets/scenes/bathroom/objects/10_shampoo.webp",
+    "acceptedAnswers": ["洗发水", "洗发露", "洗发液"],
+    "examples": [
+      {
+        "text": "我用洗发水洗头。",
+        "vi": "Mình gội đầu bằng dầu gội.",
+        "pinyin": "Wǒ yòng xǐ fà shuǐ xǐ tóu."
+      },
+      {
+        "text": "洗发水放在花洒旁边的架子上。",
+        "vi": "Dầu gội để trên kệ cạnh vòi sen.",
+        "pinyin": "Xǐ fà shuǐ fàng zài huā sǎ páng biān de jià zi shàng."
+      }
+    ],
+    "relatedWordIds": ["shower", "comb", "hair-dryer"],
+    "distractorWordIds": ["soap", "toothpaste", "shaving-cream"]
+  },
+  "towel-rack": {
+    "id": "towel-rack",
+    "text": "毛巾架",
+    "pinyin": "máojīnjià",
+    "measure": "个",
+    "meaningVi": "giá treo khăn",
+    "image": "/assets/scenes/bathroom/objects/11_towel-rack.webp",
+    "acceptedAnswers": ["毛巾架", "毛巾杆"],
+    "examples": [
+      {
+        "text": "把毛巾挂在毛巾架上。",
+        "vi": "Hãy treo khăn lên giá treo khăn nhé.",
+        "pinyin": "Bǎ máo jīn guà zài máo jīn jià shàng."
+      },
+      {
+        "text": "毛巾架上有一条蓝色的毛巾。",
+        "vi": "Trên giá treo khăn có một chiếc khăn màu xanh.",
+        "pinyin": "Máo jīn jià shàng yǒu yì tiáo lán sè de máo jīn."
+      }
+    ],
+    "relatedWordIds": ["towel", "bathroom-cabinet", "bath-mat"],
+    "distractorWordIds": ["shower-curtain", "toilet-paper", "laundry-basket"]
+  },
+  "toilet-paper": {
+    "id": "toilet-paper",
+    "text": "卫生纸",
+    "pinyin": "wèishēngzhǐ",
+    "meaningVi": "giấy vệ sinh",
+    "image": "/assets/scenes/bathroom/objects/12_toilet-paper.webp",
+    "acceptedAnswers": ["卫生纸", "厕纸", "卷纸", "手纸"],
+    "examples": [
+      {
+        "text": "卫生纸快用完了。",
+        "vi": "Giấy vệ sinh sắp hết rồi.",
+        "pinyin": "Wèi shēng zhǐ kuài yòng wán le."
+      },
+      {
+        "text": "卫生纸在马桶旁边。",
+        "vi": "Giấy vệ sinh ở cạnh bồn cầu.",
+        "pinyin": "Wèi shēng zhǐ zài mǎ tǒng páng biān."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-brush", "trash-can"],
+    "distractorWordIds": ["towel", "soap", "bath-mat"]
+  },
+  "toilet-brush": {
+    "id": "toilet-brush",
+    "text": "马桶刷",
+    "pinyin": "mǎtǒngshuā",
+    "measure": "把",
+    "meaningVi": "chổi cọ bồn cầu",
+    "image": "/assets/scenes/bathroom/objects/13_toilet-brush.webp",
+    "acceptedAnswers": ["马桶刷", "厕所刷"],
+    "examples": [
+      {
+        "text": "爸爸用马桶刷刷马桶。",
+        "vi": "Bố cọ bồn cầu bằng chổi cọ bồn cầu.",
+        "pinyin": "Bà ba yòng mǎ tǒng shuā shuā mǎ tǒng."
+      },
+      {
+        "text": "马桶刷放在马桶旁边。",
+        "vi": "Chổi cọ bồn cầu được để ở cạnh bồn cầu.",
+        "pinyin": "Mǎ tǒng shuā fàng zài mǎ tǒng páng biān."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-paper", "bucket"],
+    "distractorWordIds": ["toothbrush", "comb", "hair-dryer"]
+  },
+  "trash-can": {
+    "id": "trash-can",
+    "text": "垃圾桶",
+    "pinyin": "lājītǒng",
+    "measure": "个",
+    "meaningVi": "thùng rác",
+    "image": "/assets/scenes/bathroom/objects/14_trash-can.webp",
+    "acceptedAnswers": ["垃圾桶", "垃圾箱"],
+    "examples": [
+      {
+        "text": "把废纸扔进垃圾桶里。",
+        "vi": "Hãy bỏ giấy vụn vào thùng rác nhé.",
+        "pinyin": "Bǎ fèi zhǐ rēng jìn lā jī tǒng lǐ."
+      },
+      {
+        "text": "用脚踩一下，垃圾桶就打开了。",
+        "vi": "Lấy chân đạp một cái là thùng rác mở ra.",
+        "pinyin": "Yòng jiǎo cǎi yí xià, lā jī tǒng jiù dǎ kāi le."
+      }
+    ],
+    "relatedWordIds": ["toilet", "toilet-paper", "bucket"],
+    "distractorWordIds": ["laundry-basket", "bathroom-cabinet", "sink"]
+  },
+  "bath-mat": {
+    "id": "bath-mat",
+    "text": "地垫",
+    "pinyin": "dìdiàn",
+    "measure": "块",
+    "meaningVi": "thảm nhà tắm",
+    "image": "/assets/scenes/bathroom/objects/15_bath-mat.webp",
+    "acceptedAnswers": ["地垫", "脚垫", "浴室地垫", "浴垫", "垫子"],
+    "examples": [
+      {
+        "text": "洗完澡，我站在地垫上。",
+        "vi": "Tắm xong, mình đứng trên thảm nhà tắm.",
+        "pinyin": "Xǐ wán zǎo, wǒ zhàn zài dì diàn shàng."
+      },
+      {
+        "text": "地垫软软的，是蓝色的。",
+        "vi": "Thảm nhà tắm mềm mềm và có màu xanh.",
+        "pinyin": "Dì diàn ruǎn ruǎn de, shì lán sè de."
+      }
+    ],
+    "relatedWordIds": ["bathtub", "towel", "shower"],
+    "distractorWordIds": ["towel", "shower-curtain", "laundry-basket"]
+  },
+  "shower-curtain": {
+    "id": "shower-curtain",
+    "text": "浴帘",
+    "pinyin": "yùlián",
+    "measure": "条",
+    "meaningVi": "rèm tắm",
+    "image": "/assets/scenes/bathroom/objects/16_shower-curtain.webp",
+    "acceptedAnswers": ["浴帘"],
+    "examples": [
+      {
+        "text": "洗澡前，先拉上浴帘。",
+        "vi": "Trước khi tắm, hãy kéo rèm tắm lại nhé.",
+        "pinyin": "Xǐ zǎo qián, xiān lā shàng yù lián."
+      },
+      {
+        "text": "我家的浴帘上有蓝色的水滴。",
+        "vi": "Rèm tắm nhà mình có hình những giọt nước màu xanh.",
+        "pinyin": "Wǒ jiā de yù lián shàng yǒu lán sè de shuǐ dī."
+      }
+    ],
+    "relatedWordIds": ["shower", "bathtub", "bath-mat"],
+    "distractorWordIds": ["towel", "towel-rack", "bathroom-cabinet"]
+  },
+  "comb": {
+    "id": "comb",
+    "text": "梳子",
+    "pinyin": "shūzi",
+    "measure": "把",
+    "meaningVi": "cái lược",
+    "image": "/assets/scenes/bathroom/objects/17_comb.webp",
+    "acceptedAnswers": ["梳子"],
+    "examples": [
+      {
+        "text": "我用梳子梳头发。",
+        "vi": "Mình chải tóc bằng lược.",
+        "pinyin": "Wǒ yòng shū zi shū tóu fa."
+      },
+      {
+        "text": "梳子在肥皂旁边。",
+        "vi": "Cái lược ở cạnh xà phòng.",
+        "pinyin": "Shū zi zài féi zào páng biān."
+      }
+    ],
+    "relatedWordIds": ["hair-dryer", "shampoo", "towel"],
+    "distractorWordIds": ["toothbrush", "razor", "toilet-brush"]
+  },
+  "hair-dryer": {
+    "id": "hair-dryer",
+    "text": "吹风机",
+    "pinyin": "chuīfēngjī",
+    "measure": "个",
+    "meaningVi": "máy sấy tóc",
+    "image": "/assets/scenes/bathroom/objects/18_hair-dryer.webp",
+    "acceptedAnswers": ["吹风机", "电吹风"],
+    "examples": [
+      {
+        "text": "妈妈用吹风机给我吹头发。",
+        "vi": "Mẹ sấy tóc cho mình bằng máy sấy tóc.",
+        "pinyin": "Mā ma yòng chuī fēng jī gěi wǒ chuī tóu fa."
+      },
+      {
+        "text": "吹风机吹出暖暖的风。",
+        "vi": "Máy sấy tóc thổi ra gió ấm áp.",
+        "pinyin": "Chuī fēng jī chuī chū nuǎn nuǎn de fēng."
+      }
+    ],
+    "relatedWordIds": ["comb", "shampoo", "towel"],
+    "distractorWordIds": ["shower", "faucet", "razor"]
+  },
+  "razor": {
+    "id": "razor",
+    "text": "剃须刀",
+    "pinyin": "tìxūdāo",
+    "measure": "把",
+    "meaningVi": "dao cạo râu",
+    "image": "/assets/scenes/bathroom/objects/19_razor.webp",
+    "acceptedAnswers": ["剃须刀", "刮胡刀"],
+    "examples": [
+      {
+        "text": "爸爸用剃须刀刮胡子。",
+        "vi": "Bố cạo râu bằng dao cạo râu.",
+        "pinyin": "Bà ba yòng tì xū dāo guā hú zi."
+      },
+      {
+        "text": "剃须刀很锋利，不要碰！",
+        "vi": "Dao cạo râu rất sắc, đừng chạm vào nhé!",
+        "pinyin": "Tì xū dāo hěn fēng lì, bú yào pèng!"
+      }
+    ],
+    "relatedWordIds": ["shaving-cream", "sink", "towel"],
+    "distractorWordIds": ["comb", "toothbrush", "hair-dryer"]
+  },
+  "shaving-cream": {
+    "id": "shaving-cream",
+    "text": "剃须膏",
+    "pinyin": "tìxūgāo",
+    "meaningVi": "kem cạo râu",
+    "image": "/assets/scenes/bathroom/objects/20_shaving-cream.webp",
+    "acceptedAnswers": ["剃须膏", "剃须泡沫", "剃须泡", "刮胡膏"],
+    "examples": [
+      {
+        "text": "爸爸把剃须膏抹在脸上。",
+        "vi": "Bố thoa kem cạo râu lên mặt.",
+        "pinyin": "Bà ba bǎ tì xū gāo mǒ zài liǎn shàng."
+      },
+      {
+        "text": "剃须膏又白又软。",
+        "vi": "Kem cạo râu vừa trắng vừa mềm.",
+        "pinyin": "Tì xū gāo yòu bái yòu ruǎn."
+      }
+    ],
+    "relatedWordIds": ["razor", "sink", "towel"],
+    "distractorWordIds": ["toothpaste", "shampoo", "soap"]
+  },
+  "laundry-basket": {
+    "id": "laundry-basket",
+    "text": "脏衣篮",
+    "pinyin": "zāngyīlán",
+    "measure": "个",
+    "meaningVi": "giỏ đựng quần áo bẩn",
+    "image": "/assets/scenes/bathroom/objects/21_laundry-basket.webp",
+    "acceptedAnswers": ["脏衣篮", "脏衣篓", "洗衣篮"],
+    "examples": [
+      {
+        "text": "把脏衣服放进脏衣篮里。",
+        "vi": "Hãy bỏ quần áo bẩn vào giỏ đựng đồ bẩn nhé.",
+        "pinyin": "Bǎ zāng yī fu fàng jìn zāng yī lán lǐ."
+      },
+      {
+        "text": "脏衣篮里都是毛巾。",
+        "vi": "Trong giỏ đựng quần áo bẩn toàn là khăn.",
+        "pinyin": "Zāng yī lán lǐ dōu shì máo jīn."
+      }
+    ],
+    "relatedWordIds": ["towel", "bucket", "bath-mat"],
+    "distractorWordIds": ["trash-can", "bucket", "bathroom-cabinet"]
+  },
+  "bucket": {
+    "id": "bucket",
+    "text": "水桶",
+    "pinyin": "shuǐtǒng",
+    "measure": "个",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/bathroom/objects/22_bucket.webp",
+    "acceptedAnswers": ["水桶"],
+    "examples": [
+      {
+        "text": "我用水桶接水。",
+        "vi": "Mình lấy xô hứng nước.",
+        "pinyin": "Wǒ yòng shuǐ tǒng jiē shuǐ."
+      },
+      {
+        "text": "水桶在浴缸旁边。",
+        "vi": "Cái xô ở cạnh bồn tắm.",
+        "pinyin": "Shuǐ tǒng zài yù gāng páng biān."
+      }
+    ],
+    "relatedWordIds": ["bathtub", "faucet", "toilet-brush"],
+    "distractorWordIds": ["trash-can", "laundry-basket", "toothbrush-holder"]
+  },
+  "towel": {
+    "id": "towel",
+    "text": "毛巾",
+    "pinyin": "máojīn",
+    "measure": "条",
+    "meaningVi": "khăn tắm",
+    "image": "/assets/scenes/bathroom/objects/23_towel.webp",
+    "acceptedAnswers": ["毛巾", "浴巾"],
+    "examples": [
+      {
+        "text": "我用毛巾擦干身体。",
+        "vi": "Mình lau khô người bằng khăn tắm.",
+        "pinyin": "Wǒ yòng máo jīn cā gān shēn tǐ."
+      },
+      {
+        "text": "毛巾软软的，很舒服。",
+        "vi": "Khăn tắm mềm mềm, rất dễ chịu.",
+        "pinyin": "Máo jīn ruǎn ruǎn de, hěn shū fu."
+      }
+    ],
+    "relatedWordIds": ["towel-rack", "bathtub", "bath-mat"],
+    "distractorWordIds": ["bath-mat", "shower-curtain", "toilet-paper"]
+  },
+  "bathroom-cabinet": {
+    "id": "bathroom-cabinet",
+    "text": "浴室柜",
+    "pinyin": "yùshìguì",
+    "measure": "个",
+    "meaningVi": "tủ nhà tắm",
+    "image": "/assets/scenes/bathroom/objects/24_bathroom-cabinet.webp",
+    "acceptedAnswers": ["浴室柜", "镜柜", "柜子"],
+    "examples": [
+      {
+        "text": "我们把毛巾放在浴室柜里。",
+        "vi": "Nhà mình cất khăn trong tủ nhà tắm.",
+        "pinyin": "Wǒ men bǎ máo jīn fàng zài yù shì guì lǐ."
+      },
+      {
+        "text": "浴室柜的门上有镜子。",
+        "vi": "Trên cửa tủ nhà tắm có gương.",
+        "pinyin": "Yù shì guì de mén shàng yǒu jìng zi."
+      }
+    ],
+    "relatedWordIds": ["towel-rack", "towel", "shampoo"],
+    "distractorWordIds": ["laundry-basket", "trash-can", "shower-curtain"]
+  },
+  "fridge": {
+    "id": "fridge",
+    "text": "冰箱",
+    "pinyin": "bīngxiāng",
+    "measure": "台",
+    "meaningVi": "tủ lạnh",
+    "image": "/assets/scenes/kitchen/objects/01_fridge.webp",
+    "acceptedAnswers": ["冰箱", "电冰箱"],
+    "examples": [
+      {
+        "text": "牛奶在冰箱里。",
+        "vi": "Sữa ở trong tủ lạnh.",
+        "pinyin": "Niú nǎi zài bīng xiāng lǐ."
+      },
+      {
+        "text": "请把冰箱门关上。",
+        "vi": "Hãy đóng cửa tủ lạnh lại nhé.",
+        "pinyin": "Qǐng bǎ bīng xiāng mén guān shàng."
+      }
+    ],
+    "relatedWordIds": ["basket", "fruit-bowl", "blender"],
+    "distractorWordIds": ["stove", "dish-rack", "range-hood"]
+  },
+  "stove": {
+    "id": "stove",
+    "text": "炉子",
+    "pinyin": "lúzi",
+    "measure": "个",
+    "meaningVi": "bếp nấu",
+    "image": "/assets/scenes/kitchen/objects/02_stove.webp",
+    "acceptedAnswers": ["炉子", "炉灶", "燃气灶", "煤气灶"],
+    "examples": [
+      {
+        "text": "妈妈在炉子上煮汤。",
+        "vi": "Mẹ nấu canh trên bếp.",
+        "pinyin": "Mā ma zài lú zi shàng zhǔ tāng."
+      },
+      {
+        "text": "别碰炉子，很烫！",
+        "vi": "Đừng chạm vào bếp, nóng lắm đấy!",
+        "pinyin": "Bié pèng lú zi, hěn tàng!"
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "range-hood"],
+    "distractorWordIds": ["fridge", "microwave", "toaster"]
+  },
+  "dining-table": {
+    "id": "dining-table",
+    "text": "餐桌",
+    "pinyin": "cānzhuō",
+    "measure": "张",
+    "meaningVi": "bàn ăn",
+    "image": "/assets/scenes/kitchen/objects/03_dining-table.webp",
+    "acceptedAnswers": ["餐桌", "饭桌", "桌子"],
+    "examples": [
+      {
+        "text": "我们在餐桌上吃晚饭。",
+        "vi": "Chúng mình ăn tối ở bàn ăn.",
+        "pinyin": "Wǒ men zài cān zhuō shàng chī wǎn fàn."
+      },
+      {
+        "text": "餐桌上有一个果盘。",
+        "vi": "Trên bàn ăn có một tô trái cây.",
+        "pinyin": "Cān zhuō shàng yǒu yí gè guǒ pán."
+      }
+    ],
+    "relatedWordIds": ["kitchen-chair", "fruit-bowl", "basket"],
+    "distractorWordIds": ["dish-rack", "cutting-board", "kitchen-sink"]
+  },
+  "kitchen-chair": {
+    "id": "kitchen-chair",
+    "text": "椅子",
+    "pinyin": "yǐzi",
+    "measure": "把",
+    "meaningVi": "ghế ăn",
+    "image": "/assets/scenes/kitchen/objects/04_kitchen-chair.webp",
+    "acceptedAnswers": ["椅子", "餐椅"],
+    "examples": [
+      {
+        "text": "请坐在椅子上。",
+        "vi": "Mời bạn ngồi lên ghế.",
+        "pinyin": "Qǐng zuò zài yǐ zi shàng."
+      },
+      {
+        "text": "椅子上有粉色的坐垫。",
+        "vi": "Trên ghế có đệm ngồi màu hồng.",
+        "pinyin": "Yǐ zi shàng yǒu fěn sè de zuò diàn."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "plate", "bowl"],
+    "distractorWordIds": ["stove", "dish-rack", "fridge"]
+  },
+  "frying-pan": {
+    "id": "frying-pan",
+    "text": "平底锅",
+    "pinyin": "píngdǐguō",
+    "measure": "个",
+    "meaningVi": "chảo rán",
+    "image": "/assets/scenes/kitchen/objects/05_frying-pan.webp",
+    "acceptedAnswers": ["平底锅", "煎锅"],
+    "examples": [
+      {
+        "text": "爸爸用平底锅煎鸡蛋。",
+        "vi": "Bố rán trứng bằng chảo.",
+        "pinyin": "Bà ba yòng píng dǐ guō jiān jī dàn."
+      },
+      {
+        "text": "这个平底锅是蓝色的。",
+        "vi": "Cái chảo rán này màu xanh dương.",
+        "pinyin": "Zhè ge píng dǐ guō shì lán sè de."
+      }
+    ],
+    "relatedWordIds": ["stove", "wooden-spoon", "range-hood"],
+    "distractorWordIds": ["cooking-pot", "kettle", "plate"]
+  },
+  "kettle": {
+    "id": "kettle",
+    "text": "水壶",
+    "pinyin": "shuǐhú",
+    "measure": "个",
+    "meaningVi": "ấm đun nước",
+    "image": "/assets/scenes/kitchen/objects/06_kettle.webp",
+    "acceptedAnswers": ["水壶", "烧水壶"],
+    "examples": [
+      {
+        "text": "水壶里的水开了。",
+        "vi": "Nước trong ấm sôi rồi.",
+        "pinyin": "Shuǐ hú lǐ de shuǐ kāi le."
+      },
+      {
+        "text": "小心，水壶很烫。",
+        "vi": "Cẩn thận, ấm nước nóng lắm.",
+        "pinyin": "Xiǎo xīn, shuǐ hú hěn tàng."
+      }
+    ],
+    "relatedWordIds": ["stove", "range-hood", "toaster"],
+    "distractorWordIds": ["cooking-pot", "blender", "rice-cooker"]
+  },
+  "fruit-bowl": {
+    "id": "fruit-bowl",
+    "text": "果盘",
+    "pinyin": "guǒpán",
+    "measure": "个",
+    "meaningVi": "tô trái cây",
+    "image": "/assets/scenes/kitchen/objects/07_fruit-bowl.webp",
+    "acceptedAnswers": ["果盘", "水果盘"],
+    "examples": [
+      {
+        "text": "果盘里有苹果和香蕉。",
+        "vi": "Trong tô trái cây có táo và chuối.",
+        "pinyin": "Guǒ pán lǐ yǒu píng guǒ hé xiāng jiāo."
+      },
+      {
+        "text": "果盘在餐桌上。",
+        "vi": "Tô trái cây ở trên bàn ăn.",
+        "pinyin": "Guǒ pán zài cān zhuō shàng."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "basket", "knife"],
+    "distractorWordIds": ["bowl", "plate", "cooking-pot"]
+  },
+  "spice-jar": {
+    "id": "spice-jar",
+    "text": "调料罐",
+    "pinyin": "tiáoliàoguàn",
+    "measure": "个",
+    "meaningVi": "lọ gia vị",
+    "image": "/assets/scenes/kitchen/objects/08_spice-jar.webp",
+    "acceptedAnswers": ["调料罐", "调味罐", "调料瓶", "调味瓶"],
+    "examples": [
+      {
+        "text": "盐和胡椒都在调料罐里。",
+        "vi": "Muối và tiêu đều ở trong lọ gia vị.",
+        "pinyin": "Yán hé hú jiāo dōu zài tiáo liào guàn lǐ."
+      },
+      {
+        "text": "调料罐在架子上。",
+        "vi": "Lọ gia vị ở trên kệ.",
+        "pinyin": "Tiáo liào guàn zài jià zi shàng."
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "cutting-board"],
+    "distractorWordIds": ["dishwashing-liquid", "blender", "bowl"]
+  },
+  "cutting-board": {
+    "id": "cutting-board",
+    "text": "菜板",
+    "pinyin": "càibǎn",
+    "measure": "块",
+    "meaningVi": "thớt gỗ",
+    "image": "/assets/scenes/kitchen/objects/09_cutting-board.webp",
+    "acceptedAnswers": ["菜板", "砧板", "案板", "切菜板"],
+    "examples": [
+      {
+        "text": "我在菜板上切胡萝卜。",
+        "vi": "Mình thái cà rốt trên thớt.",
+        "pinyin": "Wǒ zài cài bǎn shàng qiè hú luó bo."
+      },
+      {
+        "text": "这块菜板是木头做的。",
+        "vi": "Cái thớt này làm bằng gỗ.",
+        "pinyin": "Zhè kuài cài bǎn shì mù tou zuò de."
+      }
+    ],
+    "relatedWordIds": ["knife", "wooden-spoon", "kitchen-sink"],
+    "distractorWordIds": ["plate", "dish-rack", "apron"]
+  },
+  "wooden-spoon": {
+    "id": "wooden-spoon",
+    "text": "木勺",
+    "pinyin": "mùsháo",
+    "measure": "把",
+    "meaningVi": "muỗng gỗ",
+    "image": "/assets/scenes/kitchen/objects/10_wooden-spoon.webp",
+    "acceptedAnswers": ["木勺", "木勺子", "勺子"],
+    "examples": [
+      {
+        "text": "妈妈用木勺搅汤。",
+        "vi": "Mẹ khuấy canh bằng muỗng gỗ.",
+        "pinyin": "Mā ma yòng mù sháo jiǎo tāng."
+      },
+      {
+        "text": "杯子里放着几把木勺。",
+        "vi": "Trong cốc có mấy cái muỗng gỗ.",
+        "pinyin": "Bēi zi lǐ fàng zhe jǐ bǎ mù sháo."
+      }
+    ],
+    "relatedWordIds": ["cooking-pot", "frying-pan", "cutting-board"],
+    "distractorWordIds": ["knife", "plate", "spice-jar"]
+  },
+  "plate": {
+    "id": "plate",
+    "text": "盘子",
+    "pinyin": "pánzi",
+    "measure": "个",
+    "meaningVi": "đĩa ăn",
+    "image": "/assets/scenes/kitchen/objects/11_plate.webp",
+    "acceptedAnswers": ["盘子", "碟子"],
+    "examples": [
+      {
+        "text": "把蛋糕放在盘子里吧。",
+        "vi": "Để bánh vào đĩa nhé.",
+        "pinyin": "Bǎ dàn gāo fàng zài pán zi lǐ ba."
+      },
+      {
+        "text": "盘子在碗架上。",
+        "vi": "Đĩa ở trên giá úp bát đĩa.",
+        "pinyin": "Pán zi zài wǎn jià shàng."
+      }
+    ],
+    "relatedWordIds": ["dish-rack", "bowl", "dining-table"],
+    "distractorWordIds": ["cutting-board", "frying-pan", "basket"]
+  },
+  "bowl": {
+    "id": "bowl",
+    "text": "碗",
+    "pinyin": "wǎn",
+    "measure": "个",
+    "meaningVi": "bát ăn",
+    "image": "/assets/scenes/kitchen/objects/12_bowl.webp",
+    "acceptedAnswers": ["碗", "饭碗"],
+    "examples": [
+      {
+        "text": "我用小碗吃米饭。",
+        "vi": "Mình ăn cơm bằng cái bát nhỏ.",
+        "pinyin": "Wǒ yòng xiǎo wǎn chī mǐ fàn."
+      },
+      {
+        "text": "碗里有几个橙子。",
+        "vi": "Trong bát có mấy quả cam.",
+        "pinyin": "Wǎn lǐ yǒu jǐ gè chéng zǐ."
+      }
+    ],
+    "relatedWordIds": ["plate", "rice-cooker", "dish-rack"],
+    "distractorWordIds": ["fruit-bowl", "cooking-pot", "basket"]
+  },
+  "range-hood": {
+    "id": "range-hood",
+    "text": "抽油烟机",
+    "pinyin": "chōuyóuyānjī",
+    "measure": "台",
+    "meaningVi": "máy hút mùi",
+    "image": "/assets/scenes/kitchen/objects/13_range-hood.webp",
+    "acceptedAnswers": ["抽油烟机", "油烟机", "吸油烟机"],
+    "examples": [
+      {
+        "text": "抽油烟机在炉子上面。",
+        "vi": "Máy hút mùi ở phía trên bếp.",
+        "pinyin": "Chōu yóu yān jī zài lú zi shàng miàn."
+      },
+      {
+        "text": "做饭的时候要打开抽油烟机。",
+        "vi": "Khi nấu ăn thì phải bật máy hút mùi.",
+        "pinyin": "Zuò fàn de shí hou yào dǎ kāi chōu yóu yān jī."
+      }
+    ],
+    "relatedWordIds": ["stove", "frying-pan", "kettle"],
+    "distractorWordIds": ["microwave", "fridge", "toaster"]
+  },
+  "dish-rack": {
+    "id": "dish-rack",
+    "text": "碗架",
+    "pinyin": "wǎnjià",
+    "measure": "个",
+    "meaningVi": "giá úp bát đĩa",
+    "image": "/assets/scenes/kitchen/objects/14_dish-rack.webp",
+    "acceptedAnswers": ["碗架", "碗碟架", "沥水架"],
+    "examples": [
+      {
+        "text": "把干净的盘子放到碗架上。",
+        "vi": "Úp đĩa sạch lên giá úp bát đĩa nhé.",
+        "pinyin": "Bǎ gān jing de pán zi fàng dào wǎn jià shàng."
+      },
+      {
+        "text": "碗架在水池旁边。",
+        "vi": "Giá úp bát đĩa ở cạnh bồn rửa bát.",
+        "pinyin": "Wǎn jià zài shuǐ chí páng biān."
+      }
+    ],
+    "relatedWordIds": ["plate", "kitchen-sink", "dishwashing-liquid"],
+    "distractorWordIds": ["basket", "spice-jar", "cutting-board"]
+  },
+  "apron": {
+    "id": "apron",
+    "text": "围裙",
+    "pinyin": "wéiqún",
+    "measure": "条",
+    "meaningVi": "tạp dề",
+    "image": "/assets/scenes/kitchen/objects/15_apron.webp",
+    "acceptedAnswers": ["围裙"],
+    "examples": [
+      {
+        "text": "妈妈做饭的时候穿着围裙。",
+        "vi": "Mẹ mặc tạp dề khi nấu ăn.",
+        "pinyin": "Mā ma zuò fàn de shí hou chuān zhe wéi qún."
+      },
+      {
+        "text": "我的围裙是粉色和白色的。",
+        "vi": "Tạp dề của mình màu hồng và trắng.",
+        "pinyin": "Wǒ de wéi qún shì fěn sè hé bái sè de."
+      }
+    ],
+    "relatedWordIds": ["stove", "cutting-board", "kitchen-sink"],
+    "distractorWordIds": ["basket", "range-hood", "dishwashing-liquid"]
+  },
+  "knife": {
+    "id": "knife",
+    "text": "刀子",
+    "pinyin": "dāozi",
+    "measure": "把",
+    "meaningVi": "con dao",
+    "image": "/assets/scenes/kitchen/objects/16_knife.webp",
+    "acceptedAnswers": ["刀子", "刀", "菜刀"],
+    "examples": [
+      {
+        "text": "小心刀子！",
+        "vi": "Cẩn thận với con dao nhé!",
+        "pinyin": "Xiǎo xīn dāo zi!"
+      },
+      {
+        "text": "爸爸用刀子切面包。",
+        "vi": "Bố cắt bánh mì bằng dao.",
+        "pinyin": "Bà ba yòng dāo zi qiē miàn bāo."
+      }
+    ],
+    "relatedWordIds": ["cutting-board", "fruit-bowl", "plate"],
+    "distractorWordIds": ["wooden-spoon", "frying-pan", "spice-jar"]
+  },
+  "dishwashing-liquid": {
+    "id": "dishwashing-liquid",
+    "text": "洗洁精",
+    "pinyin": "xǐjiéjīng",
+    "meaningVi": "nước rửa bát",
+    "image": "/assets/scenes/kitchen/objects/17_dishwashing-liquid.webp",
+    "acceptedAnswers": ["洗洁精", "洗碗液", "洗涤灵"],
+    "examples": [
+      {
+        "text": "往海绵上挤一点儿洗洁精。",
+        "vi": "Bóp một ít nước rửa bát lên miếng bọt biển.",
+        "pinyin": "Wǎng hǎi mián shàng jǐ yì diǎnr xǐ jié jīng."
+      },
+      {
+        "text": "这瓶洗洁精是柠檬味的。",
+        "vi": "Chai nước rửa bát này có mùi chanh.",
+        "pinyin": "Zhè píng xǐ jié jīng shì níng méng wèi de."
+      }
+    ],
+    "relatedWordIds": ["kitchen-sink", "dish-rack", "plate"],
+    "distractorWordIds": ["spice-jar", "blender", "kettle"]
+  },
+  "rice-cooker": {
+    "id": "rice-cooker",
+    "text": "电饭锅",
+    "pinyin": "diànfànguō",
+    "measure": "个",
+    "meaningVi": "nồi cơm điện",
+    "image": "/assets/scenes/kitchen/objects/18_rice-cooker.webp",
+    "acceptedAnswers": ["电饭锅", "电饭煲"],
+    "examples": [
+      {
+        "text": "妈妈用电饭锅煮米饭。",
+        "vi": "Mẹ nấu cơm bằng nồi cơm điện.",
+        "pinyin": "Mā ma yòng diàn fàn guō zhǔ mǐ fàn."
+      },
+      {
+        "text": "我家的电饭锅是粉色的。",
+        "vi": "Nồi cơm điện nhà mình màu hồng.",
+        "pinyin": "Wǒ jiā de diàn fàn guō shì fěn sè de."
+      }
+    ],
+    "relatedWordIds": ["bowl", "toaster", "microwave"],
+    "distractorWordIds": ["cooking-pot", "kettle", "blender"]
+  },
+  "toaster": {
+    "id": "toaster",
+    "text": "烤面包机",
+    "pinyin": "kǎomiànbāojī",
+    "measure": "台",
+    "meaningVi": "máy nướng bánh mì",
+    "image": "/assets/scenes/kitchen/objects/19_toaster.webp",
+    "acceptedAnswers": ["烤面包机", "面包机", "吐司机"],
+    "examples": [
+      {
+        "text": "我用烤面包机烤面包。",
+        "vi": "Mình nướng bánh mì bằng máy nướng bánh mì.",
+        "pinyin": "Wǒ yòng kǎo miàn bāo jī kǎo miàn bāo."
+      },
+      {
+        "text": "面包从烤面包机里跳出来了。",
+        "vi": "Bánh mì nướng bật ra khỏi máy rồi.",
+        "pinyin": "Miàn bāo cóng kǎo miàn bāo jī lǐ tiào chū lái le."
+      }
+    ],
+    "relatedWordIds": ["plate", "kettle", "microwave"],
+    "distractorWordIds": ["rice-cooker", "blender", "range-hood"]
+  },
+  "microwave": {
+    "id": "microwave",
+    "text": "微波炉",
+    "pinyin": "wēibōlú",
+    "measure": "台",
+    "meaningVi": "lò vi sóng",
+    "image": "/assets/scenes/kitchen/objects/20_microwave.webp",
+    "acceptedAnswers": ["微波炉"],
+    "examples": [
+      {
+        "text": "妈妈用微波炉热牛奶。",
+        "vi": "Mẹ hâm nóng sữa bằng lò vi sóng.",
+        "pinyin": "Mā ma yòng wēi bō lú rè niú nǎi."
+      },
+      {
+        "text": "微波炉在架子上。",
+        "vi": "Lò vi sóng ở trên kệ.",
+        "pinyin": "Wēi bō lú zài jià zi shàng."
+      }
+    ],
+    "relatedWordIds": ["fridge", "bowl", "toaster"],
+    "distractorWordIds": ["stove", "range-hood", "rice-cooker"]
+  },
+  "kitchen-sink": {
+    "id": "kitchen-sink",
+    "text": "水池",
+    "pinyin": "shuǐchí",
+    "measure": "个",
+    "meaningVi": "bồn rửa bát",
+    "image": "/assets/scenes/kitchen/objects/21_kitchen-sink.webp",
+    "acceptedAnswers": ["水池", "水槽", "洗碗池"],
+    "examples": [
+      {
+        "text": "我们在水池里洗碗。",
+        "vi": "Chúng mình rửa bát ở bồn rửa bát.",
+        "pinyin": "Wǒ men zài shuǐ chí lǐ xǐ wǎn."
+      },
+      {
+        "text": "水池在窗户下面。",
+        "vi": "Bồn rửa bát ở dưới cửa sổ.",
+        "pinyin": "Shuǐ chí zài chuāng hu xià miàn."
+      }
+    ],
+    "relatedWordIds": ["dishwashing-liquid", "dish-rack", "apron"],
+    "distractorWordIds": ["stove", "fridge", "dining-table"]
+  },
+  "cooking-pot": {
+    "id": "cooking-pot",
+    "text": "汤锅",
+    "pinyin": "tāngguō",
+    "measure": "个",
+    "meaningVi": "nồi nấu canh",
+    "image": "/assets/scenes/kitchen/objects/22_cooking-pot.webp",
+    "acceptedAnswers": ["汤锅", "炖锅"],
+    "examples": [
+      {
+        "text": "汤锅里的汤好香啊。",
+        "vi": "Canh trong nồi thơm quá.",
+        "pinyin": "Tāng guō lǐ de tāng hǎo xiāng a."
+      },
+      {
+        "text": "汤锅在炉子上。",
+        "vi": "Cái nồi nấu canh ở trên bếp.",
+        "pinyin": "Tāng guō zài lú zi shàng."
+      }
+    ],
+    "relatedWordIds": ["stove", "wooden-spoon", "spice-jar"],
+    "distractorWordIds": ["frying-pan", "kettle", "rice-cooker"]
+  },
+  "blender": {
+    "id": "blender",
+    "text": "榨汁机",
+    "pinyin": "zhàzhījī",
+    "measure": "台",
+    "meaningVi": "máy xay sinh tố",
+    "image": "/assets/scenes/kitchen/objects/23_blender.webp",
+    "acceptedAnswers": ["榨汁机", "搅拌机", "料理机"],
+    "examples": [
+      {
+        "text": "我用榨汁机做草莓奶昔。",
+        "vi": "Mình làm sinh tố dâu bằng máy xay sinh tố.",
+        "pinyin": "Wǒ yòng zhà zhī jī zuò cǎo méi nǎi xī."
+      },
+      {
+        "text": "榨汁机的声音很大。",
+        "vi": "Máy xay sinh tố kêu rất to.",
+        "pinyin": "Zhà zhī jī de shēng yīn hěn dà."
+      }
+    ],
+    "relatedWordIds": ["fruit-bowl", "fridge", "bowl"],
+    "distractorWordIds": ["kettle", "toaster", "rice-cooker"]
+  },
+  "basket": {
+    "id": "basket",
+    "text": "篮子",
+    "pinyin": "lánzi",
+    "measure": "个",
+    "meaningVi": "giỏ đựng thực phẩm",
+    "image": "/assets/scenes/kitchen/objects/24_basket.webp",
+    "acceptedAnswers": ["篮子", "菜篮子", "菜篮"],
+    "examples": [
+      {
+        "text": "篮子里有面包。",
+        "vi": "Trong giỏ có bánh mì.",
+        "pinyin": "Lán zi lǐ yǒu miàn bāo."
+      },
+      {
+        "text": "我们提着篮子去买菜。",
+        "vi": "Chúng mình xách giỏ đi chợ.",
+        "pinyin": "Wǒ men tí zhe lán zi qù mǎi cài."
+      }
+    ],
+    "relatedWordIds": ["dining-table", "fruit-bowl", "fridge"],
+    "distractorWordIds": ["bowl", "dish-rack", "cooking-pot"]
+  },
+  "sofa": {
+    "id": "sofa",
+    "text": "沙发",
+    "pinyin": "shāfā",
+    "measure": "张",
+    "meaningVi": "ghế sofa",
+    "image": "/assets/scenes/living-room/objects/01_sofa.webp",
+    "acceptedAnswers": ["沙发"],
+    "examples": [
+      {
+        "text": "我们坐在沙发上看电视。",
+        "vi": "Chúng mình ngồi trên ghế sofa xem tivi.",
+        "pinyin": "Wǒ men zuò zài shā fā shàng kàn diàn shì."
+      },
+      {
+        "text": "沙发又大又软。",
+        "vi": "Ghế sofa vừa to vừa mềm.",
+        "pinyin": "Shā fā yòu dà yòu ruǎn."
+      }
+    ],
+    "relatedWordIds": ["cushion", "ottoman", "coffee-table"],
+    "distractorWordIds": ["armchair", "cabinet", "side-table"]
+  },
+  "armchair": {
+    "id": "armchair",
+    "text": "扶手椅",
+    "pinyin": "fúshǒuyǐ",
+    "measure": "把",
+    "meaningVi": "ghế bành",
+    "image": "/assets/scenes/living-room/objects/02_armchair.webp",
+    "acceptedAnswers": ["扶手椅", "单人沙发"],
+    "examples": [
+      {
+        "text": "爸爸坐在扶手椅上看书。",
+        "vi": "Bố ngồi trên ghế bành đọc sách.",
+        "pinyin": "Bà ba zuò zài fú shǒu yǐ shàng kàn shū."
+      },
+      {
+        "text": "这把扶手椅是黄色的。",
+        "vi": "Chiếc ghế bành này màu vàng.",
+        "pinyin": "Zhè bǎ fú shǒu yǐ shì huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["cushion", "newspaper", "side-table"],
+    "distractorWordIds": ["sofa", "ottoman", "cabinet"]
+  },
+  "ottoman": {
+    "id": "ottoman",
+    "text": "脚凳",
+    "pinyin": "jiǎodèng",
+    "measure": "个",
+    "meaningVi": "ghế đôn",
+    "image": "/assets/scenes/living-room/objects/03_ottoman.webp",
+    "acceptedAnswers": ["脚凳", "沙发凳"],
+    "examples": [
+      {
+        "text": "我把脚放在脚凳上。",
+        "vi": "Mình gác chân lên ghế đôn.",
+        "pinyin": "Wǒ bǎ jiǎo fàng zài jiǎo dèng shàng."
+      },
+      {
+        "text": "脚凳在沙发旁边。",
+        "vi": "Ghế đôn ở cạnh ghế sofa.",
+        "pinyin": "Jiǎo dèng zài shā fā páng biān."
+      }
+    ],
+    "relatedWordIds": ["sofa", "coffee-table", "floor"],
+    "distractorWordIds": ["armchair", "cushion", "side-table"]
+  },
+  "coffee-table": {
+    "id": "coffee-table",
+    "text": "茶几",
+    "pinyin": "chájī",
+    "measure": "张",
+    "meaningVi": "bàn trà",
+    "image": "/assets/scenes/living-room/objects/04_coffee-table.webp",
+    "acceptedAnswers": ["茶几"],
+    "examples": [
+      {
+        "text": "杯子在茶几上。",
+        "vi": "Cái cốc ở trên bàn trà.",
+        "pinyin": "Bēi zi zài chá jī shàng."
+      },
+      {
+        "text": "我家的茶几是圆的。",
+        "vi": "Bàn trà nhà mình hình tròn.",
+        "pinyin": "Wǒ jiā de chá jī shì yuán de."
+      }
+    ],
+    "relatedWordIds": ["cup", "coaster", "tissue-box"],
+    "distractorWordIds": ["side-table", "tv-stand", "cabinet"]
+  },
+  "side-table": {
+    "id": "side-table",
+    "text": "边桌",
+    "pinyin": "biānzhuō",
+    "measure": "张",
+    "meaningVi": "bàn phụ",
+    "image": "/assets/scenes/living-room/objects/05_side-table.webp",
+    "acceptedAnswers": ["边桌", "边几"],
+    "examples": [
+      {
+        "text": "边桌比茶几小。",
+        "vi": "Bàn phụ nhỏ hơn bàn trà.",
+        "pinyin": "Biān zhuō bǐ chá jī xiǎo."
+      },
+      {
+        "text": "边桌在扶手椅旁边。",
+        "vi": "Bàn phụ ở cạnh ghế bành.",
+        "pinyin": "Biān zhuō zài fú shǒu yǐ páng biān."
+      }
+    ],
+    "relatedWordIds": ["sofa", "armchair", "floor-lamp"],
+    "distractorWordIds": ["coffee-table", "wall-shelf", "ottoman"]
+  },
+  "tv": {
+    "id": "tv",
+    "text": "电视",
+    "pinyin": "diànshì",
+    "measure": "台",
+    "meaningVi": "tivi",
+    "image": "/assets/scenes/living-room/objects/06_tv.webp",
+    "acceptedAnswers": ["电视", "电视机"],
+    "examples": [
+      {
+        "text": "电视里在放动画片。",
+        "vi": "Tivi đang chiếu phim hoạt hình.",
+        "pinyin": "Diàn shì lǐ zài fàng dòng huà piàn."
+      },
+      {
+        "text": "请把电视关掉。",
+        "vi": "Làm ơn tắt tivi đi.",
+        "pinyin": "Qǐng bǎ diàn shì guān diào."
+      }
+    ],
+    "relatedWordIds": ["remote-control", "tv-stand", "speaker"],
+    "distractorWordIds": ["painting", "window", "air-conditioner"]
+  },
+  "remote-control": {
+    "id": "remote-control",
+    "text": "遥控器",
+    "pinyin": "yáokòngqì",
+    "measure": "个",
+    "meaningVi": "điều khiển từ xa",
+    "image": "/assets/scenes/living-room/objects/07_remote-control.webp",
+    "acceptedAnswers": ["遥控器", "遥控"],
+    "examples": [
+      {
+        "text": "遥控器在哪儿？",
+        "vi": "Điều khiển từ xa ở đâu rồi?",
+        "pinyin": "Yáo kòng qì zài nǎr?"
+      },
+      {
+        "text": "我用遥控器打开电视。",
+        "vi": "Mình dùng điều khiển từ xa để bật tivi.",
+        "pinyin": "Wǒ yòng yáo kòng qì dǎ kāi diàn shì."
+      }
+    ],
+    "relatedWordIds": ["tv", "coffee-table", "air-conditioner"],
+    "distractorWordIds": ["light-switch", "wi-fi-router", "speaker"]
+  },
+  "tv-stand": {
+    "id": "tv-stand",
+    "text": "电视柜",
+    "pinyin": "diànshìguì",
+    "measure": "个",
+    "meaningVi": "kệ tivi",
+    "image": "/assets/scenes/living-room/objects/08_tv-stand.webp",
+    "acceptedAnswers": ["电视柜"],
+    "examples": [
+      {
+        "text": "电视在电视柜上。",
+        "vi": "Tivi ở trên kệ tivi.",
+        "pinyin": "Diàn shì zài diàn shì guì shàng."
+      },
+      {
+        "text": "电视柜上有一个路由器。",
+        "vi": "Trên kệ tivi có một bộ phát Wi-Fi.",
+        "pinyin": "Diàn shì guì shàng yǒu yí gè lù yóu qì."
+      }
+    ],
+    "relatedWordIds": ["tv", "wi-fi-router", "power-outlet"],
+    "distractorWordIds": ["cabinet", "wall-shelf", "coffee-table"]
+  },
+  "cabinet": {
+    "id": "cabinet",
+    "text": "柜子",
+    "pinyin": "guìzi",
+    "measure": "个",
+    "meaningVi": "tủ đựng đồ",
+    "image": "/assets/scenes/living-room/objects/09_cabinet.webp",
+    "acceptedAnswers": ["柜子"],
+    "examples": [
+      {
+        "text": "我们把玩具放在柜子里。",
+        "vi": "Chúng mình cất đồ chơi trong tủ.",
+        "pinyin": "Wǒ men bǎ wán jù fàng zài guì zi lǐ."
+      },
+      {
+        "text": "柜子有四个抽屉。",
+        "vi": "Cái tủ có bốn ngăn kéo.",
+        "pinyin": "Guì zi yǒu sì gè chōu tì."
+      }
+    ],
+    "relatedWordIds": ["speaker", "painting", "wall-shelf"],
+    "distractorWordIds": ["tv-stand", "side-table", "door"]
+  },
+  "newspaper": {
+    "id": "newspaper",
+    "text": "报纸",
+    "pinyin": "bàozhǐ",
+    "measure": "份",
+    "meaningVi": "tờ báo",
+    "image": "/assets/scenes/living-room/objects/10_newspaper.webp",
+    "acceptedAnswers": ["报纸"],
+    "examples": [
+      {
+        "text": "爸爸每天早上看报纸。",
+        "vi": "Bố đọc báo mỗi sáng.",
+        "pinyin": "Bà ba měi tiān zǎo shang kàn bào zhǐ."
+      },
+      {
+        "text": "报纸在茶几上。",
+        "vi": "Tờ báo ở trên bàn trà.",
+        "pinyin": "Bào zhǐ zài chá jī shàng."
+      }
+    ],
+    "relatedWordIds": ["armchair", "cup", "coffee-table"],
+    "distractorWordIds": ["painting", "tissue-box", "coaster"]
+  },
+  "floor-lamp": {
+    "id": "floor-lamp",
+    "text": "落地灯",
+    "pinyin": "luòdìdēng",
+    "measure": "盏",
+    "meaningVi": "đèn cây",
+    "image": "/assets/scenes/living-room/objects/11_floor-lamp.webp",
+    "acceptedAnswers": ["落地灯"],
+    "examples": [
+      {
+        "text": "请打开落地灯。",
+        "vi": "Làm ơn bật đèn cây lên.",
+        "pinyin": "Qǐng dǎ kāi luò dì dēng."
+      },
+      {
+        "text": "落地灯在窗户旁边。",
+        "vi": "Đèn cây ở cạnh cửa sổ.",
+        "pinyin": "Luò dì dēng zài chuāng hu páng biān."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "sofa", "side-table"],
+    "distractorWordIds": ["ceiling-light", "ceiling-fan", "vase"]
+  },
+  "ceiling-light": {
+    "id": "ceiling-light",
+    "text": "吸顶灯",
+    "pinyin": "xīdǐngdēng",
+    "measure": "盏",
+    "meaningVi": "đèn trần",
+    "image": "/assets/scenes/living-room/objects/12_ceiling-light.webp",
+    "acceptedAnswers": ["吸顶灯", "顶灯"],
+    "examples": [
+      {
+        "text": "吸顶灯很亮。",
+        "vi": "Đèn trần rất sáng.",
+        "pinyin": "Xī dǐng dēng hěn liàng."
+      },
+      {
+        "text": "晚上妈妈打开吸顶灯。",
+        "vi": "Buổi tối mẹ bật đèn trần.",
+        "pinyin": "Wǎn shang mā ma dǎ kāi xī dǐng dēng."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "ceiling-fan", "floor-lamp"],
+    "distractorWordIds": ["air-conditioner", "speaker", "robot-mop"]
+  },
+  "ceiling-fan": {
+    "id": "ceiling-fan",
+    "text": "吊扇",
+    "pinyin": "diàoshàn",
+    "measure": "台",
+    "meaningVi": "quạt trần",
+    "image": "/assets/scenes/living-room/objects/13_ceiling-fan.webp",
+    "acceptedAnswers": ["吊扇"],
+    "examples": [
+      {
+        "text": "吊扇转呀转。",
+        "vi": "Quạt trần quay vòng vòng.",
+        "pinyin": "Diào shàn zhuǎn ya zhuǎn."
+      },
+      {
+        "text": "好热啊，我们打开吊扇吧！",
+        "vi": "Nóng quá, mình bật quạt trần lên nhé!",
+        "pinyin": "Hǎo rè a, wǒ men dǎ kāi diào shàn ba!"
+      }
+    ],
+    "relatedWordIds": ["air-conditioner", "ceiling-light", "light-switch"],
+    "distractorWordIds": ["floor-lamp", "wi-fi-router", "speaker"]
+  },
+  "air-conditioner": {
+    "id": "air-conditioner",
+    "text": "空调",
+    "pinyin": "kōngtiáo",
+    "measure": "台",
+    "meaningVi": "máy điều hòa",
+    "image": "/assets/scenes/living-room/objects/14_air-conditioner.webp",
+    "acceptedAnswers": ["空调"],
+    "examples": [
+      {
+        "text": "开了空调，房间很凉快。",
+        "vi": "Bật máy điều hòa lên, phòng mát lắm.",
+        "pinyin": "Kāi le kōng tiáo, fáng jiān hěn liáng kuai."
+      },
+      {
+        "text": "开空调的时候，要关上窗户。",
+        "vi": "Khi bật máy điều hòa, phải đóng cửa sổ lại.",
+        "pinyin": "Kāi kōng tiáo de shí hou, yào guān shàng chuāng hu."
+      }
+    ],
+    "relatedWordIds": ["ceiling-fan", "remote-control", "window"],
+    "distractorWordIds": ["ceiling-light", "speaker", "tv"]
+  },
+  "robot-mop": {
+    "id": "robot-mop",
+    "text": "扫地机器人",
+    "pinyin": "sǎodì jīqìrén",
+    "measure": "台",
+    "meaningVi": "robot quét nhà",
+    "image": "/assets/scenes/living-room/objects/15_robot-mop.webp",
+    "acceptedAnswers": ["扫地机器人", "扫地机"],
+    "examples": [
+      {
+        "text": "扫地机器人把地板扫干净了。",
+        "vi": "Robot quét nhà đã quét sạch sàn nhà.",
+        "pinyin": "Sǎo dì jī qì rén bǎ dì bǎn sǎo gān jing le."
+      },
+      {
+        "text": "扫地机器人会自己走来走去。",
+        "vi": "Robot quét nhà tự chạy tới chạy lui.",
+        "pinyin": "Sǎo dì jī qì rén huì zì jǐ zǒu lái zǒu qù."
+      }
+    ],
+    "relatedWordIds": ["floor", "power-outlet", "tv-stand"],
+    "distractorWordIds": ["speaker", "wi-fi-router", "ottoman"]
+  },
+  "coaster": {
+    "id": "coaster",
+    "text": "杯垫",
+    "pinyin": "bēidiàn",
+    "measure": "个",
+    "meaningVi": "miếng lót ly",
+    "image": "/assets/scenes/living-room/objects/16_coaster.webp",
+    "acceptedAnswers": ["杯垫"],
+    "examples": [
+      {
+        "text": "把杯子放在杯垫上。",
+        "vi": "Hãy đặt cốc lên miếng lót ly.",
+        "pinyin": "Bǎ bēi zi fàng zài bēi diàn shàng."
+      },
+      {
+        "text": "有了杯垫，桌子就不会湿。",
+        "vi": "Có miếng lót ly thì mặt bàn sẽ không bị ướt.",
+        "pinyin": "Yǒu le bēi diàn, zhuō zi jiù bú huì shī."
+      }
+    ],
+    "relatedWordIds": ["cup", "coffee-table", "vase"],
+    "distractorWordIds": ["tissue-box", "newspaper", "remote-control"]
+  },
+  "curtains": {
+    "id": "curtains",
+    "text": "窗帘",
+    "pinyin": "chuānglián",
+    "meaningVi": "rèm cửa",
+    "image": "/assets/scenes/living-room/objects/17_curtains.webp",
+    "acceptedAnswers": ["窗帘"],
+    "examples": [
+      {
+        "text": "请把窗帘拉开。",
+        "vi": "Làm ơn kéo rèm cửa ra.",
+        "pinyin": "Qǐng bǎ chuāng lián lā kāi."
+      },
+      {
+        "text": "窗帘是绿色的。",
+        "vi": "Rèm cửa màu xanh lá.",
+        "pinyin": "Chuāng lián shì lǜ sè de."
+      }
+    ],
+    "relatedWordIds": ["window", "floor-lamp", "sofa"],
+    "distractorWordIds": ["painting", "door", "cushion"]
+  },
+  "window": {
+    "id": "window",
+    "text": "窗户",
+    "pinyin": "chuānghu",
+    "measure": "扇",
+    "meaningVi": "cửa sổ",
+    "image": "/assets/scenes/living-room/objects/18_window.webp",
+    "acceptedAnswers": ["窗户", "窗子"],
+    "examples": [
+      {
+        "text": "我能从窗户看到大树。",
+        "vi": "Mình có thể nhìn thấy cây to qua cửa sổ.",
+        "pinyin": "Wǒ néng cóng chuāng hu kàn dào dà shù."
+      },
+      {
+        "text": "请打开窗户。",
+        "vi": "Làm ơn mở cửa sổ ra.",
+        "pinyin": "Qǐng dǎ kāi chuāng hu."
+      }
+    ],
+    "relatedWordIds": ["curtains", "air-conditioner", "floor-lamp"],
+    "distractorWordIds": ["door", "painting", "tv"]
+  },
+  "door": {
+    "id": "door",
+    "text": "门",
+    "pinyin": "mén",
+    "measure": "扇",
+    "meaningVi": "cửa ra vào",
+    "image": "/assets/scenes/living-room/objects/19_door.webp",
+    "acceptedAnswers": ["门"],
+    "examples": [
+      {
+        "text": "请把门关上。",
+        "vi": "Làm ơn đóng cửa lại.",
+        "pinyin": "Qǐng bǎ mén guān shàng."
+      },
+      {
+        "text": "有人在敲门。",
+        "vi": "Có ai đó đang gõ cửa.",
+        "pinyin": "Yǒu rén zài qiāo mén."
+      }
+    ],
+    "relatedWordIds": ["light-switch", "floor", "cabinet"],
+    "distractorWordIds": ["window", "painting", "tv-stand"]
+  },
+  "cushion": {
+    "id": "cushion",
+    "text": "抱枕",
+    "pinyin": "bàozhěn",
+    "measure": "个",
+    "meaningVi": "gối tựa",
+    "image": "/assets/scenes/living-room/objects/20_cushion.webp",
+    "acceptedAnswers": ["抱枕", "靠垫"],
+    "examples": [
+      {
+        "text": "扶手椅上有一个绿色的抱枕。",
+        "vi": "Trên ghế bành có một chiếc gối tựa màu xanh lá.",
+        "pinyin": "Fú shǒu yǐ shàng yǒu yí gè lǜ sè de bào zhěn."
+      },
+      {
+        "text": "我抱着软软的抱枕。",
+        "vi": "Mình ôm chiếc gối tựa mềm mềm.",
+        "pinyin": "Wǒ bào zhe ruǎn ruǎn de bào zhěn."
+      }
+    ],
+    "relatedWordIds": ["sofa", "armchair", "ottoman"],
+    "distractorWordIds": ["curtains", "tissue-box", "newspaper"]
+  },
+  "cup": {
+    "id": "cup",
+    "text": "杯子",
+    "pinyin": "bēizi",
+    "measure": "个",
+    "meaningVi": "cốc",
+    "image": "/assets/scenes/living-room/objects/21_cup.webp",
+    "acceptedAnswers": ["杯子"],
+    "examples": [
+      {
+        "text": "妈妈用杯子喝茶。",
+        "vi": "Mẹ uống trà bằng cốc.",
+        "pinyin": "Mā ma yòng bēi zi hē chá."
+      },
+      {
+        "text": "杯子在杯垫上。",
+        "vi": "Cái cốc ở trên miếng lót ly.",
+        "pinyin": "Bēi zi zài bēi diàn shàng."
+      }
+    ],
+    "relatedWordIds": ["coaster", "coffee-table", "newspaper"],
+    "distractorWordIds": ["vase", "tissue-box", "speaker"]
+  },
+  "wall-shelf": {
+    "id": "wall-shelf",
+    "text": "架子",
+    "pinyin": "jiàzi",
+    "measure": "个",
+    "meaningVi": "kệ treo tường",
+    "image": "/assets/scenes/living-room/objects/22_wall-shelf.webp",
+    "acceptedAnswers": ["架子", "置物架"],
+    "examples": [
+      {
+        "text": "我的书在架子上。",
+        "vi": "Sách của mình ở trên kệ.",
+        "pinyin": "Wǒ de shū zài jià zi shàng."
+      },
+      {
+        "text": "墙上有两个架子。",
+        "vi": "Trên tường có hai cái kệ.",
+        "pinyin": "Qiáng shàng yǒu liǎng gè jià zi."
+      }
+    ],
+    "relatedWordIds": ["painting", "cabinet", "vase"],
+    "distractorWordIds": ["tv-stand", "side-table", "window"]
+  },
+  "painting": {
+    "id": "painting",
+    "text": "画",
+    "pinyin": "huà",
+    "measure": "幅",
+    "meaningVi": "bức tranh",
+    "image": "/assets/scenes/living-room/objects/23_painting.webp",
+    "acceptedAnswers": ["画", "画儿", "图画"],
+    "examples": [
+      {
+        "text": "画里有一座小房子。",
+        "vi": "Trong bức tranh có một ngôi nhà nhỏ.",
+        "pinyin": "Huà lǐ yǒu yí zuò xiǎo fáng zi."
+      },
+      {
+        "text": "墙上挂着一幅画。",
+        "vi": "Trên tường có treo một bức tranh.",
+        "pinyin": "Qiáng shàng guà zhe yì fú huà."
+      }
+    ],
+    "relatedWordIds": ["wall-shelf", "cabinet", "door"],
+    "distractorWordIds": ["window", "tv", "newspaper"]
+  },
+  "wi-fi-router": {
+    "id": "wi-fi-router",
+    "text": "路由器",
+    "pinyin": "lùyóuqì",
+    "measure": "个",
+    "meaningVi": "bộ phát Wi-Fi",
+    "image": "/assets/scenes/living-room/objects/24_wi-fi-router.webp",
+    "acceptedAnswers": ["路由器", "无线路由器"],
+    "examples": [
+      {
+        "text": "路由器有两根天线。",
+        "vi": "Bộ phát Wi-Fi có hai cái ăng-ten.",
+        "pinyin": "Lù yóu qì yǒu liǎng gēn tiān xiàn."
+      },
+      {
+        "text": "路由器上的灯是绿色的。",
+        "vi": "Đèn trên bộ phát Wi-Fi màu xanh lá.",
+        "pinyin": "Lù yóu qì shàng de dēng shì lǜ sè de."
+      }
+    ],
+    "relatedWordIds": ["tv", "tv-stand", "speaker"],
+    "distractorWordIds": ["remote-control", "light-switch", "robot-mop"]
+  },
+  "floor": {
+    "id": "floor",
+    "text": "地板",
+    "pinyin": "dìbǎn",
+    "meaningVi": "sàn nhà",
+    "image": "/assets/scenes/living-room/objects/25_floor.webp",
+    "acceptedAnswers": ["地板", "地面"],
+    "examples": [
+      {
+        "text": "地板是木头做的。",
+        "vi": "Sàn nhà làm bằng gỗ.",
+        "pinyin": "Dì bǎn shì mù tou zuò de."
+      },
+      {
+        "text": "别把玩具放在地板上。",
+        "vi": "Đừng để đồ chơi trên sàn nhà.",
+        "pinyin": "Bié bǎ wán jù fàng zài dì bǎn shàng."
+      }
+    ],
+    "relatedWordIds": ["robot-mop", "ottoman", "door"],
+    "distractorWordIds": ["window", "wall-shelf", "cabinet"]
+  },
+  "vase": {
+    "id": "vase",
+    "text": "花瓶",
+    "pinyin": "huāpíng",
+    "measure": "个",
+    "meaningVi": "bình hoa",
+    "image": "/assets/scenes/living-room/objects/26_vase.webp",
+    "acceptedAnswers": ["花瓶"],
+    "examples": [
+      {
+        "text": "花瓶里有白色的花。",
+        "vi": "Trong bình hoa có những bông hoa màu trắng.",
+        "pinyin": "Huā píng lǐ yǒu bái sè de huā."
+      },
+      {
+        "text": "小心！别打碎花瓶。",
+        "vi": "Cẩn thận! Đừng làm vỡ bình hoa.",
+        "pinyin": "Xiǎo xīn! Bié dǎ suì huā píng."
+      }
+    ],
+    "relatedWordIds": ["coffee-table", "coaster", "wall-shelf"],
+    "distractorWordIds": ["cup", "speaker", "floor-lamp"]
+  },
+  "speaker": {
+    "id": "speaker",
+    "text": "音箱",
+    "pinyin": "yīnxiāng",
+    "measure": "个",
+    "meaningVi": "loa",
+    "image": "/assets/scenes/living-room/objects/27_speaker.webp",
+    "acceptedAnswers": ["音箱", "音响"],
+    "examples": [
+      {
+        "text": "音箱里在放音乐。",
+        "vi": "Loa đang phát nhạc.",
+        "pinyin": "Yīn xiāng lǐ zài fàng yīn yuè."
+      },
+      {
+        "text": "音箱的声音太大了。",
+        "vi": "Tiếng loa to quá.",
+        "pinyin": "Yīn xiāng de shēng yīn tài dà le."
+      }
+    ],
+    "relatedWordIds": ["tv", "cabinet", "wi-fi-router"],
+    "distractorWordIds": ["vase", "tissue-box", "robot-mop"]
+  },
+  "tissue-box": {
+    "id": "tissue-box",
+    "text": "纸巾盒",
+    "pinyin": "zhǐjīnhé",
+    "measure": "个",
+    "meaningVi": "hộp khăn giấy",
+    "image": "/assets/scenes/living-room/objects/28_tissue-box.webp",
+    "acceptedAnswers": ["纸巾盒", "抽纸盒"],
+    "examples": [
+      {
+        "text": "可以把纸巾盒给我吗？",
+        "vi": "Bạn đưa mình hộp khăn giấy được không?",
+        "pinyin": "Kě yǐ bǎ zhǐ jīn hé gěi wǒ ma?"
+      },
+      {
+        "text": "纸巾盒在茶几上。",
+        "vi": "Hộp khăn giấy ở trên bàn trà.",
+        "pinyin": "Zhǐ jīn hé zài chá jī shàng."
+      }
+    ],
+    "relatedWordIds": ["coffee-table", "cup", "sofa"],
+    "distractorWordIds": ["speaker", "newspaper", "cabinet"]
+  },
+  "light-switch": {
+    "id": "light-switch",
+    "text": "开关",
+    "pinyin": "kāiguān",
+    "measure": "个",
+    "meaningVi": "công tắc đèn",
+    "image": "/assets/scenes/living-room/objects/29_light-switch.webp",
+    "acceptedAnswers": ["开关", "电灯开关"],
+    "examples": [
+      {
+        "text": "按一下开关，灯就亮了。",
+        "vi": "Bấm công tắc một cái là đèn sáng ngay.",
+        "pinyin": "Àn yí xià kāi guān, dēng jiù liàng le."
+      },
+      {
+        "text": "开关在墙上。",
+        "vi": "Công tắc đèn ở trên tường.",
+        "pinyin": "Kāi guān zài qiáng shàng."
+      }
+    ],
+    "relatedWordIds": ["ceiling-light", "floor-lamp", "door"],
+    "distractorWordIds": ["power-outlet", "remote-control", "wi-fi-router"]
+  },
+  "power-outlet": {
+    "id": "power-outlet",
+    "text": "插座",
+    "pinyin": "chāzuò",
+    "measure": "个",
+    "meaningVi": "ổ cắm điện",
+    "image": "/assets/scenes/living-room/objects/30_power-outlet.webp",
+    "acceptedAnswers": ["插座"],
+    "examples": [
+      {
+        "text": "不要碰插座！",
+        "vi": "Đừng chạm vào ổ cắm điện!",
+        "pinyin": "Bú yào pèng chā zuò!"
+      },
+      {
+        "text": "电视插在插座上。",
+        "vi": "Tivi được cắm vào ổ cắm điện.",
+        "pinyin": "Diàn shì chā zài chā zuò shàng."
+      }
+    ],
+    "relatedWordIds": ["tv", "tv-stand", "robot-mop"],
+    "distractorWordIds": ["light-switch", "speaker", "wi-fi-router"]
+  }
+}

@@ -4,6 +4,7 @@ import { paths } from '@/app/paths';
 import { Badge } from '@/components/common/Badge';
 import { ProgressBar } from '@/components/common/ProgressBar';
 import { isSceneAvailable } from '@/data/content';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import type { Scene } from '@/types/models';
@@ -37,7 +38,7 @@ export function SceneCard({ scene }: { scene: Scene }) {
             icon={<Lock aria-hidden />}
             className="absolute top-2 left-2"
           >
-            Coming soon
+            {t('Coming soon')}
           </Badge>
         )}
       </div>
@@ -53,13 +54,17 @@ export function SceneCard({ scene }: { scene: Scene }) {
         </div>
         <ProgressBar
           value={available ? percent : 0}
-          label={`${scene.title} progress`}
+          label={t('{scene} progress', { scene: scene.title })}
           size="sm"
           className="mt-2.5"
         />
         {available && (
           <span className="sr-only">
-            {completed}/{total} words learned, {percent}% completed
+            {t('{completed}/{total} words learned, {percent}% completed', {
+              completed,
+              total,
+              percent,
+            })}
           </span>
         )}
       </div>

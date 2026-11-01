@@ -3,6 +3,8 @@ import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router';
 import { paths } from '@/app/paths';
 import { Button } from '@/components/common/Button';
+import { CoursePicker } from '@/features/settings/CoursePicker';
+import { t } from '@/i18n';
 import {
   EMPTY_PROFILE_FORM,
   toProfileInput,
@@ -18,7 +20,10 @@ import { FIELD_IDS } from './components/profileFieldIds';
 
 const FIELD_ORDER: ProfileField[] = ['fullName', 'ageGroup', 'canTypeWords', 'avatar'];
 
-/** First-time setup (spec §6): name, age group, typing ability, character — nothing else. */
+/**
+ * First-time setup (spec §6): name, age group, typing ability, character — nothing else. The
+ * course comes first: choosing it switches the language of the screen, which clears the fields.
+ */
 export function ProfileSetupForm({
   onAvatarChange,
 }: {
@@ -58,6 +63,7 @@ export function ProfileSetupForm({
 
   return (
     <form noValidate onSubmit={handleSubmit} className="flex flex-col gap-6">
+      <CoursePicker legend={t('I want to learn')} />
       <NameField {...fieldProps} />
       <AgeGroupField {...fieldProps} />
       <CanTypeField {...fieldProps} />
@@ -69,7 +75,7 @@ export function ProfileSetupForm({
         className="mt-2"
         rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
       >
-        Start My Journey
+        {t('Start My Journey')}
       </Button>
     </form>
   );

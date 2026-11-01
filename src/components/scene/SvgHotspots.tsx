@@ -1,4 +1,5 @@
 import { useId, type KeyboardEvent, type PointerEvent } from 'react';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import type { SceneHotspot } from '@/types/models';
 import type { HighlightMode } from './sceneInteraction';
@@ -61,7 +62,7 @@ export function SvgHotspots({
       preserveAspectRatio="xMidYMid meet"
       className="absolute inset-0 h-full w-full"
       role="group"
-      aria-label="Objects in the picture"
+      aria-label={t('Objects in the picture')}
     >
       <defs>
         <filter

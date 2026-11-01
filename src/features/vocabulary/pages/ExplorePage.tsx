@@ -8,6 +8,7 @@ import { getWord } from '@/data/content';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useAppFullscreen } from '@/hooks/useAppFullscreen';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { getFoundWordIds } from '@/lib/progress';
 import { useProfileStore } from '@/stores/profileStore';
@@ -31,7 +32,8 @@ export function ExplorePage() {
 const FROM_EXPLORE: NavigationState = { from: 'explore' };
 
 function Explore({ scene }: { scene: Scene }) {
-  useDocumentTitle(`Explore the ${scene.title}`);
+  const title = t('Explore the {scene}', { scene: scene.title });
+  useDocumentTitle(title);
   const navigate = useNavigate();
   const fullscreen = useAppFullscreen();
   const foundIds = useProgressStore((state) => getFoundWordIds(state.progress, scene.id));
@@ -78,7 +80,7 @@ function Explore({ scene }: { scene: Scene }) {
 
   return (
     <>
-      <h1 className="sr-only">Explore the {scene.title}</h1>
+      <h1 className="sr-only">{title}</h1>
 
       <div
         className={cn(
@@ -123,7 +125,7 @@ function Explore({ scene }: { scene: Scene }) {
                     shape="pill"
                     leftIcon={<ArrowLeft aria-hidden className="size-4" strokeWidth={2.5} />}
                   >
-                    Back
+                    {t('Back')}
                   </ButtonLink>
                   {allFound && (
                     <Button
@@ -133,7 +135,7 @@ function Explore({ scene }: { scene: Scene }) {
                       onClick={playAgain}
                       leftIcon={<RotateCcw aria-hidden className="size-4" strokeWidth={2.5} />}
                     >
-                      Play again
+                      {t('Play again')}
                     </Button>
                   )}
                 </div>

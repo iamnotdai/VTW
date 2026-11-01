@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { profileRepository, progressRepository } from '@/lib/repositories';
+import { getProgressRepository, profileRepository } from '@/lib/repositories';
 import { createProfile } from '@/lib/profile';
 import { createEmptyProgress } from '@/lib/progress';
 import { isPersistentStorage, resetStorageBackendForTests, STORAGE_KEYS } from '@/lib/storage';
@@ -21,6 +21,7 @@ describe('storage keys (spec §11.1)', () => {
     expect(STORAGE_KEYS).toEqual({
       profile: 'vtw:v1:profile',
       progress: 'vtw:v1:progress',
+      progressZh: 'vtw:v1:zh:progress',
       settings: 'vtw:v1:settings',
     });
   });
@@ -36,8 +37,8 @@ describe('repositories', () => {
 
   it('returns null for corrupted JSON instead of throwing', () => {
     localStorage.setItem(STORAGE_KEYS.progress, '{not json');
-    expect(() => progressRepository.load()).not.toThrow();
-    expect(progressRepository.load()).toBeNull();
+    expect(() => getProgressRepository('en').load()).not.toThrow();
+    expect(getProgressRepository('en').load()).toBeNull();
   });
 
   it('treats an invalid stored profile as "no profile"', () => {
@@ -54,7 +55,7 @@ describe('repositories', () => {
     });
     expect(isPersistentStorage()).toBe(false);
     const progress = createEmptyProgress();
-    expect(() => progressRepository.save(progress)).not.toThrow();
-    expect(progressRepository.load()).toEqual(progress);
+    expect(() => getProgressRepository('en').save(progress)).not.toThrow();
+    expect(getProgressRepository('en').load()).toEqual(progress);
   });
 });

@@ -2,6 +2,7 @@ import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
 import { paths } from '@/app/paths';
 import { Avatar } from '@/components/common/Avatar';
+import { t } from '@/i18n';
 import { getLearnerLevel } from '@/lib/progress';
 import { cn } from '@/lib/cn';
 import { useProfileStore } from '@/stores/profileStore';
@@ -57,7 +58,7 @@ export function LearnerChip({
             onMenu ? 'text-white/75' : 'text-brand-600',
           )}
         >
-          Level {level}
+          {t('Level {level}', { level })}
         </span>
       </span>
     </>
@@ -69,7 +70,7 @@ export function LearnerChip({
   return (
     <Link
       to={paths.settings}
-      aria-label={`${profile.fullName}, Level ${level} — open Settings`}
+      aria-label={t('{name}, Level {level} — open Settings', { name: profile.fullName, level })}
       className={cn(
         'flex shrink-0 items-center gap-3 rounded-full py-1 pr-1 pl-1 transition hover:bg-brand-50 sm:pr-2',
         className,

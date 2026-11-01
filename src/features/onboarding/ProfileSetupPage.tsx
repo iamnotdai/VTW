@@ -2,6 +2,7 @@ import { ResponsivePicture } from '@/components/common/ResponsivePicture';
 import { BACKGROUNDS } from '@/config/assets';
 import { FILLS } from '@/components/layout/wordmarkFills';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { ProfileSetupForm } from './ProfileSetupForm';
 
 /** Word filled with one of the logo's gradients. */
@@ -21,7 +22,7 @@ function GradientWord({ fill, children }: { fill: string; children: string }) {
  * desktop/tablet and centred on phones (spec §2.1, §6).
  */
 export function ProfileSetupPage() {
-  useDocumentTitle('Create your profile');
+  useDocumentTitle(t('Create your profile'));
 
   return (
     <div className="relative min-h-dvh overflow-hidden bg-sky-100">
@@ -38,7 +39,7 @@ export function ProfileSetupPage() {
         <div className="w-full max-w-[36rem] animate-pop-in">
           <div className="rounded-[1.25rem] bg-white/95 p-6 shadow-lift backdrop-blur sm:p-9">
             <h1 className="font-brand leading-tight font-extrabold">
-              <span className="text-lg font-bold text-navy-700 sm:text-xl">Welcome to</span>{' '}
+              <span className="text-lg font-bold text-navy-700 sm:text-xl">{t('Welcome to')}</span>{' '}
               <span className="text-[1.75rem] tracking-[-0.02em] sm:text-[2.25rem]">
                 <GradientWord fill={FILLS.dark.village}>Village</GradientWord>{' '}
                 <GradientWord fill={FILLS.dark.to}>to</GradientWord>{' '}
@@ -46,7 +47,7 @@ export function ProfileSetupPage() {
               </span>
             </h1>
             <p className="mt-1 mb-6 text-base font-medium text-navy-600 sm:text-lg">
-              Let’s set up your learning profile.
+              {t('Let’s set up your learning profile.')}
             </p>
             <ProfileSetupForm />
           </div>

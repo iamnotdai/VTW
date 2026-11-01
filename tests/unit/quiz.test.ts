@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
-import { content, getAllWordIds, getScene, getWord } from '@/data/content';
+import { getAllWordIds, getContent, getScene, getWord } from '@/data/content';
 import {
   buildChoices,
   createQuizQuestion,
@@ -93,7 +93,7 @@ describe('buildChoices', () => {
       text: 'carpet',
       acceptedAnswers: ['carpet', 'rug'],
     };
-    const words: Record<string, Word> = { ...content.words, carpet };
+    const words: Record<string, Word> = { ...getContent().words, carpet };
     const choices = buildChoices({
       word: rug,
       getWord: (id) => words[id],

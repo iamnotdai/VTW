@@ -1,0 +1,2785 @@
+[
+  {
+    "id": "my-bedroom",
+    "sceneId": "bedroom",
+    "title": "我的卧室",
+    "order": 1,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "莉莉带小本看看她的卧室。",
+    "lines": [
+      {
+        "id": "my-bedroom-l1",
+        "speakerId": "ben",
+        "text": "莉莉，这是你的卧室吗？",
+        "textVi": "Lily ơi, đây là phòng ngủ của bạn à?",
+        "pinyin": "Lì li, zhè shì nǐ de wò shì ma?"
+      },
+      {
+        "id": "my-bedroom-l2",
+        "speakerId": "lily",
+        "text": "对呀，快进来吧！",
+        "textVi": "Đúng rồi, vào đi bạn!",
+        "pinyin": "Duì ya, kuài jìn lái ba!"
+      },
+      {
+        "id": "my-bedroom-l3",
+        "speakerId": "ben",
+        "text": "哇，你的床好大呀！",
+        "textVi": "Oa, giường của bạn to quá!",
+        "pinyin": "Wā, nǐ de chuáng hǎo dà ya!"
+      },
+      {
+        "id": "my-bedroom-l4",
+        "speakerId": "lily",
+        "text": "这是我的小兔子，她叫波波。",
+        "textVi": "Đây là thỏ bông của mình, bạn ấy tên là Bobo.",
+        "pinyin": "Zhè shì wǒ de xiǎo tù zi, tā jiào Bō bo."
+      },
+      {
+        "id": "my-bedroom-l5",
+        "speakerId": "ben",
+        "text": "书桌上有什么？",
+        "textVi": "Trên bàn học có gì thế?",
+        "pinyin": "Shū zhuō shàng yǒu shén me?"
+      },
+      {
+        "id": "my-bedroom-l6",
+        "speakerId": "lily",
+        "text": "有电脑和书。我好喜欢我的卧室！",
+        "textVi": "Có máy tính và sách. Mình thích phòng ngủ của mình lắm!",
+        "pinyin": "Yǒu diàn nǎo hé shū. Wǒ hǎo xǐ huan wǒ de wò shì!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-bedroom-q1",
+        "prompt": "卧室里有什么？",
+        "suggestedAnswer": "卧室里有床、书桌和台灯。",
+        "promptPinyin": "Wò shì lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Wò shì lǐ yǒu chuáng, shū zhuō hé tái dēng."
+      },
+      {
+        "id": "my-bedroom-q2",
+        "prompt": "卧室里你最喜欢什么？",
+        "suggestedAnswer": "我最喜欢我的小兔子。",
+        "promptPinyin": "Wò shì lǐ nǐ zuì xǐ huan shén me?",
+        "suggestedAnswerPinyin": "Wǒ zuì xǐ huan wǒ de xiǎo tù zi."
+      }
+    ]
+  },
+  {
+    "id": "making-the-bed",
+    "sceneId": "bedroom",
+    "title": "整理床铺",
+    "order": 2,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "小本学习怎么整理床铺。",
+    "lines": [
+      {
+        "id": "making-the-bed-l1",
+        "speakerId": "mom",
+        "text": "早上好，小本！去把床铺好吧。",
+        "textVi": "Chào buổi sáng, Ben! Con đi dọn giường đi nhé.",
+        "pinyin": "Zǎo shang hǎo, Xiǎo Běn! Qù bǎ chuáng pù hǎo ba."
+      },
+      {
+        "id": "making-the-bed-l2",
+        "speakerId": "ben",
+        "text": "好的，妈妈。我先做什么？",
+        "textVi": "Vâng ạ. Mẹ ơi, con làm gì trước ạ?",
+        "pinyin": "Hǎo de, mā ma. Wǒ xiān zuò shén me?"
+      },
+      {
+        "id": "making-the-bed-l3",
+        "speakerId": "mom",
+        "text": "先把枕头放在床头。",
+        "textVi": "Trước tiên, con đặt gối ở đầu giường.",
+        "pinyin": "Xiān bǎ zhěn tou fàng zài chuáng tóu."
+      },
+      {
+        "id": "making-the-bed-l4",
+        "speakerId": "ben",
+        "text": "放好了！然后是被子吗？",
+        "textVi": "Con đặt xong rồi! Tiếp theo là chăn ạ?",
+        "pinyin": "Fàng hǎo le! Rán hòu shì bèi zi ma?"
+      },
+      {
+        "id": "making-the-bed-l5",
+        "speakerId": "mom",
+        "text": "对。把被子拉上来，铺平。",
+        "textVi": "Đúng rồi. Kéo chăn lên rồi trải cho phẳng.",
+        "pinyin": "Duì. Bǎ bèi zi lā shàng lái, pū píng."
+      },
+      {
+        "id": "making-the-bed-l6",
+        "speakerId": "ben",
+        "text": "妈妈，你看！我的床真好看。",
+        "textVi": "Mẹ nhìn này! Giường của con trông đẹp quá.",
+        "pinyin": "Mā ma, nǐ kàn! Wǒ de chuáng zhēn hǎo kàn."
+      },
+      {
+        "id": "making-the-bed-l7",
+        "speakerId": "mom",
+        "text": "小本，你真棒！",
+        "textVi": "Ben ơi, con giỏi quá!",
+        "pinyin": "Xiǎo Běn, nǐ zhēn bàng!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-the-bed-q1",
+        "prompt": "你把什么放在床头？",
+        "suggestedAnswer": "我把枕头放在床头。",
+        "promptPinyin": "Nǐ bǎ shén me fàng zài chuáng tóu?",
+        "suggestedAnswerPinyin": "Wǒ bǎ zhěn tou fàng zài chuáng tóu."
+      },
+      {
+        "id": "making-the-bed-q2",
+        "prompt": "你每天早上都铺床吗？",
+        "suggestedAnswer": "是的，我每天早上都铺床。",
+        "promptPinyin": "Nǐ měi tiān zǎo shang dōu pū chuáng ma?",
+        "suggestedAnswerPinyin": "Shì de, wǒ měi tiān zǎo shang dōu pū chuáng."
+      }
+    ]
+  },
+  {
+    "id": "where-is-my-book",
+    "sceneId": "bedroom",
+    "title": "我的书在哪儿？",
+    "order": 3,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "莉莉在找她最喜欢的书。",
+    "lines": [
+      {
+        "id": "where-is-my-book-l1",
+        "speakerId": "lily",
+        "text": "妈妈，我的书在哪儿？",
+        "textVi": "Mẹ ơi, quyển sách của con đâu rồi?",
+        "pinyin": "Mā ma, wǒ de shū zài nǎr?"
+      },
+      {
+        "id": "where-is-my-book-l2",
+        "speakerId": "mom",
+        "text": "在书架上吗？",
+        "textVi": "Có ở trên giá sách không con?",
+        "pinyin": "Zài shū jià shàng ma?"
+      },
+      {
+        "id": "where-is-my-book-l3",
+        "speakerId": "lily",
+        "text": "不在书架上。",
+        "textVi": "Không có trên giá sách ạ.",
+        "pinyin": "Bú zài shū jià shàng."
+      },
+      {
+        "id": "where-is-my-book-l4",
+        "speakerId": "mom",
+        "text": "去书桌上看看吧。",
+        "textVi": "Con ra bàn học xem thử đi.",
+        "pinyin": "Qù shū zhuō shàng kàn kàn ba."
+      },
+      {
+        "id": "where-is-my-book-l5",
+        "speakerId": "lily",
+        "text": "找到了！在书桌上，电脑旁边。",
+        "textVi": "Tìm thấy rồi! Ở trên bàn học, cạnh máy tính.",
+        "pinyin": "Zhǎo dào le! Zài shū zhuō shàng, diàn nǎo páng biān."
+      },
+      {
+        "id": "where-is-my-book-l6",
+        "speakerId": "mom",
+        "text": "很好。看完记得放回书架上哦。",
+        "textVi": "Tốt lắm. Đọc xong nhớ cất lại lên giá sách nhé.",
+        "pinyin": "Hěn hǎo. Kàn wán jì de fàng huí shū jià shàng ò."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-my-book-q1",
+        "prompt": "书在哪儿？",
+        "suggestedAnswer": "书在书桌上，电脑旁边。",
+        "promptPinyin": "Shū zài nǎr?",
+        "suggestedAnswerPinyin": "Shū zài shū zhuō shàng, diàn nǎo páng biān."
+      },
+      {
+        "id": "where-is-my-book-q2",
+        "prompt": "你把书放在哪儿？",
+        "suggestedAnswer": "我把书放在书架上。",
+        "promptPinyin": "Nǐ bǎ shū fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ bǎ shū fàng zài shū jià shàng."
+      }
+    ]
+  },
+  {
+    "id": "time-for-bed",
+    "sceneId": "bedroom",
+    "title": "该睡觉了",
+    "order": 4,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "小本准备睡觉了。",
+    "lines": [
+      {
+        "id": "time-for-bed-l1",
+        "speakerId": "dad",
+        "text": "小本，九点了，该睡觉了。",
+        "textVi": "Ben ơi, chín giờ rồi, đến giờ đi ngủ rồi con.",
+        "pinyin": "Xiǎo Běn, jiǔ diǎn le, gāi shuì jiào le."
+      },
+      {
+        "id": "time-for-bed-l2",
+        "speakerId": "ben",
+        "text": "我可以先看一本故事书吗？",
+        "textVi": "Con đọc một cuốn truyện trước được không ạ?",
+        "pinyin": "Wǒ kě yǐ xiān kàn yì běn gù shì shū ma?"
+      },
+      {
+        "id": "time-for-bed-l3",
+        "speakerId": "dad",
+        "text": "好吧，只看一本哦。",
+        "textVi": "Được rồi, chỉ một cuốn thôi nhé.",
+        "pinyin": "Hǎo ba, zhī kàn yì běn ò."
+      },
+      {
+        "id": "time-for-bed-l4",
+        "speakerId": "ben",
+        "text": "谢谢爸爸！",
+        "textVi": "Con cảm ơn bố!",
+        "pinyin": "Xiè xiè bà ba!"
+      },
+      {
+        "id": "time-for-bed-l5",
+        "speakerId": "dad",
+        "text": "现在躺下吧，我来关台灯。",
+        "textVi": "Giờ con nằm xuống nhé, để bố tắt đèn.",
+        "pinyin": "Xiàn zài tǎng xià ba, wǒ lái guān tái dēng."
+      },
+      {
+        "id": "time-for-bed-l6",
+        "speakerId": "ben",
+        "text": "爸爸，晚安。",
+        "textVi": "Bố ngủ ngon ạ.",
+        "pinyin": "Bà ba, wǎn ān."
+      },
+      {
+        "id": "time-for-bed-l7",
+        "speakerId": "dad",
+        "text": "晚安，做个好梦！",
+        "textVi": "Con ngủ ngon, mơ đẹp nhé!",
+        "pinyin": "Wǎn ān, zuò gè hǎo mèng!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "time-for-bed-q1",
+        "prompt": "你几点睡觉？",
+        "suggestedAnswer": "我九点睡觉。",
+        "promptPinyin": "Nǐ jǐ diǎn shuì jiào?",
+        "suggestedAnswerPinyin": "Wǒ jiǔ diǎn shuì jiào."
+      },
+      {
+        "id": "time-for-bed-q2",
+        "prompt": "睡觉前你说什么？",
+        "suggestedAnswer": "我说晚安。",
+        "promptPinyin": "Shuì jiào qián nǐ shuō shén me?",
+        "suggestedAnswerPinyin": "Wǒ shuō wǎn ān."
+      }
+    ]
+  },
+  {
+    "id": "tidy-up-time",
+    "sceneId": "bedroom",
+    "title": "收拾房间",
+    "order": 5,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "莉莉在收拾乱糟糟的房间。",
+    "lines": [
+      {
+        "id": "tidy-up-time-l1",
+        "speakerId": "mom",
+        "text": "莉莉，你的房间太乱了！",
+        "textVi": "Lily ơi, phòng con bừa bộn quá!",
+        "pinyin": "Lì li, nǐ de fáng jiān tài luàn le!"
+      },
+      {
+        "id": "tidy-up-time-l2",
+        "speakerId": "lily",
+        "text": "对不起，妈妈。我马上收拾。",
+        "textVi": "Con xin lỗi mẹ. Con dọn ngay đây ạ.",
+        "pinyin": "Duì bù qǐ, mā ma. Wǒ mǎ shàng shōu shí."
+      },
+      {
+        "id": "tidy-up-time-l3",
+        "speakerId": "mom",
+        "text": "把小兔子放到床上吧。",
+        "textVi": "Con đặt thỏ bông lên giường nhé.",
+        "pinyin": "Bǎ xiǎo tù zi fàng dào chuáng shàng ba."
+      },
+      {
+        "id": "tidy-up-time-l4",
+        "speakerId": "lily",
+        "text": "好的。我的衣服放哪儿？",
+        "textVi": "Vâng ạ. Quần áo của con để đâu ạ?",
+        "pinyin": "Hǎo de. Wǒ de yī fu fàng nǎr?"
+      },
+      {
+        "id": "tidy-up-time-l5",
+        "speakerId": "mom",
+        "text": "衣服放进衣柜里。",
+        "textVi": "Quần áo thì cất vào tủ quần áo.",
+        "pinyin": "Yī fu fàng jìn yī guì lǐ."
+      },
+      {
+        "id": "tidy-up-time-l6",
+        "speakerId": "lily",
+        "text": "都收拾好了！我的房间干净了。",
+        "textVi": "Con dọn xong hết rồi! Phòng con sạch sẽ rồi.",
+        "pinyin": "Dōu shōu shí hǎo le! Wǒ de fáng jiān gān jing le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tidy-up-time-q1",
+        "prompt": "你把小兔子放在哪儿？",
+        "suggestedAnswer": "我把小兔子放在床上。",
+        "promptPinyin": "Nǐ bǎ xiǎo tù zi fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ bǎ xiǎo tù zi fàng zài chuáng shàng."
+      },
+      {
+        "id": "tidy-up-time-q2",
+        "prompt": "你的衣服放在哪儿？",
+        "suggestedAnswer": "我的衣服放在衣柜里。",
+        "promptPinyin": "Nǐ de yī fu fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ de yī fu fàng zài yī guì lǐ."
+      }
+    ]
+  },
+  {
+    "id": "good-morning",
+    "sceneId": "bedroom",
+    "title": "早上好！",
+    "order": 6,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "一个晴天的早上，莉莉起床了。",
+    "lines": [
+      {
+        "id": "good-morning-l1",
+        "speakerId": "mom",
+        "text": "早上好，莉莉！该起床了。",
+        "textVi": "Chào buổi sáng, Lily! Đến giờ dậy rồi con.",
+        "pinyin": "Zǎo shang hǎo, Lì li! Gāi qǐ chuáng le."
+      },
+      {
+        "id": "good-morning-l2",
+        "speakerId": "lily",
+        "text": "妈妈早上好，我还想睡觉。",
+        "textVi": "Con chào mẹ ạ, con vẫn còn muốn ngủ.",
+        "pinyin": "Mā ma zǎo shang hǎo, wǒ hái xiǎng shuì jiào."
+      },
+      {
+        "id": "good-morning-l3",
+        "speakerId": "mom",
+        "text": "你看，太阳出来了。",
+        "textVi": "Con nhìn kìa, mặt trời lên rồi.",
+        "pinyin": "Nǐ kàn, tài yáng chū lái le."
+      },
+      {
+        "id": "good-morning-l4",
+        "speakerId": "lily",
+        "text": "妈妈，帮我拿一下拖鞋，好吗？",
+        "textVi": "Mẹ ơi, mẹ lấy giúp con đôi dép được không ạ?",
+        "pinyin": "Mā ma, bāng wǒ ná yí xià tuō xié, hǎo ma?"
+      },
+      {
+        "id": "good-morning-l5",
+        "speakerId": "mom",
+        "text": "好的。今天天气真好！",
+        "textVi": "Được chứ. Hôm nay trời đẹp quá!",
+        "pinyin": "Hǎo de. Jīn tiān tiān qì zhēn hǎo!"
+      },
+      {
+        "id": "good-morning-l6",
+        "speakerId": "lily",
+        "text": "是呀！我们去吃早饭吧。",
+        "textVi": "Vâng ạ! Mình đi ăn sáng thôi.",
+        "pinyin": "Shì ya! Wǒ men qù chī zǎo fàn ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "good-morning-q1",
+        "prompt": "早上见到妈妈，你说什么？",
+        "suggestedAnswer": "我说早上好。",
+        "promptPinyin": "Zǎo shang jiàn dào mā ma, nǐ shuō shén me?",
+        "suggestedAnswerPinyin": "Wǒ shuō zǎo shang hǎo."
+      },
+      {
+        "id": "good-morning-q2",
+        "prompt": "今天天气怎么样？",
+        "suggestedAnswer": "今天是晴天。",
+        "promptPinyin": "Jīn tiān tiān qì zěn me yàng?",
+        "suggestedAnswerPinyin": "Jīn tiān shì qíng tiān."
+      }
+    ]
+  },
+  {
+    "id": "turn-on-the-lamp",
+    "sceneId": "bedroom",
+    "title": "打开台灯",
+    "order": 7,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "房间很黑，小本打开了台灯。",
+    "lines": [
+      {
+        "id": "turn-on-the-lamp-l1",
+        "speakerId": "ben",
+        "text": "爸爸，这里好黑呀。",
+        "textVi": "Bố ơi, trong này tối quá.",
+        "pinyin": "Bà ba, zhè lǐ hǎo hēi ya."
+      },
+      {
+        "id": "turn-on-the-lamp-l2",
+        "speakerId": "dad",
+        "text": "那就打开台灯吧。",
+        "textVi": "Vậy thì con bật đèn lên đi.",
+        "pinyin": "Nà jiù dǎ kāi tái dēng ba."
+      },
+      {
+        "id": "turn-on-the-lamp-l3",
+        "speakerId": "ben",
+        "text": "台灯怎么打开呀？",
+        "textVi": "Bật đèn thế nào ạ?",
+        "pinyin": "Tái dēng zěn me dǎ kāi ya?"
+      },
+      {
+        "id": "turn-on-the-lamp-l4",
+        "speakerId": "dad",
+        "text": "台灯上有个按钮，按一下就行。",
+        "textVi": "Trên đèn có một cái nút, con bấm một cái là được.",
+        "pinyin": "Tái dēng shàng yǒu gè àn niǔ, àn yí xià jiù xíng."
+      },
+      {
+        "id": "turn-on-the-lamp-l5",
+        "speakerId": "ben",
+        "text": "哇，现在我什么都看得见了！",
+        "textVi": "Oa, giờ con nhìn thấy hết mọi thứ rồi!",
+        "pinyin": "Wā, xiàn zài wǒ shén me dōu kàn dé jiàn le!"
+      },
+      {
+        "id": "turn-on-the-lamp-l6",
+        "speakerId": "dad",
+        "text": "睡觉时记得关台灯哦。",
+        "textVi": "Lúc đi ngủ nhớ tắt đèn nhé.",
+        "pinyin": "Shuì jiào shí jì de guān tái dēng ò."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "turn-on-the-lamp-q1",
+        "prompt": "房间里很黑，你怎么办？",
+        "suggestedAnswer": "我打开台灯。",
+        "promptPinyin": "Fáng jiān lǐ hěn hēi, nǐ zěn me bàn?",
+        "suggestedAnswerPinyin": "Wǒ dǎ kāi tái dēng."
+      },
+      {
+        "id": "turn-on-the-lamp-q2",
+        "prompt": "台灯在哪儿？",
+        "suggestedAnswer": "台灯在床头柜上。",
+        "promptPinyin": "Tái dēng zài nǎr?",
+        "suggestedAnswerPinyin": "Tái dēng zài chuáng tóu guì shàng."
+      }
+    ]
+  },
+  {
+    "id": "my-favorite-toy",
+    "sceneId": "bedroom",
+    "title": "我最喜欢的玩具",
+    "order": 8,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "莉莉和小本聊最喜欢的玩具。",
+    "lines": [
+      {
+        "id": "my-favorite-toy-l1",
+        "speakerId": "ben",
+        "text": "莉莉，你最喜欢什么玩具？",
+        "textVi": "Lily ơi, bạn thích đồ chơi nào nhất?",
+        "pinyin": "Lì li, nǐ zuì xǐ huan shén me wán jù?"
+      },
+      {
+        "id": "my-favorite-toy-l2",
+        "speakerId": "lily",
+        "text": "我的小兔子！她是粉色的，软软的。",
+        "textVi": "Thỏ bông của mình! Bạn ấy màu hồng, mềm mềm.",
+        "pinyin": "Wǒ de xiǎo tù zi! Tā shì fěn sè de, ruǎn ruǎn de."
+      },
+      {
+        "id": "my-favorite-toy-l3",
+        "speakerId": "ben",
+        "text": "你把小兔子放在哪儿？",
+        "textVi": "Bạn để thỏ bông ở đâu?",
+        "pinyin": "Nǐ bǎ xiǎo tù zi fàng zài nǎr?"
+      },
+      {
+        "id": "my-favorite-toy-l4",
+        "speakerId": "lily",
+        "text": "放在我的床上，枕头旁边。",
+        "textVi": "Mình để trên giường, cạnh cái gối.",
+        "pinyin": "Fàng zài wǒ de chuáng shàng, zhěn tou páng biān."
+      },
+      {
+        "id": "my-favorite-toy-l5",
+        "speakerId": "ben",
+        "text": "我最喜欢我的红色小汽车。",
+        "textVi": "Mình thích nhất chiếc ô tô màu đỏ của mình.",
+        "pinyin": "Wǒ zuì xǐ huan wǒ de hóng sè xiǎo qì chē."
+      },
+      {
+        "id": "my-favorite-toy-l6",
+        "speakerId": "lily",
+        "text": "好酷！它在你的书桌上吗？",
+        "textVi": "Ngầu quá! Nó ở trên bàn học của bạn à?",
+        "pinyin": "Hǎo kù! Tā zài nǐ de shū zhuō shàng ma?"
+      },
+      {
+        "id": "my-favorite-toy-l7",
+        "speakerId": "ben",
+        "text": "对，就在书桌上。",
+        "textVi": "Đúng rồi, ở ngay trên bàn học.",
+        "pinyin": "Duì, jiù zài shū zhuō shàng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-favorite-toy-q1",
+        "prompt": "你最喜欢什么玩具？",
+        "suggestedAnswer": "我最喜欢我的小兔子。",
+        "promptPinyin": "Nǐ zuì xǐ huan shén me wán jù?",
+        "suggestedAnswerPinyin": "Wǒ zuì xǐ huan wǒ de xiǎo tù zi."
+      },
+      {
+        "id": "my-favorite-toy-q2",
+        "prompt": "小兔子在哪儿？",
+        "suggestedAnswer": "小兔子在床上。",
+        "promptPinyin": "Xiǎo tù zi zài nǎr?",
+        "suggestedAnswerPinyin": "Xiǎo tù zi zài chuáng shàng."
+      }
+    ]
+  },
+  {
+    "id": "getting-ready-for-school",
+    "sceneId": "bedroom",
+    "title": "准备上学",
+    "order": 9,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "上学前，小本在找他的书包。",
+    "lines": [
+      {
+        "id": "getting-ready-for-school-l1",
+        "speakerId": "mom",
+        "text": "小本，准备好上学了吗？",
+        "textVi": "Ben ơi, con chuẩn bị đi học xong chưa?",
+        "pinyin": "Xiǎo Běn, zhǔn bèi hǎo shàng xué le ma?"
+      },
+      {
+        "id": "getting-ready-for-school-l2",
+        "speakerId": "ben",
+        "text": "快好了！我的书包在哪儿？",
+        "textVi": "Sắp xong rồi ạ! Cặp sách của con đâu rồi?",
+        "pinyin": "Kuài hǎo le! Wǒ de shū bāo zài nǎr?"
+      },
+      {
+        "id": "getting-ready-for-school-l3",
+        "speakerId": "mom",
+        "text": "就在地上，书桌旁边。",
+        "textVi": "Ở dưới sàn ấy, cạnh bàn học.",
+        "pinyin": "Jiù zài dì shàng, shū zhuō páng biān."
+      },
+      {
+        "id": "getting-ready-for-school-l4",
+        "speakerId": "ben",
+        "text": "找到了！我的书都在里面。",
+        "textVi": "Thấy rồi! Sách của con đều ở trong này.",
+        "pinyin": "Zhǎo dào le! Wǒ de shū dōu zài lǐ miàn."
+      },
+      {
+        "id": "getting-ready-for-school-l5",
+        "speakerId": "mom",
+        "text": "你还穿着拖鞋呢！",
+        "textVi": "Con vẫn còn đi dép trong nhà kìa!",
+        "pinyin": "Nǐ hái chuān zhe tuō xié ne!"
+      },
+      {
+        "id": "getting-ready-for-school-l6",
+        "speakerId": "ben",
+        "text": "哎呀！我穿好鞋了。妈妈再见！",
+        "textVi": "Ối! Con đi giày xong rồi. Con chào mẹ ạ!",
+        "pinyin": "Āi yā! Wǒ chuān hǎo xié le. Mā ma zài jiàn!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "getting-ready-for-school-q1",
+        "prompt": "你的书包里有什么？",
+        "suggestedAnswer": "我的书包里有书。",
+        "promptPinyin": "Nǐ de shū bāo lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Wǒ de shū bāo lǐ yǒu shū."
+      },
+      {
+        "id": "getting-ready-for-school-q2",
+        "prompt": "书包在哪儿？",
+        "suggestedAnswer": "书包在书桌旁边。",
+        "promptPinyin": "Shū bāo zài nǎr?",
+        "suggestedAnswerPinyin": "Shū bāo zài shū zhuō páng biān."
+      }
+    ]
+  },
+  {
+    "id": "look-in-the-mirror",
+    "sceneId": "bedroom",
+    "title": "照镜子",
+    "order": 10,
+    "poster": "/assets/scenes/bedroom/bedroom-desktop.webp",
+    "description": "莉莉的头发乱了，爸爸来帮忙。",
+    "lines": [
+      {
+        "id": "look-in-the-mirror-l1",
+        "speakerId": "dad",
+        "text": "莉莉，你的头发好乱呀。",
+        "textVi": "Lily ơi, tóc con rối quá.",
+        "pinyin": "Lì li, nǐ de tóu fa hǎo luàn ya."
+      },
+      {
+        "id": "look-in-the-mirror-l2",
+        "speakerId": "lily",
+        "text": "真的吗？我去照照镜子。",
+        "textVi": "Thật ạ? Để con đi soi gương xem.",
+        "pinyin": "Zhēn de ma? Wǒ qù zhào zhào jìng zi."
+      },
+      {
+        "id": "look-in-the-mirror-l3",
+        "speakerId": "dad",
+        "text": "镜子在书桌旁边。",
+        "textVi": "Gương ở cạnh bàn học đó con.",
+        "pinyin": "Jìng zi zài shū zhuō páng biān."
+      },
+      {
+        "id": "look-in-the-mirror-l4",
+        "speakerId": "lily",
+        "text": "哎呀！爸爸，你能帮帮我吗？",
+        "textVi": "Ôi không! Bố ơi, bố giúp con được không ạ?",
+        "pinyin": "Āi yā! Bà ba, nǐ néng bāng bāng wǒ ma?"
+      },
+      {
+        "id": "look-in-the-mirror-l5",
+        "speakerId": "dad",
+        "text": "当然可以，我来帮你梳头。",
+        "textVi": "Tất nhiên rồi, để bố chải tóc cho con.",
+        "pinyin": "Dāng rán kě yǐ, wǒ lái bāng nǐ shū tóu."
+      },
+      {
+        "id": "look-in-the-mirror-l6",
+        "speakerId": "lily",
+        "text": "谢谢爸爸！现在我好看多了。",
+        "textVi": "Con cảm ơn bố! Giờ trông con xinh hơn nhiều rồi.",
+        "pinyin": "Xiè xiè bà ba! Xiàn zài wǒ hǎo kàn duō le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "look-in-the-mirror-q1",
+        "prompt": "镜子在哪儿？",
+        "suggestedAnswer": "镜子在书桌旁边。",
+        "promptPinyin": "Jìng zi zài nǎr?",
+        "suggestedAnswerPinyin": "Jìng zi zài shū zhuō páng biān."
+      },
+      {
+        "id": "look-in-the-mirror-q2",
+        "prompt": "你在镜子前面做什么？",
+        "suggestedAnswer": "我在镜子前面梳头。",
+        "promptPinyin": "Nǐ zài jìng zi qián miàn zuò shén me?",
+        "suggestedAnswerPinyin": "Wǒ zài jìng zi qián miàn shū tóu."
+      }
+    ]
+  },
+  {
+    "id": "my-bathroom",
+    "sceneId": "bathroom",
+    "title": "我的浴室",
+    "order": 1,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "小本带莉莉看他家的浴室。",
+    "lines": [
+      {
+        "id": "my-bathroom-l1",
+        "speakerId": "lily",
+        "text": "小本，这是你家的浴室吗？",
+        "textVi": "Ben ơi, đây là phòng tắm nhà bạn à?",
+        "pinyin": "Xiǎo Běn, zhè shì nǐ jiā de yù shì ma?"
+      },
+      {
+        "id": "my-bathroom-l2",
+        "speakerId": "ben",
+        "text": "对呀！是蓝色和白色的。",
+        "textVi": "Đúng rồi! Nó có màu xanh và màu trắng.",
+        "pinyin": "Duì ya! Shì lán sè hé bái sè de."
+      },
+      {
+        "id": "my-bathroom-l3",
+        "speakerId": "lily",
+        "text": "哇，你家的浴缸好大呀！",
+        "textVi": "Oa, bồn tắm nhà bạn to quá!",
+        "pinyin": "Wā, nǐ jiā de yù gāng hǎo dà ya!"
+      },
+      {
+        "id": "my-bathroom-l4",
+        "speakerId": "ben",
+        "text": "这里还有花洒呢。",
+        "textVi": "Ở đây còn có vòi sen nữa đó.",
+        "pinyin": "Zhè lǐ hái yǒu huā sǎ ne."
+      },
+      {
+        "id": "my-bathroom-l5",
+        "speakerId": "lily",
+        "text": "洗手池上有什么？",
+        "textVi": "Trên bồn rửa mặt có gì vậy?",
+        "pinyin": "Xǐ shǒu chí shàng yǒu shén me?"
+      },
+      {
+        "id": "my-bathroom-l6",
+        "speakerId": "ben",
+        "text": "有我的牙刷，还有肥皂。",
+        "textVi": "Có bàn chải đánh răng của mình, còn có cả xà phòng nữa.",
+        "pinyin": "Yǒu wǒ de yá shuā, hái yǒu féi zào."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-bathroom-q1",
+        "prompt": "浴室里有什么？",
+        "suggestedAnswer": "浴室里有浴缸、洗手池和马桶。",
+        "promptPinyin": "Yù shì lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Yù shì lǐ yǒu yù gāng, xǐ shǒu chí hé mǎ tǒng."
+      },
+      {
+        "id": "my-bathroom-q2",
+        "prompt": "你家的浴室是什么颜色的？",
+        "suggestedAnswer": "我家的浴室是蓝色和白色的。",
+        "promptPinyin": "Nǐ jiā de yù shì shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Wǒ jiā de yù shì shì lán sè hé bái sè de."
+      }
+    ]
+  },
+  {
+    "id": "brushing-my-teeth",
+    "sceneId": "bathroom",
+    "title": "刷牙",
+    "order": 2,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "妈妈帮莉莉刷牙。",
+    "lines": [
+      {
+        "id": "brushing-my-teeth-l1",
+        "speakerId": "mom",
+        "text": "莉莉，该刷牙了。",
+        "textVi": "Lily ơi, đến giờ đánh răng rồi con.",
+        "pinyin": "Lì li, gāi shuā yá le."
+      },
+      {
+        "id": "brushing-my-teeth-l2",
+        "speakerId": "lily",
+        "text": "我的牙刷在哪儿？",
+        "textVi": "Bàn chải đánh răng của con đâu ạ?",
+        "pinyin": "Wǒ de yá shuā zài nǎr?"
+      },
+      {
+        "id": "brushing-my-teeth-l3",
+        "speakerId": "mom",
+        "text": "在牙刷杯里。",
+        "textVi": "Ở trong cốc đựng bàn chải đó con.",
+        "pinyin": "Zài yá shuā bēi lǐ."
+      },
+      {
+        "id": "brushing-my-teeth-l4",
+        "speakerId": "lily",
+        "text": "找到了！粉色的是我的。",
+        "textVi": "Con tìm thấy rồi! Cái màu hồng là của con.",
+        "pinyin": "Zhǎo dào le! Fěn sè de shì wǒ de."
+      },
+      {
+        "id": "brushing-my-teeth-l5",
+        "speakerId": "mom",
+        "text": "挤一点儿牙膏吧。",
+        "textVi": "Con bóp một chút kem đánh răng nhé.",
+        "pinyin": "Jǐ yì diǎnr yá gāo ba."
+      },
+      {
+        "id": "brushing-my-teeth-l6",
+        "speakerId": "lily",
+        "text": "好的！我上下刷一刷。",
+        "textVi": "Vâng ạ! Con chải lên chải xuống.",
+        "pinyin": "Hǎo de! Wǒ shàng xià shuā yi shuā."
+      },
+      {
+        "id": "brushing-my-teeth-l7",
+        "speakerId": "mom",
+        "text": "真棒！你的牙齿好干净啊！",
+        "textVi": "Giỏi lắm! Răng con sạch quá!",
+        "pinyin": "Zhēn bàng! Nǐ de yá chǐ hǎo gān jing a!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "brushing-my-teeth-q1",
+        "prompt": "牙刷在哪儿？",
+        "suggestedAnswer": "牙刷在牙刷杯里。",
+        "promptPinyin": "Yá shuā zài nǎr?",
+        "suggestedAnswerPinyin": "Yá shuā zài yá shuā bēi lǐ."
+      },
+      {
+        "id": "brushing-my-teeth-q2",
+        "prompt": "你在牙刷上挤什么？",
+        "suggestedAnswer": "我在牙刷上挤牙膏。",
+        "promptPinyin": "Nǐ zài yá shuā shàng jǐ shén me?",
+        "suggestedAnswerPinyin": "Wǒ zài yá shuā shàng jǐ yá gāo."
+      }
+    ]
+  },
+  {
+    "id": "bath-time",
+    "sceneId": "bathroom",
+    "title": "洗澡时间到",
+    "order": 3,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "爸爸给小本放好了洗澡水。",
+    "lines": [
+      {
+        "id": "bath-time-l1",
+        "speakerId": "dad",
+        "text": "小本，洗澡水放好了。",
+        "textVi": "Ben ơi, nước tắm sẵn sàng rồi con.",
+        "pinyin": "Xiǎo Běn, xǐ zǎo shuǐ fàng hǎo le."
+      },
+      {
+        "id": "bath-time-l2",
+        "speakerId": "ben",
+        "text": "水热不热呀？",
+        "textVi": "Nước có ấm không bố?",
+        "pinyin": "Shuǐ rè bu rè ya?"
+      },
+      {
+        "id": "bath-time-l3",
+        "speakerId": "dad",
+        "text": "是热的，不烫。快进浴缸吧！",
+        "textVi": "Ấm rồi, không nóng đâu. Con vào bồn tắm nhanh đi!",
+        "pinyin": "Shì rè de, bú tàng. Kuài jìn yù gāng ba!"
+      },
+      {
+        "id": "bath-time-l4",
+        "speakerId": "ben",
+        "text": "我可以玩小黄鸭吗？",
+        "textVi": "Con chơi với chú vịt vàng được không ạ?",
+        "pinyin": "Wǒ kě yǐ wán xiǎo huáng yā ma?"
+      },
+      {
+        "id": "bath-time-l5",
+        "speakerId": "dad",
+        "text": "可以。但是要先用肥皂洗身体。",
+        "textVi": "Được chứ. Nhưng con phải kỳ người bằng xà phòng trước đã.",
+        "pinyin": "Kě yǐ. Dàn shì yào xiān yòng féi zào xǐ shēn tǐ."
+      },
+      {
+        "id": "bath-time-l6",
+        "speakerId": "ben",
+        "text": "爸爸，我洗好了！",
+        "textVi": "Bố ơi, con tắm xong rồi!",
+        "pinyin": "Bà ba, wǒ xǐ hǎo le!"
+      },
+      {
+        "id": "bath-time-l7",
+        "speakerId": "dad",
+        "text": "毛巾给你。站到地垫上吧。",
+        "textVi": "Khăn tắm của con đây. Con đứng lên thảm nhà tắm nhé.",
+        "pinyin": "Máo jīn gěi nǐ. Zhàn dào dì diàn shàng ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "bath-time-q1",
+        "prompt": "你在哪儿洗澡？",
+        "suggestedAnswer": "我在浴缸里洗澡。",
+        "promptPinyin": "Nǐ zài nǎr xǐ zǎo?",
+        "suggestedAnswerPinyin": "Wǒ zài yù gāng lǐ xǐ zǎo."
+      },
+      {
+        "id": "bath-time-q2",
+        "prompt": "洗完澡，你站在哪儿？",
+        "suggestedAnswer": "我站在地垫上。",
+        "promptPinyin": "Xǐ wán zǎo, nǐ zhàn zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ zhàn zài dì diàn shàng."
+      }
+    ]
+  },
+  {
+    "id": "wash-your-hands",
+    "sceneId": "bathroom",
+    "title": "饭前洗手",
+    "order": 4,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "莉莉叫小本去洗手。",
+    "lines": [
+      {
+        "id": "wash-your-hands-l1",
+        "speakerId": "lily",
+        "text": "小本，吃午饭前要洗手！",
+        "textVi": "Ben ơi, trước khi ăn trưa phải rửa tay đó!",
+        "pinyin": "Xiǎo Běn, chī wǔ fàn qián yào xǐ shǒu!"
+      },
+      {
+        "id": "wash-your-hands-l2",
+        "speakerId": "ben",
+        "text": "好的。我打开水龙头。",
+        "textVi": "Được rồi. Mình mở vòi nước đây.",
+        "pinyin": "Hǎo de. Wǒ dǎ kāi shuǐ lóng tóu."
+      },
+      {
+        "id": "wash-your-hands-l3",
+        "speakerId": "lily",
+        "text": "还要用肥皂哦！",
+        "textVi": "Nhớ dùng cả xà phòng nữa nhé!",
+        "pinyin": "Hái yào yòng féi zào ò!"
+      },
+      {
+        "id": "wash-your-hands-l4",
+        "speakerId": "ben",
+        "text": "看，好多泡泡！",
+        "textVi": "Nhìn này, nhiều bong bóng quá!",
+        "pinyin": "Kàn, hǎo duō pào pào!"
+      },
+      {
+        "id": "wash-your-hands-l5",
+        "speakerId": "lily",
+        "text": "冲干净，再关上水龙头。",
+        "textVi": "Xả nước cho sạch, rồi khoá vòi nước lại nhé.",
+        "pinyin": "Chōng gān jing, zài guān shàng shuǐ lóng tóu."
+      },
+      {
+        "id": "wash-your-hands-l6",
+        "speakerId": "ben",
+        "text": "我的手干净了。毛巾在哪儿？",
+        "textVi": "Tay mình sạch rồi. Khăn ở đâu nhỉ?",
+        "pinyin": "Wǒ de shǒu gān jing le. Máo jīn zài nǎr?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "wash-your-hands-q1",
+        "prompt": "你用什么洗手？",
+        "suggestedAnswer": "我用肥皂和水洗手。",
+        "promptPinyin": "Nǐ yòng shén me xǐ shǒu?",
+        "suggestedAnswerPinyin": "Wǒ yòng féi zào hé shuǐ xǐ shǒu."
+      },
+      {
+        "id": "wash-your-hands-q2",
+        "prompt": "你什么时候洗手？",
+        "suggestedAnswer": "我吃午饭前洗手。",
+        "promptPinyin": "Nǐ shén me shí hou xǐ shǒu?",
+        "suggestedAnswerPinyin": "Wǒ chī wǔ fàn qián xǐ shǒu."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-towel",
+    "sceneId": "bathroom",
+    "title": "毛巾在哪儿？",
+    "order": 5,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "小本洗完澡找毛巾。",
+    "lines": [
+      {
+        "id": "where-is-the-towel-l1",
+        "speakerId": "ben",
+        "text": "妈妈，我的毛巾在哪儿？",
+        "textVi": "Mẹ ơi, khăn tắm của con đâu rồi ạ?",
+        "pinyin": "Mā ma, wǒ de máo jīn zài nǎr?"
+      },
+      {
+        "id": "where-is-the-towel-l2",
+        "speakerId": "mom",
+        "text": "在毛巾架上吗？",
+        "textVi": "Có ở trên giá treo khăn không con?",
+        "pinyin": "Zài máo jīn jià shàng ma?"
+      },
+      {
+        "id": "where-is-the-towel-l3",
+        "speakerId": "ben",
+        "text": "不在。毛巾架上空空的。",
+        "textVi": "Không có ạ. Giá treo khăn trống trơn.",
+        "pinyin": "Bú zài. Máo jīn jià shàng kōng kōng de."
+      },
+      {
+        "id": "where-is-the-towel-l4",
+        "speakerId": "mom",
+        "text": "去浴室柜里找找。",
+        "textVi": "Con tìm thử trong tủ nhà tắm xem.",
+        "pinyin": "Qù yù shì guì lǐ zhǎo zhǎo."
+      },
+      {
+        "id": "where-is-the-towel-l5",
+        "speakerId": "ben",
+        "text": "找到了！在中间那层。",
+        "textVi": "Con thấy rồi! Nó ở ngăn giữa ạ.",
+        "pinyin": "Zhǎo dào le! Zài zhōng jiān nà céng."
+      },
+      {
+        "id": "where-is-the-towel-l6",
+        "speakerId": "mom",
+        "text": "湿毛巾放进脏衣篮里哦。",
+        "textVi": "Khăn ướt thì con bỏ vào giỏ đựng quần áo bẩn nhé.",
+        "pinyin": "Shī máo jīn fàng jìn zāng yī lán lǐ ò."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-towel-q1",
+        "prompt": "毛巾在哪儿？",
+        "suggestedAnswer": "毛巾在浴室柜里。",
+        "promptPinyin": "Máo jīn zài nǎr?",
+        "suggestedAnswerPinyin": "Máo jīn zài yù shì guì lǐ."
+      },
+      {
+        "id": "where-is-the-towel-q2",
+        "prompt": "湿毛巾要放到哪儿？",
+        "suggestedAnswer": "湿毛巾要放进脏衣篮里。",
+        "promptPinyin": "Shī máo jīn yào fàng dào nǎr?",
+        "suggestedAnswerPinyin": "Shī máo jīn yào fàng jìn zāng yī lán lǐ."
+      }
+    ]
+  },
+  {
+    "id": "washing-my-hair",
+    "sceneId": "bathroom",
+    "title": "洗头发",
+    "order": 6,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "妈妈在花洒下给莉莉洗头。",
+    "lines": [
+      {
+        "id": "washing-my-hair-l1",
+        "speakerId": "mom",
+        "text": "莉莉，我们来洗头吧。",
+        "textVi": "Lily ơi, mình gội đầu nào.",
+        "pinyin": "Lì li, wǒ men lái xǐ tóu ba."
+      },
+      {
+        "id": "washing-my-hair-l2",
+        "speakerId": "lily",
+        "text": "我可以用花洒吗？",
+        "textVi": "Con dùng vòi sen được không ạ?",
+        "pinyin": "Wǒ kě yǐ yòng huā sǎ ma?"
+      },
+      {
+        "id": "washing-my-hair-l3",
+        "speakerId": "mom",
+        "text": "可以。先拉上浴帘。",
+        "textVi": "Được. Con kéo rèm tắm lại trước nhé.",
+        "pinyin": "Kě yǐ. Xiān lā shàng yù lián."
+      },
+      {
+        "id": "washing-my-hair-l4",
+        "speakerId": "lily",
+        "text": "洗发水在哪儿？",
+        "textVi": "Dầu gội ở đâu ạ?",
+        "pinyin": "Xǐ fà shuǐ zài nǎr?"
+      },
+      {
+        "id": "washing-my-hair-l5",
+        "speakerId": "mom",
+        "text": "在架子上。闭上眼睛哦。",
+        "textVi": "Ở trên kệ đó. Con nhắm mắt lại nhé.",
+        "pinyin": "Zài jià zi shàng. Bì shàng yǎn jing ò."
+      },
+      {
+        "id": "washing-my-hair-l6",
+        "speakerId": "lily",
+        "text": "哇，好香呀！",
+        "textVi": "Oa, thơm quá!",
+        "pinyin": "Wā, hǎo xiāng ya!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-my-hair-q1",
+        "prompt": "你用什么洗头？",
+        "suggestedAnswer": "我用洗发水洗头。",
+        "promptPinyin": "Nǐ yòng shén me xǐ tóu?",
+        "suggestedAnswerPinyin": "Wǒ yòng xǐ fà shuǐ xǐ tóu."
+      },
+      {
+        "id": "washing-my-hair-q2",
+        "prompt": "洗澡前，你要拉上什么？",
+        "suggestedAnswer": "我要拉上浴帘。",
+        "promptPinyin": "Xǐ zǎo qián, nǐ yào lā shàng shén me?",
+        "suggestedAnswerPinyin": "Wǒ yào lā shàng yù lián."
+      }
+    ]
+  },
+  {
+    "id": "drying-my-hair",
+    "sceneId": "bathroom",
+    "title": "吹头发",
+    "order": 7,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "莉莉吹干头发，再梳一梳。",
+    "lines": [
+      {
+        "id": "drying-my-hair-l1",
+        "speakerId": "lily",
+        "text": "妈妈，我的头发还是湿的。",
+        "textVi": "Mẹ ơi, tóc con vẫn còn ướt.",
+        "pinyin": "Mā ma, wǒ de tóu fa hái shì shī de."
+      },
+      {
+        "id": "drying-my-hair-l2",
+        "speakerId": "mom",
+        "text": "我们用吹风机吹一吹。",
+        "textVi": "Mình dùng máy sấy tóc sấy một chút nhé.",
+        "pinyin": "Wǒ men yòng chuī fēng jī chuī yi chuī."
+      },
+      {
+        "id": "drying-my-hair-l3",
+        "speakerId": "lily",
+        "text": "声音好大，但是风暖暖的。",
+        "textVi": "Tiếng kêu to quá, nhưng gió ấm ấm.",
+        "pinyin": "Shēng yīn hǎo dà, dàn shì fēng nuǎn nuǎn de."
+      },
+      {
+        "id": "drying-my-hair-l4",
+        "speakerId": "mom",
+        "text": "头发干了。梳子在哪儿？",
+        "textVi": "Tóc khô rồi. Cái lược đâu nhỉ?",
+        "pinyin": "Tóu fa gān le. Shū zi zài nǎr?"
+      },
+      {
+        "id": "drying-my-hair-l5",
+        "speakerId": "lily",
+        "text": "在肥皂旁边。",
+        "textVi": "Ở cạnh xà phòng ạ.",
+        "pinyin": "Zài féi zào páng biān."
+      },
+      {
+        "id": "drying-my-hair-l6",
+        "speakerId": "mom",
+        "text": "你自己梳梳头吧。",
+        "textVi": "Con tự chải tóc nhé.",
+        "pinyin": "Nǐ zì jǐ shū shū tóu ba."
+      },
+      {
+        "id": "drying-my-hair-l7",
+        "speakerId": "lily",
+        "text": "谢谢妈妈！我好漂亮呀！",
+        "textVi": "Con cảm ơn mẹ! Trông con xinh quá!",
+        "pinyin": "Xiè xiè mā ma! Wǒ hǎo piào liang ya!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "drying-my-hair-q1",
+        "prompt": "你用什么吹头发？",
+        "suggestedAnswer": "我用吹风机吹头发。",
+        "promptPinyin": "Nǐ yòng shén me chuī tóu fa?",
+        "suggestedAnswerPinyin": "Wǒ yòng chuī fēng jī chuī tóu fa."
+      },
+      {
+        "id": "drying-my-hair-q2",
+        "prompt": "你用什么梳头发？",
+        "suggestedAnswer": "我用梳子梳头发。",
+        "promptPinyin": "Nǐ yòng shén me shū tóu fa?",
+        "suggestedAnswerPinyin": "Wǒ yòng shū zi shū tóu fa."
+      }
+    ]
+  },
+  {
+    "id": "dad-is-shaving",
+    "sceneId": "bathroom",
+    "title": "爸爸刮胡子",
+    "order": 8,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "小本看爸爸在洗手池前刮胡子。",
+    "lines": [
+      {
+        "id": "dad-is-shaving-l1",
+        "speakerId": "ben",
+        "text": "爸爸，你在做什么？",
+        "textVi": "Bố ơi, bố đang làm gì vậy?",
+        "pinyin": "Bà ba, nǐ zài zuò shén me?"
+      },
+      {
+        "id": "dad-is-shaving-l2",
+        "speakerId": "dad",
+        "text": "我在刮胡子呢，小本。",
+        "textVi": "Bố đang cạo râu đây, Ben ạ.",
+        "pinyin": "Wǒ zài guā hú zi ne, Xiǎo Běn."
+      },
+      {
+        "id": "dad-is-shaving-l3",
+        "speakerId": "ben",
+        "text": "那个白白的是什么？",
+        "textVi": "Cái trắng trắng kia là gì vậy bố?",
+        "pinyin": "Nà ge bái bái de shì shén me?"
+      },
+      {
+        "id": "dad-is-shaving-l4",
+        "speakerId": "dad",
+        "text": "这是剃须膏，软软的，像泡泡一样。",
+        "textVi": "Đây là kem cạo râu, mềm mềm giống như bọt vậy.",
+        "pinyin": "Zhè shì tì xū gāo, ruǎn ruǎn de, xiàng pào pào yí yàng."
+      },
+      {
+        "id": "dad-is-shaving-l5",
+        "speakerId": "ben",
+        "text": "我可以用剃须刀吗？",
+        "textVi": "Con dùng dao cạo râu được không ạ?",
+        "pinyin": "Wǒ kě yǐ yòng tì xū dāo ma?"
+      },
+      {
+        "id": "dad-is-shaving-l6",
+        "speakerId": "dad",
+        "text": "不行，小本。剃须刀很锋利，大人才能用。",
+        "textVi": "Không được đâu, Ben. Dao cạo râu rất sắc, chỉ người lớn mới được dùng.",
+        "pinyin": "Bù xíng, Xiǎo Běn. Tì xū dāo hěn fēng lì, dà rén cái néng yòng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "dad-is-shaving-q1",
+        "prompt": "爸爸在脸上抹什么？",
+        "suggestedAnswer": "爸爸在脸上抹剃须膏。",
+        "promptPinyin": "Bà ba zài liǎn shàng mǒ shén me?",
+        "suggestedAnswerPinyin": "Bà ba zài liǎn shàng mǒ tì xū gāo."
+      },
+      {
+        "id": "dad-is-shaving-q2",
+        "prompt": "小朋友为什么不能用剃须刀？",
+        "suggestedAnswer": "因为剃须刀很锋利。",
+        "promptPinyin": "Xiǎo péng you wèi shén me bù néng yòng tì xū dāo?",
+        "suggestedAnswerPinyin": "Yīn wèi tì xū dāo hěn fēng lì."
+      }
+    ]
+  },
+  {
+    "id": "cleaning-the-bathroom",
+    "sceneId": "bathroom",
+    "title": "打扫浴室",
+    "order": 9,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "小本和爸爸一起打扫浴室。",
+    "lines": [
+      {
+        "id": "cleaning-the-bathroom-l1",
+        "speakerId": "dad",
+        "text": "小本，我们一起打扫浴室吧。",
+        "textVi": "Ben ơi, mình cùng dọn phòng tắm nào.",
+        "pinyin": "Xiǎo Běn, wǒ men yì qǐ dǎ sǎo yù shì ba."
+      },
+      {
+        "id": "cleaning-the-bathroom-l2",
+        "speakerId": "ben",
+        "text": "好！我来用水桶接水。",
+        "textVi": "Vâng ạ! Để con lấy xô hứng nước.",
+        "pinyin": "Hǎo! Wǒ lái yòng shuǐ tǒng jiē shuǐ."
+      },
+      {
+        "id": "cleaning-the-bathroom-l3",
+        "speakerId": "dad",
+        "text": "太好了。我用马桶刷刷马桶。",
+        "textVi": "Tuyệt quá. Bố cọ bồn cầu bằng chổi cọ bồn cầu.",
+        "pinyin": "Tài hǎo le. Wǒ yòng mǎ tǒng shuā shuā mǎ tǒng."
+      },
+      {
+        "id": "cleaning-the-bathroom-l4",
+        "speakerId": "ben",
+        "text": "我把废纸扔进垃圾桶里。",
+        "textVi": "Con vứt giấy vụn vào thùng rác.",
+        "pinyin": "Wǒ bǎ fèi zhǐ rēng jìn lā jī tǒng lǐ."
+      },
+      {
+        "id": "cleaning-the-bathroom-l5",
+        "speakerId": "dad",
+        "text": "还要换一卷新的卫生纸。",
+        "textVi": "Mình còn phải thay một cuộn giấy vệ sinh mới nữa.",
+        "pinyin": "Hái yào huàn yí juàn xīn de wèi shēng zhǐ."
+      },
+      {
+        "id": "cleaning-the-bathroom-l6",
+        "speakerId": "ben",
+        "text": "给你。浴室变干净了！",
+        "textVi": "Đây ạ. Phòng tắm sạch sẽ rồi!",
+        "pinyin": "Gěi nǐ. Yù shì biàn gān jing le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cleaning-the-bathroom-q1",
+        "prompt": "爸爸用什么刷马桶？",
+        "suggestedAnswer": "爸爸用马桶刷刷马桶。",
+        "promptPinyin": "Bà ba yòng shén me shuā mǎ tǒng?",
+        "suggestedAnswerPinyin": "Bà ba yòng mǎ tǒng shuā shuā mǎ tǒng."
+      },
+      {
+        "id": "cleaning-the-bathroom-q2",
+        "prompt": "废纸要扔到哪儿？",
+        "suggestedAnswer": "废纸要扔进垃圾桶里。",
+        "promptPinyin": "Fèi zhǐ yào rēng dào nǎr?",
+        "suggestedAnswerPinyin": "Fèi zhǐ yào rēng jìn lā jī tǒng lǐ."
+      }
+    ]
+  },
+  {
+    "id": "getting-ready-for-bed",
+    "sceneId": "bathroom",
+    "title": "准备睡觉",
+    "order": 10,
+    "poster": "/assets/scenes/bathroom/bathroom-desktop.webp",
+    "description": "睡觉前，莉莉在浴室里洗漱。",
+    "lines": [
+      {
+        "id": "getting-ready-for-bed-l1",
+        "speakerId": "mom",
+        "text": "莉莉，八点了，该准备睡觉了。",
+        "textVi": "Lily ơi, tám giờ rồi, đến giờ chuẩn bị đi ngủ rồi con.",
+        "pinyin": "Lì li, bā diǎn le, gāi zhǔn bèi shuì jiào le."
+      },
+      {
+        "id": "getting-ready-for-bed-l2",
+        "speakerId": "lily",
+        "text": "我先洗个澡。",
+        "textVi": "Con tắm trước đã ạ.",
+        "pinyin": "Wǒ xiān xǐ gè zǎo."
+      },
+      {
+        "id": "getting-ready-for-bed-l3",
+        "speakerId": "mom",
+        "text": "然后要刷牙哦。",
+        "textVi": "Sau đó phải đánh răng nhé.",
+        "pinyin": "Rán hòu yào shuā yá ò."
+      },
+      {
+        "id": "getting-ready-for-bed-l4",
+        "speakerId": "lily",
+        "text": "好，我拿好牙刷和牙膏了。",
+        "textVi": "Vâng, con lấy bàn chải và kem đánh răng rồi ạ.",
+        "pinyin": "Hǎo, wǒ ná hǎo yá shuā hé yá gāo le."
+      },
+      {
+        "id": "getting-ready-for-bed-l5",
+        "speakerId": "mom",
+        "text": "别忘了在洗手池洗脸。",
+        "textVi": "Đừng quên rửa mặt ở bồn rửa mặt nhé.",
+        "pinyin": "Bié wàng le zài xǐ shǒu chí xǐ liǎn."
+      },
+      {
+        "id": "getting-ready-for-bed-l6",
+        "speakerId": "lily",
+        "text": "都做完了！妈妈，晚安！",
+        "textVi": "Con xong hết rồi! Chúc mẹ ngủ ngon!",
+        "pinyin": "Dōu zuò wán le! Mā ma, wǎn ān!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "getting-ready-for-bed-q1",
+        "prompt": "睡觉前你做什么？",
+        "suggestedAnswer": "我先洗澡，再刷牙。",
+        "promptPinyin": "Shuì jiào qián nǐ zuò shén me?",
+        "suggestedAnswerPinyin": "Wǒ xiān xǐ zǎo, zài shuā yá."
+      },
+      {
+        "id": "getting-ready-for-bed-q2",
+        "prompt": "你在哪儿洗脸？",
+        "suggestedAnswer": "我在洗手池洗脸。",
+        "promptPinyin": "Nǐ zài nǎr xǐ liǎn?",
+        "suggestedAnswerPinyin": "Wǒ zài xǐ shǒu chí xǐ liǎn."
+      }
+    ]
+  },
+  {
+    "id": "my-living-room",
+    "sceneId": "living-room",
+    "title": "我家的客厅",
+    "order": 1,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "莉莉带小本参观她家的客厅。",
+    "lines": [
+      {
+        "id": "my-living-room-l1",
+        "speakerId": "ben",
+        "text": "莉莉，这是你家的客厅吗？",
+        "textVi": "Lily ơi, đây là phòng khách nhà bạn à?",
+        "pinyin": "Lì li, zhè shì nǐ jiā de kè tīng ma?"
+      },
+      {
+        "id": "my-living-room-l2",
+        "speakerId": "lily",
+        "text": "是啊，快进来吧！",
+        "textVi": "Đúng rồi, bạn vào đi!",
+        "pinyin": "Shì a, kuài jìn lái ba!"
+      },
+      {
+        "id": "my-living-room-l3",
+        "speakerId": "ben",
+        "text": "哇，你家的沙发好大呀！",
+        "textVi": "Oa, ghế sofa nhà bạn to quá!",
+        "pinyin": "Wā, nǐ jiā de shā fā hǎo dà ya!"
+      },
+      {
+        "id": "my-living-room-l4",
+        "speakerId": "lily",
+        "text": "我最喜欢这把黄色的扶手椅。",
+        "textVi": "Mình thích nhất chiếc ghế bành màu vàng này.",
+        "pinyin": "Wǒ zuì xǐ huan zhè bǎ huáng sè de fú shǒu yǐ."
+      },
+      {
+        "id": "my-living-room-l5",
+        "speakerId": "ben",
+        "text": "墙上挂的是什么？",
+        "textVi": "Trên tường treo cái gì vậy?",
+        "pinyin": "Qiáng shàng guà de shì shén me?"
+      },
+      {
+        "id": "my-living-room-l6",
+        "speakerId": "lily",
+        "text": "是一幅画，画着一座小房子。",
+        "textVi": "Là một bức tranh vẽ một ngôi nhà nhỏ.",
+        "pinyin": "Shì yì fú huà, huà zhe yí zuò xiǎo fáng zi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-living-room-q1",
+        "prompt": "你家的客厅里有什么？",
+        "suggestedAnswer": "我家的客厅里有沙发、扶手椅和电视。",
+        "promptPinyin": "Nǐ jiā de kè tīng lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Wǒ jiā de kè tīng lǐ yǒu shā fā, fú shǒu yǐ hé diàn shì."
+      },
+      {
+        "id": "my-living-room-q2",
+        "prompt": "扶手椅是什么颜色的？",
+        "suggestedAnswer": "扶手椅是黄色的。",
+        "promptPinyin": "Fú shǒu yǐ shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Fú shǒu yǐ shì huáng sè de."
+      }
+    ]
+  },
+  {
+    "id": "watching-tv",
+    "sceneId": "living-room",
+    "title": "看电视",
+    "order": 2,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "小本问妈妈能不能看动画片。",
+    "lines": [
+      {
+        "id": "watching-tv-l1",
+        "speakerId": "ben",
+        "text": "妈妈，我可以看电视吗？",
+        "textVi": "Mẹ ơi, con xem tivi được không ạ?",
+        "pinyin": "Mā ma, wǒ kě yǐ kàn diàn shì ma?"
+      },
+      {
+        "id": "watching-tv-l2",
+        "speakerId": "mom",
+        "text": "你的作业写完了吗？",
+        "textVi": "Con làm xong bài tập chưa?",
+        "pinyin": "Nǐ de zuò yè xiě wán le ma?"
+      },
+      {
+        "id": "watching-tv-l3",
+        "speakerId": "ben",
+        "text": "写完了！",
+        "textVi": "Con làm xong rồi ạ!",
+        "pinyin": "Xiě wán le!"
+      },
+      {
+        "id": "watching-tv-l4",
+        "speakerId": "mom",
+        "text": "好吧，你可以看三十分钟。",
+        "textVi": "Được rồi, con được xem ba mươi phút nhé.",
+        "pinyin": "Hǎo ba, nǐ kě yǐ kàn sān shí fēn zhōng."
+      },
+      {
+        "id": "watching-tv-l5",
+        "speakerId": "ben",
+        "text": "谢谢妈妈！遥控器在哪儿？",
+        "textVi": "Con cảm ơn mẹ! Điều khiển từ xa ở đâu ạ?",
+        "pinyin": "Xiè xiè mā ma! Yáo kòng qì zài nǎr?"
+      },
+      {
+        "id": "watching-tv-l6",
+        "speakerId": "mom",
+        "text": "在茶几上。",
+        "textVi": "Ở trên bàn trà đấy.",
+        "pinyin": "Zài chá jī shàng."
+      },
+      {
+        "id": "watching-tv-l7",
+        "speakerId": "ben",
+        "text": "找到了！看动画片啦！",
+        "textVi": "Con thấy rồi! Xem hoạt hình thôi!",
+        "pinyin": "Zhǎo dào le! Kàn dòng huà piàn lā!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "watching-tv-q1",
+        "prompt": "你喜欢看什么电视节目？",
+        "suggestedAnswer": "我喜欢看动画片。",
+        "promptPinyin": "Nǐ xǐ huan kàn shén me diàn shì jié mù?",
+        "suggestedAnswerPinyin": "Wǒ xǐ huan kàn dòng huà piàn."
+      },
+      {
+        "id": "watching-tv-q2",
+        "prompt": "遥控器在哪儿？",
+        "suggestedAnswer": "遥控器在茶几上。",
+        "promptPinyin": "Yáo kòng qì zài nǎr?",
+        "suggestedAnswerPinyin": "Yáo kòng qì zài chá jī shàng."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-remote",
+    "sceneId": "living-room",
+    "title": "遥控器在哪儿？",
+    "order": 3,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "爸爸和莉莉一起找遥控器。",
+    "lines": [
+      {
+        "id": "where-is-the-remote-l1",
+        "speakerId": "dad",
+        "text": "莉莉，你看见遥控器了吗？",
+        "textVi": "Lily ơi, con có thấy cái điều khiển đâu không?",
+        "pinyin": "Lì li, nǐ kàn jiàn yáo kòng qì le ma?"
+      },
+      {
+        "id": "where-is-the-remote-l2",
+        "speakerId": "lily",
+        "text": "在沙发上吗？",
+        "textVi": "Có ở trên ghế sofa không bố?",
+        "pinyin": "Zài shā fā shàng ma?"
+      },
+      {
+        "id": "where-is-the-remote-l3",
+        "speakerId": "dad",
+        "text": "不在呀。",
+        "textVi": "Không có con ạ.",
+        "pinyin": "Bú zài ya."
+      },
+      {
+        "id": "where-is-the-remote-l4",
+        "speakerId": "lily",
+        "text": "看看抱枕下面！",
+        "textVi": "Bố xem dưới gối tựa đi!",
+        "pinyin": "Kàn kàn bào zhěn xià miàn!"
+      },
+      {
+        "id": "where-is-the-remote-l5",
+        "speakerId": "dad",
+        "text": "也没有。在电视柜上吗？",
+        "textVi": "Cũng không có. Có ở trên kệ tivi không nhỉ?",
+        "pinyin": "Yě méi yǒu. Zài diàn shì guì shàng ma?"
+      },
+      {
+        "id": "where-is-the-remote-l6",
+        "speakerId": "lily",
+        "text": "在这儿呢！就在杯子旁边。",
+        "textVi": "Đây rồi! Ở ngay cạnh cái cốc.",
+        "pinyin": "Zài zhèr ne! Jiù zài bēi zi páng biān."
+      },
+      {
+        "id": "where-is-the-remote-l7",
+        "speakerId": "dad",
+        "text": "谢谢你，莉莉！",
+        "textVi": "Cảm ơn con, Lily!",
+        "pinyin": "Xiè xiè nǐ, Lì li!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-remote-q1",
+        "prompt": "东西丢了，你会在哪儿找？",
+        "suggestedAnswer": "我会在抱枕下面和沙发上找。",
+        "promptPinyin": "Dōng xi diū le, nǐ huì zài nǎr zhǎo?",
+        "suggestedAnswerPinyin": "Wǒ huì zài bào zhěn xià miàn hé shā fā shàng zhǎo."
+      },
+      {
+        "id": "where-is-the-remote-q2",
+        "prompt": "遥控器刚才在哪儿？",
+        "suggestedAnswer": "遥控器在茶几上，就在杯子旁边。",
+        "promptPinyin": "Yáo kòng qì gāng cái zài nǎr?",
+        "suggestedAnswerPinyin": "Yáo kòng qì zài chá jī shàng, jiù zài bēi zi páng biān."
+      }
+    ]
+  },
+  {
+    "id": "it-is-so-hot",
+    "sceneId": "living-room",
+    "title": "好热啊！",
+    "order": 4,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "小本觉得很热，爸爸让房间凉快下来。",
+    "lines": [
+      {
+        "id": "it-is-so-hot-l1",
+        "speakerId": "ben",
+        "text": "爸爸，今天好热啊！",
+        "textVi": "Bố ơi, hôm nay nóng quá!",
+        "pinyin": "Bà ba, jīn tiān hǎo rè a!"
+      },
+      {
+        "id": "it-is-so-hot-l2",
+        "speakerId": "dad",
+        "text": "我们打开吊扇吧。",
+        "textVi": "Mình bật quạt trần lên nhé.",
+        "pinyin": "Wǒ men dǎ kāi diào shàn ba."
+      },
+      {
+        "id": "it-is-so-hot-l3",
+        "speakerId": "ben",
+        "text": "还是很热。",
+        "textVi": "Vẫn còn nóng ạ.",
+        "pinyin": "Hái shì hěn rè."
+      },
+      {
+        "id": "it-is-so-hot-l4",
+        "speakerId": "dad",
+        "text": "好吧，我把空调也打开。",
+        "textVi": "Được rồi, bố bật cả máy điều hòa nữa.",
+        "pinyin": "Hǎo ba, wǒ bǎ kōng tiáo yě dǎ kāi."
+      },
+      {
+        "id": "it-is-so-hot-l5",
+        "speakerId": "ben",
+        "text": "我要关上窗户吗？",
+        "textVi": "Con có cần đóng cửa sổ không ạ?",
+        "pinyin": "Wǒ yào guān shàng chuāng hu ma?"
+      },
+      {
+        "id": "it-is-so-hot-l6",
+        "speakerId": "dad",
+        "text": "对，关上吧。这样房间就凉快了。",
+        "textVi": "Ừ, con đóng lại đi. Như vậy phòng sẽ mát.",
+        "pinyin": "Duì, guān shàng ba. Zhè yàng fáng jiān jiù liáng kuai le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "it-is-so-hot-q1",
+        "prompt": "天热的时候，你做什么？",
+        "suggestedAnswer": "我打开吊扇。",
+        "promptPinyin": "Tiān rè de shí hou, nǐ zuò shén me?",
+        "suggestedAnswerPinyin": "Wǒ dǎ kāi diào shàn."
+      },
+      {
+        "id": "it-is-so-hot-q2",
+        "prompt": "我们为什么要关上窗户？",
+        "suggestedAnswer": "关上窗户，房间就会很凉快。",
+        "promptPinyin": "Wǒ men wèi shén me yào guān shàng chuāng hu?",
+        "suggestedAnswerPinyin": "Guān shàng chuāng hu, fáng jiān jiù huì hěn liáng kuai."
+      }
+    ]
+  },
+  {
+    "id": "turn-on-the-light",
+    "sceneId": "living-room",
+    "title": "开灯",
+    "order": 5,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "天快黑了，莉莉把灯打开。",
+    "lines": [
+      {
+        "id": "turn-on-the-light-l1",
+        "speakerId": "mom",
+        "text": "莉莉，天快黑了。",
+        "textVi": "Lily ơi, trời sắp tối rồi.",
+        "pinyin": "Lì li, tiān kuài hēi le."
+      },
+      {
+        "id": "turn-on-the-light-l2",
+        "speakerId": "lily",
+        "text": "我看不清书上的字。",
+        "textVi": "Con không nhìn rõ chữ trong sách.",
+        "pinyin": "Wǒ kàn bù qīng shū shàng de zì."
+      },
+      {
+        "id": "turn-on-the-light-l3",
+        "speakerId": "mom",
+        "text": "把灯打开吧。",
+        "textVi": "Con bật đèn lên đi.",
+        "pinyin": "Bǎ dēng dǎ kāi ba."
+      },
+      {
+        "id": "turn-on-the-light-l4",
+        "speakerId": "lily",
+        "text": "开关在哪儿？",
+        "textVi": "Công tắc đèn ở đâu ạ?",
+        "pinyin": "Kāi guān zài nǎr?"
+      },
+      {
+        "id": "turn-on-the-light-l5",
+        "speakerId": "mom",
+        "text": "在墙上，电视旁边。",
+        "textVi": "Ở trên tường, cạnh cái tivi.",
+        "pinyin": "Zài qiáng shàng, diàn shì páng biān."
+      },
+      {
+        "id": "turn-on-the-light-l6",
+        "speakerId": "lily",
+        "text": "我把落地灯也打开吧。",
+        "textVi": "Con bật luôn cả đèn cây nhé.",
+        "pinyin": "Wǒ bǎ luò dì dēng yě dǎ kāi ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "turn-on-the-light-q1",
+        "prompt": "天黑的时候，你做什么？",
+        "suggestedAnswer": "我把灯打开。",
+        "promptPinyin": "Tiān hēi de shí hou, nǐ zuò shén me?",
+        "suggestedAnswerPinyin": "Wǒ bǎ dēng dǎ kāi."
+      },
+      {
+        "id": "turn-on-the-light-q2",
+        "prompt": "开关在哪儿？",
+        "suggestedAnswer": "开关在墙上。",
+        "promptPinyin": "Kāi guān zài nǎr?",
+        "suggestedAnswerPinyin": "Kāi guān zài qiáng shàng."
+      }
+    ]
+  },
+  {
+    "id": "reading-the-newspaper",
+    "sceneId": "living-room",
+    "title": "看报纸",
+    "order": 6,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "小本给爸爸拿来报纸和一杯茶。",
+    "lines": [
+      {
+        "id": "reading-the-newspaper-l1",
+        "speakerId": "dad",
+        "text": "小本，你能帮我拿一下报纸吗？",
+        "textVi": "Ben ơi, con lấy giúp bố tờ báo được không?",
+        "pinyin": "Xiǎo Běn, nǐ néng bāng wǒ ná yí xià bào zhǐ ma?"
+      },
+      {
+        "id": "reading-the-newspaper-l2",
+        "speakerId": "ben",
+        "text": "好的！给你，爸爸。",
+        "textVi": "Dạ vâng! Của bố đây ạ.",
+        "pinyin": "Hǎo de! Gěi nǐ, bà ba."
+      },
+      {
+        "id": "reading-the-newspaper-l3",
+        "speakerId": "dad",
+        "text": "谢谢。我喜欢坐在扶手椅上看报纸。",
+        "textVi": "Cảm ơn con. Bố thích ngồi trên ghế bành đọc báo.",
+        "pinyin": "Xiè xiè. Wǒ xǐ huan zuò zài fú shǒu yǐ shàng kàn bào zhǐ."
+      },
+      {
+        "id": "reading-the-newspaper-l4",
+        "speakerId": "ben",
+        "text": "你想喝一杯茶吗？",
+        "textVi": "Bố có muốn uống một cốc trà không ạ?",
+        "pinyin": "Nǐ xiǎng hē yì bēi chá ma?"
+      },
+      {
+        "id": "reading-the-newspaper-l5",
+        "speakerId": "dad",
+        "text": "好啊。把杯子放在杯垫上吧。",
+        "textVi": "Có chứ. Con đặt cốc lên miếng lót ly nhé.",
+        "pinyin": "Hǎo a. Bǎ bēi zi fàng zài bēi diàn shàng ba."
+      },
+      {
+        "id": "reading-the-newspaper-l6",
+        "speakerId": "ben",
+        "text": "好的，爸爸。你慢慢喝！",
+        "textVi": "Vâng ạ. Bố uống từ từ nhé!",
+        "pinyin": "Hǎo de, bà ba. Nǐ màn màn hē!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "reading-the-newspaper-q1",
+        "prompt": "爸爸喜欢在哪儿看报纸？",
+        "suggestedAnswer": "他喜欢坐在扶手椅上看报纸。",
+        "promptPinyin": "Bà ba xǐ huan zài nǎr kàn bào zhǐ?",
+        "suggestedAnswerPinyin": "Tā xǐ huan zuò zài fú shǒu yǐ shàng kàn bào zhǐ."
+      },
+      {
+        "id": "reading-the-newspaper-q2",
+        "prompt": "为什么要把杯子放在杯垫上？",
+        "suggestedAnswer": "这样桌子就不会湿了。",
+        "promptPinyin": "Wèi shén me yào bǎ bēi zi fàng zài bēi diàn shàng?",
+        "suggestedAnswerPinyin": "Zhè yàng zhuō zi jiù bú huì shī le."
+      }
+    ]
+  },
+  {
+    "id": "cleaning-the-living-room",
+    "sceneId": "living-room",
+    "title": "打扫客厅",
+    "order": 7,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "妈妈和莉莉一起收拾客厅。",
+    "lines": [
+      {
+        "id": "cleaning-the-living-room-l1",
+        "speakerId": "mom",
+        "text": "莉莉，我们来打扫客厅吧。",
+        "textVi": "Lily ơi, mình cùng dọn phòng khách nào.",
+        "pinyin": "Lì li, wǒ men lái dǎ sǎo kè tīng ba."
+      },
+      {
+        "id": "cleaning-the-living-room-l2",
+        "speakerId": "lily",
+        "text": "好的！我把玩具收起来。",
+        "textVi": "Vâng ạ! Con sẽ cất đồ chơi đi.",
+        "pinyin": "Hǎo de! Wǒ bǎ wán jù shōu qǐ lái."
+      },
+      {
+        "id": "cleaning-the-living-room-l3",
+        "speakerId": "mom",
+        "text": "真乖。把地板上的玩具捡起来。",
+        "textVi": "Con ngoan lắm. Nhặt đồ chơi dưới sàn nhà lên nhé.",
+        "pinyin": "Zhēn guāi. Bǎ dì bǎn shàng de wán jù jiǎn qǐ lái."
+      },
+      {
+        "id": "cleaning-the-living-room-l4",
+        "speakerId": "lily",
+        "text": "扫地机器人能拖地板吗？",
+        "textVi": "Robot quét nhà có lau sàn nhà được không ạ?",
+        "pinyin": "Sǎo dì jī qì rén néng tuō dì bǎn ma?"
+      },
+      {
+        "id": "cleaning-the-living-room-l5",
+        "speakerId": "mom",
+        "text": "能啊！按一下按钮，它就开始干活了。",
+        "textVi": "Được chứ! Con bấm nút một cái là nó bắt đầu làm việc.",
+        "pinyin": "Néng a! Àn yí xià àn niǔ, tā jiù kāi shǐ gàn huó le."
+      },
+      {
+        "id": "cleaning-the-living-room-l6",
+        "speakerId": "lily",
+        "text": "妈妈快看，它自己会走！",
+        "textVi": "Mẹ nhìn kìa, nó tự đi được!",
+        "pinyin": "Mā ma kuài kàn, tā zì jǐ huì zǒu!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cleaning-the-living-room-q1",
+        "prompt": "你在家怎么帮忙打扫？",
+        "suggestedAnswer": "我把玩具收起来。",
+        "promptPinyin": "Nǐ zài jiā zěn me bāng máng dǎ sǎo?",
+        "suggestedAnswerPinyin": "Wǒ bǎ wán jù shōu qǐ lái."
+      },
+      {
+        "id": "cleaning-the-living-room-q2",
+        "prompt": "扫地机器人会做什么？",
+        "suggestedAnswer": "它会打扫地板。",
+        "promptPinyin": "Sǎo dì jī qì rén huì zuò shén me?",
+        "suggestedAnswerPinyin": "Tā huì dǎ sǎo dì bǎn."
+      }
+    ]
+  },
+  {
+    "id": "flowers-in-the-vase",
+    "sceneId": "living-room",
+    "title": "花瓶里的花",
+    "order": 8,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "莉莉摘了花，把花插进花瓶里。",
+    "lines": [
+      {
+        "id": "flowers-in-the-vase-l1",
+        "speakerId": "lily",
+        "text": "妈妈，我给你摘了一些花。",
+        "textVi": "Mẹ ơi, con hái mấy bông hoa tặng mẹ.",
+        "pinyin": "Mā ma, wǒ gěi nǐ zhāi le yì xiē huā."
+      },
+      {
+        "id": "flowers-in-the-vase-l2",
+        "speakerId": "mom",
+        "text": "真漂亮！谢谢你，莉莉。",
+        "textVi": "Đẹp quá! Cảm ơn con, Lily.",
+        "pinyin": "Zhēn piào liang! Xiè xiè nǐ, Lì li."
+      },
+      {
+        "id": "flowers-in-the-vase-l3",
+        "speakerId": "lily",
+        "text": "我们把花插在花瓶里好吗？",
+        "textVi": "Mình cắm hoa vào bình hoa được không mẹ?",
+        "pinyin": "Wǒ men bǎ huā chā zài huā píng lǐ hǎo ma?"
+      },
+      {
+        "id": "flowers-in-the-vase-l4",
+        "speakerId": "mom",
+        "text": "好啊。用这个绿色的花瓶吧。",
+        "textVi": "Được chứ. Mình dùng cái bình hoa màu xanh lá này nhé.",
+        "pinyin": "Hǎo a. Yòng zhè ge lǜ sè de huā píng ba."
+      },
+      {
+        "id": "flowers-in-the-vase-l5",
+        "speakerId": "lily",
+        "text": "我把花瓶放在哪儿？",
+        "textVi": "Con đặt bình hoa ở đâu ạ?",
+        "pinyin": "Wǒ bǎ huā píng fàng zài nǎr?"
+      },
+      {
+        "id": "flowers-in-the-vase-l6",
+        "speakerId": "mom",
+        "text": "放在茶几上。小心点儿！",
+        "textVi": "Để trên bàn trà. Cẩn thận nhé con!",
+        "pinyin": "Fàng zài chá jī shàng. Xiǎo xīn diǎn ér!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "flowers-in-the-vase-q1",
+        "prompt": "花是什么颜色的？",
+        "suggestedAnswer": "花是白色的。",
+        "promptPinyin": "Huā shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Huā shì bái sè de."
+      },
+      {
+        "id": "flowers-in-the-vase-q2",
+        "prompt": "花瓶在哪儿？",
+        "suggestedAnswer": "花瓶在茶几上。",
+        "promptPinyin": "Huā píng zài nǎr?",
+        "suggestedAnswerPinyin": "Huā píng zài chá jī shàng."
+      }
+    ]
+  },
+  {
+    "id": "music-time",
+    "sceneId": "living-room",
+    "title": "一起听音乐",
+    "order": 9,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "小本和莉莉用音箱放音乐。",
+    "lines": [
+      {
+        "id": "music-time-l1",
+        "speakerId": "ben",
+        "text": "莉莉，我们听音乐吧！",
+        "textVi": "Lily ơi, mình nghe nhạc đi!",
+        "pinyin": "Lì li, wǒ men tīng yīn yuè ba!"
+      },
+      {
+        "id": "music-time-l2",
+        "speakerId": "lily",
+        "text": "好主意！把音箱打开吧。",
+        "textVi": "Ý hay đấy! Bạn bật loa lên đi.",
+        "pinyin": "Hǎo zhǔ yì! Bǎ yīn xiāng dǎ kāi ba."
+      },
+      {
+        "id": "music-time-l3",
+        "speakerId": "ben",
+        "text": "咦，怎么没有声音？",
+        "textVi": "Ơ, sao không có tiếng nhỉ?",
+        "pinyin": "Yí, zěn me méi yǒu shēng yīn?"
+      },
+      {
+        "id": "music-time-l4",
+        "speakerId": "lily",
+        "text": "路由器开了吗？",
+        "textVi": "Bộ phát Wi-Fi bật chưa?",
+        "pinyin": "Lù yóu qì kāi le ma?"
+      },
+      {
+        "id": "music-time-l5",
+        "speakerId": "ben",
+        "text": "开了，现在灯变绿了。",
+        "textVi": "Bật rồi, giờ đèn đã chuyển sang màu xanh.",
+        "pinyin": "Kāi le, xiàn zài dēng biàn lǜ le."
+      },
+      {
+        "id": "music-time-l6",
+        "speakerId": "lily",
+        "text": "太好了！我们一起唱歌跳舞吧！",
+        "textVi": "Tuyệt quá! Mình cùng hát và nhảy nào!",
+        "pinyin": "Tài hǎo le! Wǒ men yì qǐ chàng gē tiào wǔ ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "music-time-q1",
+        "prompt": "你喜欢什么样的音乐？",
+        "suggestedAnswer": "我喜欢快乐的歌。",
+        "promptPinyin": "Nǐ xǐ huan shén me yàng de yīn yuè?",
+        "suggestedAnswerPinyin": "Wǒ xǐ huan kuài lè de gē."
+      },
+      {
+        "id": "music-time-q2",
+        "prompt": "音箱在哪儿？",
+        "suggestedAnswer": "音箱在柜子上。",
+        "promptPinyin": "Yīn xiāng zài nǎr?",
+        "suggestedAnswerPinyin": "Yīn xiāng zài guì zi shàng."
+      }
+    ]
+  },
+  {
+    "id": "good-morning-sunshine",
+    "sceneId": "living-room",
+    "title": "早上好，太阳！",
+    "order": 10,
+    "poster": "/assets/scenes/living-room/living-room-desktop.webp",
+    "description": "妈妈和小本拉开窗帘，让阳光照进来。",
+    "lines": [
+      {
+        "id": "good-morning-sunshine-l1",
+        "speakerId": "mom",
+        "text": "早上好，小本！",
+        "textVi": "Chào buổi sáng, Ben!",
+        "pinyin": "Zǎo shang hǎo, Xiǎo Běn!"
+      },
+      {
+        "id": "good-morning-sunshine-l2",
+        "speakerId": "ben",
+        "text": "妈妈早上好！屋里好黑呀。",
+        "textVi": "Con chào mẹ buổi sáng! Trong nhà tối quá.",
+        "pinyin": "Mā ma zǎo shang hǎo! Wū lǐ hǎo hēi ya."
+      },
+      {
+        "id": "good-morning-sunshine-l3",
+        "speakerId": "mom",
+        "text": "我们把窗帘拉开吧。",
+        "textVi": "Mình kéo rèm cửa ra nhé.",
+        "pinyin": "Wǒ men bǎ chuāng lián lā kāi ba."
+      },
+      {
+        "id": "good-morning-sunshine-l4",
+        "speakerId": "ben",
+        "text": "哇，太阳出来了！",
+        "textVi": "Ồ, mặt trời lên rồi!",
+        "pinyin": "Wā, tài yáng chū lái le!"
+      },
+      {
+        "id": "good-morning-sunshine-l5",
+        "speakerId": "mom",
+        "text": "你也把窗户打开，好吗？",
+        "textVi": "Con mở cả cửa sổ ra được không?",
+        "pinyin": "Nǐ yě bǎ chuāng hu dǎ kāi, hǎo ma?"
+      },
+      {
+        "id": "good-morning-sunshine-l6",
+        "speakerId": "ben",
+        "text": "好的。我看到外面的树了！",
+        "textVi": "Dạ được ạ. Con nhìn thấy cây ở bên ngoài rồi!",
+        "pinyin": "Hǎo de. Wǒ kàn dào wài miàn de shù le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "good-morning-sunshine-q1",
+        "prompt": "你早上做什么？",
+        "suggestedAnswer": "我把窗帘拉开。",
+        "promptPinyin": "Nǐ zǎo shang zuò shén me?",
+        "suggestedAnswerPinyin": "Wǒ bǎ chuāng lián lā kāi."
+      },
+      {
+        "id": "good-morning-sunshine-q2",
+        "prompt": "你能从窗户看到什么？",
+        "suggestedAnswer": "我能从窗户看到大树。",
+        "promptPinyin": "Nǐ néng cóng chuāng hu kàn dào shén me?",
+        "suggestedAnswerPinyin": "Wǒ néng cóng chuāng hu kàn dào dà shù."
+      }
+    ]
+  },
+  {
+    "id": "my-kitchen",
+    "sceneId": "kitchen",
+    "title": "我家的厨房",
+    "order": 1,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "小本带莉莉看看他家的厨房。",
+    "lines": [
+      {
+        "id": "my-kitchen-l1",
+        "speakerId": "lily",
+        "text": "小本，这是你家的厨房吗？",
+        "textVi": "Ben ơi, đây là phòng bếp nhà bạn à?",
+        "pinyin": "Xiǎo Běn, zhè shì nǐ jiā de chú fáng ma?"
+      },
+      {
+        "id": "my-kitchen-l2",
+        "speakerId": "ben",
+        "text": "是呀！厨房是粉色和绿色的。",
+        "textVi": "Đúng rồi! Phòng bếp màu hồng và xanh lá.",
+        "pinyin": "Shì ya! Chú fáng shì fěn sè hé lǜ sè de."
+      },
+      {
+        "id": "my-kitchen-l3",
+        "speakerId": "lily",
+        "text": "哇，你家的冰箱是绿色的！",
+        "textVi": "Oa, tủ lạnh nhà bạn màu xanh lá!",
+        "pinyin": "Wā, nǐ jiā de bīng xiāng shì lǜ sè de!"
+      },
+      {
+        "id": "my-kitchen-l4",
+        "speakerId": "ben",
+        "text": "你看，水壶是粉色的。",
+        "textVi": "Bạn xem này, ấm đun nước màu hồng.",
+        "pinyin": "Nǐ kàn, shuǐ hú shì fěn sè de."
+      },
+      {
+        "id": "my-kitchen-l5",
+        "speakerId": "lily",
+        "text": "餐桌上有什么呀？",
+        "textVi": "Trên bàn ăn có gì thế?",
+        "pinyin": "Cān zhuō shàng yǒu shén me ya?"
+      },
+      {
+        "id": "my-kitchen-l6",
+        "speakerId": "ben",
+        "text": "有一个果盘，还有一篮子面包。",
+        "textVi": "Có một tô trái cây, còn có một giỏ bánh mì nữa.",
+        "pinyin": "Yǒu yí gè guǒ pán, hái yǒu yì lán zi miàn bāo."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-kitchen-q1",
+        "prompt": "你家的厨房里有什么？",
+        "suggestedAnswer": "我家的厨房里有冰箱、炉子和水池。",
+        "promptPinyin": "Nǐ jiā de chú fáng lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Wǒ jiā de chú fáng lǐ yǒu bīng xiāng, lú zi hé shuǐ chí."
+      },
+      {
+        "id": "my-kitchen-q2",
+        "prompt": "冰箱是什么颜色的？",
+        "suggestedAnswer": "冰箱是绿色的。",
+        "promptPinyin": "Bīng xiāng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Bīng xiāng shì lǜ sè de."
+      }
+    ]
+  },
+  {
+    "id": "breakfast-time",
+    "sceneId": "kitchen",
+    "title": "早饭时间",
+    "order": 2,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "妈妈给小本做烤面包当早饭。",
+    "lines": [
+      {
+        "id": "breakfast-time-l1",
+        "speakerId": "mom",
+        "text": "早上好，小本！饿了吗？",
+        "textVi": "Chào buổi sáng, Ben! Con đói chưa?",
+        "pinyin": "Zǎo shang hǎo, Xiǎo Běn! È le ma?"
+      },
+      {
+        "id": "breakfast-time-l2",
+        "speakerId": "ben",
+        "text": "饿了，妈妈。我能吃烤面包吗？",
+        "textVi": "Con đói rồi mẹ ạ. Con ăn bánh mì nướng được không?",
+        "pinyin": "È le, mā ma. Wǒ néng chī kǎo miàn bāo ma?"
+      },
+      {
+        "id": "breakfast-time-l3",
+        "speakerId": "mom",
+        "text": "好啊。我把面包放进烤面包机。",
+        "textVi": "Được chứ. Mẹ cho bánh mì vào máy nướng nhé.",
+        "pinyin": "Hǎo a. Wǒ bǎ miàn bāo fàng jìn kǎo miàn bāo jī."
+      },
+      {
+        "id": "breakfast-time-l4",
+        "speakerId": "ben",
+        "text": "我去拿个盘子，好吗？",
+        "textVi": "Con đi lấy một cái đĩa nhé?",
+        "pinyin": "Wǒ qù ná gè pán zi, hǎo ma?"
+      },
+      {
+        "id": "breakfast-time-l5",
+        "speakerId": "mom",
+        "text": "好的。盘子在碗架上。",
+        "textVi": "Ừ. Đĩa ở trên giá úp bát đĩa đấy.",
+        "pinyin": "Hǎo de. Pán zi zài wǎn jià shàng."
+      },
+      {
+        "id": "breakfast-time-l6",
+        "speakerId": "ben",
+        "text": "嘣！面包烤好了！",
+        "textVi": "Bụp! Bánh mì nướng xong rồi!",
+        "pinyin": "Bēng! Miàn bāo kǎo hǎo le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "breakfast-time-q1",
+        "prompt": "你早饭吃什么？",
+        "suggestedAnswer": "我早饭吃烤面包。",
+        "promptPinyin": "Nǐ zǎo fàn chī shén me?",
+        "suggestedAnswerPinyin": "Wǒ zǎo fàn chī kǎo miàn bāo."
+      },
+      {
+        "id": "breakfast-time-q2",
+        "prompt": "盘子在哪儿？",
+        "suggestedAnswer": "盘子在碗架上。",
+        "promptPinyin": "Pán zi zài nǎr?",
+        "suggestedAnswerPinyin": "Pán zi zài wǎn jià shàng."
+      }
+    ]
+  },
+  {
+    "id": "cooking-soup",
+    "sceneId": "kitchen",
+    "title": "煮汤",
+    "order": 3,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "莉莉帮妈妈在炉子上煮汤。",
+    "lines": [
+      {
+        "id": "cooking-soup-l1",
+        "speakerId": "lily",
+        "text": "妈妈，你在煮什么呀？",
+        "textVi": "Mẹ ơi, mẹ đang nấu gì thế?",
+        "pinyin": "Mā ma, nǐ zài zhǔ shén me ya?"
+      },
+      {
+        "id": "cooking-soup-l2",
+        "speakerId": "mom",
+        "text": "我在煮蔬菜汤。",
+        "textVi": "Mẹ đang nấu canh rau.",
+        "pinyin": "Wǒ zài zhǔ shū cài tāng."
+      },
+      {
+        "id": "cooking-soup-l3",
+        "speakerId": "lily",
+        "text": "我可以帮忙吗？",
+        "textVi": "Con giúp mẹ được không ạ?",
+        "pinyin": "Wǒ kě yǐ bāng máng ma?"
+      },
+      {
+        "id": "cooking-soup-l4",
+        "speakerId": "mom",
+        "text": "可以。用木勺在汤锅里搅一搅。",
+        "textVi": "Được chứ. Con dùng muỗng gỗ khuấy nồi canh nhé.",
+        "pinyin": "Kě yǐ. Yòng mù sháo zài tāng guō lǐ jiǎo yi jiǎo."
+      },
+      {
+        "id": "cooking-soup-l5",
+        "speakerId": "lily",
+        "text": "要放盐吗？",
+        "textVi": "Có cần cho muối không mẹ?",
+        "pinyin": "Yào fàng yán ma?"
+      },
+      {
+        "id": "cooking-soup-l6",
+        "speakerId": "mom",
+        "text": "放一点儿。盐在调料罐里。",
+        "textVi": "Cho một chút thôi. Muối ở trong lọ gia vị.",
+        "pinyin": "Fàng yì diǎnr. Yán zài tiáo liào guàn lǐ."
+      },
+      {
+        "id": "cooking-soup-l7",
+        "speakerId": "lily",
+        "text": "嗯，好香啊！",
+        "textVi": "Ừm, thơm quá!",
+        "pinyin": "Ǹg, hǎo xiāng a!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cooking-soup-q1",
+        "prompt": "妈妈在煮什么？",
+        "suggestedAnswer": "妈妈在煮蔬菜汤。",
+        "promptPinyin": "Mā ma zài zhǔ shén me?",
+        "suggestedAnswerPinyin": "Mā ma zài zhǔ shū cài tāng."
+      },
+      {
+        "id": "cooking-soup-q2",
+        "prompt": "你在厨房里怎么帮忙？",
+        "suggestedAnswer": "我用木勺搅汤。",
+        "promptPinyin": "Nǐ zài chú fáng lǐ zěn me bāng máng?",
+        "suggestedAnswerPinyin": "Wǒ yòng mù sháo jiǎo tāng."
+      }
+    ]
+  },
+  {
+    "id": "frying-eggs",
+    "sceneId": "kitchen",
+    "title": "煎鸡蛋",
+    "order": 4,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "爸爸教小本怎样安全地煎鸡蛋。",
+    "lines": [
+      {
+        "id": "frying-eggs-l1",
+        "speakerId": "dad",
+        "text": "小本，我们来煎鸡蛋吧。",
+        "textVi": "Ben ơi, mình cùng rán trứng nhé.",
+        "pinyin": "Xiǎo Běn, wǒ men lái jiān jī dàn ba."
+      },
+      {
+        "id": "frying-eggs-l2",
+        "speakerId": "ben",
+        "text": "好！我要穿围裙吗？",
+        "textVi": "Vâng ạ! Con có cần mặc tạp dề không?",
+        "pinyin": "Hǎo! Wǒ yào chuān wéi qún ma?"
+      },
+      {
+        "id": "frying-eggs-l3",
+        "speakerId": "dad",
+        "text": "要，先把围裙穿上。",
+        "textVi": "Có chứ. Con mặc tạp dề vào trước đã.",
+        "pinyin": "Yào, xiān bǎ wéi qún chuān shàng."
+      },
+      {
+        "id": "frying-eggs-l4",
+        "speakerId": "ben",
+        "text": "爸爸，给你平底锅。",
+        "textVi": "Bố ơi, chảo rán đây ạ.",
+        "pinyin": "Bà ba, gěi nǐ píng dǐ guō."
+      },
+      {
+        "id": "frying-eggs-l5",
+        "speakerId": "dad",
+        "text": "谢谢。帮我打开抽油烟机吧。",
+        "textVi": "Cảm ơn con. Con bật máy hút mùi giúp bố nhé.",
+        "pinyin": "Xiè xiè. Bāng wǒ dǎ kāi chōu yóu yān jī ba."
+      },
+      {
+        "id": "frying-eggs-l6",
+        "speakerId": "ben",
+        "text": "哇，鸡蛋看起来真好吃！",
+        "textVi": "Oa, trứng trông ngon quá!",
+        "pinyin": "Wā, jī dàn kàn qǐ lái zhēn hǎo chī!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "frying-eggs-q1",
+        "prompt": "做饭的时候，你穿什么？",
+        "suggestedAnswer": "我穿围裙。",
+        "promptPinyin": "Zuò fàn de shí hou, nǐ chuān shén me?",
+        "suggestedAnswerPinyin": "Wǒ chuān wéi qún."
+      },
+      {
+        "id": "frying-eggs-q2",
+        "prompt": "我们用什么煎鸡蛋？",
+        "suggestedAnswer": "我们用平底锅煎鸡蛋。",
+        "promptPinyin": "Wǒ men yòng shén me jiān jī dàn?",
+        "suggestedAnswerPinyin": "Wǒ men yòng píng dǐ guō jiān jī dàn."
+      }
+    ]
+  },
+  {
+    "id": "making-a-smoothie",
+    "sceneId": "kitchen",
+    "title": "做奶昔",
+    "order": 5,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "莉莉和小本一起做水果奶昔。",
+    "lines": [
+      {
+        "id": "making-a-smoothie-l1",
+        "speakerId": "lily",
+        "text": "小本，我们做奶昔吧！",
+        "textVi": "Ben ơi, mình làm sinh tố đi!",
+        "pinyin": "Xiǎo Běn, wǒ men zuò nǎi xī ba!"
+      },
+      {
+        "id": "making-a-smoothie-l2",
+        "speakerId": "ben",
+        "text": "好主意！从果盘里拿一根香蕉吧。",
+        "textVi": "Ý hay đấy! Mình lấy một quả chuối trong tô trái cây nhé.",
+        "pinyin": "Hǎo zhǔ yì! Cóng guǒ pán lǐ ná yì gēn xiāng jiāo ba."
+      },
+      {
+        "id": "making-a-smoothie-l3",
+        "speakerId": "lily",
+        "text": "我们能用刀子切吗？",
+        "textVi": "Mình cắt bằng dao được không?",
+        "pinyin": "Wǒ men néng yòng dāo zi qiè ma?"
+      },
+      {
+        "id": "making-a-smoothie-l4",
+        "speakerId": "ben",
+        "text": "不行，刀子很危险。叫妈妈来切吧。",
+        "textVi": "Không được, dao nguy hiểm lắm. Mình gọi mẹ đến cắt nhé.",
+        "pinyin": "Bù xíng, dāo zi hěn wēi xiǎn. Jiào mā ma lái qiè ba."
+      },
+      {
+        "id": "making-a-smoothie-l5",
+        "speakerId": "lily",
+        "text": "好吧。然后放进榨汁机里。",
+        "textVi": "Ừ. Rồi mình cho vào máy xay sinh tố.",
+        "pinyin": "Hǎo ba. Rán hòu fàng jìn zhà zhī jī lǐ."
+      },
+      {
+        "id": "making-a-smoothie-l6",
+        "speakerId": "ben",
+        "text": "好吵啊！不过奶昔真好喝！",
+        "textVi": "Ồn quá! Nhưng sinh tố ngon tuyệt!",
+        "pinyin": "Hǎo chǎo a! Bú guò nǎi xī zhēn hǎo hē!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-a-smoothie-q1",
+        "prompt": "你喜欢什么水果？",
+        "suggestedAnswer": "我喜欢香蕉。",
+        "promptPinyin": "Nǐ xǐ huan shén me shuǐ guǒ?",
+        "suggestedAnswerPinyin": "Wǒ xǐ huan xiāng jiāo."
+      },
+      {
+        "id": "making-a-smoothie-q2",
+        "prompt": "为什么要请妈妈用刀子？",
+        "suggestedAnswer": "因为刀子很危险。",
+        "promptPinyin": "Wèi shén me yào qǐng mā ma yòng dāo zi?",
+        "suggestedAnswerPinyin": "Yīn wèi dāo zi hěn wēi xiǎn."
+      }
+    ]
+  },
+  {
+    "id": "rice-for-dinner",
+    "sceneId": "kitchen",
+    "title": "晚饭吃米饭",
+    "order": 6,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "晚饭前，小本帮妈妈准备米饭。",
+    "lines": [
+      {
+        "id": "rice-for-dinner-l1",
+        "speakerId": "mom",
+        "text": "小本，米饭熟了吗？",
+        "textVi": "Ben ơi, cơm chín chưa con?",
+        "pinyin": "Xiǎo Běn, mǐ fàn shú le ma?"
+      },
+      {
+        "id": "rice-for-dinner-l2",
+        "speakerId": "ben",
+        "text": "我去看看电饭锅。",
+        "textVi": "Để con đi xem nồi cơm điện ạ.",
+        "pinyin": "Wǒ qù kàn kàn diàn fàn guō."
+      },
+      {
+        "id": "rice-for-dinner-l3",
+        "speakerId": "mom",
+        "text": "灯是绿色的吗？",
+        "textVi": "Đèn có màu xanh lá không con?",
+        "pinyin": "Dēng shì lǜ sè de ma?"
+      },
+      {
+        "id": "rice-for-dinner-l4",
+        "speakerId": "ben",
+        "text": "是绿色的，米饭熟了！",
+        "textVi": "Màu xanh lá ạ, cơm chín rồi!",
+        "pinyin": "Shì lǜ sè de, mǐ fàn shú le!"
+      },
+      {
+        "id": "rice-for-dinner-l5",
+        "speakerId": "mom",
+        "text": "太好了。去拿四个碗吧。",
+        "textVi": "Tốt quá. Con đi lấy bốn cái bát nhé.",
+        "pinyin": "Tài hǎo le. Qù ná sì gè wǎn ba."
+      },
+      {
+        "id": "rice-for-dinner-l6",
+        "speakerId": "ben",
+        "text": "妈妈一个，爸爸一个，莉莉一个，我一个。",
+        "textVi": "Mẹ một cái, bố một cái, Lily một cái, con một cái.",
+        "pinyin": "Mā ma yí gè, bà ba yí gè, Lì li yí gè, wǒ yí gè."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "rice-for-dinner-q1",
+        "prompt": "你们家用什么煮米饭？",
+        "suggestedAnswer": "我们用电饭锅煮米饭。",
+        "promptPinyin": "Nǐ men jiā yòng shén me zhǔ mǐ fàn?",
+        "suggestedAnswerPinyin": "Wǒ men yòng diàn fàn guō zhǔ mǐ fàn."
+      },
+      {
+        "id": "rice-for-dinner-q2",
+        "prompt": "小本拿了几个碗？",
+        "suggestedAnswer": "他拿了四个碗。",
+        "promptPinyin": "Xiǎo Běn ná le jǐ gè wǎn?",
+        "suggestedAnswerPinyin": "Tā ná le sì gè wǎn."
+      }
+    ]
+  },
+  {
+    "id": "warm-milk",
+    "sceneId": "kitchen",
+    "title": "热牛奶",
+    "order": 7,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "爸爸给莉莉热一杯牛奶。",
+    "lines": [
+      {
+        "id": "warm-milk-l1",
+        "speakerId": "lily",
+        "text": "爸爸，我可以喝牛奶吗？",
+        "textVi": "Bố ơi, con uống sữa được không ạ?",
+        "pinyin": "Bà ba, wǒ kě yǐ hē niú nǎi ma?"
+      },
+      {
+        "id": "warm-milk-l2",
+        "speakerId": "dad",
+        "text": "可以呀。牛奶在冰箱里。",
+        "textVi": "Được chứ. Sữa ở trong tủ lạnh đấy.",
+        "pinyin": "Kě yǐ ya. Niú nǎi zài bīng xiāng lǐ."
+      },
+      {
+        "id": "warm-milk-l3",
+        "speakerId": "lily",
+        "text": "牛奶太凉了。",
+        "textVi": "Sữa lạnh quá bố ạ.",
+        "pinyin": "Niú nǎi tài liáng le."
+      },
+      {
+        "id": "warm-milk-l4",
+        "speakerId": "dad",
+        "text": "我们用微波炉热一热吧。",
+        "textVi": "Mình hâm nóng bằng lò vi sóng nhé.",
+        "pinyin": "Wǒ men yòng wēi bō lú rè yi rè ba."
+      },
+      {
+        "id": "warm-milk-l5",
+        "speakerId": "lily",
+        "text": "要热多久？",
+        "textVi": "Hâm bao lâu ạ?",
+        "pinyin": "Yào rè duō jiǔ?"
+      },
+      {
+        "id": "warm-milk-l6",
+        "speakerId": "dad",
+        "text": "三十秒。叮！给你。",
+        "textVi": "Ba mươi giây. Ting! Của con đây.",
+        "pinyin": "Sān shí miǎo. Dīng! Gěi nǐ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "warm-milk-q1",
+        "prompt": "牛奶在哪儿？",
+        "suggestedAnswer": "牛奶在冰箱里。",
+        "promptPinyin": "Niú nǎi zài nǎr?",
+        "suggestedAnswerPinyin": "Niú nǎi zài bīng xiāng lǐ."
+      },
+      {
+        "id": "warm-milk-q2",
+        "prompt": "你早上喝什么？",
+        "suggestedAnswer": "我早上喝热牛奶。",
+        "promptPinyin": "Nǐ zǎo shang hē shén me?",
+        "suggestedAnswerPinyin": "Wǒ zǎo shang hē rè niú nǎi."
+      }
+    ]
+  },
+  {
+    "id": "setting-the-table",
+    "sceneId": "kitchen",
+    "title": "摆碗筷",
+    "order": 8,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "小本摆好碗筷，准备吃晚饭。",
+    "lines": [
+      {
+        "id": "setting-the-table-l1",
+        "speakerId": "mom",
+        "text": "小本，帮妈妈摆碗筷好吗？",
+        "textVi": "Ben ơi, con bày bát đũa giúp mẹ được không?",
+        "pinyin": "Xiǎo Běn, bāng mā ma bǎi wǎn kuài hǎo ma?"
+      },
+      {
+        "id": "setting-the-table-l2",
+        "speakerId": "ben",
+        "text": "好的，妈妈。要几个盘子？",
+        "textVi": "Dạ vâng mẹ. Cần mấy cái đĩa ạ?",
+        "pinyin": "Hǎo de, mā ma. Yào jǐ gè pán zi?"
+      },
+      {
+        "id": "setting-the-table-l3",
+        "speakerId": "mom",
+        "text": "四个盘子，四个碗。",
+        "textVi": "Bốn cái đĩa, bốn cái bát.",
+        "pinyin": "Sì gè pán zi, sì gè wǎn."
+      },
+      {
+        "id": "setting-the-table-l4",
+        "speakerId": "ben",
+        "text": "我都放在餐桌上了。",
+        "textVi": "Con để hết lên bàn ăn rồi ạ.",
+        "pinyin": "Wǒ dōu fàng zài cān zhuō shàng le."
+      },
+      {
+        "id": "setting-the-table-l5",
+        "speakerId": "mom",
+        "text": "真棒！再把椅子摆好。",
+        "textVi": "Giỏi lắm! Rồi con xếp ghế cho ngay ngắn nhé.",
+        "pinyin": "Zhēn bàng! Zài bǎ yǐ zi bǎi hǎo."
+      },
+      {
+        "id": "setting-the-table-l6",
+        "speakerId": "ben",
+        "text": "吃晚饭啦！大家快来！",
+        "textVi": "Ăn tối thôi! Mọi người mau lại đây!",
+        "pinyin": "Chī wǎn fàn lā! Dà jiā kuài lái!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "setting-the-table-q1",
+        "prompt": "吃晚饭的时候，你怎么帮忙？",
+        "suggestedAnswer": "我帮忙摆碗筷。",
+        "promptPinyin": "Chī wǎn fàn de shí hou, nǐ zěn me bāng máng?",
+        "suggestedAnswerPinyin": "Wǒ bāng máng bǎi wǎn kuài."
+      },
+      {
+        "id": "setting-the-table-q2",
+        "prompt": "你在餐桌上放什么？",
+        "suggestedAnswer": "我在餐桌上放盘子和碗。",
+        "promptPinyin": "Nǐ zài cān zhuō shàng fàng shén me?",
+        "suggestedAnswerPinyin": "Wǒ zài cān zhuō shàng fàng pán zi hé wǎn."
+      }
+    ]
+  },
+  {
+    "id": "washing-the-dishes",
+    "sceneId": "kitchen",
+    "title": "洗碗",
+    "order": 9,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "晚饭后，莉莉和爸爸一起洗碗。",
+    "lines": [
+      {
+        "id": "washing-the-dishes-l1",
+        "speakerId": "dad",
+        "text": "莉莉，我们来洗碗吧。",
+        "textVi": "Lily ơi, mình cùng rửa bát nhé.",
+        "pinyin": "Lì li, wǒ men lái xǐ wǎn ba."
+      },
+      {
+        "id": "washing-the-dishes-l2",
+        "speakerId": "lily",
+        "text": "好！我把盘子放进水池。",
+        "textVi": "Vâng ạ! Con cho đĩa vào bồn rửa bát.",
+        "pinyin": "Hǎo! Wǒ bǎ pán zi fàng jìn shuǐ chí."
+      },
+      {
+        "id": "washing-the-dishes-l3",
+        "speakerId": "dad",
+        "text": "给你洗洁精。",
+        "textVi": "Nước rửa bát đây con.",
+        "pinyin": "Gěi nǐ xǐ jié jīng."
+      },
+      {
+        "id": "washing-the-dishes-l4",
+        "speakerId": "lily",
+        "text": "看，好多泡泡！",
+        "textVi": "Nhìn kìa, nhiều bọt quá!",
+        "pinyin": "Kàn, hǎo duō pào pào!"
+      },
+      {
+        "id": "washing-the-dishes-l5",
+        "speakerId": "dad",
+        "text": "现在把干净的盘子放到碗架上。",
+        "textVi": "Giờ con úp đĩa sạch lên giá úp bát đĩa nhé.",
+        "pinyin": "Xiàn zài bǎ gān jing de pán zi fàng dào wǎn jià shàng."
+      },
+      {
+        "id": "washing-the-dishes-l6",
+        "speakerId": "lily",
+        "text": "都洗干净了！真好玩。",
+        "textVi": "Sạch hết rồi! Vui ghê.",
+        "pinyin": "Dōu xǐ gān jing le! Zhēn hǎo wán."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-the-dishes-q1",
+        "prompt": "我们在哪儿洗碗？",
+        "suggestedAnswer": "我们在水池里洗碗。",
+        "promptPinyin": "Wǒ men zài nǎr xǐ wǎn?",
+        "suggestedAnswerPinyin": "Wǒ men zài shuǐ chí lǐ xǐ wǎn."
+      },
+      {
+        "id": "washing-the-dishes-q2",
+        "prompt": "干净的盘子放在哪儿？",
+        "suggestedAnswer": "干净的盘子放在碗架上。",
+        "promptPinyin": "Gān jing de pán zi fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Gān jing de pán zi fàng zài wǎn jià shàng."
+      }
+    ]
+  },
+  {
+    "id": "going-to-the-market",
+    "sceneId": "kitchen",
+    "title": "去菜市场",
+    "order": 10,
+    "poster": "/assets/scenes/kitchen/kitchen-desktop.webp",
+    "description": "妈妈和莉莉准备去菜市场。",
+    "lines": [
+      {
+        "id": "going-to-the-market-l1",
+        "speakerId": "mom",
+        "text": "莉莉，我们去菜市场吧。",
+        "textVi": "Lily ơi, mình đi chợ nhé.",
+        "pinyin": "Lì li, wǒ men qù cài shì chǎng ba."
+      },
+      {
+        "id": "going-to-the-market-l2",
+        "speakerId": "lily",
+        "text": "太好了！我们要买什么？",
+        "textVi": "Hay quá! Mình cần mua gì ạ?",
+        "pinyin": "Tài hǎo le! Wǒ men yào mǎi shén me?"
+      },
+      {
+        "id": "going-to-the-market-l3",
+        "speakerId": "mom",
+        "text": "先看看冰箱里有什么。",
+        "textVi": "Mình xem trong tủ lạnh có gì trước đã.",
+        "pinyin": "Xiān kàn kàn bīng xiāng lǐ yǒu shén me."
+      },
+      {
+        "id": "going-to-the-market-l4",
+        "speakerId": "lily",
+        "text": "我们要买鸡蛋和胡萝卜。",
+        "textVi": "Mình cần mua trứng và cà rốt.",
+        "pinyin": "Wǒ men yào mǎi jī dàn hé hú luó bo."
+      },
+      {
+        "id": "going-to-the-market-l5",
+        "speakerId": "mom",
+        "text": "对。记得带上篮子。",
+        "textVi": "Đúng rồi. Nhớ mang theo cái giỏ nhé.",
+        "pinyin": "Duì. Jì de dài shàng lán zi."
+      },
+      {
+        "id": "going-to-the-market-l6",
+        "speakerId": "lily",
+        "text": "篮子在这儿。我们走吧！",
+        "textVi": "Giỏ đây ạ. Mình đi thôi!",
+        "pinyin": "Lán zi zài zhèr. Wǒ men zǒu ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "going-to-the-market-q1",
+        "prompt": "你在菜市场买什么？",
+        "suggestedAnswer": "我在菜市场买鸡蛋和胡萝卜。",
+        "promptPinyin": "Nǐ zài cài shì chǎng mǎi shén me?",
+        "suggestedAnswerPinyin": "Wǒ zài cài shì chǎng mǎi jī dàn hé hú luó bo."
+      },
+      {
+        "id": "going-to-the-market-q2",
+        "prompt": "我们带什么去菜市场？",
+        "suggestedAnswer": "我们带篮子去菜市场。",
+        "promptPinyin": "Wǒ men dài shén me qù cài shì chǎng?",
+        "suggestedAnswerPinyin": "Wǒ men dài lán zi qù cài shì chǎng."
+      }
+    ]
+  }
+]

@@ -132,3 +132,15 @@ App đọc theo thứ tự: **file audio thu sẵn** → nếu không có hoặc
   dùng giọng trình duyệt. Chạy `npm run content:check` để chắc chắn file tồn tại.
 - Khi thu: dùng người đọc giọng Mỹ, đọc chậm và rõ, nghỉ ~0.2 s ở đầu/cuối file, cùng một người cho
   cả bộ để giọng nhất quán.
+
+## 9. Giọng đọc tiếng Trung (phổ thông)
+
+Khóa tiếng Trung dùng cùng cơ chế: file thu sẵn trước, không có thì giọng trình duyệt.
+
+- **Giọng trình duyệt**: Settings chỉ liệt kê giọng `zh-CN` (không có thì `zh-TW`). Không dùng `zh-HK`:
+  đó là giọng Quảng Đông. Windows có sẵn Microsoft Xiaoxiao/Yunxi/Huihui, Chrome có "Google 普通话",
+  iPhone/Mac có Tingting. Giọng trình duyệt hay đọc **sai thanh điệu với từ đơn lẻ**, nên khóa tiếng Trung
+  càng cần thu âm.
+- **Thu âm**: cùng định dạng như mục 8, đặt riêng thư mục để không đè file tiếng Anh (id từ dùng chung):
+  `public/assets/audio/zh/words/<wordId>.mp3`, `…/zh/examples/`, `…/zh/conversations/`; điền vào trường
+  `audio` trong `src/data/zh/*.json`. Người đọc giọng phổ thông chuẩn, đọc chậm, rõ thanh điệu.

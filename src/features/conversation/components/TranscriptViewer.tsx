@@ -1,7 +1,10 @@
 import { Languages } from 'lucide-react';
 import { useState } from 'react';
 import { AudioButton } from '@/components/common/AudioButton';
+import { Pinyin } from '@/components/common/Pinyin';
 import { getSpeaker } from '@/data/content';
+import { useCourse } from '@/hooks/useCourse';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { useAudioStore } from '@/stores/audioStore';
 import { useSettingsStore } from '@/stores/settingsStore';
@@ -26,14 +29,16 @@ interface TranscriptViewerProps {
 
 /**
  * Screen 11 content (spec §9.3; design screens 11 and 15): each turn with the speaker's picture
- * and name, the English text, a listen button and an optional static translation. The current
- * line — the one playing, or the last one tapped — is highlighted and shows "Translate".
+ * and name, the line in the course language (with its pinyin in the Chinese course), a listen
+ * button and an optional static translation. The current line — the one playing, or the last one
+ * tapped — is highlighted and shows "Translate".
  */
 export function TranscriptViewer({
   conversation,
   limit,
   variant = 'bubbles',
 }: TranscriptViewerProps) {
+  const course = useCourse();
   const showVietnamese = useSettingsStore((state) => state.settings.showVietnameseMeaning);
   const playingKey = useAudioStore((state) => state.playingKey);
   const [translatedIds, setTranslatedIds] = useState<ReadonlySet<string>>(new Set());
@@ -70,7 +75,7 @@ export function TranscriptViewer({
         )}
       >
         <Languages aria-hidden className="size-4" />
-        {translatedIds.has(line.id) ? 'Hide' : 'Translate'}
+        {translatedIds.has(line.id) ? t('Hide') : t('Translate')}
       </button>
     );
 
@@ -85,10 +90,12 @@ export function TranscriptViewer({
               <div className="min-w-0 flex-1 pt-1">
                 <p className="text-[15px] font-medium text-navy-700">
                   <span className="font-bold text-coral-600">
-                    {speaker?.name ?? line.speakerId}:
+                    {/* "Mom:" — Chinese uses a full-width colon. */}
+                    {t('{speaker}:', { speaker: speaker?.name ?? line.speakerId })}
                   </span>{' '}
-                  <span lang="en">{line.textEn}</span>
+                  <span lang={course.lang}>{line.text}</span>
                 </p>
+                <Pinyin text={line.pinyin} className="mt-0.5" />
                 {showVietnamese && translatedIds.has(line.id) && line.textVi && (
                   <p lang="vi" className="mt-0.5 animate-fade-in text-sm font-medium text-navy-400">
                     {line.textVi}
@@ -129,12 +136,18 @@ export function TranscriptViewer({
               <div className="min-w-0 flex-1">
                 <p className="text-lg font-bold text-navy-900 sm:text-xl">
                   {speaker?.name ?? line.speakerId}
-                  <span className="sr-only">, line {index + 1}</span>
+                  <span className="sr-only">{t(', line {number}', { number: index + 1 })}</span>
                 </p>
                 <div className="mt-0.5 flex flex-wrap items-center gap-x-4 gap-y-2">
-                  <p lang="en" className="text-[1.0625rem] font-medium text-navy-600 sm:text-lg">
-                    {line.textEn}
-                  </p>
+                  <div>
+                    <p
+                      lang={course.lang}
+                      className="text-[1.0625rem] font-medium text-navy-600 sm:text-lg"
+                    >
+                      {line.text}
+                    </p>
+                    <Pinyin text={line.pinyin} className="mt-0.5" />
+                  </div>
                   {translateButton(line, current)}
                 </div>
                 {showVietnamese && translated && line.textVi && (
@@ -148,10 +161,10 @@ export function TranscriptViewer({
               </div>
               <AudioButton
                 soundKey={lineKey(line)}
-                text={line.textEn}
+                text={line.text}
                 src={line.audio}
                 {...voiceFor(line)}
-                label={`Play: ${line.textEn}`}
+                label={t('Play: {line}', { line: line.text })}
                 variant="plain"
                 size="lg"
               />

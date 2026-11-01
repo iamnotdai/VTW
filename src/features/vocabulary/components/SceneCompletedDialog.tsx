@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { paths } from '@/app/paths';
 import { Button, ButtonLink } from '@/components/common/Button';
 import { COMPLETED_IMAGES } from '@/config/assets';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { playSfx } from '@/lib/sfx';
 import { useSettingsStore } from '@/stores/settingsStore';
@@ -55,7 +56,7 @@ export function SceneCompletedDialog({
       >
         <button
           type="button"
-          aria-label="Close"
+          aria-label={t('Close')}
           onClick={onClose}
           className="absolute top-3 right-3 flex size-10 items-center justify-center rounded-full text-navy-600 transition hover:bg-navy-50"
         >
@@ -77,10 +78,10 @@ export function SceneCompletedDialog({
         <div className="flex w-full flex-col items-center gap-4 px-6 pt-4 pb-7 text-center sm:items-start sm:self-center sm:py-8 sm:pr-8 sm:pl-4 sm:text-left">
           <div>
             <h2 id="scene-completed-title" className="text-4xl font-extrabold text-navy-900">
-              Completed!
+              {t('Completed!')}
             </h2>
             <p className="mt-2 text-lg text-navy-600">
-              You have learned all objects in this scene.
+              {t('You have learned all objects in this scene.')}
             </p>
           </div>
 
@@ -93,7 +94,7 @@ export function SceneCompletedDialog({
               fullWidth
               rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
             >
-              Go to Conversations
+              {t('Go to Conversations')}
             </ButtonLink>
             <div className="flex gap-2.5">
               <Button
@@ -104,7 +105,7 @@ export function SceneCompletedDialog({
                 leftIcon={<RotateCcw aria-hidden className="size-4" strokeWidth={2.5} />}
                 onClick={onReset}
               >
-                Play again
+                {t('Play again')}
               </Button>
               <Button
                 variant="secondary"
@@ -113,7 +114,7 @@ export function SceneCompletedDialog({
                 className="flex-1"
                 onClick={onClose}
               >
-                Keep exploring
+                {t('Keep exploring')}
               </Button>
             </div>
           </div>

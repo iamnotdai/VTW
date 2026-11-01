@@ -4,6 +4,7 @@ import { PageContainer, PageTitle, TopBar } from '@/components/layout/PageHeader
 import { SCENE_GRID_CLASS } from '@/config/app';
 import { getSceneGroups, type SceneGroupWithScenes } from '@/data/content';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { GroupIcon } from '../components/GroupIcon';
 import { SceneCard } from '../components/SceneCard';
@@ -21,6 +22,7 @@ function GroupSection({
 }) {
   const titleId = `group-${group.id}-title`;
   const panelId = `group-${group.id}-panel`;
+  const count = group.scenes.length;
   return (
     <section id={`group-${group.id}`} aria-labelledby={titleId} className="mb-4 scroll-mt-6">
       <h2 id={titleId}>
@@ -36,7 +38,7 @@ function GroupSection({
             {group.title}
           </span>
           <span className="text-base font-semibold text-navy-700">
-            {group.scenes.length} {group.scenes.length === 1 ? 'scene' : 'scenes'}
+            {count === 1 ? t('{count} scene', { count }) : t('{count} scenes', { count })}
           </span>
           <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-600">
             <ChevronDown
@@ -60,7 +62,7 @@ function GroupSection({
 
 /** Screen 03 — Vocabulary Scene List (`/vocabulary`), grouped by area (spec §7.1). */
 export function VocabularyPage() {
-  useDocumentTitle('Vocabulary');
+  useDocumentTitle(t('Vocabulary'));
   const groups = getSceneGroups();
   // The first group starts open; the learner opens and closes the others one by one.
   const [openIds, setOpenIds] = useState<ReadonlySet<string>>(
@@ -79,8 +81,8 @@ export function VocabularyPage() {
       <VocabularyBackdrop />
       <TopBar variant="title" transparent>
         <PageTitle
-          title="Vocabulary"
-          description="Explore real-world scenes and learn English."
+          title={t('Vocabulary')}
+          description={t('Explore real-world scenes and learn English.')}
           descriptionClassName="font-semibold text-navy-700"
         />
       </TopBar>

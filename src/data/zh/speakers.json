@@ -1,0 +1,38 @@
+{
+  "lily": {
+    "id": "lily",
+    "name": "莉莉",
+    "color": "#ff8fab",
+    "avatar": "/assets/branding/avatar-girl.webp",
+    "voice": {
+      "pitch": 1.35
+    }
+  },
+  "ben": {
+    "id": "ben",
+    "name": "小本",
+    "color": "#4caf6a",
+    "avatar": "/assets/branding/avatar-boy.webp",
+    "voice": {
+      "pitch": 1.2
+    }
+  },
+  "mom": {
+    "id": "mom",
+    "name": "妈妈",
+    "color": "#ef6a4a",
+    "avatar": "/assets/characters/mom.webp",
+    "voice": {
+      "pitch": 1.05
+    }
+  },
+  "dad": {
+    "id": "dad",
+    "name": "爸爸",
+    "color": "#2f80ed",
+    "avatar": "/assets/characters/dad.webp",
+    "voice": {
+      "pitch": 0.75
+    }
+  }
+}

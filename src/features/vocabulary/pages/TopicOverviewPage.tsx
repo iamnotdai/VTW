@@ -8,6 +8,7 @@ import { PageContainer } from '@/components/layout/PageHeader';
 import { getSceneConversations } from '@/data/content';
 import { ComingSoonPage, NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { useProgressStore } from '@/stores/progressStore';
@@ -44,7 +45,7 @@ function StatLink({ to, tone, children }: { to: string; tone: string; children: 
 }
 
 function TopicOverview({ scene }: { scene: Scene }) {
-  useDocumentTitle(`${scene.title} · Vocabulary`);
+  useDocumentTitle(t('{scene} · Vocabulary', { scene: scene.title }));
   const { total, completed, percent } = useSceneProgress(scene);
   const lastIndex = useProgressStore((state) => state.progress.lastFlashcardIndexByScene[scene.id]);
   const visitScene = useProgressStore((state) => state.visitScene);
@@ -55,12 +56,12 @@ function TopicOverview({ scene }: { scene: Scene }) {
   // "Start Learning" goes to flashcards the first time, then resumes where the learner left off.
   const primary =
     completed === total
-      ? { label: 'Review Flashcards', to: paths.flashcards(scene.id) }
+      ? { label: t('Review Flashcards'), to: paths.flashcards(scene.id) }
       : completed > 0 || (lastIndex ?? 0) >= total - 1
-        ? { label: 'Continue Exploring', to: paths.explore(scene.id) }
+        ? { label: t('Continue Exploring'), to: paths.explore(scene.id) }
         : (lastIndex ?? 0) > 0
-          ? { label: 'Resume Learning', to: paths.flashcards(scene.id) }
-          : { label: 'Start Learning', to: paths.flashcards(scene.id) };
+          ? { label: t('Resume Learning'), to: paths.flashcards(scene.id) }
+          : { label: t('Start Learning'), to: paths.flashcards(scene.id) };
 
   return (
     <div className="relative flex flex-1 flex-col">
@@ -71,13 +72,13 @@ function TopicOverview({ scene }: { scene: Scene }) {
           <div className="relative overflow-hidden rounded-2xl bg-cream-100">
             <img
               src={assetUrl(scene.background)}
-              alt={`The ${scene.title.toLowerCase()} scene`}
+              alt={t('The {scene} scene', { scene: scene.title.toLowerCase() })}
               className="aspect-[16/10] size-full object-cover md:absolute md:inset-0 md:aspect-auto"
               draggable={false}
             />
             {percent === 100 && (
               <span className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-leaf-500 px-4 py-2 font-bold text-white shadow-lift">
-                <CircleCheck aria-hidden className="size-5" /> All words learned!
+                <CircleCheck aria-hidden className="size-5" /> {t('All words learned!')}
               </span>
             )}
           </div>
@@ -92,16 +93,20 @@ function TopicOverview({ scene }: { scene: Scene }) {
               <StatLink to={paths.flashcards(scene.id)} tone="bg-brand-50 text-brand-500">
                 <BookOpenText aria-hidden className="size-6" />
                 <Value>{total}</Value>
-                <Label>Words</Label>
+                <Label>{t('Words')}</Label>
               </StatLink>
               <StatLink to={paths.topicConversations(scene.id)} tone="bg-violet-50 text-violet-500">
                 <MessagesSquare aria-hidden className="size-6" />
                 <Value>{conversationCount}</Value>
-                <Label>Conversations</Label>
+                <Label>{t('Conversations')}</Label>
               </StatLink>
               <div className={cn(STAT, 'bg-leaf-50')}>
                 <div className="relative">
-                  <ProgressRing value={percent} label={`${scene.title} progress`} size={60} />
+                  <ProgressRing
+                    value={percent}
+                    label={t('{scene} progress', { scene: scene.title })}
+                    size={60}
+                  />
                   <span
                     aria-hidden
                     className="absolute inset-0 flex items-center justify-center text-sm font-extrabold text-navy-900"
@@ -109,9 +114,13 @@ function TopicOverview({ scene }: { scene: Scene }) {
                     {percent}%
                   </span>
                 </div>
-                <Label>Completed</Label>
+                <Label>{t('Completed')}</Label>
                 <span className="sr-only">
-                  {completed}/{total} words learned, {percent}%
+                  {t('{completed}/{total} words learned, {percent}%', {
+                    completed,
+                    total,
+                    percent,
+                  })}
                 </span>
               </div>
             </div>
@@ -132,7 +141,7 @@ function TopicOverview({ scene }: { scene: Scene }) {
                 fullWidth
                 rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
               >
-                View Conversations
+                {t('View Conversations')}
               </ButtonLink>
               <ButtonLink
                 to={paths.vocabulary}
@@ -141,7 +150,7 @@ function TopicOverview({ scene }: { scene: Scene }) {
                 fullWidth
                 leftIcon={<ArrowLeft aria-hidden className="size-5" strokeWidth={2.5} />}
               >
-                Back
+                {t('Back')}
               </ButtonLink>
             </div>
           </div>

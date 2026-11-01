@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react';
-import { createMemoryRouter, RouterProvider } from 'react-router';
+import { createMemoryRouter, RouterProvider, type DataRouter } from 'react-router';
 import { routes } from '@/app/routes';
 import { useQuizSessionStore } from '@/features/vocabulary/quiz/quizSession';
 import { useSpeakingSessionStore } from '@/features/conversation/speakingSession';
 import { createProfile, type ProfileInput } from '@/lib/profile';
 import { createEmptyProgress } from '@/lib/progress';
 import { STORAGE_KEYS } from '@/lib/storage';
-import type { LearningProgress } from '@/types/models';
+import type { AppSettings, LearningProgress } from '@/types/models';
 import { useAudioStore } from '@/stores/audioStore';
 import { useProfileStore } from '@/stores/profileStore';
 import { useProgressStore } from '@/stores/progressStore';
@@ -47,10 +47,26 @@ export function seedProgress(progress: Partial<LearningProgress>) {
   useProgressStore.getState().reload();
 }
 
+/** Stores settings like a returning learner would have (e.g. `{ course: 'zh' }`). */
+export function seedSettings(settings: Partial<AppSettings>) {
+  localStorage.setItem(
+    STORAGE_KEYS.settings,
+    JSON.stringify({ ...useSettingsStore.getState().settings, ...settings }),
+  );
+  useSettingsStore.getState().reload();
+}
+
+/** Like `App`: switching course remounts the screens. */
+// oxlint-disable-next-line react/only-export-components -- test helper, no fast refresh
+function CourseRouter({ router }: { router: DataRouter }) {
+  const course = useSettingsStore((state) => state.settings.course);
+  return <RouterProvider key={course} router={router} />;
+}
+
 /** Renders the real route tree at `path` with an in-memory history. */
 export function renderApp(path: string) {
   const router = createMemoryRouter(routes, { initialEntries: [path] });
-  const utils = render(<RouterProvider router={router} />);
+  const utils = render(<CourseRouter router={router} />);
   return { router, ...utils };
 }
 
