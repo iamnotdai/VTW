@@ -121,19 +121,24 @@ function Flashcards({ scene }: { scene: Scene }) {
                   { count: words.length, scene: scene.title.toLowerCase() },
                 )}
               </p>
-              <div className="mt-2 flex w-full flex-col gap-3 sm:w-fit">
-                <div className="flex flex-col gap-3 sm:flex-row">
+              {/* Full width: a long scene name ("House Exterior") wraps the row instead of overflowing. */}
+              <div className="mt-2 flex w-full flex-col gap-3">
+                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                   <ButtonLink
                     to={paths.explore(scene.id)}
                     size="lg"
+                    className="sm:grow"
                     leftIcon={<Search aria-hidden className="size-5" />}
                   >
-                    {t('Explore the {scene}', { scene: scene.title })}
+                    <span className="leading-tight whitespace-normal">
+                      {t('Explore the {scene}', { scene: scene.title })}
+                    </span>
                   </ButtonLink>
                   <ButtonLink
                     to={paths.topic(scene.id)}
                     size="lg"
                     variant="soft"
+                    className="sm:grow"
                     leftIcon={<ArrowLeft aria-hidden className="size-5" strokeWidth={2.5} />}
                   >
                     {t('Back to Overview')}
