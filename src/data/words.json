@@ -2145,5 +2145,485 @@
     ],
     "relatedWordIds": ["dining-table", "fruit-bowl", "fridge"],
     "distractorWordIds": ["bowl", "dish-rack", "cooking-pot"]
+  },
+  "roof": {
+    "id": "roof",
+    "text": "roof",
+    "ipa": "/ruːf/",
+    "meaningVi": "mái nhà",
+    "image": "/assets/scenes/house-exterior/objects/01_roof.webp",
+    "acceptedAnswers": ["roof", "a roof", "the roof"],
+    "examples": [
+      {
+        "text": "The roof is red.",
+        "vi": "Mái nhà màu đỏ."
+      },
+      {
+        "text": "A bird is sitting on the roof.",
+        "vi": "Một chú chim đang đậu trên mái nhà."
+      }
+    ],
+    "relatedWordIds": ["wall", "gutter", "balcony"],
+    "distractorWordIds": ["porch", "garage-door", "fence"]
+  },
+  "wall": {
+    "id": "wall",
+    "text": "wall",
+    "ipa": "/wɔːl/",
+    "meaningVi": "tường",
+    "image": "/assets/scenes/house-exterior/objects/02_wall.webp",
+    "acceptedAnswers": ["wall", "a wall", "walls"],
+    "examples": [
+      {
+        "text": "Our house has yellow walls.",
+        "vi": "Nhà mình có tường màu vàng."
+      },
+      {
+        "text": "There is a lamp on the wall.",
+        "vi": "Có một cái đèn trên tường."
+      }
+    ],
+    "relatedWordIds": ["roof", "house-window", "porch-light"],
+    "distractorWordIds": ["fence", "gate", "garage-door"]
+  },
+  "front-door": {
+    "id": "front-door",
+    "text": "front door",
+    "ipa": "/ˌfrʌnt ˈdɔːr/",
+    "meaningVi": "cửa chính",
+    "image": "/assets/scenes/house-exterior/objects/03_front-door.webp",
+    "acceptedAnswers": ["front door", "a front door", "the front door", "door"],
+    "examples": [
+      {
+        "text": "The front door is red.",
+        "vi": "Cửa chính màu đỏ."
+      },
+      {
+        "text": "Please close the front door.",
+        "vi": "Làm ơn đóng cửa chính lại."
+      }
+    ],
+    "relatedWordIds": ["doorbell", "steps", "porch"],
+    "distractorWordIds": ["garage-door", "gate", "house-window"]
+  },
+  "house-window": {
+    "id": "house-window",
+    "text": "window",
+    "ipa": "/ˈwɪndoʊ/",
+    "meaningVi": "cửa sổ",
+    "image": "/assets/scenes/house-exterior/objects/04_house-window.webp",
+    "acceptedAnswers": ["window", "a window", "windows"],
+    "examples": [
+      {
+        "text": "I can see the sky through the window.",
+        "vi": "Mình nhìn thấy bầu trời qua cửa sổ."
+      },
+      {
+        "text": "The house has two windows.",
+        "vi": "Ngôi nhà có hai cửa sổ."
+      }
+    ],
+    "relatedWordIds": ["wall", "balcony", "roof"],
+    "distractorWordIds": ["front-door", "garage-door", "gate"]
+  },
+  "balcony": {
+    "id": "balcony",
+    "text": "balcony",
+    "ipa": "/ˈbælkəni/",
+    "meaningVi": "ban công",
+    "image": "/assets/scenes/house-exterior/objects/05_balcony.webp",
+    "acceptedAnswers": ["balcony", "a balcony", "the balcony"],
+    "examples": [
+      {
+        "text": "There are flowers on the balcony.",
+        "vi": "Có hoa trên ban công."
+      },
+      {
+        "text": "Mom stands on the balcony and waves.",
+        "vi": "Mẹ đứng trên ban công và vẫy tay."
+      }
+    ],
+    "relatedWordIds": ["house-window", "flower", "roof"],
+    "distractorWordIds": ["porch", "steps", "fence"]
+  },
+  "porch": {
+    "id": "porch",
+    "text": "porch",
+    "ipa": "/pɔːrtʃ/",
+    "meaningVi": "hiên nhà",
+    "image": "/assets/scenes/house-exterior/objects/06_porch.webp",
+    "acceptedAnswers": ["porch", "a porch", "the porch"],
+    "examples": [
+      {
+        "text": "We sit on the porch after dinner.",
+        "vi": "Ăn tối xong, chúng mình ngồi ngoài hiên nhà."
+      },
+      {
+        "text": "Leave your shoes on the porch.",
+        "vi": "Để giày của bạn ở hiên nhà nhé."
+      }
+    ],
+    "relatedWordIds": ["steps", "porch-light", "front-door"],
+    "distractorWordIds": ["balcony", "garage-door", "pathway"]
+  },
+  "steps": {
+    "id": "steps",
+    "text": "steps",
+    "ipa": "/steps/",
+    "meaningVi": "bậc thềm",
+    "image": "/assets/scenes/house-exterior/objects/07_steps.webp",
+    "acceptedAnswers": ["steps", "step", "the steps", "stairs"],
+    "examples": [
+      {
+        "text": "Walk up the steps to the front door.",
+        "vi": "Đi lên bậc thềm để tới cửa chính."
+      },
+      {
+        "text": "Be careful on the steps.",
+        "vi": "Cẩn thận khi đi trên bậc thềm nhé."
+      }
+    ],
+    "relatedWordIds": ["porch", "front-door", "pathway"],
+    "distractorWordIds": ["fence", "balcony", "lawn"]
+  },
+  "doorbell": {
+    "id": "doorbell",
+    "text": "doorbell",
+    "ipa": "/ˈdɔːrbel/",
+    "meaningVi": "chuông cửa",
+    "image": "/assets/scenes/house-exterior/objects/08_doorbell.webp",
+    "acceptedAnswers": ["doorbell", "a doorbell", "door bell"],
+    "examples": [
+      {
+        "text": "Lily rings the doorbell.",
+        "vi": "Lily bấm chuông cửa."
+      },
+      {
+        "text": "Ding-dong! That is the doorbell.",
+        "vi": "Kính coong! Đó là tiếng chuông cửa."
+      }
+    ],
+    "relatedWordIds": ["front-door", "porch-light", "house-number"],
+    "distractorWordIds": ["mailbox", "gutter", "flower-pot"]
+  },
+  "porch-light": {
+    "id": "porch-light",
+    "text": "porch light",
+    "ipa": "/ˈpɔːrtʃ laɪt/",
+    "meaningVi": "đèn hiên nhà",
+    "image": "/assets/scenes/house-exterior/objects/09_porch-light.webp",
+    "acceptedAnswers": ["porch light", "a porch light", "light", "lamp"],
+    "examples": [
+      {
+        "text": "Dad turns on the porch light at night.",
+        "vi": "Buổi tối bố bật đèn hiên nhà."
+      },
+      {
+        "text": "The porch light is yellow and bright.",
+        "vi": "Đèn hiên nhà màu vàng và rất sáng."
+      }
+    ],
+    "relatedWordIds": ["porch", "doorbell", "wall"],
+    "distractorWordIds": ["house-number", "mailbox", "gutter"]
+  },
+  "garage-door": {
+    "id": "garage-door",
+    "text": "garage door",
+    "ipa": "/ɡəˈrɑːʒ dɔːr/",
+    "meaningVi": "cửa gara",
+    "image": "/assets/scenes/house-exterior/objects/10_garage-door.webp",
+    "acceptedAnswers": ["garage door", "a garage door", "the garage door"],
+    "examples": [
+      {
+        "text": "Dad opens the garage door.",
+        "vi": "Bố mở cửa gara."
+      },
+      {
+        "text": "The car is behind the garage door.",
+        "vi": "Chiếc ô tô ở sau cửa gara."
+      }
+    ],
+    "relatedWordIds": ["gutter", "garden-hose", "pathway"],
+    "distractorWordIds": ["front-door", "gate", "house-window"]
+  },
+  "gutter": {
+    "id": "gutter",
+    "text": "gutter",
+    "ipa": "/ˈɡʌtər/",
+    "meaningVi": "máng xối",
+    "image": "/assets/scenes/house-exterior/objects/11_gutter.webp",
+    "acceptedAnswers": ["gutter", "a gutter", "the gutter"],
+    "examples": [
+      {
+        "text": "Rain runs down the gutter.",
+        "vi": "Nước mưa chảy xuống máng xối."
+      },
+      {
+        "text": "The gutter is under the roof.",
+        "vi": "Máng xối ở dưới mái nhà."
+      }
+    ],
+    "relatedWordIds": ["roof", "garage-door", "wall"],
+    "distractorWordIds": ["garden-hose", "fence", "porch-light"]
+  },
+  "house-number": {
+    "id": "house-number",
+    "text": "house number",
+    "ipa": "/ˈhaʊs ˌnʌmbər/",
+    "meaningVi": "số nhà",
+    "image": "/assets/scenes/house-exterior/objects/12_house-number.webp",
+    "acceptedAnswers": ["house number", "a house number", "the house number", "number"],
+    "examples": [
+      {
+        "text": "Our house number is 24.",
+        "vi": "Số nhà của mình là 24."
+      },
+      {
+        "text": "The house number is next to the door.",
+        "vi": "Số nhà ở cạnh cửa."
+      }
+    ],
+    "relatedWordIds": ["front-door", "mailbox", "doorbell"],
+    "distractorWordIds": ["porch-light", "flower-pot", "gutter"]
+  },
+  "lawn": {
+    "id": "lawn",
+    "text": "lawn",
+    "ipa": "/lɔːn/",
+    "meaningVi": "bãi cỏ",
+    "image": "/assets/scenes/house-exterior/objects/13_lawn.webp",
+    "acceptedAnswers": ["lawn", "a lawn", "the lawn", "grass"],
+    "examples": [
+      {
+        "text": "The children play on the lawn.",
+        "vi": "Các bạn nhỏ chơi trên bãi cỏ."
+      },
+      {
+        "text": "The lawn is soft and green.",
+        "vi": "Bãi cỏ mềm và xanh."
+      }
+    ],
+    "relatedWordIds": ["tree", "bench", "flower"],
+    "distractorWordIds": ["pathway", "bush", "fence"]
+  },
+  "tree": {
+    "id": "tree",
+    "text": "tree",
+    "ipa": "/triː/",
+    "meaningVi": "cây",
+    "image": "/assets/scenes/house-exterior/objects/14_tree.webp",
+    "acceptedAnswers": ["tree", "a tree", "the tree"],
+    "examples": [
+      {
+        "text": "There is a big tree in the yard.",
+        "vi": "Có một cái cây to trong sân."
+      },
+      {
+        "text": "Birds sing in the tree.",
+        "vi": "Chim hót trên cây."
+      }
+    ],
+    "relatedWordIds": ["bush", "bench", "lawn"],
+    "distractorWordIds": ["flower", "fence", "mailbox"]
+  },
+  "flower": {
+    "id": "flower",
+    "text": "flower",
+    "ipa": "/ˈflaʊər/",
+    "meaningVi": "bông hoa",
+    "image": "/assets/scenes/house-exterior/objects/15_flower.webp",
+    "acceptedAnswers": ["flower", "a flower", "flowers"],
+    "examples": [
+      {
+        "text": "This flower is pink.",
+        "vi": "Bông hoa này màu hồng."
+      },
+      {
+        "text": "Mom waters the flowers every morning.",
+        "vi": "Mẹ tưới hoa mỗi sáng."
+      }
+    ],
+    "relatedWordIds": ["watering-can", "flower-pot", "bush"],
+    "distractorWordIds": ["tree", "lawn", "mailbox"]
+  },
+  "bush": {
+    "id": "bush",
+    "text": "bush",
+    "ipa": "/bʊʃ/",
+    "meaningVi": "bụi cây",
+    "image": "/assets/scenes/house-exterior/objects/16_bush.webp",
+    "acceptedAnswers": ["bush", "a bush", "bushes"],
+    "examples": [
+      {
+        "text": "The bush has little pink flowers.",
+        "vi": "Bụi cây có những bông hoa nhỏ màu hồng."
+      },
+      {
+        "text": "The cat is hiding behind the bush.",
+        "vi": "Con mèo đang trốn sau bụi cây."
+      }
+    ],
+    "relatedWordIds": ["flower", "tree", "fence"],
+    "distractorWordIds": ["lawn", "flower-pot", "bench"]
+  },
+  "fence": {
+    "id": "fence",
+    "text": "fence",
+    "ipa": "/fens/",
+    "meaningVi": "hàng rào",
+    "image": "/assets/scenes/house-exterior/objects/17_fence.webp",
+    "acceptedAnswers": ["fence", "a fence", "the fence"],
+    "examples": [
+      {
+        "text": "The fence is made of wood.",
+        "vi": "Hàng rào làm bằng gỗ."
+      },
+      {
+        "text": "Don’t climb the fence!",
+        "vi": "Đừng trèo lên hàng rào nhé!"
+      }
+    ],
+    "relatedWordIds": ["gate", "bush", "pathway"],
+    "distractorWordIds": ["wall", "bench", "steps"]
+  },
+  "gate": {
+    "id": "gate",
+    "text": "gate",
+    "ipa": "/ɡeɪt/",
+    "meaningVi": "cổng",
+    "image": "/assets/scenes/house-exterior/objects/18_gate.webp",
+    "acceptedAnswers": ["gate", "a gate", "the gate"],
+    "examples": [
+      {
+        "text": "Please close the gate.",
+        "vi": "Làm ơn đóng cổng lại."
+      },
+      {
+        "text": "The gate is in the middle of the fence.",
+        "vi": "Cái cổng ở giữa hàng rào."
+      }
+    ],
+    "relatedWordIds": ["fence", "pathway", "mailbox"],
+    "distractorWordIds": ["front-door", "garage-door", "wall"]
+  },
+  "pathway": {
+    "id": "pathway",
+    "text": "pathway",
+    "ipa": "/ˈpæθweɪ/",
+    "meaningVi": "lối đi",
+    "image": "/assets/scenes/house-exterior/objects/19_pathway.webp",
+    "acceptedAnswers": ["pathway", "a pathway", "path", "walkway"],
+    "examples": [
+      {
+        "text": "The pathway goes to the front door.",
+        "vi": "Lối đi dẫn tới cửa chính."
+      },
+      {
+        "text": "Walk on the pathway, not on the flowers.",
+        "vi": "Hãy đi trên lối đi, đừng giẫm lên hoa."
+      }
+    ],
+    "relatedWordIds": ["gate", "steps", "lawn"],
+    "distractorWordIds": ["fence", "porch", "garden-hose"]
+  },
+  "mailbox": {
+    "id": "mailbox",
+    "text": "mailbox",
+    "ipa": "/ˈmeɪlbɑːks/",
+    "meaningVi": "hộp thư",
+    "image": "/assets/scenes/house-exterior/objects/20_mailbox.webp",
+    "acceptedAnswers": ["mailbox", "a mailbox", "mail box", "letterbox"],
+    "examples": [
+      {
+        "text": "There is a letter in the mailbox.",
+        "vi": "Có một lá thư trong hộp thư."
+      },
+      {
+        "text": "The mailbox has a red flag.",
+        "vi": "Hộp thư có một lá cờ đỏ."
+      }
+    ],
+    "relatedWordIds": ["house-number", "gate", "pathway"],
+    "distractorWordIds": ["doorbell", "flower-pot", "watering-can"]
+  },
+  "flower-pot": {
+    "id": "flower-pot",
+    "text": "flower pot",
+    "ipa": "/ˈflaʊər pɑːt/",
+    "meaningVi": "chậu hoa",
+    "image": "/assets/scenes/house-exterior/objects/21_flower-pot.webp",
+    "acceptedAnswers": ["flower pot", "a flower pot", "flowerpot", "pot"],
+    "examples": [
+      {
+        "text": "The flower pot is next to the door.",
+        "vi": "Chậu hoa ở cạnh cửa."
+      },
+      {
+        "text": "Mom plants a flower in the flower pot.",
+        "vi": "Mẹ trồng một bông hoa vào chậu hoa."
+      }
+    ],
+    "relatedWordIds": ["flower", "watering-can", "porch"],
+    "distractorWordIds": ["mailbox", "bush", "garden-hose"]
+  },
+  "garden-hose": {
+    "id": "garden-hose",
+    "text": "garden hose",
+    "ipa": "/ˈɡɑːrdn hoʊz/",
+    "meaningVi": "vòi tưới cây",
+    "image": "/assets/scenes/house-exterior/objects/22_garden-hose.webp",
+    "acceptedAnswers": ["garden hose", "a garden hose", "hose"],
+    "examples": [
+      {
+        "text": "Dad waters the lawn with the garden hose.",
+        "vi": "Bố tưới bãi cỏ bằng vòi tưới cây."
+      },
+      {
+        "text": "The garden hose is long and green.",
+        "vi": "Vòi tưới cây dài và màu xanh lá."
+      }
+    ],
+    "relatedWordIds": ["watering-can", "lawn", "garage-door"],
+    "distractorWordIds": ["gutter", "fence", "mailbox"]
+  },
+  "watering-can": {
+    "id": "watering-can",
+    "text": "watering can",
+    "ipa": "/ˈwɔːtərɪŋ kæn/",
+    "meaningVi": "bình tưới cây",
+    "image": "/assets/scenes/house-exterior/objects/23_watering-can.webp",
+    "acceptedAnswers": ["watering can", "a watering can"],
+    "examples": [
+      {
+        "text": "Lily fills the watering can with water.",
+        "vi": "Lily đổ đầy nước vào bình tưới cây."
+      },
+      {
+        "text": "There is a flower on the watering can.",
+        "vi": "Trên bình tưới cây có hình một bông hoa."
+      }
+    ],
+    "relatedWordIds": ["flower", "garden-hose", "flower-pot"],
+    "distractorWordIds": ["mailbox", "bench", "doorbell"]
+  },
+  "bench": {
+    "id": "bench",
+    "text": "bench",
+    "ipa": "/bentʃ/",
+    "meaningVi": "ghế dài",
+    "image": "/assets/scenes/house-exterior/objects/24_bench.webp",
+    "acceptedAnswers": ["bench", "a bench", "the bench"],
+    "examples": [
+      {
+        "text": "Let’s sit on the bench.",
+        "vi": "Mình cùng ngồi lên ghế dài nhé."
+      },
+      {
+        "text": "The bench is under the tree.",
+        "vi": "Chiếc ghế dài ở dưới gốc cây."
+      }
+    ],
+    "relatedWordIds": ["tree", "lawn", "bush"],
+    "distractorWordIds": ["fence", "gate", "steps"]
   }
 }

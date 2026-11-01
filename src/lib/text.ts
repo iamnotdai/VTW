@@ -53,6 +53,13 @@ const MEASURE_PINYIN: Record<string, string> = {
   盆: 'pén',
   份: 'fèn',
   扇: 'shàn',
+  级: 'jí',
+  片: 'piàn',
+  棵: 'kē',
+  朵: 'duǒ',
+  丛: 'cóng',
+  道: 'dào',
+  根: 'gēn',
 };
 
 /**

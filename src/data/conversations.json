@@ -2372,5 +2372,585 @@
         "suggestedAnswer": "We take a basket."
       }
     ]
+  },
+  {
+    "id": "my-house",
+    "sceneId": "house-exterior",
+    "title": "My House",
+    "order": 1,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Lily visits Ben’s house for the first time.",
+    "lines": [
+      {
+        "id": "my-house-l1",
+        "speakerId": "lily",
+        "text": "Wow, Ben! Is this your house?",
+        "textVi": "Oa, Ben ơi! Đây là nhà bạn à?"
+      },
+      {
+        "id": "my-house-l2",
+        "speakerId": "ben",
+        "text": "Yes, it is. Do you like it?",
+        "textVi": "Đúng rồi. Bạn có thích không?"
+      },
+      {
+        "id": "my-house-l3",
+        "speakerId": "lily",
+        "text": "I love the red roof!",
+        "textVi": "Mình rất thích mái nhà màu đỏ!"
+      },
+      {
+        "id": "my-house-l4",
+        "speakerId": "ben",
+        "text": "My bedroom is up there, behind the balcony.",
+        "textVi": "Phòng ngủ của mình ở trên kia, sau ban công."
+      },
+      {
+        "id": "my-house-l5",
+        "speakerId": "lily",
+        "text": "There are flowers on the balcony, too.",
+        "textVi": "Trên ban công cũng có hoa nữa."
+      },
+      {
+        "id": "my-house-l6",
+        "speakerId": "ben",
+        "text": "Mom loves flowers. Come in!",
+        "textVi": "Mẹ mình rất thích hoa. Vào nhà đi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-house-q1",
+        "prompt": "What color is the roof?",
+        "suggestedAnswer": "The roof is red."
+      },
+      {
+        "id": "my-house-q2",
+        "prompt": "What is on the balcony?",
+        "suggestedAnswer": "There are flowers on the balcony."
+      }
+    ]
+  },
+  {
+    "id": "ring-the-doorbell",
+    "sceneId": "house-exterior",
+    "title": "Ring the Doorbell",
+    "order": 2,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Lily rings the doorbell and Ben’s mom opens the front door.",
+    "lines": [
+      {
+        "id": "ring-the-doorbell-l1",
+        "speakerId": "lily",
+        "text": "Ben, can I ring the doorbell?",
+        "textVi": "Ben ơi, mình bấm chuông cửa được không?"
+      },
+      {
+        "id": "ring-the-doorbell-l2",
+        "speakerId": "ben",
+        "text": "Sure! It’s next to the light.",
+        "textVi": "Được chứ! Nó ở cạnh cái đèn."
+      },
+      {
+        "id": "ring-the-doorbell-l3",
+        "speakerId": "lily",
+        "text": "Ding-dong!",
+        "textVi": "Kính coong!"
+      },
+      {
+        "id": "ring-the-doorbell-l4",
+        "speakerId": "mom",
+        "text": "Hello, Lily! Come in, please.",
+        "textVi": "Chào Lily! Cháu vào nhà đi."
+      },
+      {
+        "id": "ring-the-doorbell-l5",
+        "speakerId": "lily",
+        "text": "Thank you. Your front door is so pretty.",
+        "textVi": "Cháu cảm ơn cô ạ. Cửa chính nhà cô đẹp quá ạ."
+      },
+      {
+        "id": "ring-the-doorbell-l6",
+        "speakerId": "mom",
+        "text": "Thank you! Please leave your shoes on the porch.",
+        "textVi": "Cảm ơn cháu! Cháu để giày ở hiên nhà nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "ring-the-doorbell-q1",
+        "prompt": "Where is the doorbell?",
+        "suggestedAnswer": "The doorbell is next to the light."
+      },
+      {
+        "id": "ring-the-doorbell-q2",
+        "prompt": "Where do you leave your shoes?",
+        "suggestedAnswer": "I leave my shoes on the porch."
+      }
+    ]
+  },
+  {
+    "id": "watering-the-flowers",
+    "sceneId": "house-exterior",
+    "title": "Watering the Flowers",
+    "order": 3,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Lily helps Ben’s mom water the flowers.",
+    "lines": [
+      {
+        "id": "watering-the-flowers-l1",
+        "speakerId": "mom",
+        "text": "Lily, can you help me water the flowers?",
+        "textVi": "Lily ơi, cháu giúp cô tưới hoa được không?"
+      },
+      {
+        "id": "watering-the-flowers-l2",
+        "speakerId": "lily",
+        "text": "Yes! Where is the watering can?",
+        "textVi": "Dạ được ạ! Bình tưới cây ở đâu ạ?"
+      },
+      {
+        "id": "watering-the-flowers-l3",
+        "speakerId": "mom",
+        "text": "It’s on the lawn, near the garage.",
+        "textVi": "Nó ở trên bãi cỏ, gần gara đó."
+      },
+      {
+        "id": "watering-the-flowers-l4",
+        "speakerId": "lily",
+        "text": "Got it! It’s full of water.",
+        "textVi": "Cháu lấy được rồi! Bình đầy nước rồi ạ."
+      },
+      {
+        "id": "watering-the-flowers-l5",
+        "speakerId": "mom",
+        "text": "Please water the flower pot by the door, too.",
+        "textVi": "Cháu tưới cả chậu hoa cạnh cửa nữa nhé."
+      },
+      {
+        "id": "watering-the-flowers-l6",
+        "speakerId": "lily",
+        "text": "OK! Now the flowers are happy.",
+        "textVi": "Vâng ạ! Giờ thì hoa vui rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "watering-the-flowers-q1",
+        "prompt": "Where is the watering can?",
+        "suggestedAnswer": "The watering can is on the lawn."
+      },
+      {
+        "id": "watering-the-flowers-q2",
+        "prompt": "Do you water the flowers?",
+        "suggestedAnswer": "Yes, I water the flowers with a watering can."
+      }
+    ]
+  },
+  {
+    "id": "checking-the-mailbox",
+    "sceneId": "house-exterior",
+    "title": "Checking the Mailbox",
+    "order": 4,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Ben and Dad walk to the mailbox to get a letter.",
+    "lines": [
+      {
+        "id": "checking-the-mailbox-l1",
+        "speakerId": "dad",
+        "text": "Ben, let’s check the mailbox.",
+        "textVi": "Ben ơi, mình đi xem hộp thư nào."
+      },
+      {
+        "id": "checking-the-mailbox-l2",
+        "speakerId": "ben",
+        "text": "The red flag is up. Is there a letter?",
+        "textVi": "Cờ đỏ đang dựng lên. Có thư hả bố?"
+      },
+      {
+        "id": "checking-the-mailbox-l3",
+        "speakerId": "dad",
+        "text": "Yes! Look, a letter for you.",
+        "textVi": "Có! Nhìn này, một lá thư cho con."
+      },
+      {
+        "id": "checking-the-mailbox-l4",
+        "speakerId": "ben",
+        "text": "Look, number 24. That’s our house number!",
+        "textVi": "Nhìn kìa, số 24. Đó là số nhà mình!"
+      },
+      {
+        "id": "checking-the-mailbox-l5",
+        "speakerId": "dad",
+        "text": "Right. Let’s go back along the pathway.",
+        "textVi": "Đúng rồi. Mình đi theo lối đi về nhà nào."
+      },
+      {
+        "id": "checking-the-mailbox-l6",
+        "speakerId": "ben",
+        "text": "I’ll open the letter on the porch!",
+        "textVi": "Con sẽ mở thư ở hiên nhà!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "checking-the-mailbox-q1",
+        "prompt": "What is your house number?",
+        "suggestedAnswer": "My house number is 24."
+      },
+      {
+        "id": "checking-the-mailbox-q2",
+        "prompt": "What is in the mailbox?",
+        "suggestedAnswer": "There is a letter in the mailbox."
+      }
+    ]
+  },
+  {
+    "id": "playing-on-the-lawn",
+    "sceneId": "house-exterior",
+    "title": "Playing on the Lawn",
+    "order": 5,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Ben and Lily play with a ball on the lawn.",
+    "lines": [
+      {
+        "id": "playing-on-the-lawn-l1",
+        "speakerId": "ben",
+        "text": "Let’s play ball on the lawn!",
+        "textVi": "Mình chơi bóng trên bãi cỏ đi!"
+      },
+      {
+        "id": "playing-on-the-lawn-l2",
+        "speakerId": "lily",
+        "text": "OK! The grass is so soft.",
+        "textVi": "Ừ! Cỏ mềm quá."
+      },
+      {
+        "id": "playing-on-the-lawn-l3",
+        "speakerId": "ben",
+        "text": "Catch! Oh no, the ball went into the bush.",
+        "textVi": "Bắt nè! Ôi không, quả bóng rơi vào bụi cây rồi."
+      },
+      {
+        "id": "playing-on-the-lawn-l4",
+        "speakerId": "lily",
+        "text": "Don’t worry. I can get it.",
+        "textVi": "Đừng lo. Mình lấy được mà."
+      },
+      {
+        "id": "playing-on-the-lawn-l5",
+        "speakerId": "ben",
+        "text": "Thanks! Let’s rest on the bench.",
+        "textVi": "Cảm ơn bạn! Mình ngồi nghỉ trên ghế dài đi."
+      },
+      {
+        "id": "playing-on-the-lawn-l6",
+        "speakerId": "lily",
+        "text": "Good idea. It’s nice and cool under the tree.",
+        "textVi": "Ý hay đó. Dưới gốc cây mát thật."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "playing-on-the-lawn-q1",
+        "prompt": "Where do you play ball?",
+        "suggestedAnswer": "I play ball on the lawn."
+      },
+      {
+        "id": "playing-on-the-lawn-q2",
+        "prompt": "Where is the ball?",
+        "suggestedAnswer": "The ball is in the bush."
+      }
+    ]
+  },
+  {
+    "id": "close-the-gate",
+    "sceneId": "house-exterior",
+    "title": "Close the Gate",
+    "order": 6,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Mom reminds Ben to close the gate.",
+    "lines": [
+      {
+        "id": "close-the-gate-l1",
+        "speakerId": "mom",
+        "text": "Ben, did you close the gate?",
+        "textVi": "Ben ơi, con đóng cổng chưa?"
+      },
+      {
+        "id": "close-the-gate-l2",
+        "speakerId": "ben",
+        "text": "Oops! No, I didn’t.",
+        "textVi": "Ối! Con chưa đóng ạ."
+      },
+      {
+        "id": "close-the-gate-l3",
+        "speakerId": "mom",
+        "text": "Please close it, or the cat may run out.",
+        "textVi": "Con đóng lại nhé, không thì con mèo chạy ra ngoài mất."
+      },
+      {
+        "id": "close-the-gate-l4",
+        "speakerId": "ben",
+        "text": "OK. The gate is closed now.",
+        "textVi": "Vâng ạ. Con đóng cổng rồi."
+      },
+      {
+        "id": "close-the-gate-l5",
+        "speakerId": "mom",
+        "text": "Good boy. Is the fence OK, too?",
+        "textVi": "Giỏi lắm. Hàng rào cũng ổn chứ con?"
+      },
+      {
+        "id": "close-the-gate-l6",
+        "speakerId": "ben",
+        "text": "Yes, the fence is fine.",
+        "textVi": "Dạ, hàng rào vẫn tốt ạ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "close-the-gate-q1",
+        "prompt": "What do you do after you come in?",
+        "suggestedAnswer": "I close the gate."
+      },
+      {
+        "id": "close-the-gate-q2",
+        "prompt": "What is around the yard?",
+        "suggestedAnswer": "There is a fence around the yard."
+      }
+    ]
+  },
+  {
+    "id": "a-rainy-day",
+    "sceneId": "house-exterior",
+    "title": "A Rainy Day",
+    "order": 7,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Lily and Ben watch the rain from the porch.",
+    "lines": [
+      {
+        "id": "a-rainy-day-l1",
+        "speakerId": "lily",
+        "text": "Listen! It’s raining on the roof.",
+        "textVi": "Nghe này! Mưa rơi trên mái nhà."
+      },
+      {
+        "id": "a-rainy-day-l2",
+        "speakerId": "ben",
+        "text": "Let’s stay on the porch. We won’t get wet.",
+        "textVi": "Mình ở ngoài hiên đi. Sẽ không bị ướt đâu."
+      },
+      {
+        "id": "a-rainy-day-l3",
+        "speakerId": "lily",
+        "text": "Where does the rain go?",
+        "textVi": "Nước mưa chảy đi đâu vậy?"
+      },
+      {
+        "id": "a-rainy-day-l4",
+        "speakerId": "ben",
+        "text": "Into the gutter. Then it goes down the pipe.",
+        "textVi": "Vào máng xối. Rồi nó chảy xuống ống."
+      },
+      {
+        "id": "a-rainy-day-l5",
+        "speakerId": "lily",
+        "text": "The lawn is very wet now.",
+        "textVi": "Giờ bãi cỏ ướt sũng rồi."
+      },
+      {
+        "id": "a-rainy-day-l6",
+        "speakerId": "ben",
+        "text": "Good! The tree and the flowers need water.",
+        "textVi": "Tốt mà! Cây và hoa cần nước."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-rainy-day-q1",
+        "prompt": "Where does the rain go?",
+        "suggestedAnswer": "The rain goes into the gutter."
+      },
+      {
+        "id": "a-rainy-day-q2",
+        "prompt": "Where do you stay when it rains?",
+        "suggestedAnswer": "I stay on the porch."
+      }
+    ]
+  },
+  {
+    "id": "opening-the-garage",
+    "sceneId": "house-exterior",
+    "title": "Opening the Garage",
+    "order": 8,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Dad opens the garage door, and Ben brings the garden hose.",
+    "lines": [
+      {
+        "id": "opening-the-garage-l1",
+        "speakerId": "dad",
+        "text": "Ben, can you help me today?",
+        "textVi": "Ben ơi, hôm nay con giúp bố được không?"
+      },
+      {
+        "id": "opening-the-garage-l2",
+        "speakerId": "ben",
+        "text": "Sure, Dad! What can I do?",
+        "textVi": "Dạ được ạ! Con làm gì ạ?"
+      },
+      {
+        "id": "opening-the-garage-l3",
+        "speakerId": "dad",
+        "text": "First, I’ll open the garage door.",
+        "textVi": "Trước tiên, bố mở cửa gara."
+      },
+      {
+        "id": "opening-the-garage-l4",
+        "speakerId": "ben",
+        "text": "Wow, it goes up!",
+        "textVi": "Oa, cửa kéo lên kìa!"
+      },
+      {
+        "id": "opening-the-garage-l5",
+        "speakerId": "dad",
+        "text": "Now please bring me the garden hose.",
+        "textVi": "Giờ con mang vòi tưới cây cho bố nhé."
+      },
+      {
+        "id": "opening-the-garage-l6",
+        "speakerId": "ben",
+        "text": "Here you are. Let’s wash the car!",
+        "textVi": "Đây ạ. Mình rửa xe thôi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "opening-the-garage-q1",
+        "prompt": "Who opens the garage door?",
+        "suggestedAnswer": "Dad opens the garage door."
+      },
+      {
+        "id": "opening-the-garage-q2",
+        "prompt": "What do you use to wash the car?",
+        "suggestedAnswer": "I use a garden hose."
+      }
+    ]
+  },
+  {
+    "id": "porch-light-on",
+    "sceneId": "house-exterior",
+    "title": "Turn On the Light",
+    "order": 9,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "It gets dark, and Ben turns on the porch light.",
+    "lines": [
+      {
+        "id": "porch-light-on-l1",
+        "speakerId": "ben",
+        "text": "Mom, it’s getting dark outside.",
+        "textVi": "Mẹ ơi, bên ngoài trời tối dần rồi."
+      },
+      {
+        "id": "porch-light-on-l2",
+        "speakerId": "mom",
+        "text": "Dad is coming home soon. Let’s turn on the porch light.",
+        "textVi": "Bố sắp về rồi. Mình bật đèn hiên nhà nhé."
+      },
+      {
+        "id": "porch-light-on-l3",
+        "speakerId": "ben",
+        "text": "Can I do it?",
+        "textVi": "Con bật được không ạ?"
+      },
+      {
+        "id": "porch-light-on-l4",
+        "speakerId": "mom",
+        "text": "Yes. The switch is by the front door.",
+        "textVi": "Được. Công tắc ở cạnh cửa chính."
+      },
+      {
+        "id": "porch-light-on-l5",
+        "speakerId": "ben",
+        "text": "Click! Now Dad can see the steps.",
+        "textVi": "Tách! Giờ bố nhìn thấy bậc thềm rồi."
+      },
+      {
+        "id": "porch-light-on-l6",
+        "speakerId": "mom",
+        "text": "Thank you, Ben. That’s very kind.",
+        "textVi": "Cảm ơn con, Ben. Con thật chu đáo."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "porch-light-on-q1",
+        "prompt": "When do you turn on the porch light?",
+        "suggestedAnswer": "I turn on the porch light when it is dark."
+      },
+      {
+        "id": "porch-light-on-q2",
+        "prompt": "Why does Ben turn on the light?",
+        "suggestedAnswer": "So Dad can see the steps."
+      }
+    ]
+  },
+  {
+    "id": "under-the-big-tree",
+    "sceneId": "house-exterior",
+    "title": "Under the Big Tree",
+    "order": 10,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "Lily and Ben have a snack under the big tree.",
+    "lines": [
+      {
+        "id": "under-the-big-tree-l1",
+        "speakerId": "lily",
+        "text": "This tree is so big!",
+        "textVi": "Cái cây này to quá!"
+      },
+      {
+        "id": "under-the-big-tree-l2",
+        "speakerId": "ben",
+        "text": "It’s my favorite tree. Birds live in it.",
+        "textVi": "Đây là cây mình thích nhất. Có chim sống trên đó."
+      },
+      {
+        "id": "under-the-big-tree-l3",
+        "speakerId": "lily",
+        "text": "Let’s have our snack under it.",
+        "textVi": "Mình ăn bánh dưới gốc cây đi."
+      },
+      {
+        "id": "under-the-big-tree-l4",
+        "speakerId": "ben",
+        "text": "OK. We can sit on the bench.",
+        "textVi": "Ừ. Mình ngồi lên ghế dài nhé."
+      },
+      {
+        "id": "under-the-big-tree-l5",
+        "speakerId": "lily",
+        "text": "Look at the bush. It has pink flowers.",
+        "textVi": "Nhìn bụi cây kìa. Có hoa màu hồng."
+      },
+      {
+        "id": "under-the-big-tree-l6",
+        "speakerId": "ben",
+        "text": "This is the best place in my yard!",
+        "textVi": "Đây là chỗ tuyệt nhất trong sân nhà mình!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "under-the-big-tree-q1",
+        "prompt": "What lives in the tree?",
+        "suggestedAnswer": "Birds live in the tree."
+      },
+      {
+        "id": "under-the-big-tree-q2",
+        "prompt": "Where do you sit?",
+        "suggestedAnswer": "I sit on the bench under the tree."
+      }
+    ]
   }
 ]

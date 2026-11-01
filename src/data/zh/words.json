@@ -2336,5 +2336,557 @@
     ],
     "relatedWordIds": ["tv", "tv-stand", "robot-mop"],
     "distractorWordIds": ["light-switch", "speaker", "wi-fi-router"]
+  },
+  "roof": {
+    "id": "roof",
+    "text": "屋顶",
+    "pinyin": "wūdǐng",
+    "measure": "个",
+    "meaningVi": "mái nhà",
+    "image": "/assets/scenes/house-exterior/objects/01_roof.webp",
+    "acceptedAnswers": ["屋顶", "房顶"],
+    "examples": [
+      {
+        "text": "屋顶是红色的。",
+        "vi": "Mái nhà màu đỏ.",
+        "pinyin": "Wū dǐng shì hóng sè de."
+      },
+      {
+        "text": "一只小鸟站在屋顶上。",
+        "vi": "Một chú chim đang đứng trên mái nhà.",
+        "pinyin": "Yì zhī xiǎo niǎo zhàn zài wū dǐng shàng."
+      }
+    ],
+    "relatedWordIds": ["wall", "gutter", "balcony"],
+    "distractorWordIds": ["porch", "garage-door", "fence"]
+  },
+  "wall": {
+    "id": "wall",
+    "text": "墙",
+    "pinyin": "qiáng",
+    "measure": "面",
+    "meaningVi": "tường",
+    "image": "/assets/scenes/house-exterior/objects/02_wall.webp",
+    "acceptedAnswers": ["墙", "墙壁"],
+    "examples": [
+      {
+        "text": "我家的墙是黄色的。",
+        "vi": "Tường nhà mình màu vàng.",
+        "pinyin": "Wǒ jiā de qiáng shì huáng sè de."
+      },
+      {
+        "text": "墙上有一盏灯。",
+        "vi": "Trên tường có một cái đèn.",
+        "pinyin": "Qiáng shàng yǒu yì zhǎn dēng."
+      }
+    ],
+    "relatedWordIds": ["roof", "house-window", "porch-light"],
+    "distractorWordIds": ["fence", "gate", "garage-door"]
+  },
+  "front-door": {
+    "id": "front-door",
+    "text": "大门",
+    "pinyin": "dàmén",
+    "measure": "扇",
+    "meaningVi": "cửa chính",
+    "image": "/assets/scenes/house-exterior/objects/03_front-door.webp",
+    "acceptedAnswers": ["大门", "前门"],
+    "examples": [
+      {
+        "text": "大门是红色的。",
+        "vi": "Cửa chính màu đỏ.",
+        "pinyin": "Dà mén shì hóng sè de."
+      },
+      {
+        "text": "请关上大门。",
+        "vi": "Làm ơn đóng cửa chính lại.",
+        "pinyin": "Qǐng guān shàng dà mén."
+      }
+    ],
+    "relatedWordIds": ["doorbell", "steps", "porch"],
+    "distractorWordIds": ["garage-door", "gate", "house-window"]
+  },
+  "house-window": {
+    "id": "house-window",
+    "text": "窗户",
+    "pinyin": "chuānghu",
+    "measure": "扇",
+    "meaningVi": "cửa sổ",
+    "image": "/assets/scenes/house-exterior/objects/04_house-window.webp",
+    "acceptedAnswers": ["窗户", "窗子"],
+    "examples": [
+      {
+        "text": "我从窗户看到了蓝天。",
+        "vi": "Mình nhìn thấy bầu trời xanh qua cửa sổ.",
+        "pinyin": "Wǒ cóng chuāng hu kàn dào le lán tiān."
+      },
+      {
+        "text": "这座房子有两扇窗户。",
+        "vi": "Ngôi nhà này có hai cửa sổ.",
+        "pinyin": "Zhè zuò fáng zi yǒu liǎng shàn chuāng hu."
+      }
+    ],
+    "relatedWordIds": ["wall", "balcony", "roof"],
+    "distractorWordIds": ["front-door", "garage-door", "gate"]
+  },
+  "balcony": {
+    "id": "balcony",
+    "text": "阳台",
+    "pinyin": "yángtái",
+    "measure": "个",
+    "meaningVi": "ban công",
+    "image": "/assets/scenes/house-exterior/objects/05_balcony.webp",
+    "acceptedAnswers": ["阳台"],
+    "examples": [
+      {
+        "text": "阳台上有花。",
+        "vi": "Trên ban công có hoa.",
+        "pinyin": "Yáng tái shàng yǒu huā."
+      },
+      {
+        "text": "妈妈站在阳台上挥手。",
+        "vi": "Mẹ đứng trên ban công vẫy tay.",
+        "pinyin": "Mā ma zhàn zài yáng tái shàng huī shǒu."
+      }
+    ],
+    "relatedWordIds": ["house-window", "flower", "roof"],
+    "distractorWordIds": ["porch", "steps", "fence"]
+  },
+  "porch": {
+    "id": "porch",
+    "text": "门廊",
+    "pinyin": "ménláng",
+    "measure": "个",
+    "meaningVi": "hiên nhà",
+    "image": "/assets/scenes/house-exterior/objects/06_porch.webp",
+    "acceptedAnswers": ["门廊"],
+    "examples": [
+      {
+        "text": "吃完晚饭，我们坐在门廊上。",
+        "vi": "Ăn tối xong, chúng mình ngồi ngoài hiên nhà.",
+        "pinyin": "Chī wán wǎn fàn, wǒ men zuò zài mén láng shàng."
+      },
+      {
+        "text": "把鞋子放在门廊上吧。",
+        "vi": "Để giày ở hiên nhà nhé.",
+        "pinyin": "Bǎ xié zǐ fàng zài mén láng shàng ba."
+      }
+    ],
+    "relatedWordIds": ["steps", "porch-light", "front-door"],
+    "distractorWordIds": ["balcony", "garage-door", "pathway"]
+  },
+  "steps": {
+    "id": "steps",
+    "text": "台阶",
+    "pinyin": "táijiē",
+    "measure": "级",
+    "meaningVi": "bậc thềm",
+    "image": "/assets/scenes/house-exterior/objects/07_steps.webp",
+    "acceptedAnswers": ["台阶"],
+    "examples": [
+      {
+        "text": "走上台阶就到大门了。",
+        "vi": "Đi lên bậc thềm là tới cửa chính.",
+        "pinyin": "Zǒu shàng tái jiē jiù dào dà mén le."
+      },
+      {
+        "text": "走台阶的时候要小心。",
+        "vi": "Khi đi trên bậc thềm phải cẩn thận.",
+        "pinyin": "Zǒu tái jiē de shí hou yào xiǎo xīn."
+      }
+    ],
+    "relatedWordIds": ["porch", "front-door", "pathway"],
+    "distractorWordIds": ["fence", "balcony", "lawn"]
+  },
+  "doorbell": {
+    "id": "doorbell",
+    "text": "门铃",
+    "pinyin": "ménlíng",
+    "measure": "个",
+    "meaningVi": "chuông cửa",
+    "image": "/assets/scenes/house-exterior/objects/08_doorbell.webp",
+    "acceptedAnswers": ["门铃"],
+    "examples": [
+      {
+        "text": "莉莉按门铃。",
+        "vi": "Lily bấm chuông cửa.",
+        "pinyin": "Lì li àn mén líng."
+      },
+      {
+        "text": "叮咚！是门铃响了。",
+        "vi": "Kính coong! Chuông cửa reo rồi.",
+        "pinyin": "Dīng dōng! Shì mén líng xiǎng le."
+      }
+    ],
+    "relatedWordIds": ["front-door", "porch-light", "house-number"],
+    "distractorWordIds": ["mailbox", "gutter", "flower-pot"]
+  },
+  "porch-light": {
+    "id": "porch-light",
+    "text": "门廊灯",
+    "pinyin": "ménlángdēng",
+    "measure": "盏",
+    "meaningVi": "đèn hiên nhà",
+    "image": "/assets/scenes/house-exterior/objects/09_porch-light.webp",
+    "acceptedAnswers": ["门廊灯", "门灯"],
+    "examples": [
+      {
+        "text": "晚上爸爸打开门廊灯。",
+        "vi": "Buổi tối bố bật đèn hiên nhà.",
+        "pinyin": "Wǎn shang bà ba dǎ kāi mén láng dēng."
+      },
+      {
+        "text": "门廊灯又黄又亮。",
+        "vi": "Đèn hiên nhà vừa vàng vừa sáng.",
+        "pinyin": "Mén láng dēng yòu huáng yòu liàng."
+      }
+    ],
+    "relatedWordIds": ["porch", "doorbell", "wall"],
+    "distractorWordIds": ["house-number", "mailbox", "gutter"]
+  },
+  "garage-door": {
+    "id": "garage-door",
+    "text": "车库门",
+    "pinyin": "chēkùmén",
+    "measure": "扇",
+    "meaningVi": "cửa gara",
+    "image": "/assets/scenes/house-exterior/objects/10_garage-door.webp",
+    "acceptedAnswers": ["车库门"],
+    "examples": [
+      {
+        "text": "爸爸打开车库门。",
+        "vi": "Bố mở cửa gara.",
+        "pinyin": "Bà ba dǎ kāi chē kù mén."
+      },
+      {
+        "text": "汽车在车库门后面。",
+        "vi": "Ô tô ở sau cửa gara.",
+        "pinyin": "Qì chē zài chē kù mén hòu miàn."
+      }
+    ],
+    "relatedWordIds": ["gutter", "garden-hose", "pathway"],
+    "distractorWordIds": ["front-door", "gate", "house-window"]
+  },
+  "gutter": {
+    "id": "gutter",
+    "text": "排水槽",
+    "pinyin": "páishuǐcáo",
+    "measure": "条",
+    "meaningVi": "máng xối",
+    "image": "/assets/scenes/house-exterior/objects/11_gutter.webp",
+    "acceptedAnswers": ["排水槽", "檐沟"],
+    "examples": [
+      {
+        "text": "雨水从排水槽流下来。",
+        "vi": "Nước mưa chảy xuống từ máng xối.",
+        "pinyin": "Yǔ shuǐ cóng pái shuǐ cáo liú xià lái."
+      },
+      {
+        "text": "排水槽在屋顶下面。",
+        "vi": "Máng xối ở dưới mái nhà.",
+        "pinyin": "Pái shuǐ cáo zài wū dǐng xià miàn."
+      }
+    ],
+    "relatedWordIds": ["roof", "garage-door", "wall"],
+    "distractorWordIds": ["garden-hose", "fence", "porch-light"]
+  },
+  "house-number": {
+    "id": "house-number",
+    "text": "门牌号",
+    "pinyin": "ménpáihào",
+    "measure": "个",
+    "meaningVi": "số nhà",
+    "image": "/assets/scenes/house-exterior/objects/12_house-number.webp",
+    "acceptedAnswers": ["门牌号", "门牌"],
+    "examples": [
+      {
+        "text": "我家的门牌号是二十四号。",
+        "vi": "Số nhà của mình là 24.",
+        "pinyin": "Wǒ jiā de mén pái hào shì èr shí sì hào."
+      },
+      {
+        "text": "门牌号在门的旁边。",
+        "vi": "Số nhà ở cạnh cửa.",
+        "pinyin": "Mén pái hào zài mén de páng biān."
+      }
+    ],
+    "relatedWordIds": ["front-door", "mailbox", "doorbell"],
+    "distractorWordIds": ["porch-light", "flower-pot", "gutter"]
+  },
+  "lawn": {
+    "id": "lawn",
+    "text": "草坪",
+    "pinyin": "cǎopíng",
+    "measure": "片",
+    "meaningVi": "bãi cỏ",
+    "image": "/assets/scenes/house-exterior/objects/13_lawn.webp",
+    "acceptedAnswers": ["草坪", "草地"],
+    "examples": [
+      {
+        "text": "孩子们在草坪上玩。",
+        "vi": "Các bạn nhỏ chơi trên bãi cỏ.",
+        "pinyin": "Hái zi men zài cǎo píng shàng wán."
+      },
+      {
+        "text": "草坪又软又绿。",
+        "vi": "Bãi cỏ vừa mềm vừa xanh.",
+        "pinyin": "Cǎo píng yòu ruǎn yòu lǜ."
+      }
+    ],
+    "relatedWordIds": ["tree", "bench", "flower"],
+    "distractorWordIds": ["pathway", "bush", "fence"]
+  },
+  "tree": {
+    "id": "tree",
+    "text": "树",
+    "pinyin": "shù",
+    "measure": "棵",
+    "meaningVi": "cây",
+    "image": "/assets/scenes/house-exterior/objects/14_tree.webp",
+    "acceptedAnswers": ["树", "大树"],
+    "examples": [
+      {
+        "text": "院子里有一棵大树。",
+        "vi": "Trong sân có một cái cây to.",
+        "pinyin": "Yuàn zi lǐ yǒu yì kē dà shù."
+      },
+      {
+        "text": "小鸟在树上唱歌。",
+        "vi": "Chim hót trên cây.",
+        "pinyin": "Xiǎo niǎo zài shù shàng chàng gē."
+      }
+    ],
+    "relatedWordIds": ["bush", "bench", "lawn"],
+    "distractorWordIds": ["flower", "fence", "mailbox"]
+  },
+  "flower": {
+    "id": "flower",
+    "text": "花",
+    "pinyin": "huā",
+    "measure": "朵",
+    "meaningVi": "bông hoa",
+    "image": "/assets/scenes/house-exterior/objects/15_flower.webp",
+    "acceptedAnswers": ["花", "花朵", "花儿"],
+    "examples": [
+      {
+        "text": "这朵花是粉色的。",
+        "vi": "Bông hoa này màu hồng.",
+        "pinyin": "Zhè duǒ huā shì fěn sè de."
+      },
+      {
+        "text": "妈妈每天早上给花浇水。",
+        "vi": "Mẹ tưới hoa mỗi sáng.",
+        "pinyin": "Mā ma měi tiān zǎo shang gěi huā jiāo shuǐ."
+      }
+    ],
+    "relatedWordIds": ["watering-can", "flower-pot", "bush"],
+    "distractorWordIds": ["tree", "lawn", "mailbox"]
+  },
+  "bush": {
+    "id": "bush",
+    "text": "灌木",
+    "pinyin": "guànmù",
+    "measure": "丛",
+    "meaningVi": "bụi cây",
+    "image": "/assets/scenes/house-exterior/objects/16_bush.webp",
+    "acceptedAnswers": ["灌木", "灌木丛", "树丛"],
+    "examples": [
+      {
+        "text": "这丛灌木开着粉色的小花。",
+        "vi": "Bụi cây này nở những bông hoa nhỏ màu hồng.",
+        "pinyin": "Zhè cóng guàn mù kāi zhe fěn sè de xiǎo huā."
+      },
+      {
+        "text": "小猫躲在灌木后面。",
+        "vi": "Con mèo trốn sau bụi cây.",
+        "pinyin": "Xiǎo māo duǒ zài guàn mù hòu miàn."
+      }
+    ],
+    "relatedWordIds": ["flower", "tree", "fence"],
+    "distractorWordIds": ["lawn", "flower-pot", "bench"]
+  },
+  "fence": {
+    "id": "fence",
+    "text": "篱笆",
+    "pinyin": "líba",
+    "measure": "道",
+    "meaningVi": "hàng rào",
+    "image": "/assets/scenes/house-exterior/objects/17_fence.webp",
+    "acceptedAnswers": ["篱笆", "栅栏", "围栏"],
+    "examples": [
+      {
+        "text": "篱笆是木头做的。",
+        "vi": "Hàng rào làm bằng gỗ.",
+        "pinyin": "Lí ba shì mù tou zuò de."
+      },
+      {
+        "text": "不要爬篱笆！",
+        "vi": "Đừng trèo hàng rào nhé!",
+        "pinyin": "Bú yào pá lí ba!"
+      }
+    ],
+    "relatedWordIds": ["gate", "bush", "pathway"],
+    "distractorWordIds": ["wall", "bench", "steps"]
+  },
+  "gate": {
+    "id": "gate",
+    "text": "院门",
+    "pinyin": "yuànmén",
+    "measure": "扇",
+    "meaningVi": "cổng",
+    "image": "/assets/scenes/house-exterior/objects/18_gate.webp",
+    "acceptedAnswers": ["院门", "栅栏门"],
+    "examples": [
+      {
+        "text": "请关上院门。",
+        "vi": "Làm ơn đóng cổng lại.",
+        "pinyin": "Qǐng guān shàng yuàn mén."
+      },
+      {
+        "text": "院门在篱笆的中间。",
+        "vi": "Cổng ở giữa hàng rào.",
+        "pinyin": "Yuàn mén zài lí ba de zhōng jiān."
+      }
+    ],
+    "relatedWordIds": ["fence", "pathway", "mailbox"],
+    "distractorWordIds": ["front-door", "garage-door", "wall"]
+  },
+  "pathway": {
+    "id": "pathway",
+    "text": "小路",
+    "pinyin": "xiǎolù",
+    "measure": "条",
+    "meaningVi": "lối đi",
+    "image": "/assets/scenes/house-exterior/objects/19_pathway.webp",
+    "acceptedAnswers": ["小路", "小道", "石板路"],
+    "examples": [
+      {
+        "text": "这条小路通到大门。",
+        "vi": "Lối đi này dẫn tới cửa chính.",
+        "pinyin": "Zhè tiáo xiǎo lù tōng dào dà mén."
+      },
+      {
+        "text": "要走小路，不要踩花。",
+        "vi": "Hãy đi trên lối đi, đừng giẫm lên hoa.",
+        "pinyin": "Yào zǒu xiǎo lù, bú yào cǎi huā."
+      }
+    ],
+    "relatedWordIds": ["gate", "steps", "lawn"],
+    "distractorWordIds": ["fence", "porch", "garden-hose"]
+  },
+  "mailbox": {
+    "id": "mailbox",
+    "text": "信箱",
+    "pinyin": "xìnxiāng",
+    "measure": "个",
+    "meaningVi": "hộp thư",
+    "image": "/assets/scenes/house-exterior/objects/20_mailbox.webp",
+    "acceptedAnswers": ["信箱", "邮箱"],
+    "examples": [
+      {
+        "text": "信箱里有一封信。",
+        "vi": "Trong hộp thư có một lá thư.",
+        "pinyin": "Xìn xiāng lǐ yǒu yì fēng xìn."
+      },
+      {
+        "text": "信箱上有一面小红旗。",
+        "vi": "Trên hộp thư có một lá cờ đỏ nhỏ.",
+        "pinyin": "Xìn xiāng shàng yǒu yí miàn xiǎo hóng qí."
+      }
+    ],
+    "relatedWordIds": ["house-number", "gate", "pathway"],
+    "distractorWordIds": ["doorbell", "flower-pot", "watering-can"]
+  },
+  "flower-pot": {
+    "id": "flower-pot",
+    "text": "花盆",
+    "pinyin": "huāpén",
+    "measure": "个",
+    "meaningVi": "chậu hoa",
+    "image": "/assets/scenes/house-exterior/objects/21_flower-pot.webp",
+    "acceptedAnswers": ["花盆"],
+    "examples": [
+      {
+        "text": "花盆在门的旁边。",
+        "vi": "Chậu hoa ở cạnh cửa.",
+        "pinyin": "Huā pén zài mén de páng biān."
+      },
+      {
+        "text": "妈妈把花种在花盆里。",
+        "vi": "Mẹ trồng hoa vào chậu hoa.",
+        "pinyin": "Mā ma bǎ huā zhǒng zài huā pén lǐ."
+      }
+    ],
+    "relatedWordIds": ["flower", "watering-can", "porch"],
+    "distractorWordIds": ["mailbox", "bush", "garden-hose"]
+  },
+  "garden-hose": {
+    "id": "garden-hose",
+    "text": "水管",
+    "pinyin": "shuǐguǎn",
+    "measure": "根",
+    "meaningVi": "vòi tưới cây",
+    "image": "/assets/scenes/house-exterior/objects/22_garden-hose.webp",
+    "acceptedAnswers": ["水管", "浇水管"],
+    "examples": [
+      {
+        "text": "爸爸用水管给草坪浇水。",
+        "vi": "Bố dùng vòi tưới cây để tưới bãi cỏ.",
+        "pinyin": "Bà ba yòng shuǐ guǎn gěi cǎo píng jiāo shuǐ."
+      },
+      {
+        "text": "水管又长又绿。",
+        "vi": "Vòi tưới cây vừa dài vừa xanh.",
+        "pinyin": "Shuǐ guǎn yòu cháng yòu lǜ."
+      }
+    ],
+    "relatedWordIds": ["watering-can", "lawn", "garage-door"],
+    "distractorWordIds": ["gutter", "fence", "mailbox"]
+  },
+  "watering-can": {
+    "id": "watering-can",
+    "text": "喷壶",
+    "pinyin": "pēnhú",
+    "measure": "个",
+    "meaningVi": "bình tưới cây",
+    "image": "/assets/scenes/house-exterior/objects/23_watering-can.webp",
+    "acceptedAnswers": ["喷壶", "洒水壶", "浇水壶"],
+    "examples": [
+      {
+        "text": "莉莉往喷壶里装满水。",
+        "vi": "Lily đổ đầy nước vào bình tưới cây.",
+        "pinyin": "Lì li wǎng pēn hú lǐ zhuāng mǎn shuǐ."
+      },
+      {
+        "text": "喷壶上有一朵小花。",
+        "vi": "Trên bình tưới cây có một bông hoa nhỏ.",
+        "pinyin": "Pēn hú shàng yǒu yì duǒ xiǎo huā."
+      }
+    ],
+    "relatedWordIds": ["flower", "garden-hose", "flower-pot"],
+    "distractorWordIds": ["mailbox", "bench", "doorbell"]
+  },
+  "bench": {
+    "id": "bench",
+    "text": "长椅",
+    "pinyin": "chángyǐ",
+    "measure": "张",
+    "meaningVi": "ghế dài",
+    "image": "/assets/scenes/house-exterior/objects/24_bench.webp",
+    "acceptedAnswers": ["长椅", "长凳"],
+    "examples": [
+      {
+        "text": "我们坐在长椅上吧。",
+        "vi": "Mình cùng ngồi lên ghế dài nhé.",
+        "pinyin": "Wǒ men zuò zài cháng yǐ shàng ba."
+      },
+      {
+        "text": "长椅在大树下面。",
+        "vi": "Chiếc ghế dài ở dưới gốc cây.",
+        "pinyin": "Cháng yǐ zài dà shù xià miàn."
+      }
+    ],
+    "relatedWordIds": ["tree", "lawn", "bush"],
+    "distractorWordIds": ["fence", "gate", "steps"]
   }
 }

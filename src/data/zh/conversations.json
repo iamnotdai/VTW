@@ -2781,5 +2781,685 @@
         "suggestedAnswerPinyin": "Wǒ men dài lán zi qù cài shì chǎng."
       }
     ]
+  },
+  {
+    "id": "my-house",
+    "sceneId": "house-exterior",
+    "title": "我的家",
+    "order": 1,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "莉莉第一次来小本家。",
+    "lines": [
+      {
+        "id": "my-house-l1",
+        "speakerId": "lily",
+        "text": "哇，小本！这是你家吗？",
+        "textVi": "Oa, Ben ơi! Đây là nhà bạn à?",
+        "pinyin": "Wā, Xiǎo Běn! Zhè shì nǐ jiā ma?"
+      },
+      {
+        "id": "my-house-l2",
+        "speakerId": "ben",
+        "text": "是呀。你喜欢吗？",
+        "textVi": "Đúng rồi. Bạn có thích không?",
+        "pinyin": "Shì ya. Nǐ xǐ huan ma?"
+      },
+      {
+        "id": "my-house-l3",
+        "speakerId": "lily",
+        "text": "我很喜欢红色的屋顶！",
+        "textVi": "Mình rất thích mái nhà màu đỏ!",
+        "pinyin": "Wǒ hěn xǐ huan hóng sè de wū dǐng!"
+      },
+      {
+        "id": "my-house-l4",
+        "speakerId": "ben",
+        "text": "我的卧室在上面，就在阳台后面。",
+        "textVi": "Phòng ngủ của mình ở trên kia, sau ban công.",
+        "pinyin": "Wǒ de wò shì zài shàng miàn, jiù zài yáng tái hòu miàn."
+      },
+      {
+        "id": "my-house-l5",
+        "speakerId": "lily",
+        "text": "阳台上也有花。",
+        "textVi": "Trên ban công cũng có hoa nữa.",
+        "pinyin": "Yáng tái shàng yě yǒu huā."
+      },
+      {
+        "id": "my-house-l6",
+        "speakerId": "ben",
+        "text": "妈妈很喜欢花。快进来吧！",
+        "textVi": "Mẹ mình rất thích hoa. Vào nhà đi!",
+        "pinyin": "Mā ma hěn xǐ huan huā. Kuài jìn lái ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "my-house-q1",
+        "prompt": "屋顶是什么颜色的？",
+        "suggestedAnswer": "屋顶是红色的。",
+        "promptPinyin": "Wū dǐng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Wū dǐng shì hóng sè de."
+      },
+      {
+        "id": "my-house-q2",
+        "prompt": "阳台上有什么？",
+        "suggestedAnswer": "阳台上有花。",
+        "promptPinyin": "Yáng tái shàng yǒu shén me?",
+        "suggestedAnswerPinyin": "Yáng tái shàng yǒu huā."
+      }
+    ]
+  },
+  {
+    "id": "ring-the-doorbell",
+    "sceneId": "house-exterior",
+    "title": "按门铃",
+    "order": 2,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "莉莉按门铃，小本的妈妈打开大门。",
+    "lines": [
+      {
+        "id": "ring-the-doorbell-l1",
+        "speakerId": "lily",
+        "text": "小本，我可以按门铃吗？",
+        "textVi": "Ben ơi, mình bấm chuông cửa được không?",
+        "pinyin": "Xiǎo Běn, wǒ kě yǐ àn mén líng ma?"
+      },
+      {
+        "id": "ring-the-doorbell-l2",
+        "speakerId": "ben",
+        "text": "可以呀！门铃在灯的旁边。",
+        "textVi": "Được chứ! Chuông cửa ở cạnh cái đèn.",
+        "pinyin": "Kě yǐ ya! Mén líng zài dēng de páng biān."
+      },
+      {
+        "id": "ring-the-doorbell-l3",
+        "speakerId": "lily",
+        "text": "叮咚！",
+        "textVi": "Kính coong!",
+        "pinyin": "Dīng dōng!"
+      },
+      {
+        "id": "ring-the-doorbell-l4",
+        "speakerId": "mom",
+        "text": "你好，莉莉！快请进。",
+        "textVi": "Chào Lily! Cháu vào nhà đi.",
+        "pinyin": "Nǐ hǎo, Lì li! Kuài qǐng jìn."
+      },
+      {
+        "id": "ring-the-doorbell-l5",
+        "speakerId": "lily",
+        "text": "谢谢阿姨。你家的大门真漂亮。",
+        "textVi": "Cháu cảm ơn cô ạ. Cửa chính nhà cô đẹp quá ạ.",
+        "pinyin": "Xiè xiè ā yí. Nǐ jiā de dà mén zhēn piào liang."
+      },
+      {
+        "id": "ring-the-doorbell-l6",
+        "speakerId": "mom",
+        "text": "谢谢！请把鞋子放在门廊上。",
+        "textVi": "Cảm ơn cháu! Cháu để giày ở hiên nhà nhé.",
+        "pinyin": "Xiè xiè! Qǐng bǎ xié zi fàng zài mén láng shàng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "ring-the-doorbell-q1",
+        "prompt": "门铃在哪儿？",
+        "suggestedAnswer": "门铃在灯的旁边。",
+        "promptPinyin": "Mén líng zài nǎr?",
+        "suggestedAnswerPinyin": "Mén líng zài dēng de páng biān."
+      },
+      {
+        "id": "ring-the-doorbell-q2",
+        "prompt": "鞋子放在哪儿？",
+        "suggestedAnswer": "鞋子放在门廊上。",
+        "promptPinyin": "Xié zǐ fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Xié zǐ fàng zài mén láng shàng."
+      }
+    ]
+  },
+  {
+    "id": "watering-the-flowers",
+    "sceneId": "house-exterior",
+    "title": "浇花",
+    "order": 3,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "莉莉帮小本的妈妈浇花。",
+    "lines": [
+      {
+        "id": "watering-the-flowers-l1",
+        "speakerId": "mom",
+        "text": "莉莉，你能帮我浇花吗？",
+        "textVi": "Lily ơi, cháu giúp cô tưới hoa được không?",
+        "pinyin": "Lì li, nǐ néng bāng wǒ jiāo huā ma?"
+      },
+      {
+        "id": "watering-the-flowers-l2",
+        "speakerId": "lily",
+        "text": "可以！喷壶在哪儿？",
+        "textVi": "Dạ được ạ! Bình tưới cây ở đâu ạ?",
+        "pinyin": "Kě yǐ! Pēn hú zài nǎr?"
+      },
+      {
+        "id": "watering-the-flowers-l3",
+        "speakerId": "mom",
+        "text": "在草坪上，车库旁边。",
+        "textVi": "Nó ở trên bãi cỏ, gần gara đó.",
+        "pinyin": "Zài cǎo píng shàng, chē kù páng biān."
+      },
+      {
+        "id": "watering-the-flowers-l4",
+        "speakerId": "lily",
+        "text": "拿到了！里面装满了水。",
+        "textVi": "Cháu lấy được rồi! Bình đầy nước rồi ạ.",
+        "pinyin": "Ná dào le! Lǐ miàn zhuāng mǎn le shuǐ."
+      },
+      {
+        "id": "watering-the-flowers-l5",
+        "speakerId": "mom",
+        "text": "门旁边的花盆也浇一浇吧。",
+        "textVi": "Cháu tưới cả chậu hoa cạnh cửa nữa nhé.",
+        "pinyin": "Mén páng biān de huā pén yě jiāo yi jiāo ba."
+      },
+      {
+        "id": "watering-the-flowers-l6",
+        "speakerId": "lily",
+        "text": "好的！现在花儿都很开心。",
+        "textVi": "Vâng ạ! Giờ thì hoa vui rồi.",
+        "pinyin": "Hǎo de! Xiàn zài huār dōu hěn kāi xīn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "watering-the-flowers-q1",
+        "prompt": "喷壶在哪儿？",
+        "suggestedAnswer": "喷壶在草坪上。",
+        "promptPinyin": "Pēn hú zài nǎr?",
+        "suggestedAnswerPinyin": "Pēn hú zài cǎo píng shàng."
+      },
+      {
+        "id": "watering-the-flowers-q2",
+        "prompt": "你会浇花吗？",
+        "suggestedAnswer": "会，我用喷壶浇花。",
+        "promptPinyin": "Nǐ huì jiāo huā ma?",
+        "suggestedAnswerPinyin": "Huì, wǒ yòng pēn hú jiāo huā."
+      }
+    ]
+  },
+  {
+    "id": "checking-the-mailbox",
+    "sceneId": "house-exterior",
+    "title": "看信箱",
+    "order": 4,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "小本和爸爸去信箱取信。",
+    "lines": [
+      {
+        "id": "checking-the-mailbox-l1",
+        "speakerId": "dad",
+        "text": "小本，我们去看看信箱吧。",
+        "textVi": "Ben ơi, mình đi xem hộp thư nào.",
+        "pinyin": "Xiǎo Běn, wǒ men qù kàn kàn xìn xiāng ba."
+      },
+      {
+        "id": "checking-the-mailbox-l2",
+        "speakerId": "ben",
+        "text": "小红旗竖起来了。有信吗？",
+        "textVi": "Cờ đỏ đang dựng lên. Có thư hả bố?",
+        "pinyin": "Xiǎo hóng qí shù qǐ lái le. Yǒu xìn ma?"
+      },
+      {
+        "id": "checking-the-mailbox-l3",
+        "speakerId": "dad",
+        "text": "有！你看，有你的一封信。",
+        "textVi": "Có! Nhìn này, một lá thư cho con.",
+        "pinyin": "Yǒu! Nǐ kàn, yǒu nǐ de yì fēng xìn."
+      },
+      {
+        "id": "checking-the-mailbox-l4",
+        "speakerId": "ben",
+        "text": "你看，二十四号。这是我家的门牌号！",
+        "textVi": "Nhìn kìa, số 24. Đó là số nhà mình!",
+        "pinyin": "Nǐ kàn, èr shí sì hào. Zhè shì wǒ jiā de mén pái hào!"
+      },
+      {
+        "id": "checking-the-mailbox-l5",
+        "speakerId": "dad",
+        "text": "对。我们沿着小路回家吧。",
+        "textVi": "Đúng rồi. Mình đi theo lối đi về nhà nào.",
+        "pinyin": "Duì. Wǒ men yán zhe xiǎo lù huí jiā ba."
+      },
+      {
+        "id": "checking-the-mailbox-l6",
+        "speakerId": "ben",
+        "text": "我要在门廊上拆信！",
+        "textVi": "Con sẽ mở thư ở hiên nhà!",
+        "pinyin": "Wǒ yào zài mén láng shàng chāi xìn!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "checking-the-mailbox-q1",
+        "prompt": "你家的门牌号是多少？",
+        "suggestedAnswer": "我家的门牌号是二十四号。",
+        "promptPinyin": "Nǐ jiā de mén pái hào shì duō shao?",
+        "suggestedAnswerPinyin": "Wǒ jiā de mén pái hào shì èr shí sì hào."
+      },
+      {
+        "id": "checking-the-mailbox-q2",
+        "prompt": "信箱里有什么？",
+        "suggestedAnswer": "信箱里有一封信。",
+        "promptPinyin": "Xìn xiāng lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Xìn xiāng lǐ yǒu yì fēng xìn."
+      }
+    ]
+  },
+  {
+    "id": "playing-on-the-lawn",
+    "sceneId": "house-exterior",
+    "title": "在草坪上玩",
+    "order": 5,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "小本和莉莉在草坪上玩球。",
+    "lines": [
+      {
+        "id": "playing-on-the-lawn-l1",
+        "speakerId": "ben",
+        "text": "我们在草坪上玩球吧！",
+        "textVi": "Mình chơi bóng trên bãi cỏ đi!",
+        "pinyin": "Wǒ men zài cǎo píng shàng wán qiú ba!"
+      },
+      {
+        "id": "playing-on-the-lawn-l2",
+        "speakerId": "lily",
+        "text": "好呀！草地好软啊。",
+        "textVi": "Ừ! Cỏ mềm quá.",
+        "pinyin": "Hǎo ya! Cǎo dì hǎo ruǎn a."
+      },
+      {
+        "id": "playing-on-the-lawn-l3",
+        "speakerId": "ben",
+        "text": "接住！哎呀，球掉进灌木里了。",
+        "textVi": "Bắt nè! Ôi không, quả bóng rơi vào bụi cây rồi.",
+        "pinyin": "Jiē zhù! Āi yā, qiú diào jìn guàn mù lǐ le."
+      },
+      {
+        "id": "playing-on-the-lawn-l4",
+        "speakerId": "lily",
+        "text": "别担心，我去拿。",
+        "textVi": "Đừng lo, mình đi lấy.",
+        "pinyin": "Bié dān xīn, wǒ qù ná."
+      },
+      {
+        "id": "playing-on-the-lawn-l5",
+        "speakerId": "ben",
+        "text": "谢谢！我们坐在长椅上休息一下吧。",
+        "textVi": "Cảm ơn bạn! Mình ngồi nghỉ trên ghế dài đi.",
+        "pinyin": "Xiè xiè! Wǒ men zuò zài cháng yǐ shàng xiū xi yí xià ba."
+      },
+      {
+        "id": "playing-on-the-lawn-l6",
+        "speakerId": "lily",
+        "text": "好主意。大树下面真凉快。",
+        "textVi": "Ý hay đó. Dưới gốc cây mát thật.",
+        "pinyin": "Hǎo zhǔ yì. Dà shù xià miàn zhēn liáng kuai."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "playing-on-the-lawn-q1",
+        "prompt": "你在哪儿玩球？",
+        "suggestedAnswer": "我在草坪上玩球。",
+        "promptPinyin": "Nǐ zài nǎr wán qiú?",
+        "suggestedAnswerPinyin": "Wǒ zài cǎo píng shàng wán qiú."
+      },
+      {
+        "id": "playing-on-the-lawn-q2",
+        "prompt": "球在哪儿？",
+        "suggestedAnswer": "球在灌木里。",
+        "promptPinyin": "Qiú zài nǎr?",
+        "suggestedAnswerPinyin": "Qiú zài guàn mù lǐ."
+      }
+    ]
+  },
+  {
+    "id": "close-the-gate",
+    "sceneId": "house-exterior",
+    "title": "关院门",
+    "order": 6,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "妈妈提醒小本关上院门。",
+    "lines": [
+      {
+        "id": "close-the-gate-l1",
+        "speakerId": "mom",
+        "text": "小本，你关院门了吗？",
+        "textVi": "Ben ơi, con đóng cổng chưa?",
+        "pinyin": "Xiǎo Běn, nǐ guān yuàn mén le ma?"
+      },
+      {
+        "id": "close-the-gate-l2",
+        "speakerId": "ben",
+        "text": "哎呀！还没关。",
+        "textVi": "Ối! Con chưa đóng ạ.",
+        "pinyin": "Āi yā! Hái méi guān."
+      },
+      {
+        "id": "close-the-gate-l3",
+        "speakerId": "mom",
+        "text": "快去关上，不然小猫会跑出去。",
+        "textVi": "Con đóng lại nhé, không thì con mèo chạy ra ngoài mất.",
+        "pinyin": "Kuài qù guān shàng, bù rán xiǎo māo huì pǎo chū qù."
+      },
+      {
+        "id": "close-the-gate-l4",
+        "speakerId": "ben",
+        "text": "好的。院门关好了。",
+        "textVi": "Vâng ạ. Con đóng cổng rồi.",
+        "pinyin": "Hǎo de. Yuàn mén guān hǎo le."
+      },
+      {
+        "id": "close-the-gate-l5",
+        "speakerId": "mom",
+        "text": "真乖。篱笆也好好的吗？",
+        "textVi": "Giỏi lắm. Hàng rào cũng ổn chứ con?",
+        "pinyin": "Zhēn guāi. Lí ba yě hǎo hǎo de ma?"
+      },
+      {
+        "id": "close-the-gate-l6",
+        "speakerId": "ben",
+        "text": "是的，篱笆好好的。",
+        "textVi": "Dạ, hàng rào vẫn tốt ạ.",
+        "pinyin": "Shì de, lí ba hǎo hǎo de."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "close-the-gate-q1",
+        "prompt": "进来以后要做什么？",
+        "suggestedAnswer": "进来以后要关上院门。",
+        "promptPinyin": "Jìn lái yǐ hòu yào zuò shén me?",
+        "suggestedAnswerPinyin": "Jìn lái yǐ hòu yào guān shàng yuàn mén."
+      },
+      {
+        "id": "close-the-gate-q2",
+        "prompt": "院子周围有什么？",
+        "suggestedAnswer": "院子周围有篱笆。",
+        "promptPinyin": "Yuàn zi zhōu wéi yǒu shén me?",
+        "suggestedAnswerPinyin": "Yuàn zi zhōu wéi yǒu lí ba."
+      }
+    ]
+  },
+  {
+    "id": "a-rainy-day",
+    "sceneId": "house-exterior",
+    "title": "下雨天",
+    "order": 7,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "莉莉和小本在门廊上看雨。",
+    "lines": [
+      {
+        "id": "a-rainy-day-l1",
+        "speakerId": "lily",
+        "text": "你听！雨点打在屋顶上。",
+        "textVi": "Nghe này! Mưa rơi trên mái nhà.",
+        "pinyin": "Nǐ tīng! Yǔ diǎn dǎ zài wū dǐng shàng."
+      },
+      {
+        "id": "a-rainy-day-l2",
+        "speakerId": "ben",
+        "text": "我们待在门廊上吧，不会淋湿。",
+        "textVi": "Mình ở ngoài hiên đi. Sẽ không bị ướt đâu.",
+        "pinyin": "Wǒ men dài zài mén láng shàng ba, bú huì lín shī."
+      },
+      {
+        "id": "a-rainy-day-l3",
+        "speakerId": "lily",
+        "text": "雨水流到哪儿去了？",
+        "textVi": "Nước mưa chảy đi đâu vậy?",
+        "pinyin": "Yǔ shuǐ liú dào nǎr qù le?"
+      },
+      {
+        "id": "a-rainy-day-l4",
+        "speakerId": "ben",
+        "text": "流进排水槽，然后顺着管子流下去。",
+        "textVi": "Vào máng xối. Rồi nó chảy xuống ống.",
+        "pinyin": "Liú jìn pái shuǐ cáo, rán hòu shùn zhe guǎn zi liú xià qù."
+      },
+      {
+        "id": "a-rainy-day-l5",
+        "speakerId": "lily",
+        "text": "现在草坪都湿透了。",
+        "textVi": "Giờ bãi cỏ ướt sũng rồi.",
+        "pinyin": "Xiàn zài cǎo píng dōu shī tòu le."
+      },
+      {
+        "id": "a-rainy-day-l6",
+        "speakerId": "ben",
+        "text": "太好了！大树和花都需要水。",
+        "textVi": "Tốt mà! Cây và hoa cần nước.",
+        "pinyin": "Tài hǎo le! Dà shù hé huā dōu xū yào shuǐ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-rainy-day-q1",
+        "prompt": "雨水流到哪儿？",
+        "suggestedAnswer": "雨水流进排水槽。",
+        "promptPinyin": "Yǔ shuǐ liú dào nǎr?",
+        "suggestedAnswerPinyin": "Yǔ shuǐ liú jìn pái shuǐ cáo."
+      },
+      {
+        "id": "a-rainy-day-q2",
+        "prompt": "下雨的时候你待在哪儿？",
+        "suggestedAnswer": "我待在门廊上。",
+        "promptPinyin": "Xià yǔ de shí hou nǐ dài zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ dài zài mén láng shàng."
+      }
+    ]
+  },
+  {
+    "id": "opening-the-garage",
+    "sceneId": "house-exterior",
+    "title": "打开车库",
+    "order": 8,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "爸爸打开车库门，小本帮忙拿水管。",
+    "lines": [
+      {
+        "id": "opening-the-garage-l1",
+        "speakerId": "dad",
+        "text": "小本，今天你能帮我吗？",
+        "textVi": "Ben ơi, hôm nay con giúp bố được không?",
+        "pinyin": "Xiǎo Běn, jīn tiān nǐ néng bāng wǒ ma?"
+      },
+      {
+        "id": "opening-the-garage-l2",
+        "speakerId": "ben",
+        "text": "当然可以，爸爸！我做什么？",
+        "textVi": "Dạ được ạ! Con làm gì ạ?",
+        "pinyin": "Dāng rán kě yǐ, bà ba! Wǒ zuò shén me?"
+      },
+      {
+        "id": "opening-the-garage-l3",
+        "speakerId": "dad",
+        "text": "我先打开车库门。",
+        "textVi": "Trước tiên, bố mở cửa gara.",
+        "pinyin": "Wǒ xiān dǎ kāi chē kù mén."
+      },
+      {
+        "id": "opening-the-garage-l4",
+        "speakerId": "ben",
+        "text": "哇，门升上去了！",
+        "textVi": "Oa, cửa kéo lên kìa!",
+        "pinyin": "Wā, mén shēng shàng qù le!"
+      },
+      {
+        "id": "opening-the-garage-l5",
+        "speakerId": "dad",
+        "text": "现在请把水管拿给我。",
+        "textVi": "Giờ con mang vòi tưới cây cho bố nhé.",
+        "pinyin": "Xiàn zài qǐng bǎ shuǐ guǎn ná gěi wǒ."
+      },
+      {
+        "id": "opening-the-garage-l6",
+        "speakerId": "ben",
+        "text": "给你。我们来洗车吧！",
+        "textVi": "Đây ạ. Mình rửa xe thôi!",
+        "pinyin": "Gěi nǐ. Wǒ men lái xǐ chē ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "opening-the-garage-q1",
+        "prompt": "谁打开车库门？",
+        "suggestedAnswer": "爸爸打开车库门。",
+        "promptPinyin": "Shuí dǎ kāi chē kù mén?",
+        "suggestedAnswerPinyin": "Bà ba dǎ kāi chē kù mén."
+      },
+      {
+        "id": "opening-the-garage-q2",
+        "prompt": "你用什么洗车？",
+        "suggestedAnswer": "我用水管洗车。",
+        "promptPinyin": "Nǐ yòng shén me xǐ chē?",
+        "suggestedAnswerPinyin": "Wǒ yòng shuǐ guǎn xǐ chē."
+      }
+    ]
+  },
+  {
+    "id": "porch-light-on",
+    "sceneId": "house-exterior",
+    "title": "打开门廊灯",
+    "order": 9,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "天黑了，小本打开门廊灯。",
+    "lines": [
+      {
+        "id": "porch-light-on-l1",
+        "speakerId": "ben",
+        "text": "妈妈，外面天快黑了。",
+        "textVi": "Mẹ ơi, bên ngoài trời tối dần rồi.",
+        "pinyin": "Mā ma, wài miàn tiān kuài hēi le."
+      },
+      {
+        "id": "porch-light-on-l2",
+        "speakerId": "mom",
+        "text": "爸爸快回来了。我们打开门廊灯吧。",
+        "textVi": "Bố sắp về rồi. Mình bật đèn hiên nhà nhé.",
+        "pinyin": "Bà ba kuài huí lái le. Wǒ men dǎ kāi mén láng dēng ba."
+      },
+      {
+        "id": "porch-light-on-l3",
+        "speakerId": "ben",
+        "text": "我可以开吗？",
+        "textVi": "Con bật được không ạ?",
+        "pinyin": "Wǒ kě yǐ kāi ma?"
+      },
+      {
+        "id": "porch-light-on-l4",
+        "speakerId": "mom",
+        "text": "可以。开关在大门旁边。",
+        "textVi": "Được. Công tắc ở cạnh cửa chính.",
+        "pinyin": "Kě yǐ. Kāi guān zài dà mén páng biān."
+      },
+      {
+        "id": "porch-light-on-l5",
+        "speakerId": "ben",
+        "text": "啪！现在爸爸能看见台阶了。",
+        "textVi": "Tách! Giờ bố nhìn thấy bậc thềm rồi.",
+        "pinyin": "Pā! Xiàn zài bà ba néng kàn jiàn tái jiē le."
+      },
+      {
+        "id": "porch-light-on-l6",
+        "speakerId": "mom",
+        "text": "谢谢你，小本。你真贴心。",
+        "textVi": "Cảm ơn con, Ben. Con thật chu đáo.",
+        "pinyin": "Xiè xiè nǐ, Xiǎo Běn. Nǐ zhēn tiē xīn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "porch-light-on-q1",
+        "prompt": "什么时候打开门廊灯？",
+        "suggestedAnswer": "天黑的时候打开门廊灯。",
+        "promptPinyin": "Shén me shí hou dǎ kāi mén láng dēng?",
+        "suggestedAnswerPinyin": "Tiān hēi de shí hou dǎ kāi mén láng dēng."
+      },
+      {
+        "id": "porch-light-on-q2",
+        "prompt": "小本为什么开灯？",
+        "suggestedAnswer": "这样爸爸能看见台阶。",
+        "promptPinyin": "Xiǎo Běn wèi shén me kāi dēng?",
+        "suggestedAnswerPinyin": "Zhè yàng bà ba néng kàn jiàn tái jiē."
+      }
+    ]
+  },
+  {
+    "id": "under-the-big-tree",
+    "sceneId": "house-exterior",
+    "title": "大树下",
+    "order": 10,
+    "poster": "/assets/scenes/house-exterior/house-exterior-desktop.webp",
+    "description": "莉莉和小本在大树下吃点心。",
+    "lines": [
+      {
+        "id": "under-the-big-tree-l1",
+        "speakerId": "lily",
+        "text": "这棵树好大啊！",
+        "textVi": "Cái cây này to quá!",
+        "pinyin": "Zhè kē shù hǎo dà a!"
+      },
+      {
+        "id": "under-the-big-tree-l2",
+        "speakerId": "ben",
+        "text": "这是我最喜欢的树。树上住着小鸟。",
+        "textVi": "Đây là cây mình thích nhất. Có chim sống trên đó.",
+        "pinyin": "Zhè shì wǒ zuì xǐ huan de shù. Shù shàng zhù zhe xiǎo niǎo."
+      },
+      {
+        "id": "under-the-big-tree-l3",
+        "speakerId": "lily",
+        "text": "我们在树下吃点心吧。",
+        "textVi": "Mình ăn bánh dưới gốc cây đi.",
+        "pinyin": "Wǒ men zài shù xià chī diǎn xīn ba."
+      },
+      {
+        "id": "under-the-big-tree-l4",
+        "speakerId": "ben",
+        "text": "好。我们可以坐在长椅上。",
+        "textVi": "Ừ. Mình ngồi lên ghế dài nhé.",
+        "pinyin": "Hǎo. Wǒ men kě yǐ zuò zài cháng yǐ shàng."
+      },
+      {
+        "id": "under-the-big-tree-l5",
+        "speakerId": "lily",
+        "text": "你看那丛灌木，开着粉色的花。",
+        "textVi": "Nhìn bụi cây kìa. Có hoa màu hồng.",
+        "pinyin": "Nǐ kàn nà cóng guàn mù, kāi zhe fěn sè de huā."
+      },
+      {
+        "id": "under-the-big-tree-l6",
+        "speakerId": "ben",
+        "text": "这是我家院子里最好的地方！",
+        "textVi": "Đây là chỗ tuyệt nhất trong sân nhà mình!",
+        "pinyin": "Zhè shì wǒ jiā yuàn zi lǐ zuì hǎo de dì fang!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "under-the-big-tree-q1",
+        "prompt": "树上住着什么？",
+        "suggestedAnswer": "树上住着小鸟。",
+        "promptPinyin": "Shù shàng zhù zhe shén me?",
+        "suggestedAnswerPinyin": "Shù shàng zhù zhe xiǎo niǎo."
+      },
+      {
+        "id": "under-the-big-tree-q2",
+        "prompt": "你坐在哪儿？",
+        "suggestedAnswer": "我坐在大树下的长椅上。",
+        "promptPinyin": "Nǐ zuò zài nǎr?",
+        "suggestedAnswerPinyin": "Wǒ zuò zài dà shù xià de cháng yǐ shàng."
+      }
+    ]
   }
 ]

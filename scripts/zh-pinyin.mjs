@@ -50,6 +50,9 @@ const READINGS = {
   一会儿: 'yí huì r',
   一点儿: 'yì diǎn r',
   玩儿: 'wán r',
+  鞋子: 'xié zi',
+  管子: 'guǎn zi',
+  花儿: 'huā r',
   找不到: 'zhǎo bu dào',
   看不见: 'kàn bu jiàn',
 };

@@ -173,3 +173,29 @@ describe('Chinese course', () => {
     expect(notChinese).toEqual([]);
   });
 });
+
+describe('House Exterior', () => {
+  const houseExterior = getScene('house-exterior')!;
+
+  it('is available with 24 words, 10 conversations and one hotspot per word', () => {
+    expect(houseExterior.status).toBe('available');
+    expect(getSceneWords(houseExterior)).toHaveLength(24);
+    expect(getSceneConversations(houseExterior)).toHaveLength(10);
+    expect(houseExterior.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...houseExterior.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    // Bushes and fence sections are spread over the yard, so each sub-path is checked on its own.
+    const oversized = houseExterior.hotspots.filter((hotspot) =>
+      hotspot.svgPath.split(/(?=M)/).some((subPath) => {
+        const bounds = getPathBounds(subPath)!;
+        return (
+          (bounds.width * bounds.height) / (houseExterior.width * houseExterior.height) >= 0.35
+        );
+      }),
+    );
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});
