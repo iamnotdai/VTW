@@ -3461,5 +3461,685 @@
         "suggestedAnswerPinyin": "Wǒ zuò zài dà shù xià de cháng yǐ shàng."
       }
     ]
+  },
+  {
+    "id": "dinner-is-ready",
+    "sceneId": "dining-room",
+    "title": "开饭了",
+    "order": 1,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "妈妈叫大家来餐厅吃饭。",
+    "lines": [
+      {
+        "id": "dinner-is-ready-l1",
+        "speakerId": "mom",
+        "text": "小本，莉莉！开饭了！",
+        "textVi": "Ben, Lily ơi! Cơm xong rồi!",
+        "pinyin": "Xiǎo Běn, Lì li! Kāi fàn le!"
+      },
+      {
+        "id": "dinner-is-ready-l2",
+        "speakerId": "ben",
+        "text": "太好了！我好饿啊。",
+        "textVi": "Yeah! Con đói quá.",
+        "pinyin": "Tài hǎo le! Wǒ hǎo è a."
+      },
+      {
+        "id": "dinner-is-ready-l3",
+        "speakerId": "lily",
+        "text": "哇，桌子上有好多菜！",
+        "textVi": "Oa, trên bàn nhiều đồ ăn quá!",
+        "pinyin": "Wā, zhuō zi shàng yǒu hǎo duō cài!"
+      },
+      {
+        "id": "dinner-is-ready-l4",
+        "speakerId": "mom",
+        "text": "我们有米饭、汤、鱼和炸鸡。",
+        "textVi": "Nhà mình có cơm, canh, cá và gà rán.",
+        "pinyin": "Wǒ men yǒu mǐ fàn, tāng, yú hé zhá jī."
+      },
+      {
+        "id": "dinner-is-ready-l5",
+        "speakerId": "ben",
+        "text": "还有蛋糕呢！",
+        "textVi": "Còn có cả bánh ngọt nữa!",
+        "pinyin": "Hái yǒu dàn gāo ne!"
+      },
+      {
+        "id": "dinner-is-ready-l6",
+        "speakerId": "mom",
+        "text": "蛋糕是饭后吃的。快坐下吧。",
+        "textVi": "Bánh ngọt để ăn sau bữa tối nhé. Các con ngồi xuống đi.",
+        "pinyin": "Dàn gāo shì fàn hòu chī de. Kuài zuò xià ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "dinner-is-ready-q1",
+        "prompt": "晚饭有什么？",
+        "suggestedAnswer": "晚饭有米饭、汤、鱼和炸鸡。",
+        "promptPinyin": "Wǎn fàn yǒu shén me?",
+        "suggestedAnswerPinyin": "Wǎn fàn yǒu mǐ fàn, tāng, yú hé zhá jī."
+      },
+      {
+        "id": "dinner-is-ready-q2",
+        "prompt": "什么时候吃蛋糕？",
+        "suggestedAnswer": "饭后吃蛋糕。",
+        "promptPinyin": "Shén me shí hou chī dàn gāo?",
+        "suggestedAnswerPinyin": "Fàn hòu chī dàn gāo."
+      }
+    ]
+  },
+  {
+    "id": "laying-the-table",
+    "sceneId": "dining-room",
+    "title": "摆餐具",
+    "order": 2,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "莉莉和小本把餐垫、盘子和碗摆到桌子上。",
+    "lines": [
+      {
+        "id": "laying-the-table-l1",
+        "speakerId": "lily",
+        "text": "小本，我们帮妈妈摆餐具吧。",
+        "textVi": "Ben ơi, mình giúp mẹ bày bàn ăn đi.",
+        "pinyin": "Xiǎo Běn, wǒ men bāng mā ma bǎi cān jù ba."
+      },
+      {
+        "id": "laying-the-table-l2",
+        "speakerId": "ben",
+        "text": "好！先放餐垫。",
+        "textVi": "Ừ! Trước tiên là tấm lót bàn ăn.",
+        "pinyin": "Hǎo! Xiān fàng cān diàn."
+      },
+      {
+        "id": "laying-the-table-l3",
+        "speakerId": "lily",
+        "text": "现在在每张餐垫上放一个盘子。",
+        "textVi": "Giờ đặt một cái đĩa lên mỗi tấm lót.",
+        "pinyin": "Xiàn zài zài měi zhāng cān diàn shàng fàng yí gè pán zi."
+      },
+      {
+        "id": "laying-the-table-l4",
+        "speakerId": "ben",
+        "text": "再在每个盘子上放一个碗。",
+        "textVi": "Rồi đặt một cái bát lên mỗi cái đĩa.",
+        "pinyin": "Zài zài měi gè pán zi shàng fàng yí gè wǎn."
+      },
+      {
+        "id": "laying-the-table-l5",
+        "speakerId": "lily",
+        "text": "叉子放在左边，刀和勺子放在右边。",
+        "textVi": "Nĩa để bên trái. Dao và thìa để bên phải.",
+        "pinyin": "Chā zi fàng zài zuǒ biān, dāo hé sháo zi fàng zài yòu biān."
+      },
+      {
+        "id": "laying-the-table-l6",
+        "speakerId": "ben",
+        "text": "别忘了餐巾！",
+        "textVi": "Đừng quên khăn ăn nhé!",
+        "pinyin": "Bié wàng le cān jīn!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "laying-the-table-q1",
+        "prompt": "叉子放在哪儿？",
+        "suggestedAnswer": "叉子放在左边。",
+        "promptPinyin": "Chā zi fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Chā zi fàng zài zuǒ biān."
+      },
+      {
+        "id": "laying-the-table-q2",
+        "prompt": "每个盘子上有什么？",
+        "suggestedAnswer": "每个盘子上有一个碗。",
+        "promptPinyin": "Měi gè pán zi shàng yǒu shén me?",
+        "suggestedAnswerPinyin": "Měi gè pán zi shàng yǒu yí gè wǎn."
+      }
+    ]
+  },
+  {
+    "id": "chopsticks-or-fork",
+    "sceneId": "dining-room",
+    "title": "筷子还是叉子？",
+    "order": 3,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "小本教莉莉用筷子吃面条。",
+    "lines": [
+      {
+        "id": "chopsticks-or-fork-l1",
+        "speakerId": "lily",
+        "text": "小本，你用叉子吃面条吗？",
+        "textVi": "Ben ơi, bạn ăn mì bằng nĩa à?",
+        "pinyin": "Xiǎo Běn, nǐ yòng chā zi chī miàn tiáo ma?"
+      },
+      {
+        "id": "chopsticks-or-fork-l2",
+        "speakerId": "ben",
+        "text": "不，我用筷子吃面条。",
+        "textVi": "Không, mình ăn mì bằng đũa.",
+        "pinyin": "Bù, wǒ yòng kuài zi chī miàn tiáo."
+      },
+      {
+        "id": "chopsticks-or-fork-l3",
+        "speakerId": "lily",
+        "text": "用筷子对我来说好难。",
+        "textVi": "Dùng đũa khó với mình quá.",
+        "pinyin": "Yòng kuài zi duì wǒ lái shuō hǎo nán."
+      },
+      {
+        "id": "chopsticks-or-fork-l4",
+        "speakerId": "ben",
+        "text": "像这样拿。再试一次！",
+        "textVi": "Cầm như thế này này. Thử lại đi!",
+        "pinyin": "Xiàng zhè yàng ná. Zài shì yí cì!"
+      },
+      {
+        "id": "chopsticks-or-fork-l5",
+        "speakerId": "lily",
+        "text": "你看！我夹起面条了！",
+        "textVi": "Nhìn này! Mình gắp được mì rồi!",
+        "pinyin": "Nǐ kàn! Wǒ jiā qǐ miàn tiáo le!"
+      },
+      {
+        "id": "chopsticks-or-fork-l6",
+        "speakerId": "ben",
+        "text": "真棒！我吃沙拉用叉子。",
+        "textVi": "Giỏi lắm! Còn mình dùng nĩa để ăn rau trộn.",
+        "pinyin": "Zhēn bàng! Wǒ chī shā lā yòng chā zi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "chopsticks-or-fork-q1",
+        "prompt": "小本用什么吃面条？",
+        "suggestedAnswer": "小本用筷子吃面条。",
+        "promptPinyin": "Xiǎo Běn yòng shén me chī miàn tiáo?",
+        "suggestedAnswerPinyin": "Xiǎo Běn yòng kuài zi chī miàn tiáo."
+      },
+      {
+        "id": "chopsticks-or-fork-q2",
+        "prompt": "小本吃沙拉用什么？",
+        "suggestedAnswer": "他吃沙拉用叉子。",
+        "promptPinyin": "Xiǎo Běn chī shā lā yòng shén me?",
+        "suggestedAnswerPinyin": "Tā chī shā lā yòng chā zi."
+      }
+    ]
+  },
+  {
+    "id": "pass-the-fish",
+    "sceneId": "dining-room",
+    "title": "请把鱼递给我",
+    "order": 4,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "爸爸请莉莉把鱼和蘸料碟递过来。",
+    "lines": [
+      {
+        "id": "pass-the-fish-l1",
+        "speakerId": "dad",
+        "text": "莉莉，请把鱼递给我，好吗？",
+        "textVi": "Lily ơi, con đưa bố đĩa cá được không?",
+        "pinyin": "Lì li, qǐng bǎ yú dì gěi wǒ, hǎo ma?"
+      },
+      {
+        "id": "pass-the-fish-l2",
+        "speakerId": "lily",
+        "text": "给您，爸爸。",
+        "textVi": "Của bố đây ạ.",
+        "pinyin": "Gěi nín, bà ba."
+      },
+      {
+        "id": "pass-the-fish-l3",
+        "speakerId": "dad",
+        "text": "谢谢。蘸料碟在哪儿？",
+        "textVi": "Cảm ơn con. Chén nước chấm đâu rồi nhỉ?",
+        "pinyin": "Xiè xiè. Zhàn liào dié zài nǎr?"
+      },
+      {
+        "id": "pass-the-fish-l4",
+        "speakerId": "lily",
+        "text": "在公勺旁边。",
+        "textVi": "Ở cạnh muỗng múc thức ăn ạ.",
+        "pinyin": "Zài gōng sháo páng biān."
+      },
+      {
+        "id": "pass-the-fish-l5",
+        "speakerId": "dad",
+        "text": "嗯，鱼蘸鱼露真好吃。",
+        "textVi": "Ừm, cá chấm nước mắm ngon lắm.",
+        "pinyin": "Ǹg, yú zhàn yú lù zhēn hǎo chī."
+      },
+      {
+        "id": "pass-the-fish-l6",
+        "speakerId": "lily",
+        "text": "我也可以吃点儿鱼吗？",
+        "textVi": "Con cũng ăn cá được không ạ?",
+        "pinyin": "Wǒ yě kě yǐ chī diǎnr yú ma?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "pass-the-fish-q1",
+        "prompt": "爸爸想要什么？",
+        "suggestedAnswer": "爸爸想要鱼。",
+        "promptPinyin": "Bà ba xiǎng yào shén me?",
+        "suggestedAnswerPinyin": "Bà ba xiǎng yào yú."
+      },
+      {
+        "id": "pass-the-fish-q2",
+        "prompt": "蘸料碟在哪儿？",
+        "suggestedAnswer": "蘸料碟在公勺旁边。",
+        "promptPinyin": "Zhàn liào dié zài nǎr?",
+        "suggestedAnswerPinyin": "Zhàn liào dié zài gōng sháo páng biān."
+      }
+    ]
+  },
+  {
+    "id": "a-glass-of-water",
+    "sceneId": "dining-room",
+    "title": "一杯水",
+    "order": 5,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "小本用水壶倒水。",
+    "lines": [
+      {
+        "id": "a-glass-of-water-l1",
+        "speakerId": "ben",
+        "text": "妈妈，我渴了。",
+        "textVi": "Mẹ ơi, con khát nước.",
+        "pinyin": "Mā ma, wǒ kě le."
+      },
+      {
+        "id": "a-glass-of-water-l2",
+        "speakerId": "mom",
+        "text": "水壶里有水。",
+        "textVi": "Trong bình đựng nước có nước đó con.",
+        "pinyin": "Shuǐ hú lǐ yǒu shuǐ."
+      },
+      {
+        "id": "a-glass-of-water-l3",
+        "speakerId": "ben",
+        "text": "我可以自己倒吗？",
+        "textVi": "Con tự rót được không ạ?",
+        "pinyin": "Wǒ kě yǐ zì jǐ dǎo ma?"
+      },
+      {
+        "id": "a-glass-of-water-l4",
+        "speakerId": "mom",
+        "text": "可以。一只手拿好杯子。",
+        "textVi": "Được. Con cầm ly bằng một tay nhé.",
+        "pinyin": "Kě yǐ. Yì zhī shǒu ná hǎo bēi zi."
+      },
+      {
+        "id": "a-glass-of-water-l5",
+        "speakerId": "ben",
+        "text": "你看，我的杯子满了！",
+        "textVi": "Mẹ xem, ly của con đầy rồi!",
+        "pinyin": "Nǐ kàn, wǒ de bēi zi mǎn le!"
+      },
+      {
+        "id": "a-glass-of-water-l6",
+        "speakerId": "mom",
+        "text": "真棒！洒了就用餐巾擦一擦。",
+        "textVi": "Giỏi lắm! Nếu bị đổ thì con dùng khăn ăn lau nhé.",
+        "pinyin": "Zhēn bàng! Sǎ le jiù yòng cān jīn cā yi cā."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-glass-of-water-q1",
+        "prompt": "水在哪儿？",
+        "suggestedAnswer": "水在水壶里。",
+        "promptPinyin": "Shuǐ zài nǎr?",
+        "suggestedAnswerPinyin": "Shuǐ zài shuǐ hú lǐ."
+      },
+      {
+        "id": "a-glass-of-water-q2",
+        "prompt": "水洒了用什么擦？",
+        "suggestedAnswer": "用餐巾擦。",
+        "promptPinyin": "Shuǐ sǎ le yòng shén me cā?",
+        "suggestedAnswerPinyin": "Yòng cān jīn cā."
+      }
+    ]
+  },
+  {
+    "id": "yummy-fried-chicken",
+    "sceneId": "dining-room",
+    "title": "好吃的炸鸡",
+    "order": 6,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "爸爸用夹子给小本夹炸鸡。",
+    "lines": [
+      {
+        "id": "yummy-fried-chicken-l1",
+        "speakerId": "ben",
+        "text": "爸爸，我可以吃点儿炸鸡吗？",
+        "textVi": "Bố ơi, con ăn gà rán được không ạ?",
+        "pinyin": "Bà ba, wǒ kě yǐ chī diǎnr zhá jī ma?"
+      },
+      {
+        "id": "yummy-fried-chicken-l2",
+        "speakerId": "dad",
+        "text": "当然可以。我用夹子给你夹。",
+        "textVi": "Được chứ. Bố dùng kẹp gắp cho con.",
+        "pinyin": "Dāng rán kě yǐ. Wǒ yòng jiā zi gěi nǐ jiā."
+      },
+      {
+        "id": "yummy-fried-chicken-l3",
+        "speakerId": "ben",
+        "text": "为什么要用夹子呢？",
+        "textVi": "Sao bố lại dùng kẹp ạ?",
+        "pinyin": "Wèi shén me yào yòng jiā zi ne?"
+      },
+      {
+        "id": "yummy-fried-chicken-l4",
+        "speakerId": "dad",
+        "text": "炸鸡很烫，用夹子手也干净。",
+        "textVi": "Gà rán còn nóng, dùng kẹp thì tay cũng sạch.",
+        "pinyin": "Zhá jī hěn tàng, yòng jiā zi shǒu yě gān jing."
+      },
+      {
+        "id": "yummy-fried-chicken-l5",
+        "speakerId": "ben",
+        "text": "嗯，好脆啊！",
+        "textVi": "Ừm, giòn quá!",
+        "pinyin": "Ǹg, hǎo cuì a!"
+      },
+      {
+        "id": "yummy-fried-chicken-l6",
+        "speakerId": "dad",
+        "text": "也吃点儿沙拉吧。",
+        "textVi": "Ăn thêm cả rau trộn nữa nhé.",
+        "pinyin": "Yě chī diǎnr shā lā ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "yummy-fried-chicken-q1",
+        "prompt": "爸爸用什么夹炸鸡？",
+        "suggestedAnswer": "爸爸用夹子夹炸鸡。",
+        "promptPinyin": "Bà ba yòng shén me jiā zhá jī?",
+        "suggestedAnswerPinyin": "Bà ba yòng jiā zi jiā zhá jī."
+      },
+      {
+        "id": "yummy-fried-chicken-q2",
+        "prompt": "炸鸡怎么样？",
+        "suggestedAnswer": "炸鸡很脆。",
+        "promptPinyin": "Zhá jī zěn me yàng?",
+        "suggestedAnswerPinyin": "Zhá jī hěn cuì."
+      }
+    ]
+  },
+  {
+    "id": "hot-soup",
+    "sceneId": "dining-room",
+    "title": "热汤",
+    "order": 7,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "妈妈给莉莉盛汤和米饭。",
+    "lines": [
+      {
+        "id": "hot-soup-l1",
+        "speakerId": "mom",
+        "text": "莉莉，你想喝汤吗？",
+        "textVi": "Lily ơi, con có muốn uống canh không?",
+        "pinyin": "Lì li, nǐ xiǎng hē tāng ma?"
+      },
+      {
+        "id": "hot-soup-l2",
+        "speakerId": "lily",
+        "text": "想，谢谢。还要一点儿米饭。",
+        "textVi": "Dạ có ạ. Cho con thêm ít cơm nữa.",
+        "pinyin": "Xiǎng, xiè xiè. Hái yào yì diǎnr mǐ fàn."
+      },
+      {
+        "id": "hot-soup-l3",
+        "speakerId": "mom",
+        "text": "我用公勺给你盛米饭。",
+        "textVi": "Mẹ xới cơm bằng muỗng múc thức ăn nhé.",
+        "pinyin": "Wǒ yòng gōng sháo gěi nǐ chéng mǐ fàn."
+      },
+      {
+        "id": "hot-soup-l4",
+        "speakerId": "lily",
+        "text": "汤好烫啊！",
+        "textVi": "Canh nóng quá ạ!",
+        "pinyin": "Tāng hǎo tàng a!"
+      },
+      {
+        "id": "hot-soup-l5",
+        "speakerId": "mom",
+        "text": "先吹一吹，再用勺子喝。",
+        "textVi": "Con thổi trước đã. Rồi dùng thìa nhé.",
+        "pinyin": "Xiān chuī yi chuī, zài yòng sháo zi hē."
+      },
+      {
+        "id": "hot-soup-l6",
+        "speakerId": "lily",
+        "text": "嗯，真好喝！里面有胡萝卜。",
+        "textVi": "Ừm, ngon quá! Trong canh có cà rốt.",
+        "pinyin": "Ǹg, zhēn hǎo hē! Lǐ miàn yǒu hú luó bo."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "hot-soup-q1",
+        "prompt": "莉莉想要什么？",
+        "suggestedAnswer": "莉莉想要汤和米饭。",
+        "promptPinyin": "Lì li xiǎng yào shén me?",
+        "suggestedAnswerPinyin": "Lì li xiǎng yào tāng hé mǐ fàn."
+      },
+      {
+        "id": "hot-soup-q2",
+        "prompt": "汤很烫的时候怎么办？",
+        "suggestedAnswer": "先吹一吹。",
+        "promptPinyin": "Tāng hěn tàng de shí hou zěn me bàn?",
+        "suggestedAnswerPinyin": "Xiān chuī yi chuī."
+      }
+    ]
+  },
+  {
+    "id": "a-birthday-cake",
+    "sceneId": "dining-room",
+    "title": "生日蛋糕",
+    "order": 8,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "全家一起给爸爸过生日。",
+    "lines": [
+      {
+        "id": "a-birthday-cake-l1",
+        "speakerId": "lily",
+        "text": "爸爸，生日快乐！",
+        "textVi": "Chúc mừng sinh nhật bố!",
+        "pinyin": "Bà ba, shēng rì kuài lè!"
+      },
+      {
+        "id": "a-birthday-cake-l2",
+        "speakerId": "dad",
+        "text": "谢谢！好大的蛋糕啊！",
+        "textVi": "Cảm ơn con! Cái bánh to quá!",
+        "pinyin": "Xiè xiè! Hǎo dà de dàn gāo a!"
+      },
+      {
+        "id": "a-birthday-cake-l3",
+        "speakerId": "ben",
+        "text": "上面有草莓。",
+        "textVi": "Trên bánh có dâu tây đó bố.",
+        "pinyin": "Shàng miàn yǒu cǎo méi."
+      },
+      {
+        "id": "a-birthday-cake-l4",
+        "speakerId": "mom",
+        "text": "看蜡烛。许个愿吧！",
+        "textVi": "Nhìn cây nến kìa. Anh ước một điều đi!",
+        "pinyin": "Kàn là zhú. Xǔ ge yuàn ba!"
+      },
+      {
+        "id": "a-birthday-cake-l5",
+        "speakerId": "dad",
+        "text": "好。现在我来吹蜡烛。",
+        "textVi": "Được rồi. Giờ bố thổi nến nhé.",
+        "pinyin": "Hǎo. Xiàn zài wǒ lái chuī là zhú."
+      },
+      {
+        "id": "a-birthday-cake-l6",
+        "speakerId": "ben",
+        "text": "我们把蛋糕放在托盘上吧！",
+        "textVi": "Mình đặt bánh lên khay đi!",
+        "pinyin": "Wǒ men bǎ dàn gāo fàng zài tuō pán shàng ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-birthday-cake-q1",
+        "prompt": "蛋糕上有什么？",
+        "suggestedAnswer": "蛋糕上有草莓。",
+        "promptPinyin": "Dàn gāo shàng yǒu shén me?",
+        "suggestedAnswerPinyin": "Dàn gāo shàng yǒu cǎo méi."
+      },
+      {
+        "id": "a-birthday-cake-q2",
+        "prompt": "爸爸吹什么？",
+        "suggestedAnswer": "爸爸吹蜡烛。",
+        "promptPinyin": "Bà ba chuī shén me?",
+        "suggestedAnswerPinyin": "Bà ba chuī là zhú."
+      }
+    ]
+  },
+  {
+    "id": "after-dinner",
+    "sceneId": "dining-room",
+    "title": "吃完饭",
+    "order": 9,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "莉莉和妈妈吃完饭收拾桌子。",
+    "lines": [
+      {
+        "id": "after-dinner-l1",
+        "speakerId": "lily",
+        "text": "我吃饱了！晚饭真好吃。",
+        "textVi": "Con no rồi! Bữa tối ngon quá ạ.",
+        "pinyin": "Wǒ chī bǎo le! Wǎn fàn zhēn hǎo chī."
+      },
+      {
+        "id": "after-dinner-l2",
+        "speakerId": "mom",
+        "text": "很好。从纸巾盒里拿一张纸巾吧。",
+        "textVi": "Tốt lắm. Con lấy một tờ khăn giấy trong hộp nhé.",
+        "pinyin": "Hěn hǎo. Cóng zhǐ jīn hé lǐ ná yì zhāng zhǐ jīn ba."
+      },
+      {
+        "id": "after-dinner-l3",
+        "speakerId": "lily",
+        "text": "谢谢。爸爸想要牙签。",
+        "textVi": "Con cảm ơn mẹ. Bố muốn lấy tăm ạ.",
+        "pinyin": "Xiè xiè. Bà ba xiǎng yào yá qiān."
+      },
+      {
+        "id": "after-dinner-l4",
+        "speakerId": "mom",
+        "text": "牙签筒在蜡烛旁边。",
+        "textVi": "Lọ đựng tăm ở cạnh cây nến đó con.",
+        "pinyin": "Yá qiān tǒng zài là zhú páng biān."
+      },
+      {
+        "id": "after-dinner-l5",
+        "speakerId": "lily",
+        "text": "面包怎么办？我们没吃完。",
+        "textVi": "Còn bánh mì thì sao ạ? Nhà mình chưa ăn hết.",
+        "pinyin": "Miàn bāo zěn me bàn? Wǒ men méi chī wán."
+      },
+      {
+        "id": "after-dinner-l6",
+        "speakerId": "mom",
+        "text": "放在菜罩下面吧。",
+        "textVi": "Con để dưới lồng bàn nhé.",
+        "pinyin": "Fàng zài cài zhào xià miàn ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "after-dinner-q1",
+        "prompt": "牙签筒在哪儿？",
+        "suggestedAnswer": "牙签筒在蜡烛旁边。",
+        "promptPinyin": "Yá qiān tǒng zài nǎr?",
+        "suggestedAnswerPinyin": "Yá qiān tǒng zài là zhú páng biān."
+      },
+      {
+        "id": "after-dinner-q2",
+        "prompt": "面包放在哪儿？",
+        "suggestedAnswer": "面包放在菜罩下面。",
+        "promptPinyin": "Miàn bāo fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Miàn bāo fàng zài cài zhào xià miàn."
+      }
+    ]
+  },
+  {
+    "id": "fruit-for-dessert",
+    "sceneId": "dining-room",
+    "title": "饭后水果",
+    "order": 10,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "小本挑水果，再从碗柜里拿盘子。",
+    "lines": [
+      {
+        "id": "fruit-for-dessert-l1",
+        "speakerId": "ben",
+        "text": "妈妈，我们可以吃水果吗？",
+        "textVi": "Mẹ ơi, mình ăn trái cây được không ạ?",
+        "pinyin": "Mā ma, wǒ men kě yǐ chī shuǐ guǒ ma?"
+      },
+      {
+        "id": "fruit-for-dessert-l2",
+        "speakerId": "mom",
+        "text": "当然！果盘在桌子上。",
+        "textVi": "Được chứ! Tô trái cây ở trên bàn đó.",
+        "pinyin": "Dāng rán! Guǒ pán zài zhuō zi shàng."
+      },
+      {
+        "id": "fruit-for-dessert-l3",
+        "speakerId": "ben",
+        "text": "我想吃苹果，莉莉想吃香蕉。",
+        "textVi": "Con muốn ăn táo. Lily muốn ăn chuối.",
+        "pinyin": "Wǒ xiǎng chī píng guǒ, Lì li xiǎng chī xiāng jiāo."
+      },
+      {
+        "id": "fruit-for-dessert-l4",
+        "speakerId": "mom",
+        "text": "去拿两个小盘子吧。",
+        "textVi": "Con lấy hai cái đĩa nhỏ nhé.",
+        "pinyin": "Qù ná liǎng gè xiǎo pán zi ba."
+      },
+      {
+        "id": "fruit-for-dessert-l5",
+        "speakerId": "ben",
+        "text": "盘子在哪儿？",
+        "textVi": "Đĩa ở đâu ạ?",
+        "pinyin": "Pán zi zài nǎr?"
+      },
+      {
+        "id": "fruit-for-dessert-l6",
+        "speakerId": "mom",
+        "text": "在碗柜里。",
+        "textVi": "Ở trong tủ đựng đồ phòng ăn đó con.",
+        "pinyin": "Zài wǎn guì lǐ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "fruit-for-dessert-q1",
+        "prompt": "果盘在哪儿？",
+        "suggestedAnswer": "果盘在桌子上。",
+        "promptPinyin": "Guǒ pán zài nǎr?",
+        "suggestedAnswerPinyin": "Guǒ pán zài zhuō zi shàng."
+      },
+      {
+        "id": "fruit-for-dessert-q2",
+        "prompt": "盘子在哪儿？",
+        "suggestedAnswer": "盘子在碗柜里。",
+        "promptPinyin": "Pán zi zài nǎr?",
+        "suggestedAnswerPinyin": "Pán zi zài wǎn guì lǐ."
+      }
+    ]
   }
 ]

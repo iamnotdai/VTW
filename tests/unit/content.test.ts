@@ -199,3 +199,30 @@ describe('House Exterior', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Dining Room', () => {
+  const diningRoom = getScene('dining-room')!;
+
+  it('is available with 30 words, 10 conversations and one hotspot per word', () => {
+    expect(diningRoom.status).toBe('available');
+    expect(getSceneWords(diningRoom)).toHaveLength(30);
+    expect(getSceneConversations(diningRoom)).toHaveLength(10);
+    expect(diningRoom.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...diningRoom.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    // The tablecloth covers the whole table, so it is the one big shape; the two place settings
+    // (placemats, plates, cutlery…) are checked sub-path by sub-path.
+    const oversized = diningRoom.hotspots.filter(
+      (hotspot) =>
+        hotspot.wordId !== 'tablecloth' &&
+        hotspot.svgPath.split(/(?=M)/).some((subPath) => {
+          const bounds = getPathBounds(subPath)!;
+          return (bounds.width * bounds.height) / (diningRoom.width * diningRoom.height) >= 0.35;
+        }),
+    );
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

@@ -2888,5 +2888,689 @@
     ],
     "relatedWordIds": ["tree", "lawn", "bush"],
     "distractorWordIds": ["fence", "gate", "steps"]
+  },
+  "tablecloth": {
+    "id": "tablecloth",
+    "text": "桌布",
+    "pinyin": "zhuōbù",
+    "measure": "块",
+    "meaningVi": "khăn trải bàn",
+    "image": "/assets/scenes/dining-room/objects/01_tablecloth.webp",
+    "acceptedAnswers": ["桌布", "台布"],
+    "examples": [
+      {
+        "text": "桌布很干净。",
+        "vi": "Khăn trải bàn rất sạch.",
+        "pinyin": "Zhuō bù hěn gān jing."
+      },
+      {
+        "text": "妈妈把桌布铺在桌子上。",
+        "vi": "Mẹ trải khăn lên bàn ăn.",
+        "pinyin": "Mā ma bǎ zhuō bù pù zài zhuō zi shàng."
+      }
+    ],
+    "relatedWordIds": ["placemat", "napkin", "dining-plate"],
+    "distractorWordIds": ["serving-tray", "food-cover", "dining-cabinet"]
+  },
+  "placemat": {
+    "id": "placemat",
+    "text": "餐垫",
+    "pinyin": "cāndiàn",
+    "measure": "张",
+    "meaningVi": "tấm lót bàn ăn",
+    "image": "/assets/scenes/dining-room/objects/02_placemat.webp",
+    "acceptedAnswers": ["餐垫", "桌垫"],
+    "examples": [
+      {
+        "text": "把盘子放在餐垫上。",
+        "vi": "Đặt đĩa lên tấm lót bàn ăn.",
+        "pinyin": "Bǎ pán zi fàng zài cān diàn shàng."
+      },
+      {
+        "text": "我们每人有一张餐垫。",
+        "vi": "Mỗi người có một tấm lót bàn ăn.",
+        "pinyin": "Wǒ men měi rén yǒu yì zhāng cān diàn."
+      }
+    ],
+    "relatedWordIds": ["tablecloth", "dining-plate", "fork"],
+    "distractorWordIds": ["napkin", "serving-tray", "sauce-dish"]
+  },
+  "dining-plate": {
+    "id": "dining-plate",
+    "text": "盘子",
+    "pinyin": "pánzi",
+    "measure": "个",
+    "meaningVi": "đĩa",
+    "image": "/assets/scenes/dining-room/objects/03_dining-plate.webp",
+    "acceptedAnswers": ["盘子", "碟子"],
+    "examples": [
+      {
+        "text": "这是一个白色的盘子。",
+        "vi": "Đây là một cái đĩa màu trắng.",
+        "pinyin": "Zhè shì yí gè bái sè de pán zi."
+      },
+      {
+        "text": "把鱼放在盘子里。",
+        "vi": "Đặt cá vào đĩa nhé.",
+        "pinyin": "Bǎ yú fàng zài pán zi lǐ."
+      }
+    ],
+    "relatedWordIds": ["dining-bowl", "placemat", "fork"],
+    "distractorWordIds": ["serving-tray", "sauce-dish", "dining-fruit-bowl"]
+  },
+  "dining-bowl": {
+    "id": "dining-bowl",
+    "text": "碗",
+    "pinyin": "wǎn",
+    "measure": "个",
+    "meaningVi": "bát / chén",
+    "image": "/assets/scenes/dining-room/objects/04_dining-bowl.webp",
+    "acceptedAnswers": ["碗", "饭碗"],
+    "examples": [
+      {
+        "text": "碗里装满了米饭。",
+        "vi": "Bát đầy cơm.",
+        "pinyin": "Wǎn lǐ zhuāng mǎn le mǐ fàn."
+      },
+      {
+        "text": "每个盘子上都有一个碗。",
+        "vi": "Trên mỗi đĩa đều có một cái bát.",
+        "pinyin": "Měi gè pán zi shàng dōu yǒu yí gè wǎn."
+      }
+    ],
+    "relatedWordIds": ["dining-plate", "chopsticks", "rice"],
+    "distractorWordIds": ["glass", "sauce-dish", "serving-bowl"]
+  },
+  "spoon": {
+    "id": "spoon",
+    "text": "勺子",
+    "pinyin": "sháozi",
+    "measure": "把",
+    "meaningVi": "thìa / muỗng",
+    "image": "/assets/scenes/dining-room/objects/05_spoon.webp",
+    "acceptedAnswers": ["勺子", "汤匙", "调羹"],
+    "examples": [
+      {
+        "text": "我用勺子喝汤。",
+        "vi": "Mình ăn canh bằng thìa.",
+        "pinyin": "Wǒ yòng sháo zi hē tāng."
+      },
+      {
+        "text": "勺子在刀的旁边。",
+        "vi": "Cái thìa ở cạnh con dao.",
+        "pinyin": "Sháo zi zài dāo de páng biān."
+      }
+    ],
+    "relatedWordIds": ["soup", "fork", "dining-knife"],
+    "distractorWordIds": ["chopsticks", "tongs", "serving-spoon"]
+  },
+  "fork": {
+    "id": "fork",
+    "text": "叉子",
+    "pinyin": "chāzi",
+    "measure": "把",
+    "meaningVi": "nĩa",
+    "image": "/assets/scenes/dining-room/objects/06_fork.webp",
+    "acceptedAnswers": ["叉子", "餐叉"],
+    "examples": [
+      {
+        "text": "我用叉子吃沙拉。",
+        "vi": "Mình dùng nĩa để ăn rau trộn.",
+        "pinyin": "Wǒ yòng chā zi chī shā lā."
+      },
+      {
+        "text": "叉子在盘子的左边。",
+        "vi": "Cái nĩa ở bên trái cái đĩa.",
+        "pinyin": "Chā zi zài pán zi de zuǒ biān."
+      }
+    ],
+    "relatedWordIds": ["spoon", "dining-knife", "salad"],
+    "distractorWordIds": ["chopsticks", "tongs", "serving-spoon"]
+  },
+  "dining-knife": {
+    "id": "dining-knife",
+    "text": "餐刀",
+    "pinyin": "cāndāo",
+    "measure": "把",
+    "meaningVi": "dao ăn",
+    "image": "/assets/scenes/dining-room/objects/07_dining-knife.webp",
+    "acceptedAnswers": ["餐刀", "刀", "刀子"],
+    "examples": [
+      {
+        "text": "餐刀在桌子上。",
+        "vi": "Dao ăn ở trên bàn.",
+        "pinyin": "Cān dāo zài zhuō zi shàng."
+      },
+      {
+        "text": "我用餐刀切面包。",
+        "vi": "Mình cắt bánh mì bằng dao ăn.",
+        "pinyin": "Wǒ yòng cān dāo qiè miàn bāo."
+      }
+    ],
+    "relatedWordIds": ["fork", "spoon", "bread"],
+    "distractorWordIds": ["tongs", "chopsticks", "serving-spoon"]
+  },
+  "chopsticks": {
+    "id": "chopsticks",
+    "text": "筷子",
+    "pinyin": "kuàizi",
+    "measure": "双",
+    "meaningVi": "đũa",
+    "image": "/assets/scenes/dining-room/objects/08_chopsticks.webp",
+    "acceptedAnswers": ["筷子"],
+    "examples": [
+      {
+        "text": "我用筷子吃面条。",
+        "vi": "Mình dùng đũa để ăn mì.",
+        "pinyin": "Wǒ yòng kuài zi chī miàn tiáo."
+      },
+      {
+        "text": "小本用筷子用得很好。",
+        "vi": "Ben dùng đũa rất giỏi.",
+        "pinyin": "Xiǎo Běn yòng kuài zi yòng de hěn hǎo."
+      }
+    ],
+    "relatedWordIds": ["noodles", "dining-bowl", "rice"],
+    "distractorWordIds": ["fork", "tongs", "toothpick-holder"]
+  },
+  "glass": {
+    "id": "glass",
+    "text": "杯子",
+    "pinyin": "bēizi",
+    "measure": "个",
+    "meaningVi": "ly uống nước",
+    "image": "/assets/scenes/dining-room/objects/09_glass.webp",
+    "acceptedAnswers": ["杯子", "玻璃杯", "水杯"],
+    "examples": [
+      {
+        "text": "这个杯子里有水。",
+        "vi": "Cái ly này có nước.",
+        "pinyin": "Zhè ge bēi zi lǐ yǒu shuǐ."
+      },
+      {
+        "text": "可以给我一杯水吗？",
+        "vi": "Cho mình xin một ly nước được không?",
+        "pinyin": "Kě yǐ gěi wǒ yì bēi shuǐ ma?"
+      }
+    ],
+    "relatedWordIds": ["water-pitcher", "napkin", "placemat"],
+    "distractorWordIds": ["candle", "sauce-dish", "dining-bowl"]
+  },
+  "napkin": {
+    "id": "napkin",
+    "text": "餐巾",
+    "pinyin": "cānjīn",
+    "measure": "块",
+    "meaningVi": "khăn ăn",
+    "image": "/assets/scenes/dining-room/objects/10_napkin.webp",
+    "acceptedAnswers": ["餐巾", "餐巾布"],
+    "examples": [
+      {
+        "text": "请用餐巾。",
+        "vi": "Hãy dùng khăn ăn nhé.",
+        "pinyin": "Qǐng yòng cān jīn."
+      },
+      {
+        "text": "餐巾在盘子的旁边。",
+        "vi": "Khăn ăn ở cạnh cái đĩa.",
+        "pinyin": "Cān jīn zài pán zi de páng biān."
+      }
+    ],
+    "relatedWordIds": ["placemat", "tablecloth", "fork"],
+    "distractorWordIds": ["dining-tissue-box", "serving-tray", "glass"]
+  },
+  "water-pitcher": {
+    "id": "water-pitcher",
+    "text": "水壶",
+    "pinyin": "shuǐhú",
+    "measure": "个",
+    "meaningVi": "bình đựng nước",
+    "image": "/assets/scenes/dining-room/objects/11_water-pitcher.webp",
+    "acceptedAnswers": ["水壶", "水瓶", "凉水壶"],
+    "examples": [
+      {
+        "text": "水壶在桌子上。",
+        "vi": "Bình đựng nước ở trên bàn.",
+        "pinyin": "Shuǐ hú zài zhuō zi shàng."
+      },
+      {
+        "text": "爸爸用水壶倒水。",
+        "vi": "Bố rót nước từ bình đựng nước.",
+        "pinyin": "Bà ba yòng shuǐ hú dǎo shuǐ."
+      }
+    ],
+    "relatedWordIds": ["glass", "serving-tray", "dining-fruit-bowl"],
+    "distractorWordIds": ["candle", "serving-bowl", "dining-tissue-box"]
+  },
+  "serving-tray": {
+    "id": "serving-tray",
+    "text": "托盘",
+    "pinyin": "tuōpán",
+    "measure": "个",
+    "meaningVi": "khay đựng thức ăn",
+    "image": "/assets/scenes/dining-room/objects/12_serving-tray.webp",
+    "acceptedAnswers": ["托盘", "餐盘"],
+    "examples": [
+      {
+        "text": "把食物放在托盘上。",
+        "vi": "Đặt thức ăn lên khay.",
+        "pinyin": "Bǎ shí wù fàng zài tuō pán shàng."
+      },
+      {
+        "text": "妈妈用托盘端杯子。",
+        "vi": "Mẹ dùng khay bưng mấy cái cốc.",
+        "pinyin": "Mā ma yòng tuō pán duān bēi zi."
+      }
+    ],
+    "relatedWordIds": ["water-pitcher", "dining-plate", "cake"],
+    "distractorWordIds": ["placemat", "food-cover", "dining-cabinet"]
+  },
+  "serving-spoon": {
+    "id": "serving-spoon",
+    "text": "公勺",
+    "pinyin": "gōngsháo",
+    "measure": "把",
+    "meaningVi": "muỗng múc thức ăn",
+    "image": "/assets/scenes/dining-room/objects/13_serving-spoon.webp",
+    "acceptedAnswers": ["公勺", "大勺", "汤勺"],
+    "examples": [
+      {
+        "text": "用公勺盛米饭。",
+        "vi": "Dùng muỗng múc thức ăn để xới cơm.",
+        "pinyin": "Yòng gōng sháo chéng mǐ fàn."
+      },
+      {
+        "text": "公勺在蘸料碟旁边。",
+        "vi": "Muỗng múc thức ăn ở cạnh chén nước chấm.",
+        "pinyin": "Gōng sháo zài zhàn liào dié páng biān."
+      }
+    ],
+    "relatedWordIds": ["serving-bowl", "rice", "sauce-dish"],
+    "distractorWordIds": ["spoon", "tongs", "fork"]
+  },
+  "serving-bowl": {
+    "id": "serving-bowl",
+    "text": "大碗",
+    "pinyin": "dàwǎn",
+    "measure": "个",
+    "meaningVi": "tô đựng thức ăn",
+    "image": "/assets/scenes/dining-room/objects/14_serving-bowl.webp",
+    "acceptedAnswers": ["大碗", "汤碗", "汤盆"],
+    "examples": [
+      {
+        "text": "大碗里装满了饭菜。",
+        "vi": "Tô đựng thức ăn đầy ắp đồ ăn.",
+        "pinyin": "Dà wǎn lǐ zhuāng mǎn le fàn cài."
+      },
+      {
+        "text": "这个大碗有盖子。",
+        "vi": "Cái tô này có nắp đậy.",
+        "pinyin": "Zhè ge dà wǎn yǒu gài zi."
+      }
+    ],
+    "relatedWordIds": ["serving-spoon", "soup", "food-cover"],
+    "distractorWordIds": ["dining-bowl", "sauce-dish", "dining-fruit-bowl"]
+  },
+  "dining-fruit-bowl": {
+    "id": "dining-fruit-bowl",
+    "text": "果盘",
+    "pinyin": "guǒpán",
+    "measure": "个",
+    "meaningVi": "đĩa / tô đựng trái cây",
+    "image": "/assets/scenes/dining-room/objects/15_dining-fruit-bowl.webp",
+    "acceptedAnswers": ["果盘", "水果盘"],
+    "examples": [
+      {
+        "text": "果盘里有苹果。",
+        "vi": "Trong tô trái cây có táo.",
+        "pinyin": "Guǒ pán lǐ yǒu píng guǒ."
+      },
+      {
+        "text": "小本从果盘里拿了一根香蕉。",
+        "vi": "Ben lấy một quả chuối từ tô trái cây.",
+        "pinyin": "Xiǎo Běn cóng guǒ pán lǐ ná le yì gēn xiāng jiāo."
+      }
+    ],
+    "relatedWordIds": ["water-pitcher", "cake", "serving-bowl"],
+    "distractorWordIds": ["salad", "serving-tray", "sauce-dish"]
+  },
+  "candle": {
+    "id": "candle",
+    "text": "蜡烛",
+    "pinyin": "làzhú",
+    "measure": "根",
+    "meaningVi": "nến",
+    "image": "/assets/scenes/dining-room/objects/16_candle.webp",
+    "acceptedAnswers": ["蜡烛"],
+    "examples": [
+      {
+        "text": "蜡烛在桌子上。",
+        "vi": "Cây nến ở trên bàn.",
+        "pinyin": "Là zhú zài zhuō zi shàng."
+      },
+      {
+        "text": "别碰蜡烛，很烫！",
+        "vi": "Đừng chạm vào nến, nóng lắm đó!",
+        "pinyin": "Bié pèng là zhú, hěn tàng!"
+      }
+    ],
+    "relatedWordIds": ["toothpick-holder", "dining-tissue-box", "tablecloth"],
+    "distractorWordIds": ["glass", "water-pitcher", "food-cover"]
+  },
+  "dining-cabinet": {
+    "id": "dining-cabinet",
+    "text": "碗柜",
+    "pinyin": "wǎnguì",
+    "measure": "个",
+    "meaningVi": "tủ đựng đồ phòng ăn",
+    "image": "/assets/scenes/dining-room/objects/17_dining-cabinet.webp",
+    "acceptedAnswers": ["碗柜", "餐边柜", "柜子"],
+    "examples": [
+      {
+        "text": "盘子在碗柜里。",
+        "vi": "Đĩa ở trong tủ đựng đồ phòng ăn.",
+        "pinyin": "Pán zi zài wǎn guì lǐ."
+      },
+      {
+        "text": "碗柜有玻璃门。",
+        "vi": "Tủ đựng đồ phòng ăn có cửa kính.",
+        "pinyin": "Wǎn guì yǒu bō li mén."
+      }
+    ],
+    "relatedWordIds": ["dining-plate", "dining-bowl", "glass"],
+    "distractorWordIds": ["serving-tray", "tablecloth", "food-cover"]
+  },
+  "dining-tissue-box": {
+    "id": "dining-tissue-box",
+    "text": "纸巾盒",
+    "pinyin": "zhǐjīnhé",
+    "measure": "个",
+    "meaningVi": "hộp khăn giấy",
+    "image": "/assets/scenes/dining-room/objects/18_dining-tissue-box.webp",
+    "acceptedAnswers": ["纸巾盒"],
+    "examples": [
+      {
+        "text": "纸巾盒在桌子上。",
+        "vi": "Hộp khăn giấy ở trên bàn.",
+        "pinyin": "Zhǐ jīn hé zài zhuō zi shàng."
+      },
+      {
+        "text": "从纸巾盒里拿一张纸巾吧。",
+        "vi": "Lấy một tờ khăn giấy trong hộp nhé.",
+        "pinyin": "Cóng zhǐ jīn hé lǐ ná yì zhāng zhǐ jīn ba."
+      }
+    ],
+    "relatedWordIds": ["napkin", "toothpick-holder", "candle"],
+    "distractorWordIds": ["sauce-dish", "food-cover", "serving-tray"]
+  },
+  "toothpick-holder": {
+    "id": "toothpick-holder",
+    "text": "牙签筒",
+    "pinyin": "yáqiāntǒng",
+    "measure": "个",
+    "meaningVi": "lọ đựng tăm",
+    "image": "/assets/scenes/dining-room/objects/19_toothpick-holder.webp",
+    "acceptedAnswers": ["牙签筒", "牙签盒"],
+    "examples": [
+      {
+        "text": "牙签筒很小。",
+        "vi": "Lọ đựng tăm nhỏ xíu.",
+        "pinyin": "Yá qiān tǒng hěn xiǎo."
+      },
+      {
+        "text": "牙签筒有一个木头盖子。",
+        "vi": "Lọ đựng tăm có một cái nắp gỗ.",
+        "pinyin": "Yá qiān tǒng yǒu yí gè mù tou gài zi."
+      }
+    ],
+    "relatedWordIds": ["dining-tissue-box", "candle", "chopsticks"],
+    "distractorWordIds": ["glass", "sauce-dish", "water-pitcher"]
+  },
+  "tongs": {
+    "id": "tongs",
+    "text": "夹子",
+    "pinyin": "jiāzi",
+    "measure": "把",
+    "meaningVi": "kẹp gắp thức ăn",
+    "image": "/assets/scenes/dining-room/objects/20_tongs.webp",
+    "acceptedAnswers": ["夹子", "食物夹", "食品夹"],
+    "examples": [
+      {
+        "text": "用夹子夹菜。",
+        "vi": "Dùng kẹp để gắp thức ăn.",
+        "pinyin": "Yòng jiā zi jiā cài."
+      },
+      {
+        "text": "爸爸用夹子夹炸鸡。",
+        "vi": "Bố dùng kẹp gắp gà rán.",
+        "pinyin": "Bà ba yòng jiā zi jiā zhá jī."
+      }
+    ],
+    "relatedWordIds": ["fried-chicken", "serving-spoon", "cake"],
+    "distractorWordIds": ["chopsticks", "fork", "spoon"]
+  },
+  "sauce-dish": {
+    "id": "sauce-dish",
+    "text": "蘸料碟",
+    "pinyin": "zhànliàodié",
+    "measure": "个",
+    "meaningVi": "chén đựng nước chấm",
+    "image": "/assets/scenes/dining-room/objects/21_sauce-dish.webp",
+    "acceptedAnswers": ["蘸料碟", "调料碟", "小碟子"],
+    "examples": [
+      {
+        "text": "蘸料碟里有鱼露。",
+        "vi": "Chén nước chấm có nước mắm.",
+        "pinyin": "Zhàn liào dié lǐ yǒu yú lù."
+      },
+      {
+        "text": "把鸡块在蘸料碟里蘸一下。",
+        "vi": "Chấm miếng gà vào chén nước chấm.",
+        "pinyin": "Bǎ jī kuài zài zhàn liào dié lǐ zhàn yí xià."
+      }
+    ],
+    "relatedWordIds": ["fish", "serving-spoon", "fried-chicken"],
+    "distractorWordIds": ["dining-bowl", "glass", "candle"]
+  },
+  "food-cover": {
+    "id": "food-cover",
+    "text": "菜罩",
+    "pinyin": "càizhào",
+    "measure": "个",
+    "meaningVi": "lồng bàn / nắp đậy thức ăn",
+    "image": "/assets/scenes/dining-room/objects/22_food-cover.webp",
+    "acceptedAnswers": ["菜罩", "饭罩", "罩子"],
+    "examples": [
+      {
+        "text": "用菜罩把饭菜盖好。",
+        "vi": "Đậy lồng bàn lên thức ăn.",
+        "pinyin": "Yòng cài zhào bǎ fàn cài gài hǎo."
+      },
+      {
+        "text": "菜罩能挡住苍蝇。",
+        "vi": "Lồng bàn giúp ngăn ruồi.",
+        "pinyin": "Cài zhào néng dǎng zhù cāng ying."
+      }
+    ],
+    "relatedWordIds": ["serving-bowl", "cake", "bread"],
+    "distractorWordIds": ["dining-cabinet", "serving-tray", "tablecloth"]
+  },
+  "rice": {
+    "id": "rice",
+    "text": "米饭",
+    "pinyin": "mǐfàn",
+    "meaningVi": "cơm",
+    "image": "/assets/scenes/dining-room/objects/23_rice.webp",
+    "acceptedAnswers": ["米饭", "饭", "白饭"],
+    "examples": [
+      {
+        "text": "我晚饭吃米饭。",
+        "vi": "Bữa tối mình ăn cơm.",
+        "pinyin": "Wǒ wǎn fàn chī mǐ fàn."
+      },
+      {
+        "text": "妈妈给我盛米饭。",
+        "vi": "Mẹ xới cơm cho mình.",
+        "pinyin": "Mā ma gěi wǒ chéng mǐ fàn."
+      }
+    ],
+    "relatedWordIds": ["dining-bowl", "chopsticks", "soup"],
+    "distractorWordIds": ["noodles", "bread", "salad"]
+  },
+  "soup": {
+    "id": "soup",
+    "text": "汤",
+    "pinyin": "tāng",
+    "meaningVi": "canh / súp",
+    "image": "/assets/scenes/dining-room/objects/24_soup.webp",
+    "acceptedAnswers": ["汤", "菜汤"],
+    "examples": [
+      {
+        "text": "这碗汤很烫。",
+        "vi": "Bát canh này nóng lắm.",
+        "pinyin": "Zhè wǎn tāng hěn tàng."
+      },
+      {
+        "text": "妈妈做了蔬菜汤。",
+        "vi": "Mẹ nấu canh rau.",
+        "pinyin": "Mā ma zuò le shū cài tāng."
+      }
+    ],
+    "relatedWordIds": ["spoon", "rice", "serving-bowl"],
+    "distractorWordIds": ["noodles", "salad", "sauce-dish"]
+  },
+  "bread": {
+    "id": "bread",
+    "text": "面包",
+    "pinyin": "miànbāo",
+    "meaningVi": "bánh mì",
+    "image": "/assets/scenes/dining-room/objects/25_bread.webp",
+    "acceptedAnswers": ["面包"],
+    "examples": [
+      {
+        "text": "我喜欢抹黄油的面包。",
+        "vi": "Mình thích bánh mì phết bơ.",
+        "pinyin": "Wǒ xǐ huan mǒ huáng yóu de miàn bāo."
+      },
+      {
+        "text": "爸爸把面包切成片。",
+        "vi": "Bố cắt bánh mì thành từng lát.",
+        "pinyin": "Bà ba bǎ miàn bāo qiè chéng piàn."
+      }
+    ],
+    "relatedWordIds": ["dining-knife", "cake", "food-cover"],
+    "distractorWordIds": ["rice", "noodles", "fried-chicken"]
+  },
+  "noodles": {
+    "id": "noodles",
+    "text": "面条",
+    "pinyin": "miàntiáo",
+    "meaningVi": "mì / mì sợi",
+    "image": "/assets/scenes/dining-room/objects/26_noodles.webp",
+    "acceptedAnswers": ["面条", "面"],
+    "examples": [
+      {
+        "text": "这些面条很好吃。",
+        "vi": "Món mì này ngon quá.",
+        "pinyin": "Zhè xiē miàn tiáo hěn hǎo chī."
+      },
+      {
+        "text": "小本用筷子吃面条。",
+        "vi": "Ben ăn mì bằng đũa.",
+        "pinyin": "Xiǎo Běn yòng kuài zi chī miàn tiáo."
+      }
+    ],
+    "relatedWordIds": ["chopsticks", "dining-bowl", "soup"],
+    "distractorWordIds": ["rice", "bread", "salad"]
+  },
+  "fried-chicken": {
+    "id": "fried-chicken",
+    "text": "炸鸡",
+    "pinyin": "zhájī",
+    "meaningVi": "gà rán",
+    "image": "/assets/scenes/dining-room/objects/27_fried-chicken.webp",
+    "acceptedAnswers": ["炸鸡", "炸鸡块"],
+    "examples": [
+      {
+        "text": "炸鸡脆脆的。",
+        "vi": "Gà rán giòn rụm.",
+        "pinyin": "Zhá jī cuì cuì de."
+      },
+      {
+        "text": "我可以吃点儿炸鸡吗？",
+        "vi": "Con ăn một ít gà rán được không ạ?",
+        "pinyin": "Wǒ kě yǐ chī diǎnr zhá jī ma?"
+      }
+    ],
+    "relatedWordIds": ["tongs", "sauce-dish", "salad"],
+    "distractorWordIds": ["fish", "bread", "noodles"]
+  },
+  "fish": {
+    "id": "fish",
+    "text": "鱼",
+    "pinyin": "yú",
+    "measure": "条",
+    "meaningVi": "cá",
+    "image": "/assets/scenes/dining-room/objects/28_fish.webp",
+    "acceptedAnswers": ["鱼", "鱼肉"],
+    "examples": [
+      {
+        "text": "我们晚饭吃鱼。",
+        "vi": "Bữa tối nhà mình ăn cá.",
+        "pinyin": "Wǒ men wǎn fàn chī yú."
+      },
+      {
+        "text": "这条鱼放在一个大盘子里。",
+        "vi": "Con cá này nằm trên một cái đĩa to.",
+        "pinyin": "Zhè tiáo yú fàng zài yí gè dà pán zi lǐ."
+      }
+    ],
+    "relatedWordIds": ["sauce-dish", "rice", "dining-plate"],
+    "distractorWordIds": ["fried-chicken", "cake", "salad"]
+  },
+  "salad": {
+    "id": "salad",
+    "text": "沙拉",
+    "pinyin": "shālā",
+    "meaningVi": "rau trộn",
+    "image": "/assets/scenes/dining-room/objects/29_salad.webp",
+    "acceptedAnswers": ["沙拉", "色拉", "蔬菜沙拉"],
+    "examples": [
+      {
+        "text": "我午饭吃沙拉。",
+        "vi": "Bữa trưa mình ăn rau trộn.",
+        "pinyin": "Wǒ wǔ fàn chī shā lā."
+      },
+      {
+        "text": "沙拉里有西红柿和黄瓜。",
+        "vi": "Món rau trộn có cà chua và dưa leo.",
+        "pinyin": "Shā lā lǐ yǒu xī hóng shì hé huáng guā."
+      }
+    ],
+    "relatedWordIds": ["fork", "fried-chicken", "dining-fruit-bowl"],
+    "distractorWordIds": ["soup", "noodles", "rice"]
+  },
+  "cake": {
+    "id": "cake",
+    "text": "蛋糕",
+    "pinyin": "dàngāo",
+    "measure": "个",
+    "meaningVi": "bánh ngọt",
+    "image": "/assets/scenes/dining-room/objects/30_cake.webp",
+    "acceptedAnswers": ["蛋糕"],
+    "examples": [
+      {
+        "text": "这个蛋糕很甜。",
+        "vi": "Cái bánh này ngọt.",
+        "pinyin": "Zhè ge dàn gāo hěn tián."
+      },
+      {
+        "text": "蛋糕上有草莓。",
+        "vi": "Trên bánh có dâu tây.",
+        "pinyin": "Dàn gāo shàng yǒu cǎo méi."
+      }
+    ],
+    "relatedWordIds": ["dining-fruit-bowl", "serving-tray", "food-cover"],
+    "distractorWordIds": ["bread", "salad", "candle"]
   }
 }

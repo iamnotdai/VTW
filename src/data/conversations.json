@@ -2952,5 +2952,585 @@
         "suggestedAnswer": "I sit on the bench under the tree."
       }
     ]
+  },
+  {
+    "id": "dinner-is-ready",
+    "sceneId": "dining-room",
+    "title": "Dinner Is Ready",
+    "order": 1,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Mom calls everyone to the dining room.",
+    "lines": [
+      {
+        "id": "dinner-is-ready-l1",
+        "speakerId": "mom",
+        "text": "Ben, Lily! Dinner is ready!",
+        "textVi": "Ben, Lily ơi! Cơm xong rồi!"
+      },
+      {
+        "id": "dinner-is-ready-l2",
+        "speakerId": "ben",
+        "text": "Yay! I’m so hungry.",
+        "textVi": "Yeah! Con đói quá."
+      },
+      {
+        "id": "dinner-is-ready-l3",
+        "speakerId": "lily",
+        "text": "Wow, there is so much food on the table!",
+        "textVi": "Oa, trên bàn nhiều đồ ăn quá!"
+      },
+      {
+        "id": "dinner-is-ready-l4",
+        "speakerId": "mom",
+        "text": "We have rice, soup, fish and fried chicken.",
+        "textVi": "Nhà mình có cơm, canh, cá và gà rán."
+      },
+      {
+        "id": "dinner-is-ready-l5",
+        "speakerId": "ben",
+        "text": "And there is a cake, too!",
+        "textVi": "Còn có cả bánh ngọt nữa!"
+      },
+      {
+        "id": "dinner-is-ready-l6",
+        "speakerId": "mom",
+        "text": "The cake is for after dinner. Please sit down.",
+        "textVi": "Bánh ngọt để ăn sau bữa tối nhé. Các con ngồi xuống đi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "dinner-is-ready-q1",
+        "prompt": "What do they have for dinner?",
+        "suggestedAnswer": "They have rice, soup, fish and fried chicken."
+      },
+      {
+        "id": "dinner-is-ready-q2",
+        "prompt": "When do they eat the cake?",
+        "suggestedAnswer": "They eat the cake after dinner."
+      }
+    ]
+  },
+  {
+    "id": "laying-the-table",
+    "sceneId": "dining-room",
+    "title": "Laying the Table",
+    "order": 2,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Lily and Ben put the placemats, plates and bowls on the table.",
+    "lines": [
+      {
+        "id": "laying-the-table-l1",
+        "speakerId": "lily",
+        "text": "Ben, let’s help Mom lay the table.",
+        "textVi": "Ben ơi, mình giúp mẹ bày bàn ăn đi."
+      },
+      {
+        "id": "laying-the-table-l2",
+        "speakerId": "ben",
+        "text": "OK! First, the placemats.",
+        "textVi": "Ừ! Trước tiên là tấm lót bàn ăn."
+      },
+      {
+        "id": "laying-the-table-l3",
+        "speakerId": "lily",
+        "text": "Now put a plate on each placemat.",
+        "textVi": "Giờ đặt một cái đĩa lên mỗi tấm lót."
+      },
+      {
+        "id": "laying-the-table-l4",
+        "speakerId": "ben",
+        "text": "And a bowl on each plate.",
+        "textVi": "Rồi đặt một cái bát lên mỗi cái đĩa."
+      },
+      {
+        "id": "laying-the-table-l5",
+        "speakerId": "lily",
+        "text": "The fork goes on the left. The knife and spoon go on the right.",
+        "textVi": "Nĩa để bên trái. Dao và thìa để bên phải."
+      },
+      {
+        "id": "laying-the-table-l6",
+        "speakerId": "ben",
+        "text": "Don’t forget the napkins!",
+        "textVi": "Đừng quên khăn ăn nhé!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "laying-the-table-q1",
+        "prompt": "Where does the fork go?",
+        "suggestedAnswer": "The fork goes on the left."
+      },
+      {
+        "id": "laying-the-table-q2",
+        "prompt": "What is on each plate?",
+        "suggestedAnswer": "There is a bowl on each plate."
+      }
+    ]
+  },
+  {
+    "id": "chopsticks-or-fork",
+    "sceneId": "dining-room",
+    "title": "Chopsticks or Fork?",
+    "order": 3,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Ben shows Lily how he eats noodles.",
+    "lines": [
+      {
+        "id": "chopsticks-or-fork-l1",
+        "speakerId": "lily",
+        "text": "Ben, do you eat noodles with a fork?",
+        "textVi": "Ben ơi, bạn ăn mì bằng nĩa à?"
+      },
+      {
+        "id": "chopsticks-or-fork-l2",
+        "speakerId": "ben",
+        "text": "No, I eat noodles with chopsticks.",
+        "textVi": "Không, mình ăn mì bằng đũa."
+      },
+      {
+        "id": "chopsticks-or-fork-l3",
+        "speakerId": "lily",
+        "text": "Chopsticks are hard for me.",
+        "textVi": "Dùng đũa khó với mình quá."
+      },
+      {
+        "id": "chopsticks-or-fork-l4",
+        "speakerId": "ben",
+        "text": "Hold them like this. Try again!",
+        "textVi": "Cầm như thế này này. Thử lại đi!"
+      },
+      {
+        "id": "chopsticks-or-fork-l5",
+        "speakerId": "lily",
+        "text": "Look! I can pick up the noodles!",
+        "textVi": "Nhìn này! Mình gắp được mì rồi!"
+      },
+      {
+        "id": "chopsticks-or-fork-l6",
+        "speakerId": "ben",
+        "text": "Great job! I use a fork for salad.",
+        "textVi": "Giỏi lắm! Còn mình dùng nĩa để ăn rau trộn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "chopsticks-or-fork-q1",
+        "prompt": "What does Ben use to eat noodles?",
+        "suggestedAnswer": "Ben uses chopsticks to eat noodles."
+      },
+      {
+        "id": "chopsticks-or-fork-q2",
+        "prompt": "What does Ben use for salad?",
+        "suggestedAnswer": "He uses a fork for salad."
+      }
+    ]
+  },
+  {
+    "id": "pass-the-fish",
+    "sceneId": "dining-room",
+    "title": "Pass the Fish, Please",
+    "order": 4,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Dad asks Lily to pass the fish and the sauce dish.",
+    "lines": [
+      {
+        "id": "pass-the-fish-l1",
+        "speakerId": "dad",
+        "text": "Lily, can you pass me the fish, please?",
+        "textVi": "Lily ơi, con đưa bố đĩa cá được không?"
+      },
+      {
+        "id": "pass-the-fish-l2",
+        "speakerId": "lily",
+        "text": "Here you are, Dad.",
+        "textVi": "Của bố đây ạ."
+      },
+      {
+        "id": "pass-the-fish-l3",
+        "speakerId": "dad",
+        "text": "Thank you. Where is the sauce dish?",
+        "textVi": "Cảm ơn con. Chén nước chấm đâu rồi nhỉ?"
+      },
+      {
+        "id": "pass-the-fish-l4",
+        "speakerId": "lily",
+        "text": "It’s next to the serving spoon.",
+        "textVi": "Nó ở cạnh muỗng múc thức ăn ạ."
+      },
+      {
+        "id": "pass-the-fish-l5",
+        "speakerId": "dad",
+        "text": "Mmm, the fish is very good with fish sauce.",
+        "textVi": "Ừm, cá chấm nước mắm ngon lắm."
+      },
+      {
+        "id": "pass-the-fish-l6",
+        "speakerId": "lily",
+        "text": "Can I have some fish, too?",
+        "textVi": "Con cũng ăn cá được không ạ?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "pass-the-fish-q1",
+        "prompt": "What does Dad want?",
+        "suggestedAnswer": "Dad wants the fish."
+      },
+      {
+        "id": "pass-the-fish-q2",
+        "prompt": "Where is the sauce dish?",
+        "suggestedAnswer": "The sauce dish is next to the serving spoon."
+      }
+    ]
+  },
+  {
+    "id": "a-glass-of-water",
+    "sceneId": "dining-room",
+    "title": "A Glass of Water",
+    "order": 5,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Ben pours water from the water pitcher.",
+    "lines": [
+      {
+        "id": "a-glass-of-water-l1",
+        "speakerId": "ben",
+        "text": "Mom, I’m thirsty.",
+        "textVi": "Mẹ ơi, con khát nước."
+      },
+      {
+        "id": "a-glass-of-water-l2",
+        "speakerId": "mom",
+        "text": "There is water in the water pitcher.",
+        "textVi": "Trong bình đựng nước có nước đó con."
+      },
+      {
+        "id": "a-glass-of-water-l3",
+        "speakerId": "ben",
+        "text": "Can I pour it myself?",
+        "textVi": "Con tự rót được không ạ?"
+      },
+      {
+        "id": "a-glass-of-water-l4",
+        "speakerId": "mom",
+        "text": "Yes. Hold your glass with one hand.",
+        "textVi": "Được. Con cầm ly bằng một tay nhé."
+      },
+      {
+        "id": "a-glass-of-water-l5",
+        "speakerId": "ben",
+        "text": "Look, my glass is full!",
+        "textVi": "Mẹ xem, ly của con đầy rồi!"
+      },
+      {
+        "id": "a-glass-of-water-l6",
+        "speakerId": "mom",
+        "text": "Well done! Use a napkin if it spills.",
+        "textVi": "Giỏi lắm! Nếu bị đổ thì con dùng khăn ăn lau nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-glass-of-water-q1",
+        "prompt": "Where is the water?",
+        "suggestedAnswer": "The water is in the water pitcher."
+      },
+      {
+        "id": "a-glass-of-water-q2",
+        "prompt": "What do you use if the water spills?",
+        "suggestedAnswer": "I use a napkin."
+      }
+    ]
+  },
+  {
+    "id": "yummy-fried-chicken",
+    "sceneId": "dining-room",
+    "title": "Yummy Fried Chicken",
+    "order": 6,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Dad uses the tongs to give Ben some fried chicken.",
+    "lines": [
+      {
+        "id": "yummy-fried-chicken-l1",
+        "speakerId": "ben",
+        "text": "Dad, can I have some fried chicken?",
+        "textVi": "Bố ơi, con ăn gà rán được không ạ?"
+      },
+      {
+        "id": "yummy-fried-chicken-l2",
+        "speakerId": "dad",
+        "text": "Sure. Let me use the tongs.",
+        "textVi": "Được chứ. Để bố dùng cái kẹp."
+      },
+      {
+        "id": "yummy-fried-chicken-l3",
+        "speakerId": "ben",
+        "text": "Why do you use the tongs?",
+        "textVi": "Sao bố lại dùng kẹp ạ?"
+      },
+      {
+        "id": "yummy-fried-chicken-l4",
+        "speakerId": "dad",
+        "text": "The chicken is hot. The tongs keep my hands clean.",
+        "textVi": "Gà còn nóng. Dùng kẹp thì tay bố vẫn sạch."
+      },
+      {
+        "id": "yummy-fried-chicken-l5",
+        "speakerId": "ben",
+        "text": "Mmm, it’s so crispy!",
+        "textVi": "Ừm, giòn quá!"
+      },
+      {
+        "id": "yummy-fried-chicken-l6",
+        "speakerId": "dad",
+        "text": "Eat some salad, too.",
+        "textVi": "Ăn thêm cả rau trộn nữa nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "yummy-fried-chicken-q1",
+        "prompt": "What does Dad use to pick up the chicken?",
+        "suggestedAnswer": "Dad uses the tongs."
+      },
+      {
+        "id": "yummy-fried-chicken-q2",
+        "prompt": "How is the fried chicken?",
+        "suggestedAnswer": "The fried chicken is crispy."
+      }
+    ]
+  },
+  {
+    "id": "hot-soup",
+    "sceneId": "dining-room",
+    "title": "Hot Soup",
+    "order": 7,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Mom gives Lily some soup and rice.",
+    "lines": [
+      {
+        "id": "hot-soup-l1",
+        "speakerId": "mom",
+        "text": "Lily, do you want some soup?",
+        "textVi": "Lily ơi, con có muốn ăn canh không?"
+      },
+      {
+        "id": "hot-soup-l2",
+        "speakerId": "lily",
+        "text": "Yes, please. And some rice.",
+        "textVi": "Dạ có ạ. Cho con thêm ít cơm nữa."
+      },
+      {
+        "id": "hot-soup-l3",
+        "speakerId": "mom",
+        "text": "I’ll get the rice with the serving spoon.",
+        "textVi": "Mẹ xới cơm bằng muỗng múc thức ăn nhé."
+      },
+      {
+        "id": "hot-soup-l4",
+        "speakerId": "lily",
+        "text": "The soup is very hot!",
+        "textVi": "Canh nóng quá ạ!"
+      },
+      {
+        "id": "hot-soup-l5",
+        "speakerId": "mom",
+        "text": "Blow on it first. Then use your spoon.",
+        "textVi": "Con thổi trước đã. Rồi dùng thìa nhé."
+      },
+      {
+        "id": "hot-soup-l6",
+        "speakerId": "lily",
+        "text": "Mmm, yummy! There are carrots in it.",
+        "textVi": "Ừm, ngon quá! Trong canh có cà rốt."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "hot-soup-q1",
+        "prompt": "What does Lily want?",
+        "suggestedAnswer": "Lily wants soup and rice."
+      },
+      {
+        "id": "hot-soup-q2",
+        "prompt": "What do you do when the soup is hot?",
+        "suggestedAnswer": "I blow on it first."
+      }
+    ]
+  },
+  {
+    "id": "a-birthday-cake",
+    "sceneId": "dining-room",
+    "title": "A Birthday Cake",
+    "order": 8,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "The family has a cake for Dad’s birthday.",
+    "lines": [
+      {
+        "id": "a-birthday-cake-l1",
+        "speakerId": "lily",
+        "text": "Happy birthday, Dad!",
+        "textVi": "Chúc mừng sinh nhật bố!"
+      },
+      {
+        "id": "a-birthday-cake-l2",
+        "speakerId": "dad",
+        "text": "Thank you! What a big cake!",
+        "textVi": "Cảm ơn con! Cái bánh to quá!"
+      },
+      {
+        "id": "a-birthday-cake-l3",
+        "speakerId": "ben",
+        "text": "There are strawberries on it.",
+        "textVi": "Trên bánh có dâu tây đó bố."
+      },
+      {
+        "id": "a-birthday-cake-l4",
+        "speakerId": "mom",
+        "text": "Look at the candle. Make a wish!",
+        "textVi": "Nhìn cây nến kìa. Anh ước một điều đi!"
+      },
+      {
+        "id": "a-birthday-cake-l5",
+        "speakerId": "dad",
+        "text": "OK. Now I’ll blow out the candle.",
+        "textVi": "Được rồi. Giờ bố thổi nến nhé."
+      },
+      {
+        "id": "a-birthday-cake-l6",
+        "speakerId": "ben",
+        "text": "Let’s put the cake on the serving tray!",
+        "textVi": "Mình đặt bánh lên khay đi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-birthday-cake-q1",
+        "prompt": "What is on the cake?",
+        "suggestedAnswer": "There are strawberries on the cake."
+      },
+      {
+        "id": "a-birthday-cake-q2",
+        "prompt": "What does Dad blow out?",
+        "suggestedAnswer": "Dad blows out the candle."
+      }
+    ]
+  },
+  {
+    "id": "after-dinner",
+    "sceneId": "dining-room",
+    "title": "After Dinner",
+    "order": 9,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Lily and Mom tidy up after dinner.",
+    "lines": [
+      {
+        "id": "after-dinner-l1",
+        "speakerId": "lily",
+        "text": "I’m full! That was a great dinner.",
+        "textVi": "Con no rồi! Bữa tối ngon quá ạ."
+      },
+      {
+        "id": "after-dinner-l2",
+        "speakerId": "mom",
+        "text": "Good. Take a tissue from the tissue box.",
+        "textVi": "Tốt lắm. Con lấy một tờ khăn giấy trong hộp nhé."
+      },
+      {
+        "id": "after-dinner-l3",
+        "speakerId": "lily",
+        "text": "Thank you. Dad wants a toothpick.",
+        "textVi": "Con cảm ơn mẹ. Bố muốn lấy tăm ạ."
+      },
+      {
+        "id": "after-dinner-l4",
+        "speakerId": "mom",
+        "text": "The toothpick holder is next to the candle.",
+        "textVi": "Lọ đựng tăm ở cạnh cây nến đó con."
+      },
+      {
+        "id": "after-dinner-l5",
+        "speakerId": "lily",
+        "text": "What about the bread? We didn’t eat it all.",
+        "textVi": "Còn bánh mì thì sao ạ? Nhà mình chưa ăn hết."
+      },
+      {
+        "id": "after-dinner-l6",
+        "speakerId": "mom",
+        "text": "Put it under the food cover.",
+        "textVi": "Con để nó dưới lồng bàn nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "after-dinner-q1",
+        "prompt": "Where is the toothpick holder?",
+        "suggestedAnswer": "The toothpick holder is next to the candle."
+      },
+      {
+        "id": "after-dinner-q2",
+        "prompt": "Where do you put the bread?",
+        "suggestedAnswer": "I put the bread under the food cover."
+      }
+    ]
+  },
+  {
+    "id": "fruit-for-dessert",
+    "sceneId": "dining-room",
+    "title": "Fruit for Dessert",
+    "order": 10,
+    "poster": "/assets/scenes/dining-room/dining-room-desktop.webp",
+    "description": "Ben picks fruit and gets plates from the dining cabinet.",
+    "lines": [
+      {
+        "id": "fruit-for-dessert-l1",
+        "speakerId": "ben",
+        "text": "Mom, can we have some fruit?",
+        "textVi": "Mẹ ơi, mình ăn trái cây được không ạ?"
+      },
+      {
+        "id": "fruit-for-dessert-l2",
+        "speakerId": "mom",
+        "text": "Sure! The fruit bowl is on the table.",
+        "textVi": "Được chứ! Tô trái cây ở trên bàn đó."
+      },
+      {
+        "id": "fruit-for-dessert-l3",
+        "speakerId": "ben",
+        "text": "I want an apple. Lily wants a banana.",
+        "textVi": "Con muốn ăn táo. Lily muốn ăn chuối."
+      },
+      {
+        "id": "fruit-for-dessert-l4",
+        "speakerId": "mom",
+        "text": "Please get two small plates.",
+        "textVi": "Con lấy hai cái đĩa nhỏ nhé."
+      },
+      {
+        "id": "fruit-for-dessert-l5",
+        "speakerId": "ben",
+        "text": "Where are the plates?",
+        "textVi": "Đĩa ở đâu ạ?"
+      },
+      {
+        "id": "fruit-for-dessert-l6",
+        "speakerId": "mom",
+        "text": "They are in the dining cabinet.",
+        "textVi": "Ở trong tủ đựng đồ phòng ăn đó con."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "fruit-for-dessert-q1",
+        "prompt": "Where is the fruit bowl?",
+        "suggestedAnswer": "The fruit bowl is on the table."
+      },
+      {
+        "id": "fruit-for-dessert-q2",
+        "prompt": "Where are the plates?",
+        "suggestedAnswer": "The plates are in the dining cabinet."
+      }
+    ]
   }
 ]
