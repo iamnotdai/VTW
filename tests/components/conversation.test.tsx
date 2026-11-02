@@ -18,13 +18,13 @@ describe('Conversations (screens 09–15)', () => {
     expect(
       await screen.findByRole('heading', { name: 'Conversation', level: 1 }),
     ).toBeInTheDocument();
-    // The first place with conversations (Living Room) is chosen.
-    const livingRoom = screen.getByRole('button', { name: /Living Room/, pressed: true });
-    expect(within(livingRoom).getByText('0/10')).toBeInTheDocument();
+    // The first place with conversations (House Exterior) is chosen.
+    const houseExterior = screen.getByRole('button', { name: /House Exterior/, pressed: true });
+    expect(within(houseExterior).getByText('0/10')).toBeInTheDocument();
     // The chosen place lists its conversations, opening the shared detail page.
-    expect(screen.getByRole('link', { name: /My Living Room/ })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /My House/ })).toHaveAttribute(
       'href',
-      '/conversation/my-living-room',
+      '/conversation/my-house',
     );
   });
 

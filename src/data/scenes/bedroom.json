@@ -2,7 +2,7 @@
   "id": "bedroom",
   "title": "Bedroom",
   "group": "home",
-  "order": 4,
+  "order": 5,
   "description": "Learn words and practice conversations in the bedroom.",
   "status": "available",
   "thumbnail": "/assets/scenes/bedroom/bedroom-desktop.webp",

@@ -2,7 +2,7 @@
   "id": "living-room",
   "title": "Living Room",
   "group": "home",
-  "order": 1,
+  "order": 2,
   "description": "Learn words and practice conversations in the living room.",
   "status": "available",
   "thumbnail": "/assets/scenes/living-room/living-room-desktop.webp",

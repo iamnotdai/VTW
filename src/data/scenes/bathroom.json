@@ -2,7 +2,7 @@
   "id": "bathroom",
   "title": "Bathroom",
   "group": "home",
-  "order": 5,
+  "order": 6,
   "description": "Learn words and practice conversations in the bathroom.",
   "status": "available",
   "thumbnail": "/assets/scenes/bathroom/bathroom-desktop.webp",

@@ -2,7 +2,7 @@
   "id": "house-exterior",
   "title": "House Exterior",
   "group": "home",
-  "order": 6,
+  "order": 1,
   "description": "Learn words and practice conversations outside the house.",
   "status": "available",
   "thumbnail": "/assets/scenes/house-exterior/house-exterior-desktop.webp",

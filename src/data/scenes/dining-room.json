@@ -2,7 +2,7 @@
   "id": "dining-room",
   "title": "Dining Room",
   "group": "home",
-  "order": 2,
+  "order": 4,
   "description": "Learn words and practice conversations in the dining room.",
   "status": "available",
   "thumbnail": "/assets/scenes/dining-room/dining-room-desktop.webp",
