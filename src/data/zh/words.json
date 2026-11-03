@@ -3572,5 +3572,557 @@
     ],
     "relatedWordIds": ["dining-fruit-bowl", "serving-tray", "food-cover"],
     "distractorWordIds": ["bread", "salad", "candle"]
+  },
+  "car": {
+    "id": "car",
+    "text": "汽车",
+    "pinyin": "qìchē",
+    "measure": "辆",
+    "meaningVi": "ô tô",
+    "image": "/assets/scenes/garage/objects/01_car.webp",
+    "acceptedAnswers": ["汽车"],
+    "examples": [
+      {
+        "text": "这是我的汽车。",
+        "vi": "Đây là ô tô của mình.",
+        "pinyin": "Zhè shì wǒ de qì chē."
+      },
+      {
+        "text": "蓝色的汽车在车库里。",
+        "vi": "Chiếc ô tô màu xanh ở trong gara.",
+        "pinyin": "Lán sè de qì chē zài chē kù lǐ."
+      }
+    ],
+    "relatedWordIds": ["car-key", "car-cover", "tire"],
+    "distractorWordIds": ["motorbike", "bicycle", "car-jack"]
+  },
+  "motorbike": {
+    "id": "motorbike",
+    "text": "摩托车",
+    "pinyin": "mótuōchē",
+    "measure": "辆",
+    "meaningVi": "xe máy",
+    "image": "/assets/scenes/garage/objects/02_motorbike.webp",
+    "acceptedAnswers": ["摩托车"],
+    "examples": [
+      {
+        "text": "我骑摩托车。",
+        "vi": "Mình đi xe máy.",
+        "pinyin": "Wǒ qí mó tuō chē."
+      },
+      {
+        "text": "摩托车在自行车旁边。",
+        "vi": "Xe máy ở cạnh xe đạp.",
+        "pinyin": "Mó tuō chē zài zì xíng chē páng biān."
+      }
+    ],
+    "relatedWordIds": ["helmet", "car", "garage-overhead-door"],
+    "distractorWordIds": ["bicycle", "car", "car-cover"]
+  },
+  "bicycle": {
+    "id": "bicycle",
+    "text": "自行车",
+    "pinyin": "zìxíngchē",
+    "measure": "辆",
+    "meaningVi": "xe đạp",
+    "image": "/assets/scenes/garage/objects/03_bicycle.webp",
+    "acceptedAnswers": ["自行车", "单车"],
+    "examples": [
+      {
+        "text": "这是我的自行车。",
+        "vi": "Đây là xe đạp của mình.",
+        "pinyin": "Zhè shì wǒ de zì xíng chē."
+      },
+      {
+        "text": "我的自行车有一个篮子。",
+        "vi": "Xe đạp của mình có giỏ.",
+        "pinyin": "Wǒ de zì xíng chē yǒu yí gè lán zi."
+      }
+    ],
+    "relatedWordIds": ["air-pump", "helmet", "tire"],
+    "distractorWordIds": ["motorbike", "car", "ladder"]
+  },
+  "garage-overhead-door": {
+    "id": "garage-overhead-door",
+    "text": "车库门",
+    "pinyin": "chēkùmén",
+    "measure": "扇",
+    "meaningVi": "cửa nhà để xe",
+    "image": "/assets/scenes/garage/objects/04_garage-overhead-door.webp",
+    "acceptedAnswers": ["车库门"],
+    "examples": [
+      {
+        "text": "车库门开着。",
+        "vi": "Cửa nhà để xe đang mở.",
+        "pinyin": "Chē kù mén kāi zhe."
+      },
+      {
+        "text": "车库门可以升上去，也可以降下来。",
+        "vi": "Cửa gara kéo lên và kéo xuống.",
+        "pinyin": "Chē kù mén kě yǐ shēng shàng qù, yě kě yǐ jiàng xià lái."
+      }
+    ],
+    "relatedWordIds": ["garage-remote", "car", "parking-sign"],
+    "distractorWordIds": ["workbench", "shelf", "car-cover"]
+  },
+  "garage-remote": {
+    "id": "garage-remote",
+    "text": "遥控器",
+    "pinyin": "yáokòngqì",
+    "measure": "个",
+    "meaningVi": "điều khiển từ xa",
+    "image": "/assets/scenes/garage/objects/05_garage-remote.webp",
+    "acceptedAnswers": ["遥控器"],
+    "examples": [
+      {
+        "text": "这个遥控器能打开车库门。",
+        "vi": "Cái điều khiển từ xa này mở cửa nhà để xe.",
+        "pinyin": "Zhè ge yáo kòng qì néng dǎ kāi chē kù mén."
+      },
+      {
+        "text": "遥控器在工作台上。",
+        "vi": "Cái điều khiển ở trên bàn làm việc.",
+        "pinyin": "Yáo kòng qì zài gōng zuò tái shàng."
+      }
+    ],
+    "relatedWordIds": ["garage-overhead-door", "car-key", "workbench"],
+    "distractorWordIds": ["car-key", "flashlight", "car-battery"]
+  },
+  "car-key": {
+    "id": "car-key",
+    "text": "车钥匙",
+    "pinyin": "chēyàoshi",
+    "measure": "把",
+    "meaningVi": "chìa khóa ô tô",
+    "image": "/assets/scenes/garage/objects/06_car-key.webp",
+    "acceptedAnswers": ["车钥匙"],
+    "examples": [
+      {
+        "text": "这是我的车钥匙。",
+        "vi": "Đây là chìa khóa ô tô của mình.",
+        "pinyin": "Zhè shì wǒ de chē yào shi."
+      },
+      {
+        "text": "爸爸把车钥匙放在工作台上。",
+        "vi": "Bố để chìa khóa ô tô trên bàn làm việc.",
+        "pinyin": "Bà ba bǎ chē yào shi fàng zài gōng zuò tái shàng."
+      }
+    ],
+    "relatedWordIds": ["car", "garage-remote", "workbench"],
+    "distractorWordIds": ["garage-remote", "flashlight", "helmet"]
+  },
+  "helmet": {
+    "id": "helmet",
+    "text": "头盔",
+    "pinyin": "tóukuī",
+    "measure": "顶",
+    "meaningVi": "mũ bảo hiểm",
+    "image": "/assets/scenes/garage/objects/07_helmet.webp",
+    "acceptedAnswers": ["头盔"],
+    "examples": [
+      {
+        "text": "请戴上你的头盔。",
+        "vi": "Con hãy đội mũ bảo hiểm nhé.",
+        "pinyin": "Qǐng dài shàng nǐ de tóu kuī."
+      },
+      {
+        "text": "我的头盔是白色和蓝色的。",
+        "vi": "Mũ bảo hiểm của mình màu trắng và xanh.",
+        "pinyin": "Wǒ de tóu kuī shì bái sè hé lán sè de."
+      }
+    ],
+    "relatedWordIds": ["motorbike", "bicycle", "workbench"],
+    "distractorWordIds": ["garage-bucket", "flashlight", "storage-box"]
+  },
+  "tire": {
+    "id": "tire",
+    "text": "轮胎",
+    "pinyin": "lúntāi",
+    "measure": "个",
+    "meaningVi": "lốp xe",
+    "image": "/assets/scenes/garage/objects/08_tire.webp",
+    "acceptedAnswers": ["轮胎"],
+    "examples": [
+      {
+        "text": "轮胎是黑色的。",
+        "vi": "Lốp xe màu đen.",
+        "pinyin": "Lún tāi shì hēi sè de."
+      },
+      {
+        "text": "轮胎在地上。",
+        "vi": "Cái lốp xe ở trên sàn.",
+        "pinyin": "Lún tāi zài dì shàng."
+      }
+    ],
+    "relatedWordIds": ["air-pump", "car-jack", "car"],
+    "distractorWordIds": ["garage-bucket", "garage-trash-can", "water-hose"]
+  },
+  "air-pump": {
+    "id": "air-pump",
+    "text": "打气筒",
+    "pinyin": "dǎqìtǒng",
+    "measure": "个",
+    "meaningVi": "bơm hơi",
+    "image": "/assets/scenes/garage/objects/09_air-pump.webp",
+    "acceptedAnswers": ["打气筒", "气筒"],
+    "examples": [
+      {
+        "text": "我用打气筒。",
+        "vi": "Mình dùng bơm hơi.",
+        "pinyin": "Wǒ yòng dǎ qì tǒng."
+      },
+      {
+        "text": "打气筒是黄色的。",
+        "vi": "Cái bơm hơi màu vàng.",
+        "pinyin": "Dǎ qì tǒng shì huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["tire", "bicycle", "car-jack"],
+    "distractorWordIds": ["car-jack", "flashlight", "broom"]
+  },
+  "car-jack": {
+    "id": "car-jack",
+    "text": "千斤顶",
+    "pinyin": "qiānjīndǐng",
+    "measure": "个",
+    "meaningVi": "kích nâng ô tô",
+    "image": "/assets/scenes/garage/objects/10_car-jack.webp",
+    "acceptedAnswers": ["千斤顶"],
+    "examples": [
+      {
+        "text": "千斤顶能把汽车顶起来。",
+        "vi": "Kích nâng ô tô nâng chiếc xe lên.",
+        "pinyin": "Qiān jīn dǐng néng bǎ qì chē dǐng qǐ lái."
+      },
+      {
+        "text": "千斤顶是红色的。",
+        "vi": "Cái kích màu đỏ.",
+        "pinyin": "Qiān jīn dǐng shì hóng sè de."
+      }
+    ],
+    "relatedWordIds": ["tire", "toolbox", "car"],
+    "distractorWordIds": ["air-pump", "toolbox", "ladder"]
+  },
+  "toolbox": {
+    "id": "toolbox",
+    "text": "工具箱",
+    "pinyin": "gōngjùxiāng",
+    "measure": "个",
+    "meaningVi": "hộp dụng cụ",
+    "image": "/assets/scenes/garage/objects/11_toolbox.webp",
+    "acceptedAnswers": ["工具箱"],
+    "examples": [
+      {
+        "text": "工具箱在架子上。",
+        "vi": "Hộp dụng cụ ở trên kệ.",
+        "pinyin": "Gōng jù xiāng zài jià zi shàng."
+      },
+      {
+        "text": "爸爸把工具放在工具箱里。",
+        "vi": "Bố cất dụng cụ trong hộp dụng cụ.",
+        "pinyin": "Bà ba bǎ gōng jù fàng zài gōng jù xiāng lǐ."
+      }
+    ],
+    "relatedWordIds": ["workbench", "car-jack", "flashlight"],
+    "distractorWordIds": ["storage-box", "car-battery", "garage-bucket"]
+  },
+  "car-battery": {
+    "id": "car-battery",
+    "text": "汽车电瓶",
+    "pinyin": "qìchē diànpíng",
+    "measure": "块",
+    "meaningVi": "ắc quy ô tô",
+    "image": "/assets/scenes/garage/objects/12_car-battery.webp",
+    "acceptedAnswers": ["汽车电瓶", "电瓶"],
+    "examples": [
+      {
+        "text": "汽车电瓶在引擎盖下面。",
+        "vi": "Ắc quy ô tô ở dưới nắp capô.",
+        "pinyin": "Qì chē diàn píng zài yǐn qíng gài xià miàn."
+      },
+      {
+        "text": "汽车电瓶很重。",
+        "vi": "Ắc quy ô tô rất nặng.",
+        "pinyin": "Qì chē diàn píng hěn zhòng."
+      }
+    ],
+    "relatedWordIds": ["car", "workbench", "flashlight"],
+    "distractorWordIds": ["toolbox", "storage-box", "oil-can"]
+  },
+  "oil-can": {
+    "id": "oil-can",
+    "text": "机油壶",
+    "pinyin": "jīyóuhú",
+    "measure": "个",
+    "meaningVi": "bình dầu",
+    "image": "/assets/scenes/garage/objects/13_oil-can.webp",
+    "acceptedAnswers": ["机油壶"],
+    "examples": [
+      {
+        "text": "这是机油壶。",
+        "vi": "Đây là bình dầu.",
+        "pinyin": "Zhè shì jī yóu hú."
+      },
+      {
+        "text": "机油壶在架子上。",
+        "vi": "Bình dầu ở trên kệ.",
+        "pinyin": "Jī yóu hú zài jià zi shàng."
+      }
+    ],
+    "relatedWordIds": ["shelf", "car", "bicycle"],
+    "distractorWordIds": ["garage-bucket", "garage-trash-can", "car-battery"]
+  },
+  "water-hose": {
+    "id": "water-hose",
+    "text": "水管",
+    "pinyin": "shuǐguǎn",
+    "measure": "条",
+    "meaningVi": "vòi nước",
+    "image": "/assets/scenes/garage/objects/14_water-hose.webp",
+    "acceptedAnswers": ["水管"],
+    "examples": [
+      {
+        "text": "水管挂在墙上。",
+        "vi": "Vòi nước treo trên tường.",
+        "pinyin": "Shuǐ guǎn guà zài qiáng shàng."
+      },
+      {
+        "text": "我们用水管洗车。",
+        "vi": "Mình rửa ô tô bằng vòi nước.",
+        "pinyin": "Wǒ men yòng shuǐ guǎn xǐ chē."
+      }
+    ],
+    "relatedWordIds": ["garage-bucket", "car", "car-cover"],
+    "distractorWordIds": ["tire", "air-pump", "broom"]
+  },
+  "parking-sign": {
+    "id": "parking-sign",
+    "text": "停车标志",
+    "pinyin": "tíngchē biāozhì",
+    "measure": "块",
+    "meaningVi": "biển báo đỗ xe",
+    "image": "/assets/scenes/garage/objects/15_parking-sign.webp",
+    "acceptedAnswers": ["停车标志"],
+    "examples": [
+      {
+        "text": "看看停车标志。",
+        "vi": "Hãy nhìn biển báo đỗ xe.",
+        "pinyin": "Kàn kàn tíng chē biāo zhì."
+      },
+      {
+        "text": "停车标志是蓝色的。",
+        "vi": "Biển báo đỗ xe màu xanh dương.",
+        "pinyin": "Tíng chē biāo zhì shì lán sè de."
+      }
+    ],
+    "relatedWordIds": ["car", "garage-overhead-door", "motorbike"],
+    "distractorWordIds": ["flashlight", "shelf", "ladder"]
+  },
+  "car-cover": {
+    "id": "car-cover",
+    "text": "车罩",
+    "pinyin": "chēzhào",
+    "measure": "个",
+    "meaningVi": "bạt phủ ô tô",
+    "image": "/assets/scenes/garage/objects/16_car-cover.webp",
+    "acceptedAnswers": ["车罩"],
+    "examples": [
+      {
+        "text": "车罩是蓝色的。",
+        "vi": "Bạt phủ ô tô màu xanh.",
+        "pinyin": "Chē zhào shì lán sè de."
+      },
+      {
+        "text": "车罩让汽车保持干净。",
+        "vi": "Bạt phủ giữ cho ô tô sạch sẽ.",
+        "pinyin": "Chē zhào ràng qì chē bǎo chí gān jing."
+      }
+    ],
+    "relatedWordIds": ["car", "shelf", "water-hose"],
+    "distractorWordIds": ["storage-box", "garage-bucket", "helmet"]
+  },
+  "ladder": {
+    "id": "ladder",
+    "text": "梯子",
+    "pinyin": "tīzi",
+    "measure": "把",
+    "meaningVi": "cái thang",
+    "image": "/assets/scenes/garage/objects/17_ladder.webp",
+    "acceptedAnswers": ["梯子"],
+    "examples": [
+      {
+        "text": "梯子在墙边。",
+        "vi": "Cái thang ở gần bức tường.",
+        "pinyin": "Tī zi zài qiáng biān."
+      },
+      {
+        "text": "请扶好梯子。",
+        "vi": "Bạn giữ cái thang giúp mình nhé.",
+        "pinyin": "Qǐng fú hǎo tī zi."
+      }
+    ],
+    "relatedWordIds": ["shelf", "storage-box", "oil-can"],
+    "distractorWordIds": ["shelf", "workbench", "broom"]
+  },
+  "shelf": {
+    "id": "shelf",
+    "text": "置物架",
+    "pinyin": "zhìwùjià",
+    "measure": "个",
+    "meaningVi": "kệ để đồ",
+    "image": "/assets/scenes/garage/objects/18_shelf.webp",
+    "acceptedAnswers": ["置物架", "架子"],
+    "examples": [
+      {
+        "text": "置物架上放着箱子。",
+        "vi": "Cái kệ để những chiếc hộp.",
+        "pinyin": "Zhì wù jià shàng fàng zhe xiāng zi."
+      },
+      {
+        "text": "置物架是橙色和灰色的。",
+        "vi": "Cái kệ màu cam và xám.",
+        "pinyin": "Zhì wù jià shì chéng sè hé huī sè de."
+      }
+    ],
+    "relatedWordIds": ["storage-box", "oil-can", "car-cover"],
+    "distractorWordIds": ["workbench", "ladder", "storage-box"]
+  },
+  "storage-box": {
+    "id": "storage-box",
+    "text": "收纳箱",
+    "pinyin": "shōunàxiāng",
+    "measure": "个",
+    "meaningVi": "hộp đựng đồ",
+    "image": "/assets/scenes/garage/objects/19_storage-box.webp",
+    "acceptedAnswers": ["收纳箱"],
+    "examples": [
+      {
+        "text": "这是收纳箱。",
+        "vi": "Đây là hộp đựng đồ.",
+        "pinyin": "Zhè shì shōu nà xiāng."
+      },
+      {
+        "text": "我把玩具放进收纳箱。",
+        "vi": "Mình cất đồ chơi vào hộp đựng đồ.",
+        "pinyin": "Wǒ bǎ wán jù fàng jìn shōu nà xiāng."
+      }
+    ],
+    "relatedWordIds": ["shelf", "ladder", "toolbox"],
+    "distractorWordIds": ["toolbox", "garage-trash-can", "car-battery"]
+  },
+  "workbench": {
+    "id": "workbench",
+    "text": "工作台",
+    "pinyin": "gōngzuòtái",
+    "measure": "张",
+    "meaningVi": "bàn làm việc",
+    "image": "/assets/scenes/garage/objects/20_workbench.webp",
+    "acceptedAnswers": ["工作台"],
+    "examples": [
+      {
+        "text": "工作台在车库里。",
+        "vi": "Bàn làm việc ở trong nhà để xe.",
+        "pinyin": "Gōng zuò tái zài chē kù lǐ."
+      },
+      {
+        "text": "爸爸在工作台上修东西。",
+        "vi": "Bố sửa đồ ở bàn làm việc.",
+        "pinyin": "Bà ba zài gōng zuò tái shàng xiū dōng xi."
+      }
+    ],
+    "relatedWordIds": ["toolbox", "helmet", "car-key"],
+    "distractorWordIds": ["shelf", "storage-box", "ladder"]
+  },
+  "broom": {
+    "id": "broom",
+    "text": "扫帚",
+    "pinyin": "sàozhou",
+    "measure": "把",
+    "meaningVi": "cái chổi",
+    "image": "/assets/scenes/garage/objects/21_broom.webp",
+    "acceptedAnswers": ["扫帚", "扫把"],
+    "examples": [
+      {
+        "text": "我用扫帚扫地。",
+        "vi": "Mình dùng chổi để quét sàn.",
+        "pinyin": "Wǒ yòng sào zhou sǎo dì."
+      },
+      {
+        "text": "扫帚在水桶旁边。",
+        "vi": "Cái chổi ở cạnh cái xô.",
+        "pinyin": "Sào zhou zài shuǐ tǒng páng biān."
+      }
+    ],
+    "relatedWordIds": ["garage-bucket", "garage-trash-can", "workbench"],
+    "distractorWordIds": ["ladder", "water-hose", "air-pump"]
+  },
+  "garage-bucket": {
+    "id": "garage-bucket",
+    "text": "水桶",
+    "pinyin": "shuǐtǒng",
+    "measure": "个",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/garage/objects/22_garage-bucket.webp",
+    "acceptedAnswers": ["水桶"],
+    "examples": [
+      {
+        "text": "水桶在扫帚旁边。",
+        "vi": "Cái xô ở cạnh cái chổi.",
+        "pinyin": "Shuǐ tǒng zài sào zhou páng biān."
+      },
+      {
+        "text": "水桶上有一条毛巾。",
+        "vi": "Có một cái khăn trên cái xô.",
+        "pinyin": "Shuǐ tǒng shàng yǒu yì tiáo máo jīn."
+      }
+    ],
+    "relatedWordIds": ["broom", "water-hose", "car"],
+    "distractorWordIds": ["garage-trash-can", "storage-box", "oil-can"]
+  },
+  "garage-trash-can": {
+    "id": "garage-trash-can",
+    "text": "垃圾桶",
+    "pinyin": "lājītǒng",
+    "measure": "个",
+    "meaningVi": "thùng rác",
+    "image": "/assets/scenes/garage/objects/23_garage-trash-can.webp",
+    "acceptedAnswers": ["垃圾桶"],
+    "examples": [
+      {
+        "text": "把它放进垃圾桶。",
+        "vi": "Hãy bỏ nó vào thùng rác.",
+        "pinyin": "Bǎ tā fàng jìn lā jī tǒng."
+      },
+      {
+        "text": "垃圾桶在角落里。",
+        "vi": "Thùng rác ở trong góc.",
+        "pinyin": "Lā jī tǒng zài jiǎo luò lǐ."
+      }
+    ],
+    "relatedWordIds": ["broom", "garage-bucket", "workbench"],
+    "distractorWordIds": ["garage-bucket", "storage-box", "oil-can"]
+  },
+  "flashlight": {
+    "id": "flashlight",
+    "text": "手电筒",
+    "pinyin": "shǒudiàntǒng",
+    "measure": "个",
+    "meaningVi": "đèn pin",
+    "image": "/assets/scenes/garage/objects/24_flashlight.webp",
+    "acceptedAnswers": ["手电筒", "电筒"],
+    "examples": [
+      {
+        "text": "这个手电筒很亮。",
+        "vi": "Cái đèn pin này rất sáng.",
+        "pinyin": "Zhè ge shǒu diàn tǒng hěn liàng."
+      },
+      {
+        "text": "天黑的时候，我用手电筒。",
+        "vi": "Mình dùng đèn pin khi trời tối.",
+        "pinyin": "Tiān hēi de shí hou, wǒ yòng shǒu diàn tǒng."
+      }
+    ],
+    "relatedWordIds": ["workbench", "car-battery", "toolbox"],
+    "distractorWordIds": ["garage-remote", "air-pump", "helmet"]
   }
 }

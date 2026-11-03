@@ -3532,5 +3532,585 @@
         "suggestedAnswer": "The plates are in the dining cabinet."
       }
     ]
+  },
+  {
+    "id": "our-garage",
+    "sceneId": "garage",
+    "title": "Our Garage",
+    "order": 1,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Dad shows Lily the car, the motorbike and her bicycle.",
+    "lines": [
+      {
+        "id": "our-garage-l1",
+        "speakerId": "dad",
+        "text": "Lily, this is our garage.",
+        "textVi": "Lily ơi, đây là gara nhà mình."
+      },
+      {
+        "id": "our-garage-l2",
+        "speakerId": "lily",
+        "text": "Wow, it’s big! I see our car.",
+        "textVi": "Oa, to quá! Con thấy ô tô nhà mình."
+      },
+      {
+        "id": "our-garage-l3",
+        "speakerId": "dad",
+        "text": "Yes. The motorbike is next to the car.",
+        "textVi": "Ừ. Xe máy ở cạnh ô tô."
+      },
+      {
+        "id": "our-garage-l4",
+        "speakerId": "lily",
+        "text": "And there is my bicycle!",
+        "textVi": "Còn kia là xe đạp của con!"
+      },
+      {
+        "id": "our-garage-l5",
+        "speakerId": "dad",
+        "text": "Right. It has a little basket.",
+        "textVi": "Đúng rồi. Nó có một cái giỏ nhỏ."
+      },
+      {
+        "id": "our-garage-l6",
+        "speakerId": "lily",
+        "text": "I love our garage, Dad.",
+        "textVi": "Con thích gara nhà mình lắm, bố ạ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-garage-q1",
+        "prompt": "What is next to the car?",
+        "suggestedAnswer": "The motorbike is next to the car."
+      },
+      {
+        "id": "our-garage-q2",
+        "prompt": "What does Lily’s bicycle have?",
+        "suggestedAnswer": "It has a little basket."
+      }
+    ]
+  },
+  {
+    "id": "open-the-garage-door",
+    "sceneId": "garage",
+    "title": "Open the Garage Door",
+    "order": 2,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Ben finds the remote control, and Mom opens the garage door.",
+    "lines": [
+      {
+        "id": "open-the-garage-door-l1",
+        "speakerId": "mom",
+        "text": "Ben, please bring me the remote control.",
+        "textVi": "Ben ơi, con mang cái điều khiển cho mẹ nhé."
+      },
+      {
+        "id": "open-the-garage-door-l2",
+        "speakerId": "ben",
+        "text": "Here it is, Mom. It was on the workbench.",
+        "textVi": "Đây ạ, mẹ. Nó ở trên bàn làm việc."
+      },
+      {
+        "id": "open-the-garage-door-l3",
+        "speakerId": "mom",
+        "text": "Thank you. Now I press the top button.",
+        "textVi": "Cảm ơn con. Giờ mẹ bấm nút ở trên."
+      },
+      {
+        "id": "open-the-garage-door-l4",
+        "speakerId": "ben",
+        "text": "Look! The garage door goes up!",
+        "textVi": "Mẹ nhìn kìa! Cửa gara kéo lên rồi!"
+      },
+      {
+        "id": "open-the-garage-door-l5",
+        "speakerId": "mom",
+        "text": "Now we can drive the car out.",
+        "textVi": "Giờ mình lái ô tô ra được rồi."
+      },
+      {
+        "id": "open-the-garage-door-l6",
+        "speakerId": "ben",
+        "text": "Can I press the button next time?",
+        "textVi": "Lần sau con bấm nút được không ạ?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "open-the-garage-door-q1",
+        "prompt": "What opens the garage door?",
+        "suggestedAnswer": "The remote control opens the garage door."
+      },
+      {
+        "id": "open-the-garage-door-q2",
+        "prompt": "Where was the remote control?",
+        "suggestedAnswer": "It was on the workbench."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-car-key",
+    "sceneId": "garage",
+    "title": "Where Is the Car Key?",
+    "order": 3,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Dad can’t find his car key, and Lily helps him look.",
+    "lines": [
+      {
+        "id": "where-is-the-car-key-l1",
+        "speakerId": "dad",
+        "text": "Lily, have you seen my car key?",
+        "textVi": "Lily ơi, con có thấy chìa khóa ô tô của bố không?"
+      },
+      {
+        "id": "where-is-the-car-key-l2",
+        "speakerId": "lily",
+        "text": "Is it in your pocket?",
+        "textVi": "Có phải ở trong túi bố không ạ?"
+      },
+      {
+        "id": "where-is-the-car-key-l3",
+        "speakerId": "dad",
+        "text": "No, it isn’t.",
+        "textVi": "Không, không có con ạ."
+      },
+      {
+        "id": "where-is-the-car-key-l4",
+        "speakerId": "lily",
+        "text": "I see it! It’s on the workbench, next to the remote control.",
+        "textVi": "Con thấy rồi! Nó ở trên bàn làm việc, cạnh cái điều khiển."
+      },
+      {
+        "id": "where-is-the-car-key-l5",
+        "speakerId": "dad",
+        "text": "Great! Thank you, Lily.",
+        "textVi": "Tuyệt quá! Cảm ơn con, Lily."
+      },
+      {
+        "id": "where-is-the-car-key-l6",
+        "speakerId": "lily",
+        "text": "You’re welcome. Let’s go!",
+        "textVi": "Không có gì ạ. Mình đi thôi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-car-key-q1",
+        "prompt": "What is Dad looking for?",
+        "suggestedAnswer": "He is looking for his car key."
+      },
+      {
+        "id": "where-is-the-car-key-q2",
+        "prompt": "Where is the car key?",
+        "suggestedAnswer": "It’s on the workbench."
+      }
+    ]
+  },
+  {
+    "id": "wear-your-helmet",
+    "sceneId": "garage",
+    "title": "Wear Your Helmet",
+    "order": 4,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Mom takes Ben to school on the motorbike.",
+    "lines": [
+      {
+        "id": "wear-your-helmet-l1",
+        "speakerId": "mom",
+        "text": "Ben, we’re going to school on the motorbike.",
+        "textVi": "Ben ơi, mình đi xe máy tới trường nhé."
+      },
+      {
+        "id": "wear-your-helmet-l2",
+        "speakerId": "ben",
+        "text": "Yay! I like the motorbike.",
+        "textVi": "Hay quá! Con thích xe máy."
+      },
+      {
+        "id": "wear-your-helmet-l3",
+        "speakerId": "mom",
+        "text": "Please wear your helmet first.",
+        "textVi": "Con đội mũ bảo hiểm trước đã nhé."
+      },
+      {
+        "id": "wear-your-helmet-l4",
+        "speakerId": "ben",
+        "text": "Where is it, Mom?",
+        "textVi": "Nó ở đâu ạ, mẹ?"
+      },
+      {
+        "id": "wear-your-helmet-l5",
+        "speakerId": "mom",
+        "text": "It’s on the workbench.",
+        "textVi": "Nó ở trên bàn làm việc."
+      },
+      {
+        "id": "wear-your-helmet-l6",
+        "speakerId": "ben",
+        "text": "Okay. My helmet is on. Let’s go!",
+        "textVi": "Vâng. Con đội mũ rồi. Mình đi thôi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "wear-your-helmet-q1",
+        "prompt": "What must Ben wear on the motorbike?",
+        "suggestedAnswer": "He must wear his helmet."
+      },
+      {
+        "id": "wear-your-helmet-q2",
+        "prompt": "Where is the helmet?",
+        "suggestedAnswer": "It’s on the workbench."
+      }
+    ]
+  },
+  {
+    "id": "a-soft-tire",
+    "sceneId": "garage",
+    "title": "A Soft Tire",
+    "order": 5,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Ben’s bicycle tire is soft, so Dad gets the air pump.",
+    "lines": [
+      {
+        "id": "a-soft-tire-l1",
+        "speakerId": "ben",
+        "text": "Dad, my bicycle tire is soft.",
+        "textVi": "Bố ơi, lốp xe đạp của con bị xẹp."
+      },
+      {
+        "id": "a-soft-tire-l2",
+        "speakerId": "dad",
+        "text": "Let’s use the air pump.",
+        "textVi": "Mình dùng bơm hơi nhé."
+      },
+      {
+        "id": "a-soft-tire-l3",
+        "speakerId": "ben",
+        "text": "Here is the air pump. It’s yellow.",
+        "textVi": "Bơm hơi đây ạ. Nó màu vàng."
+      },
+      {
+        "id": "a-soft-tire-l4",
+        "speakerId": "dad",
+        "text": "Push the handle up and down.",
+        "textVi": "Con đẩy tay cầm lên xuống nhé."
+      },
+      {
+        "id": "a-soft-tire-l5",
+        "speakerId": "ben",
+        "text": "One, two, three! Is it okay now?",
+        "textVi": "Một, hai, ba! Giờ được chưa bố?"
+      },
+      {
+        "id": "a-soft-tire-l6",
+        "speakerId": "dad",
+        "text": "Yes! The tire is full of air.",
+        "textVi": "Được rồi! Lốp đầy hơi rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-soft-tire-q1",
+        "prompt": "What does Ben use to fix the tire?",
+        "suggestedAnswer": "He uses the air pump."
+      },
+      {
+        "id": "a-soft-tire-q2",
+        "prompt": "What color is the air pump?",
+        "suggestedAnswer": "It’s yellow."
+      }
+    ]
+  },
+  {
+    "id": "changing-a-tire",
+    "sceneId": "garage",
+    "title": "Changing a Tire",
+    "order": 6,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Dad lifts the car with the car jack, and Lily brings the toolbox.",
+    "lines": [
+      {
+        "id": "changing-a-tire-l1",
+        "speakerId": "lily",
+        "text": "Dad, what are you doing?",
+        "textVi": "Bố ơi, bố đang làm gì thế?"
+      },
+      {
+        "id": "changing-a-tire-l2",
+        "speakerId": "dad",
+        "text": "I’m changing a tire on the car.",
+        "textVi": "Bố đang thay lốp ô tô."
+      },
+      {
+        "id": "changing-a-tire-l3",
+        "speakerId": "lily",
+        "text": "What is this red thing?",
+        "textVi": "Cái màu đỏ này là gì ạ?"
+      },
+      {
+        "id": "changing-a-tire-l4",
+        "speakerId": "dad",
+        "text": "It’s a car jack. It lifts the car.",
+        "textVi": "Đó là cái kích. Nó nâng ô tô lên."
+      },
+      {
+        "id": "changing-a-tire-l5",
+        "speakerId": "lily",
+        "text": "Do you need the toolbox?",
+        "textVi": "Bố có cần hộp dụng cụ không?"
+      },
+      {
+        "id": "changing-a-tire-l6",
+        "speakerId": "dad",
+        "text": "Yes, please. You’re a big help!",
+        "textVi": "Có, con lấy giúp bố nhé. Con giỏi quá!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "changing-a-tire-q1",
+        "prompt": "What lifts the car?",
+        "suggestedAnswer": "A car jack lifts the car."
+      },
+      {
+        "id": "changing-a-tire-q2",
+        "prompt": "What is Dad changing?",
+        "suggestedAnswer": "He is changing a tire."
+      }
+    ]
+  },
+  {
+    "id": "the-car-wont-start",
+    "sceneId": "garage",
+    "title": "The Car Won’t Start",
+    "order": 7,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "The car battery is old, so Lily finds a new one and the flashlight.",
+    "lines": [
+      {
+        "id": "the-car-wont-start-l1",
+        "speakerId": "mom",
+        "text": "Oh no, the car won’t start.",
+        "textVi": "Ôi không, ô tô không nổ máy."
+      },
+      {
+        "id": "the-car-wont-start-l2",
+        "speakerId": "lily",
+        "text": "What’s wrong, Mom?",
+        "textVi": "Sao vậy mẹ?"
+      },
+      {
+        "id": "the-car-wont-start-l3",
+        "speakerId": "mom",
+        "text": "Maybe the car battery is old.",
+        "textVi": "Có lẽ ắc quy ô tô cũ rồi."
+      },
+      {
+        "id": "the-car-wont-start-l4",
+        "speakerId": "lily",
+        "text": "There is a new battery under the workbench.",
+        "textVi": "Có một cái ắc quy mới ở dưới bàn làm việc."
+      },
+      {
+        "id": "the-car-wont-start-l5",
+        "speakerId": "mom",
+        "text": "Good! Please bring me the flashlight, too.",
+        "textVi": "Tốt quá! Con mang cả đèn pin cho mẹ nhé."
+      },
+      {
+        "id": "the-car-wont-start-l6",
+        "speakerId": "lily",
+        "text": "Here it is. Now you can see.",
+        "textVi": "Đây ạ. Giờ mẹ nhìn rõ rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-car-wont-start-q1",
+        "prompt": "Why won’t the car start?",
+        "suggestedAnswer": "The car battery is old."
+      },
+      {
+        "id": "the-car-wont-start-q2",
+        "prompt": "Where is the new battery?",
+        "suggestedAnswer": "It’s under the workbench."
+      }
+    ]
+  },
+  {
+    "id": "washing-the-car",
+    "sceneId": "garage",
+    "title": "Washing the Car",
+    "order": 8,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Dad and Ben wash the car with the water hose and a bucket.",
+    "lines": [
+      {
+        "id": "washing-the-car-l1",
+        "speakerId": "dad",
+        "text": "It’s sunny. Let’s wash the car!",
+        "textVi": "Trời nắng rồi. Mình rửa xe nhé!"
+      },
+      {
+        "id": "washing-the-car-l2",
+        "speakerId": "ben",
+        "text": "I’ll get the bucket and the towel.",
+        "textVi": "Con đi lấy cái xô với cái khăn."
+      },
+      {
+        "id": "washing-the-car-l3",
+        "speakerId": "dad",
+        "text": "I’ll take the water hose from the wall.",
+        "textVi": "Bố lấy vòi nước trên tường xuống."
+      },
+      {
+        "id": "washing-the-car-l4",
+        "speakerId": "ben",
+        "text": "Splash! The car is all wet.",
+        "textVi": "Ào! Ô tô ướt hết rồi."
+      },
+      {
+        "id": "washing-the-car-l5",
+        "speakerId": "dad",
+        "text": "Now it’s clean and shiny.",
+        "textVi": "Giờ nó sạch bóng rồi."
+      },
+      {
+        "id": "washing-the-car-l6",
+        "speakerId": "ben",
+        "text": "Let’s put the car cover on tonight.",
+        "textVi": "Tối nay mình phủ bạt cho ô tô nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-the-car-q1",
+        "prompt": "Where is the water hose?",
+        "suggestedAnswer": "It’s on the wall."
+      },
+      {
+        "id": "washing-the-car-q2",
+        "prompt": "What does Ben get?",
+        "suggestedAnswer": "He gets the bucket and the towel."
+      }
+    ]
+  },
+  {
+    "id": "tidy-up-the-garage",
+    "sceneId": "garage",
+    "title": "Tidy Up the Garage",
+    "order": 9,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Mom and Ben sweep the floor and put the toys away.",
+    "lines": [
+      {
+        "id": "tidy-up-the-garage-l1",
+        "speakerId": "mom",
+        "text": "The garage is messy. Let’s tidy up.",
+        "textVi": "Gara bừa bộn quá. Mình dọn dẹp nhé."
+      },
+      {
+        "id": "tidy-up-the-garage-l2",
+        "speakerId": "ben",
+        "text": "I can sweep the floor with the broom.",
+        "textVi": "Con quét sàn bằng chổi được ạ."
+      },
+      {
+        "id": "tidy-up-the-garage-l3",
+        "speakerId": "mom",
+        "text": "Great. Put the trash in the trash can.",
+        "textVi": "Tốt lắm. Con bỏ rác vào thùng rác nhé."
+      },
+      {
+        "id": "tidy-up-the-garage-l4",
+        "speakerId": "ben",
+        "text": "Where do the toys go?",
+        "textVi": "Đồ chơi để ở đâu ạ?"
+      },
+      {
+        "id": "tidy-up-the-garage-l5",
+        "speakerId": "mom",
+        "text": "Put them in the storage box on the shelf.",
+        "textVi": "Con cất vào hộp đựng đồ trên kệ nhé."
+      },
+      {
+        "id": "tidy-up-the-garage-l6",
+        "speakerId": "ben",
+        "text": "Done! The garage is clean now.",
+        "textVi": "Xong rồi! Gara sạch rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tidy-up-the-garage-q1",
+        "prompt": "What does Ben use to sweep the floor?",
+        "suggestedAnswer": "He uses the broom."
+      },
+      {
+        "id": "tidy-up-the-garage-q2",
+        "prompt": "Where do the toys go?",
+        "suggestedAnswer": "They go in the storage box."
+      }
+    ]
+  },
+  {
+    "id": "up-the-ladder",
+    "sceneId": "garage",
+    "title": "Up the Ladder",
+    "order": 10,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "Lily’s bicycle is noisy, so Dad climbs the ladder to get the oil can.",
+    "lines": [
+      {
+        "id": "up-the-ladder-l1",
+        "speakerId": "lily",
+        "text": "Dad, my bicycle is noisy.",
+        "textVi": "Bố ơi, xe đạp của con kêu cọt kẹt."
+      },
+      {
+        "id": "up-the-ladder-l2",
+        "speakerId": "dad",
+        "text": "It needs some oil. The oil can is on the top shelf.",
+        "textVi": "Nó cần tra dầu. Bình dầu ở ngăn trên cùng của kệ."
+      },
+      {
+        "id": "up-the-ladder-l3",
+        "speakerId": "lily",
+        "text": "It’s too high!",
+        "textVi": "Cao quá!"
+      },
+      {
+        "id": "up-the-ladder-l4",
+        "speakerId": "dad",
+        "text": "I’ll use the ladder. Please hold it for me.",
+        "textVi": "Bố dùng thang. Con giữ thang giúp bố nhé."
+      },
+      {
+        "id": "up-the-ladder-l5",
+        "speakerId": "lily",
+        "text": "I’m holding it. Be careful, Dad!",
+        "textVi": "Con giữ rồi. Bố cẩn thận nhé!"
+      },
+      {
+        "id": "up-the-ladder-l6",
+        "speakerId": "dad",
+        "text": "Got it! Now your bicycle will be quiet.",
+        "textVi": "Lấy được rồi! Giờ xe đạp của con sẽ hết kêu."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "up-the-ladder-q1",
+        "prompt": "Where is the oil can?",
+        "suggestedAnswer": "It’s on the top shelf."
+      },
+      {
+        "id": "up-the-ladder-q2",
+        "prompt": "What does Dad use to get the oil can?",
+        "suggestedAnswer": "He uses the ladder."
+      }
+    ]
   }
 ]

@@ -3238,5 +3238,542 @@
     ],
     "relatedWordIds": ["dining-fruit-bowl", "serving-tray", "food-cover"],
     "distractorWordIds": ["bread", "salad", "candle"]
+  },
+  "car": {
+    "id": "car",
+    "text": "car",
+    "ipa": "/kɑːr/",
+    "meaningVi": "ô tô",
+    "image": "/assets/scenes/garage/objects/01_car.webp",
+    "acceptedAnswers": ["car", "a car", "the car"],
+    "examples": [
+      {
+        "text": "This is my car.",
+        "vi": "Đây là ô tô của mình."
+      },
+      {
+        "text": "The blue car is in the garage.",
+        "vi": "Chiếc ô tô màu xanh ở trong gara."
+      }
+    ],
+    "relatedWordIds": ["car-key", "car-cover", "tire"],
+    "distractorWordIds": ["motorbike", "bicycle", "car-jack"]
+  },
+  "motorbike": {
+    "id": "motorbike",
+    "text": "motorbike",
+    "ipa": "/ˈmoʊtərbaɪk/",
+    "meaningVi": "xe máy",
+    "image": "/assets/scenes/garage/objects/02_motorbike.webp",
+    "acceptedAnswers": [
+      "motorbike",
+      "a motorbike",
+      "the motorbike",
+      "motorcycle",
+      "a motorcycle",
+      "scooter",
+      "a scooter"
+    ],
+    "examples": [
+      {
+        "text": "I ride a motorbike.",
+        "vi": "Mình đi xe máy."
+      },
+      {
+        "text": "The motorbike is next to the bicycle.",
+        "vi": "Xe máy ở cạnh xe đạp."
+      }
+    ],
+    "relatedWordIds": ["helmet", "car", "garage-overhead-door"],
+    "distractorWordIds": ["bicycle", "car", "car-cover"]
+  },
+  "bicycle": {
+    "id": "bicycle",
+    "text": "bicycle",
+    "ipa": "/ˈbaɪsɪkəl/",
+    "meaningVi": "xe đạp",
+    "image": "/assets/scenes/garage/objects/03_bicycle.webp",
+    "acceptedAnswers": ["bicycle", "a bicycle", "the bicycle", "bike", "a bike"],
+    "examples": [
+      {
+        "text": "This is my bicycle.",
+        "vi": "Đây là xe đạp của mình."
+      },
+      {
+        "text": "My bicycle has a basket.",
+        "vi": "Xe đạp của mình có giỏ."
+      }
+    ],
+    "relatedWordIds": ["air-pump", "helmet", "tire"],
+    "distractorWordIds": ["motorbike", "car", "ladder"]
+  },
+  "garage-overhead-door": {
+    "id": "garage-overhead-door",
+    "text": "garage door",
+    "ipa": "/ɡəˈrɑːʒ dɔːr/",
+    "meaningVi": "cửa nhà để xe",
+    "image": "/assets/scenes/garage/objects/04_garage-overhead-door.webp",
+    "acceptedAnswers": ["garage door", "a garage door", "the garage door"],
+    "examples": [
+      {
+        "text": "The garage door is open.",
+        "vi": "Cửa nhà để xe đang mở."
+      },
+      {
+        "text": "The garage door goes up and down.",
+        "vi": "Cửa gara kéo lên và kéo xuống."
+      }
+    ],
+    "relatedWordIds": ["garage-remote", "car", "parking-sign"],
+    "distractorWordIds": ["workbench", "shelf", "car-cover"]
+  },
+  "garage-remote": {
+    "id": "garage-remote",
+    "text": "remote control",
+    "ipa": "/rɪˌmoʊt kənˈtroʊl/",
+    "meaningVi": "điều khiển từ xa",
+    "image": "/assets/scenes/garage/objects/05_garage-remote.webp",
+    "acceptedAnswers": [
+      "remote control",
+      "a remote control",
+      "the remote control",
+      "remote",
+      "a remote",
+      "garage remote",
+      "a garage remote"
+    ],
+    "examples": [
+      {
+        "text": "This remote control opens the garage door.",
+        "vi": "Cái điều khiển từ xa này mở cửa nhà để xe."
+      },
+      {
+        "text": "The remote control is on the workbench.",
+        "vi": "Cái điều khiển ở trên bàn làm việc."
+      }
+    ],
+    "relatedWordIds": ["garage-overhead-door", "car-key", "workbench"],
+    "distractorWordIds": ["car-key", "flashlight", "car-battery"]
+  },
+  "car-key": {
+    "id": "car-key",
+    "text": "car key",
+    "ipa": "/ˈkɑːr kiː/",
+    "meaningVi": "chìa khóa ô tô",
+    "image": "/assets/scenes/garage/objects/06_car-key.webp",
+    "acceptedAnswers": ["car key", "a car key", "the car key", "key", "a key"],
+    "examples": [
+      {
+        "text": "This is my car key.",
+        "vi": "Đây là chìa khóa ô tô của mình."
+      },
+      {
+        "text": "Dad puts the car key on the workbench.",
+        "vi": "Bố để chìa khóa ô tô trên bàn làm việc."
+      }
+    ],
+    "relatedWordIds": ["car", "garage-remote", "workbench"],
+    "distractorWordIds": ["garage-remote", "flashlight", "helmet"]
+  },
+  "helmet": {
+    "id": "helmet",
+    "text": "helmet",
+    "ipa": "/ˈhelmət/",
+    "meaningVi": "mũ bảo hiểm",
+    "image": "/assets/scenes/garage/objects/07_helmet.webp",
+    "acceptedAnswers": ["helmet", "a helmet", "the helmet"],
+    "examples": [
+      {
+        "text": "Please wear your helmet.",
+        "vi": "Con hãy đội mũ bảo hiểm nhé."
+      },
+      {
+        "text": "My helmet is white and blue.",
+        "vi": "Mũ bảo hiểm của mình màu trắng và xanh."
+      }
+    ],
+    "relatedWordIds": ["motorbike", "bicycle", "workbench"],
+    "distractorWordIds": ["garage-bucket", "flashlight", "storage-box"]
+  },
+  "tire": {
+    "id": "tire",
+    "text": "tire",
+    "ipa": "/ˈtaɪər/",
+    "meaningVi": "lốp xe",
+    "image": "/assets/scenes/garage/objects/08_tire.webp",
+    "acceptedAnswers": ["tire", "a tire", "the tire", "tyre", "a tyre", "the tyre"],
+    "examples": [
+      {
+        "text": "The tire is black.",
+        "vi": "Lốp xe màu đen."
+      },
+      {
+        "text": "The tire is on the floor.",
+        "vi": "Cái lốp xe ở trên sàn."
+      }
+    ],
+    "relatedWordIds": ["air-pump", "car-jack", "car"],
+    "distractorWordIds": ["garage-bucket", "garage-trash-can", "water-hose"]
+  },
+  "air-pump": {
+    "id": "air-pump",
+    "text": "air pump",
+    "ipa": "/ˈer pʌmp/",
+    "meaningVi": "bơm hơi",
+    "image": "/assets/scenes/garage/objects/09_air-pump.webp",
+    "acceptedAnswers": [
+      "air pump",
+      "an air pump",
+      "the air pump",
+      "pump",
+      "a pump",
+      "bicycle pump",
+      "a bicycle pump"
+    ],
+    "examples": [
+      {
+        "text": "I use an air pump.",
+        "vi": "Mình dùng bơm hơi."
+      },
+      {
+        "text": "The air pump is yellow.",
+        "vi": "Cái bơm hơi màu vàng."
+      }
+    ],
+    "relatedWordIds": ["tire", "bicycle", "car-jack"],
+    "distractorWordIds": ["car-jack", "flashlight", "broom"]
+  },
+  "car-jack": {
+    "id": "car-jack",
+    "text": "car jack",
+    "ipa": "/ˈkɑːr dʒæk/",
+    "meaningVi": "kích nâng ô tô",
+    "image": "/assets/scenes/garage/objects/10_car-jack.webp",
+    "acceptedAnswers": ["car jack", "a car jack", "the car jack", "jack", "a jack"],
+    "examples": [
+      {
+        "text": "A car jack lifts the car.",
+        "vi": "Kích nâng ô tô nâng chiếc xe lên."
+      },
+      {
+        "text": "The car jack is red.",
+        "vi": "Cái kích màu đỏ."
+      }
+    ],
+    "relatedWordIds": ["tire", "toolbox", "car"],
+    "distractorWordIds": ["air-pump", "toolbox", "ladder"]
+  },
+  "toolbox": {
+    "id": "toolbox",
+    "text": "toolbox",
+    "ipa": "/ˈtuːlbɑːks/",
+    "meaningVi": "hộp dụng cụ",
+    "image": "/assets/scenes/garage/objects/11_toolbox.webp",
+    "acceptedAnswers": ["toolbox", "a toolbox", "the toolbox", "tool box", "a tool box"],
+    "examples": [
+      {
+        "text": "The toolbox is on the shelf.",
+        "vi": "Hộp dụng cụ ở trên kệ."
+      },
+      {
+        "text": "Dad keeps his tools in the toolbox.",
+        "vi": "Bố cất dụng cụ trong hộp dụng cụ."
+      }
+    ],
+    "relatedWordIds": ["workbench", "car-jack", "flashlight"],
+    "distractorWordIds": ["storage-box", "car-battery", "garage-bucket"]
+  },
+  "car-battery": {
+    "id": "car-battery",
+    "text": "car battery",
+    "ipa": "/ˈkɑːr ˈbætəri/",
+    "meaningVi": "ắc quy ô tô",
+    "image": "/assets/scenes/garage/objects/12_car-battery.webp",
+    "acceptedAnswers": ["car battery", "a car battery", "the car battery", "battery", "a battery"],
+    "examples": [
+      {
+        "text": "The car battery is under the hood.",
+        "vi": "Ắc quy ô tô ở dưới nắp capô."
+      },
+      {
+        "text": "A car battery is heavy.",
+        "vi": "Ắc quy ô tô rất nặng."
+      }
+    ],
+    "relatedWordIds": ["car", "workbench", "flashlight"],
+    "distractorWordIds": ["toolbox", "storage-box", "oil-can"]
+  },
+  "oil-can": {
+    "id": "oil-can",
+    "text": "oil can",
+    "ipa": "/ˈɔɪl kæn/",
+    "meaningVi": "bình dầu",
+    "image": "/assets/scenes/garage/objects/13_oil-can.webp",
+    "acceptedAnswers": ["oil can", "an oil can", "the oil can"],
+    "examples": [
+      {
+        "text": "This is an oil can.",
+        "vi": "Đây là bình dầu."
+      },
+      {
+        "text": "The oil can is on the shelf.",
+        "vi": "Bình dầu ở trên kệ."
+      }
+    ],
+    "relatedWordIds": ["shelf", "car", "bicycle"],
+    "distractorWordIds": ["garage-bucket", "garage-trash-can", "car-battery"]
+  },
+  "water-hose": {
+    "id": "water-hose",
+    "text": "water hose",
+    "ipa": "/ˈwɔːtər hoʊz/",
+    "meaningVi": "vòi nước",
+    "image": "/assets/scenes/garage/objects/14_water-hose.webp",
+    "acceptedAnswers": ["water hose", "a water hose", "the water hose", "hose", "a hose"],
+    "examples": [
+      {
+        "text": "The water hose is on the wall.",
+        "vi": "Vòi nước treo trên tường."
+      },
+      {
+        "text": "We wash the car with the water hose.",
+        "vi": "Mình rửa ô tô bằng vòi nước."
+      }
+    ],
+    "relatedWordIds": ["garage-bucket", "car", "car-cover"],
+    "distractorWordIds": ["tire", "air-pump", "broom"]
+  },
+  "parking-sign": {
+    "id": "parking-sign",
+    "text": "parking sign",
+    "ipa": "/ˈpɑːrkɪŋ saɪn/",
+    "meaningVi": "biển báo đỗ xe",
+    "image": "/assets/scenes/garage/objects/15_parking-sign.webp",
+    "acceptedAnswers": ["parking sign", "a parking sign", "the parking sign"],
+    "examples": [
+      {
+        "text": "Look at the parking sign.",
+        "vi": "Hãy nhìn biển báo đỗ xe."
+      },
+      {
+        "text": "The parking sign is blue.",
+        "vi": "Biển báo đỗ xe màu xanh dương."
+      }
+    ],
+    "relatedWordIds": ["car", "garage-overhead-door", "motorbike"],
+    "distractorWordIds": ["flashlight", "shelf", "ladder"]
+  },
+  "car-cover": {
+    "id": "car-cover",
+    "text": "car cover",
+    "ipa": "/ˈkɑːr ˈkʌvər/",
+    "meaningVi": "bạt phủ ô tô",
+    "image": "/assets/scenes/garage/objects/16_car-cover.webp",
+    "acceptedAnswers": ["car cover", "a car cover", "the car cover"],
+    "examples": [
+      {
+        "text": "The car cover is blue.",
+        "vi": "Bạt phủ ô tô màu xanh."
+      },
+      {
+        "text": "The car cover keeps the car clean.",
+        "vi": "Bạt phủ giữ cho ô tô sạch sẽ."
+      }
+    ],
+    "relatedWordIds": ["car", "shelf", "water-hose"],
+    "distractorWordIds": ["storage-box", "garage-bucket", "helmet"]
+  },
+  "ladder": {
+    "id": "ladder",
+    "text": "ladder",
+    "ipa": "/ˈlædər/",
+    "meaningVi": "cái thang",
+    "image": "/assets/scenes/garage/objects/17_ladder.webp",
+    "acceptedAnswers": [
+      "ladder",
+      "a ladder",
+      "the ladder",
+      "stepladder",
+      "a stepladder",
+      "step ladder",
+      "a step ladder"
+    ],
+    "examples": [
+      {
+        "text": "The ladder is near the wall.",
+        "vi": "Cái thang ở gần bức tường."
+      },
+      {
+        "text": "Hold the ladder, please.",
+        "vi": "Bạn giữ cái thang giúp mình nhé."
+      }
+    ],
+    "relatedWordIds": ["shelf", "storage-box", "oil-can"],
+    "distractorWordIds": ["shelf", "workbench", "broom"]
+  },
+  "shelf": {
+    "id": "shelf",
+    "text": "shelf",
+    "ipa": "/ʃelf/",
+    "meaningVi": "kệ để đồ",
+    "image": "/assets/scenes/garage/objects/18_shelf.webp",
+    "acceptedAnswers": ["shelf", "a shelf", "the shelf", "shelves", "shelving"],
+    "examples": [
+      {
+        "text": "The shelf holds boxes.",
+        "vi": "Cái kệ để những chiếc hộp."
+      },
+      {
+        "text": "The shelf is orange and gray.",
+        "vi": "Cái kệ màu cam và xám."
+      }
+    ],
+    "relatedWordIds": ["storage-box", "oil-can", "car-cover"],
+    "distractorWordIds": ["workbench", "ladder", "storage-box"]
+  },
+  "storage-box": {
+    "id": "storage-box",
+    "text": "storage box",
+    "ipa": "/ˈstɔːrɪdʒ bɑːks/",
+    "meaningVi": "hộp đựng đồ",
+    "image": "/assets/scenes/garage/objects/19_storage-box.webp",
+    "acceptedAnswers": [
+      "storage box",
+      "a storage box",
+      "the storage box",
+      "storage bin",
+      "a storage bin",
+      "box",
+      "a box"
+    ],
+    "examples": [
+      {
+        "text": "This is a storage box.",
+        "vi": "Đây là hộp đựng đồ."
+      },
+      {
+        "text": "I put my toys in the storage box.",
+        "vi": "Mình cất đồ chơi vào hộp đựng đồ."
+      }
+    ],
+    "relatedWordIds": ["shelf", "ladder", "toolbox"],
+    "distractorWordIds": ["toolbox", "garage-trash-can", "car-battery"]
+  },
+  "workbench": {
+    "id": "workbench",
+    "text": "workbench",
+    "ipa": "/ˈwɜːrkbentʃ/",
+    "meaningVi": "bàn làm việc",
+    "image": "/assets/scenes/garage/objects/20_workbench.webp",
+    "acceptedAnswers": ["workbench", "a workbench", "the workbench", "work bench", "a work bench"],
+    "examples": [
+      {
+        "text": "The workbench is in the garage.",
+        "vi": "Bàn làm việc ở trong nhà để xe."
+      },
+      {
+        "text": "Dad fixes things at the workbench.",
+        "vi": "Bố sửa đồ ở bàn làm việc."
+      }
+    ],
+    "relatedWordIds": ["toolbox", "helmet", "car-key"],
+    "distractorWordIds": ["shelf", "storage-box", "ladder"]
+  },
+  "broom": {
+    "id": "broom",
+    "text": "broom",
+    "ipa": "/bruːm/",
+    "meaningVi": "cái chổi",
+    "image": "/assets/scenes/garage/objects/21_broom.webp",
+    "acceptedAnswers": ["broom", "a broom", "the broom"],
+    "examples": [
+      {
+        "text": "I use a broom to clean the floor.",
+        "vi": "Mình dùng chổi để quét sàn."
+      },
+      {
+        "text": "The broom is next to the bucket.",
+        "vi": "Cái chổi ở cạnh cái xô."
+      }
+    ],
+    "relatedWordIds": ["garage-bucket", "garage-trash-can", "workbench"],
+    "distractorWordIds": ["ladder", "water-hose", "air-pump"]
+  },
+  "garage-bucket": {
+    "id": "garage-bucket",
+    "text": "bucket",
+    "ipa": "/ˈbʌkət/",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/garage/objects/22_garage-bucket.webp",
+    "acceptedAnswers": ["bucket", "a bucket", "the bucket", "pail", "a pail"],
+    "examples": [
+      {
+        "text": "The bucket is next to the broom.",
+        "vi": "Cái xô ở cạnh cái chổi."
+      },
+      {
+        "text": "There is a towel on the bucket.",
+        "vi": "Có một cái khăn trên cái xô."
+      }
+    ],
+    "relatedWordIds": ["broom", "water-hose", "car"],
+    "distractorWordIds": ["garage-trash-can", "storage-box", "oil-can"]
+  },
+  "garage-trash-can": {
+    "id": "garage-trash-can",
+    "text": "trash can",
+    "ipa": "/ˈtræʃ kæn/",
+    "meaningVi": "thùng rác",
+    "image": "/assets/scenes/garage/objects/23_garage-trash-can.webp",
+    "acceptedAnswers": [
+      "trash can",
+      "a trash can",
+      "the trash can",
+      "garbage can",
+      "a garbage can",
+      "trash bin",
+      "a trash bin",
+      "bin",
+      "a bin"
+    ],
+    "examples": [
+      {
+        "text": "Put it in the trash can.",
+        "vi": "Hãy bỏ nó vào thùng rác."
+      },
+      {
+        "text": "The trash can is in the corner.",
+        "vi": "Thùng rác ở trong góc."
+      }
+    ],
+    "relatedWordIds": ["broom", "garage-bucket", "workbench"],
+    "distractorWordIds": ["garage-bucket", "storage-box", "oil-can"]
+  },
+  "flashlight": {
+    "id": "flashlight",
+    "text": "flashlight",
+    "ipa": "/ˈflæʃlaɪt/",
+    "meaningVi": "đèn pin",
+    "image": "/assets/scenes/garage/objects/24_flashlight.webp",
+    "acceptedAnswers": [
+      "flashlight",
+      "a flashlight",
+      "the flashlight",
+      "torch",
+      "a torch",
+      "the torch"
+    ],
+    "examples": [
+      {
+        "text": "This flashlight is bright.",
+        "vi": "Cái đèn pin này rất sáng."
+      },
+      {
+        "text": "I use a flashlight in the dark.",
+        "vi": "Mình dùng đèn pin khi trời tối."
+      }
+    ],
+    "relatedWordIds": ["workbench", "car-battery", "toolbox"],
+    "distractorWordIds": ["garage-remote", "air-pump", "helmet"]
   }
 }

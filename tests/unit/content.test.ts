@@ -226,3 +226,28 @@ describe('Dining Room', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Garage', () => {
+  const garage = getScene('garage')!;
+
+  it('is the last Home scene, available with 24 words, 10 conversations and one hotspot per word', () => {
+    expect(garage.status).toBe('available');
+    const home = contentByCourse.en.scenes.filter((scene) => scene.group === 'home');
+    expect(home.at(-1)?.id).toBe('garage');
+    expect(getSceneWords(garage)).toHaveLength(24);
+    expect(getSceneConversations(garage)).toHaveLength(10);
+    expect(garage.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...garage.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    const oversized = garage.hotspots.filter((hotspot) =>
+      hotspot.svgPath.split(/(?=M)/).some((subPath) => {
+        const bounds = getPathBounds(subPath)!;
+        return (bounds.width * bounds.height) / (garage.width * garage.height) >= 0.35;
+      }),
+    );
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

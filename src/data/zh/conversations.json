@@ -4141,5 +4141,685 @@
         "suggestedAnswerPinyin": "Pán zi zài wǎn guì lǐ."
       }
     ]
+  },
+  {
+    "id": "our-garage",
+    "sceneId": "garage",
+    "title": "我们的车库",
+    "order": 1,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "爸爸带莉莉看汽车、摩托车和她的自行车。",
+    "lines": [
+      {
+        "id": "our-garage-l1",
+        "speakerId": "dad",
+        "text": "莉莉，这是我们家的车库。",
+        "textVi": "Lily ơi, đây là gara nhà mình.",
+        "pinyin": "Lì li, zhè shì wǒ men jiā de chē kù."
+      },
+      {
+        "id": "our-garage-l2",
+        "speakerId": "lily",
+        "text": "哇，好大呀！我看见我们的汽车了。",
+        "textVi": "Oa, to quá! Con thấy ô tô nhà mình.",
+        "pinyin": "Wā, hǎo dà ya! Wǒ kàn jiàn wǒ men de qì chē le."
+      },
+      {
+        "id": "our-garage-l3",
+        "speakerId": "dad",
+        "text": "对。摩托车在汽车旁边。",
+        "textVi": "Ừ. Xe máy ở cạnh ô tô.",
+        "pinyin": "Duì. Mó tuō chē zài qì chē páng biān."
+      },
+      {
+        "id": "our-garage-l4",
+        "speakerId": "lily",
+        "text": "那是我的自行车！",
+        "textVi": "Còn kia là xe đạp của con!",
+        "pinyin": "Nà shì wǒ de zì xíng chē!"
+      },
+      {
+        "id": "our-garage-l5",
+        "speakerId": "dad",
+        "text": "对，它有一个小篮子。",
+        "textVi": "Đúng rồi. Nó có một cái giỏ nhỏ.",
+        "pinyin": "Duì, tā yǒu yí gè xiǎo lán zi."
+      },
+      {
+        "id": "our-garage-l6",
+        "speakerId": "lily",
+        "text": "爸爸，我喜欢我们的车库。",
+        "textVi": "Con thích gara nhà mình lắm, bố ạ.",
+        "pinyin": "Bà ba, wǒ xǐ huan wǒ men de chē kù."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-garage-q1",
+        "prompt": "汽车旁边是什么？",
+        "suggestedAnswer": "汽车旁边是摩托车。",
+        "promptPinyin": "Qì chē páng biān shì shén me?",
+        "suggestedAnswerPinyin": "Qì chē páng biān shì mó tuō chē."
+      },
+      {
+        "id": "our-garage-q2",
+        "prompt": "莉莉的自行车上有什么？",
+        "suggestedAnswer": "它有一个小篮子。",
+        "promptPinyin": "Lì li de zì xíng chē shàng yǒu shén me?",
+        "suggestedAnswerPinyin": "Tā yǒu yí gè xiǎo lán zi."
+      }
+    ]
+  },
+  {
+    "id": "open-the-garage-door",
+    "sceneId": "garage",
+    "title": "打开车库门",
+    "order": 2,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "小本找到遥控器，妈妈打开车库门。",
+    "lines": [
+      {
+        "id": "open-the-garage-door-l1",
+        "speakerId": "mom",
+        "text": "小本，请把遥控器拿给我。",
+        "textVi": "Ben ơi, con mang cái điều khiển cho mẹ nhé.",
+        "pinyin": "Xiǎo Běn, qǐng bǎ yáo kòng qì ná gěi wǒ."
+      },
+      {
+        "id": "open-the-garage-door-l2",
+        "speakerId": "ben",
+        "text": "给你，妈妈。它在工作台上。",
+        "textVi": "Đây ạ, mẹ. Nó ở trên bàn làm việc.",
+        "pinyin": "Gěi nǐ, mā ma. Tā zài gōng zuò tái shàng."
+      },
+      {
+        "id": "open-the-garage-door-l3",
+        "speakerId": "mom",
+        "text": "谢谢。现在我按上面的按钮。",
+        "textVi": "Cảm ơn con. Giờ mẹ bấm nút ở trên.",
+        "pinyin": "Xiè xiè. Xiàn zài wǒ àn shàng miàn de àn niǔ."
+      },
+      {
+        "id": "open-the-garage-door-l4",
+        "speakerId": "ben",
+        "text": "看！车库门升上去了！",
+        "textVi": "Mẹ nhìn kìa! Cửa gara kéo lên rồi!",
+        "pinyin": "Kàn! Chē kù mén shēng shàng qù le!"
+      },
+      {
+        "id": "open-the-garage-door-l5",
+        "speakerId": "mom",
+        "text": "现在我们可以把汽车开出去了。",
+        "textVi": "Giờ mình lái ô tô ra được rồi.",
+        "pinyin": "Xiàn zài wǒ men kě yǐ bǎ qì chē kāi chū qù le."
+      },
+      {
+        "id": "open-the-garage-door-l6",
+        "speakerId": "ben",
+        "text": "下次我可以按按钮吗？",
+        "textVi": "Lần sau con bấm nút được không ạ?",
+        "pinyin": "Xià cì wǒ kě yǐ àn àn niǔ ma?"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "open-the-garage-door-q1",
+        "prompt": "什么能打开车库门？",
+        "suggestedAnswer": "遥控器能打开车库门。",
+        "promptPinyin": "Shén me néng dǎ kāi chē kù mén?",
+        "suggestedAnswerPinyin": "Yáo kòng qì néng dǎ kāi chē kù mén."
+      },
+      {
+        "id": "open-the-garage-door-q2",
+        "prompt": "遥控器在哪儿？",
+        "suggestedAnswer": "它在工作台上。",
+        "promptPinyin": "Yáo kòng qì zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài gōng zuò tái shàng."
+      }
+    ]
+  },
+  {
+    "id": "where-is-the-car-key",
+    "sceneId": "garage",
+    "title": "车钥匙在哪儿？",
+    "order": 3,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "爸爸找不到车钥匙，莉莉帮他找。",
+    "lines": [
+      {
+        "id": "where-is-the-car-key-l1",
+        "speakerId": "dad",
+        "text": "莉莉，你看见我的车钥匙了吗？",
+        "textVi": "Lily ơi, con có thấy chìa khóa ô tô của bố không?",
+        "pinyin": "Lì li, nǐ kàn jiàn wǒ de chē yào shi le ma?"
+      },
+      {
+        "id": "where-is-the-car-key-l2",
+        "speakerId": "lily",
+        "text": "在你的口袋里吗？",
+        "textVi": "Có phải ở trong túi bố không ạ?",
+        "pinyin": "Zài nǐ de kǒu dài lǐ ma?"
+      },
+      {
+        "id": "where-is-the-car-key-l3",
+        "speakerId": "dad",
+        "text": "不，不在。",
+        "textVi": "Không, không có con ạ.",
+        "pinyin": "Bù, bú zài."
+      },
+      {
+        "id": "where-is-the-car-key-l4",
+        "speakerId": "lily",
+        "text": "我看见了！它在工作台上，在遥控器旁边。",
+        "textVi": "Con thấy rồi! Nó ở trên bàn làm việc, cạnh cái điều khiển.",
+        "pinyin": "Wǒ kàn jiàn le! Tā zài gōng zuò tái shàng, zài yáo kòng qì páng biān."
+      },
+      {
+        "id": "where-is-the-car-key-l5",
+        "speakerId": "dad",
+        "text": "太好了！谢谢你，莉莉。",
+        "textVi": "Tuyệt quá! Cảm ơn con, Lily.",
+        "pinyin": "Tài hǎo le! Xiè xiè nǐ, Lì li."
+      },
+      {
+        "id": "where-is-the-car-key-l6",
+        "speakerId": "lily",
+        "text": "不客气。我们走吧！",
+        "textVi": "Không có gì ạ. Mình đi thôi!",
+        "pinyin": "Bú kè qi. Wǒ men zǒu ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "where-is-the-car-key-q1",
+        "prompt": "爸爸在找什么？",
+        "suggestedAnswer": "他在找车钥匙。",
+        "promptPinyin": "Bà ba zài zhǎo shén me?",
+        "suggestedAnswerPinyin": "Tā zài zhǎo chē yào shi."
+      },
+      {
+        "id": "where-is-the-car-key-q2",
+        "prompt": "车钥匙在哪儿？",
+        "suggestedAnswer": "它在工作台上。",
+        "promptPinyin": "Chē yào shi zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài gōng zuò tái shàng."
+      }
+    ]
+  },
+  {
+    "id": "wear-your-helmet",
+    "sceneId": "garage",
+    "title": "戴上头盔",
+    "order": 4,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "妈妈骑摩托车送小本去学校。",
+    "lines": [
+      {
+        "id": "wear-your-helmet-l1",
+        "speakerId": "mom",
+        "text": "小本，我们骑摩托车去学校。",
+        "textVi": "Ben ơi, mình đi xe máy tới trường nhé.",
+        "pinyin": "Xiǎo Běn, wǒ men qí mó tuō chē qù xué xiào."
+      },
+      {
+        "id": "wear-your-helmet-l2",
+        "speakerId": "ben",
+        "text": "太好了！我喜欢摩托车。",
+        "textVi": "Hay quá! Con thích xe máy.",
+        "pinyin": "Tài hǎo le! Wǒ xǐ huan mó tuō chē."
+      },
+      {
+        "id": "wear-your-helmet-l3",
+        "speakerId": "mom",
+        "text": "请先戴上你的头盔。",
+        "textVi": "Con đội mũ bảo hiểm trước đã nhé.",
+        "pinyin": "Qǐng xiān dài shàng nǐ de tóu kuī."
+      },
+      {
+        "id": "wear-your-helmet-l4",
+        "speakerId": "ben",
+        "text": "妈妈，头盔在哪儿？",
+        "textVi": "Nó ở đâu ạ, mẹ?",
+        "pinyin": "Mā ma, tóu kuī zài nǎr?"
+      },
+      {
+        "id": "wear-your-helmet-l5",
+        "speakerId": "mom",
+        "text": "在工作台上。",
+        "textVi": "Nó ở trên bàn làm việc.",
+        "pinyin": "Zài gōng zuò tái shàng."
+      },
+      {
+        "id": "wear-your-helmet-l6",
+        "speakerId": "ben",
+        "text": "好了，我戴上头盔了。我们走吧！",
+        "textVi": "Vâng. Con đội mũ rồi. Mình đi thôi!",
+        "pinyin": "Hǎo le, wǒ dài shàng tóu kuī le. Wǒ men zǒu ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "wear-your-helmet-q1",
+        "prompt": "坐摩托车，小本要戴什么？",
+        "suggestedAnswer": "他要戴头盔。",
+        "promptPinyin": "Zuò mó tuō chē, Xiǎo Běn yào dài shén me?",
+        "suggestedAnswerPinyin": "Tā yào dài tóu kuī."
+      },
+      {
+        "id": "wear-your-helmet-q2",
+        "prompt": "头盔在哪儿？",
+        "suggestedAnswer": "在工作台上。",
+        "promptPinyin": "Tóu kuī zài nǎr?",
+        "suggestedAnswerPinyin": "Zài gōng zuò tái shàng."
+      }
+    ]
+  },
+  {
+    "id": "a-soft-tire",
+    "sceneId": "garage",
+    "title": "轮胎没气了",
+    "order": 5,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "小本的自行车轮胎软了，爸爸拿来打气筒。",
+    "lines": [
+      {
+        "id": "a-soft-tire-l1",
+        "speakerId": "ben",
+        "text": "爸爸，我的自行车轮胎软了。",
+        "textVi": "Bố ơi, lốp xe đạp của con bị xẹp.",
+        "pinyin": "Bà ba, wǒ de zì xíng chē lún tāi ruǎn le."
+      },
+      {
+        "id": "a-soft-tire-l2",
+        "speakerId": "dad",
+        "text": "我们用打气筒吧。",
+        "textVi": "Mình dùng bơm hơi nhé.",
+        "pinyin": "Wǒ men yòng dǎ qì tǒng ba."
+      },
+      {
+        "id": "a-soft-tire-l3",
+        "speakerId": "ben",
+        "text": "打气筒在这儿。它是黄色的。",
+        "textVi": "Bơm hơi đây ạ. Nó màu vàng.",
+        "pinyin": "Dǎ qì tǒng zài zhèr. Tā shì huáng sè de."
+      },
+      {
+        "id": "a-soft-tire-l4",
+        "speakerId": "dad",
+        "text": "把手柄上下推。",
+        "textVi": "Con đẩy tay cầm lên xuống nhé.",
+        "pinyin": "Bǎ shǒu bǐng shàng xià tuī."
+      },
+      {
+        "id": "a-soft-tire-l5",
+        "speakerId": "ben",
+        "text": "一，二，三！现在好了吗？",
+        "textVi": "Một, hai, ba! Giờ được chưa bố?",
+        "pinyin": "Yī, èr, sān! Xiàn zài hǎo le ma?"
+      },
+      {
+        "id": "a-soft-tire-l6",
+        "speakerId": "dad",
+        "text": "好了！轮胎充满气了。",
+        "textVi": "Được rồi! Lốp đầy hơi rồi.",
+        "pinyin": "Hǎo le! Lún tāi chōng mǎn qì le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-soft-tire-q1",
+        "prompt": "小本用什么给轮胎打气？",
+        "suggestedAnswer": "他用打气筒。",
+        "promptPinyin": "Xiǎo Běn yòng shén me gěi lún tāi dǎ qì?",
+        "suggestedAnswerPinyin": "Tā yòng dǎ qì tǒng."
+      },
+      {
+        "id": "a-soft-tire-q2",
+        "prompt": "打气筒是什么颜色的？",
+        "suggestedAnswer": "它是黄色的。",
+        "promptPinyin": "Dǎ qì tǒng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì huáng sè de."
+      }
+    ]
+  },
+  {
+    "id": "changing-a-tire",
+    "sceneId": "garage",
+    "title": "换轮胎",
+    "order": 6,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "爸爸用千斤顶把汽车顶起来，莉莉拿来工具箱。",
+    "lines": [
+      {
+        "id": "changing-a-tire-l1",
+        "speakerId": "lily",
+        "text": "爸爸，你在做什么？",
+        "textVi": "Bố ơi, bố đang làm gì thế?",
+        "pinyin": "Bà ba, nǐ zài zuò shén me?"
+      },
+      {
+        "id": "changing-a-tire-l2",
+        "speakerId": "dad",
+        "text": "我在给汽车换轮胎。",
+        "textVi": "Bố đang thay lốp ô tô.",
+        "pinyin": "Wǒ zài gěi qì chē huàn lún tāi."
+      },
+      {
+        "id": "changing-a-tire-l3",
+        "speakerId": "lily",
+        "text": "这个红色的东西是什么？",
+        "textVi": "Cái màu đỏ này là gì ạ?",
+        "pinyin": "Zhè ge hóng sè de dōng xi shì shén me?"
+      },
+      {
+        "id": "changing-a-tire-l4",
+        "speakerId": "dad",
+        "text": "这是千斤顶。它能把汽车顶起来。",
+        "textVi": "Đó là cái kích. Nó nâng ô tô lên.",
+        "pinyin": "Zhè shì qiān jīn dǐng. Tā néng bǎ qì chē dǐng qǐ lái."
+      },
+      {
+        "id": "changing-a-tire-l5",
+        "speakerId": "lily",
+        "text": "你需要工具箱吗？",
+        "textVi": "Bố có cần hộp dụng cụ không?",
+        "pinyin": "Nǐ xū yào gōng jù xiāng ma?"
+      },
+      {
+        "id": "changing-a-tire-l6",
+        "speakerId": "dad",
+        "text": "要，谢谢你。你帮了大忙！",
+        "textVi": "Có, con lấy giúp bố nhé. Con giỏi quá!",
+        "pinyin": "Yào, xiè xiè nǐ. Nǐ bāng le dà máng!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "changing-a-tire-q1",
+        "prompt": "什么能把汽车顶起来？",
+        "suggestedAnswer": "千斤顶能把汽车顶起来。",
+        "promptPinyin": "Shén me néng bǎ qì chē dǐng qǐ lái?",
+        "suggestedAnswerPinyin": "Qiān jīn dǐng néng bǎ qì chē dǐng qǐ lái."
+      },
+      {
+        "id": "changing-a-tire-q2",
+        "prompt": "爸爸在换什么？",
+        "suggestedAnswer": "他在换轮胎。",
+        "promptPinyin": "Bà ba zài huàn shén me?",
+        "suggestedAnswerPinyin": "Tā zài huàn lún tāi."
+      }
+    ]
+  },
+  {
+    "id": "the-car-wont-start",
+    "sceneId": "garage",
+    "title": "汽车发动不了",
+    "order": 7,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "汽车电瓶旧了，莉莉找到新电瓶和手电筒。",
+    "lines": [
+      {
+        "id": "the-car-wont-start-l1",
+        "speakerId": "mom",
+        "text": "哎呀，汽车发动不了。",
+        "textVi": "Ôi không, ô tô không nổ máy.",
+        "pinyin": "Āi yā, qì chē fā dòng bù liǎo."
+      },
+      {
+        "id": "the-car-wont-start-l2",
+        "speakerId": "lily",
+        "text": "妈妈，怎么了？",
+        "textVi": "Sao vậy mẹ?",
+        "pinyin": "Mā ma, zěn me le?"
+      },
+      {
+        "id": "the-car-wont-start-l3",
+        "speakerId": "mom",
+        "text": "可能汽车电瓶旧了。",
+        "textVi": "Có lẽ ắc quy ô tô cũ rồi.",
+        "pinyin": "Kě néng qì chē diàn píng jiù le."
+      },
+      {
+        "id": "the-car-wont-start-l4",
+        "speakerId": "lily",
+        "text": "工作台下面有一块新电瓶。",
+        "textVi": "Có một cái ắc quy mới ở dưới bàn làm việc.",
+        "pinyin": "Gōng zuò tái xià miàn yǒu yí kuài xīn diàn píng."
+      },
+      {
+        "id": "the-car-wont-start-l5",
+        "speakerId": "mom",
+        "text": "太好了！也请把手电筒拿给我。",
+        "textVi": "Tốt quá! Con mang cả đèn pin cho mẹ nhé.",
+        "pinyin": "Tài hǎo le! Yě qǐng bǎ shǒu diàn tǒng ná gěi wǒ."
+      },
+      {
+        "id": "the-car-wont-start-l6",
+        "speakerId": "lily",
+        "text": "给你。现在你能看清楚了。",
+        "textVi": "Đây ạ. Giờ mẹ nhìn rõ rồi.",
+        "pinyin": "Gěi nǐ. Xiàn zài nǐ néng kàn qīng chu le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-car-wont-start-q1",
+        "prompt": "汽车为什么发动不了？",
+        "suggestedAnswer": "汽车电瓶旧了。",
+        "promptPinyin": "Qì chē wèi shén me fā dòng bù liǎo?",
+        "suggestedAnswerPinyin": "Qì chē diàn píng jiù le."
+      },
+      {
+        "id": "the-car-wont-start-q2",
+        "prompt": "新电瓶在哪儿？",
+        "suggestedAnswer": "在工作台下面。",
+        "promptPinyin": "Xīn diàn píng zài nǎr?",
+        "suggestedAnswerPinyin": "Zài gōng zuò tái xià miàn."
+      }
+    ]
+  },
+  {
+    "id": "washing-the-car",
+    "sceneId": "garage",
+    "title": "洗汽车",
+    "order": 8,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "爸爸和小本用水管和水桶洗车。",
+    "lines": [
+      {
+        "id": "washing-the-car-l1",
+        "speakerId": "dad",
+        "text": "天晴了。我们来洗车吧！",
+        "textVi": "Trời nắng rồi. Mình rửa xe nhé!",
+        "pinyin": "Tiān qíng le. Wǒ men lái xǐ chē ba!"
+      },
+      {
+        "id": "washing-the-car-l2",
+        "speakerId": "ben",
+        "text": "我去拿水桶和毛巾。",
+        "textVi": "Con đi lấy cái xô với cái khăn.",
+        "pinyin": "Wǒ qù ná shuǐ tǒng hé máo jīn."
+      },
+      {
+        "id": "washing-the-car-l3",
+        "speakerId": "dad",
+        "text": "我把墙上的水管拿下来。",
+        "textVi": "Bố lấy vòi nước trên tường xuống.",
+        "pinyin": "Wǒ bǎ qiáng shàng de shuǐ guǎn ná xià lái."
+      },
+      {
+        "id": "washing-the-car-l4",
+        "speakerId": "ben",
+        "text": "哗！汽车全湿了。",
+        "textVi": "Ào! Ô tô ướt hết rồi.",
+        "pinyin": "Huá! Qì chē quán shī le."
+      },
+      {
+        "id": "washing-the-car-l5",
+        "speakerId": "dad",
+        "text": "现在它又干净又亮。",
+        "textVi": "Giờ nó sạch bóng rồi.",
+        "pinyin": "Xiàn zài tā yòu gān jing yòu liàng."
+      },
+      {
+        "id": "washing-the-car-l6",
+        "speakerId": "ben",
+        "text": "今天晚上我们给汽车盖上车罩吧。",
+        "textVi": "Tối nay mình phủ bạt cho ô tô nhé.",
+        "pinyin": "Jīn tiān wǎn shang wǒ men gěi qì chē gài shàng chē zhào ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "washing-the-car-q1",
+        "prompt": "水管在哪儿？",
+        "suggestedAnswer": "在墙上。",
+        "promptPinyin": "Shuǐ guǎn zài nǎr?",
+        "suggestedAnswerPinyin": "Zài qiáng shàng."
+      },
+      {
+        "id": "washing-the-car-q2",
+        "prompt": "小本去拿什么？",
+        "suggestedAnswer": "他去拿水桶和毛巾。",
+        "promptPinyin": "Xiǎo Běn qù ná shén me?",
+        "suggestedAnswerPinyin": "Tā qù ná shuǐ tǒng hé máo jīn."
+      }
+    ]
+  },
+  {
+    "id": "tidy-up-the-garage",
+    "sceneId": "garage",
+    "title": "收拾车库",
+    "order": 9,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "妈妈和小本扫地，把玩具收好。",
+    "lines": [
+      {
+        "id": "tidy-up-the-garage-l1",
+        "speakerId": "mom",
+        "text": "车库很乱。我们来收拾一下吧。",
+        "textVi": "Gara bừa bộn quá. Mình dọn dẹp nhé.",
+        "pinyin": "Chē kù hěn luàn. Wǒ men lái shōu shi yí xià ba."
+      },
+      {
+        "id": "tidy-up-the-garage-l2",
+        "speakerId": "ben",
+        "text": "我可以用扫帚扫地。",
+        "textVi": "Con quét sàn bằng chổi được ạ.",
+        "pinyin": "Wǒ kě yǐ yòng sào zhou sǎo dì."
+      },
+      {
+        "id": "tidy-up-the-garage-l3",
+        "speakerId": "mom",
+        "text": "很好。把垃圾放进垃圾桶。",
+        "textVi": "Tốt lắm. Con bỏ rác vào thùng rác nhé.",
+        "pinyin": "Hěn hǎo. Bǎ lā jī fàng jìn lā jī tǒng."
+      },
+      {
+        "id": "tidy-up-the-garage-l4",
+        "speakerId": "ben",
+        "text": "玩具放在哪儿？",
+        "textVi": "Đồ chơi để ở đâu ạ?",
+        "pinyin": "Wán jù fàng zài nǎr?"
+      },
+      {
+        "id": "tidy-up-the-garage-l5",
+        "speakerId": "mom",
+        "text": "把它们放进置物架上的收纳箱。",
+        "textVi": "Con cất vào hộp đựng đồ trên kệ nhé.",
+        "pinyin": "Bǎ tā men fàng jìn zhì wù jià shàng de shōu nà xiāng."
+      },
+      {
+        "id": "tidy-up-the-garage-l6",
+        "speakerId": "ben",
+        "text": "好了！车库现在干净了。",
+        "textVi": "Xong rồi! Gara sạch rồi.",
+        "pinyin": "Hǎo le! Chē kù xiàn zài gān jing le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tidy-up-the-garage-q1",
+        "prompt": "小本用什么扫地？",
+        "suggestedAnswer": "他用扫帚扫地。",
+        "promptPinyin": "Xiǎo Běn yòng shén me sǎo dì?",
+        "suggestedAnswerPinyin": "Tā yòng sào zhou sǎo dì."
+      },
+      {
+        "id": "tidy-up-the-garage-q2",
+        "prompt": "玩具放在哪儿？",
+        "suggestedAnswer": "放进收纳箱里。",
+        "promptPinyin": "Wán jù fàng zài nǎr?",
+        "suggestedAnswerPinyin": "Fàng jìn shōu nà xiāng lǐ."
+      }
+    ]
+  },
+  {
+    "id": "up-the-ladder",
+    "sceneId": "garage",
+    "title": "爬梯子",
+    "order": 10,
+    "poster": "/assets/scenes/garage/garage-desktop.webp",
+    "description": "莉莉的自行车吱吱响，爸爸爬梯子拿机油壶。",
+    "lines": [
+      {
+        "id": "up-the-ladder-l1",
+        "speakerId": "lily",
+        "text": "爸爸，我的自行车吱吱响。",
+        "textVi": "Bố ơi, xe đạp của con kêu cọt kẹt.",
+        "pinyin": "Bà ba, wǒ de zì xíng chē zhī zhī xiǎng."
+      },
+      {
+        "id": "up-the-ladder-l2",
+        "speakerId": "dad",
+        "text": "它需要上点儿油。机油壶在最上面一层。",
+        "textVi": "Nó cần tra dầu. Bình dầu ở ngăn trên cùng của kệ.",
+        "pinyin": "Tā xū yào shàng diǎnr yóu. Jī yóu hú zài zuì shàng miàn yì céng."
+      },
+      {
+        "id": "up-the-ladder-l3",
+        "speakerId": "lily",
+        "text": "太高了！",
+        "textVi": "Cao quá!",
+        "pinyin": "Tài gāo le!"
+      },
+      {
+        "id": "up-the-ladder-l4",
+        "speakerId": "dad",
+        "text": "我用梯子。请帮我扶着。",
+        "textVi": "Bố dùng thang. Con giữ thang giúp bố nhé.",
+        "pinyin": "Wǒ yòng tī zi. Qǐng bāng wǒ fú zhe."
+      },
+      {
+        "id": "up-the-ladder-l5",
+        "speakerId": "lily",
+        "text": "我扶好了。爸爸，小心！",
+        "textVi": "Con giữ rồi. Bố cẩn thận nhé!",
+        "pinyin": "Wǒ fú hǎo le. Bà ba, xiǎo xīn!"
+      },
+      {
+        "id": "up-the-ladder-l6",
+        "speakerId": "dad",
+        "text": "拿到了！现在你的自行车不会响了。",
+        "textVi": "Lấy được rồi! Giờ xe đạp của con sẽ hết kêu.",
+        "pinyin": "Ná dào le! Xiàn zài nǐ de zì xíng chē bú huì xiǎng le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "up-the-ladder-q1",
+        "prompt": "机油壶在哪儿？",
+        "suggestedAnswer": "在最上面一层。",
+        "promptPinyin": "Jī yóu hú zài nǎr?",
+        "suggestedAnswerPinyin": "Zài zuì shàng miàn yì céng."
+      },
+      {
+        "id": "up-the-ladder-q2",
+        "prompt": "爸爸用什么拿机油壶？",
+        "suggestedAnswer": "他用梯子。",
+        "promptPinyin": "Bà ba yòng shén me ná jī yóu hú?",
+        "suggestedAnswerPinyin": "Tā yòng tī zi."
+      }
+    ]
   }
 ]
