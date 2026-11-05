@@ -4821,5 +4821,685 @@
         "suggestedAnswerPinyin": "Tā yòng tī zi."
       }
     ]
+  },
+  {
+    "id": "our-flower-garden",
+    "sceneId": "flower-garden",
+    "title": "我们的花园",
+    "order": 1,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "妈妈带莉莉看花园里的花。",
+    "lines": [
+      {
+        "id": "our-flower-garden-l1",
+        "speakerId": "mom",
+        "text": "莉莉，快来看我们的花园！",
+        "textVi": "Lily ơi, lại xem vườn hoa của nhà mình này!",
+        "pinyin": "Lì li, kuài lái kàn wǒ men de huā yuán!"
+      },
+      {
+        "id": "our-flower-garden-l2",
+        "speakerId": "lily",
+        "text": "哇！有好多花呀！",
+        "textVi": "Ồ! Có nhiều hoa quá!",
+        "pinyin": "Wā! Yǒu hǎo duō huā ya!"
+      },
+      {
+        "id": "our-flower-garden-l3",
+        "speakerId": "mom",
+        "text": "你看那朵大红玫瑰。",
+        "textVi": "Con nhìn bông hồng đỏ to kia kìa.",
+        "pinyin": "Nǐ kàn nà duǒ dà hóng méi guī."
+      },
+      {
+        "id": "our-flower-garden-l4",
+        "speakerId": "lily",
+        "text": "我也喜欢黄色的向日葵。",
+        "textVi": "Con cũng thích hoa hướng dương màu vàng.",
+        "pinyin": "Wǒ yě xǐ huan huáng sè de xiàng rì kuí."
+      },
+      {
+        "id": "our-flower-garden-l5",
+        "speakerId": "mom",
+        "text": "向日葵比你还高呢！",
+        "textVi": "Cây hướng dương còn cao hơn cả con đấy!",
+        "pinyin": "Xiàng rì kuí bǐ nǐ hái gāo ne!"
+      },
+      {
+        "id": "our-flower-garden-l6",
+        "speakerId": "lily",
+        "text": "我们的花园真漂亮。",
+        "textVi": "Vườn nhà mình đẹp quá.",
+        "pinyin": "Wǒ men de huā yuán zhēn piào liang."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-flower-garden-q1",
+        "prompt": "玫瑰是什么颜色的？",
+        "suggestedAnswer": "它是红色的。",
+        "promptPinyin": "Méi guī shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì hóng sè de."
+      },
+      {
+        "id": "our-flower-garden-q2",
+        "prompt": "莉莉喜欢哪种花？",
+        "suggestedAnswer": "她喜欢向日葵。",
+        "promptPinyin": "Lì li xǐ huan nǎ zhǒng huā?",
+        "suggestedAnswerPinyin": "Tā xǐ huan xiàng rì kuí."
+      }
+    ]
+  },
+  {
+    "id": "smell-the-flowers",
+    "sceneId": "flower-garden",
+    "title": "闻闻花香",
+    "order": 2,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "小本和莉莉闻薰衣草和茉莉花。",
+    "lines": [
+      {
+        "id": "smell-the-flowers-l1",
+        "speakerId": "ben",
+        "text": "莉莉，你闻闻这朵紫色的花。",
+        "textVi": "Lily ơi, bạn ngửi bông hoa màu tím này đi.",
+        "pinyin": "Lì li, nǐ wén wén zhè duǒ zǐ sè de huā."
+      },
+      {
+        "id": "smell-the-flowers-l2",
+        "speakerId": "lily",
+        "text": "这是薰衣草。真香！",
+        "textVi": "Là hoa oải hương đấy. Thơm quá!",
+        "pinyin": "Zhè shì xūn yī cǎo. Zhēn xiāng!"
+      },
+      {
+        "id": "smell-the-flowers-l3",
+        "speakerId": "ben",
+        "text": "木柱上白色的花是什么？",
+        "textVi": "Những bông hoa trắng trên cột gỗ là hoa gì thế?",
+        "pinyin": "Mù zhù shàng bái sè de huā shì shén me?"
+      },
+      {
+        "id": "smell-the-flowers-l4",
+        "speakerId": "lily",
+        "text": "那是茉莉花。",
+        "textVi": "Đó là hoa nhài.",
+        "pinyin": "Nà shì mò lì huā."
+      },
+      {
+        "id": "smell-the-flowers-l5",
+        "speakerId": "ben",
+        "text": "嗯，茉莉花闻起来很香甜。",
+        "textVi": "Ừm, hoa nhài thơm ngọt ngào.",
+        "pinyin": "Ǹg, mò lì huā wén qǐ lái hěn xiāng tián."
+      },
+      {
+        "id": "smell-the-flowers-l6",
+        "speakerId": "lily",
+        "text": "我最喜欢香香的花了。",
+        "textVi": "Mình rất thích những bông hoa thơm.",
+        "pinyin": "Wǒ zuì xǐ huan xiāng xiāng de huā le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "smell-the-flowers-q1",
+        "prompt": "薰衣草是什么颜色的？",
+        "suggestedAnswer": "它是紫色的。",
+        "promptPinyin": "Xūn yī cǎo shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì zǐ sè de."
+      },
+      {
+        "id": "smell-the-flowers-q2",
+        "prompt": "茉莉花在哪儿？",
+        "suggestedAnswer": "它在木柱上。",
+        "promptPinyin": "Mò lì huā zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài mù zhù shàng."
+      }
+    ]
+  },
+  {
+    "id": "be-careful-of-the-thorns",
+    "sceneId": "flower-garden",
+    "title": "小心刺",
+    "order": 3,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "爸爸告诉小本玫瑰的花茎上有尖刺。",
+    "lines": [
+      {
+        "id": "be-careful-of-the-thorns-l1",
+        "speakerId": "ben",
+        "text": "爸爸，我可以摸摸玫瑰吗？",
+        "textVi": "Bố ơi, con sờ bông hồng được không?",
+        "pinyin": "Bà ba, wǒ kě yǐ mō mō méi guī ma?"
+      },
+      {
+        "id": "be-careful-of-the-thorns-l2",
+        "speakerId": "dad",
+        "text": "可以，但是要小心刺。",
+        "textVi": "Được, nhưng cẩn thận gai nhé.",
+        "pinyin": "Kě yǐ, dàn shì yào xiǎo xīn cì."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l3",
+        "speakerId": "ben",
+        "text": "刺在哪儿？",
+        "textVi": "Gai ở đâu ạ?",
+        "pinyin": "Cì zài nǎr?"
+      },
+      {
+        "id": "be-careful-of-the-thorns-l4",
+        "speakerId": "dad",
+        "text": "刺在花茎上。它们很尖。",
+        "textVi": "Gai ở trên thân hoa. Gai nhọn lắm.",
+        "pinyin": "Cì zài huā jīng shàng. Tā men hěn jiān."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l5",
+        "speakerId": "ben",
+        "text": "哎哟！我碰到刺了。",
+        "textVi": "Ui da! Con chạm vào gai rồi.",
+        "pinyin": "Āi yō! Wǒ pèng dào cì le."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l6",
+        "speakerId": "dad",
+        "text": "让我看看。摸花瓣，别摸花茎。",
+        "textVi": "Để bố xem nào. Con sờ cánh hoa thôi, đừng sờ thân.",
+        "pinyin": "Ràng wǒ kàn kàn. Mō huā bàn, bié mō huā jīng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "be-careful-of-the-thorns-q1",
+        "prompt": "刺在哪儿？",
+        "suggestedAnswer": "刺在花茎上。",
+        "promptPinyin": "Cì zài nǎr?",
+        "suggestedAnswerPinyin": "Cì zài huā jīng shàng."
+      },
+      {
+        "id": "be-careful-of-the-thorns-q2",
+        "prompt": "刺是软的还是尖的？",
+        "suggestedAnswer": "刺是尖的。",
+        "promptPinyin": "Cì shì ruǎn de hái shì jiān de?",
+        "suggestedAnswerPinyin": "Cì shì jiān de."
+      }
+    ]
+  },
+  {
+    "id": "a-busy-bee",
+    "sceneId": "flower-garden",
+    "title": "忙碌的小蜜蜂",
+    "order": 4,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "小本和爸爸看蜜蜂采花粉。",
+    "lines": [
+      {
+        "id": "a-busy-bee-l1",
+        "speakerId": "ben",
+        "text": "爸爸，你看！有一只蜜蜂。",
+        "textVi": "Bố ơi, nhìn kìa! Có một con ong.",
+        "pinyin": "Bà ba, nǐ kàn! Yǒu yì zhī mì fēng."
+      },
+      {
+        "id": "a-busy-bee-l2",
+        "speakerId": "dad",
+        "text": "它正飞向百合。",
+        "textVi": "Nó đang bay đến bông hoa ly.",
+        "pinyin": "Tā zhèng fēi xiàng bǎi hé."
+      },
+      {
+        "id": "a-busy-bee-l3",
+        "speakerId": "ben",
+        "text": "蜜蜂在做什么？",
+        "textVi": "Con ong đang làm gì thế ạ?",
+        "pinyin": "Mì fēng zài zuò shén me?"
+      },
+      {
+        "id": "a-busy-bee-l4",
+        "speakerId": "dad",
+        "text": "它在采花粉。",
+        "textVi": "Nó đang lấy phấn hoa.",
+        "pinyin": "Tā zài cǎi huā fěn."
+      },
+      {
+        "id": "a-busy-bee-l5",
+        "speakerId": "ben",
+        "text": "花粉是橙色的！",
+        "textVi": "Phấn hoa màu cam!",
+        "pinyin": "Huā fěn shì chéng sè de!"
+      },
+      {
+        "id": "a-busy-bee-l6",
+        "speakerId": "dad",
+        "text": "对。我们安静地看吧。",
+        "textVi": "Đúng rồi. Mình cùng lặng lẽ xem nó nhé.",
+        "pinyin": "Duì. Wǒ men ān jìng de kàn ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-busy-bee-q1",
+        "prompt": "蜜蜂在采什么？",
+        "suggestedAnswer": "它在采花粉。",
+        "promptPinyin": "Mì fēng zài cǎi shén me?",
+        "suggestedAnswerPinyin": "Tā zài cǎi huā fěn."
+      },
+      {
+        "id": "a-busy-bee-q2",
+        "prompt": "花粉是什么颜色的？",
+        "suggestedAnswer": "它是橙色的。",
+        "promptPinyin": "Huā fěn shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì chéng sè de."
+      }
+    ]
+  },
+  {
+    "id": "the-butterfly",
+    "sceneId": "flower-garden",
+    "title": "蝴蝶",
+    "order": 5,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "莉莉在向日葵旁边看见一只橙色的蝴蝶。",
+    "lines": [
+      {
+        "id": "the-butterfly-l1",
+        "speakerId": "lily",
+        "text": "妈妈，我看见一只蝴蝶！",
+        "textVi": "Mẹ ơi, con thấy một con bướm!",
+        "pinyin": "Mā ma, wǒ kàn jiàn yì zhī hú dié!"
+      },
+      {
+        "id": "the-butterfly-l2",
+        "speakerId": "mom",
+        "text": "真好看。它是什么颜色的？",
+        "textVi": "Đẹp quá. Nó màu gì vậy con?",
+        "pinyin": "Zhēn hǎo kàn. Tā shì shén me yán sè de?"
+      },
+      {
+        "id": "the-butterfly-l3",
+        "speakerId": "lily",
+        "text": "它有橙色和黑色的翅膀。",
+        "textVi": "Nó có cánh màu cam và đen.",
+        "pinyin": "Tā yǒu chéng sè hé hēi sè de chì bǎng."
+      },
+      {
+        "id": "the-butterfly-l4",
+        "speakerId": "mom",
+        "text": "它要飞到哪儿去？",
+        "textVi": "Nó đang bay đi đâu thế?",
+        "pinyin": "Tā yào fēi dào nǎr qù?"
+      },
+      {
+        "id": "the-butterfly-l5",
+        "speakerId": "lily",
+        "text": "它飞向向日葵。",
+        "textVi": "Nó đang bay đến chỗ hoa hướng dương.",
+        "pinyin": "Tā fēi xiàng xiàng rì kuí."
+      },
+      {
+        "id": "the-butterfly-l6",
+        "speakerId": "mom",
+        "text": "蝴蝶很喜欢花。",
+        "textVi": "Bướm rất thích hoa.",
+        "pinyin": "Hú dié hěn xǐ huan huā."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-butterfly-q1",
+        "prompt": "蝴蝶的翅膀是什么颜色的？",
+        "suggestedAnswer": "是橙色和黑色的。",
+        "promptPinyin": "Hú dié de chì bǎng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Shì chéng sè hé hēi sè de."
+      },
+      {
+        "id": "the-butterfly-q2",
+        "prompt": "蝴蝶飞向哪儿？",
+        "suggestedAnswer": "它飞向向日葵。",
+        "promptPinyin": "Hú dié fēi xiàng nǎr?",
+        "suggestedAnswerPinyin": "Tā fēi xiàng xiàng rì kuí."
+      }
+    ]
+  },
+  {
+    "id": "a-little-ladybug",
+    "sceneId": "flower-garden",
+    "title": "小瓢虫",
+    "order": 6,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "小本在玫瑰叶子上发现了一只瓢虫。",
+    "lines": [
+      {
+        "id": "a-little-ladybug-l1",
+        "speakerId": "ben",
+        "text": "莉莉，快过来！看这片叶子。",
+        "textVi": "Lily ơi, lại đây! Nhìn chiếc lá này nè.",
+        "pinyin": "Lì li, kuài guò lái! Kàn zhè piàn yè zi."
+      },
+      {
+        "id": "a-little-ladybug-l2",
+        "speakerId": "lily",
+        "text": "哦，是一只瓢虫！",
+        "textVi": "Ồ, là một con bọ rùa!",
+        "pinyin": "Ò, shì yì zhī piáo chóng!"
+      },
+      {
+        "id": "a-little-ladybug-l3",
+        "speakerId": "ben",
+        "text": "它是红色的，有黑点。",
+        "textVi": "Nó màu đỏ có chấm đen.",
+        "pinyin": "Tā shì hóng sè de, yǒu hēi diǎn."
+      },
+      {
+        "id": "a-little-ladybug-l4",
+        "speakerId": "lily",
+        "text": "你会数黑点吗？",
+        "textVi": "Bạn đếm được mấy chấm không?",
+        "pinyin": "Nǐ huì shù hēi diǎn ma?"
+      },
+      {
+        "id": "a-little-ladybug-l5",
+        "speakerId": "ben",
+        "text": "一，二，三，四。四个黑点！",
+        "textVi": "Một, hai, ba, bốn. Bốn chấm!",
+        "pinyin": "Yī, èr, sān, sì. Sì gè hēi diǎn!"
+      },
+      {
+        "id": "a-little-ladybug-l6",
+        "speakerId": "lily",
+        "text": "瓢虫对花园有好处。",
+        "textVi": "Bọ rùa có ích cho khu vườn.",
+        "pinyin": "Piáo chóng duì huā yuán yǒu hǎo chù."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-little-ladybug-q1",
+        "prompt": "瓢虫在哪儿？",
+        "suggestedAnswer": "它在叶子上。",
+        "promptPinyin": "Piáo chóng zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài yè zi shàng."
+      },
+      {
+        "id": "a-little-ladybug-q2",
+        "prompt": "瓢虫是什么颜色的？",
+        "suggestedAnswer": "它是红色的，有黑点。",
+        "promptPinyin": "Piáo chóng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì hóng sè de, yǒu hēi diǎn."
+      }
+    ]
+  },
+  {
+    "id": "water-the-hanging-basket",
+    "sceneId": "flower-garden",
+    "title": "给吊篮浇水",
+    "order": 7,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "爸爸和莉莉给吊篮和花盆浇水。",
+    "lines": [
+      {
+        "id": "water-the-hanging-basket-l1",
+        "speakerId": "dad",
+        "text": "莉莉，你能帮我浇花吗？",
+        "textVi": "Lily ơi, con giúp bố tưới hoa nhé?",
+        "pinyin": "Lì li, nǐ néng bāng wǒ jiāo huā ma?"
+      },
+      {
+        "id": "water-the-hanging-basket-l2",
+        "speakerId": "lily",
+        "text": "好的！我们从哪儿开始？",
+        "textVi": "Vâng ạ! Mình bắt đầu từ đâu ạ?",
+        "pinyin": "Hǎo de! Wǒ men cóng nǎr kāi shǐ?"
+      },
+      {
+        "id": "water-the-hanging-basket-l3",
+        "speakerId": "dad",
+        "text": "我们先给吊篮浇水吧。",
+        "textVi": "Mình tưới giỏ hoa treo trước nhé.",
+        "pinyin": "Wǒ men xiān gěi diào lán jiāo shuǐ ba."
+      },
+      {
+        "id": "water-the-hanging-basket-l4",
+        "speakerId": "lily",
+        "text": "它太高了，我够不着。",
+        "textVi": "Nó cao quá, con không với tới.",
+        "pinyin": "Tā tài gāo le, wǒ gòu bu zháo."
+      },
+      {
+        "id": "water-the-hanging-basket-l5",
+        "speakerId": "dad",
+        "text": "我来吧。你给花盆浇水。",
+        "textVi": "Để bố tưới. Con tưới chậu hoa nhé.",
+        "pinyin": "Wǒ lái ba. Nǐ gěi huā pén jiāo shuǐ."
+      },
+      {
+        "id": "water-the-hanging-basket-l6",
+        "speakerId": "lily",
+        "text": "好的！现在花儿看起来很开心。",
+        "textVi": "Vâng ạ! Giờ trông hoa vui hẳn lên.",
+        "pinyin": "Hǎo de! Xiàn zài huār kàn qǐ lái hěn kāi xīn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "water-the-hanging-basket-q1",
+        "prompt": "谁给吊篮浇水？",
+        "suggestedAnswer": "爸爸给吊篮浇水。",
+        "promptPinyin": "Shuí gěi diào lán jiāo shuǐ?",
+        "suggestedAnswerPinyin": "Bà ba gěi diào lán jiāo shuǐ."
+      },
+      {
+        "id": "water-the-hanging-basket-q2",
+        "prompt": "莉莉给什么浇水？",
+        "suggestedAnswer": "她给花盆浇水。",
+        "promptPinyin": "Lì li gěi shén me jiāo shuǐ?",
+        "suggestedAnswerPinyin": "Tā gěi huā pén jiāo shuǐ."
+      }
+    ]
+  },
+  {
+    "id": "in-the-greenhouse",
+    "sceneId": "flower-garden",
+    "title": "在温室里",
+    "order": 8,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "妈妈带小本走进暖和的温室。",
+    "lines": [
+      {
+        "id": "in-the-greenhouse-l1",
+        "speakerId": "mom",
+        "text": "小本，我们进温室吧。",
+        "textVi": "Ben ơi, mình vào nhà kính nhé.",
+        "pinyin": "Xiǎo Běn, wǒ men jìn wēn shì ba."
+      },
+      {
+        "id": "in-the-greenhouse-l2",
+        "speakerId": "ben",
+        "text": "这里面好暖和！",
+        "textVi": "Trong này ấm quá!",
+        "pinyin": "Zhè lǐ miàn hǎo nuǎn huo!"
+      },
+      {
+        "id": "in-the-greenhouse-l3",
+        "speakerId": "mom",
+        "text": "对。玻璃让植物保持温暖。",
+        "textVi": "Đúng rồi. Kính giữ ấm cho cây.",
+        "pinyin": "Duì. Bō li ràng zhí wù bǎo chí wēn nuǎn."
+      },
+      {
+        "id": "in-the-greenhouse-l4",
+        "speakerId": "ben",
+        "text": "这朵粉色的花是什么？",
+        "textVi": "Bông hoa màu hồng này là hoa gì ạ?",
+        "pinyin": "Zhè duǒ fěn sè de huā shì shén me?"
+      },
+      {
+        "id": "in-the-greenhouse-l5",
+        "speakerId": "mom",
+        "text": "这是兰花。它种在花盆里。",
+        "textVi": "Đó là hoa lan. Nó được trồng trong chậu hoa.",
+        "pinyin": "Zhè shì lán huā. Tā zhòng zài huā pén lǐ."
+      },
+      {
+        "id": "in-the-greenhouse-l6",
+        "speakerId": "ben",
+        "text": "兰花真好看。",
+        "textVi": "Hoa lan đẹp quá.",
+        "pinyin": "Lán huā zhēn hǎo kàn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "in-the-greenhouse-q1",
+        "prompt": "温室里是暖和的还是冷的？",
+        "suggestedAnswer": "是暖和的。",
+        "promptPinyin": "Wēn shì lǐ shì nuǎn huo de hái shì lěng de?",
+        "suggestedAnswerPinyin": "Shì nuǎn huo de."
+      },
+      {
+        "id": "in-the-greenhouse-q2",
+        "prompt": "兰花种在哪儿？",
+        "suggestedAnswer": "它种在花盆里。",
+        "promptPinyin": "Lán huā zhòng zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zhòng zài huā pén lǐ."
+      }
+    ]
+  },
+  {
+    "id": "a-little-flower-bud",
+    "sceneId": "flower-garden",
+    "title": "小花苞",
+    "order": 9,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "莉莉发现了一个花苞，妈妈说它很快就会开。",
+    "lines": [
+      {
+        "id": "a-little-flower-bud-l1",
+        "speakerId": "lily",
+        "text": "妈妈，这朵花没有开。",
+        "textVi": "Mẹ ơi, bông hoa này còn khép lại.",
+        "pinyin": "Mā ma, zhè duǒ huā méi yǒu kāi."
+      },
+      {
+        "id": "a-little-flower-bud-l2",
+        "speakerId": "mom",
+        "text": "那是花苞。",
+        "textVi": "Đó là nụ hoa đấy con.",
+        "pinyin": "Nà shì huā bāo."
+      },
+      {
+        "id": "a-little-flower-bud-l3",
+        "speakerId": "lily",
+        "text": "它什么时候开？",
+        "textVi": "Khi nào nó nở ạ?",
+        "pinyin": "Tā shén me shí hou kāi?"
+      },
+      {
+        "id": "a-little-flower-bud-l4",
+        "speakerId": "mom",
+        "text": "过几天就开了。到时候你就能看到花瓣。",
+        "textVi": "Vài ngày nữa. Lúc đó con sẽ thấy các cánh hoa.",
+        "pinyin": "Guò jǐ tiān jiù kāi le. Dào shí hou nǐ jiù néng kàn dào huā bàn."
+      },
+      {
+        "id": "a-little-flower-bud-l5",
+        "speakerId": "lily",
+        "text": "你看，一片粉色的花瓣掉在小路上。",
+        "textVi": "Mẹ nhìn kìa, một cánh hoa màu hồng rơi trên lối đi.",
+        "pinyin": "Nǐ kàn, yí piàn fěn sè de huā bàn diào zài xiǎo lù shàng."
+      },
+      {
+        "id": "a-little-flower-bud-l6",
+        "speakerId": "mom",
+        "text": "你可以把它夹在书里。",
+        "textVi": "Con có thể ép nó vào trong sách.",
+        "pinyin": "Nǐ kě yǐ bǎ tā jiā zài shū lǐ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-little-flower-bud-q1",
+        "prompt": "花苞什么时候开？",
+        "suggestedAnswer": "过几天就开。",
+        "promptPinyin": "Huā bāo shén me shí hou kāi?",
+        "suggestedAnswerPinyin": "Guò jǐ tiān jiù kāi."
+      },
+      {
+        "id": "a-little-flower-bud-q2",
+        "prompt": "什么掉在小路上了？",
+        "suggestedAnswer": "一片粉色的花瓣。",
+        "promptPinyin": "Shén me diào zài xiǎo lù shàng le?",
+        "suggestedAnswerPinyin": "Yí piàn fěn sè de huā bàn."
+      }
+    ]
+  },
+  {
+    "id": "flowers-for-grandma",
+    "sceneId": "flower-garden",
+    "title": "送给奶奶的花",
+    "order": 10,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "小本和爸爸从花坛里摘花送给奶奶。",
+    "lines": [
+      {
+        "id": "flowers-for-grandma-l1",
+        "speakerId": "ben",
+        "text": "爸爸，我们可以摘花送给奶奶吗？",
+        "textVi": "Bố ơi, mình hái hoa tặng bà được không ạ?",
+        "pinyin": "Bà ba, wǒ men kě yǐ zhāi huā sòng gěi nǎi nai ma?"
+      },
+      {
+        "id": "flowers-for-grandma-l2",
+        "speakerId": "dad",
+        "text": "好主意！奶奶很喜欢菊花。",
+        "textVi": "Ý hay đấy! Bà rất thích hoa cúc.",
+        "pinyin": "Hǎo zhǔ yì! Nǎi nai hěn xǐ huan jú huā."
+      },
+      {
+        "id": "flowers-for-grandma-l3",
+        "speakerId": "ben",
+        "text": "黄色的菊花在花坛里。",
+        "textVi": "Hoa cúc vàng ở trong luống hoa ạ.",
+        "pinyin": "Huáng sè de jú huā zài huā tán lǐ."
+      },
+      {
+        "id": "flowers-for-grandma-l4",
+        "speakerId": "dad",
+        "text": "我们再摘一些郁金香和雏菊吧。",
+        "textVi": "Mình hái thêm ít hoa tulip và cúc họa mi nữa nhé.",
+        "pinyin": "Wǒ men zài zhāi yì xiē yù jīn xiāng hé chú jú ba."
+      },
+      {
+        "id": "flowers-for-grandma-l5",
+        "speakerId": "ben",
+        "text": "现在我们有好多花了！",
+        "textVi": "Giờ mình có nhiều hoa rồi!",
+        "pinyin": "Xiàn zài wǒ men yǒu hǎo duō huā le!"
+      },
+      {
+        "id": "flowers-for-grandma-l6",
+        "speakerId": "dad",
+        "text": "奶奶一定会很高兴。",
+        "textVi": "Bà sẽ vui lắm đây.",
+        "pinyin": "Nǎi nai yí dìng huì hěn gāo xìng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "flowers-for-grandma-q1",
+        "prompt": "这些花是送给谁的？",
+        "suggestedAnswer": "是送给奶奶的。",
+        "promptPinyin": "Zhè xiē huā shì sòng gěi shuí de?",
+        "suggestedAnswerPinyin": "Shì sòng gěi nǎi nai de."
+      },
+      {
+        "id": "flowers-for-grandma-q2",
+        "prompt": "奶奶喜欢什么花？",
+        "suggestedAnswer": "她喜欢菊花。",
+        "promptPinyin": "Nǎi nai xǐ huan shén me huā?",
+        "suggestedAnswerPinyin": "Tā xǐ huan jú huā."
+      }
+    ]
   }
 ]

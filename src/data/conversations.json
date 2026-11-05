@@ -4112,5 +4112,585 @@
         "suggestedAnswer": "He uses the ladder."
       }
     ]
+  },
+  {
+    "id": "our-flower-garden",
+    "sceneId": "flower-garden",
+    "title": "Our Flower Garden",
+    "order": 1,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Mom shows Lily the flowers in the garden.",
+    "lines": [
+      {
+        "id": "our-flower-garden-l1",
+        "speakerId": "mom",
+        "text": "Lily, come and see our flower garden!",
+        "textVi": "Lily ơi, lại xem vườn hoa của nhà mình này!"
+      },
+      {
+        "id": "our-flower-garden-l2",
+        "speakerId": "lily",
+        "text": "Wow! There are so many flowers!",
+        "textVi": "Ồ! Có nhiều hoa quá!"
+      },
+      {
+        "id": "our-flower-garden-l3",
+        "speakerId": "mom",
+        "text": "Look at the big red rose.",
+        "textVi": "Con nhìn bông hồng đỏ to kia kìa."
+      },
+      {
+        "id": "our-flower-garden-l4",
+        "speakerId": "lily",
+        "text": "I like the yellow sunflower too.",
+        "textVi": "Con cũng thích hoa hướng dương màu vàng."
+      },
+      {
+        "id": "our-flower-garden-l5",
+        "speakerId": "mom",
+        "text": "The sunflower is taller than you!",
+        "textVi": "Cây hướng dương còn cao hơn cả con đấy!"
+      },
+      {
+        "id": "our-flower-garden-l6",
+        "speakerId": "lily",
+        "text": "Our garden is so beautiful.",
+        "textVi": "Vườn nhà mình đẹp quá."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-flower-garden-q1",
+        "prompt": "What color is the rose?",
+        "suggestedAnswer": "It’s red."
+      },
+      {
+        "id": "our-flower-garden-q2",
+        "prompt": "Which flower does Lily like?",
+        "suggestedAnswer": "She likes the sunflower."
+      }
+    ]
+  },
+  {
+    "id": "smell-the-flowers",
+    "sceneId": "flower-garden",
+    "title": "Smell the Flowers",
+    "order": 2,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Ben and Lily smell the lavender and the jasmine.",
+    "lines": [
+      {
+        "id": "smell-the-flowers-l1",
+        "speakerId": "ben",
+        "text": "Lily, smell this purple flower.",
+        "textVi": "Lily ơi, bạn ngửi bông hoa màu tím này đi."
+      },
+      {
+        "id": "smell-the-flowers-l2",
+        "speakerId": "lily",
+        "text": "It’s lavender. It smells nice!",
+        "textVi": "Là hoa oải hương đấy. Thơm quá!"
+      },
+      {
+        "id": "smell-the-flowers-l3",
+        "speakerId": "ben",
+        "text": "What are the white flowers on the post?",
+        "textVi": "Những bông hoa trắng trên cột gỗ là hoa gì thế?"
+      },
+      {
+        "id": "smell-the-flowers-l4",
+        "speakerId": "lily",
+        "text": "That’s jasmine.",
+        "textVi": "Đó là hoa nhài."
+      },
+      {
+        "id": "smell-the-flowers-l5",
+        "speakerId": "ben",
+        "text": "Mmm, jasmine smells sweet.",
+        "textVi": "Ừm, hoa nhài thơm ngọt ngào."
+      },
+      {
+        "id": "smell-the-flowers-l6",
+        "speakerId": "lily",
+        "text": "I love flowers that smell good.",
+        "textVi": "Mình rất thích những bông hoa thơm."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "smell-the-flowers-q1",
+        "prompt": "What color is the lavender?",
+        "suggestedAnswer": "It’s purple."
+      },
+      {
+        "id": "smell-the-flowers-q2",
+        "prompt": "Where is the jasmine?",
+        "suggestedAnswer": "It’s on the post."
+      }
+    ]
+  },
+  {
+    "id": "be-careful-of-the-thorns",
+    "sceneId": "flower-garden",
+    "title": "Be Careful of the Thorns",
+    "order": 3,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Dad tells Ben that the rose stem has sharp thorns.",
+    "lines": [
+      {
+        "id": "be-careful-of-the-thorns-l1",
+        "speakerId": "ben",
+        "text": "Dad, can I touch the rose?",
+        "textVi": "Bố ơi, con sờ bông hồng được không?"
+      },
+      {
+        "id": "be-careful-of-the-thorns-l2",
+        "speakerId": "dad",
+        "text": "Yes, but be careful of the thorns.",
+        "textVi": "Được, nhưng cẩn thận gai nhé."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l3",
+        "speakerId": "ben",
+        "text": "Where are the thorns?",
+        "textVi": "Gai ở đâu ạ?"
+      },
+      {
+        "id": "be-careful-of-the-thorns-l4",
+        "speakerId": "dad",
+        "text": "They are on the stem. They are sharp.",
+        "textVi": "Gai ở trên thân hoa. Gai nhọn lắm."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l5",
+        "speakerId": "ben",
+        "text": "Ouch! I touched a thorn.",
+        "textVi": "Ui da! Con chạm vào gai rồi."
+      },
+      {
+        "id": "be-careful-of-the-thorns-l6",
+        "speakerId": "dad",
+        "text": "Let me see. Touch the petals, not the stem.",
+        "textVi": "Để bố xem nào. Con sờ cánh hoa thôi, đừng sờ thân."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "be-careful-of-the-thorns-q1",
+        "prompt": "Where are the thorns?",
+        "suggestedAnswer": "They are on the stem."
+      },
+      {
+        "id": "be-careful-of-the-thorns-q2",
+        "prompt": "Are the thorns soft or sharp?",
+        "suggestedAnswer": "They are sharp."
+      }
+    ]
+  },
+  {
+    "id": "a-busy-bee",
+    "sceneId": "flower-garden",
+    "title": "A Busy Bee",
+    "order": 4,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Ben and Dad watch a bee collect pollen.",
+    "lines": [
+      {
+        "id": "a-busy-bee-l1",
+        "speakerId": "ben",
+        "text": "Dad, look! There’s a bee.",
+        "textVi": "Bố ơi, nhìn kìa! Có một con ong."
+      },
+      {
+        "id": "a-busy-bee-l2",
+        "speakerId": "dad",
+        "text": "It’s flying to the lily.",
+        "textVi": "Nó đang bay đến bông hoa ly."
+      },
+      {
+        "id": "a-busy-bee-l3",
+        "speakerId": "ben",
+        "text": "What is the bee doing?",
+        "textVi": "Con ong đang làm gì thế ạ?"
+      },
+      {
+        "id": "a-busy-bee-l4",
+        "speakerId": "dad",
+        "text": "It’s collecting pollen.",
+        "textVi": "Nó đang lấy phấn hoa."
+      },
+      {
+        "id": "a-busy-bee-l5",
+        "speakerId": "ben",
+        "text": "The pollen is orange!",
+        "textVi": "Phấn hoa màu cam!"
+      },
+      {
+        "id": "a-busy-bee-l6",
+        "speakerId": "dad",
+        "text": "Yes. Let’s watch it quietly.",
+        "textVi": "Đúng rồi. Mình cùng lặng lẽ xem nó nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-busy-bee-q1",
+        "prompt": "What is the bee collecting?",
+        "suggestedAnswer": "It’s collecting pollen."
+      },
+      {
+        "id": "a-busy-bee-q2",
+        "prompt": "What color is the pollen?",
+        "suggestedAnswer": "It’s orange."
+      }
+    ]
+  },
+  {
+    "id": "the-butterfly",
+    "sceneId": "flower-garden",
+    "title": "The Butterfly",
+    "order": 5,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Lily sees an orange butterfly near the sunflowers.",
+    "lines": [
+      {
+        "id": "the-butterfly-l1",
+        "speakerId": "lily",
+        "text": "Mom, I see a butterfly!",
+        "textVi": "Mẹ ơi, con thấy một con bướm!"
+      },
+      {
+        "id": "the-butterfly-l2",
+        "speakerId": "mom",
+        "text": "It’s so pretty. What color is it?",
+        "textVi": "Đẹp quá. Nó màu gì vậy con?"
+      },
+      {
+        "id": "the-butterfly-l3",
+        "speakerId": "lily",
+        "text": "It has orange and black wings.",
+        "textVi": "Nó có cánh màu cam và đen."
+      },
+      {
+        "id": "the-butterfly-l4",
+        "speakerId": "mom",
+        "text": "Where is it going?",
+        "textVi": "Nó đang bay đi đâu thế?"
+      },
+      {
+        "id": "the-butterfly-l5",
+        "speakerId": "lily",
+        "text": "It’s flying to the sunflowers.",
+        "textVi": "Nó đang bay đến chỗ hoa hướng dương."
+      },
+      {
+        "id": "the-butterfly-l6",
+        "speakerId": "mom",
+        "text": "Butterflies love flowers.",
+        "textVi": "Bướm rất thích hoa."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-butterfly-q1",
+        "prompt": "What color are the butterfly’s wings?",
+        "suggestedAnswer": "They are orange and black."
+      },
+      {
+        "id": "the-butterfly-q2",
+        "prompt": "Where is the butterfly flying?",
+        "suggestedAnswer": "It’s flying to the sunflowers."
+      }
+    ]
+  },
+  {
+    "id": "a-little-ladybug",
+    "sceneId": "flower-garden",
+    "title": "A Little Ladybug",
+    "order": 6,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Ben finds a ladybug on a rose leaf.",
+    "lines": [
+      {
+        "id": "a-little-ladybug-l1",
+        "speakerId": "ben",
+        "text": "Lily, come here! Look at this leaf.",
+        "textVi": "Lily ơi, lại đây! Nhìn chiếc lá này nè."
+      },
+      {
+        "id": "a-little-ladybug-l2",
+        "speakerId": "lily",
+        "text": "Oh, it’s a ladybug!",
+        "textVi": "Ồ, là một con bọ rùa!"
+      },
+      {
+        "id": "a-little-ladybug-l3",
+        "speakerId": "ben",
+        "text": "It’s red with black spots.",
+        "textVi": "Nó màu đỏ có chấm đen."
+      },
+      {
+        "id": "a-little-ladybug-l4",
+        "speakerId": "lily",
+        "text": "Can you count the spots?",
+        "textVi": "Bạn đếm được mấy chấm không?"
+      },
+      {
+        "id": "a-little-ladybug-l5",
+        "speakerId": "ben",
+        "text": "One, two, three, four. Four spots!",
+        "textVi": "Một, hai, ba, bốn. Bốn chấm!"
+      },
+      {
+        "id": "a-little-ladybug-l6",
+        "speakerId": "lily",
+        "text": "Ladybugs are good for the garden.",
+        "textVi": "Bọ rùa có ích cho khu vườn."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-little-ladybug-q1",
+        "prompt": "Where is the ladybug?",
+        "suggestedAnswer": "It’s on a leaf."
+      },
+      {
+        "id": "a-little-ladybug-q2",
+        "prompt": "What color is the ladybug?",
+        "suggestedAnswer": "It’s red with black spots."
+      }
+    ]
+  },
+  {
+    "id": "water-the-hanging-basket",
+    "sceneId": "flower-garden",
+    "title": "Water the Hanging Basket",
+    "order": 7,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Dad and Lily water the hanging basket and the flowerpot.",
+    "lines": [
+      {
+        "id": "water-the-hanging-basket-l1",
+        "speakerId": "dad",
+        "text": "Lily, can you help me water the flowers?",
+        "textVi": "Lily ơi, con giúp bố tưới hoa nhé?"
+      },
+      {
+        "id": "water-the-hanging-basket-l2",
+        "speakerId": "lily",
+        "text": "Sure! Where do we start?",
+        "textVi": "Vâng ạ! Mình bắt đầu từ đâu ạ?"
+      },
+      {
+        "id": "water-the-hanging-basket-l3",
+        "speakerId": "dad",
+        "text": "Let’s water the hanging basket first.",
+        "textVi": "Mình tưới giỏ hoa treo trước nhé."
+      },
+      {
+        "id": "water-the-hanging-basket-l4",
+        "speakerId": "lily",
+        "text": "It’s too high for me.",
+        "textVi": "Nó cao quá, con không với tới."
+      },
+      {
+        "id": "water-the-hanging-basket-l5",
+        "speakerId": "dad",
+        "text": "I’ll do it. You water the flowerpot.",
+        "textVi": "Để bố tưới. Con tưới chậu hoa nhé."
+      },
+      {
+        "id": "water-the-hanging-basket-l6",
+        "speakerId": "lily",
+        "text": "Okay! The flowers look happy now.",
+        "textVi": "Vâng ạ! Giờ trông hoa vui hẳn lên."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "water-the-hanging-basket-q1",
+        "prompt": "Who waters the hanging basket?",
+        "suggestedAnswer": "Dad waters it."
+      },
+      {
+        "id": "water-the-hanging-basket-q2",
+        "prompt": "What does Lily water?",
+        "suggestedAnswer": "She waters the flowerpot."
+      }
+    ]
+  },
+  {
+    "id": "in-the-greenhouse",
+    "sceneId": "flower-garden",
+    "title": "In the Greenhouse",
+    "order": 8,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Mom takes Ben into the warm greenhouse.",
+    "lines": [
+      {
+        "id": "in-the-greenhouse-l1",
+        "speakerId": "mom",
+        "text": "Ben, let’s go into the greenhouse.",
+        "textVi": "Ben ơi, mình vào nhà kính nhé."
+      },
+      {
+        "id": "in-the-greenhouse-l2",
+        "speakerId": "ben",
+        "text": "It’s warm in here!",
+        "textVi": "Trong này ấm quá!"
+      },
+      {
+        "id": "in-the-greenhouse-l3",
+        "speakerId": "mom",
+        "text": "Yes. The glass keeps the plants warm.",
+        "textVi": "Đúng rồi. Kính giữ ấm cho cây."
+      },
+      {
+        "id": "in-the-greenhouse-l4",
+        "speakerId": "ben",
+        "text": "What is this pink flower?",
+        "textVi": "Bông hoa màu hồng này là hoa gì ạ?"
+      },
+      {
+        "id": "in-the-greenhouse-l5",
+        "speakerId": "mom",
+        "text": "It’s an orchid. It grows in a flowerpot.",
+        "textVi": "Đó là hoa lan. Nó được trồng trong chậu hoa."
+      },
+      {
+        "id": "in-the-greenhouse-l6",
+        "speakerId": "ben",
+        "text": "The orchid is so pretty.",
+        "textVi": "Hoa lan đẹp quá."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "in-the-greenhouse-q1",
+        "prompt": "Is the greenhouse warm or cold?",
+        "suggestedAnswer": "It’s warm."
+      },
+      {
+        "id": "in-the-greenhouse-q2",
+        "prompt": "Where does the orchid grow?",
+        "suggestedAnswer": "It grows in a flowerpot."
+      }
+    ]
+  },
+  {
+    "id": "a-little-flower-bud",
+    "sceneId": "flower-garden",
+    "title": "A Little Flower Bud",
+    "order": 9,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Lily finds a flower bud, and Mom says it will open soon.",
+    "lines": [
+      {
+        "id": "a-little-flower-bud-l1",
+        "speakerId": "lily",
+        "text": "Mom, this flower is closed.",
+        "textVi": "Mẹ ơi, bông hoa này còn khép lại."
+      },
+      {
+        "id": "a-little-flower-bud-l2",
+        "speakerId": "mom",
+        "text": "That’s a flower bud.",
+        "textVi": "Đó là nụ hoa đấy con."
+      },
+      {
+        "id": "a-little-flower-bud-l3",
+        "speakerId": "lily",
+        "text": "When will it open?",
+        "textVi": "Khi nào nó nở ạ?"
+      },
+      {
+        "id": "a-little-flower-bud-l4",
+        "speakerId": "mom",
+        "text": "In a few days. Then you’ll see the petals.",
+        "textVi": "Vài ngày nữa. Lúc đó con sẽ thấy các cánh hoa."
+      },
+      {
+        "id": "a-little-flower-bud-l5",
+        "speakerId": "lily",
+        "text": "Look, a pink petal fell on the path.",
+        "textVi": "Mẹ nhìn kìa, một cánh hoa màu hồng rơi trên lối đi."
+      },
+      {
+        "id": "a-little-flower-bud-l6",
+        "speakerId": "mom",
+        "text": "You can keep it in your book.",
+        "textVi": "Con có thể ép nó vào trong sách."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-little-flower-bud-q1",
+        "prompt": "When will the flower bud open?",
+        "suggestedAnswer": "In a few days."
+      },
+      {
+        "id": "a-little-flower-bud-q2",
+        "prompt": "What fell on the path?",
+        "suggestedAnswer": "A pink petal fell on the path."
+      }
+    ]
+  },
+  {
+    "id": "flowers-for-grandma",
+    "sceneId": "flower-garden",
+    "title": "Flowers for Grandma",
+    "order": 10,
+    "poster": "/assets/scenes/flower-garden/flower-garden-desktop.webp",
+    "description": "Ben and Dad pick flowers from the flower bed for Grandma.",
+    "lines": [
+      {
+        "id": "flowers-for-grandma-l1",
+        "speakerId": "ben",
+        "text": "Dad, can we pick flowers for Grandma?",
+        "textVi": "Bố ơi, mình hái hoa tặng bà được không ạ?"
+      },
+      {
+        "id": "flowers-for-grandma-l2",
+        "speakerId": "dad",
+        "text": "Good idea! Grandma loves chrysanthemums.",
+        "textVi": "Ý hay đấy! Bà rất thích hoa cúc."
+      },
+      {
+        "id": "flowers-for-grandma-l3",
+        "speakerId": "ben",
+        "text": "The yellow ones are in the flower bed.",
+        "textVi": "Hoa cúc vàng ở trong luống hoa ạ."
+      },
+      {
+        "id": "flowers-for-grandma-l4",
+        "speakerId": "dad",
+        "text": "Let’s pick some tulips and daisies too.",
+        "textVi": "Mình hái thêm ít hoa tulip và cúc họa mi nữa nhé."
+      },
+      {
+        "id": "flowers-for-grandma-l5",
+        "speakerId": "ben",
+        "text": "Now we have a lot of flowers!",
+        "textVi": "Giờ mình có nhiều hoa rồi!"
+      },
+      {
+        "id": "flowers-for-grandma-l6",
+        "speakerId": "dad",
+        "text": "Grandma will be so happy.",
+        "textVi": "Bà sẽ vui lắm đây."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "flowers-for-grandma-q1",
+        "prompt": "Who are the flowers for?",
+        "suggestedAnswer": "They are for Grandma."
+      },
+      {
+        "id": "flowers-for-grandma-q2",
+        "prompt": "Which flowers does Grandma love?",
+        "suggestedAnswer": "She loves chrysanthemums."
+      }
+    ]
   }
 ]

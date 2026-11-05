@@ -3775,5 +3775,488 @@
     ],
     "relatedWordIds": ["workbench", "car-battery", "toolbox"],
     "distractorWordIds": ["garage-remote", "air-pump", "helmet"]
+  },
+  "garden-flower": {
+    "id": "garden-flower",
+    "text": "flower",
+    "ipa": "/ˈflaʊər/",
+    "meaningVi": "bông hoa",
+    "image": "/assets/scenes/flower-garden/objects/01_garden-flower.webp",
+    "acceptedAnswers": ["flower", "a flower", "flowers"],
+    "examples": [
+      {
+        "text": "This flower is beautiful.",
+        "vi": "Bông hoa này đẹp quá."
+      },
+      {
+        "text": "There are many flowers in the garden.",
+        "vi": "Trong vườn có rất nhiều hoa."
+      }
+    ],
+    "relatedWordIds": ["petal", "stem", "flower-bud"],
+    "distractorWordIds": ["garden-flowerpot", "flower-bed", "hanging-basket"]
+  },
+  "rose": {
+    "id": "rose",
+    "text": "rose",
+    "ipa": "/roʊz/",
+    "meaningVi": "hoa hồng",
+    "image": "/assets/scenes/flower-garden/objects/02_rose.webp",
+    "acceptedAnswers": ["rose", "a rose", "roses"],
+    "examples": [
+      {
+        "text": "This is a red rose.",
+        "vi": "Đây là một bông hoa hồng đỏ."
+      },
+      {
+        "text": "The rose has sharp thorns.",
+        "vi": "Cây hoa hồng có gai nhọn."
+      }
+    ],
+    "relatedWordIds": ["thorn", "petal", "flower-bud"],
+    "distractorWordIds": ["tulip", "hibiscus", "lily"]
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "text": "sunflower",
+    "ipa": "/ˈsʌnflaʊər/",
+    "meaningVi": "hoa hướng dương",
+    "image": "/assets/scenes/flower-garden/objects/03_sunflower.webp",
+    "acceptedAnswers": ["sunflower", "a sunflower", "sunflowers"],
+    "examples": [
+      {
+        "text": "The sunflower is yellow.",
+        "vi": "Hoa hướng dương màu vàng."
+      },
+      {
+        "text": "The sunflower is taller than me!",
+        "vi": "Cây hướng dương cao hơn cả mình!"
+      }
+    ],
+    "relatedWordIds": ["bee", "stem", "garden-flower"],
+    "distractorWordIds": ["daisy", "chrysanthemum", "tulip"]
+  },
+  "daisy": {
+    "id": "daisy",
+    "text": "daisy",
+    "ipa": "/ˈdeɪzi/",
+    "meaningVi": "hoa cúc họa mi",
+    "image": "/assets/scenes/flower-garden/objects/04_daisy.webp",
+    "acceptedAnswers": ["daisy", "a daisy", "daisies"],
+    "examples": [
+      {
+        "text": "I see a white daisy.",
+        "vi": "Mình thấy một bông cúc họa mi màu trắng."
+      },
+      {
+        "text": "The daisy has a yellow center.",
+        "vi": "Bông cúc họa mi có phần giữa màu vàng."
+      }
+    ],
+    "relatedWordIds": ["petal", "flower-bed", "garden-flower"],
+    "distractorWordIds": ["lily", "jasmine", "sunflower"]
+  },
+  "tulip": {
+    "id": "tulip",
+    "text": "tulip",
+    "ipa": "/ˈtuːlɪp/",
+    "meaningVi": "hoa tulip",
+    "image": "/assets/scenes/flower-garden/objects/05_tulip.webp",
+    "acceptedAnswers": ["tulip", "a tulip", "tulips"],
+    "examples": [
+      {
+        "text": "The tulip is pink.",
+        "vi": "Bông hoa tulip màu hồng."
+      },
+      {
+        "text": "There are pink and yellow tulips.",
+        "vi": "Có hoa tulip màu hồng và màu vàng."
+      }
+    ],
+    "relatedWordIds": ["flower-bed", "flower-bud", "stem"],
+    "distractorWordIds": ["rose", "lily", "orchid"]
+  },
+  "lily": {
+    "id": "lily",
+    "text": "lily",
+    "ipa": "/ˈlɪli/",
+    "meaningVi": "hoa ly",
+    "image": "/assets/scenes/flower-garden/objects/06_lily.webp",
+    "acceptedAnswers": ["lily", "a lily", "lilies"],
+    "examples": [
+      {
+        "text": "This lily is white.",
+        "vi": "Bông hoa ly này màu trắng."
+      },
+      {
+        "text": "The lily has orange pollen.",
+        "vi": "Hoa ly có phấn hoa màu cam."
+      }
+    ],
+    "relatedWordIds": ["pollen", "petal", "flower-bud"],
+    "distractorWordIds": ["daisy", "jasmine", "tulip"]
+  },
+  "orchid": {
+    "id": "orchid",
+    "text": "orchid",
+    "ipa": "/ˈɔːrkɪd/",
+    "meaningVi": "hoa lan",
+    "image": "/assets/scenes/flower-garden/objects/07_orchid.webp",
+    "acceptedAnswers": ["orchid", "an orchid", "orchids"],
+    "examples": [
+      {
+        "text": "The orchid is purple.",
+        "vi": "Hoa lan màu tím."
+      },
+      {
+        "text": "The orchid grows in a flowerpot.",
+        "vi": "Cây hoa lan được trồng trong chậu hoa."
+      }
+    ],
+    "relatedWordIds": ["garden-flowerpot", "greenhouse", "petal"],
+    "distractorWordIds": ["lavender", "hibiscus", "lily"]
+  },
+  "lavender": {
+    "id": "lavender",
+    "text": "lavender",
+    "uncountable": true,
+    "ipa": "/ˈlævəndər/",
+    "meaningVi": "hoa oải hương",
+    "image": "/assets/scenes/flower-garden/objects/08_lavender.webp",
+    "acceptedAnswers": ["lavender"],
+    "examples": [
+      {
+        "text": "The lavender smells nice.",
+        "vi": "Hoa oải hương thơm quá."
+      },
+      {
+        "text": "Bees love purple lavender.",
+        "vi": "Những chú ong rất thích hoa oải hương màu tím."
+      }
+    ],
+    "relatedWordIds": ["bee", "butterfly", "flower-bed"],
+    "distractorWordIds": ["orchid", "hydrangea", "jasmine"]
+  },
+  "jasmine": {
+    "id": "jasmine",
+    "text": "jasmine",
+    "uncountable": true,
+    "ipa": "/ˈdʒæzmɪn/",
+    "meaningVi": "hoa nhài",
+    "image": "/assets/scenes/flower-garden/objects/09_jasmine.webp",
+    "acceptedAnswers": ["jasmine"],
+    "examples": [
+      {
+        "text": "Jasmine smells sweet.",
+        "vi": "Hoa nhài thơm ngọt ngào."
+      },
+      {
+        "text": "The white jasmine climbs up the post.",
+        "vi": "Hoa nhài trắng leo lên cột gỗ."
+      }
+    ],
+    "relatedWordIds": ["hanging-basket", "petal", "garden-flower"],
+    "distractorWordIds": ["daisy", "lily", "lavender"]
+  },
+  "chrysanthemum": {
+    "id": "chrysanthemum",
+    "text": "chrysanthemum",
+    "ipa": "/krɪˈsænθəməm/",
+    "meaningVi": "hoa cúc",
+    "image": "/assets/scenes/flower-garden/objects/10_chrysanthemum.webp",
+    "acceptedAnswers": ["chrysanthemum", "a chrysanthemum", "chrysanthemums"],
+    "examples": [
+      {
+        "text": "This chrysanthemum is yellow.",
+        "vi": "Bông hoa cúc này màu vàng."
+      },
+      {
+        "text": "Grandma loves chrysanthemums.",
+        "vi": "Bà rất thích hoa cúc."
+      }
+    ],
+    "relatedWordIds": ["petal", "flower-bed", "bee"],
+    "distractorWordIds": ["sunflower", "daisy", "hydrangea"]
+  },
+  "hydrangea": {
+    "id": "hydrangea",
+    "text": "hydrangea",
+    "ipa": "/haɪˈdreɪndʒə/",
+    "meaningVi": "hoa cẩm tú cầu",
+    "image": "/assets/scenes/flower-garden/objects/11_hydrangea.webp",
+    "acceptedAnswers": ["hydrangea", "a hydrangea", "hydrangeas"],
+    "examples": [
+      {
+        "text": "The hydrangea has blue flowers.",
+        "vi": "Cây cẩm tú cầu có hoa màu xanh."
+      },
+      {
+        "text": "This hydrangea is big and round.",
+        "vi": "Bông cẩm tú cầu này to và tròn."
+      }
+    ],
+    "relatedWordIds": ["flower-bed", "petal", "garden-flower"],
+    "distractorWordIds": ["lavender", "chrysanthemum", "orchid"]
+  },
+  "hibiscus": {
+    "id": "hibiscus",
+    "text": "hibiscus",
+    "ipa": "/haɪˈbɪskəs/",
+    "meaningVi": "hoa dâm bụt",
+    "image": "/assets/scenes/flower-garden/objects/12_hibiscus.webp",
+    "acceptedAnswers": ["hibiscus", "a hibiscus"],
+    "examples": [
+      {
+        "text": "I see a red hibiscus.",
+        "vi": "Mình thấy một bông hoa dâm bụt màu đỏ."
+      },
+      {
+        "text": "The hibiscus has big petals.",
+        "vi": "Hoa dâm bụt có cánh hoa to."
+      }
+    ],
+    "relatedWordIds": ["petal", "pollen", "garden-flower"],
+    "distractorWordIds": ["rose", "lily", "tulip"]
+  },
+  "flower-bud": {
+    "id": "flower-bud",
+    "text": "flower bud",
+    "ipa": "/ˈflaʊər bʌd/",
+    "meaningVi": "nụ hoa",
+    "image": "/assets/scenes/flower-garden/objects/13_flower-bud.webp",
+    "acceptedAnswers": ["flower bud", "a flower bud", "bud", "a bud"],
+    "examples": [
+      {
+        "text": "The flower bud is small.",
+        "vi": "Nụ hoa còn nhỏ."
+      },
+      {
+        "text": "Soon the bud will open.",
+        "vi": "Chẳng bao lâu nữa nụ hoa sẽ nở."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem", "garden-flower"],
+    "distractorWordIds": ["petal", "pollen", "thorn"]
+  },
+  "petal": {
+    "id": "petal",
+    "text": "petal",
+    "ipa": "/ˈpetl/",
+    "meaningVi": "cánh hoa",
+    "image": "/assets/scenes/flower-garden/objects/14_petal.webp",
+    "acceptedAnswers": ["petal", "a petal", "petals"],
+    "examples": [
+      {
+        "text": "This petal is soft.",
+        "vi": "Cánh hoa này mềm."
+      },
+      {
+        "text": "A pink petal fell on the path.",
+        "vi": "Một cánh hoa màu hồng rơi trên lối đi."
+      }
+    ],
+    "relatedWordIds": ["rose", "garden-flower", "pollen"],
+    "distractorWordIds": ["flower-bud", "stem", "thorn"]
+  },
+  "stem": {
+    "id": "stem",
+    "text": "stem",
+    "ipa": "/stem/",
+    "meaningVi": "thân hoa",
+    "image": "/assets/scenes/flower-garden/objects/15_stem.webp",
+    "acceptedAnswers": ["stem", "a stem", "stems"],
+    "examples": [
+      {
+        "text": "The flower has a long stem.",
+        "vi": "Bông hoa có thân dài."
+      },
+      {
+        "text": "The rose stem has thorns.",
+        "vi": "Thân hoa hồng có gai."
+      }
+    ],
+    "relatedWordIds": ["thorn", "rose", "garden-flower"],
+    "distractorWordIds": ["petal", "pollen", "flower-bud"]
+  },
+  "thorn": {
+    "id": "thorn",
+    "text": "thorn",
+    "ipa": "/θɔːrn/",
+    "meaningVi": "gai",
+    "image": "/assets/scenes/flower-garden/objects/16_thorn.webp",
+    "acceptedAnswers": ["thorn", "a thorn", "thorns"],
+    "examples": [
+      {
+        "text": "Be careful of the thorn.",
+        "vi": "Cẩn thận cái gai nhé."
+      },
+      {
+        "text": "The thorn is sharp.",
+        "vi": "Cái gai rất nhọn."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem"],
+    "distractorWordIds": ["petal", "pollen", "flower-bud"]
+  },
+  "pollen": {
+    "id": "pollen",
+    "text": "pollen",
+    "uncountable": true,
+    "ipa": "/ˈpɑːlən/",
+    "meaningVi": "phấn hoa",
+    "image": "/assets/scenes/flower-garden/objects/17_pollen.webp",
+    "acceptedAnswers": ["pollen"],
+    "examples": [
+      {
+        "text": "The bee collects pollen.",
+        "vi": "Con ong lấy phấn hoa."
+      },
+      {
+        "text": "Pollen is yellow or orange.",
+        "vi": "Phấn hoa có màu vàng hoặc màu cam."
+      }
+    ],
+    "relatedWordIds": ["bee", "lily", "butterfly"],
+    "distractorWordIds": ["petal", "stem", "thorn"]
+  },
+  "flower-bed": {
+    "id": "flower-bed",
+    "text": "flower bed",
+    "ipa": "/ˈflaʊər bed/",
+    "meaningVi": "luống hoa",
+    "image": "/assets/scenes/flower-garden/objects/18_flower-bed.webp",
+    "acceptedAnswers": ["flower bed", "a flower bed", "flowerbed"],
+    "examples": [
+      {
+        "text": "There are roses in the flower bed.",
+        "vi": "Có hoa hồng trong luống hoa."
+      },
+      {
+        "text": "Stones go around the flower bed.",
+        "vi": "Những viên đá bao quanh luống hoa."
+      }
+    ],
+    "relatedWordIds": ["tulip", "daisy", "garden-flower"],
+    "distractorWordIds": ["garden-flowerpot", "hanging-basket", "greenhouse"]
+  },
+  "garden-flowerpot": {
+    "id": "garden-flowerpot",
+    "text": "flowerpot",
+    "ipa": "/ˈflaʊərpɑːt/",
+    "meaningVi": "chậu hoa",
+    "image": "/assets/scenes/flower-garden/objects/19_garden-flowerpot.webp",
+    "acceptedAnswers": ["flowerpot", "a flowerpot", "flower pot", "pot"],
+    "examples": [
+      {
+        "text": "The flowerpot is on the table.",
+        "vi": "Chậu hoa ở trên bàn."
+      },
+      {
+        "text": "The flowerpot is made of clay.",
+        "vi": "Chậu hoa được làm bằng đất nung."
+      }
+    ],
+    "relatedWordIds": ["orchid", "garden-flower", "greenhouse"],
+    "distractorWordIds": ["hanging-basket", "flower-bed", "petal"]
+  },
+  "hanging-basket": {
+    "id": "hanging-basket",
+    "text": "hanging basket",
+    "ipa": "/ˌhæŋɪŋ ˈbæskɪt/",
+    "meaningVi": "giỏ hoa treo",
+    "image": "/assets/scenes/flower-garden/objects/20_hanging-basket.webp",
+    "acceptedAnswers": ["hanging basket", "a hanging basket"],
+    "examples": [
+      {
+        "text": "The hanging basket has flowers.",
+        "vi": "Giỏ hoa treo có nhiều hoa."
+      },
+      {
+        "text": "Dad waters the hanging basket.",
+        "vi": "Bố tưới nước cho giỏ hoa treo."
+      }
+    ],
+    "relatedWordIds": ["garden-flower", "jasmine", "garden-flowerpot"],
+    "distractorWordIds": ["flower-bed", "greenhouse", "petal"]
+  },
+  "greenhouse": {
+    "id": "greenhouse",
+    "text": "greenhouse",
+    "ipa": "/ˈɡriːnhaʊs/",
+    "meaningVi": "nhà kính trồng cây",
+    "image": "/assets/scenes/flower-garden/objects/21_greenhouse.webp",
+    "acceptedAnswers": ["greenhouse", "a greenhouse"],
+    "examples": [
+      {
+        "text": "The flowers grow in the greenhouse.",
+        "vi": "Hoa mọc trong nhà kính."
+      },
+      {
+        "text": "The greenhouse is warm inside.",
+        "vi": "Bên trong nhà kính ấm áp."
+      }
+    ],
+    "relatedWordIds": ["orchid", "garden-flowerpot", "garden-flower"],
+    "distractorWordIds": ["flower-bed", "hanging-basket", "stem"]
+  },
+  "butterfly": {
+    "id": "butterfly",
+    "text": "butterfly",
+    "ipa": "/ˈbʌtərflaɪ/",
+    "meaningVi": "con bướm",
+    "image": "/assets/scenes/flower-garden/objects/22_butterfly.webp",
+    "acceptedAnswers": ["butterfly", "a butterfly", "butterflies"],
+    "examples": [
+      {
+        "text": "A butterfly is on the flower.",
+        "vi": "Một con bướm đậu trên bông hoa."
+      },
+      {
+        "text": "The butterfly has orange wings.",
+        "vi": "Con bướm có đôi cánh màu cam."
+      }
+    ],
+    "relatedWordIds": ["garden-flower", "sunflower", "lavender"],
+    "distractorWordIds": ["bee", "ladybug", "petal"]
+  },
+  "bee": {
+    "id": "bee",
+    "text": "bee",
+    "ipa": "/biː/",
+    "meaningVi": "con ong",
+    "image": "/assets/scenes/flower-garden/objects/23_bee.webp",
+    "acceptedAnswers": ["bee", "a bee", "bees"],
+    "examples": [
+      {
+        "text": "The bee flies to a flower.",
+        "vi": "Con ong bay đến một bông hoa."
+      },
+      {
+        "text": "The bee is yellow and black.",
+        "vi": "Con ong có màu vàng và đen."
+      }
+    ],
+    "relatedWordIds": ["pollen", "lavender", "garden-flower"],
+    "distractorWordIds": ["butterfly", "ladybug", "thorn"]
+  },
+  "ladybug": {
+    "id": "ladybug",
+    "text": "ladybug",
+    "ipa": "/ˈleɪdibʌɡ/",
+    "meaningVi": "bọ rùa",
+    "image": "/assets/scenes/flower-garden/objects/24_ladybug.webp",
+    "acceptedAnswers": ["ladybug", "a ladybug", "ladybird"],
+    "examples": [
+      {
+        "text": "A ladybug is on the leaf.",
+        "vi": "Một con bọ rùa đậu trên chiếc lá."
+      },
+      {
+        "text": "The ladybug is red with black spots.",
+        "vi": "Con bọ rùa màu đỏ có chấm đen."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem", "garden-flower"],
+    "distractorWordIds": ["bee", "butterfly", "petal"]
   }
 }

@@ -71,6 +71,10 @@ const READINGS = {
   放着: 'fàng zhe',
   箱子: 'xiāng zi',
   清楚: 'qīng chu',
+  种在: 'zhòng zài',
+  安静地: 'ān jìng de',
+  够不着: 'gòu bu zháo',
+  夹在: 'jiā zài',
 };
 
 /** The characters' names, written with capitals. */

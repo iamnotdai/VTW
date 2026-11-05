@@ -251,3 +251,27 @@ describe('Garage', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Flower Garden', () => {
+  const garden = getScene('flower-garden')!;
+
+  it('is an available Garden scene with 24 words, 10 conversations and one hotspot per word', () => {
+    expect(garden.status).toBe('available');
+    expect(garden.group).toBe('garden');
+    expect(getSceneWords(garden)).toHaveLength(24);
+    expect(getSceneConversations(garden)).toHaveLength(10);
+    expect(garden.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual(
+      [...garden.wordIds].sort(),
+    );
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    const oversized = garden.hotspots.filter((hotspot) =>
+      hotspot.svgPath.split(/(?=M)/).some((subPath) => {
+        const bounds = getPathBounds(subPath)!;
+        return (bounds.width * bounds.height) / (garden.width * garden.height) >= 0.35;
+      }),
+    );
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

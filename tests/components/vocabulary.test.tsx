@@ -18,7 +18,7 @@ describe('Vocabulary Scene List (screen 03)', () => {
     const bedroomLink = screen.getByRole('link', { name: /Bedroom/ });
     expect(within(bedroomLink).getByText(/25% completed/)).toBeInTheDocument();
     expect(within(bedroomLink).getByRole('progressbar')).toHaveAttribute('aria-valuenow', '25');
-    expect(screen.getAllByText('Coming soon').length).toBeGreaterThanOrEqual(4);
+    expect(screen.getAllByText('Coming soon').length).toBeGreaterThanOrEqual(3);
     expect(screen.queryByRole('link', { name: /Shed/ })).toBeNull();
   });
 

@@ -2814,7 +2814,7 @@
       {
         "text": "妈妈把花种在花盆里。",
         "vi": "Mẹ trồng hoa vào chậu hoa.",
-        "pinyin": "Mā ma bǎ huā zhǒng zài huā pén lǐ."
+        "pinyin": "Mā ma bǎ huā zhòng zài huā pén lǐ."
       }
     ],
     "relatedWordIds": ["flower", "watering-can", "porch"],
@@ -4124,5 +4124,555 @@
     ],
     "relatedWordIds": ["workbench", "car-battery", "toolbox"],
     "distractorWordIds": ["garage-remote", "air-pump", "helmet"]
+  },
+  "garden-flower": {
+    "id": "garden-flower",
+    "text": "花",
+    "pinyin": "huā",
+    "measure": "朵",
+    "meaningVi": "bông hoa",
+    "image": "/assets/scenes/flower-garden/objects/01_garden-flower.webp",
+    "acceptedAnswers": ["花", "花朵", "花儿"],
+    "examples": [
+      {
+        "text": "这朵花真漂亮。",
+        "vi": "Bông hoa này đẹp quá.",
+        "pinyin": "Zhè duǒ huā zhēn piào liang."
+      },
+      {
+        "text": "花园里有很多花。",
+        "vi": "Trong vườn có rất nhiều hoa.",
+        "pinyin": "Huā yuán lǐ yǒu hěn duō huā."
+      }
+    ],
+    "relatedWordIds": ["petal", "stem", "flower-bud"],
+    "distractorWordIds": ["garden-flowerpot", "flower-bed", "hanging-basket"]
+  },
+  "rose": {
+    "id": "rose",
+    "text": "玫瑰",
+    "pinyin": "méiguī",
+    "measure": "朵",
+    "meaningVi": "hoa hồng",
+    "image": "/assets/scenes/flower-garden/objects/02_rose.webp",
+    "acceptedAnswers": ["玫瑰", "玫瑰花"],
+    "examples": [
+      {
+        "text": "这是一朵红玫瑰。",
+        "vi": "Đây là một bông hoa hồng đỏ.",
+        "pinyin": "Zhè shì yì duǒ hóng méi guī."
+      },
+      {
+        "text": "玫瑰有尖尖的刺。",
+        "vi": "Cây hoa hồng có gai nhọn.",
+        "pinyin": "Méi guī yǒu jiān jiān de cì."
+      }
+    ],
+    "relatedWordIds": ["thorn", "petal", "flower-bud"],
+    "distractorWordIds": ["tulip", "hibiscus", "lily"]
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "text": "向日葵",
+    "pinyin": "xiàngrìkuí",
+    "measure": "朵",
+    "meaningVi": "hoa hướng dương",
+    "image": "/assets/scenes/flower-garden/objects/03_sunflower.webp",
+    "acceptedAnswers": ["向日葵"],
+    "examples": [
+      {
+        "text": "向日葵是黄色的。",
+        "vi": "Hoa hướng dương màu vàng.",
+        "pinyin": "Xiàng rì kuí shì huáng sè de."
+      },
+      {
+        "text": "向日葵比我还高！",
+        "vi": "Cây hướng dương cao hơn cả mình!",
+        "pinyin": "Xiàng rì kuí bǐ wǒ hái gāo!"
+      }
+    ],
+    "relatedWordIds": ["bee", "stem", "garden-flower"],
+    "distractorWordIds": ["daisy", "chrysanthemum", "tulip"]
+  },
+  "daisy": {
+    "id": "daisy",
+    "text": "雏菊",
+    "pinyin": "chújú",
+    "measure": "朵",
+    "meaningVi": "hoa cúc họa mi",
+    "image": "/assets/scenes/flower-garden/objects/04_daisy.webp",
+    "acceptedAnswers": ["雏菊"],
+    "examples": [
+      {
+        "text": "我看见一朵白色的雏菊。",
+        "vi": "Mình thấy một bông cúc họa mi màu trắng.",
+        "pinyin": "Wǒ kàn jiàn yì duǒ bái sè de chú jú."
+      },
+      {
+        "text": "雏菊的中间是黄色的。",
+        "vi": "Bông cúc họa mi có phần giữa màu vàng.",
+        "pinyin": "Chú jú de zhōng jiān shì huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["petal", "flower-bed", "garden-flower"],
+    "distractorWordIds": ["lily", "jasmine", "sunflower"]
+  },
+  "tulip": {
+    "id": "tulip",
+    "text": "郁金香",
+    "pinyin": "yùjīnxiāng",
+    "measure": "朵",
+    "meaningVi": "hoa tulip",
+    "image": "/assets/scenes/flower-garden/objects/05_tulip.webp",
+    "acceptedAnswers": ["郁金香"],
+    "examples": [
+      {
+        "text": "郁金香是粉色的。",
+        "vi": "Bông hoa tulip màu hồng.",
+        "pinyin": "Yù jīn xiāng shì fěn sè de."
+      },
+      {
+        "text": "这里有粉色和黄色的郁金香。",
+        "vi": "Có hoa tulip màu hồng và màu vàng.",
+        "pinyin": "Zhè lǐ yǒu fěn sè hé huáng sè de yù jīn xiāng."
+      }
+    ],
+    "relatedWordIds": ["flower-bed", "flower-bud", "stem"],
+    "distractorWordIds": ["rose", "lily", "orchid"]
+  },
+  "lily": {
+    "id": "lily",
+    "text": "百合",
+    "pinyin": "bǎihé",
+    "measure": "朵",
+    "meaningVi": "hoa ly",
+    "image": "/assets/scenes/flower-garden/objects/06_lily.webp",
+    "acceptedAnswers": ["百合", "百合花"],
+    "examples": [
+      {
+        "text": "这朵百合是白色的。",
+        "vi": "Bông hoa ly này màu trắng.",
+        "pinyin": "Zhè duǒ bǎi hé shì bái sè de."
+      },
+      {
+        "text": "百合有橙色的花粉。",
+        "vi": "Hoa ly có phấn hoa màu cam.",
+        "pinyin": "Bǎi hé yǒu chéng sè de huā fěn."
+      }
+    ],
+    "relatedWordIds": ["pollen", "petal", "flower-bud"],
+    "distractorWordIds": ["daisy", "jasmine", "tulip"]
+  },
+  "orchid": {
+    "id": "orchid",
+    "text": "兰花",
+    "pinyin": "lánhuā",
+    "measure": "朵",
+    "meaningVi": "hoa lan",
+    "image": "/assets/scenes/flower-garden/objects/07_orchid.webp",
+    "acceptedAnswers": ["兰花"],
+    "examples": [
+      {
+        "text": "兰花是紫色的。",
+        "vi": "Hoa lan màu tím.",
+        "pinyin": "Lán huā shì zǐ sè de."
+      },
+      {
+        "text": "兰花种在花盆里。",
+        "vi": "Cây hoa lan được trồng trong chậu hoa.",
+        "pinyin": "Lán huā zhòng zài huā pén lǐ."
+      }
+    ],
+    "relatedWordIds": ["garden-flowerpot", "greenhouse", "petal"],
+    "distractorWordIds": ["lavender", "hibiscus", "lily"]
+  },
+  "lavender": {
+    "id": "lavender",
+    "text": "薰衣草",
+    "pinyin": "xūnyīcǎo",
+    "meaningVi": "hoa oải hương",
+    "image": "/assets/scenes/flower-garden/objects/08_lavender.webp",
+    "acceptedAnswers": ["薰衣草"],
+    "examples": [
+      {
+        "text": "薰衣草很香。",
+        "vi": "Hoa oải hương thơm quá.",
+        "pinyin": "Xūn yī cǎo hěn xiāng."
+      },
+      {
+        "text": "蜜蜂很喜欢紫色的薰衣草。",
+        "vi": "Những chú ong rất thích hoa oải hương màu tím.",
+        "pinyin": "Mì fēng hěn xǐ huan zǐ sè de xūn yī cǎo."
+      }
+    ],
+    "relatedWordIds": ["bee", "butterfly", "flower-bed"],
+    "distractorWordIds": ["orchid", "hydrangea", "jasmine"]
+  },
+  "jasmine": {
+    "id": "jasmine",
+    "text": "茉莉花",
+    "pinyin": "mòlìhuā",
+    "measure": "朵",
+    "meaningVi": "hoa nhài",
+    "image": "/assets/scenes/flower-garden/objects/09_jasmine.webp",
+    "acceptedAnswers": ["茉莉花", "茉莉"],
+    "examples": [
+      {
+        "text": "茉莉花闻起来很香甜。",
+        "vi": "Hoa nhài thơm ngọt ngào.",
+        "pinyin": "Mò lì huā wén qǐ lái hěn xiāng tián."
+      },
+      {
+        "text": "白色的茉莉花爬上了木柱。",
+        "vi": "Hoa nhài trắng leo lên cột gỗ.",
+        "pinyin": "Bái sè de mò lì huā pá shàng le mù zhù."
+      }
+    ],
+    "relatedWordIds": ["hanging-basket", "petal", "garden-flower"],
+    "distractorWordIds": ["daisy", "lily", "lavender"]
+  },
+  "chrysanthemum": {
+    "id": "chrysanthemum",
+    "text": "菊花",
+    "pinyin": "júhuā",
+    "measure": "朵",
+    "meaningVi": "hoa cúc",
+    "image": "/assets/scenes/flower-garden/objects/10_chrysanthemum.webp",
+    "acceptedAnswers": ["菊花"],
+    "examples": [
+      {
+        "text": "这朵菊花是黄色的。",
+        "vi": "Bông hoa cúc này màu vàng.",
+        "pinyin": "Zhè duǒ jú huā shì huáng sè de."
+      },
+      {
+        "text": "奶奶很喜欢菊花。",
+        "vi": "Bà rất thích hoa cúc.",
+        "pinyin": "Nǎi nai hěn xǐ huan jú huā."
+      }
+    ],
+    "relatedWordIds": ["petal", "flower-bed", "bee"],
+    "distractorWordIds": ["sunflower", "daisy", "hydrangea"]
+  },
+  "hydrangea": {
+    "id": "hydrangea",
+    "text": "绣球花",
+    "pinyin": "xiùqiúhuā",
+    "measure": "朵",
+    "meaningVi": "hoa cẩm tú cầu",
+    "image": "/assets/scenes/flower-garden/objects/11_hydrangea.webp",
+    "acceptedAnswers": ["绣球花", "绣球"],
+    "examples": [
+      {
+        "text": "绣球花开着蓝色的花。",
+        "vi": "Cây cẩm tú cầu có hoa màu xanh.",
+        "pinyin": "Xiù qiú huā kāi zhe lán sè de huā."
+      },
+      {
+        "text": "这朵绣球花又大又圆。",
+        "vi": "Bông cẩm tú cầu này to và tròn.",
+        "pinyin": "Zhè duǒ xiù qiú huā yòu dà yòu yuán."
+      }
+    ],
+    "relatedWordIds": ["flower-bed", "petal", "garden-flower"],
+    "distractorWordIds": ["lavender", "chrysanthemum", "orchid"]
+  },
+  "hibiscus": {
+    "id": "hibiscus",
+    "text": "扶桑花",
+    "pinyin": "fúsānghuā",
+    "measure": "朵",
+    "meaningVi": "hoa dâm bụt",
+    "image": "/assets/scenes/flower-garden/objects/12_hibiscus.webp",
+    "acceptedAnswers": ["扶桑花", "扶桑", "朱槿"],
+    "examples": [
+      {
+        "text": "我看见一朵红色的扶桑花。",
+        "vi": "Mình thấy một bông hoa dâm bụt màu đỏ.",
+        "pinyin": "Wǒ kàn jiàn yì duǒ hóng sè de fú sāng huā."
+      },
+      {
+        "text": "扶桑花的花瓣很大。",
+        "vi": "Hoa dâm bụt có cánh hoa to.",
+        "pinyin": "Fú sāng huā de huā bàn hěn dà."
+      }
+    ],
+    "relatedWordIds": ["petal", "pollen", "garden-flower"],
+    "distractorWordIds": ["rose", "lily", "tulip"]
+  },
+  "flower-bud": {
+    "id": "flower-bud",
+    "text": "花苞",
+    "pinyin": "huābāo",
+    "measure": "个",
+    "meaningVi": "nụ hoa",
+    "image": "/assets/scenes/flower-garden/objects/13_flower-bud.webp",
+    "acceptedAnswers": ["花苞", "花蕾"],
+    "examples": [
+      {
+        "text": "花苞很小。",
+        "vi": "Nụ hoa còn nhỏ.",
+        "pinyin": "Huā bāo hěn xiǎo."
+      },
+      {
+        "text": "花苞很快就会开。",
+        "vi": "Chẳng bao lâu nữa nụ hoa sẽ nở.",
+        "pinyin": "Huā bāo hěn kuài jiù huì kāi."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem", "garden-flower"],
+    "distractorWordIds": ["petal", "pollen", "thorn"]
+  },
+  "petal": {
+    "id": "petal",
+    "text": "花瓣",
+    "pinyin": "huābàn",
+    "measure": "片",
+    "meaningVi": "cánh hoa",
+    "image": "/assets/scenes/flower-garden/objects/14_petal.webp",
+    "acceptedAnswers": ["花瓣"],
+    "examples": [
+      {
+        "text": "这片花瓣很软。",
+        "vi": "Cánh hoa này mềm.",
+        "pinyin": "Zhè piàn huā bàn hěn ruǎn."
+      },
+      {
+        "text": "一片粉色的花瓣掉在小路上。",
+        "vi": "Một cánh hoa màu hồng rơi trên lối đi.",
+        "pinyin": "Yí piàn fěn sè de huā bàn diào zài xiǎo lù shàng."
+      }
+    ],
+    "relatedWordIds": ["rose", "garden-flower", "pollen"],
+    "distractorWordIds": ["flower-bud", "stem", "thorn"]
+  },
+  "stem": {
+    "id": "stem",
+    "text": "花茎",
+    "pinyin": "huājīng",
+    "measure": "根",
+    "meaningVi": "thân hoa",
+    "image": "/assets/scenes/flower-garden/objects/15_stem.webp",
+    "acceptedAnswers": ["花茎", "茎"],
+    "examples": [
+      {
+        "text": "这朵花的花茎很长。",
+        "vi": "Bông hoa có thân dài.",
+        "pinyin": "Zhè duǒ huā de huā jīng hěn cháng."
+      },
+      {
+        "text": "玫瑰的花茎上有刺。",
+        "vi": "Thân hoa hồng có gai.",
+        "pinyin": "Méi guī de huā jīng shàng yǒu cì."
+      }
+    ],
+    "relatedWordIds": ["thorn", "rose", "garden-flower"],
+    "distractorWordIds": ["petal", "pollen", "flower-bud"]
+  },
+  "thorn": {
+    "id": "thorn",
+    "text": "刺",
+    "pinyin": "cì",
+    "measure": "根",
+    "meaningVi": "gai",
+    "image": "/assets/scenes/flower-garden/objects/16_thorn.webp",
+    "acceptedAnswers": ["刺"],
+    "examples": [
+      {
+        "text": "小心刺！",
+        "vi": "Cẩn thận cái gai nhé.",
+        "pinyin": "Xiǎo xīn cì!"
+      },
+      {
+        "text": "这根刺很尖。",
+        "vi": "Cái gai rất nhọn.",
+        "pinyin": "Zhè gēn cì hěn jiān."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem"],
+    "distractorWordIds": ["petal", "pollen", "flower-bud"]
+  },
+  "pollen": {
+    "id": "pollen",
+    "text": "花粉",
+    "pinyin": "huāfěn",
+    "meaningVi": "phấn hoa",
+    "image": "/assets/scenes/flower-garden/objects/17_pollen.webp",
+    "acceptedAnswers": ["花粉"],
+    "examples": [
+      {
+        "text": "蜜蜂采花粉。",
+        "vi": "Con ong lấy phấn hoa.",
+        "pinyin": "Mì fēng cǎi huā fěn."
+      },
+      {
+        "text": "花粉是黄色或者橙色的。",
+        "vi": "Phấn hoa có màu vàng hoặc màu cam.",
+        "pinyin": "Huā fěn shì huáng sè huò zhě chéng sè de."
+      }
+    ],
+    "relatedWordIds": ["bee", "lily", "butterfly"],
+    "distractorWordIds": ["petal", "stem", "thorn"]
+  },
+  "flower-bed": {
+    "id": "flower-bed",
+    "text": "花坛",
+    "pinyin": "huātán",
+    "measure": "个",
+    "meaningVi": "luống hoa",
+    "image": "/assets/scenes/flower-garden/objects/18_flower-bed.webp",
+    "acceptedAnswers": ["花坛", "花圃"],
+    "examples": [
+      {
+        "text": "花坛里有玫瑰。",
+        "vi": "Có hoa hồng trong luống hoa.",
+        "pinyin": "Huā tán lǐ yǒu méi guī."
+      },
+      {
+        "text": "石头围着花坛。",
+        "vi": "Những viên đá bao quanh luống hoa.",
+        "pinyin": "Shí tou wéi zhe huā tán."
+      }
+    ],
+    "relatedWordIds": ["tulip", "daisy", "garden-flower"],
+    "distractorWordIds": ["garden-flowerpot", "hanging-basket", "greenhouse"]
+  },
+  "garden-flowerpot": {
+    "id": "garden-flowerpot",
+    "text": "花盆",
+    "pinyin": "huāpén",
+    "measure": "个",
+    "meaningVi": "chậu hoa",
+    "image": "/assets/scenes/flower-garden/objects/19_garden-flowerpot.webp",
+    "acceptedAnswers": ["花盆"],
+    "examples": [
+      {
+        "text": "花盆在桌子上。",
+        "vi": "Chậu hoa ở trên bàn.",
+        "pinyin": "Huā pén zài zhuō zi shàng."
+      },
+      {
+        "text": "这个花盆是陶土做的。",
+        "vi": "Chậu hoa được làm bằng đất nung.",
+        "pinyin": "Zhè ge huā pén shì táo tǔ zuò de."
+      }
+    ],
+    "relatedWordIds": ["orchid", "garden-flower", "greenhouse"],
+    "distractorWordIds": ["hanging-basket", "flower-bed", "petal"]
+  },
+  "hanging-basket": {
+    "id": "hanging-basket",
+    "text": "吊篮",
+    "pinyin": "diàolán",
+    "measure": "个",
+    "meaningVi": "giỏ hoa treo",
+    "image": "/assets/scenes/flower-garden/objects/20_hanging-basket.webp",
+    "acceptedAnswers": ["吊篮", "花篮"],
+    "examples": [
+      {
+        "text": "吊篮里有花。",
+        "vi": "Giỏ hoa treo có nhiều hoa.",
+        "pinyin": "Diào lán lǐ yǒu huā."
+      },
+      {
+        "text": "爸爸给吊篮浇水。",
+        "vi": "Bố tưới nước cho giỏ hoa treo.",
+        "pinyin": "Bà ba gěi diào lán jiāo shuǐ."
+      }
+    ],
+    "relatedWordIds": ["garden-flower", "jasmine", "garden-flowerpot"],
+    "distractorWordIds": ["flower-bed", "greenhouse", "petal"]
+  },
+  "greenhouse": {
+    "id": "greenhouse",
+    "text": "温室",
+    "pinyin": "wēnshì",
+    "measure": "个",
+    "meaningVi": "nhà kính trồng cây",
+    "image": "/assets/scenes/flower-garden/objects/21_greenhouse.webp",
+    "acceptedAnswers": ["温室", "暖房"],
+    "examples": [
+      {
+        "text": "花在温室里长大。",
+        "vi": "Hoa mọc trong nhà kính.",
+        "pinyin": "Huā zài wēn shì lǐ zhǎng dà."
+      },
+      {
+        "text": "温室里面很暖和。",
+        "vi": "Bên trong nhà kính ấm áp.",
+        "pinyin": "Wēn shì lǐ miàn hěn nuǎn huo."
+      }
+    ],
+    "relatedWordIds": ["orchid", "garden-flowerpot", "garden-flower"],
+    "distractorWordIds": ["flower-bed", "hanging-basket", "stem"]
+  },
+  "butterfly": {
+    "id": "butterfly",
+    "text": "蝴蝶",
+    "pinyin": "húdié",
+    "measure": "只",
+    "meaningVi": "con bướm",
+    "image": "/assets/scenes/flower-garden/objects/22_butterfly.webp",
+    "acceptedAnswers": ["蝴蝶"],
+    "examples": [
+      {
+        "text": "一只蝴蝶在花上。",
+        "vi": "Một con bướm đậu trên bông hoa.",
+        "pinyin": "Yì zhī hú dié zài huā shàng."
+      },
+      {
+        "text": "蝴蝶有橙色的翅膀。",
+        "vi": "Con bướm có đôi cánh màu cam.",
+        "pinyin": "Hú dié yǒu chéng sè de chì bǎng."
+      }
+    ],
+    "relatedWordIds": ["garden-flower", "sunflower", "lavender"],
+    "distractorWordIds": ["bee", "ladybug", "petal"]
+  },
+  "bee": {
+    "id": "bee",
+    "text": "蜜蜂",
+    "pinyin": "mìfēng",
+    "measure": "只",
+    "meaningVi": "con ong",
+    "image": "/assets/scenes/flower-garden/objects/23_bee.webp",
+    "acceptedAnswers": ["蜜蜂"],
+    "examples": [
+      {
+        "text": "蜜蜂飞向一朵花。",
+        "vi": "Con ong bay đến một bông hoa.",
+        "pinyin": "Mì fēng fēi xiàng yì duǒ huā."
+      },
+      {
+        "text": "蜜蜂是黄黑色的。",
+        "vi": "Con ong có màu vàng và đen.",
+        "pinyin": "Mì fēng shì huáng hēi sè de."
+      }
+    ],
+    "relatedWordIds": ["pollen", "lavender", "garden-flower"],
+    "distractorWordIds": ["butterfly", "ladybug", "thorn"]
+  },
+  "ladybug": {
+    "id": "ladybug",
+    "text": "瓢虫",
+    "pinyin": "piáochóng",
+    "measure": "只",
+    "meaningVi": "bọ rùa",
+    "image": "/assets/scenes/flower-garden/objects/24_ladybug.webp",
+    "acceptedAnswers": ["瓢虫", "七星瓢虫"],
+    "examples": [
+      {
+        "text": "一只瓢虫在叶子上。",
+        "vi": "Một con bọ rùa đậu trên chiếc lá.",
+        "pinyin": "Yì zhī piáo chóng zài yè zi shàng."
+      },
+      {
+        "text": "瓢虫是红色的，有黑点。",
+        "vi": "Con bọ rùa màu đỏ có chấm đen.",
+        "pinyin": "Piáo chóng shì hóng sè de, yǒu hēi diǎn."
+      }
+    ],
+    "relatedWordIds": ["rose", "stem", "garden-flower"],
+    "distractorWordIds": ["bee", "butterfly", "petal"]
   }
 }
