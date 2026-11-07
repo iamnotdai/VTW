@@ -6181,5 +6181,685 @@
         "suggestedAnswerPinyin": "Zǒu zài xiǎo lù shàng."
       }
     ]
+  },
+  {
+    "id": "our-fruit-garden",
+    "sceneId": "fruit-garden",
+    "title": "我们的果园",
+    "order": 1,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "爸爸带莉莉看果园里的果树。",
+    "lines": [
+      {
+        "id": "our-fruit-garden-l1",
+        "speakerId": "dad",
+        "text": "莉莉，欢迎来到我们的果园！",
+        "textVi": "Lily ơi, chào mừng con đến vườn cây ăn quả của nhà mình!",
+        "pinyin": "Lì li, huān yíng lái dào wǒ men de guǒ yuán!"
+      },
+      {
+        "id": "our-fruit-garden-l2",
+        "speakerId": "lily",
+        "text": "哇！这里有好多果树。",
+        "textVi": "Ồ! Có nhiều cây ăn quả quá.",
+        "pinyin": "Wā! Zhè lǐ yǒu hǎo duō guǒ shù."
+      },
+      {
+        "id": "our-fruit-garden-l3",
+        "speakerId": "dad",
+        "text": "你能找到苹果树吗？",
+        "textVi": "Con có tìm thấy cây táo không?",
+        "pinyin": "Nǐ néng zhǎo dào píng guǒ shù ma?"
+      },
+      {
+        "id": "our-fruit-garden-l4",
+        "speakerId": "lily",
+        "text": "能！苹果是红色的。",
+        "textVi": "Có ạ! Những quả táo màu đỏ.",
+        "pinyin": "Néng! Píng guǒ shì hóng sè de."
+      },
+      {
+        "id": "our-fruit-garden-l5",
+        "speakerId": "dad",
+        "text": "苹果树旁边是什么树？",
+        "textVi": "Cạnh cây táo là cây gì nào?",
+        "pinyin": "Píng guǒ shù páng biān shì shén me shù?"
+      },
+      {
+        "id": "our-fruit-garden-l6",
+        "speakerId": "lily",
+        "text": "是橙子树！",
+        "textVi": "Cây cam ạ!",
+        "pinyin": "Shì chéng zi shù!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-fruit-garden-q1",
+        "prompt": "莉莉看到了什么？",
+        "suggestedAnswer": "她看到了很多果树。",
+        "promptPinyin": "Lì li kàn dào le shén me?",
+        "suggestedAnswerPinyin": "Tā kàn dào le hěn duō guǒ shù."
+      },
+      {
+        "id": "our-fruit-garden-q2",
+        "prompt": "苹果是什么颜色的？",
+        "suggestedAnswer": "它们是红色的。",
+        "promptPinyin": "Píng guǒ shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì hóng sè de."
+      }
+    ]
+  },
+  {
+    "id": "picking-mangoes",
+    "sceneId": "fruit-garden",
+    "title": "摘芒果",
+    "order": 2,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "妈妈帮小本摘熟芒果。",
+    "lines": [
+      {
+        "id": "picking-mangoes-l1",
+        "speakerId": "ben",
+        "text": "妈妈，芒果变黄了。",
+        "textVi": "Mẹ ơi, xoài vàng rồi ạ.",
+        "pinyin": "Mā ma, máng guǒ biàn huáng le."
+      },
+      {
+        "id": "picking-mangoes-l2",
+        "speakerId": "mom",
+        "text": "对，芒果熟了。我们摘几个吧。",
+        "textVi": "Ừ, xoài chín rồi. Mình hái vài quả nhé.",
+        "pinyin": "Duì, máng guǒ shú le. Wǒ men zhāi jǐ gè ba."
+      },
+      {
+        "id": "picking-mangoes-l3",
+        "speakerId": "ben",
+        "text": "我够不着树枝。",
+        "textVi": "Con không với tới cành cây.",
+        "pinyin": "Wǒ gòu bu zháo shù zhī."
+      },
+      {
+        "id": "picking-mangoes-l4",
+        "speakerId": "mom",
+        "text": "我来帮你。给你。",
+        "textVi": "Mẹ giúp con. Của con đây.",
+        "pinyin": "Wǒ lái bāng nǐ. Gěi nǐ."
+      },
+      {
+        "id": "picking-mangoes-l5",
+        "speakerId": "ben",
+        "text": "谢谢妈妈！它闻起来好香。",
+        "textVi": "Con cảm ơn mẹ! Thơm quá đi.",
+        "pinyin": "Xiè xiè mā ma! Tā wén qǐ lái hǎo xiāng."
+      },
+      {
+        "id": "picking-mangoes-l6",
+        "speakerId": "mom",
+        "text": "我们洗一洗，一起吃吧。",
+        "textVi": "Mình rửa sạch rồi cùng ăn nhé.",
+        "pinyin": "Wǒ men xǐ yi xǐ, yì qǐ chī ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-mangoes-q1",
+        "prompt": "芒果是什么颜色的？",
+        "suggestedAnswer": "它们是黄色的。",
+        "promptPinyin": "Máng guǒ shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì huáng sè de."
+      },
+      {
+        "id": "picking-mangoes-q2",
+        "prompt": "谁帮小本？",
+        "suggestedAnswer": "妈妈帮他。",
+        "promptPinyin": "Shuí bāng Xiǎo Běn?",
+        "suggestedAnswerPinyin": "Mā ma bāng tā."
+      }
+    ]
+  },
+  {
+    "id": "a-bunch-of-bananas",
+    "sceneId": "fruit-garden",
+    "title": "一大串香蕉",
+    "order": 3,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "莉莉和小本数香蕉。",
+    "lines": [
+      {
+        "id": "a-bunch-of-bananas-l1",
+        "speakerId": "lily",
+        "text": "小本，快看香蕉树！",
+        "textVi": "Ben ơi, nhìn cây chuối kìa!",
+        "pinyin": "Xiǎo Běn, kuài kàn xiāng jiāo shù!"
+      },
+      {
+        "id": "a-bunch-of-bananas-l2",
+        "speakerId": "ben",
+        "text": "有好多香蕉！",
+        "textVi": "Nhiều chuối quá!",
+        "pinyin": "Yǒu hǎo duō xiāng jiāo!"
+      },
+      {
+        "id": "a-bunch-of-bananas-l3",
+        "speakerId": "lily",
+        "text": "我们来数一数。一、二、三……",
+        "textVi": "Mình đếm nhé. Một, hai, ba…",
+        "pinyin": "Wǒ men lái shǔ yi shǔ. Yī, èr, sān……"
+      },
+      {
+        "id": "a-bunch-of-bananas-l4",
+        "speakerId": "ben",
+        "text": "太多了！我数不完。",
+        "textVi": "Nhiều quá! Mình không đếm hết được.",
+        "pinyin": "Tài duō le! Wǒ shǔ bu wán."
+      },
+      {
+        "id": "a-bunch-of-bananas-l5",
+        "speakerId": "lily",
+        "text": "它们是黄色的吗？",
+        "textVi": "Chúng có màu vàng không?",
+        "pinyin": "Tā men shì huáng sè de ma?"
+      },
+      {
+        "id": "a-bunch-of-bananas-l6",
+        "speakerId": "ben",
+        "text": "是的，它们黄了，可以吃了。",
+        "textVi": "Có, chúng vàng rồi, ăn được rồi.",
+        "pinyin": "Shì de, tā men huáng le, kě yǐ chī le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bunch-of-bananas-q1",
+        "prompt": "他们在数什么？",
+        "suggestedAnswer": "他们在数香蕉。",
+        "promptPinyin": "Tā men zài shǔ shén me?",
+        "suggestedAnswerPinyin": "Tā men zài shǔ xiāng jiāo."
+      },
+      {
+        "id": "a-bunch-of-bananas-q2",
+        "prompt": "香蕉是什么颜色的？",
+        "suggestedAnswer": "它们是黄色的。",
+        "promptPinyin": "Xiāng jiāo shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì huáng sè de."
+      }
+    ]
+  },
+  {
+    "id": "the-big-jackfruit",
+    "sceneId": "fruit-garden",
+    "title": "大菠萝蜜",
+    "order": 4,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "小本问爸爸树干上的大水果是什么。",
+    "lines": [
+      {
+        "id": "the-big-jackfruit-l1",
+        "speakerId": "ben",
+        "text": "爸爸，树干上那个大水果是什么？",
+        "textVi": "Bố ơi, quả to trên thân cây kia là quả gì vậy?",
+        "pinyin": "Bà ba, shù gàn shàng nà ge dà shuǐ guǒ shì shén me?"
+      },
+      {
+        "id": "the-big-jackfruit-l2",
+        "speakerId": "dad",
+        "text": "那是菠萝蜜。",
+        "textVi": "Đó là quả mít.",
+        "pinyin": "Nà shì bō luó mì."
+      },
+      {
+        "id": "the-big-jackfruit-l3",
+        "speakerId": "ben",
+        "text": "好大呀！它重吗？",
+        "textVi": "To quá! Nó có nặng không ạ?",
+        "pinyin": "Hǎo dà ya! Tā zhòng ma?"
+      },
+      {
+        "id": "the-big-jackfruit-l4",
+        "speakerId": "dad",
+        "text": "重，它非常重。",
+        "textVi": "Có, nó rất nặng.",
+        "pinyin": "Zhòng, tā fēi cháng zhòng."
+      },
+      {
+        "id": "the-big-jackfruit-l5",
+        "speakerId": "ben",
+        "text": "里面甜吗？",
+        "textVi": "Bên trong có ngọt không bố?",
+        "pinyin": "Lǐ miàn tián ma?"
+      },
+      {
+        "id": "the-big-jackfruit-l6",
+        "speakerId": "dad",
+        "text": "甜。里面黄色的果肉非常甜。",
+        "textVi": "Có. Múi mít vàng bên trong rất ngọt.",
+        "pinyin": "Tián. Lǐ miàn huáng sè de guǒ ròu fēi cháng tián."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-big-jackfruit-q1",
+        "prompt": "菠萝蜜在哪儿？",
+        "suggestedAnswer": "它在树干上。",
+        "promptPinyin": "Bō luó mì zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài shù gàn shàng."
+      },
+      {
+        "id": "the-big-jackfruit-q2",
+        "prompt": "菠萝蜜重吗？",
+        "suggestedAnswer": "重，它非常重。",
+        "promptPinyin": "Bō luó mì zhòng ma?",
+        "suggestedAnswerPinyin": "Zhòng, tā fēi cháng zhòng."
+      }
+    ]
+  },
+  {
+    "id": "a-cool-watermelon",
+    "sceneId": "fruit-garden",
+    "title": "凉凉的西瓜",
+    "order": 5,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "天气很热，妈妈和莉莉吃西瓜。",
+    "lines": [
+      {
+        "id": "a-cool-watermelon-l1",
+        "speakerId": "lily",
+        "text": "妈妈，今天好热啊。",
+        "textVi": "Mẹ ơi, hôm nay nóng quá.",
+        "pinyin": "Mā ma, jīn tiān hǎo rè a."
+      },
+      {
+        "id": "a-cool-watermelon-l2",
+        "speakerId": "mom",
+        "text": "我们吃点儿西瓜吧。",
+        "textVi": "Mình ăn dưa hấu nhé.",
+        "pinyin": "Wǒ men chī diǎnr xī guā ba."
+      },
+      {
+        "id": "a-cool-watermelon-l3",
+        "speakerId": "lily",
+        "text": "太好了！里面是红色的。",
+        "textVi": "Hoan hô! Bên trong màu đỏ.",
+        "pinyin": "Tài hǎo le! Lǐ miàn shì hóng sè de."
+      },
+      {
+        "id": "a-cool-watermelon-l4",
+        "speakerId": "mom",
+        "text": "看这些黑色的籽。",
+        "textVi": "Nhìn những hạt màu đen kìa.",
+        "pinyin": "Kàn zhè xiē hēi sè de zǐ."
+      },
+      {
+        "id": "a-cool-watermelon-l5",
+        "speakerId": "lily",
+        "text": "哇，又甜又多汁。",
+        "textVi": "Ừm, ngọt và mọng nước quá.",
+        "pinyin": "Wā, yòu tián yòu duō zhī."
+      },
+      {
+        "id": "a-cool-watermelon-l6",
+        "speakerId": "mom",
+        "text": "热天吃西瓜最好了。",
+        "textVi": "Ngày nóng ăn dưa hấu là tuyệt nhất.",
+        "pinyin": "Rè tiān chī xī guā zuì hǎo le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-cool-watermelon-q1",
+        "prompt": "西瓜里面是什么颜色的？",
+        "suggestedAnswer": "是红色的。",
+        "promptPinyin": "Xī guā lǐ miàn shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Shì hóng sè de."
+      },
+      {
+        "id": "a-cool-watermelon-q2",
+        "prompt": "西瓜吃起来怎么样？",
+        "suggestedAnswer": "又甜又多汁。",
+        "promptPinyin": "Xī guā chī qǐ lái zěn me yàng?",
+        "suggestedAnswerPinyin": "Yòu tián yòu duō zhī."
+      }
+    ]
+  },
+  {
+    "id": "picking-strawberries",
+    "sceneId": "fruit-garden",
+    "title": "摘草莓",
+    "order": 6,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "莉莉和小本摘红草莓。",
+    "lines": [
+      {
+        "id": "picking-strawberries-l1",
+        "speakerId": "lily",
+        "text": "小本，我们去摘草莓吧！",
+        "textVi": "Ben ơi, mình hái dâu tây đi!",
+        "pinyin": "Xiǎo Běn, wǒ men qù zhāi cǎo méi ba!"
+      },
+      {
+        "id": "picking-strawberries-l2",
+        "speakerId": "ben",
+        "text": "我们可以摘哪些？",
+        "textVi": "Mình hái được những quả nào?",
+        "pinyin": "Wǒ men kě yǐ zhāi nǎ xiē?"
+      },
+      {
+        "id": "picking-strawberries-l3",
+        "speakerId": "lily",
+        "text": "摘红色的。绿色的还没熟。",
+        "textVi": "Hái quả màu đỏ thôi. Quả xanh chưa chín.",
+        "pinyin": "Zhāi hóng sè de. Lǜ sè de hái méi shú."
+      },
+      {
+        "id": "picking-strawberries-l4",
+        "speakerId": "ben",
+        "text": "我有五颗红草莓。",
+        "textVi": "Mình có năm quả dâu tây đỏ.",
+        "pinyin": "Wǒ yǒu wǔ kē hóng cǎo méi."
+      },
+      {
+        "id": "picking-strawberries-l5",
+        "speakerId": "lily",
+        "text": "把它们放进果篮里。",
+        "textVi": "Bỏ chúng vào giỏ trái cây nhé.",
+        "pinyin": "Bǎ tā men fàng jìn guǒ lán lǐ."
+      },
+      {
+        "id": "picking-strawberries-l6",
+        "speakerId": "ben",
+        "text": "好的！果篮快满了。",
+        "textVi": "Được! Giỏ sắp đầy rồi.",
+        "pinyin": "Hǎo de! Guǒ lán kuài mǎn le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-strawberries-q1",
+        "prompt": "他们可以摘哪些草莓？",
+        "suggestedAnswer": "他们可以摘红色的。",
+        "promptPinyin": "Tā men kě yǐ zhāi nǎ xiē cǎo méi?",
+        "suggestedAnswerPinyin": "Tā men kě yǐ zhāi hóng sè de."
+      },
+      {
+        "id": "picking-strawberries-q2",
+        "prompt": "小本有几颗草莓？",
+        "suggestedAnswer": "他有五颗。",
+        "promptPinyin": "Xiǎo Běn yǒu jǐ kē cǎo méi?",
+        "suggestedAnswerPinyin": "Tā yǒu wǔ kē."
+      }
+    ]
+  },
+  {
+    "id": "sour-lemons",
+    "sceneId": "fruit-garden",
+    "title": "酸酸的柠檬",
+    "order": 7,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "小本尝了尝园子里的柠檬。",
+    "lines": [
+      {
+        "id": "sour-lemons-l1",
+        "speakerId": "dad",
+        "text": "小本，你能帮我摘一个柠檬吗？",
+        "textVi": "Ben ơi, con hái giúp bố một quả chanh vàng được không?",
+        "pinyin": "Xiǎo Běn, nǐ néng bāng wǒ zhāi yí gè níng méng ma?"
+      },
+      {
+        "id": "sour-lemons-l2",
+        "speakerId": "ben",
+        "text": "这个黄色的吗？",
+        "textVi": "Quả màu vàng này ạ?",
+        "pinyin": "Zhè ge huáng sè de ma?"
+      },
+      {
+        "id": "sour-lemons-l3",
+        "speakerId": "dad",
+        "text": "对，那是柠檬。绿色的是青柠。",
+        "textVi": "Đúng rồi, đó là chanh vàng. Quả màu xanh là chanh xanh.",
+        "pinyin": "Duì, nà shì níng méng. Lǜ sè de shì qīng níng."
+      },
+      {
+        "id": "sour-lemons-l4",
+        "speakerId": "ben",
+        "text": "我可以尝一尝柠檬吗？",
+        "textVi": "Con nếm thử chanh vàng được không ạ?",
+        "pinyin": "Wǒ kě yǐ cháng yi cháng níng méng ma?"
+      },
+      {
+        "id": "sour-lemons-l5",
+        "speakerId": "dad",
+        "text": "可以。只尝一点儿！",
+        "textVi": "Được chứ. Một chút thôi nhé!",
+        "pinyin": "Kě yǐ. Zhǐ cháng yì diǎnr!"
+      },
+      {
+        "id": "sour-lemons-l6",
+        "speakerId": "ben",
+        "text": "哎呀！好酸啊！",
+        "textVi": "Ối! Chua quá!",
+        "pinyin": "Āi yā! Hǎo suān a!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "sour-lemons-q1",
+        "prompt": "青柠是什么颜色的？",
+        "suggestedAnswer": "它是绿色的。",
+        "promptPinyin": "Qīng níng shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì lǜ sè de."
+      },
+      {
+        "id": "sour-lemons-q2",
+        "prompt": "柠檬是什么味道的？",
+        "suggestedAnswer": "它是酸的。",
+        "promptPinyin": "Níng méng shì shén me wèi dào de?",
+        "suggestedAnswerPinyin": "Tā shì suān de."
+      }
+    ]
+  },
+  {
+    "id": "under-the-grapes",
+    "sceneId": "fruit-garden",
+    "title": "葡萄架下",
+    "order": 8,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "妈妈和莉莉摘了一串葡萄。",
+    "lines": [
+      {
+        "id": "under-the-grapes-l1",
+        "speakerId": "lily",
+        "text": "妈妈，看上面！有葡萄。",
+        "textVi": "Mẹ ơi, nhìn lên kìa! Có nho.",
+        "pinyin": "Mā ma, kàn shàng miàn! Yǒu pú tao."
+      },
+      {
+        "id": "under-the-grapes-l2",
+        "speakerId": "mom",
+        "text": "对。它们又紫又圆。",
+        "textVi": "Ừ. Chúng màu tím và tròn.",
+        "pinyin": "Duì. Tā men yòu zǐ yòu yuán."
+      },
+      {
+        "id": "under-the-grapes-l3",
+        "speakerId": "lily",
+        "text": "我们可以摘一串吗？",
+        "textVi": "Mình hái một chùm được không ạ?",
+        "pinyin": "Wǒ men kě yǐ zhāi yí chuàn ma?"
+      },
+      {
+        "id": "under-the-grapes-l4",
+        "speakerId": "mom",
+        "text": "当然可以。请帮我拿着果篮。",
+        "textVi": "Tất nhiên rồi. Con cầm giỏ trái cây giúp mẹ nhé.",
+        "pinyin": "Dāng rán kě yǐ. Qǐng bāng wǒ ná zhe guǒ lán."
+      },
+      {
+        "id": "under-the-grapes-l5",
+        "speakerId": "lily",
+        "text": "给你。",
+        "textVi": "Đây ạ.",
+        "pinyin": "Gěi nǐ."
+      },
+      {
+        "id": "under-the-grapes-l6",
+        "speakerId": "mom",
+        "text": "谢谢你。现在我们午饭有葡萄吃了。",
+        "textVi": "Cảm ơn con. Giờ mình có nho cho bữa trưa rồi.",
+        "pinyin": "Xiè xiè nǐ. Xiàn zài wǒ men wǔ fàn yǒu pú tao chī le."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "under-the-grapes-q1",
+        "prompt": "葡萄是什么颜色的？",
+        "suggestedAnswer": "它们是紫色的。",
+        "promptPinyin": "Pú tao shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì zǐ sè de."
+      },
+      {
+        "id": "under-the-grapes-q2",
+        "prompt": "莉莉拿着什么？",
+        "suggestedAnswer": "她拿着果篮。",
+        "promptPinyin": "Lì li ná zhe shén me?",
+        "suggestedAnswerPinyin": "Tā ná zhe guǒ lán."
+      }
+    ]
+  },
+  {
+    "id": "a-bird-on-the-branch",
+    "sceneId": "fruit-garden",
+    "title": "树枝上的小鸟",
+    "order": 9,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "小本给莉莉看树上的小鸟。",
+    "lines": [
+      {
+        "id": "a-bird-on-the-branch-l1",
+        "speakerId": "ben",
+        "text": "莉莉，树枝上有一只小鸟！",
+        "textVi": "Lily ơi, có một chú chim trên cành cây!",
+        "pinyin": "Lì li, shù zhī shàng yǒu yì zhī xiǎo niǎo!"
+      },
+      {
+        "id": "a-bird-on-the-branch-l2",
+        "speakerId": "lily",
+        "text": "在哪儿？我只看到叶子。",
+        "textVi": "Đâu cơ? Mình chỉ thấy lá thôi.",
+        "pinyin": "Zài nǎr? Wǒ zhǐ kàn dào yè zi."
+      },
+      {
+        "id": "a-bird-on-the-branch-l3",
+        "speakerId": "ben",
+        "text": "在那片大叶子旁边。快看！",
+        "textVi": "Cạnh chiếc lá to ấy. Nhìn kìa!",
+        "pinyin": "Zài nà piàn dà yè zi páng biān. Kuài kàn!"
+      },
+      {
+        "id": "a-bird-on-the-branch-l4",
+        "speakerId": "lily",
+        "text": "哦，我看到了。它好小啊。",
+        "textVi": "À, giờ mình thấy rồi. Nó nhỏ quá.",
+        "pinyin": "Ò, wǒ kàn dào le. Tā hǎo xiǎo a."
+      },
+      {
+        "id": "a-bird-on-the-branch-l5",
+        "speakerId": "ben",
+        "text": "它在吃一个小果子。",
+        "textVi": "Nó đang ăn một quả nhỏ.",
+        "pinyin": "Tā zài chī yí gè xiǎo guǒ zi."
+      },
+      {
+        "id": "a-bird-on-the-branch-l6",
+        "speakerId": "lily",
+        "text": "嘘！别吓到它。",
+        "textVi": "Suỵt! Đừng làm nó sợ.",
+        "pinyin": "Xū! Bié xià dào tā."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bird-on-the-branch-q1",
+        "prompt": "小鸟在哪儿？",
+        "suggestedAnswer": "它在树枝上。",
+        "promptPinyin": "Xiǎo niǎo zài nǎr?",
+        "suggestedAnswerPinyin": "Tā zài shù zhī shàng."
+      },
+      {
+        "id": "a-bird-on-the-branch-q2",
+        "prompt": "小鸟在做什么？",
+        "suggestedAnswer": "它在吃一个小果子。",
+        "promptPinyin": "Xiǎo niǎo zài zuò shén me?",
+        "suggestedAnswerPinyin": "Tā zài chī yí gè xiǎo guǒ zi."
+      }
+    ]
+  },
+  {
+    "id": "a-fruit-basket-for-grandma",
+    "sceneId": "fruit-garden",
+    "title": "送给奶奶的果篮",
+    "order": 10,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "妈妈、莉莉和小本给奶奶装一个果篮。",
+    "lines": [
+      {
+        "id": "a-fruit-basket-for-grandma-l1",
+        "speakerId": "mom",
+        "text": "我们给奶奶装一个果篮吧。",
+        "textVi": "Mình làm một giỏ trái cây tặng bà nhé.",
+        "pinyin": "Wǒ men gěi nǎi nai zhuāng yí gè guǒ lán ba."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l2",
+        "speakerId": "lily",
+        "text": "我放一个苹果和一个梨。",
+        "textVi": "Con bỏ vào một quả táo và một quả lê.",
+        "pinyin": "Wǒ fàng yí gè píng guǒ hé yí gè lí."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l3",
+        "speakerId": "ben",
+        "text": "我放一个杨桃和一个牛油果。",
+        "textVi": "Con bỏ vào một quả khế và một quả bơ.",
+        "pinyin": "Wǒ fàng yí gè yáng táo hé yí gè niú yóu guǒ."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l4",
+        "speakerId": "mom",
+        "text": "真棒。还有什么？",
+        "textVi": "Tuyệt lắm. Còn gì nữa nào?",
+        "pinyin": "Zhēn bàng. Hái yǒu shén me?"
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l5",
+        "speakerId": "lily",
+        "text": "一些草莓和葡萄！",
+        "textVi": "Ít dâu tây và nho ạ!",
+        "pinyin": "Yì xiē cǎo méi hé pú tao!"
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l6",
+        "speakerId": "mom",
+        "text": "奶奶一定会喜欢的。",
+        "textVi": "Bà sẽ thích lắm đấy.",
+        "pinyin": "Nǎi nai yí dìng huì xǐ huan de."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-fruit-basket-for-grandma-q1",
+        "prompt": "果篮是送给谁的？",
+        "suggestedAnswer": "是送给奶奶的。",
+        "promptPinyin": "Guǒ lán shì sòng gěi shuí de?",
+        "suggestedAnswerPinyin": "Shì sòng gěi nǎi nai de."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-q2",
+        "prompt": "小本放了什么？",
+        "suggestedAnswer": "他放了一个杨桃和一个牛油果。",
+        "promptPinyin": "Xiǎo Běn fàng le shén me?",
+        "suggestedAnswerPinyin": "Tā fàng le yí gè yáng táo hé yí gè niú yóu guǒ."
+      }
+    ]
   }
 ]

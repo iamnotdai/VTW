@@ -63,6 +63,8 @@ const MEASURE_PINYIN: Record<string, string> = {
   辆: 'liàng',
   顶: 'dǐng',
   头: 'tóu',
+  串: 'chuàn',
+  颗: 'kē',
 };
 
 /**

@@ -5272,5 +5272,585 @@
         "suggestedAnswer": "On the garden path."
       }
     ]
+  },
+  {
+    "id": "our-fruit-garden",
+    "sceneId": "fruit-garden",
+    "title": "Our Fruit Garden",
+    "order": 1,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Dad shows Lily the fruit trees.",
+    "lines": [
+      {
+        "id": "our-fruit-garden-l1",
+        "speakerId": "dad",
+        "text": "Lily, welcome to our fruit garden!",
+        "textVi": "Lily ơi, chào mừng con đến vườn cây ăn quả của nhà mình!"
+      },
+      {
+        "id": "our-fruit-garden-l2",
+        "speakerId": "lily",
+        "text": "Wow! There are so many fruit trees.",
+        "textVi": "Ồ! Có nhiều cây ăn quả quá."
+      },
+      {
+        "id": "our-fruit-garden-l3",
+        "speakerId": "dad",
+        "text": "Can you find the apple tree?",
+        "textVi": "Con có tìm thấy cây táo không?"
+      },
+      {
+        "id": "our-fruit-garden-l4",
+        "speakerId": "lily",
+        "text": "Yes! The apples are red.",
+        "textVi": "Có ạ! Những quả táo màu đỏ."
+      },
+      {
+        "id": "our-fruit-garden-l5",
+        "speakerId": "dad",
+        "text": "What’s next to the apple tree?",
+        "textVi": "Cạnh cây táo là cây gì nào?"
+      },
+      {
+        "id": "our-fruit-garden-l6",
+        "speakerId": "lily",
+        "text": "The orange tree!",
+        "textVi": "Cây cam ạ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-fruit-garden-q1",
+        "prompt": "What does Lily see?",
+        "suggestedAnswer": "She sees many fruit trees."
+      },
+      {
+        "id": "our-fruit-garden-q2",
+        "prompt": "What color are the apples?",
+        "suggestedAnswer": "They’re red."
+      }
+    ]
+  },
+  {
+    "id": "picking-mangoes",
+    "sceneId": "fruit-garden",
+    "title": "Picking Mangoes",
+    "order": 2,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Mom helps Ben pick a ripe mango.",
+    "lines": [
+      {
+        "id": "picking-mangoes-l1",
+        "speakerId": "ben",
+        "text": "Mom, the mangoes are yellow now.",
+        "textVi": "Mẹ ơi, xoài vàng rồi ạ."
+      },
+      {
+        "id": "picking-mangoes-l2",
+        "speakerId": "mom",
+        "text": "Yes, they’re ripe. Let’s pick some.",
+        "textVi": "Ừ, xoài chín rồi. Mình hái vài quả nhé."
+      },
+      {
+        "id": "picking-mangoes-l3",
+        "speakerId": "ben",
+        "text": "I can’t reach the branch.",
+        "textVi": "Con không với tới cành cây."
+      },
+      {
+        "id": "picking-mangoes-l4",
+        "speakerId": "mom",
+        "text": "I’ll help you. Here you are.",
+        "textVi": "Mẹ giúp con. Của con đây."
+      },
+      {
+        "id": "picking-mangoes-l5",
+        "speakerId": "ben",
+        "text": "Thank you! It smells so sweet.",
+        "textVi": "Con cảm ơn mẹ! Thơm quá đi."
+      },
+      {
+        "id": "picking-mangoes-l6",
+        "speakerId": "mom",
+        "text": "Let’s wash it and eat it together.",
+        "textVi": "Mình rửa sạch rồi cùng ăn nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-mangoes-q1",
+        "prompt": "What color are the mangoes?",
+        "suggestedAnswer": "They’re yellow."
+      },
+      {
+        "id": "picking-mangoes-q2",
+        "prompt": "Who helps Ben?",
+        "suggestedAnswer": "Mom helps him."
+      }
+    ]
+  },
+  {
+    "id": "a-bunch-of-bananas",
+    "sceneId": "fruit-garden",
+    "title": "A Bunch of Bananas",
+    "order": 3,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Lily and Ben count the bananas.",
+    "lines": [
+      {
+        "id": "a-bunch-of-bananas-l1",
+        "speakerId": "lily",
+        "text": "Ben, look at the banana tree!",
+        "textVi": "Ben ơi, nhìn cây chuối kìa!"
+      },
+      {
+        "id": "a-bunch-of-bananas-l2",
+        "speakerId": "ben",
+        "text": "There are so many bananas!",
+        "textVi": "Nhiều chuối quá!"
+      },
+      {
+        "id": "a-bunch-of-bananas-l3",
+        "speakerId": "lily",
+        "text": "Let’s count them. One, two, three…",
+        "textVi": "Mình đếm nhé. Một, hai, ba…"
+      },
+      {
+        "id": "a-bunch-of-bananas-l4",
+        "speakerId": "ben",
+        "text": "Too many! I can’t count them all.",
+        "textVi": "Nhiều quá! Mình không đếm hết được."
+      },
+      {
+        "id": "a-bunch-of-bananas-l5",
+        "speakerId": "lily",
+        "text": "Are they yellow?",
+        "textVi": "Chúng có màu vàng không?"
+      },
+      {
+        "id": "a-bunch-of-bananas-l6",
+        "speakerId": "ben",
+        "text": "Yes, they’re yellow and ready to eat.",
+        "textVi": "Có, chúng vàng rồi, ăn được rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bunch-of-bananas-q1",
+        "prompt": "What do they count?",
+        "suggestedAnswer": "They count the bananas."
+      },
+      {
+        "id": "a-bunch-of-bananas-q2",
+        "prompt": "What color are the bananas?",
+        "suggestedAnswer": "They’re yellow."
+      }
+    ]
+  },
+  {
+    "id": "the-big-jackfruit",
+    "sceneId": "fruit-garden",
+    "title": "The Big Jackfruit",
+    "order": 4,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Ben asks Dad about the big fruit on the tree trunk.",
+    "lines": [
+      {
+        "id": "the-big-jackfruit-l1",
+        "speakerId": "ben",
+        "text": "Dad, what’s that big fruit on the tree trunk?",
+        "textVi": "Bố ơi, quả to trên thân cây kia là quả gì vậy?"
+      },
+      {
+        "id": "the-big-jackfruit-l2",
+        "speakerId": "dad",
+        "text": "It’s a jackfruit.",
+        "textVi": "Đó là quả mít."
+      },
+      {
+        "id": "the-big-jackfruit-l3",
+        "speakerId": "ben",
+        "text": "It’s so big! Is it heavy?",
+        "textVi": "To quá! Nó có nặng không ạ?"
+      },
+      {
+        "id": "the-big-jackfruit-l4",
+        "speakerId": "dad",
+        "text": "Yes, it’s very heavy.",
+        "textVi": "Có, nó rất nặng."
+      },
+      {
+        "id": "the-big-jackfruit-l5",
+        "speakerId": "ben",
+        "text": "Is it sweet inside?",
+        "textVi": "Bên trong có ngọt không bố?"
+      },
+      {
+        "id": "the-big-jackfruit-l6",
+        "speakerId": "dad",
+        "text": "Yes. The yellow fruit inside is very sweet.",
+        "textVi": "Có. Múi mít vàng bên trong rất ngọt."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-big-jackfruit-q1",
+        "prompt": "Where is the jackfruit?",
+        "suggestedAnswer": "It’s on the tree trunk."
+      },
+      {
+        "id": "the-big-jackfruit-q2",
+        "prompt": "Is the jackfruit heavy?",
+        "suggestedAnswer": "Yes, it’s very heavy."
+      }
+    ]
+  },
+  {
+    "id": "a-cool-watermelon",
+    "sceneId": "fruit-garden",
+    "title": "A Cool Watermelon",
+    "order": 5,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Mom and Lily eat watermelon on a hot day.",
+    "lines": [
+      {
+        "id": "a-cool-watermelon-l1",
+        "speakerId": "lily",
+        "text": "Mom, it’s so hot today.",
+        "textVi": "Mẹ ơi, hôm nay nóng quá."
+      },
+      {
+        "id": "a-cool-watermelon-l2",
+        "speakerId": "mom",
+        "text": "Let’s eat some watermelon.",
+        "textVi": "Mình ăn dưa hấu nhé."
+      },
+      {
+        "id": "a-cool-watermelon-l3",
+        "speakerId": "lily",
+        "text": "Yay! It’s red inside.",
+        "textVi": "Hoan hô! Bên trong màu đỏ."
+      },
+      {
+        "id": "a-cool-watermelon-l4",
+        "speakerId": "mom",
+        "text": "Look at the black seeds.",
+        "textVi": "Nhìn những hạt màu đen kìa."
+      },
+      {
+        "id": "a-cool-watermelon-l5",
+        "speakerId": "lily",
+        "text": "Mmm, it’s sweet and juicy.",
+        "textVi": "Ừm, ngọt và mọng nước quá."
+      },
+      {
+        "id": "a-cool-watermelon-l6",
+        "speakerId": "mom",
+        "text": "Watermelon is great on a hot day.",
+        "textVi": "Ngày nóng ăn dưa hấu là tuyệt nhất."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-cool-watermelon-q1",
+        "prompt": "What color is the watermelon inside?",
+        "suggestedAnswer": "It’s red."
+      },
+      {
+        "id": "a-cool-watermelon-q2",
+        "prompt": "How does the watermelon taste?",
+        "suggestedAnswer": "It’s sweet and juicy."
+      }
+    ]
+  },
+  {
+    "id": "picking-strawberries",
+    "sceneId": "fruit-garden",
+    "title": "Picking Strawberries",
+    "order": 6,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Lily and Ben pick red strawberries.",
+    "lines": [
+      {
+        "id": "picking-strawberries-l1",
+        "speakerId": "lily",
+        "text": "Ben, let’s pick strawberries!",
+        "textVi": "Ben ơi, mình hái dâu tây đi!"
+      },
+      {
+        "id": "picking-strawberries-l2",
+        "speakerId": "ben",
+        "text": "Which ones can we pick?",
+        "textVi": "Mình hái được những quả nào?"
+      },
+      {
+        "id": "picking-strawberries-l3",
+        "speakerId": "lily",
+        "text": "Pick the red ones. The green ones aren’t ripe.",
+        "textVi": "Hái quả màu đỏ thôi. Quả xanh chưa chín."
+      },
+      {
+        "id": "picking-strawberries-l4",
+        "speakerId": "ben",
+        "text": "I have five red strawberries.",
+        "textVi": "Mình có năm quả dâu tây đỏ."
+      },
+      {
+        "id": "picking-strawberries-l5",
+        "speakerId": "lily",
+        "text": "Put them in the fruit basket.",
+        "textVi": "Bỏ chúng vào giỏ trái cây nhé."
+      },
+      {
+        "id": "picking-strawberries-l6",
+        "speakerId": "ben",
+        "text": "Okay! The basket is almost full.",
+        "textVi": "Được! Giỏ sắp đầy rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-strawberries-q1",
+        "prompt": "Which strawberries can they pick?",
+        "suggestedAnswer": "They can pick the red ones."
+      },
+      {
+        "id": "picking-strawberries-q2",
+        "prompt": "How many strawberries does Ben have?",
+        "suggestedAnswer": "He has five."
+      }
+    ]
+  },
+  {
+    "id": "sour-lemons",
+    "sceneId": "fruit-garden",
+    "title": "Sour Lemons",
+    "order": 7,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Ben tastes a lemon from the garden.",
+    "lines": [
+      {
+        "id": "sour-lemons-l1",
+        "speakerId": "dad",
+        "text": "Ben, can you pick a lemon for me?",
+        "textVi": "Ben ơi, con hái giúp bố một quả chanh vàng được không?"
+      },
+      {
+        "id": "sour-lemons-l2",
+        "speakerId": "ben",
+        "text": "This yellow one?",
+        "textVi": "Quả màu vàng này ạ?"
+      },
+      {
+        "id": "sour-lemons-l3",
+        "speakerId": "dad",
+        "text": "Yes, that’s a lemon. The green one is a lime.",
+        "textVi": "Đúng rồi, đó là chanh vàng. Quả màu xanh là chanh xanh."
+      },
+      {
+        "id": "sour-lemons-l4",
+        "speakerId": "ben",
+        "text": "Can I taste the lemon?",
+        "textVi": "Con nếm thử chanh vàng được không ạ?"
+      },
+      {
+        "id": "sour-lemons-l5",
+        "speakerId": "dad",
+        "text": "Sure. Just a little!",
+        "textVi": "Được chứ. Một chút thôi nhé!"
+      },
+      {
+        "id": "sour-lemons-l6",
+        "speakerId": "ben",
+        "text": "Ooh! It’s so sour!",
+        "textVi": "Ối! Chua quá!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "sour-lemons-q1",
+        "prompt": "What color is the lime?",
+        "suggestedAnswer": "It’s green."
+      },
+      {
+        "id": "sour-lemons-q2",
+        "prompt": "How does the lemon taste?",
+        "suggestedAnswer": "It’s sour."
+      }
+    ]
+  },
+  {
+    "id": "under-the-grapes",
+    "sceneId": "fruit-garden",
+    "title": "Under the Grapes",
+    "order": 8,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Mom and Lily pick a bunch of grapes.",
+    "lines": [
+      {
+        "id": "under-the-grapes-l1",
+        "speakerId": "lily",
+        "text": "Mom, look up! There are grapes.",
+        "textVi": "Mẹ ơi, nhìn lên kìa! Có nho."
+      },
+      {
+        "id": "under-the-grapes-l2",
+        "speakerId": "mom",
+        "text": "Yes. They’re purple and round.",
+        "textVi": "Ừ. Chúng màu tím và tròn."
+      },
+      {
+        "id": "under-the-grapes-l3",
+        "speakerId": "lily",
+        "text": "Can we pick a bunch?",
+        "textVi": "Mình hái một chùm được không ạ?"
+      },
+      {
+        "id": "under-the-grapes-l4",
+        "speakerId": "mom",
+        "text": "Of course. Please hold the fruit basket.",
+        "textVi": "Tất nhiên rồi. Con cầm giỏ trái cây giúp mẹ nhé."
+      },
+      {
+        "id": "under-the-grapes-l5",
+        "speakerId": "lily",
+        "text": "Here it is.",
+        "textVi": "Đây ạ."
+      },
+      {
+        "id": "under-the-grapes-l6",
+        "speakerId": "mom",
+        "text": "Thank you. Now we have grapes for lunch.",
+        "textVi": "Cảm ơn con. Giờ mình có nho cho bữa trưa rồi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "under-the-grapes-q1",
+        "prompt": "What color are the grapes?",
+        "suggestedAnswer": "They’re purple."
+      },
+      {
+        "id": "under-the-grapes-q2",
+        "prompt": "What does Lily hold?",
+        "suggestedAnswer": "She holds the fruit basket."
+      }
+    ]
+  },
+  {
+    "id": "a-bird-on-the-branch",
+    "sceneId": "fruit-garden",
+    "title": "A Bird on the Branch",
+    "order": 9,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Ben shows Lily a little bird in the tree.",
+    "lines": [
+      {
+        "id": "a-bird-on-the-branch-l1",
+        "speakerId": "ben",
+        "text": "Lily, there’s a bird on the branch!",
+        "textVi": "Lily ơi, có một chú chim trên cành cây!"
+      },
+      {
+        "id": "a-bird-on-the-branch-l2",
+        "speakerId": "lily",
+        "text": "Where? I can only see leaves.",
+        "textVi": "Đâu cơ? Mình chỉ thấy lá thôi."
+      },
+      {
+        "id": "a-bird-on-the-branch-l3",
+        "speakerId": "ben",
+        "text": "Next to the big leaf. Look!",
+        "textVi": "Cạnh chiếc lá to ấy. Nhìn kìa!"
+      },
+      {
+        "id": "a-bird-on-the-branch-l4",
+        "speakerId": "lily",
+        "text": "Oh, I see it now. It’s so small.",
+        "textVi": "À, giờ mình thấy rồi. Nó nhỏ quá."
+      },
+      {
+        "id": "a-bird-on-the-branch-l5",
+        "speakerId": "ben",
+        "text": "It’s eating a little fruit.",
+        "textVi": "Nó đang ăn một quả nhỏ."
+      },
+      {
+        "id": "a-bird-on-the-branch-l6",
+        "speakerId": "lily",
+        "text": "Shh! Don’t scare it.",
+        "textVi": "Suỵt! Đừng làm nó sợ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bird-on-the-branch-q1",
+        "prompt": "Where is the bird?",
+        "suggestedAnswer": "It’s on the branch."
+      },
+      {
+        "id": "a-bird-on-the-branch-q2",
+        "prompt": "What is the bird doing?",
+        "suggestedAnswer": "It’s eating a little fruit."
+      }
+    ]
+  },
+  {
+    "id": "a-fruit-basket-for-grandma",
+    "sceneId": "fruit-garden",
+    "title": "A Fruit Basket for Grandma",
+    "order": 10,
+    "poster": "/assets/scenes/fruit-garden/fruit-garden-desktop.webp",
+    "description": "Mom, Lily and Ben fill a fruit basket for Grandma.",
+    "lines": [
+      {
+        "id": "a-fruit-basket-for-grandma-l1",
+        "speakerId": "mom",
+        "text": "Let’s make a fruit basket for Grandma.",
+        "textVi": "Mình làm một giỏ trái cây tặng bà nhé."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l2",
+        "speakerId": "lily",
+        "text": "I’ll put in an apple and a pear.",
+        "textVi": "Con bỏ vào một quả táo và một quả lê."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l3",
+        "speakerId": "ben",
+        "text": "I’ll put in a starfruit and an avocado.",
+        "textVi": "Con bỏ vào một quả khế và một quả bơ."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l4",
+        "speakerId": "mom",
+        "text": "Great. What else?",
+        "textVi": "Tuyệt lắm. Còn gì nữa nào?"
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l5",
+        "speakerId": "lily",
+        "text": "Some strawberries and grapes!",
+        "textVi": "Ít dâu tây và nho ạ!"
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-l6",
+        "speakerId": "mom",
+        "text": "Grandma will love it.",
+        "textVi": "Bà sẽ thích lắm đấy."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-fruit-basket-for-grandma-q1",
+        "prompt": "Who is the fruit basket for?",
+        "suggestedAnswer": "It’s for Grandma."
+      },
+      {
+        "id": "a-fruit-basket-for-grandma-q2",
+        "prompt": "What does Ben put in?",
+        "suggestedAnswer": "He puts in a starfruit and an avocado."
+      }
+    ]
   }
 ]

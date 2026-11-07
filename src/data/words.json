@@ -4745,5 +4745,485 @@
     ],
     "relatedWordIds": ["garden-bed", "garden-fence"],
     "distractorWordIds": ["garden-bed", "trellis", "soil"]
+  },
+  "apple": {
+    "id": "apple",
+    "text": "apple",
+    "ipa": "/ˈæpəl/",
+    "meaningVi": "quả táo",
+    "image": "/assets/scenes/fruit-garden/objects/01_apple.webp",
+    "acceptedAnswers": ["apple", "an apple", "apples"],
+    "examples": [
+      {
+        "text": "This is a red apple.",
+        "vi": "Đây là một quả táo đỏ."
+      },
+      {
+        "text": "I eat an apple every day.",
+        "vi": "Ngày nào mình cũng ăn một quả táo."
+      }
+    ],
+    "relatedWordIds": ["fruit-tree", "pear"],
+    "distractorWordIds": ["peach", "pear", "strawberry"]
+  },
+  "orange": {
+    "id": "orange",
+    "text": "orange",
+    "ipa": "/ˈɔːrɪndʒ/",
+    "meaningVi": "quả cam",
+    "image": "/assets/scenes/fruit-garden/objects/02_orange.webp",
+    "acceptedAnswers": ["orange", "an orange", "oranges"],
+    "examples": [
+      {
+        "text": "The orange is sweet.",
+        "vi": "Quả cam ngọt."
+      },
+      {
+        "text": "I drink orange juice.",
+        "vi": "Mình uống nước cam."
+      }
+    ],
+    "relatedWordIds": ["lemon", "lime"],
+    "distractorWordIds": ["lemon", "peach", "mango"]
+  },
+  "mango": {
+    "id": "mango",
+    "text": "mango",
+    "ipa": "/ˈmæŋɡoʊ/",
+    "meaningVi": "quả xoài",
+    "image": "/assets/scenes/fruit-garden/objects/03_mango.webp",
+    "acceptedAnswers": ["mango", "a mango", "mangoes", "mangos"],
+    "examples": [
+      {
+        "text": "I like ripe mangoes.",
+        "vi": "Mình thích xoài chín."
+      },
+      {
+        "text": "The mango tree has many mangoes.",
+        "vi": "Cây xoài có rất nhiều quả."
+      }
+    ],
+    "relatedWordIds": ["papaya", "peach"],
+    "distractorWordIds": ["papaya", "peach", "pear"]
+  },
+  "banana": {
+    "id": "banana",
+    "text": "banana",
+    "ipa": "/bəˈnænə/",
+    "meaningVi": "quả chuối",
+    "image": "/assets/scenes/fruit-garden/objects/04_banana.webp",
+    "acceptedAnswers": ["banana", "a banana", "bananas"],
+    "examples": [
+      {
+        "text": "This banana is yellow.",
+        "vi": "Quả chuối này màu vàng."
+      },
+      {
+        "text": "Monkeys like bananas.",
+        "vi": "Khỉ thích ăn chuối."
+      }
+    ],
+    "relatedWordIds": ["fruit-basket", "mango"],
+    "distractorWordIds": ["lemon", "starfruit", "papaya"]
+  },
+  "coconut": {
+    "id": "coconut",
+    "text": "coconut",
+    "ipa": "/ˈkoʊkənʌt/",
+    "meaningVi": "quả dừa",
+    "image": "/assets/scenes/fruit-garden/objects/05_coconut.webp",
+    "acceptedAnswers": ["coconut", "a coconut", "coconuts"],
+    "examples": [
+      {
+        "text": "A coconut grows on a palm tree.",
+        "vi": "Quả dừa mọc trên cây dừa."
+      },
+      {
+        "text": "Coconut water is cool.",
+        "vi": "Nước dừa mát lắm."
+      }
+    ],
+    "relatedWordIds": ["fruit-tree", "jackfruit"],
+    "distractorWordIds": ["watermelon", "jackfruit", "guava"]
+  },
+  "papaya": {
+    "id": "papaya",
+    "text": "papaya",
+    "ipa": "/pəˈpaɪə/",
+    "meaningVi": "quả đu đủ",
+    "image": "/assets/scenes/fruit-garden/objects/06_papaya.webp",
+    "acceptedAnswers": ["papaya", "a papaya", "papayas"],
+    "examples": [
+      {
+        "text": "The papaya is ripe.",
+        "vi": "Quả đu đủ chín rồi."
+      },
+      {
+        "text": "Papayas grow under the big leaves.",
+        "vi": "Đu đủ mọc dưới những chiếc lá to."
+      }
+    ],
+    "relatedWordIds": ["mango", "fruit-tree"],
+    "distractorWordIds": ["mango", "avocado", "pear"]
+  },
+  "guava": {
+    "id": "guava",
+    "text": "guava",
+    "ipa": "/ˈɡwɑːvə/",
+    "meaningVi": "quả ổi",
+    "image": "/assets/scenes/fruit-garden/objects/07_guava.webp",
+    "acceptedAnswers": ["guava", "a guava", "guavas"],
+    "examples": [
+      {
+        "text": "This guava is green.",
+        "vi": "Quả ổi này màu xanh."
+      },
+      {
+        "text": "The guava is crunchy.",
+        "vi": "Quả ổi giòn."
+      }
+    ],
+    "relatedWordIds": ["lime", "pear"],
+    "distractorWordIds": ["lime", "apple", "avocado"]
+  },
+  "jackfruit": {
+    "id": "jackfruit",
+    "text": "jackfruit",
+    "ipa": "/ˈdʒækfruːt/",
+    "meaningVi": "quả mít",
+    "image": "/assets/scenes/fruit-garden/objects/08_jackfruit.webp",
+    "acceptedAnswers": ["jackfruit", "a jackfruit", "jackfruits"],
+    "examples": [
+      {
+        "text": "The jackfruit is very big.",
+        "vi": "Quả mít rất to."
+      },
+      {
+        "text": "Jackfruits hang from the tree trunk.",
+        "vi": "Những quả mít treo trên thân cây."
+      }
+    ],
+    "relatedWordIds": ["tree-trunk", "pineapple"],
+    "distractorWordIds": ["pineapple", "coconut", "watermelon"]
+  },
+  "grape": {
+    "id": "grape",
+    "text": "grape",
+    "ipa": "/ɡreɪp/",
+    "meaningVi": "quả nho",
+    "image": "/assets/scenes/fruit-garden/objects/09_grape.webp",
+    "acceptedAnswers": ["grape", "a grape", "grapes"],
+    "examples": [
+      {
+        "text": "These grapes are purple.",
+        "vi": "Những quả nho này màu tím."
+      },
+      {
+        "text": "We pick a bunch of grapes.",
+        "vi": "Chúng mình hái một chùm nho."
+      }
+    ],
+    "relatedWordIds": ["fruit-basket", "strawberry"],
+    "distractorWordIds": ["strawberry", "peach", "dragon-fruit"]
+  },
+  "lemon": {
+    "id": "lemon",
+    "text": "lemon",
+    "ipa": "/ˈlemən/",
+    "meaningVi": "quả chanh vàng",
+    "image": "/assets/scenes/fruit-garden/objects/10_lemon.webp",
+    "acceptedAnswers": ["lemon", "a lemon", "lemons"],
+    "examples": [
+      {
+        "text": "The lemon tastes sour.",
+        "vi": "Quả chanh vàng có vị chua."
+      },
+      {
+        "text": "The lemon is yellow.",
+        "vi": "Quả chanh vàng có màu vàng."
+      }
+    ],
+    "relatedWordIds": ["lime", "orange"],
+    "distractorWordIds": ["lime", "orange", "starfruit"]
+  },
+  "avocado": {
+    "id": "avocado",
+    "text": "avocado",
+    "ipa": "/ˌævəˈkɑːdoʊ/",
+    "meaningVi": "quả bơ",
+    "image": "/assets/scenes/fruit-garden/objects/11_avocado.webp",
+    "acceptedAnswers": ["avocado", "an avocado", "avocados"],
+    "examples": [
+      {
+        "text": "I eat an avocado.",
+        "vi": "Mình ăn một quả bơ."
+      },
+      {
+        "text": "The avocado is green.",
+        "vi": "Quả bơ màu xanh."
+      }
+    ],
+    "relatedWordIds": ["pear", "guava"],
+    "distractorWordIds": ["pear", "guava", "lime"]
+  },
+  "pineapple": {
+    "id": "pineapple",
+    "text": "pineapple",
+    "ipa": "/ˈpaɪnæpəl/",
+    "meaningVi": "quả dứa",
+    "image": "/assets/scenes/fruit-garden/objects/12_pineapple.webp",
+    "acceptedAnswers": ["pineapple", "a pineapple", "pineapples"],
+    "examples": [
+      {
+        "text": "The pineapple has a spiky skin.",
+        "vi": "Quả dứa có vỏ gai."
+      },
+      {
+        "text": "The pineapple has green leaves on top.",
+        "vi": "Quả dứa có lá xanh ở trên đỉnh."
+      }
+    ],
+    "relatedWordIds": ["jackfruit", "coconut"],
+    "distractorWordIds": ["jackfruit", "dragon-fruit", "mango"]
+  },
+  "watermelon": {
+    "id": "watermelon",
+    "text": "watermelon",
+    "ipa": "/ˈwɔːtərmelən/",
+    "meaningVi": "quả dưa hấu",
+    "image": "/assets/scenes/fruit-garden/objects/13_watermelon.webp",
+    "acceptedAnswers": ["watermelon", "a watermelon", "watermelons"],
+    "examples": [
+      {
+        "text": "This watermelon is big.",
+        "vi": "Quả dưa hấu này to."
+      },
+      {
+        "text": "The watermelon is red inside.",
+        "vi": "Bên trong quả dưa hấu màu đỏ."
+      }
+    ],
+    "relatedWordIds": ["strawberry", "coconut"],
+    "distractorWordIds": ["coconut", "jackfruit", "avocado"]
+  },
+  "strawberry": {
+    "id": "strawberry",
+    "text": "strawberry",
+    "ipa": "/ˈstrɔːberi/",
+    "meaningVi": "quả dâu tây",
+    "image": "/assets/scenes/fruit-garden/objects/14_strawberry.webp",
+    "acceptedAnswers": ["strawberry", "a strawberry", "strawberries"],
+    "examples": [
+      {
+        "text": "The strawberry is red.",
+        "vi": "Quả dâu tây màu đỏ."
+      },
+      {
+        "text": "I pick strawberries in the garden.",
+        "vi": "Mình hái dâu tây trong vườn."
+      }
+    ],
+    "relatedWordIds": ["watermelon", "grape"],
+    "distractorWordIds": ["apple", "peach", "dragon-fruit"]
+  },
+  "dragon-fruit": {
+    "id": "dragon-fruit",
+    "text": "dragon fruit",
+    "ipa": "/ˈdræɡən fruːt/",
+    "meaningVi": "quả thanh long",
+    "image": "/assets/scenes/fruit-garden/objects/15_dragon-fruit.webp",
+    "acceptedAnswers": ["dragon fruit", "a dragon fruit", "dragon fruits", "dragonfruit"],
+    "examples": [
+      {
+        "text": "The dragon fruit has pink skin.",
+        "vi": "Quả thanh long có vỏ màu hồng."
+      },
+      {
+        "text": "The dragon fruit is white inside.",
+        "vi": "Bên trong quả thanh long màu trắng."
+      }
+    ],
+    "relatedWordIds": ["starfruit", "strawberry"],
+    "distractorWordIds": ["strawberry", "peach", "mango"]
+  },
+  "peach": {
+    "id": "peach",
+    "text": "peach",
+    "ipa": "/piːtʃ/",
+    "meaningVi": "quả đào",
+    "image": "/assets/scenes/fruit-garden/objects/16_peach.webp",
+    "acceptedAnswers": ["peach", "a peach", "peaches"],
+    "examples": [
+      {
+        "text": "This peach is soft.",
+        "vi": "Quả đào này mềm."
+      },
+      {
+        "text": "The peach is pink and orange.",
+        "vi": "Quả đào có màu hồng và cam."
+      }
+    ],
+    "relatedWordIds": ["apple", "pear"],
+    "distractorWordIds": ["apple", "mango", "orange"]
+  },
+  "pear": {
+    "id": "pear",
+    "text": "pear",
+    "ipa": "/per/",
+    "meaningVi": "quả lê",
+    "image": "/assets/scenes/fruit-garden/objects/17_pear.webp",
+    "acceptedAnswers": ["pear", "a pear", "pears"],
+    "examples": [
+      {
+        "text": "The pear is juicy.",
+        "vi": "Quả lê mọng nước."
+      },
+      {
+        "text": "The pear is green and yellow.",
+        "vi": "Quả lê có màu xanh và vàng."
+      }
+    ],
+    "relatedWordIds": ["apple", "avocado"],
+    "distractorWordIds": ["avocado", "guava", "apple"]
+  },
+  "lime": {
+    "id": "lime",
+    "text": "lime",
+    "ipa": "/laɪm/",
+    "meaningVi": "quả chanh xanh",
+    "image": "/assets/scenes/fruit-garden/objects/18_lime.webp",
+    "acceptedAnswers": ["lime", "a lime", "limes"],
+    "examples": [
+      {
+        "text": "This lime is green.",
+        "vi": "Quả chanh này màu xanh."
+      },
+      {
+        "text": "The lime is small and sour.",
+        "vi": "Quả chanh xanh nhỏ và chua."
+      }
+    ],
+    "relatedWordIds": ["lemon", "guava"],
+    "distractorWordIds": ["lemon", "guava", "avocado"]
+  },
+  "starfruit": {
+    "id": "starfruit",
+    "text": "starfruit",
+    "ipa": "/ˈstɑːrfruːt/",
+    "meaningVi": "quả khế",
+    "image": "/assets/scenes/fruit-garden/objects/19_starfruit.webp",
+    "acceptedAnswers": ["starfruit", "a starfruit", "star fruit", "starfruits"],
+    "examples": [
+      {
+        "text": "A starfruit has five ridges.",
+        "vi": "Quả khế có năm múi."
+      },
+      {
+        "text": "Cut a starfruit and you see a star.",
+        "vi": "Cắt quả khế ra, con sẽ thấy hình ngôi sao."
+      }
+    ],
+    "relatedWordIds": ["dragon-fruit", "lemon"],
+    "distractorWordIds": ["banana", "lemon", "papaya"]
+  },
+  "fruit-tree": {
+    "id": "fruit-tree",
+    "text": "fruit tree",
+    "ipa": "/ˈfruːt triː/",
+    "meaningVi": "cây ăn quả",
+    "image": "/assets/scenes/fruit-garden/objects/20_fruit-tree.webp",
+    "acceptedAnswers": ["fruit tree", "a fruit tree", "fruit trees"],
+    "examples": [
+      {
+        "text": "This fruit tree is tall.",
+        "vi": "Cây ăn quả này cao."
+      },
+      {
+        "text": "Jackfruits grow on this fruit tree.",
+        "vi": "Những quả mít mọc trên cây ăn quả này."
+      }
+    ],
+    "relatedWordIds": ["tree-trunk", "branch", "jackfruit"],
+    "distractorWordIds": ["tree-trunk", "branch", "leaf"]
+  },
+  "tree-trunk": {
+    "id": "tree-trunk",
+    "text": "tree trunk",
+    "ipa": "/ˈtriː trʌŋk/",
+    "meaningVi": "thân cây",
+    "image": "/assets/scenes/fruit-garden/objects/21_tree-trunk.webp",
+    "acceptedAnswers": ["tree trunk", "a tree trunk", "trunk", "the trunk"],
+    "examples": [
+      {
+        "text": "The tree trunk is strong.",
+        "vi": "Thân cây rất chắc."
+      },
+      {
+        "text": "The jackfruits grow on the tree trunk.",
+        "vi": "Quả mít mọc trên thân cây."
+      }
+    ],
+    "relatedWordIds": ["branch", "fruit-tree", "jackfruit"],
+    "distractorWordIds": ["branch", "leaf", "fruit-tree"]
+  },
+  "branch": {
+    "id": "branch",
+    "text": "branch",
+    "ipa": "/bræntʃ/",
+    "meaningVi": "cành cây",
+    "image": "/assets/scenes/fruit-garden/objects/22_branch.webp",
+    "acceptedAnswers": ["branch", "a branch", "branches"],
+    "examples": [
+      {
+        "text": "A bird sits on the branch.",
+        "vi": "Một chú chim đậu trên cành cây."
+      },
+      {
+        "text": "The branch is long and brown.",
+        "vi": "Cành cây dài và có màu nâu."
+      }
+    ],
+    "relatedWordIds": ["leaf", "tree-trunk"],
+    "distractorWordIds": ["leaf", "tree-trunk", "fruit-tree"]
+  },
+  "leaf": {
+    "id": "leaf",
+    "text": "leaf",
+    "ipa": "/liːf/",
+    "meaningVi": "lá cây",
+    "image": "/assets/scenes/fruit-garden/objects/23_leaf.webp",
+    "acceptedAnswers": ["leaf", "a leaf", "leaves"],
+    "examples": [
+      {
+        "text": "The leaf is green.",
+        "vi": "Chiếc lá màu xanh."
+      },
+      {
+        "text": "A big leaf hangs from the branch.",
+        "vi": "Một chiếc lá to treo trên cành cây."
+      }
+    ],
+    "relatedWordIds": ["branch", "fruit-tree"],
+    "distractorWordIds": ["branch", "tree-trunk", "grape"]
+  },
+  "fruit-basket": {
+    "id": "fruit-basket",
+    "text": "fruit basket",
+    "ipa": "/ˈfruːt ˌbæskɪt/",
+    "meaningVi": "giỏ đựng trái cây",
+    "image": "/assets/scenes/fruit-garden/objects/24_fruit-basket.webp",
+    "acceptedAnswers": ["fruit basket", "a fruit basket", "basket", "the basket"],
+    "examples": [
+      {
+        "text": "The fruit basket is full.",
+        "vi": "Giỏ trái cây đầy ắp."
+      },
+      {
+        "text": "Put the apples in the fruit basket.",
+        "vi": "Bỏ táo vào giỏ trái cây nhé."
+      }
+    ],
+    "relatedWordIds": ["apple", "banana", "grape"],
+    "distractorWordIds": ["watermelon", "pineapple", "coconut"]
   }
 }

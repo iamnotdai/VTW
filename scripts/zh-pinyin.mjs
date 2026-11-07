@@ -81,6 +81,17 @@ const READINGS = {
   长得: 'zhǎng de',
   轻轻地: 'qīng qīng de',
   数了: 'shǔ le',
+  数一数: 'shǔ yi shǔ',
+  数不完: 'shǔ bu wán',
+  数什么: 'shǔ shén me',
+  数香蕉: 'shǔ xiāng jiāo',
+  熟了: 'shú le',
+  没熟: 'méi shú',
+  熟芒果: 'shú máng guǒ',
+  园子: 'yuán zi',
+  果子: 'guǒ zi',
+  只看到: 'zhǐ kàn dào',
+  只尝: 'zhǐ cháng',
 };
 
 /** The characters' names, written with capitals. */

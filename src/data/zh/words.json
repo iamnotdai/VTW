@@ -5225,5 +5225,557 @@
     ],
     "relatedWordIds": ["garden-bed", "garden-fence"],
     "distractorWordIds": ["garden-bed", "trellis", "soil"]
+  },
+  "apple": {
+    "id": "apple",
+    "text": "苹果",
+    "pinyin": "píngguǒ",
+    "measure": "个",
+    "meaningVi": "quả táo",
+    "image": "/assets/scenes/fruit-garden/objects/01_apple.webp",
+    "acceptedAnswers": ["苹果"],
+    "examples": [
+      {
+        "text": "这是一个红苹果。",
+        "vi": "Đây là một quả táo đỏ.",
+        "pinyin": "Zhè shì yí gè hóng píng guǒ."
+      },
+      {
+        "text": "我每天吃一个苹果。",
+        "vi": "Ngày nào mình cũng ăn một quả táo.",
+        "pinyin": "Wǒ měi tiān chī yí gè píng guǒ."
+      }
+    ],
+    "relatedWordIds": ["fruit-tree", "pear"],
+    "distractorWordIds": ["peach", "pear", "strawberry"]
+  },
+  "orange": {
+    "id": "orange",
+    "text": "橙子",
+    "pinyin": "chéngzi",
+    "measure": "个",
+    "meaningVi": "quả cam",
+    "image": "/assets/scenes/fruit-garden/objects/02_orange.webp",
+    "acceptedAnswers": ["橙子"],
+    "examples": [
+      {
+        "text": "橙子很甜。",
+        "vi": "Quả cam ngọt.",
+        "pinyin": "Chéng zi hěn tián."
+      },
+      {
+        "text": "我喝橙汁。",
+        "vi": "Mình uống nước cam.",
+        "pinyin": "Wǒ hē chéng zhī."
+      }
+    ],
+    "relatedWordIds": ["lemon", "lime"],
+    "distractorWordIds": ["lemon", "peach", "mango"]
+  },
+  "mango": {
+    "id": "mango",
+    "text": "芒果",
+    "pinyin": "mángguǒ",
+    "measure": "个",
+    "meaningVi": "quả xoài",
+    "image": "/assets/scenes/fruit-garden/objects/03_mango.webp",
+    "acceptedAnswers": ["芒果"],
+    "examples": [
+      {
+        "text": "我喜欢吃熟芒果。",
+        "vi": "Mình thích xoài chín.",
+        "pinyin": "Wǒ xǐ huan chī shú máng guǒ."
+      },
+      {
+        "text": "芒果树上有很多芒果。",
+        "vi": "Cây xoài có rất nhiều quả.",
+        "pinyin": "Máng guǒ shù shàng yǒu hěn duō máng guǒ."
+      }
+    ],
+    "relatedWordIds": ["papaya", "peach"],
+    "distractorWordIds": ["papaya", "peach", "pear"]
+  },
+  "banana": {
+    "id": "banana",
+    "text": "香蕉",
+    "pinyin": "xiāngjiāo",
+    "measure": "根",
+    "meaningVi": "quả chuối",
+    "image": "/assets/scenes/fruit-garden/objects/04_banana.webp",
+    "acceptedAnswers": ["香蕉"],
+    "examples": [
+      {
+        "text": "这根香蕉是黄色的。",
+        "vi": "Quả chuối này màu vàng.",
+        "pinyin": "Zhè gēn xiāng jiāo shì huáng sè de."
+      },
+      {
+        "text": "小猴子喜欢吃香蕉。",
+        "vi": "Khỉ thích ăn chuối.",
+        "pinyin": "Xiǎo hóu zi xǐ huan chī xiāng jiāo."
+      }
+    ],
+    "relatedWordIds": ["fruit-basket", "mango"],
+    "distractorWordIds": ["lemon", "starfruit", "papaya"]
+  },
+  "coconut": {
+    "id": "coconut",
+    "text": "椰子",
+    "pinyin": "yēzi",
+    "measure": "个",
+    "meaningVi": "quả dừa",
+    "image": "/assets/scenes/fruit-garden/objects/05_coconut.webp",
+    "acceptedAnswers": ["椰子"],
+    "examples": [
+      {
+        "text": "椰子长在椰子树上。",
+        "vi": "Quả dừa mọc trên cây dừa.",
+        "pinyin": "Yē zi zhǎng zài yē zi shù shàng."
+      },
+      {
+        "text": "椰子水很清凉。",
+        "vi": "Nước dừa mát lắm.",
+        "pinyin": "Yē zi shuǐ hěn qīng liáng."
+      }
+    ],
+    "relatedWordIds": ["fruit-tree", "jackfruit"],
+    "distractorWordIds": ["watermelon", "jackfruit", "guava"]
+  },
+  "papaya": {
+    "id": "papaya",
+    "text": "木瓜",
+    "pinyin": "mùguā",
+    "measure": "个",
+    "meaningVi": "quả đu đủ",
+    "image": "/assets/scenes/fruit-garden/objects/06_papaya.webp",
+    "acceptedAnswers": ["木瓜"],
+    "examples": [
+      {
+        "text": "木瓜熟了。",
+        "vi": "Quả đu đủ chín rồi.",
+        "pinyin": "Mù guā shú le."
+      },
+      {
+        "text": "木瓜长在大叶子下面。",
+        "vi": "Đu đủ mọc dưới những chiếc lá to.",
+        "pinyin": "Mù guā zhǎng zài dà yè zi xià miàn."
+      }
+    ],
+    "relatedWordIds": ["mango", "fruit-tree"],
+    "distractorWordIds": ["mango", "avocado", "pear"]
+  },
+  "guava": {
+    "id": "guava",
+    "text": "番石榴",
+    "pinyin": "fānshíliu",
+    "measure": "个",
+    "meaningVi": "quả ổi",
+    "image": "/assets/scenes/fruit-garden/objects/07_guava.webp",
+    "acceptedAnswers": ["番石榴"],
+    "examples": [
+      {
+        "text": "这个番石榴是绿色的。",
+        "vi": "Quả ổi này màu xanh.",
+        "pinyin": "Zhè ge fān shí liu shì lǜ sè de."
+      },
+      {
+        "text": "番石榴脆脆的。",
+        "vi": "Quả ổi giòn.",
+        "pinyin": "Fān shí liu cuì cuì de."
+      }
+    ],
+    "relatedWordIds": ["lime", "pear"],
+    "distractorWordIds": ["lime", "apple", "avocado"]
+  },
+  "jackfruit": {
+    "id": "jackfruit",
+    "text": "菠萝蜜",
+    "pinyin": "bōluómì",
+    "measure": "个",
+    "meaningVi": "quả mít",
+    "image": "/assets/scenes/fruit-garden/objects/08_jackfruit.webp",
+    "acceptedAnswers": ["菠萝蜜"],
+    "examples": [
+      {
+        "text": "菠萝蜜非常大。",
+        "vi": "Quả mít rất to.",
+        "pinyin": "Bō luó mì fēi cháng dà."
+      },
+      {
+        "text": "菠萝蜜挂在树干上。",
+        "vi": "Những quả mít treo trên thân cây.",
+        "pinyin": "Bō luó mì guà zài shù gàn shàng."
+      }
+    ],
+    "relatedWordIds": ["tree-trunk", "pineapple"],
+    "distractorWordIds": ["pineapple", "coconut", "watermelon"]
+  },
+  "grape": {
+    "id": "grape",
+    "text": "葡萄",
+    "pinyin": "pútao",
+    "measure": "串",
+    "meaningVi": "quả nho",
+    "image": "/assets/scenes/fruit-garden/objects/09_grape.webp",
+    "acceptedAnswers": ["葡萄"],
+    "examples": [
+      {
+        "text": "这些葡萄是紫色的。",
+        "vi": "Những quả nho này màu tím.",
+        "pinyin": "Zhè xiē pú tao shì zǐ sè de."
+      },
+      {
+        "text": "我们摘了一串葡萄。",
+        "vi": "Chúng mình hái một chùm nho.",
+        "pinyin": "Wǒ men zhāi le yí chuàn pú tao."
+      }
+    ],
+    "relatedWordIds": ["fruit-basket", "strawberry"],
+    "distractorWordIds": ["strawberry", "peach", "dragon-fruit"]
+  },
+  "lemon": {
+    "id": "lemon",
+    "text": "柠檬",
+    "pinyin": "níngméng",
+    "measure": "个",
+    "meaningVi": "quả chanh vàng",
+    "image": "/assets/scenes/fruit-garden/objects/10_lemon.webp",
+    "acceptedAnswers": ["柠檬"],
+    "examples": [
+      {
+        "text": "柠檬很酸。",
+        "vi": "Quả chanh vàng có vị chua.",
+        "pinyin": "Níng méng hěn suān."
+      },
+      {
+        "text": "柠檬是黄色的。",
+        "vi": "Quả chanh vàng có màu vàng.",
+        "pinyin": "Níng méng shì huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["lime", "orange"],
+    "distractorWordIds": ["lime", "orange", "starfruit"]
+  },
+  "avocado": {
+    "id": "avocado",
+    "text": "牛油果",
+    "pinyin": "niúyóuguǒ",
+    "measure": "个",
+    "meaningVi": "quả bơ",
+    "image": "/assets/scenes/fruit-garden/objects/11_avocado.webp",
+    "acceptedAnswers": ["牛油果"],
+    "examples": [
+      {
+        "text": "我吃一个牛油果。",
+        "vi": "Mình ăn một quả bơ.",
+        "pinyin": "Wǒ chī yí gè niú yóu guǒ."
+      },
+      {
+        "text": "牛油果是绿色的。",
+        "vi": "Quả bơ màu xanh.",
+        "pinyin": "Niú yóu guǒ shì lǜ sè de."
+      }
+    ],
+    "relatedWordIds": ["pear", "guava"],
+    "distractorWordIds": ["pear", "guava", "lime"]
+  },
+  "pineapple": {
+    "id": "pineapple",
+    "text": "菠萝",
+    "pinyin": "bōluó",
+    "measure": "个",
+    "meaningVi": "quả dứa",
+    "image": "/assets/scenes/fruit-garden/objects/12_pineapple.webp",
+    "acceptedAnswers": ["菠萝"],
+    "examples": [
+      {
+        "text": "菠萝的皮有很多刺。",
+        "vi": "Quả dứa có vỏ gai.",
+        "pinyin": "Bō luó de pí yǒu hěn duō cì."
+      },
+      {
+        "text": "菠萝的顶上有绿叶子。",
+        "vi": "Quả dứa có lá xanh ở trên đỉnh.",
+        "pinyin": "Bō luó de dǐng shàng yǒu lǜ yè zi."
+      }
+    ],
+    "relatedWordIds": ["jackfruit", "coconut"],
+    "distractorWordIds": ["jackfruit", "dragon-fruit", "mango"]
+  },
+  "watermelon": {
+    "id": "watermelon",
+    "text": "西瓜",
+    "pinyin": "xīguā",
+    "measure": "个",
+    "meaningVi": "quả dưa hấu",
+    "image": "/assets/scenes/fruit-garden/objects/13_watermelon.webp",
+    "acceptedAnswers": ["西瓜"],
+    "examples": [
+      {
+        "text": "这个西瓜很大。",
+        "vi": "Quả dưa hấu này to.",
+        "pinyin": "Zhè ge xī guā hěn dà."
+      },
+      {
+        "text": "西瓜里面是红色的。",
+        "vi": "Bên trong quả dưa hấu màu đỏ.",
+        "pinyin": "Xī guā lǐ miàn shì hóng sè de."
+      }
+    ],
+    "relatedWordIds": ["strawberry", "coconut"],
+    "distractorWordIds": ["coconut", "jackfruit", "avocado"]
+  },
+  "strawberry": {
+    "id": "strawberry",
+    "text": "草莓",
+    "pinyin": "cǎoméi",
+    "measure": "颗",
+    "meaningVi": "quả dâu tây",
+    "image": "/assets/scenes/fruit-garden/objects/14_strawberry.webp",
+    "acceptedAnswers": ["草莓"],
+    "examples": [
+      {
+        "text": "草莓是红色的。",
+        "vi": "Quả dâu tây màu đỏ.",
+        "pinyin": "Cǎo méi shì hóng sè de."
+      },
+      {
+        "text": "我在园子里摘草莓。",
+        "vi": "Mình hái dâu tây trong vườn.",
+        "pinyin": "Wǒ zài yuán zi lǐ zhāi cǎo méi."
+      }
+    ],
+    "relatedWordIds": ["watermelon", "grape"],
+    "distractorWordIds": ["apple", "peach", "dragon-fruit"]
+  },
+  "dragon-fruit": {
+    "id": "dragon-fruit",
+    "text": "火龙果",
+    "pinyin": "huǒlóngguǒ",
+    "measure": "个",
+    "meaningVi": "quả thanh long",
+    "image": "/assets/scenes/fruit-garden/objects/15_dragon-fruit.webp",
+    "acceptedAnswers": ["火龙果"],
+    "examples": [
+      {
+        "text": "火龙果的皮是粉红色的。",
+        "vi": "Quả thanh long có vỏ màu hồng.",
+        "pinyin": "Huǒ lóng guǒ de pí shì fěn hóng sè de."
+      },
+      {
+        "text": "火龙果里面是白色的。",
+        "vi": "Bên trong quả thanh long màu trắng.",
+        "pinyin": "Huǒ lóng guǒ lǐ miàn shì bái sè de."
+      }
+    ],
+    "relatedWordIds": ["starfruit", "strawberry"],
+    "distractorWordIds": ["strawberry", "peach", "mango"]
+  },
+  "peach": {
+    "id": "peach",
+    "text": "桃子",
+    "pinyin": "táozi",
+    "measure": "个",
+    "meaningVi": "quả đào",
+    "image": "/assets/scenes/fruit-garden/objects/16_peach.webp",
+    "acceptedAnswers": ["桃子", "桃"],
+    "examples": [
+      {
+        "text": "这个桃子很软。",
+        "vi": "Quả đào này mềm.",
+        "pinyin": "Zhè ge táo zi hěn ruǎn."
+      },
+      {
+        "text": "桃子是粉色和橙色的。",
+        "vi": "Quả đào có màu hồng và cam.",
+        "pinyin": "Táo zi shì fěn sè hé chéng sè de."
+      }
+    ],
+    "relatedWordIds": ["apple", "pear"],
+    "distractorWordIds": ["apple", "mango", "orange"]
+  },
+  "pear": {
+    "id": "pear",
+    "text": "梨",
+    "pinyin": "lí",
+    "measure": "个",
+    "meaningVi": "quả lê",
+    "image": "/assets/scenes/fruit-garden/objects/17_pear.webp",
+    "acceptedAnswers": ["梨", "梨子"],
+    "examples": [
+      {
+        "text": "梨很多汁。",
+        "vi": "Quả lê mọng nước.",
+        "pinyin": "Lí hěn duō zhī."
+      },
+      {
+        "text": "梨是绿色和黄色的。",
+        "vi": "Quả lê có màu xanh và vàng.",
+        "pinyin": "Lí shì lǜ sè hé huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["apple", "avocado"],
+    "distractorWordIds": ["avocado", "guava", "apple"]
+  },
+  "lime": {
+    "id": "lime",
+    "text": "青柠",
+    "pinyin": "qīngníng",
+    "measure": "个",
+    "meaningVi": "quả chanh xanh",
+    "image": "/assets/scenes/fruit-garden/objects/18_lime.webp",
+    "acceptedAnswers": ["青柠"],
+    "examples": [
+      {
+        "text": "这个青柠是绿色的。",
+        "vi": "Quả chanh này màu xanh.",
+        "pinyin": "Zhè ge qīng níng shì lǜ sè de."
+      },
+      {
+        "text": "青柠又小又酸。",
+        "vi": "Quả chanh xanh nhỏ và chua.",
+        "pinyin": "Qīng níng yòu xiǎo yòu suān."
+      }
+    ],
+    "relatedWordIds": ["lemon", "guava"],
+    "distractorWordIds": ["lemon", "guava", "avocado"]
+  },
+  "starfruit": {
+    "id": "starfruit",
+    "text": "杨桃",
+    "pinyin": "yángtáo",
+    "measure": "个",
+    "meaningVi": "quả khế",
+    "image": "/assets/scenes/fruit-garden/objects/19_starfruit.webp",
+    "acceptedAnswers": ["杨桃"],
+    "examples": [
+      {
+        "text": "杨桃有五条棱。",
+        "vi": "Quả khế có năm múi.",
+        "pinyin": "Yáng táo yǒu wǔ tiáo léng."
+      },
+      {
+        "text": "把杨桃切开，就能看到星星。",
+        "vi": "Cắt quả khế ra, con sẽ thấy hình ngôi sao.",
+        "pinyin": "Bǎ yáng táo qiè kāi, jiù néng kàn dào xīng xīng."
+      }
+    ],
+    "relatedWordIds": ["dragon-fruit", "lemon"],
+    "distractorWordIds": ["banana", "lemon", "papaya"]
+  },
+  "fruit-tree": {
+    "id": "fruit-tree",
+    "text": "果树",
+    "pinyin": "guǒshù",
+    "measure": "棵",
+    "meaningVi": "cây ăn quả",
+    "image": "/assets/scenes/fruit-garden/objects/20_fruit-tree.webp",
+    "acceptedAnswers": ["果树"],
+    "examples": [
+      {
+        "text": "这棵果树很高。",
+        "vi": "Cây ăn quả này cao.",
+        "pinyin": "Zhè kē guǒ shù hěn gāo."
+      },
+      {
+        "text": "菠萝蜜长在这棵果树上。",
+        "vi": "Những quả mít mọc trên cây ăn quả này.",
+        "pinyin": "Bō luó mì zhǎng zài zhè kē guǒ shù shàng."
+      }
+    ],
+    "relatedWordIds": ["tree-trunk", "branch", "jackfruit"],
+    "distractorWordIds": ["tree-trunk", "branch", "leaf"]
+  },
+  "tree-trunk": {
+    "id": "tree-trunk",
+    "text": "树干",
+    "pinyin": "shùgàn",
+    "measure": "根",
+    "meaningVi": "thân cây",
+    "image": "/assets/scenes/fruit-garden/objects/21_tree-trunk.webp",
+    "acceptedAnswers": ["树干"],
+    "examples": [
+      {
+        "text": "树干很结实。",
+        "vi": "Thân cây rất chắc.",
+        "pinyin": "Shù gàn hěn jiē shi."
+      },
+      {
+        "text": "菠萝蜜长在树干上。",
+        "vi": "Quả mít mọc trên thân cây.",
+        "pinyin": "Bō luó mì zhǎng zài shù gàn shàng."
+      }
+    ],
+    "relatedWordIds": ["branch", "fruit-tree", "jackfruit"],
+    "distractorWordIds": ["branch", "leaf", "fruit-tree"]
+  },
+  "branch": {
+    "id": "branch",
+    "text": "树枝",
+    "pinyin": "shùzhī",
+    "measure": "根",
+    "meaningVi": "cành cây",
+    "image": "/assets/scenes/fruit-garden/objects/22_branch.webp",
+    "acceptedAnswers": ["树枝"],
+    "examples": [
+      {
+        "text": "一只小鸟站在树枝上。",
+        "vi": "Một chú chim đậu trên cành cây.",
+        "pinyin": "Yì zhī xiǎo niǎo zhàn zài shù zhī shàng."
+      },
+      {
+        "text": "树枝很长，是棕色的。",
+        "vi": "Cành cây dài và có màu nâu.",
+        "pinyin": "Shù zhī hěn cháng, shì zōng sè de."
+      }
+    ],
+    "relatedWordIds": ["leaf", "tree-trunk"],
+    "distractorWordIds": ["leaf", "tree-trunk", "fruit-tree"]
+  },
+  "leaf": {
+    "id": "leaf",
+    "text": "叶子",
+    "pinyin": "yèzi",
+    "measure": "片",
+    "meaningVi": "lá cây",
+    "image": "/assets/scenes/fruit-garden/objects/23_leaf.webp",
+    "acceptedAnswers": ["叶子", "树叶"],
+    "examples": [
+      {
+        "text": "叶子是绿色的。",
+        "vi": "Chiếc lá màu xanh.",
+        "pinyin": "Yè zi shì lǜ sè de."
+      },
+      {
+        "text": "一片大叶子挂在树枝上。",
+        "vi": "Một chiếc lá to treo trên cành cây.",
+        "pinyin": "Yí piàn dà yè zi guà zài shù zhī shàng."
+      }
+    ],
+    "relatedWordIds": ["branch", "fruit-tree"],
+    "distractorWordIds": ["branch", "tree-trunk", "grape"]
+  },
+  "fruit-basket": {
+    "id": "fruit-basket",
+    "text": "果篮",
+    "pinyin": "guǒlán",
+    "measure": "个",
+    "meaningVi": "giỏ đựng trái cây",
+    "image": "/assets/scenes/fruit-garden/objects/24_fruit-basket.webp",
+    "acceptedAnswers": ["果篮", "水果篮"],
+    "examples": [
+      {
+        "text": "果篮里装满了水果。",
+        "vi": "Giỏ trái cây đầy ắp.",
+        "pinyin": "Guǒ lán lǐ zhuāng mǎn le shuǐ guǒ."
+      },
+      {
+        "text": "把苹果放进果篮里。",
+        "vi": "Bỏ táo vào giỏ trái cây nhé.",
+        "pinyin": "Bǎ píng guǒ fàng jìn guǒ lán lǐ."
+      }
+    ],
+    "relatedWordIds": ["apple", "banana", "grape"],
+    "distractorWordIds": ["watermelon", "pineapple", "coconut"]
   }
 }
