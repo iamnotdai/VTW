@@ -1,7 +1,14 @@
-import type { AppSettings, CourseId, LearningProgress, UserProfile } from '@/types/models';
+import type {
+  AppSettings,
+  CourseId,
+  LearningProgress,
+  SpeakingProgress,
+  UserProfile,
+} from '@/types/models';
 import { sanitizeProfile } from './profile';
 import { sanitizeProgress } from './progress';
 import { sanitizeSettings } from './settings';
+import { sanitizeSpeakingProgress } from './speakingProgress';
 import { createRepository, STORAGE_KEYS, type Repository, type StorageKey } from './storage';
 
 export const profileRepository: Repository<UserProfile> = createRepository(
@@ -24,6 +31,23 @@ const progressRepositories = Object.fromEntries(
 
 export function getProgressRepository(course: CourseId): Repository<LearningProgress> {
   return progressRepositories[course];
+}
+
+/** Pronunciation scores, per course like the progress (spec §24.1). */
+export const SPEAKING_KEYS: Readonly<Record<CourseId, StorageKey>> = {
+  en: STORAGE_KEYS.speaking,
+  zh: STORAGE_KEYS.speakingZh,
+};
+
+const speakingRepositories = Object.fromEntries(
+  Object.entries(SPEAKING_KEYS).map(([course, key]) => [
+    course,
+    createRepository(key, sanitizeSpeakingProgress),
+  ]),
+) as Record<CourseId, Repository<SpeakingProgress>>;
+
+export function getSpeakingRepository(course: CourseId): Repository<SpeakingProgress> {
+  return speakingRepositories[course];
 }
 
 export const settingsRepository: Repository<AppSettings> = createRepository(

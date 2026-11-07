@@ -13,6 +13,10 @@ export const paths = {
   /** @extension Word Speaking after the flashcards (spec §7.7). */
   wordSpeaking: (sceneId: string) => `/vocabulary/${seg(sceneId)}/speaking`,
   topicConversations: (sceneId: string) => `/vocabulary/${seg(sceneId)}/conversations`,
+  /** @extension Pronunciation menu (spec §24). */
+  pronunciation: '/pronunciation',
+  /** @extension The same Word Speaking screen, opened from the Pronunciation menu (spec §7.7). */
+  pronunciationScene: (sceneId: string) => `/pronunciation/scene/${seg(sceneId)}`,
   conversations: '/conversation',
   conversationScene: (sceneId: string) => `/conversation/scene/${seg(sceneId)}`,
   conversation: (conversationId: string) => `/conversation/${seg(conversationId)}`,

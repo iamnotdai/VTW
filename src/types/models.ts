@@ -176,6 +176,15 @@ export interface LearningProgress {
   updatedAt: string;
 }
 
+/**
+ * @extension Best speaking score (0–100) of each word, from Word Speaking (spec §24.1). Kept apart
+ * from `LearningProgress`: speaking never counts as a learned word.
+ */
+export interface SpeakingProgress {
+  bestScoreByWordId: Record<string, number>;
+  updatedAt: string;
+}
+
 /** Boy = male-sounding browser voice, girl = female-sounding one, both with a child-like pitch. */
 export type VoiceStyle = 'boy' | 'girl';
 

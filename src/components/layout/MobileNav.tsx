@@ -3,7 +3,10 @@ import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import { NAV_ITEMS } from './navItems';
 
-/** Bottom navigation for phones (< md). Large touch targets, safe-area aware. */
+/**
+ * Bottom navigation for phones (< md). Large touch targets, safe-area aware. Only the current entry
+ * shows its label (the others keep it for screen readers), so the whole menu fits a 360px phone.
+ */
 export function MobileNav() {
   return (
     <nav
@@ -12,13 +15,13 @@ export function MobileNav() {
     >
       <ul className="mx-auto flex h-18 max-w-lg items-stretch justify-around px-2">
         {NAV_ITEMS.map(({ to, label, icon: Icon, end }) => (
-          <li key={to} className="flex flex-1">
+          <li key={to} className="flex min-w-0 flex-1">
             <NavLink
               to={to}
               end={end}
               className={({ isActive }) =>
                 cn(
-                  'flex flex-1 flex-col items-center justify-center gap-1 rounded-2xl text-xs font-semibold transition',
+                  'flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-2xl text-xs font-semibold transition',
                   isActive ? 'text-brand-600' : 'text-navy-400 hover:text-navy-700',
                 )
               }
@@ -34,7 +37,8 @@ export function MobileNav() {
                   >
                     <Icon aria-hidden className="size-5.5" />
                   </span>
-                  {t(label)}
+                  {/* Too many entries for every label on a phone: only the current one shows its name. */}
+                  <span className={isActive ? 'whitespace-nowrap' : 'sr-only'}>{t(label)}</span>
                 </>
               )}
             </NavLink>

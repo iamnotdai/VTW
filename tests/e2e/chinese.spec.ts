@@ -21,8 +21,8 @@ async function completeSetupInChinese(page: Page) {
 test('Chinese course: setup → bedroom quiz → answer with pinyin → transcript', async ({ page }) => {
   await completeSetupInChinese(page);
 
-  // Exactly four menu entries, in Chinese.
-  for (const label of ['旅程', '词汇', '对话', '设置'])
+  // The menu in Chinese (no Grammar in the Chinese course).
+  for (const label of ['旅程', '词汇', '发音', '对话', '设置'])
     await expect(page.getByRole('link', { name: label, exact: true }).first()).toBeVisible();
 
   await page.getByRole('link', { name: '词汇', exact: true }).first().click();

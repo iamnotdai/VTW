@@ -59,7 +59,7 @@ describe('Profile Setup (screen 01)', () => {
 });
 
 describe('App shell and Journey (screen 02)', () => {
-  it('has exactly four menu entries', async () => {
+  it('has the menu entries in order (Grammar comes with its screens)', async () => {
     seedProfile();
     renderApp('/');
     const menus = await screen.findAllByRole('navigation', { name: 'Main' });
@@ -68,7 +68,7 @@ describe('App shell and Journey (screen 02)', () => {
         within(menu)
           .getAllByRole('link')
           .map((link) => link.textContent),
-      ).toEqual(['Journey', 'Vocabulary', 'Conversation', 'Settings']);
+      ).toEqual(['Journey', 'Vocabulary', 'Pronunciation', 'Conversation', 'Settings']);
     }
   });
 

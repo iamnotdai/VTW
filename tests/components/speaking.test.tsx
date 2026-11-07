@@ -20,7 +20,7 @@ describe('Word Speaking (after the flashcards)', () => {
     seedProfile();
     renderApp('/vocabulary/bedroom/flashcards');
     await user.click(await screen.findByRole('button', { name: 'Finish' }));
-    expect(screen.getByRole('link', { name: 'Practice Speaking' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Practice Pronunciation' })).toHaveAttribute(
       'href',
       '/vocabulary/bedroom/speaking',
     );

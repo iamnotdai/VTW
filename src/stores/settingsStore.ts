@@ -4,6 +4,7 @@ import { setActiveCourse } from '@/lib/course';
 import { settingsRepository } from '@/lib/repositories';
 import type { AppSettings } from '@/types/models';
 import { useProgressStore } from './progressStore';
+import { useSpeakingProgressStore } from './speakingProgressStore';
 
 interface SettingsState {
   settings: AppSettings;
@@ -20,7 +21,10 @@ const loadSettings = () => settingsRepository.load() ?? DEFAULT_SETTINGS;
  */
 function applyCourse(settings: AppSettings, previous?: AppSettings) {
   setActiveCourse(settings.course);
-  if (previous?.course !== settings.course) useProgressStore.getState().reload();
+  if (previous?.course !== settings.course) {
+    useProgressStore.getState().reload();
+    useSpeakingProgressStore.getState().reload();
+  }
 }
 
 const initialSettings = loadSettings();

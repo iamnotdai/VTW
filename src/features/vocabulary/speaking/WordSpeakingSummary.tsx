@@ -8,6 +8,7 @@ import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { speakingLevel } from '@/lib/speakingScore';
 import type { Scene, Word } from '@/types/models';
+import type { WordSpeakingMenu } from '../pages/WordSpeakingPage';
 import {
   summarizeWordSpeaking,
   trickyWordIds,
@@ -54,11 +55,14 @@ export function WordSpeakingSummary({
   scene,
   words,
   results,
+  menu,
   onRestart,
 }: {
   scene: Scene;
   words: readonly Word[];
   results: Readonly<Record<string, WordSpeakingResult>>;
+  /** The menu the round was opened from: "back" returns there. */
+  menu: WordSpeakingMenu;
   /** Starts a new round with these word ids. */
   onRestart: (wordIds: string[]) => void;
 }) {
@@ -152,13 +156,13 @@ export function WordSpeakingSummary({
           </Button>
         </div>
         <ButtonLink
-          to={paths.topic(scene.id)}
+          to={menu === 'pronunciation' ? paths.pronunciation : paths.topic(scene.id)}
           size="lg"
           variant="soft"
           fullWidth
           leftIcon={<ArrowLeft aria-hidden className="size-5" strokeWidth={2.5} />}
         >
-          {t('Back to Overview')}
+          {menu === 'pronunciation' ? t('Back to Pronunciation') : t('Back to Overview')}
         </ButtonLink>
       </div>
     </section>

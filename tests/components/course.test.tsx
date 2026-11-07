@@ -59,7 +59,7 @@ describe('Settings › Course', () => {
     expect(savedSettings().course).toBe('zh');
     expect(document.documentElement.lang).toBe('zh-CN');
     for (const labels of await menuLabels('主菜单')) {
-      expect(labels).toEqual(['旅程', '词汇', '对话', '设置']);
+      expect(labels).toEqual(['旅程', '词汇', '发音', '对话', '设置']);
     }
     expect(screen.getByRole('heading', { level: 1, name: '设置' })).toBeInTheDocument();
     expect(screen.getByRole('radio', { name: /中文/ })).toBeChecked();
@@ -71,7 +71,13 @@ describe('Settings › Course', () => {
     await user.click(screen.getByRole('radio', { name: /English/ }));
     expect(savedSettings().course).toBe('en');
     for (const labels of await menuLabels('Main')) {
-      expect(labels).toEqual(['Journey', 'Vocabulary', 'Conversation', 'Settings']);
+      expect(labels).toEqual([
+        'Journey',
+        'Vocabulary',
+        'Pronunciation',
+        'Conversation',
+        'Settings',
+      ]);
     }
     expect(within(screen.getByRole('complementary')).getByText('Level 2')).toBeInTheDocument();
   });
@@ -117,7 +123,7 @@ describe('Profile Setup › I want to learn', () => {
       canTypeWords: false,
     });
     for (const labels of await menuLabels('主菜单')) {
-      expect(labels).toEqual(['旅程', '词汇', '对话', '设置']);
+      expect(labels).toEqual(['旅程', '词汇', '发音', '对话', '设置']);
     }
   });
 });

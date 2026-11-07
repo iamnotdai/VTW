@@ -23,6 +23,8 @@ describe('storage keys (spec §11.1)', () => {
       progress: 'vtw:v1:progress',
       progressZh: 'vtw:v1:zh:progress',
       settings: 'vtw:v1:settings',
+      speaking: 'vtw:v1:speaking',
+      speakingZh: 'vtw:v1:zh:speaking',
     });
   });
 });

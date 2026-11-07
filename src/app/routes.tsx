@@ -12,6 +12,7 @@ import { HomePage } from '@/features/home/HomePage';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { RouteErrorPage } from '@/features/misc/RouteErrorPage';
 import { ProfileSetupPage } from '@/features/onboarding/ProfileSetupPage';
+import { PronunciationPage } from '@/features/pronunciation/pages/PronunciationPage';
 import { SettingsPage } from '@/features/settings/SettingsPage';
 import { ExplorePage } from '@/features/vocabulary/pages/ExplorePage';
 import { FlashcardsPage } from '@/features/vocabulary/pages/FlashcardsPage';
@@ -23,7 +24,10 @@ import { VocabularyPage } from '@/features/vocabulary/pages/VocabularyPage';
 import { WordSpeakingPage } from '@/features/vocabulary/pages/WordSpeakingPage';
 import { RequireProfile, SetupOnly } from './guards';
 
-/** The 16 screens of spec §5 (numbers in comments), plus the speaking extensions (spec §7.7, §9.5, §9.6). */
+/**
+ * The 16 screens of spec §5 (numbers in comments), plus the speaking extensions (spec §7.7, §9.5,
+ * §9.6) and the Pronunciation menu (spec §24).
+ */
 export const routes: RouteObject[] = [
   {
     errorElement: <RouteErrorPage />,
@@ -62,6 +66,11 @@ export const routes: RouteObject[] = [
               }, // 08
               { path: 'vocabulary/:sceneId/speaking', element: <WordSpeakingPage /> }, // Word Speaking
               { path: 'vocabulary/:sceneId/conversations', element: <TopicConversationsPage /> }, // 09
+              { path: 'pronunciation', element: <PronunciationPage /> }, // Pronunciation
+              {
+                path: 'pronunciation/scene/:sceneId', // Word Speaking (from the Pronunciation menu)
+                element: <WordSpeakingPage menu="pronunciation" />,
+              },
               {
                 path: 'conversation/:conversationId/video', // 10
                 element: <ConversationVideoPage />,

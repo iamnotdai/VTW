@@ -16,6 +16,9 @@ export const STORAGE_KEYS = {
   progress: `vtw:v${STORAGE_VERSION}:progress`,
   progressZh: `vtw:v${STORAGE_VERSION}:zh:progress`,
   settings: `vtw:v${STORAGE_VERSION}:settings`,
+  /** Best Word Speaking score of each word (spec §24.1), English course. */
+  speaking: `vtw:v${STORAGE_VERSION}:speaking`,
+  speakingZh: `vtw:v${STORAGE_VERSION}:zh:speaking`,
 } as const;
 
 export type StorageKey = (typeof STORAGE_KEYS)[keyof typeof STORAGE_KEYS];

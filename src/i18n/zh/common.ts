@@ -3,6 +3,7 @@ export const common: Record<string, string> = {
   // Main menu (spec §2.1)
   Journey: '旅程',
   Vocabulary: '词汇',
+  Pronunciation: '发音',
   Conversation: '对话',
   Settings: '设置',
   // Scene groups

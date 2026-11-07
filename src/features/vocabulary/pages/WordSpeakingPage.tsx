@@ -9,6 +9,7 @@ import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { t } from '@/i18n';
 import { playSfx } from '@/lib/sfx';
 import { useSettingsStore } from '@/stores/settingsStore';
+import { useSpeakingProgressStore } from '@/stores/speakingProgressStore';
 import type { Scene } from '@/types/models';
 import { WordSpeakingCard } from '../speaking/WordSpeakingCard';
 import { WordSpeakingSummary } from '../speaking/WordSpeakingSummary';
@@ -19,18 +20,23 @@ import {
 } from '../speaking/wordSpeakingSession';
 import { useSceneParam } from '../useSceneParam';
 
+/** Which menu opened Word Speaking: it decides the breadcrumb and where "back" leads. */
+export type WordSpeakingMenu = 'vocabulary' | 'pronunciation';
+
 /**
- * Word Speaking (`/vocabulary/:sceneId/speaking`, spec §7.7): after the flashcards, the learner says
- * each word of the scene and gets a score with the sounds to practise coloured.
+ * Word Speaking (spec §7.7): the learner says each word of the scene and gets a score with the
+ * sounds to practise coloured. One screen, two ways in: after the flashcards
+ * (`/vocabulary/:sceneId/speaking`) and from a scene card of the Pronunciation menu
+ * (`/pronunciation/scene/:sceneId`). Each word's best score is saved for the Pronunciation menu.
  */
-export function WordSpeakingPage() {
+export function WordSpeakingPage({ menu = 'vocabulary' }: { menu?: WordSpeakingMenu }) {
   const result = useSceneParam();
   if (result.status === 'not-found') return <NotFoundPage />;
   if (result.status === 'coming-soon') return <ComingSoonPage title={result.scene.title} />;
-  return <WordSpeaking key={result.scene.id} scene={result.scene} />;
+  return <WordSpeaking key={result.scene.id} scene={result.scene} menu={menu} />;
 }
 
-function WordSpeaking({ scene }: { scene: Scene }) {
+function WordSpeaking({ scene, menu }: { scene: Scene; menu: WordSpeakingMenu }) {
   useDocumentTitle(t('Speaking · {scene}', { scene: scene.title }));
   const words = useMemo(() => getSceneWords(scene), [scene]);
   const [state, dispatch] = useReducer(wordSpeakingReducer, words, (list) =>
@@ -50,17 +56,27 @@ function WordSpeaking({ scene }: { scene: Scene }) {
     if (last && useSettingsStore.getState().settings.soundEnabled) playSfx('completed');
     dispatch({ type: 'next' });
   }, [last]);
-  const onScore = useCallback((score: number) => record({ kind: 'scored', score }), [record]);
+  const onScore = useCallback(
+    (score: number) => {
+      record({ kind: 'scored', score });
+      if (word) useSpeakingProgressStore.getState().recordScore(word.id, score);
+    },
+    [record, word],
+  );
 
   return (
     <>
       <TopBar>
         <Breadcrumb
-          items={[
-            { label: t('Vocabulary'), to: paths.vocabulary },
-            { label: scene.title, to: paths.topic(scene.id) },
-            { label: t('Speaking') },
-          ]}
+          items={
+            menu === 'pronunciation'
+              ? [{ label: t('Pronunciation'), to: paths.pronunciation }, { label: scene.title }]
+              : [
+                  { label: t('Vocabulary'), to: paths.vocabulary },
+                  { label: scene.title, to: paths.topic(scene.id) },
+                  { label: t('Speaking') },
+                ]
+          }
         />
       </TopBar>
       <PageContainer width="narrow" className="flex flex-col gap-4">
@@ -70,6 +86,7 @@ function WordSpeaking({ scene }: { scene: Scene }) {
             scene={scene}
             words={words}
             results={state.results}
+            menu={menu}
             onRestart={(queue) => dispatch({ type: 'restart', queue })}
           />
         ) : (

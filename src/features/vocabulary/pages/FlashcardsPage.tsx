@@ -143,7 +143,7 @@ function Flashcards({ scene }: { scene: Scene }) {
                     className="sm:grow"
                     leftIcon={<Mic aria-hidden className="size-5" />}
                   >
-                    {t('Practice Speaking')}
+                    {t('Practice Pronunciation')}
                   </ButtonLink>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

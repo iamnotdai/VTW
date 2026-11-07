@@ -18,8 +18,10 @@ differences). Team docs: `README.md` (Vietnamese), asset workflow: `docs/asset-p
 - No backend, API keys, login or database. Learner data lives in localStorage and is only accessed
   through `src/lib/storage.ts` repositories (versioned keys `vtw:v1:*`).
 - The `/` screen (menu label "Journey", route `paths.home`) content area shows ONLY the picture: no
-  buttons, cards or links. The main menu has exactly four entries: Journey, Vocabulary,
-  Conversation, Settings. ("Home" is only a vocabulary scene group, e.g. Bedroom.)
+  buttons, cards or links. The main menu is, in this order: Journey, Vocabulary, Pronunciation,
+  Conversation, Grammar, Settings (spec §2.1). Grammar exists only in the English course
+  (`CourseConfig.features.grammar`) and only once its screens ship. Menus are organized by content,
+  never by the four skills. ("Home" is only a vocabulary scene group, e.g. Bedroom.)
 - Profile Setup collects name, age group, "can type words", boy/girl picture, plus the course picker
   (English / 中文) at the top. Never add upload.
 - Progress counts a word only after a CORRECT answer, once. Never hard-code progress.

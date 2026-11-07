@@ -29,7 +29,7 @@ test('Word Speaking follows the flashcards', async ({ page }) => {
   await completeSetup(page, { canType: false });
   await page.goto('/vocabulary/bedroom/flashcards');
   await page.getByRole('button', { name: 'Finish' }).first().click();
-  await page.getByRole('link', { name: 'Practice Speaking' }).click();
+  await page.getByRole('link', { name: 'Practice Pronunciation' }).click();
 
   await expect(page).toHaveURL(/\/vocabulary\/bedroom\/speaking$/);
   await expect(page.getByText('Word 1 of 24')).toBeVisible();

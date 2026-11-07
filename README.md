@@ -30,14 +30,18 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   lúc nào; các nhân vật khác tự nói, mỗi câu của người học được chấm điểm) và _Fill in the Blanks_ (điền
   từ còn thiếu trong hội thoại, **chỉ** cho người học chọn "Yes, I can type words"). Xem mục
   [Luyện nói có chấm điểm](#luyện-nói-có-chấm-điểm-spec-77-95-96).
+- **Pronunciation** (menu thứ ba, spec §24): danh sách scene như Vocabulary, mỗi thẻ hiện % số từ đã nói
+  tốt (điểm tốt nhất ≥ 80); bấm thẻ mở **cùng màn Word Speaking**. Điểm tốt nhất mỗi từ được lưu
+  (`vtw:v1:speaking`, theo khóa học) nhưng **không** cộng vào tiến độ học từ hay Level. Bảng âm IPA sẽ
+  thêm sau (spec §24.2).
 - **Hai khóa học**: Tiếng Anh và Tiếng Trung (chọn ở đầu Profile Setup hoặc trong Settings). Hai khóa
   dùng chung ảnh và hotspot; từ, câu, hội thoại, giọng đọc và **toàn bộ giao diện** đổi theo khóa;
   tiến độ lưu riêng từng khóa. Xem mục [Khóa học](#khóa-học-tiếng-anh--tiếng-trung).
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **223 test Vitest** (177 unit + 46 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **13 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, ba kịch bản luyện nói), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **230 test Vitest** (182 unit + 48 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **14 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, ba kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
 
@@ -168,6 +172,8 @@ Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
 | Màn hình           | Route                                                    | Vào từ                                   |
 | ------------------ | -------------------------------------------------------- | ---------------------------------------- |
 | Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards         |
+| Word Speaking      | `/pronunciation/scene/:sceneId`                          | Thẻ scene ở menu Pronunciation           |
+| Pronunciation      | `/pronunciation`                                         | Menu                                     |
 | Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail          |
 | Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail (chỉ khi gõ được chữ) |
 
@@ -337,13 +343,15 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   (#133457), nút `brand-500` (#0B7FFE), chữ `navy-900`, tiến độ `leaf-500`, nền chip/ô `mist`, nền
   ảnh đồ vật `stone`. Font **Inter** cho giao diện; logo chữ "Village to World" vẽ bằng **Baloo 2**
   (quả địa cầu thay chữ "o") cho tới khi có file logo chính thức (`components/layout/Logo.tsx`).
-- **Khung**: sidebar navy (nền ảnh ngôi làng) với 4 mục (Journey, Vocabulary, Conversation, Settings)
+- **Khung**: sidebar navy (nền ảnh ngôi làng) với các mục Journey, Vocabulary, Pronunciation,
+  Conversation, Settings (Grammar, chỉ khóa tiếng Anh, sẽ thêm cùng màn của nó — spec §2.1)
   và người học (avatar, tên, **Level**) ở dưới; phần lớn màn có thanh trên (breadcrumb / Back /
   tiêu đề, không có avatar); Flashcards, Topic Overview và Explore không có header. **Level** = 1 + số từ
   đã học / `LEVEL_CONFIG.wordsPerLevel` (mặc định 10), luôn tính từ tiến độ, không lưu riêng.
 - **Menu thu gọn / mở rộng**: một sidebar dùng chung cho mọi màn, logo luôn ghim ở góc trái; nút ở
-  cuối menu thu menu về chỉ còn icon hoặc mở lại đủ 4 mục kèm chữ (mặc định mở trên desktop, thu gọn
-  trên tablet).
+  cuối menu thu menu về chỉ còn icon hoặc mở lại đủ các mục kèm chữ (mặc định mở trên desktop, thu gọn
+  trên tablet). Trên điện thoại, thanh dưới chỉ hiện chữ ở mục đang chọn (các mục khác chỉ có icon, vẫn
+  có tên cho trình đọc màn hình) để vừa màn hình hẹp.
 - **Khác với ảnh thiết kế, có chủ đích**:
   - Setup **không có nút "Upload Photo"** và nhãn là "Profile Picture" (bắt buộc chọn boy/girl) —
     spec §2.1, §6 cấm upload. Settings có "Change Photo" nhưng chỉ đổi giữa 2 nhân vật.
@@ -403,9 +411,11 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 - `tests/unit`: quiz, progress, storage (JSON hỏng, storage bị chặn), profile, speech match,
   chấm điểm nói (từ, câu, tiếng Trung có pinyin), chọn chỗ trống, phiên Word Speaking / Role-play,
   zoom/pan, parse SVG path, reducer của scene và quiz, kiểm tra nội dung + asset trên đĩa.
+- `tests/components/pronunciation.test.tsx`: menu Pronunciation (% từ nói tốt), Word Speaking lưu điểm
+  tốt nhất nhưng không cộng tiến độ học từ.
 - `tests/components/speaking.test.tsx`: Word Speaking, Role-play và Fill in the Blanks trên route tree
   thật, dùng bộ nhận dạng giả (`tests/fakeSpeechRecognition.ts`) để "nghe" câu trả lời định sẵn.
-- `tests/components`: chạy trên route tree thật (memory router): setup, guard, menu đúng 4 mục,
+- `tests/components`: chạy trên route tree thật (memory router): setup, guard, menu đúng thứ tự,
   Journey không có CTA, Level ở menu, flashcards (trái tim không tính là đã học), Explore → Quiz →
   Result, tiến độ không tăng hai lần, đổi ảnh / `canTypeWords` trong Settings, hội thoại và
   fallback luyện nói.
@@ -418,7 +428,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Hạng mục                                                             | Trạng thái                         |
 | -------------------------------------------------------------------- | ---------------------------------- |
 | Setup không có upload; avatar boy/girl hiển thị nguyên hình          | ✅ (test)                          |
-| Journey chỉ có hình; sidebar đúng 4 mục                              | ✅ (test)                          |
+| Journey chỉ có hình; menu đúng thứ tự                                | ✅ (test)                          |
 | Vocabulary nhóm theo khu vực, % đúng; scene chưa có nội dung bị khoá | ✅ (test)                          |
 | Bedroom đủ 24 từ / 10 hội thoại / 24 hotspot                         | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Bathroom đủ 24 từ / 10 hội thoại / 24 hotspot                        | ✅ dữ liệu mẫu, cần duyệt nội dung |

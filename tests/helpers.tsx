@@ -11,12 +11,14 @@ import { useAudioStore } from '@/stores/audioStore';
 import { useProfileStore } from '@/stores/profileStore';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore } from '@/stores/settingsStore';
+import { useSpeakingProgressStore } from '@/stores/speakingProgressStore';
 
 /** Clears browser storage and every store so tests never leak into each other. */
 export function resetAppState() {
   localStorage.clear();
   useProfileStore.getState().reload();
   useProgressStore.getState().reload();
+  useSpeakingProgressStore.getState().reload();
   useSettingsStore.getState().reload();
   useQuizSessionStore.getState().clear();
   useSpeakingSessionStore.getState().reset();
