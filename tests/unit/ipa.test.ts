@@ -42,6 +42,12 @@ describe('the chart and its example words', () => {
     const words = getIpaSoundWords(getIpaSound('zh')!);
     expect(words.map((word) => word.id)).toEqual(['garage-door', 'garage-overhead-door']);
     expect(getIpaSoundWords(getIpaSound('ae')!, 3)).toHaveLength(3);
+    // /iː/ words come first; the short final "i" of "balcony" only after them.
+    const ee = getIpaSoundWords(getIpaSound('ee')!);
+    expect(ee[0].ipa).toContain('iː');
+    expect(ee.findIndex((word) => word.id === 'balcony')).toBeGreaterThan(
+      ee.findIndex((word) => word.ipa?.includes('iː')),
+    );
     // No scene word has /ð/: the chart gives extra words instead.
     expect(getIpaSoundWords(getIpaSound('dh')!)).toEqual([]);
     expect(getIpaSound('dh')!.extraExamples?.map((example) => example.text)).toContain('mother');

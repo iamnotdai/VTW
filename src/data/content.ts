@@ -1,6 +1,6 @@
 import { SCENE_GROUPS } from '@/config/app';
 import { getActiveCourse } from '@/lib/course';
-import { ipaHasSound, ipaSpellings, type IpaSymbol } from '@/lib/ipa';
+import { ipaSpellings, tokenizeIpa, type IpaSymbol } from '@/lib/ipa';
 import { t } from '@/i18n';
 import type {
   Conversation,
@@ -195,19 +195,29 @@ export function getIpaSpellings(): readonly IpaSymbol[] {
 }
 
 /**
- * Words of the open scenes that have the sound, in scene and flashcard order (each word once).
- * The chart's example words: they come with their picture.
+ * Words of the open scenes that have the sound, in scene and flashcard order (each word once):
+ * the chart's example words, with their picture. Words with the sound's own symbol come first;
+ * words that only have an alias (the short "i" of "balcony" for /iː/) come after.
  */
 export function getIpaSoundWords(sound: IpaSound, limit = Infinity): Word[] {
   const spellings = getIpaSpellings();
-  const found = new Map<string, Word>();
+  const main: Word[] = [];
+  const aliasOnly: Word[] = [];
+  const seen = new Set<string>();
   for (const scene of getScenes()) {
     if (!isSceneAvailable(scene)) continue;
     for (const word of getSceneWords(scene)) {
-      if (found.size >= limit) return [...found.values()];
-      if (!found.has(word.id) && word.ipa && ipaHasSound(word.ipa, sound.id, spellings))
-        found.set(word.id, word);
+      if (seen.has(word.id) || !word.ipa) continue;
+      seen.add(word.id);
+      const ipa = word.ipa;
+      const tokens = tokenizeIpa(ipa, spellings).tokens.filter(
+        (token) => token.soundId === sound.id,
+      );
+      if (tokens.length === 0) continue;
+      const usesSymbol = tokens.some((token) => ipa.slice(token.start, token.end) === sound.symbol);
+      (usesSymbol ? main : aliasOnly).push(word);
+      if (main.length >= limit) return main;
     }
   }
-  return [...found.values()];
+  return [...main, ...aliasOnly].slice(0, limit);
 }

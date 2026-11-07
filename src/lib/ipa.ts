@@ -87,11 +87,3 @@ export function highlightIpaSound(
   if (last < ipa.length) parts.push({ text: ipa.slice(last), highlight: false });
   return parts;
 }
-
-export function ipaHasSound(
-  ipa: string,
-  soundId: string,
-  spellings: readonly IpaSymbol[],
-): boolean {
-  return tokenizeIpa(ipa, spellings).tokens.some((token) => token.soundId === soundId);
-}

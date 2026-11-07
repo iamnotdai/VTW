@@ -1,5 +1,4 @@
 import { ArrowLeft, Check, Minus, RotateCcw, Search, Target } from 'lucide-react';
-import { paths } from '@/app/paths';
 import { Button, ButtonLink } from '@/components/common/Button';
 import { ScoreRing } from '@/components/speaking/ScoreRing';
 import { useCourse } from '@/hooks/useCourse';
@@ -7,8 +6,7 @@ import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import { speakingLevel } from '@/lib/speakingScore';
-import type { Scene, Word } from '@/types/models';
-import type { WordSpeakingMenu } from '../pages/WordSpeakingPage';
+import type { Word } from '@/types/models';
 import {
   summarizeWordSpeaking,
   trickyWordIds,
@@ -50,19 +48,25 @@ function ResultPill({ result }: { result: WordSpeakingResult | undefined }) {
   );
 }
 
+export interface SummaryLink {
+  to: string;
+  label: string;
+}
+
 /** End of a Word Speaking round: average score, every word's best result, what to do next. */
 export function WordSpeakingSummary({
-  scene,
   words,
   results,
-  menu,
+  explore,
+  back,
   onRestart,
 }: {
-  scene: Scene;
   words: readonly Word[];
   results: Readonly<Record<string, WordSpeakingResult>>;
-  /** The menu the round was opened from: "back" returns there. */
-  menu: WordSpeakingMenu;
+  /** "Explore the scene", for a scene's round. */
+  explore?: SummaryLink;
+  /** Where the last button leads (the overview, the Pronunciation menu, the sound card). */
+  back: SummaryLink;
   /** Starts a new round with these word ids. */
   onRestart: (wordIds: string[]) => void;
 }) {
@@ -70,6 +74,7 @@ export function WordSpeakingSummary({
   const wordIds = words.map((word) => word.id);
   const summary = summarizeWordSpeaking(results, wordIds);
   const tricky = trickyWordIds(results, wordIds);
+  const trickyFirst = tricky.length > 0 && tricky.length < wordIds.length;
 
   return (
     <section className="flex w-full animate-pop-in flex-col items-center gap-4 rounded-[1.25rem] bg-white p-6 text-center shadow-lift sm:p-8">
@@ -121,7 +126,7 @@ export function WordSpeakingSummary({
       </ul>
 
       <div className="mt-2 flex w-full flex-col gap-3">
-        {tricky.length > 0 && tricky.length < wordIds.length && (
+        {trickyFirst && (
           <Button
             size="lg"
             fullWidth
@@ -134,20 +139,20 @@ export function WordSpeakingSummary({
           </Button>
         )}
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <ButtonLink
-            to={paths.explore(scene.id)}
-            size="lg"
-            variant={tricky.length > 0 && tricky.length < wordIds.length ? 'secondary' : 'primary'}
-            className="sm:grow"
-            leftIcon={<Search aria-hidden className="size-5" />}
-          >
-            <span className="leading-tight whitespace-normal">
-              {t('Explore the {scene}', { scene: scene.title })}
-            </span>
-          </ButtonLink>
+          {explore && (
+            <ButtonLink
+              to={explore.to}
+              size="lg"
+              variant={trickyFirst ? 'secondary' : 'primary'}
+              className="sm:grow"
+              leftIcon={<Search aria-hidden className="size-5" />}
+            >
+              <span className="leading-tight whitespace-normal">{explore.label}</span>
+            </ButtonLink>
+          )}
           <Button
             size="lg"
-            variant="secondary"
+            variant={explore || trickyFirst ? 'secondary' : 'primary'}
             className="sm:grow"
             leftIcon={<RotateCcw aria-hidden className="size-5" />}
             onClick={() => onRestart(wordIds)}
@@ -156,13 +161,13 @@ export function WordSpeakingSummary({
           </Button>
         </div>
         <ButtonLink
-          to={menu === 'pronunciation' ? paths.pronunciation : paths.topic(scene.id)}
+          to={back.to}
           size="lg"
           variant="soft"
           fullWidth
           leftIcon={<ArrowLeft aria-hidden className="size-5" strokeWidth={2.5} />}
         >
-          {menu === 'pronunciation' ? t('Back to Pronunciation') : t('Back to Overview')}
+          {back.label}
         </ButtonLink>
       </div>
     </section>

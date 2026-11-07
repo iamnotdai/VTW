@@ -191,6 +191,12 @@ export const ROLE_PLAY_CONFIG = {
   lineGapMs: 450,
 } as const;
 
+/** IPA chart (spec §24.2). */
+export const IPA_CONFIG = {
+  /** Example words on a sound card (and in its speaking round). */
+  exampleWords: 6,
+} as const;
+
 /** Fill in the blanks (spec §9.6). */
 export const FILL_BLANKS_CONFIG = {
   /** Options of a blank in choice mode, the right one included. */

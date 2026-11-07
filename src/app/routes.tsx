@@ -12,7 +12,10 @@ import { HomePage } from '@/features/home/HomePage';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { RouteErrorPage } from '@/features/misc/RouteErrorPage';
 import { ProfileSetupPage } from '@/features/onboarding/ProfileSetupPage';
+import { IpaChartPage } from '@/features/pronunciation/pages/IpaChartPage';
 import { PronunciationPage } from '@/features/pronunciation/pages/PronunciationPage';
+import { SoundCardPage } from '@/features/pronunciation/pages/SoundCardPage';
+import { SoundSpeakingPage } from '@/features/pronunciation/pages/SoundSpeakingPage';
 import { SettingsPage } from '@/features/settings/SettingsPage';
 import { ExplorePage } from '@/features/vocabulary/pages/ExplorePage';
 import { FlashcardsPage } from '@/features/vocabulary/pages/FlashcardsPage';
@@ -70,6 +73,12 @@ export const routes: RouteObject[] = [
               {
                 path: 'pronunciation/scene/:sceneId', // Word Speaking (from the Pronunciation menu)
                 element: <WordSpeakingPage menu="pronunciation" />,
+              },
+              { path: 'pronunciation/sounds', element: <IpaChartPage /> }, // IPA chart
+              { path: 'pronunciation/sounds/:soundId', element: <SoundCardPage /> }, // Sound card
+              {
+                path: 'pronunciation/sounds/:soundId/speaking', // Words of a sound, Word Speaking
+                element: <SoundSpeakingPage />,
               },
               {
                 path: 'conversation/:conversationId/video', // 10

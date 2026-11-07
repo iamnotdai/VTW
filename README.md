@@ -40,16 +40,21 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   [Luyện nói có chấm điểm](#luyện-nói-có-chấm-điểm-spec-77-95-96).
 - **Pronunciation** (menu thứ ba, spec §24): danh sách scene như Vocabulary, mỗi thẻ hiện % số từ đã nói
   tốt (điểm tốt nhất ≥ 80); bấm thẻ mở **cùng màn Word Speaking**. Điểm tốt nhất mỗi từ được lưu
-  (`vtw:v1:speaking`, theo khóa học) nhưng **không** cộng vào tiến độ học từ hay Level. Bảng âm IPA sẽ
-  thêm sau (spec §24.2).
+  (`vtw:v1:speaking`, theo khóa học) nhưng **không** cộng vào tiến độ học từ hay Level.
+- **Bảng âm IPA Anh-Mỹ** (khóa tiếng Anh, spec §24.2): thẻ "IPA Sounds" ở đầu màn Pronunciation → bảng 41
+  âm (12 nguyên âm, 5 nguyên âm đôi, 24 phụ âm) → flashcard từng âm: ký hiệu, mẹo khẩu hình tiếng Việt, 6
+  từ ví dụ lấy tự động từ các scene (ảnh, IPA tô sáng âm, nghĩa, nút nghe) và nút "Say These Words" mở
+  một lượt Word Speaking với các từ đó. Giọng trình duyệt không đọc được một âm đơn lẻ và nhận dạng giọng
+  nói chỉ trả về chữ, nên chỉ chấm điểm **từ**; nút nghe âm và hình khẩu hình chỉ hiện khi có file thu
+  sẵn (`audio`, `mouthImage` — hiện chưa có).
 - **Hai khóa học**: Tiếng Anh và Tiếng Trung (chọn ở đầu Profile Setup hoặc trong Settings). Hai khóa
   dùng chung ảnh và hotspot; từ, câu, hội thoại, giọng đọc và **toàn bộ giao diện** đổi theo khóa;
   tiến độ lưu riêng từng khóa. Xem mục [Khóa học](#khóa-học-tiếng-anh--tiếng-trung).
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **248 test Vitest** (196 unit + 52 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **15 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **254 test Vitest** (196 unit + 58 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **16 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
 
@@ -182,6 +187,9 @@ Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
 | Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards   |
 | Word Speaking      | `/pronunciation/scene/:sceneId`                          | Thẻ scene ở menu Pronunciation     |
 | Pronunciation      | `/pronunciation`                                         | Menu                               |
+| IPA Sounds         | `/pronunciation/sounds`                                  | Thẻ "IPA Sounds" ở Pronunciation   |
+| Sound Card         | `/pronunciation/sounds/:soundId`                         | Ô âm trên bảng IPA                 |
+| Sound Speaking     | `/pronunciation/sounds/:soundId/speaking`                | "Say These Words" trên Sound Card  |
 | Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail    |
 | Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail, cuối Role-play |
 
@@ -435,7 +443,9 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
   chấm điểm nói (từ, câu, tiếng Trung có pinyin), chọn chỗ trống, phiên Word Speaking / Role-play,
   zoom/pan, parse SVG path, reducer của scene và quiz, kiểm tra nội dung + asset trên đĩa.
 - `tests/components/pronunciation.test.tsx`: menu Pronunciation (% từ nói tốt), Word Speaking lưu điểm
-  tốt nhất nhưng không cộng tiến độ học từ.
+  tốt nhất nhưng không cộng tiến độ học từ; bảng IPA (41 âm, dấu ✓), Sound Card, lượt nói của một âm,
+  khóa tiếng Trung không có bảng IPA. `tests/unit/ipa.test.ts`: tách âm, tô sáng, từ ví dụ, luật
+  `content:check`.
 - `tests/components/speaking.test.tsx`: Word Speaking, Role-play và Fill in the Blanks trên route tree
   thật, dùng bộ nhận dạng giả (`tests/fakeSpeechRecognition.ts`) để "nghe" câu trả lời định sẵn.
 - `tests/components`: chạy trên route tree thật (memory router): setup, guard, menu đúng thứ tự,

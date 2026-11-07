@@ -1,8 +1,9 @@
 import { expect, test, type Page } from '@playwright/test';
 
 /**
- * Pronunciation menu (spec §24) on desktop and phone: the menu entry, the scene list and the shared
- * Word Speaking screen. The tests can't speak into a microphone, so they take Listen & Repeat.
+ * Pronunciation menu (spec §24) on desktop and phone: the menu entry, the scene list, the shared
+ * Word Speaking screen and the IPA chart. The tests can't speak into a microphone, so they take
+ * Listen & Repeat.
  */
 
 async function completeSetup(page: Page) {
@@ -46,4 +47,32 @@ test('Pronunciation: menu → scene → Word Speaking → back to Pronunciation'
   await expect(page.getByRole('heading', { name: 'Speaking practice done!' })).toBeVisible();
   await page.getByRole('link', { name: 'Back to Pronunciation' }).click();
   await expect(page).toHaveURL(/\/pronunciation$/);
+});
+
+test('IPA Sounds: chart → sound card → say its words → back to the sound', async ({ page }) => {
+  await completeSetup(page);
+  await page.goto('/pronunciation');
+  await page.getByRole('link', { name: /IPA Sounds/ }).click();
+  await expect(page).toHaveURL(/\/pronunciation\/sounds$/);
+  // The chart fits the screen: no sideways scrolling, on the phone too.
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  );
+  expect(overflow).toBeLessThanOrEqual(0);
+
+  await page.getByRole('link', { name: /\/æ\// }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Sound /æ/' })).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: 'Words with /æ/' }).getByRole('listitem'),
+  ).toHaveCount(6);
+  await page.getByRole('link', { name: 'Say These Words' }).click();
+  await expect(page.getByText('Word 1 of 6')).toBeVisible();
+
+  const listenInstead = page.getByRole('button', { name: 'No microphone? Listen & Repeat' });
+  if (await listenInstead.isVisible()) await listenInstead.click();
+  for (let word = 0; word < 6; word += 1) {
+    await page.getByRole('button', { name: 'I said it!' }).click();
+  }
+  await page.getByRole('link', { name: 'Back to the Sound /æ/' }).click();
+  await expect(page).toHaveURL(/\/pronunciation\/sounds\/ae$/);
 });

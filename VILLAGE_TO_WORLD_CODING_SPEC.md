@@ -165,7 +165,8 @@ First launch
 | Pronunciation | `/pronunciation` | Thẻ IPA Sounds ở đầu (chỉ khóa tiếng Anh) + lưới scene như Vocabulary, % từ nói tốt (§24) |
 | Pronunciation Scene | `/pronunciation/scene/:sceneId` | Cùng màn Word Speaking (§7.7), breadcrumb Pronunciation › Scene |
 | IPA Sounds | `/pronunciation/sounds` | Bảng âm Anh-Mỹ: nguyên âm, nguyên âm đôi, phụ âm (§24.2) |
-| Sound Card | `/pronunciation/sounds/:soundId` | Flashcard một âm: ký hiệu, mẹo khẩu hình, từ ví dụ của scene, luyện nói (§24.2) |
+| Sound Card | `/pronunciation/sounds/:soundId` | Flashcard một âm: ký hiệu, mẹo khẩu hình, từ ví dụ của scene (§24.2) |
+| Sound Speaking | `/pronunciation/sounds/:soundId/speaking` | Lượt Word Speaking với các từ ví dụ của âm (§24.2) |
 | Grammar | `/grammar` | Lưới 12 thì 3 × 4, chỉ khóa tiếng Anh (§25) |
 | Grammar Lesson | `/grammar/:topicId` | Công thức, cách dùng, dấu hiệu, ví dụ (§25) |
 | Grammar Practice | `/grammar/:topicId/practice` | Bài tập từng câu, màn kết quả (§25) |
@@ -1028,7 +1029,7 @@ Menu thứ ba (`/pronunciation`), có ở cả hai khóa học. Trang có tiêu 
 
 ### 24.1. Tiến độ phát âm
 
-- Lưu **điểm tốt nhất của mỗi từ** (`SpeakingProgress = { bestScoreByWordId: Record<string, number>; updatedAt: string }`), theo khóa học (§11.1). Ghi mỗi khi Word Speaking hoặc Sound Card chấm một lần nói, chỉ giữ điểm cao nhất.
+- Lưu **điểm tốt nhất của mỗi từ** (`SpeakingProgress = { bestScoreByWordId: Record<string, number>; updatedAt: string }`), theo khóa học (§11.1). Ghi mỗi khi một lượt Word Speaking (của scene hoặc của một âm) chấm một lần nói, chỉ giữ điểm cao nhất.
 - Thẻ scene ở Pronunciation hiện % = số từ của scene có điểm tốt nhất ≥ `SPEAKING_SCORE.great` (80) / số từ của scene.
 - Không bao giờ ghi vào tiến độ học từ, % ở Vocabulary hay Level (luật §7.7). Không lưu bản ghi âm.
 
@@ -1036,9 +1037,9 @@ Menu thứ ba (`/pronunciation`), có ở cả hai khóa học. Trang có tiêu 
 
 - **Bảng âm Anh-Mỹ**, khớp với giọng en-US của app. Ký hiệu thống nhất với IPA trong `words.json`: nguyên âm `iː ɪ e æ ɑː ɔː ʊ uː ʌ ə ɜːr ər`, nguyên âm đôi `eɪ aɪ ɔɪ aʊ oʊ`, 24 phụ âm (`p b t d k ɡ f v θ ð s z ʃ ʒ h tʃ dʒ m n ŋ l r j w`). Không dùng bảng "44 âm" Anh-Anh.
 - IPA của mọi từ tiếng Anh phải tách hết được thành các âm trong bảng (`tokenizeIpa` trong `src/lib/ipa.ts`, tách theo ký hiệu dài nhất trước, bỏ qua `/`, `ˈ`, `ˌ`, khoảng trắng). `npm run content:check` báo lỗi khi có ký hiệu lạ. Không dùng dấu chấm tách âm tiết, không dùng `ɚ`, `ɝ`, `t̬`.
-- Dữ liệu âm: `src/data/pronunciation/ipa.json`, mỗi âm `{ id, symbol, group: 'vowel' | 'diphthong' | 'consonant', order, tipVi, audio?, mouthImage? }`. `tipVi` là mẹo khẩu hình bằng tiếng Việt (nội dung, cần người duyệt).
-- **Bảng âm** (`/pronunciation/sounds`): ba nhóm, mỗi âm là một ô (ký hiệu + một từ ví dụ), bấm mở Sound Card.
-- **Sound Card** (`/pronunciation/sounds/:soundId`): ký hiệu lớn, mẹo khẩu hình, tối đa 6 **từ ví dụ lấy tự động** từ từ vựng các scene có chứa âm đó (theo thứ tự flashcard), mỗi từ có ảnh đồ vật, IPA (tô sáng âm đang học), nút nghe và micro chấm điểm như §7.7. `Previous` / `Next` theo thứ tự bảng.
+- Dữ liệu âm: `src/data/pronunciation/ipa.json` (thứ tự trong file là thứ tự trên bảng), mỗi âm `{ id, symbol, aliases?, group: 'vowel' | 'diphthong' | 'consonant', tipVi, extraExamples?, audio?, mouthImage? }`. `aliases`: cách viết khác của cùng âm trong `Word.ipa` (`i` ngắn cuối từ như bunny `/ˈbʌni/` thuộc `/iː/`). `extraExamples` (`{ text, ipa, meaningVi }`): chỉ cho âm không có từ nào trong các scene (`/ð/`: this, mother…). `tipVi` là mẹo khẩu hình bằng tiếng Việt (nội dung, cần người duyệt).
+- **Bảng âm** (`/pronunciation/sounds`): ba nhóm, mỗi âm là một ô (ký hiệu + một từ ví dụ), bấm mở Sound Card. Ô có dấu ✓ khi một trong các từ ví dụ của âm đã được nói tốt (điểm tốt nhất ≥ 80).
+- **Sound Card** (`/pronunciation/sounds/:soundId`): ký hiệu lớn, mẹo khẩu hình, tối đa `IPA_CONFIG.exampleWords` (6) **từ ví dụ lấy tự động** từ từ vựng các scene có chứa âm đó (theo thứ tự scene và flashcard; từ ghi đúng ký hiệu chính đứng trước từ chỉ khớp qua `aliases`), mỗi từ có ảnh đồ vật, IPA (tô sáng âm đang học, không chỉ dựa vào màu), nghĩa tiếng Việt (nếu bật) và nút nghe. Nút `Say These Words` mở **lượt Word Speaking** với chính các từ đó (`/pronunciation/sounds/:soundId/speaking`, chấm điểm như §7.7, quay lại Sound Card khi xong). Âm chỉ có `extraExamples` thì chỉ có nút nghe. `Previous` / `Next` theo thứ tự bảng. Khóa tiếng Trung mở các route này thì thấy thông báo kèm nút quay lại Pronunciation.
 - **Giới hạn phải ghi nhớ:** giọng trình duyệt không đọc được một âm đơn lẻ, và nhận dạng giọng nói chỉ trả về chữ. Vì vậy chỉ có nút nghe âm khi có file `audio` thu sẵn, và chỉ chấm điểm các **từ ví dụ**, không chấm âm đơn lẻ. Chưa có `mouthImage` thì không hiện hình (không dùng ảnh tạm).
 
 ## 25. Grammar *(mở rộng, bản 1.1)*
