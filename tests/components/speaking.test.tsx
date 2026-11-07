@@ -159,14 +159,17 @@ describe('Role-play', () => {
     expect(await screen.findByText('Yes, it is. Come in!', {}, SLOW)).toBeInTheDocument();
   });
 
-  it('is offered after the transcript, with Fill in the Blanks for every learner', async () => {
+  it('the transcript leads on to Role-play; the path offers Fill in the Blanks to every learner', async () => {
     seedProfile({ canTypeWords: false });
-    renderApp('/conversation/my-bedroom/transcript');
-    expect(await screen.findByRole('link', { name: 'Role-play' })).toHaveAttribute(
+    const { unmount } = renderApp('/conversation/my-bedroom/transcript');
+    expect(await screen.findByRole('link', { name: 'Next: Role-play' })).toHaveAttribute(
       'href',
       '/conversation/my-bedroom/role-play',
     );
-    expect(screen.getByRole('link', { name: 'Fill in the Blanks' })).toHaveAttribute(
+    unmount();
+
+    renderApp('/conversation/my-bedroom');
+    expect(await screen.findByRole('link', { name: /Fill in the Blanks/ })).toHaveAttribute(
       'href',
       '/conversation/my-bedroom/fill-blanks',
     );
@@ -225,8 +228,13 @@ describe('Fill in the Blanks', () => {
       ),
     ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'New Blanks' })).toBeInTheDocument();
-    // Fill in the Blanks never counts as learning words.
+    // Fill in the Blanks never counts as learning words, but it finishes step ② (spec §9.7).
     expect(readStoredProgress()?.completedWordIdsByScene ?? {}).toEqual({});
+    expect(readStoredProgress()?.conversationStepsById).toEqual({ 'my-bedroom': ['fill'] });
+    expect(screen.getByRole('link', { name: 'Next: Read the Conversation' })).toHaveAttribute(
+      'href',
+      '/conversation/my-bedroom/transcript',
+    );
   });
 
   it('choice mode: Show Answers reveals what was missing', async () => {
@@ -244,6 +252,8 @@ describe('Fill in the Blanks', () => {
     await user.click(screen.getByRole('button', { name: 'Show Answers' }));
     expect(screen.getByText('Here are the answers.', { exact: false })).toBeInTheDocument();
     expect(screen.getByText(answers[0])).toBeInTheDocument();
+    // Shown answers don't finish the step.
+    expect(readStoredProgress()?.conversationStepsById ?? {}).toEqual({});
   });
 
   it('learners who can type may switch to typing the words', async () => {

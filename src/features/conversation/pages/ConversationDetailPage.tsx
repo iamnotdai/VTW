@@ -1,4 +1,4 @@
-import { ArrowRight, CircleCheck, Mic, Play } from 'lucide-react';
+import { CircleCheck, Mic, Play } from 'lucide-react';
 import { Link, useLocation } from 'react-router';
 import { paths } from '@/app/paths';
 import { ButtonLink } from '@/components/common/Button';
@@ -12,12 +12,15 @@ import { assetUrl } from '@/lib/assets';
 import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation, Scene } from '@/types/models';
 import { ConversationPlayer } from '../components/ConversationPlayer';
+import { ConversationSteps } from '../components/ConversationSteps';
 import { PlayConversationButton } from '../components/PlayConversationButton';
-import { PracticeMoreLinks } from '../components/PracticeMoreLinks';
 import { TranscriptViewer } from '../components/TranscriptViewer';
 import { useConversationParam } from '../useConversationParam';
 
-/** Screen 15 — Conversation Detail (`/conversation/:conversationId`). */
+/**
+ * Screen 15 — Conversation Detail (`/conversation/:conversationId`): video, transcript preview and
+ * the four-step path (spec §9.7).
+ */
 export function ConversationDetailPage() {
   const params = useConversationParam();
   if (!params) return <NotFoundPage />;
@@ -104,24 +107,16 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
           </Card>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <ButtonLink
-            to={paths.transcript(conversation.id)}
-            size="lg"
-            rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
-          >
-            {t('View Conversation')}
-          </ButtonLink>
-          <ButtonLink
-            to={paths.practice(conversation.id)}
-            size="lg"
-            variant="secondary"
-            leftIcon={<Mic aria-hidden className="size-5" />}
-          >
-            {t('Practice Speaking')}
-          </ButtonLink>
-        </div>
-        <PracticeMoreLinks conversation={conversation} className="-mt-2" />
+        <ConversationSteps conversation={conversation} />
+        {/* Step ④ also has the question-and-answer practice (spec §9.4). */}
+        <ButtonLink
+          to={paths.practice(conversation.id)}
+          size="lg"
+          variant="secondary"
+          leftIcon={<Mic aria-hidden className="size-5" />}
+        >
+          {t('Practice Speaking')}
+        </ButtonLink>
       </PageContainer>
     </>
   );

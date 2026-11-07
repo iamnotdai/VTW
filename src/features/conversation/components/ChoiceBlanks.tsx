@@ -26,11 +26,14 @@ export function ChoiceBlanks({
   conversation,
   blankLines,
   choices,
+  onAllRight,
   onRestart,
 }: {
   conversation: Conversation;
   blankLines: readonly BlankLine[];
   choices: Readonly<Record<string, readonly BlankChoice[]>>;
+  /** Every blank was found (not when the answers were shown). */
+  onAllRight: () => void;
   onRestart: () => void;
 }) {
   const course = useCourse();
@@ -60,6 +63,7 @@ export function ChoiceBlanks({
     setRight(nextRight);
     const remaining = blanks.filter((item) => !nextRight[item.id]);
     if (sound) playSfx(remaining.length === 0 ? 'completed' : 'correct');
+    if (remaining.length === 0) onAllRight();
     // The choices of this blank disappear: keyboard focus moves on to the next blank's choices.
     const position = blanks.indexOf(blank);
     const next = remaining.find((item) => blanks.indexOf(item) > position) ?? remaining[0];

@@ -25,6 +25,14 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   Answer/Word Detail, Objects Found.
 - Conversation: danh sách theo scene, chi tiết, video (có fallback), transcript (phát từng câu,
   dịch tĩnh), Speaking Practice (SpeechRecognition + fallback _Listen & Repeat_), Speaking Result.
+- **Lộ trình 4 bước của hội thoại** (spec §9.7): trang chi tiết có 4 thẻ theo thứ tự ① Listen & Watch →
+  ② Fill in the Blanks → ③ Read → ④ Speak (Role-play; Speaking Practice là nút phụ), mỗi thẻ có icon
+  kỹ năng (tai / micro / sách / bút chì) và dấu ✓ khi xong; bước chưa xong đầu tiên có nhãn "Up next".
+  Không khóa bước nào; cuối mỗi màn có nút sang bước kế tiếp. Dấu ✓ lưu ở
+  `LearningProgress.conversationStepsById` (① nghe/xem hết, ② đúng hết — bấm _Show Answers_ thì không
+  tính, ③ bấm nút đi tiếp ở cuối transcript); ④ chính là `completedConversationIds`. Hội thoại chưa có
+  video (hiện là tất cả) thì bước ① phát lần lượt các câu trên poster, sáng nhân vật đang nói, chữ ẩn cho
+  tới khi bật nút CC (`ListenPlayer`, dùng chung hook `usePlayConversation` với nút loa).
 - **Luyện nói có chấm điểm** (mở rộng ngoài 16 màn): _Word Speaking_ sau Flashcards (nói từng từ,
   điểm 0–100, tô màu từng cụm âm như ELSA), _Role-play_ (chọn nhân vật trong hội thoại, đổi được bất kỳ
   lúc nào; các nhân vật khác tự nói, mỗi câu của người học được chấm điểm) và _Fill in the Blanks_ (chọn
@@ -40,7 +48,7 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **237 test Vitest** (187 unit + 50 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+- Test tự động: **241 test Vitest** (189 unit + 52 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
   **15 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
@@ -375,7 +383,8 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   - Màn Settings có các trường như thiết kế, thêm mục _Reading voice_ (chọn giọng đọc) ở trên cùng;
     tuỳ chọn âm thanh / nghĩa tiếng Việt vẫn nằm trong `AppSettings` (mặc định bật) nhưng không có
     công tắc trên giao diện.
-  - Transcript, Detail có thêm nút "Practice Speaking" / "View Conversation" để đi tiếp hành trình.
+  - Conversation Detail thay cụm nút cũ bằng lộ trình 4 bước (spec §9.7); Transcript kết thúc bằng
+    "Next: Role-play" và "Practice Speaking".
   - Tranh, nhân vật, thumbnail, video là **placeholder**; chữ (tên hội thoại, câu thoại, từ liên
     quan…) là dữ liệu mẫu — ảnh thiết kế dùng ví dụ khác (Emma, "Choosing Clothes"…).
 
@@ -459,6 +468,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Mic bị chặn / không hỗ trợ vẫn học tiếp được                         | ✅ (test + E2E)                    |
 | Word Speaking / Role-play chấm điểm, có fallback Listen & Repeat     | ✅ (test + E2E)                    |
 | Fill in the Blanks: chọn đáp án cho mọi người, ô gõ chỉ khi gõ được  | ✅ (test + E2E)                    |
+| Hội thoại có 4 bước, không khóa; ✓ chỉ sau khi làm xong bước         | ✅ (test + E2E)                    |
 | QA thiết bị thật iOS/Android, tối ưu asset thật                      | ⏳ khi có art và thiết bị thật     |
 
 ## Việc tiếp theo

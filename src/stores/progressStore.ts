@@ -3,6 +3,7 @@ import {
   createEmptyProgress,
   isWordCompleted,
   markConversationCompleted,
+  markConversationStep,
   markSceneCelebrated,
   markWordCompleted,
   mergeProgress,
@@ -13,13 +14,15 @@ import {
 } from '@/lib/progress';
 import { getActiveCourse } from '@/lib/course';
 import { getProgressRepository } from '@/lib/repositories';
-import type { LearningProgress } from '@/types/models';
+import type { LearningProgress, TrackedConversationStep } from '@/types/models';
 
 interface ProgressState {
   progress: LearningProgress;
   /** Call after a CORRECT answer only. Returns `true` the first time the word is completed. */
   completeWord: (sceneId: string, wordId: string) => boolean;
   completeConversation: (conversationId: string) => void;
+  /** A step of the conversation's path is finished (spec §9.7). */
+  completeConversationStep: (conversationId: string, step: TrackedConversationStep) => void;
   setFlashcardIndex: (sceneId: string, index: number) => void;
   visitScene: (sceneId: string) => void;
   toggleFavorite: (wordId: string) => void;
@@ -54,6 +57,8 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
     },
     completeConversation: (conversationId) =>
       commit(markConversationCompleted(get().progress, conversationId)),
+    completeConversationStep: (conversationId, step) =>
+      commit(markConversationStep(get().progress, conversationId, step)),
     setFlashcardIndex: (sceneId, index) =>
       commit(setLastFlashcardIndex(get().progress, sceneId, index)),
     visitScene: (sceneId) => commit(setLastVisitedScene(get().progress, sceneId)),

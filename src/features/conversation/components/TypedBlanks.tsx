@@ -19,10 +19,13 @@ type BlankStatus = 'right' | 'wrong';
 export function TypedBlanks({
   conversation,
   blankLines,
+  onAllRight,
   onRestart,
 }: {
   conversation: Conversation;
   blankLines: readonly BlankLine[];
+  /** Every blank is right (not when the answers were shown). */
+  onAllRight: () => void;
   onRestart: () => void;
 }) {
   const course = useCourse();
@@ -49,6 +52,7 @@ export function TypedBlanks({
     const right = Object.values(next).filter((status) => status === 'right').length;
     setStatuses(next);
     setFirstTry((current) => current ?? right);
+    if (right === blanks.length) onAllRight();
     if (useSettingsStore.getState().settings.soundEnabled) {
       playSfx(right === blanks.length ? 'completed' : 'wrong');
     }

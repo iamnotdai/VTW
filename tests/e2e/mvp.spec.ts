@@ -102,12 +102,17 @@ test('MVP journey: setup → explore → quiz → progress → conversation', as
   await page.reload();
   await expect(objectsFound.getByText('1 / 24')).toBeVisible();
 
-  // Conversation: scene → video → transcript → speaking practice (Listen & Repeat works everywhere).
+  // Conversation: scene → path (spec §9.7) → listen → read → speaking practice (Listen & Repeat
+  // works everywhere).
   await page.getByRole('link', { name: 'Conversation', exact: true }).click();
   await page.getByRole('link', { name: /Bedroom/ }).click();
   await page.getByRole('link', { name: /My Bedroom/ }).click();
-  await page.getByRole('link', { name: 'Watch the video' }).click();
-  await page.getByRole('link', { name: 'View Conversation' }).click();
+  const learningPath = page.getByRole('region', { name: 'Your learning path' });
+  await expect(learningPath.getByRole('link')).toHaveCount(4);
+  await learningPath.getByRole('link', { name: /Listen to the whole conversation/ }).click();
+  await expect(page.getByRole('link', { name: 'Next: Fill in the Blanks' })).toBeVisible();
+  await page.goBack();
+  await learningPath.getByRole('link', { name: /Read every line/ }).click();
   await expect(page.getByText('Lily, is this your bedroom?')).toBeVisible();
   await page.getByRole('link', { name: 'Practice Speaking' }).click();
 
@@ -124,6 +129,9 @@ test('MVP journey: setup → explore → quiz → progress → conversation', as
   }
   await page.getByRole('button', { name: 'Finish Lesson' }).click();
   await expect(page.getByText(/Lesson complete!/)).toBeVisible();
+  // Reading (step ③) and speaking (step ④) are now checked on the path.
+  await expect(learningPath.getByRole('link', { name: /Step 3 of 4, done/ })).toBeVisible();
+  await expect(learningPath.getByRole('link', { name: /Step 4 of 4, done/ })).toBeVisible();
 });
 
 test('deep links work on the static build', async ({ page }) => {

@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import {
   createEmptyProgress,
+  getConversationSteps,
   getFoundWordIds,
   getLearnerLevel,
   getTotalCompletedWords,
   getSceneProgressPercent,
   markConversationCompleted,
+  markConversationStep,
   markSceneCelebrated,
   markWordCompleted,
   mergeProgress,
@@ -161,5 +163,36 @@ describe('Explore round (Completed popup + Play again)', () => {
     const again = markWordCompleted(reset, 'bedroom', 'w1');
     expect(getFoundWordIds(again, 'bedroom')).toEqual(['w1']);
     expect(getTotalCompletedWords(again)).toBe(24);
+  });
+});
+
+describe('conversation steps (spec §9.7)', () => {
+  const NOW = new Date('2026-11-08T09:00:00.000Z');
+
+  it('marks a step once and reads "speak" from the completed conversation', () => {
+    let progress = createEmptyProgress(NOW);
+    progress = markConversationStep(progress, 'my-bedroom', 'listen', NOW);
+    expect(markConversationStep(progress, 'my-bedroom', 'listen', NOW)).toBe(progress);
+    progress = markConversationStep(progress, 'my-bedroom', 'read', NOW);
+    expect([...getConversationSteps(progress, 'my-bedroom')]).toEqual(['listen', 'read']);
+    expect(getConversationSteps(progress, 'my-house').size).toBe(0);
+
+    progress = markConversationCompleted(progress, 'my-bedroom', NOW);
+    expect(getConversationSteps(progress, 'my-bedroom').has('speak')).toBe(true);
+  });
+
+  it('merges the steps of two saved versions and drops unknown ones when loading', () => {
+    const a = markConversationStep(createEmptyProgress(NOW), 'c1', 'listen', NOW);
+    const b = markConversationStep(createEmptyProgress(NOW), 'c1', 'fill', NOW);
+    expect(mergeProgress(a, b).conversationStepsById).toEqual({ c1: ['listen', 'fill'] });
+
+    const loaded = sanitizeProgress({
+      ...createEmptyProgress(NOW),
+      conversationStepsById: { c1: ['read', 'speak', 'dance', 7], c2: 'x', c3: [] },
+    });
+    expect(loaded?.conversationStepsById).toEqual({ c1: ['read'] });
+    // Progress saved before the steps existed still loads.
+    const { conversationStepsById: _omitted, ...old } = createEmptyProgress(NOW);
+    expect(sanitizeProgress(old)?.conversationStepsById).toEqual({});
   });
 });

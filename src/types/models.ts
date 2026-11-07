@@ -173,8 +173,21 @@ export interface LearningProgress {
    * Cleared by "Play again" so the next round celebrates again.
    */
   celebratedSceneIds: string[];
+  /**
+   * @extension Steps of a conversation's path the learner finished (spec §9.7): "listen", "fill",
+   * "read". The last step, "speak", is `completedConversationIds`.
+   */
+  conversationStepsById: Record<string, TrackedConversationStep[]>;
   updatedAt: string;
 }
+
+/** @extension The four steps of a conversation (spec §9.7), in order. */
+export type ConversationStep = 'listen' | 'fill' | 'read' | 'speak';
+/** Steps stored in `conversationStepsById`; "speak" is the completed conversation itself. */
+export type TrackedConversationStep = Exclude<ConversationStep, 'speak'>;
+
+/** @extension The four language skills (spec §4), shown on each activity. */
+export type Skill = 'listening' | 'speaking' | 'reading' | 'writing';
 
 /**
  * @extension Best speaking score (0–100) of each word, from Word Speaking (spec §24.1). Kept apart

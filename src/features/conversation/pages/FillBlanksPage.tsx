@@ -14,6 +14,7 @@ import {
   type BlankLine,
 } from '@/lib/fillBlanks';
 import { useProfileStore } from '@/stores/profileStore';
+import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation, Scene } from '@/types/models';
 import { ChoiceBlanks } from '../components/ChoiceBlanks';
 import { TypedBlanks } from '../components/TypedBlanks';
@@ -67,6 +68,9 @@ function FillBlanks({ conversation, scene }: { conversation: Conversation; scene
   // Learners who can't type never see a text box.
   const mode: Mode = canType ? preferredMode : 'choose';
 
+  const finishStep = () =>
+    useProgressStore.getState().completeConversationStep(conversation.id, 'fill');
+
   const restart = () => {
     setRound(createRound());
     setRoundNumber((value) => value + 1);
@@ -116,6 +120,7 @@ function FillBlanks({ conversation, scene }: { conversation: Conversation; scene
             conversation={conversation}
             blankLines={round.blankLines}
             choices={round.choices}
+            onAllRight={finishStep}
             onRestart={restart}
           />
         ) : (
@@ -123,6 +128,7 @@ function FillBlanks({ conversation, scene }: { conversation: Conversation; scene
             key={roundNumber}
             conversation={conversation}
             blankLines={round.blankLines}
+            onAllRight={finishStep}
             onRestart={restart}
           />
         )}

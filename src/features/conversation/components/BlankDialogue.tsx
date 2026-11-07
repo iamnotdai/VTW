@@ -1,4 +1,4 @@
-import { ArrowLeft, CircleCheck, Drama, Shuffle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CircleCheck, Shuffle } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { paths } from '@/app/paths';
 import { AudioButton } from '@/components/common/AudioButton';
@@ -120,7 +120,7 @@ export function BlanksResult({
   );
 }
 
-/** What to do once a round is done: new blanks, Role-play, back to the conversation. */
+/** What to do once a round is done: new blanks, the next step (Read, spec §9.7), back. */
 export function BlanksEndActions({
   conversation,
   onRestart,
@@ -140,13 +140,13 @@ export function BlanksEndActions({
           {t('New Blanks')}
         </Button>
         <ButtonLink
-          to={paths.rolePlay(conversation.id)}
+          to={paths.transcript(conversation.id)}
           size="lg"
           variant="warm"
           className="sm:flex-1"
-          leftIcon={<Drama aria-hidden className="size-5" />}
+          rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
         >
-          {t('Role-play')}
+          {t('Next: Read the Conversation')}
         </ButtonLink>
       </div>
       <ButtonLink

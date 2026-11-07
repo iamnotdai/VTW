@@ -1,7 +1,44 @@
 import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
-import { readStoredProgress, renderApp, seedProfile } from '../helpers';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { getConversation } from '@/data/content';
+import { readStoredProgress, renderApp, seedProfile, seedProgress } from '../helpers';
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
+
+/** A browser voice that finishes each line at once; returns what it said. */
+function installInstantSpeech(): string[] {
+  const spoken: string[] = [];
+  class FakeUtterance {
+    lang = '';
+    rate = 1;
+    pitch = 1;
+    voice: SpeechSynthesisVoice | null = null;
+    onend: (() => void) | null = null;
+    onerror: (() => void) | null = null;
+    text: string;
+    constructor(text: string) {
+      this.text = text;
+    }
+  }
+  vi.stubGlobal('SpeechSynthesisUtterance', FakeUtterance);
+  vi.stubGlobal('speechSynthesis', {
+    speaking: false,
+    pending: false,
+    getVoices: () => [],
+    speak: (utterance: FakeUtterance) => {
+      spoken.push(utterance.text);
+      setTimeout(() => utterance.onend?.(), 0);
+    },
+    cancel: () => {},
+    resume: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+  });
+  return spoken;
+}
 
 describe('Conversations (screens 09–15)', () => {
   it('Vocabulary and Conversation menus open the same conversation', async () => {
@@ -40,14 +77,74 @@ describe('Conversations (screens 09–15)', () => {
     );
   });
 
-  it('the video screen always leads to the transcript, even without a video file', async () => {
+  it('step ①: without a video, the conversation plays over the poster and the end finishes the step', async () => {
+    const user = userEvent.setup();
+    const spoken = installInstantSpeech();
     seedProfile();
     renderApp('/conversation/my-bedroom/video');
-    expect(await screen.findByText('Video coming soon')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'View Conversation' })).toHaveAttribute(
+
+    expect(await screen.findByRole('link', { name: 'Next: Fill in the Blanks' })).toHaveAttribute(
       'href',
-      '/conversation/my-bedroom/transcript',
+      '/conversation/my-bedroom/fill-blanks',
     );
+    // Listening first: the words are hidden until the learner asks for them.
+    expect(screen.getByRole('button', { name: 'Show the words' })).toHaveAttribute(
+      'aria-pressed',
+      'false',
+    );
+    await user.click(screen.getByRole('button', { name: 'Show the words' }));
+    expect(screen.getByRole('button', { name: 'Show the words' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    );
+    await user.click(screen.getByRole('button', { name: 'Listen to the whole conversation' }));
+    expect(
+      await screen.findByText('Nice listening! Next, find the missing words.'),
+    ).toBeInTheDocument();
+    expect(spoken).toEqual(getConversation('my-bedroom')!.lines.map((line) => line.text));
+    expect(readStoredProgress()?.conversationStepsById).toEqual({ 'my-bedroom': ['listen'] });
+  });
+
+  it('the detail page shows the four steps in order, with checks and "Up next"', async () => {
+    seedProfile();
+    seedProgress({ conversationStepsById: { 'my-bedroom': ['listen', 'fill'] } });
+    renderApp('/conversation/my-bedroom');
+
+    const path = await screen.findByRole('region', { name: 'Your learning path' });
+    const steps = within(path).getAllByRole('link');
+    expect(steps.map((step) => step.getAttribute('href'))).toEqual([
+      '/conversation/my-bedroom/video',
+      '/conversation/my-bedroom/fill-blanks',
+      '/conversation/my-bedroom/transcript',
+      '/conversation/my-bedroom/role-play',
+    ]);
+    expect(steps[0]).toHaveTextContent('Step 1 of 4, done');
+    expect(steps[1]).toHaveTextContent('Step 2 of 4, done');
+    expect(steps[2]).toHaveTextContent('Up next');
+    expect(steps[3]).not.toHaveTextContent('done');
+    // Fill in the Blanks practises listening, reading and writing.
+    expect(
+      within(within(steps[1]).getByRole('list', { name: 'Skills' }))
+        .getAllByRole('listitem')
+        .map((item) => item.textContent),
+    ).toEqual(['Listening', 'Reading', 'Writing']);
+  });
+
+  it('step ③: going on from the transcript finishes reading; step ④ is the completed conversation', async () => {
+    const user = userEvent.setup();
+    seedProfile();
+    seedProgress({ completedConversationIds: ['my-bedroom'] });
+    const { unmount } = renderApp('/conversation/my-bedroom/transcript');
+    await user.click(await screen.findByRole('link', { name: 'Next: Role-play' }));
+    expect(readStoredProgress()?.conversationStepsById).toEqual({ 'my-bedroom': ['read'] });
+    unmount();
+
+    renderApp('/conversation/my-bedroom');
+    const path = await screen.findByRole('region', { name: 'Your learning path' });
+    const steps = within(path).getAllByRole('link');
+    expect(steps[2]).toHaveTextContent('Step 3 of 4, done');
+    expect(steps[3]).toHaveTextContent('Step 4 of 4, done');
+    expect(steps[0]).toHaveTextContent('Up next');
   });
 
   it('shows each line with speaker, audio button and an optional translation', async () => {

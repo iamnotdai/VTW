@@ -1,5 +1,5 @@
 import { LEVEL_CONFIG } from '@/config/app';
-import type { LearningProgress } from '@/types/models';
+import type { ConversationStep, LearningProgress, TrackedConversationStep } from '@/types/models';
 
 export function createEmptyProgress(now: Date = new Date()): LearningProgress {
   return {
@@ -9,6 +9,7 @@ export function createEmptyProgress(now: Date = new Date()): LearningProgress {
     lastFlashcardIndexByScene: {},
     favoriteWordIds: [],
     celebratedSceneIds: [],
+    conversationStepsById: {},
     updatedAt: now.toISOString(),
   };
 }
@@ -94,6 +95,40 @@ export function markConversationCompleted(
     completedConversationIds: [...progress.completedConversationIds, conversationId],
     updatedAt: now.toISOString(),
   };
+}
+
+const TRACKED_STEPS: readonly TrackedConversationStep[] = ['listen', 'fill', 'read'];
+
+/**
+ * Marks a step of a conversation's path as done (spec §9.7). Call when the learner finished it —
+ * listened to the end, got every blank right, read to the end — never when a screen opens.
+ */
+export function markConversationStep(
+  progress: LearningProgress,
+  conversationId: string,
+  step: TrackedConversationStep,
+  now: Date = new Date(),
+): LearningProgress {
+  const steps = progress.conversationStepsById[conversationId] ?? [];
+  if (steps.includes(step)) return progress;
+  return {
+    ...progress,
+    conversationStepsById: {
+      ...progress.conversationStepsById,
+      [conversationId]: [...steps, step],
+    },
+    updatedAt: now.toISOString(),
+  };
+}
+
+/** The finished steps of a conversation; "speak" = the conversation is completed. */
+export function getConversationSteps(
+  progress: LearningProgress,
+  conversationId: string,
+): ReadonlySet<ConversationStep> {
+  const steps = new Set<ConversationStep>(progress.conversationStepsById[conversationId] ?? []);
+  if (progress.completedConversationIds.includes(conversationId)) steps.add('speak');
+  return steps;
 }
 
 export function setLastFlashcardIndex(
@@ -206,6 +241,10 @@ export function mergeProgress(a: LearningProgress, b: LearningProgress): Learnin
     // Hearts can be removed, so the newest list wins instead of a union.
     favoriteWordIds: [...newer.favoriteWordIds],
     celebratedSceneIds: unique([...a.celebratedSceneIds, ...b.celebratedSceneIds]),
+    conversationStepsById: mergeRecordOfLists(
+      a.conversationStepsById,
+      b.conversationStepsById,
+    ) as Record<string, TrackedConversationStep[]>,
     updatedAt: newer.updatedAt,
   };
 }
@@ -237,6 +276,7 @@ export function sanitizeProgress(raw: unknown): LearningProgress | null {
     lastFlashcardIndexByScene: sanitizeIndexRecord(raw.lastFlashcardIndexByScene),
     favoriteWordIds: sanitizeStringList(raw.favoriteWordIds),
     celebratedSceneIds: sanitizeStringList(raw.celebratedSceneIds),
+    conversationStepsById: sanitizeConversationSteps(raw.conversationStepsById),
     updatedAt: typeof raw.updatedAt === 'string' ? raw.updatedAt : new Date(0).toISOString(),
   };
 }
@@ -262,6 +302,17 @@ function sanitizeIndexRecord(value: unknown): Record<string, number> {
   const result: Record<string, number> = {};
   for (const [key, index] of Object.entries(value)) {
     if (typeof index === 'number' && Number.isInteger(index) && index >= 0) result[key] = index;
+  }
+  return result;
+}
+
+function sanitizeConversationSteps(value: unknown): Record<string, TrackedConversationStep[]> {
+  const result: Record<string, TrackedConversationStep[]> = {};
+  for (const [id, steps] of Object.entries(sanitizeRecordOfLists(value))) {
+    const known = steps.filter((step): step is TrackedConversationStep =>
+      (TRACKED_STEPS as readonly string[]).includes(step),
+    );
+    if (known.length > 0) result[id] = known;
   }
   return result;
 }

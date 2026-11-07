@@ -7,11 +7,18 @@ import { getSceneConversations } from '@/data/content';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { t } from '@/i18n';
+import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation, Scene } from '@/types/models';
 import { ConversationPlayer } from '../components/ConversationPlayer';
+import { ListenPlayer } from '../components/ListenPlayer';
+import { rolePlayCrumbs } from '../rolePlay';
 import { useConversationParam } from '../useConversationParam';
 
-/** Screen 10 — Conversation Video (`/conversation/:conversationId/video`). */
+/**
+ * Screen 10 — Conversation Video (`/conversation/:conversationId/video`), step ① of the path (spec
+ * §9.7): the video, or — while the conversation has none — the whole conversation played over its
+ * poster. Watching or listening to the end finishes the step.
+ */
 export function ConversationVideoPage() {
   const params = useConversationParam();
   if (!params) return <NotFoundPage />;
@@ -22,20 +29,24 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
   useDocumentTitle(t('{title} · Video', { title: conversation.title }));
   const [ended, setEnded] = useState(false);
   const total = getSceneConversations(scene).length;
+  const hasVideo = !!(conversation.videoSrc || conversation.youtubeId);
+
+  const finish = () => {
+    setEnded(true);
+    useProgressStore.getState().completeConversationStep(conversation.id, 'listen');
+  };
 
   return (
     <>
       <TopBar>
-        <Breadcrumb
-          items={[
-            { label: t('Conversation'), to: paths.conversations },
-            { label: scene.title, to: paths.conversationScene(scene.id) },
-            { label: `${conversation.order}. ${conversation.title}` },
-          ]}
-        />
+        <Breadcrumb items={rolePlayCrumbs(conversation, t('Listen & Watch'))} />
       </TopBar>
       <PageContainer width="default" className="flex flex-col">
-        <ConversationPlayer conversation={conversation} onEnded={() => setEnded(true)} />
+        {hasVideo ? (
+          <ConversationPlayer conversation={conversation} onEnded={finish} />
+        ) : (
+          <ListenPlayer conversation={conversation} onEnded={finish} />
+        )}
 
         <h1 className="mt-5 text-[2rem] leading-tight font-extrabold text-navy-900">
           {conversation.title}
@@ -50,18 +61,18 @@ function ConversationVideo({ conversation, scene }: { conversation: Conversation
             className="mt-4 flex animate-pop-in items-center gap-2 font-bold text-navy-800"
           >
             <PartyPopper aria-hidden className="size-5 text-sun-500" />
-            {t('Nice watching! Now read the conversation.')}
+            {t('Nice listening! Next, find the missing words.')}
           </p>
         )}
 
         <ButtonLink
-          to={paths.transcript(conversation.id)}
+          to={paths.fillBlanks(conversation.id)}
           size="lg"
           fullWidth
           className="mt-5"
           rightIcon={<ArrowRight aria-hidden className="size-5" strokeWidth={2.5} />}
         >
-          {t('View Conversation')}
+          {t('Next: Fill in the Blanks')}
         </ButtonLink>
       </PageContainer>
     </>
