@@ -75,6 +75,10 @@ export const routes: RouteObject[] = [
                 element: <SpeakingResultPage />,
               },
               { path: 'conversation', element: <ConversationScenesPage /> }, // 14
+              {
+                path: 'conversation/scene/:sceneId', // 09 (from the Conversation menu)
+                element: <TopicConversationsPage menu="conversation" />,
+              },
               { path: 'conversation/:conversationId', element: <ConversationDetailPage /> }, // 15
               { path: 'settings', element: <SettingsPage /> }, // 16
               { path: '*', element: <NotFoundPage /> },

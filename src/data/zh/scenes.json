@@ -4,10 +4,8 @@
   "dining-room": { "title": "餐厅", "description": "在餐厅里学词语，练对话。" },
   "flower-garden": { "title": "花园", "description": "在花园里学词语，练对话。" },
   "garage": { "title": "车库", "description": "在车库里学词语，练对话。" },
-  "garden-tools": { "title": "园艺工具", "description": "学习铲子、耙子和喷壶的词语。" },
   "house-exterior": { "title": "房子外面", "description": "在房子外面学词语，练对话。" },
   "kitchen": { "title": "厨房", "description": "在厨房里学词语，练对话。" },
   "living-room": { "title": "客厅", "description": "在客厅里学词语，练对话。" },
-  "shed": { "title": "小木屋", "description": "学习小木屋和里面东西的词语。" },
   "vegetable-garden": { "title": "菜园", "description": "在菜园里学词语，练对话。" }
 }

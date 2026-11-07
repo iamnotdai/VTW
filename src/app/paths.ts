@@ -12,6 +12,7 @@ export const paths = {
   result: (sceneId: string, wordId: string) => `/vocabulary/${seg(sceneId)}/result/${seg(wordId)}`,
   topicConversations: (sceneId: string) => `/vocabulary/${seg(sceneId)}/conversations`,
   conversations: '/conversation',
+  conversationScene: (sceneId: string) => `/conversation/scene/${seg(sceneId)}`,
   conversation: (conversationId: string) => `/conversation/${seg(conversationId)}`,
   conversationVideo: (conversationId: string) => `/conversation/${seg(conversationId)}/video`,
   transcript: (conversationId: string) => `/conversation/${seg(conversationId)}/transcript`,

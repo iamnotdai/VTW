@@ -12,16 +12,28 @@ describe('Conversations (screens 09–15)', () => {
     expect(screen.getAllByRole('link', { name: /^Conversation \d+:/ })).toHaveLength(10);
   });
 
-  it('lists conversations by scene with a completed count', async () => {
+  it('lists scenes by area without progress; a scene card opens its conversations', async () => {
+    const user = userEvent.setup();
     seedProfile();
     renderApp('/conversation');
     expect(
       await screen.findByRole('heading', { name: 'Conversation', level: 1 }),
     ).toBeInTheDocument();
-    // The first place with conversations (House Exterior) is chosen.
-    const houseExterior = screen.getByRole('button', { name: /House Exterior/, pressed: true });
-    expect(within(houseExterior).getByText('0/10')).toBeInTheDocument();
-    // The chosen place lists its conversations, opening the shared detail page.
+    expect(screen.getByRole('button', { name: /^Home/ })).toHaveAttribute('aria-expanded', 'true');
+    expect(screen.getByRole('button', { name: /^Garden/ })).toHaveAttribute(
+      'aria-expanded',
+      'false',
+    );
+    const houseExterior = screen.getByRole('link', { name: /House Exterior/ });
+    expect(houseExterior).toHaveAttribute('href', '/conversation/scene/house-exterior');
+    expect(within(houseExterior).queryByRole('progressbar')).toBeNull();
+
+    await user.click(houseExterior);
+    expect(
+      await screen.findByRole('heading', { name: 'House Exterior Conversations' }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('10 conversations in this scene.')).toBeInTheDocument();
+    // The Conversation menu opens the shared detail page.
     expect(screen.getByRole('link', { name: /My House/ })).toHaveAttribute(
       'href',
       '/conversation/my-house',

@@ -1,22 +1,34 @@
 import { Lock } from 'lucide-react';
 import { Link } from 'react-router';
-import { paths } from '@/app/paths';
 import { Badge } from '@/components/common/Badge';
 import { ProgressBar } from '@/components/common/ProgressBar';
-import { isSceneAvailable } from '@/data/content';
 import { t } from '@/i18n';
 import { assetUrl } from '@/lib/assets';
 import { cn } from '@/lib/cn';
 import type { Scene } from '@/types/models';
-import { useSceneProgress } from '../useSceneProgress';
+
+export interface SceneCardProps {
+  scene: Scene;
+  /** Where the card leads; `undefined` shows the scene as "Coming soon" (not clickable). */
+  to: string | undefined;
+  /** Learning progress (figure next to the name + green bar); omit it to show the name only. */
+  progress?: {
+    /** 0–100, drives the green bar. */
+    percent: number;
+    /** Short figure next to the name, e.g. "25%". */
+    valueText: string;
+    /** Full sentence for screen readers, e.g. "6/24 words learned, 25% completed". */
+    srText: string;
+  };
+}
 
 /**
- * Scene card of the design board: picture, name with the completed %, green progress bar (spec §7.1).
- * Sized for the four-per-row desktop grid (`SCENE_GRID_CLASS`).
+ * Scene card of the design board: picture, name and, when given, the progress figure and green
+ * bar (spec §7.1). Shared by the Vocabulary and Conversation scene lists; sized for the four-per-row
+ * desktop grid (`SCENE_GRID_CLASS`).
  */
-export function SceneCard({ scene }: { scene: Scene }) {
-  const available = isSceneAvailable(scene);
-  const { total, completed, percent } = useSceneProgress(scene);
+export function SceneCard({ scene, to, progress }: SceneCardProps) {
+  const available = to !== undefined;
 
   const content = (
     <>
@@ -46,26 +58,25 @@ export function SceneCard({ scene }: { scene: Scene }) {
       <div className="px-3 pt-2.5 pb-3">
         <div className="flex items-center justify-between gap-2">
           <h3 className="truncate text-[0.9375rem] font-bold text-navy-900">{scene.title}</h3>
-          {available && (
-            <span aria-hidden className="shrink-0 text-[0.9375rem] font-bold text-brand-500">
-              {percent}%
+          {available && progress && (
+            <span
+              aria-hidden
+              className="shrink-0 text-[0.9375rem] font-bold text-brand-500 tabular-nums"
+            >
+              {progress.valueText}
             </span>
           )}
         </div>
-        <ProgressBar
-          value={available ? percent : 0}
-          label={t('{scene} progress', { scene: scene.title })}
-          size="sm"
-          className="mt-2.5"
-        />
-        {available && (
-          <span className="sr-only">
-            {t('{completed}/{total} words learned, {percent}% completed', {
-              completed,
-              total,
-              percent,
-            })}
-          </span>
+        {progress && (
+          <>
+            <ProgressBar
+              value={available ? progress.percent : 0}
+              label={t('{scene} progress', { scene: scene.title })}
+              size="sm"
+              className="mt-2.5"
+            />
+            {available && <span className="sr-only">{progress.srText}</span>}
+          </>
         )}
       </div>
     </>
@@ -83,7 +94,7 @@ export function SceneCard({ scene }: { scene: Scene }) {
 
   return (
     <Link
-      to={paths.topic(scene.id)}
+      to={to}
       className={cn(
         cardClass,
         'group transition duration-200 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lift',

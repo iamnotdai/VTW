@@ -5,7 +5,7 @@ import { QUIZ_CONFIG, QUIZ_PROMPTS } from '@/config/app';
 import { readStoredProgress, renderApp, seedProfile, seedProgress } from '../helpers';
 
 describe('Vocabulary Scene List (screen 03)', () => {
-  it('groups scenes, shows progress and marks unfinished scenes as coming soon', async () => {
+  it('groups scenes and shows progress', async () => {
     seedProfile();
     // Spec example: 6 of the 24 Bedroom words learned → 25%.
     seedProgress({
@@ -18,8 +18,6 @@ describe('Vocabulary Scene List (screen 03)', () => {
     const bedroomLink = screen.getByRole('link', { name: /Bedroom/ });
     expect(within(bedroomLink).getByText(/25% completed/)).toBeInTheDocument();
     expect(within(bedroomLink).getByRole('progressbar')).toHaveAttribute('aria-valuenow', '25');
-    expect(screen.getAllByText('Coming soon').length).toBeGreaterThanOrEqual(2);
-    expect(screen.queryByRole('link', { name: /Shed/ })).toBeNull();
   });
 
   it('opens the first area and expands or collapses areas with their header', async () => {
@@ -39,12 +37,6 @@ describe('Vocabulary Scene List (screen 03)', () => {
     await user.click(home);
     expect(home).toHaveAttribute('aria-expanded', 'false');
     expect(screen.queryByRole('link', { name: /Bedroom/ })).toBeNull();
-  });
-
-  it('does not open a scene that has no content yet', async () => {
-    seedProfile();
-    renderApp('/vocabulary/shed/explore');
-    expect(await screen.findByRole('heading', { name: 'Shed is coming soon' })).toBeInTheDocument();
   });
 });
 

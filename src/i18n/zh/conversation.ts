@@ -3,7 +3,6 @@ export const conversation: Record<string, string> = {
   // Also used here, from common.ts: Conversation, Coming soon, Stop, Full screen, Exit full screen.
   // Scene list (screen 14)
   'Watch, listen and practice real conversations.': '看视频、听一听，练习真实的对话。',
-  'conversations done': '个对话已完成',
   '{scene} Conversations': '{scene}的对话',
   '{count} conversations in this scene.': '这里有{count}个对话。',
   'Conversation {number}: {title}': '第{number}个对话：{title}',

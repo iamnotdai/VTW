@@ -38,7 +38,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
         <Breadcrumb
           items={[
             { label: t('Conversation'), to: paths.conversations },
-            { label: scene.title, to: paths.topicConversations(scene.id) },
+            { label: scene.title, to: paths.conversationScene(scene.id) },
             { label: conversation.title },
           ]}
         />
