@@ -65,6 +65,7 @@ const MEASURE_PINYIN: Record<string, string> = {
   头: 'tóu',
   串: 'chuàn',
   颗: 'kē',
+  套: 'tào',
 };
 
 /**

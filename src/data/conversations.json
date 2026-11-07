@@ -5852,5 +5852,585 @@
         "suggestedAnswer": "He puts in a starfruit and an avocado."
       }
     ]
+  },
+  {
+    "id": "in-the-tool-shed",
+    "sceneId": "tool-shed",
+    "title": "In the Tool Shed",
+    "order": 1,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Dad shows Ben the tools in the shed.",
+    "lines": [
+      {
+        "id": "in-the-tool-shed-l1",
+        "speakerId": "dad",
+        "text": "Ben, this is our tool shed.",
+        "textVi": "Ben ơi, đây là nhà kho dụng cụ của nhà mình."
+      },
+      {
+        "id": "in-the-tool-shed-l2",
+        "speakerId": "ben",
+        "text": "Wow! There are so many tools.",
+        "textVi": "Ồ! Có nhiều dụng cụ quá."
+      },
+      {
+        "id": "in-the-tool-shed-l3",
+        "speakerId": "dad",
+        "text": "The long tools hang on the wall.",
+        "textVi": "Các dụng cụ cán dài treo trên tường."
+      },
+      {
+        "id": "in-the-tool-shed-l4",
+        "speakerId": "ben",
+        "text": "I see a shovel and a rake.",
+        "textVi": "Con thấy cái xẻng và cái cào."
+      },
+      {
+        "id": "in-the-tool-shed-l5",
+        "speakerId": "dad",
+        "text": "What’s next to the rake?",
+        "textVi": "Cạnh cái cào là gì nào?"
+      },
+      {
+        "id": "in-the-tool-shed-l6",
+        "speakerId": "ben",
+        "text": "A hoe!",
+        "textVi": "Cái cuốc ạ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "in-the-tool-shed-q1",
+        "prompt": "What hangs on the wall?",
+        "suggestedAnswer": "The long tools."
+      },
+      {
+        "id": "in-the-tool-shed-q2",
+        "prompt": "What does Ben see?",
+        "suggestedAnswer": "He sees a shovel and a rake."
+      }
+    ]
+  },
+  {
+    "id": "digging-a-hole",
+    "sceneId": "tool-shed",
+    "title": "Digging a Hole",
+    "order": 2,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Mom and Lily get ready to plant a tree.",
+    "lines": [
+      {
+        "id": "digging-a-hole-l1",
+        "speakerId": "mom",
+        "text": "Let’s plant a tree today.",
+        "textVi": "Hôm nay mình trồng cây nhé."
+      },
+      {
+        "id": "digging-a-hole-l2",
+        "speakerId": "lily",
+        "text": "We need to dig a hole.",
+        "textVi": "Mình cần đào một cái hố."
+      },
+      {
+        "id": "digging-a-hole-l3",
+        "speakerId": "mom",
+        "text": "Can you get the shovel?",
+        "textVi": "Con lấy cái xẻng được không?"
+      },
+      {
+        "id": "digging-a-hole-l4",
+        "speakerId": "lily",
+        "text": "Here it is. It’s big!",
+        "textVi": "Đây ạ. Nó to quá!"
+      },
+      {
+        "id": "digging-a-hole-l5",
+        "speakerId": "mom",
+        "text": "Take the garden trowel too.",
+        "textVi": "Con lấy cả cái xẻng nhỏ làm vườn nữa nhé."
+      },
+      {
+        "id": "digging-a-hole-l6",
+        "speakerId": "lily",
+        "text": "Okay. It’s small and light.",
+        "textVi": "Vâng. Nó nhỏ và nhẹ."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "digging-a-hole-q1",
+        "prompt": "What do they want to plant?",
+        "suggestedAnswer": "A tree."
+      },
+      {
+        "id": "digging-a-hole-q2",
+        "prompt": "Is the garden trowel big?",
+        "suggestedAnswer": "No, it’s small."
+      }
+    ]
+  },
+  {
+    "id": "raking-leaves",
+    "sceneId": "tool-shed",
+    "title": "Raking Leaves",
+    "order": 3,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Lily helps Dad collect the leaves.",
+    "lines": [
+      {
+        "id": "raking-leaves-l1",
+        "speakerId": "dad",
+        "text": "Look, there are leaves everywhere.",
+        "textVi": "Nhìn kìa, lá rụng khắp nơi."
+      },
+      {
+        "id": "raking-leaves-l2",
+        "speakerId": "lily",
+        "text": "I can help, Dad!",
+        "textVi": "Con giúp được ạ, bố!"
+      },
+      {
+        "id": "raking-leaves-l3",
+        "speakerId": "dad",
+        "text": "Please use the rake.",
+        "textVi": "Con dùng cái cào nhé."
+      },
+      {
+        "id": "raking-leaves-l4",
+        "speakerId": "lily",
+        "text": "I’m collecting all the leaves.",
+        "textVi": "Con đang gom hết lá lại."
+      },
+      {
+        "id": "raking-leaves-l5",
+        "speakerId": "dad",
+        "text": "Good job! Now put them in the wheelbarrow.",
+        "textVi": "Giỏi lắm! Giờ con bỏ lá vào xe cút kít nhé."
+      },
+      {
+        "id": "raking-leaves-l6",
+        "speakerId": "lily",
+        "text": "The wheelbarrow is full!",
+        "textVi": "Xe cút kít đầy rồi ạ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "raking-leaves-q1",
+        "prompt": "What does Lily use?",
+        "suggestedAnswer": "She uses the rake."
+      },
+      {
+        "id": "raking-leaves-q2",
+        "prompt": "Where do the leaves go?",
+        "suggestedAnswer": "In the wheelbarrow."
+      }
+    ]
+  },
+  {
+    "id": "fixing-the-gate",
+    "sceneId": "tool-shed",
+    "title": "Fixing the Gate",
+    "order": 4,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Ben and Dad fix the garden gate.",
+    "lines": [
+      {
+        "id": "fixing-the-gate-l1",
+        "speakerId": "ben",
+        "text": "Dad, the gate is broken.",
+        "textVi": "Bố ơi, cái cổng bị hỏng rồi."
+      },
+      {
+        "id": "fixing-the-gate-l2",
+        "speakerId": "dad",
+        "text": "Let’s fix it. Please bring the hammer.",
+        "textVi": "Mình sửa nhé. Con mang cái búa lại đây."
+      },
+      {
+        "id": "fixing-the-gate-l3",
+        "speakerId": "ben",
+        "text": "Here’s the hammer. Do you need nails?",
+        "textVi": "Búa đây ạ. Bố có cần đinh không?"
+      },
+      {
+        "id": "fixing-the-gate-l4",
+        "speakerId": "dad",
+        "text": "Yes. The nails are in the small box.",
+        "textVi": "Có. Đinh ở trong cái hộp nhỏ."
+      },
+      {
+        "id": "fixing-the-gate-l5",
+        "speakerId": "ben",
+        "text": "Can I use the saw?",
+        "textVi": "Con dùng cái cưa được không ạ?"
+      },
+      {
+        "id": "fixing-the-gate-l6",
+        "speakerId": "dad",
+        "text": "No, the saw is sharp. You can hold the box.",
+        "textVi": "Không, cái cưa sắc lắm. Con cầm cái hộp nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "fixing-the-gate-q1",
+        "prompt": "What is broken?",
+        "suggestedAnswer": "The gate."
+      },
+      {
+        "id": "fixing-the-gate-q2",
+        "prompt": "Where are the nails?",
+        "suggestedAnswer": "In the small box."
+      }
+    ]
+  },
+  {
+    "id": "tools-on-the-board",
+    "sceneId": "tool-shed",
+    "title": "Tools on the Board",
+    "order": 5,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Mom tells Lily the names of the small tools.",
+    "lines": [
+      {
+        "id": "tools-on-the-board-l1",
+        "speakerId": "lily",
+        "text": "Mom, what’s this yellow tool?",
+        "textVi": "Mẹ ơi, dụng cụ màu vàng này là gì ạ?"
+      },
+      {
+        "id": "tools-on-the-board-l2",
+        "speakerId": "mom",
+        "text": "It’s a screwdriver. It turns screws.",
+        "textVi": "Đó là cái tua vít. Nó dùng để vặn ốc vít."
+      },
+      {
+        "id": "tools-on-the-board-l3",
+        "speakerId": "lily",
+        "text": "And this silver one?",
+        "textVi": "Còn cái màu bạc này ạ?"
+      },
+      {
+        "id": "tools-on-the-board-l4",
+        "speakerId": "mom",
+        "text": "That’s a wrench.",
+        "textVi": "Đó là cái cờ lê."
+      },
+      {
+        "id": "tools-on-the-board-l5",
+        "speakerId": "lily",
+        "text": "What are the pliers for?",
+        "textVi": "Cái kìm dùng để làm gì ạ?"
+      },
+      {
+        "id": "tools-on-the-board-l6",
+        "speakerId": "mom",
+        "text": "They hold small things, like wire.",
+        "textVi": "Kìm dùng để kẹp những vật nhỏ, như dây điện."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tools-on-the-board-q1",
+        "prompt": "What color is the screwdriver?",
+        "suggestedAnswer": "It’s yellow."
+      },
+      {
+        "id": "tools-on-the-board-q2",
+        "prompt": "What do pliers hold?",
+        "suggestedAnswer": "Small things, like wire."
+      }
+    ]
+  },
+  {
+    "id": "cutting-the-grass",
+    "sceneId": "tool-shed",
+    "title": "Cutting the Grass",
+    "order": 6,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Dad cuts the grass and trims the hedge.",
+    "lines": [
+      {
+        "id": "cutting-the-grass-l1",
+        "speakerId": "ben",
+        "text": "The grass is very long.",
+        "textVi": "Cỏ dài quá."
+      },
+      {
+        "id": "cutting-the-grass-l2",
+        "speakerId": "dad",
+        "text": "Let’s use the lawn mower.",
+        "textVi": "Mình dùng máy cắt cỏ nhé."
+      },
+      {
+        "id": "cutting-the-grass-l3",
+        "speakerId": "ben",
+        "text": "It’s so loud!",
+        "textVi": "Nó ồn quá!"
+      },
+      {
+        "id": "cutting-the-grass-l4",
+        "speakerId": "dad",
+        "text": "Yes. Please stand behind me.",
+        "textVi": "Ừ. Con đứng sau bố nhé."
+      },
+      {
+        "id": "cutting-the-grass-l5",
+        "speakerId": "ben",
+        "text": "Can we trim the hedge too?",
+        "textVi": "Mình tỉa hàng rào cây luôn được không ạ?"
+      },
+      {
+        "id": "cutting-the-grass-l6",
+        "speakerId": "dad",
+        "text": "Sure. I’ll use the hedge trimmer.",
+        "textVi": "Được chứ. Bố sẽ dùng máy tỉa hàng rào."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cutting-the-grass-q1",
+        "prompt": "What does Dad use for the grass?",
+        "suggestedAnswer": "The lawn mower."
+      },
+      {
+        "id": "cutting-the-grass-q2",
+        "prompt": "Where does Ben stand?",
+        "suggestedAnswer": "Behind Dad."
+      }
+    ]
+  },
+  {
+    "id": "ready-for-the-garden",
+    "sceneId": "tool-shed",
+    "title": "Ready for the Garden",
+    "order": 7,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Lily puts on her gardening clothes.",
+    "lines": [
+      {
+        "id": "ready-for-the-garden-l1",
+        "speakerId": "mom",
+        "text": "Lily, put on your gardening outfit.",
+        "textVi": "Lily ơi, con mặc bộ quần áo làm vườn vào nhé."
+      },
+      {
+        "id": "ready-for-the-garden-l2",
+        "speakerId": "lily",
+        "text": "I love the straw hat!",
+        "textVi": "Con thích cái mũ rơm lắm!"
+      },
+      {
+        "id": "ready-for-the-garden-l3",
+        "speakerId": "mom",
+        "text": "Don’t forget your gardening gloves.",
+        "textVi": "Đừng quên găng tay làm vườn nhé."
+      },
+      {
+        "id": "ready-for-the-garden-l4",
+        "speakerId": "lily",
+        "text": "They keep my hands clean.",
+        "textVi": "Găng tay giữ cho tay con sạch sẽ."
+      },
+      {
+        "id": "ready-for-the-garden-l5",
+        "speakerId": "mom",
+        "text": "And your rubber boots. It’s muddy today.",
+        "textVi": "Và đôi ủng cao su nữa. Hôm nay đất bùn lắm."
+      },
+      {
+        "id": "ready-for-the-garden-l6",
+        "speakerId": "lily",
+        "text": "Now I’m ready!",
+        "textVi": "Giờ con sẵn sàng rồi!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "ready-for-the-garden-q1",
+        "prompt": "What does Lily love?",
+        "suggestedAnswer": "The straw hat."
+      },
+      {
+        "id": "ready-for-the-garden-q2",
+        "prompt": "Why does Lily wear rubber boots?",
+        "suggestedAnswer": "Because it’s muddy."
+      }
+    ]
+  },
+  {
+    "id": "planting-seeds",
+    "sceneId": "tool-shed",
+    "title": "Planting Seeds",
+    "order": 8,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Ben and Mom plant tomato seeds.",
+    "lines": [
+      {
+        "id": "planting-seeds-l1",
+        "speakerId": "ben",
+        "text": "Mom, what’s in this seed packet?",
+        "textVi": "Mẹ ơi, trong gói hạt giống này có gì ạ?"
+      },
+      {
+        "id": "planting-seeds-l2",
+        "speakerId": "mom",
+        "text": "Tomato seeds. Let’s plant them.",
+        "textVi": "Hạt cà chua. Mình gieo nhé."
+      },
+      {
+        "id": "planting-seeds-l3",
+        "speakerId": "ben",
+        "text": "Do we need fertilizer?",
+        "textVi": "Mình có cần phân bón không ạ?"
+      },
+      {
+        "id": "planting-seeds-l4",
+        "speakerId": "mom",
+        "text": "Yes. It helps the plants grow.",
+        "textVi": "Có. Phân bón giúp cây lớn."
+      },
+      {
+        "id": "planting-seeds-l5",
+        "speakerId": "ben",
+        "text": "The fertilizer bag is too heavy!",
+        "textVi": "Bao phân bón nặng quá!"
+      },
+      {
+        "id": "planting-seeds-l6",
+        "speakerId": "mom",
+        "text": "Let’s carry it together.",
+        "textVi": "Mình cùng khiêng nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "planting-seeds-q1",
+        "prompt": "What seeds are in the packet?",
+        "suggestedAnswer": "Tomato seeds."
+      },
+      {
+        "id": "planting-seeds-q2",
+        "prompt": "Is the fertilizer bag light?",
+        "suggestedAnswer": "No, it’s heavy."
+      }
+    ]
+  },
+  {
+    "id": "a-bucket-and-a-rope",
+    "sceneId": "tool-shed",
+    "title": "A Bucket and a Rope",
+    "order": 9,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Lily and Dad help a little tree stand up.",
+    "lines": [
+      {
+        "id": "a-bucket-and-a-rope-l1",
+        "speakerId": "lily",
+        "text": "Dad, the little tree is falling over.",
+        "textVi": "Bố ơi, cây non sắp đổ rồi."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l2",
+        "speakerId": "dad",
+        "text": "Let’s tie it with some rope.",
+        "textVi": "Mình buộc nó bằng dây thừng nhé."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l3",
+        "speakerId": "lily",
+        "text": "The rope is on the workbench.",
+        "textVi": "Dây thừng ở trên bàn làm việc ạ."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l4",
+        "speakerId": "dad",
+        "text": "Thank you. Now fill the bucket with water.",
+        "textVi": "Cảm ơn con. Giờ con đổ đầy nước vào xô nhé."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l5",
+        "speakerId": "lily",
+        "text": "The bucket is full!",
+        "textVi": "Xô đầy rồi ạ!"
+      },
+      {
+        "id": "a-bucket-and-a-rope-l6",
+        "speakerId": "dad",
+        "text": "Great. Let’s water the tree.",
+        "textVi": "Tốt lắm. Mình tưới cây thôi."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bucket-and-a-rope-q1",
+        "prompt": "What do they tie the tree with?",
+        "suggestedAnswer": "With some rope."
+      },
+      {
+        "id": "a-bucket-and-a-rope-q2",
+        "prompt": "What is in the bucket?",
+        "suggestedAnswer": "Water."
+      }
+    ]
+  },
+  {
+    "id": "the-big-tractor",
+    "sceneId": "tool-shed",
+    "title": "The Big Tractor",
+    "order": 10,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "Ben sits on the big tractor.",
+    "lines": [
+      {
+        "id": "the-big-tractor-l1",
+        "speakerId": "ben",
+        "text": "Dad, can I sit on the tractor?",
+        "textVi": "Bố ơi, con ngồi lên máy kéo được không ạ?"
+      },
+      {
+        "id": "the-big-tractor-l2",
+        "speakerId": "dad",
+        "text": "Yes, but don’t touch the key.",
+        "textVi": "Được, nhưng đừng chạm vào chìa khóa nhé."
+      },
+      {
+        "id": "the-big-tractor-l3",
+        "speakerId": "ben",
+        "text": "The wheels are bigger than me!",
+        "textVi": "Bánh xe còn to hơn con!"
+      },
+      {
+        "id": "the-big-tractor-l4",
+        "speakerId": "dad",
+        "text": "The tractor can pull heavy things.",
+        "textVi": "Máy kéo kéo được những thứ nặng."
+      },
+      {
+        "id": "the-big-tractor-l5",
+        "speakerId": "ben",
+        "text": "Can it pull the wheelbarrow?",
+        "textVi": "Nó kéo xe cút kít được không ạ?"
+      },
+      {
+        "id": "the-big-tractor-l6",
+        "speakerId": "dad",
+        "text": "Ha ha, we push the wheelbarrow with our hands.",
+        "textVi": "Ha ha, xe cút kít thì mình đẩy bằng tay."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-big-tractor-q1",
+        "prompt": "Where does Ben want to sit?",
+        "suggestedAnswer": "On the tractor."
+      },
+      {
+        "id": "the-big-tractor-q2",
+        "prompt": "How do we move the wheelbarrow?",
+        "suggestedAnswer": "We push it with our hands."
+      }
+    ]
   }
 ]

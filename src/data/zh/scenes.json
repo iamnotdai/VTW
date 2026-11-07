@@ -8,5 +8,6 @@
   "house-exterior": { "title": "房子外面", "description": "在房子外面学词语，练对话。" },
   "kitchen": { "title": "厨房", "description": "在厨房里学词语，练对话。" },
   "living-room": { "title": "客厅", "description": "在客厅里学词语，练对话。" },
+  "tool-shed": { "title": "工具房", "description": "在工具房里学词语，练对话。" },
   "vegetable-garden": { "title": "菜园", "description": "在菜园里学词语，练对话。" }
 }

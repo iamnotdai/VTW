@@ -5225,5 +5225,485 @@
     ],
     "relatedWordIds": ["apple", "banana", "grape"],
     "distractorWordIds": ["watermelon", "pineapple", "coconut"]
+  },
+  "shovel": {
+    "id": "shovel",
+    "text": "shovel",
+    "ipa": "/ˈʃʌvəl/",
+    "meaningVi": "cái xẻng",
+    "image": "/assets/scenes/tool-shed/objects/01_shovel.webp",
+    "acceptedAnswers": ["shovel", "a shovel", "the shovel"],
+    "examples": [
+      {
+        "text": "I use a shovel to dig a hole.",
+        "vi": "Mình dùng xẻng để đào một cái hố."
+      },
+      {
+        "text": "The shovel hangs on the wall.",
+        "vi": "Cái xẻng treo trên tường."
+      }
+    ],
+    "relatedWordIds": ["garden-trowel", "garden-fork"],
+    "distractorWordIds": ["garden-trowel", "hoe", "rake"]
+  },
+  "garden-trowel": {
+    "id": "garden-trowel",
+    "text": "garden trowel",
+    "ipa": "/ˈɡɑːrdn ˈtraʊəl/",
+    "meaningVi": "xẻng nhỏ làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/02_garden-trowel.webp",
+    "acceptedAnswers": ["garden trowel", "a garden trowel", "trowel", "a trowel"],
+    "examples": [
+      {
+        "text": "This garden trowel is small.",
+        "vi": "Cái xẻng nhỏ làm vườn này bé xíu."
+      },
+      {
+        "text": "I plant seeds with a garden trowel.",
+        "vi": "Mình gieo hạt bằng xẻng nhỏ làm vườn."
+      }
+    ],
+    "relatedWordIds": ["shovel", "seed-packet"],
+    "distractorWordIds": ["shovel", "pruning-shears", "screwdriver"]
+  },
+  "rake": {
+    "id": "rake",
+    "text": "rake",
+    "ipa": "/reɪk/",
+    "meaningVi": "cái cào làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/03_rake.webp",
+    "acceptedAnswers": ["rake", "a rake", "the rake"],
+    "examples": [
+      {
+        "text": "I use a rake to collect leaves.",
+        "vi": "Mình dùng cào để gom lá."
+      },
+      {
+        "text": "The rake has many teeth.",
+        "vi": "Cái cào có nhiều răng."
+      }
+    ],
+    "relatedWordIds": ["long-handled-broom", "garden-fork"],
+    "distractorWordIds": ["garden-fork", "hoe", "long-handled-broom"]
+  },
+  "hoe": {
+    "id": "hoe",
+    "text": "hoe",
+    "ipa": "/hoʊ/",
+    "meaningVi": "cái cuốc",
+    "image": "/assets/scenes/tool-shed/objects/04_hoe.webp",
+    "acceptedAnswers": ["hoe", "a hoe", "the hoe"],
+    "examples": [
+      {
+        "text": "The hoe helps me loosen the soil.",
+        "vi": "Cái cuốc giúp mình xới tơi đất."
+      },
+      {
+        "text": "Grandpa works with a hoe.",
+        "vi": "Ông làm việc với cái cuốc."
+      }
+    ],
+    "relatedWordIds": ["shovel", "rake"],
+    "distractorWordIds": ["rake", "shovel", "hammer"]
+  },
+  "garden-fork": {
+    "id": "garden-fork",
+    "text": "garden fork",
+    "ipa": "/ˈɡɑːrdn fɔːrk/",
+    "meaningVi": "cái chĩa làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/05_garden-fork.webp",
+    "acceptedAnswers": ["garden fork", "a garden fork", "the garden fork", "fork"],
+    "examples": [
+      {
+        "text": "I use a garden fork to turn the soil.",
+        "vi": "Mình dùng chĩa làm vườn để xới đất."
+      },
+      {
+        "text": "The garden fork has four teeth.",
+        "vi": "Cái chĩa làm vườn có bốn răng."
+      }
+    ],
+    "relatedWordIds": ["rake", "shovel"],
+    "distractorWordIds": ["rake", "hoe", "shovel"]
+  },
+  "pruning-shears": {
+    "id": "pruning-shears",
+    "text": "pruning shears",
+    "ipa": "/ˈpruːnɪŋ ʃɪrz/",
+    "meaningVi": "kéo cắt tỉa cây",
+    "image": "/assets/scenes/tool-shed/objects/06_pruning-shears.webp",
+    "acceptedAnswers": ["pruning shears", "the pruning shears", "shears"],
+    "examples": [
+      {
+        "text": "I cut small branches with pruning shears.",
+        "vi": "Mình cắt cành nhỏ bằng kéo cắt tỉa cây."
+      },
+      {
+        "text": "Be careful, the pruning shears are sharp.",
+        "vi": "Cẩn thận nhé, kéo cắt tỉa cây sắc lắm."
+      }
+    ],
+    "relatedWordIds": ["hedge-trimmer", "gardening-gloves"],
+    "distractorWordIds": ["pliers", "hedge-trimmer", "saw"]
+  },
+  "long-handled-broom": {
+    "id": "long-handled-broom",
+    "text": "long-handled broom",
+    "ipa": "/ˌlɔːŋ ˈhændld bruːm/",
+    "meaningVi": "chổi cán dài",
+    "image": "/assets/scenes/tool-shed/objects/07_long-handled-broom.webp",
+    "acceptedAnswers": ["long-handled broom", "a long-handled broom", "broom", "a broom"],
+    "examples": [
+      {
+        "text": "I sweep the floor with a long-handled broom.",
+        "vi": "Mình quét sàn bằng chổi cán dài."
+      },
+      {
+        "text": "The long-handled broom is next to the workbench.",
+        "vi": "Cái chổi cán dài ở cạnh bàn làm việc."
+      }
+    ],
+    "relatedWordIds": ["rake", "shed-bucket"],
+    "distractorWordIds": ["rake", "garden-fork", "hoe"]
+  },
+  "saw": {
+    "id": "saw",
+    "text": "saw",
+    "ipa": "/sɔː/",
+    "meaningVi": "cái cưa",
+    "image": "/assets/scenes/tool-shed/objects/08_saw.webp",
+    "acceptedAnswers": ["saw", "a saw", "the saw"],
+    "examples": [
+      {
+        "text": "The saw is on the shelf.",
+        "vi": "Cái cưa ở trên kệ."
+      },
+      {
+        "text": "Dad cuts wood with a saw.",
+        "vi": "Bố cắt gỗ bằng cưa."
+      }
+    ],
+    "relatedWordIds": ["hammer", "nails"],
+    "distractorWordIds": ["hedge-trimmer", "pruning-shears", "wrench"]
+  },
+  "hammer": {
+    "id": "hammer",
+    "text": "hammer",
+    "ipa": "/ˈhæmər/",
+    "meaningVi": "cái búa",
+    "image": "/assets/scenes/tool-shed/objects/09_hammer.webp",
+    "acceptedAnswers": ["hammer", "a hammer", "the hammer"],
+    "examples": [
+      {
+        "text": "I use a hammer to drive a nail.",
+        "vi": "Mình dùng búa để đóng đinh."
+      },
+      {
+        "text": "The hammer is heavy.",
+        "vi": "Cái búa nặng."
+      }
+    ],
+    "relatedWordIds": ["nails", "saw"],
+    "distractorWordIds": ["wrench", "screwdriver", "pliers"]
+  },
+  "screwdriver": {
+    "id": "screwdriver",
+    "text": "screwdriver",
+    "ipa": "/ˈskruːdraɪvər/",
+    "meaningVi": "cái tua vít",
+    "image": "/assets/scenes/tool-shed/objects/10_screwdriver.webp",
+    "acceptedAnswers": ["screwdriver", "a screwdriver", "the screwdriver"],
+    "examples": [
+      {
+        "text": "I turn the screw with a screwdriver.",
+        "vi": "Mình vặn con ốc bằng tua vít."
+      },
+      {
+        "text": "The screwdriver has a yellow handle.",
+        "vi": "Cái tua vít có tay cầm màu vàng."
+      }
+    ],
+    "relatedWordIds": ["wrench", "pliers"],
+    "distractorWordIds": ["wrench", "hammer", "pliers"]
+  },
+  "wrench": {
+    "id": "wrench",
+    "text": "wrench",
+    "ipa": "/rentʃ/",
+    "meaningVi": "cái cờ lê",
+    "image": "/assets/scenes/tool-shed/objects/11_wrench.webp",
+    "acceptedAnswers": ["wrench", "a wrench", "the wrench", "spanner"],
+    "examples": [
+      {
+        "text": "I use a wrench to tighten a nut.",
+        "vi": "Mình dùng cờ lê để siết đai ốc."
+      },
+      {
+        "text": "The wrench hangs next to the pliers.",
+        "vi": "Cái cờ lê treo cạnh cái kìm."
+      }
+    ],
+    "relatedWordIds": ["screwdriver", "pliers"],
+    "distractorWordIds": ["pliers", "screwdriver", "hammer"]
+  },
+  "pliers": {
+    "id": "pliers",
+    "text": "pliers",
+    "ipa": "/ˈplaɪərz/",
+    "meaningVi": "cái kìm",
+    "image": "/assets/scenes/tool-shed/objects/12_pliers.webp",
+    "acceptedAnswers": ["pliers", "the pliers", "a pair of pliers"],
+    "examples": [
+      {
+        "text": "I hold the wire with pliers.",
+        "vi": "Mình giữ sợi dây điện bằng kìm."
+      },
+      {
+        "text": "The pliers have green handles.",
+        "vi": "Cái kìm có tay cầm màu xanh lá."
+      }
+    ],
+    "relatedWordIds": ["wrench", "screwdriver"],
+    "distractorWordIds": ["pruning-shears", "wrench", "screwdriver"]
+  },
+  "wheelbarrow": {
+    "id": "wheelbarrow",
+    "text": "wheelbarrow",
+    "ipa": "/ˈwiːlbæroʊ/",
+    "meaningVi": "xe cút kít",
+    "image": "/assets/scenes/tool-shed/objects/13_wheelbarrow.webp",
+    "acceptedAnswers": ["wheelbarrow", "a wheelbarrow", "the wheelbarrow"],
+    "examples": [
+      {
+        "text": "The wheelbarrow carries soil.",
+        "vi": "Xe cút kít chở đất."
+      },
+      {
+        "text": "The wheelbarrow has one wheel.",
+        "vi": "Xe cút kít có một bánh xe."
+      }
+    ],
+    "relatedWordIds": ["shovel", "fertilizer-bag"],
+    "distractorWordIds": ["lawn-mower", "tractor", "shed-bucket"]
+  },
+  "lawn-mower": {
+    "id": "lawn-mower",
+    "text": "lawn mower",
+    "ipa": "/ˈlɔːn ˌmoʊər/",
+    "meaningVi": "máy cắt cỏ",
+    "image": "/assets/scenes/tool-shed/objects/14_lawn-mower.webp",
+    "acceptedAnswers": ["lawn mower", "a lawn mower", "the lawn mower", "lawnmower", "mower"],
+    "examples": [
+      {
+        "text": "The lawn mower cuts the grass.",
+        "vi": "Máy cắt cỏ xén cỏ."
+      },
+      {
+        "text": "The lawn mower is on the rug.",
+        "vi": "Máy cắt cỏ ở trên tấm thảm."
+      }
+    ],
+    "relatedWordIds": ["tractor", "hedge-trimmer"],
+    "distractorWordIds": ["hedge-trimmer", "tractor", "wheelbarrow"]
+  },
+  "hedge-trimmer": {
+    "id": "hedge-trimmer",
+    "text": "hedge trimmer",
+    "ipa": "/ˈhedʒ ˌtrɪmər/",
+    "meaningVi": "máy tỉa hàng rào",
+    "image": "/assets/scenes/tool-shed/objects/15_hedge-trimmer.webp",
+    "acceptedAnswers": ["hedge trimmer", "a hedge trimmer", "the hedge trimmer", "trimmer"],
+    "examples": [
+      {
+        "text": "I trim the hedge with a hedge trimmer.",
+        "vi": "Mình tỉa hàng rào cây bằng máy tỉa hàng rào."
+      },
+      {
+        "text": "The hedge trimmer is on the workbench.",
+        "vi": "Máy tỉa hàng rào ở trên bàn làm việc."
+      }
+    ],
+    "relatedWordIds": ["pruning-shears", "lawn-mower"],
+    "distractorWordIds": ["lawn-mower", "saw", "pruning-shears"]
+  },
+  "tractor": {
+    "id": "tractor",
+    "text": "tractor",
+    "ipa": "/ˈtræktər/",
+    "meaningVi": "máy kéo",
+    "image": "/assets/scenes/tool-shed/objects/16_tractor.webp",
+    "acceptedAnswers": ["tractor", "a tractor", "the tractor"],
+    "examples": [
+      {
+        "text": "The tractor is parked outside the shed.",
+        "vi": "Máy kéo đỗ bên ngoài nhà kho."
+      },
+      {
+        "text": "The tractor has big wheels.",
+        "vi": "Máy kéo có bánh xe to."
+      }
+    ],
+    "relatedWordIds": ["wheelbarrow", "lawn-mower"],
+    "distractorWordIds": ["lawn-mower", "wheelbarrow", "hedge-trimmer"]
+  },
+  "shed-bucket": {
+    "id": "shed-bucket",
+    "text": "bucket",
+    "ipa": "/ˈbʌkət/",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/tool-shed/objects/17_shed-bucket.webp",
+    "acceptedAnswers": ["bucket", "a bucket", "the bucket", "pail", "a pail"],
+    "examples": [
+      {
+        "text": "The bucket is full of water.",
+        "vi": "Cái xô đầy nước."
+      },
+      {
+        "text": "The bucket is next to the rope.",
+        "vi": "Cái xô ở cạnh cuộn dây thừng."
+      }
+    ],
+    "relatedWordIds": ["rope", "nails"],
+    "distractorWordIds": ["seed-packet", "fertilizer-bag", "rope"]
+  },
+  "rope": {
+    "id": "rope",
+    "text": "rope",
+    "ipa": "/roʊp/",
+    "meaningVi": "dây thừng",
+    "image": "/assets/scenes/tool-shed/objects/18_rope.webp",
+    "acceptedAnswers": ["rope", "a rope", "the rope"],
+    "examples": [
+      {
+        "text": "I use rope to tie the branches.",
+        "vi": "Mình dùng dây thừng để buộc các cành cây."
+      },
+      {
+        "text": "The rope is very long.",
+        "vi": "Sợi dây thừng rất dài."
+      }
+    ],
+    "relatedWordIds": ["shed-bucket", "nails"],
+    "distractorWordIds": ["nails", "shed-bucket", "gardening-gloves"]
+  },
+  "nails": {
+    "id": "nails",
+    "text": "nails",
+    "ipa": "/neɪlz/",
+    "meaningVi": "đinh",
+    "image": "/assets/scenes/tool-shed/objects/19_nails.webp",
+    "acceptedAnswers": ["nails", "nail", "a nail", "the nails"],
+    "examples": [
+      {
+        "text": "The nails are in a small box.",
+        "vi": "Những cái đinh ở trong một cái hộp nhỏ."
+      },
+      {
+        "text": "Dad needs two nails.",
+        "vi": "Bố cần hai cái đinh."
+      }
+    ],
+    "relatedWordIds": ["hammer", "saw"],
+    "distractorWordIds": ["screwdriver", "rope", "wrench"]
+  },
+  "gardening-gloves": {
+    "id": "gardening-gloves",
+    "text": "gardening gloves",
+    "ipa": "/ˈɡɑːrdnɪŋ ɡlʌvz/",
+    "meaningVi": "găng tay làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/20_gardening-gloves.webp",
+    "acceptedAnswers": ["gardening gloves", "garden gloves", "gloves", "the gardening gloves"],
+    "examples": [
+      {
+        "text": "I wear gardening gloves.",
+        "vi": "Mình đeo găng tay làm vườn."
+      },
+      {
+        "text": "The gardening gloves are on the shelf.",
+        "vi": "Găng tay làm vườn ở trên kệ."
+      }
+    ],
+    "relatedWordIds": ["rubber-boots", "gardening-outfit"],
+    "distractorWordIds": ["rubber-boots", "gardening-outfit", "rope"]
+  },
+  "rubber-boots": {
+    "id": "rubber-boots",
+    "text": "rubber boots",
+    "ipa": "/ˌrʌbər ˈbuːts/",
+    "meaningVi": "ủng cao su",
+    "image": "/assets/scenes/tool-shed/objects/21_rubber-boots.webp",
+    "acceptedAnswers": ["rubber boots", "the rubber boots", "boots", "rain boots"],
+    "examples": [
+      {
+        "text": "I wear rubber boots in the mud.",
+        "vi": "Mình đi ủng cao su khi lội bùn."
+      },
+      {
+        "text": "My rubber boots have flowers on them.",
+        "vi": "Đôi ủng cao su của mình có hình hoa."
+      }
+    ],
+    "relatedWordIds": ["gardening-gloves", "gardening-outfit"],
+    "distractorWordIds": ["gardening-gloves", "gardening-outfit", "shed-bucket"]
+  },
+  "gardening-outfit": {
+    "id": "gardening-outfit",
+    "text": "gardening outfit",
+    "ipa": "/ˈɡɑːrdnɪŋ ˈaʊtfɪt/",
+    "meaningVi": "bộ quần áo làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/22_gardening-outfit.webp",
+    "acceptedAnswers": ["gardening outfit", "a gardening outfit", "outfit"],
+    "examples": [
+      {
+        "text": "This is my gardening outfit.",
+        "vi": "Đây là bộ quần áo làm vườn của mình."
+      },
+      {
+        "text": "The gardening outfit has a straw hat.",
+        "vi": "Bộ quần áo làm vườn có một chiếc mũ rơm."
+      }
+    ],
+    "relatedWordIds": ["gardening-gloves", "rubber-boots"],
+    "distractorWordIds": ["gardening-gloves", "rubber-boots", "fertilizer-bag"]
+  },
+  "seed-packet": {
+    "id": "seed-packet",
+    "text": "seed packet",
+    "ipa": "/ˈsiːd ˌpækɪt/",
+    "meaningVi": "gói hạt giống",
+    "image": "/assets/scenes/tool-shed/objects/23_seed-packet.webp",
+    "acceptedAnswers": ["seed packet", "a seed packet", "the seed packet", "packet of seeds"],
+    "examples": [
+      {
+        "text": "The seed packet is on the table.",
+        "vi": "Gói hạt giống ở trên bàn."
+      },
+      {
+        "text": "There are tiny seeds in the seed packet.",
+        "vi": "Trong gói hạt giống có những hạt nhỏ xíu."
+      }
+    ],
+    "relatedWordIds": ["fertilizer-bag", "garden-trowel"],
+    "distractorWordIds": ["fertilizer-bag", "shed-bucket", "gardening-gloves"]
+  },
+  "fertilizer-bag": {
+    "id": "fertilizer-bag",
+    "text": "fertilizer bag",
+    "ipa": "/ˈfɜːrtəlaɪzər bæɡ/",
+    "meaningVi": "bao phân bón",
+    "image": "/assets/scenes/tool-shed/objects/24_fertilizer-bag.webp",
+    "acceptedAnswers": ["fertilizer bag", "a fertilizer bag", "the fertilizer bag", "fertilizer"],
+    "examples": [
+      {
+        "text": "The fertilizer bag is heavy.",
+        "vi": "Bao phân bón nặng."
+      },
+      {
+        "text": "Fertilizer helps the plants grow.",
+        "vi": "Phân bón giúp cây lớn nhanh."
+      }
+    ],
+    "relatedWordIds": ["seed-packet", "wheelbarrow"],
+    "distractorWordIds": ["seed-packet", "shed-bucket", "gardening-outfit"]
   }
 }

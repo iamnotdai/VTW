@@ -6861,5 +6861,685 @@
         "suggestedAnswerPinyin": "Tā fàng le yí gè yáng táo hé yí gè niú yóu guǒ."
       }
     ]
+  },
+  {
+    "id": "in-the-tool-shed",
+    "sceneId": "tool-shed",
+    "title": "在工具房里",
+    "order": 1,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "爸爸带小本看工具房里的工具。",
+    "lines": [
+      {
+        "id": "in-the-tool-shed-l1",
+        "speakerId": "dad",
+        "text": "小本，这是我们的工具房。",
+        "textVi": "Ben ơi, đây là nhà kho dụng cụ của nhà mình.",
+        "pinyin": "Xiǎo Běn, zhè shì wǒ men de gōng jù fáng."
+      },
+      {
+        "id": "in-the-tool-shed-l2",
+        "speakerId": "ben",
+        "text": "哇！这里有好多工具。",
+        "textVi": "Ồ! Có nhiều dụng cụ quá.",
+        "pinyin": "Wā! Zhè lǐ yǒu hǎo duō gōng jù."
+      },
+      {
+        "id": "in-the-tool-shed-l3",
+        "speakerId": "dad",
+        "text": "长长的工具挂在墙上。",
+        "textVi": "Các dụng cụ cán dài treo trên tường.",
+        "pinyin": "Cháng cháng de gōng jù guà zài qiáng shàng."
+      },
+      {
+        "id": "in-the-tool-shed-l4",
+        "speakerId": "ben",
+        "text": "我看到一把铁锹和一把耙子。",
+        "textVi": "Con thấy cái xẻng và cái cào.",
+        "pinyin": "Wǒ kàn dào yì bǎ tiě qiāo hé yì bǎ pá zi."
+      },
+      {
+        "id": "in-the-tool-shed-l5",
+        "speakerId": "dad",
+        "text": "耙子旁边是什么？",
+        "textVi": "Cạnh cái cào là gì nào?",
+        "pinyin": "Pá zi páng biān shì shén me?"
+      },
+      {
+        "id": "in-the-tool-shed-l6",
+        "speakerId": "ben",
+        "text": "是锄头！",
+        "textVi": "Cái cuốc ạ!",
+        "pinyin": "Shì chú tou!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "in-the-tool-shed-q1",
+        "prompt": "墙上挂着什么？",
+        "suggestedAnswer": "长长的工具。",
+        "promptPinyin": "Qiáng shàng guà zhe shén me?",
+        "suggestedAnswerPinyin": "Cháng cháng de gōng jù."
+      },
+      {
+        "id": "in-the-tool-shed-q2",
+        "prompt": "小本看到了什么？",
+        "suggestedAnswer": "他看到了铁锹和耙子。",
+        "promptPinyin": "Xiǎo Běn kàn dào le shén me?",
+        "suggestedAnswerPinyin": "Tā kàn dào le tiě qiāo hé pá zi."
+      }
+    ]
+  },
+  {
+    "id": "digging-a-hole",
+    "sceneId": "tool-shed",
+    "title": "挖一个坑",
+    "order": 2,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "妈妈和莉莉准备种一棵树。",
+    "lines": [
+      {
+        "id": "digging-a-hole-l1",
+        "speakerId": "mom",
+        "text": "我们今天种一棵树吧。",
+        "textVi": "Hôm nay mình trồng cây nhé.",
+        "pinyin": "Wǒ men jīn tiān zhòng yì kē shù ba."
+      },
+      {
+        "id": "digging-a-hole-l2",
+        "speakerId": "lily",
+        "text": "我们要挖一个坑。",
+        "textVi": "Mình cần đào một cái hố.",
+        "pinyin": "Wǒ men yào wā yí gè kēng."
+      },
+      {
+        "id": "digging-a-hole-l3",
+        "speakerId": "mom",
+        "text": "你能拿一下铁锹吗？",
+        "textVi": "Con lấy cái xẻng được không?",
+        "pinyin": "Nǐ néng ná yí xià tiě qiāo ma?"
+      },
+      {
+        "id": "digging-a-hole-l4",
+        "speakerId": "lily",
+        "text": "给你。它好大呀！",
+        "textVi": "Đây ạ. Nó to quá!",
+        "pinyin": "Gěi nǐ. Tā hǎo dà ya!"
+      },
+      {
+        "id": "digging-a-hole-l5",
+        "speakerId": "mom",
+        "text": "把小铲子也拿上。",
+        "textVi": "Con lấy cả cái xẻng nhỏ làm vườn nữa nhé.",
+        "pinyin": "Bǎ xiǎo chǎn zi yě ná shàng."
+      },
+      {
+        "id": "digging-a-hole-l6",
+        "speakerId": "lily",
+        "text": "好的。它又小又轻。",
+        "textVi": "Vâng. Nó nhỏ và nhẹ.",
+        "pinyin": "Hǎo de. Tā yòu xiǎo yòu qīng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "digging-a-hole-q1",
+        "prompt": "她们想种什么？",
+        "suggestedAnswer": "一棵树。",
+        "promptPinyin": "Tā men xiǎng zhòng shén me?",
+        "suggestedAnswerPinyin": "Yì kē shù."
+      },
+      {
+        "id": "digging-a-hole-q2",
+        "prompt": "小铲子大吗？",
+        "suggestedAnswer": "不大，它很小。",
+        "promptPinyin": "Xiǎo chǎn zi dà ma?",
+        "suggestedAnswerPinyin": "Bú dà, tā hěn xiǎo."
+      }
+    ]
+  },
+  {
+    "id": "raking-leaves",
+    "sceneId": "tool-shed",
+    "title": "扫树叶",
+    "order": 3,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "莉莉帮爸爸收树叶。",
+    "lines": [
+      {
+        "id": "raking-leaves-l1",
+        "speakerId": "dad",
+        "text": "你看，到处都是树叶。",
+        "textVi": "Nhìn kìa, lá rụng khắp nơi.",
+        "pinyin": "Nǐ kàn, dào chù dōu shì shù yè."
+      },
+      {
+        "id": "raking-leaves-l2",
+        "speakerId": "lily",
+        "text": "爸爸，我来帮忙！",
+        "textVi": "Con giúp được ạ, bố!",
+        "pinyin": "Bà ba, wǒ lái bāng máng!"
+      },
+      {
+        "id": "raking-leaves-l3",
+        "speakerId": "dad",
+        "text": "你用耙子吧。",
+        "textVi": "Con dùng cái cào nhé.",
+        "pinyin": "Nǐ yòng pá zi ba."
+      },
+      {
+        "id": "raking-leaves-l4",
+        "speakerId": "lily",
+        "text": "我在把树叶都收起来。",
+        "textVi": "Con đang gom hết lá lại.",
+        "pinyin": "Wǒ zài bǎ shù yè dōu shōu qǐ lái."
+      },
+      {
+        "id": "raking-leaves-l5",
+        "speakerId": "dad",
+        "text": "真棒！现在把它们放进手推车里。",
+        "textVi": "Giỏi lắm! Giờ con bỏ lá vào xe cút kít nhé.",
+        "pinyin": "Zhēn bàng! Xiàn zài bǎ tā men fàng jìn shǒu tuī chē lǐ."
+      },
+      {
+        "id": "raking-leaves-l6",
+        "speakerId": "lily",
+        "text": "手推车装满了！",
+        "textVi": "Xe cút kít đầy rồi ạ!",
+        "pinyin": "Shǒu tuī chē zhuāng mǎn le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "raking-leaves-q1",
+        "prompt": "莉莉用什么？",
+        "suggestedAnswer": "她用耙子。",
+        "promptPinyin": "Lì li yòng shén me?",
+        "suggestedAnswerPinyin": "Tā yòng pá zi."
+      },
+      {
+        "id": "raking-leaves-q2",
+        "prompt": "树叶放在哪里？",
+        "suggestedAnswer": "放在手推车里。",
+        "promptPinyin": "Shù yè fàng zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Fàng zài shǒu tuī chē lǐ."
+      }
+    ]
+  },
+  {
+    "id": "fixing-the-gate",
+    "sceneId": "tool-shed",
+    "title": "修大门",
+    "order": 4,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "小本和爸爸一起修花园的门。",
+    "lines": [
+      {
+        "id": "fixing-the-gate-l1",
+        "speakerId": "ben",
+        "text": "爸爸，门坏了。",
+        "textVi": "Bố ơi, cái cổng bị hỏng rồi.",
+        "pinyin": "Bà ba, mén huài le."
+      },
+      {
+        "id": "fixing-the-gate-l2",
+        "speakerId": "dad",
+        "text": "我们来修吧。请把锤子拿过来。",
+        "textVi": "Mình sửa nhé. Con mang cái búa lại đây.",
+        "pinyin": "Wǒ men lái xiū ba. Qǐng bǎ chuí zi ná guò lái."
+      },
+      {
+        "id": "fixing-the-gate-l3",
+        "speakerId": "ben",
+        "text": "锤子给你。你要钉子吗？",
+        "textVi": "Búa đây ạ. Bố có cần đinh không?",
+        "pinyin": "Chuí zi gěi nǐ. Nǐ yào dīng zi ma?"
+      },
+      {
+        "id": "fixing-the-gate-l4",
+        "speakerId": "dad",
+        "text": "要。钉子在小盒子里。",
+        "textVi": "Có. Đinh ở trong cái hộp nhỏ.",
+        "pinyin": "Yào. Dīng zi zài xiǎo hé zi lǐ."
+      },
+      {
+        "id": "fixing-the-gate-l5",
+        "speakerId": "ben",
+        "text": "我可以用锯子吗？",
+        "textVi": "Con dùng cái cưa được không ạ?",
+        "pinyin": "Wǒ kě yǐ yòng jù zi ma?"
+      },
+      {
+        "id": "fixing-the-gate-l6",
+        "speakerId": "dad",
+        "text": "不行，锯子很锋利。你帮我拿盒子吧。",
+        "textVi": "Không, cái cưa sắc lắm. Con cầm cái hộp nhé.",
+        "pinyin": "Bù xíng, jù zi hěn fēng lì. Nǐ bāng wǒ ná hé zi ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "fixing-the-gate-q1",
+        "prompt": "什么坏了？",
+        "suggestedAnswer": "门坏了。",
+        "promptPinyin": "Shén me huài le?",
+        "suggestedAnswerPinyin": "Mén huài le."
+      },
+      {
+        "id": "fixing-the-gate-q2",
+        "prompt": "钉子在哪里？",
+        "suggestedAnswer": "在小盒子里。",
+        "promptPinyin": "Dīng zi zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Zài xiǎo hé zi lǐ."
+      }
+    ]
+  },
+  {
+    "id": "tools-on-the-board",
+    "sceneId": "tool-shed",
+    "title": "板上的工具",
+    "order": 5,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "妈妈告诉莉莉小工具的名字。",
+    "lines": [
+      {
+        "id": "tools-on-the-board-l1",
+        "speakerId": "lily",
+        "text": "妈妈，这个黄色的工具是什么？",
+        "textVi": "Mẹ ơi, dụng cụ màu vàng này là gì ạ?",
+        "pinyin": "Mā ma, zhè ge huáng sè de gōng jù shì shén me?"
+      },
+      {
+        "id": "tools-on-the-board-l2",
+        "speakerId": "mom",
+        "text": "这是螺丝刀。它用来拧螺丝。",
+        "textVi": "Đó là cái tua vít. Nó dùng để vặn ốc vít.",
+        "pinyin": "Zhè shì luó sī dāo. Tā yòng lái nǐng luó sī."
+      },
+      {
+        "id": "tools-on-the-board-l3",
+        "speakerId": "lily",
+        "text": "那这个银色的呢？",
+        "textVi": "Còn cái màu bạc này ạ?",
+        "pinyin": "Nà zhè ge yín sè de ne?"
+      },
+      {
+        "id": "tools-on-the-board-l4",
+        "speakerId": "mom",
+        "text": "那是扳手。",
+        "textVi": "Đó là cái cờ lê.",
+        "pinyin": "Nà shì bān shou."
+      },
+      {
+        "id": "tools-on-the-board-l5",
+        "speakerId": "lily",
+        "text": "钳子是用来做什么的？",
+        "textVi": "Cái kìm dùng để làm gì ạ?",
+        "pinyin": "Qián zi shì yòng lái zuò shén me de?"
+      },
+      {
+        "id": "tools-on-the-board-l6",
+        "speakerId": "mom",
+        "text": "它用来夹小东西，比如铁丝。",
+        "textVi": "Kìm dùng để kẹp những vật nhỏ, như dây điện.",
+        "pinyin": "Tā yòng lái jiā xiǎo dōng xi, bǐ rú tiě sī."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "tools-on-the-board-q1",
+        "prompt": "螺丝刀是什么颜色的？",
+        "suggestedAnswer": "是黄色的。",
+        "promptPinyin": "Luó sī dāo shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Shì huáng sè de."
+      },
+      {
+        "id": "tools-on-the-board-q2",
+        "prompt": "钳子用来夹什么？",
+        "suggestedAnswer": "小东西，比如铁丝。",
+        "suggestedAnswerPinyin": "Xiǎo dōng xi, bǐ rú tiě sī.",
+        "promptPinyin": "Qián zi yòng lái jiā shén me?"
+      }
+    ]
+  },
+  {
+    "id": "cutting-the-grass",
+    "sceneId": "tool-shed",
+    "title": "割草",
+    "order": 6,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "爸爸割草，还修剪树篱。",
+    "lines": [
+      {
+        "id": "cutting-the-grass-l1",
+        "speakerId": "ben",
+        "text": "草好长啊。",
+        "textVi": "Cỏ dài quá.",
+        "pinyin": "Cǎo hǎo cháng a."
+      },
+      {
+        "id": "cutting-the-grass-l2",
+        "speakerId": "dad",
+        "text": "我们用割草机吧。",
+        "textVi": "Mình dùng máy cắt cỏ nhé.",
+        "pinyin": "Wǒ men yòng gē cǎo jī ba."
+      },
+      {
+        "id": "cutting-the-grass-l3",
+        "speakerId": "ben",
+        "text": "声音好大！",
+        "textVi": "Nó ồn quá!",
+        "pinyin": "Shēng yīn hǎo dà!"
+      },
+      {
+        "id": "cutting-the-grass-l4",
+        "speakerId": "dad",
+        "text": "是的。请站在我后面。",
+        "textVi": "Ừ. Con đứng sau bố nhé.",
+        "pinyin": "Shì de. Qǐng zhàn zài wǒ hòu miàn."
+      },
+      {
+        "id": "cutting-the-grass-l5",
+        "speakerId": "ben",
+        "text": "我们也修剪一下树篱好吗？",
+        "textVi": "Mình tỉa hàng rào cây luôn được không ạ?",
+        "pinyin": "Wǒ men yě xiū jiǎn yí xià shù lí hǎo ma?"
+      },
+      {
+        "id": "cutting-the-grass-l6",
+        "speakerId": "dad",
+        "text": "好啊。我用绿篱机。",
+        "textVi": "Được chứ. Bố sẽ dùng máy tỉa hàng rào.",
+        "pinyin": "Hǎo a. Wǒ yòng lǜ lí jī."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "cutting-the-grass-q1",
+        "prompt": "爸爸用什么割草？",
+        "suggestedAnswer": "用割草机。",
+        "promptPinyin": "Bà ba yòng shén me gē cǎo?",
+        "suggestedAnswerPinyin": "Yòng gē cǎo jī."
+      },
+      {
+        "id": "cutting-the-grass-q2",
+        "prompt": "小本站在哪里？",
+        "suggestedAnswer": "站在爸爸后面。",
+        "promptPinyin": "Xiǎo Běn zhàn zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Zhàn zài bà ba hòu miàn."
+      }
+    ]
+  },
+  {
+    "id": "ready-for-the-garden",
+    "sceneId": "tool-shed",
+    "title": "准备去花园",
+    "order": 7,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "莉莉穿上园艺服。",
+    "lines": [
+      {
+        "id": "ready-for-the-garden-l1",
+        "speakerId": "mom",
+        "text": "莉莉，穿上你的园艺服。",
+        "textVi": "Lily ơi, con mặc bộ quần áo làm vườn vào nhé.",
+        "pinyin": "Lì li, chuān shàng nǐ de yuán yì fú."
+      },
+      {
+        "id": "ready-for-the-garden-l2",
+        "speakerId": "lily",
+        "text": "我很喜欢这顶草帽！",
+        "textVi": "Con thích cái mũ rơm lắm!",
+        "pinyin": "Wǒ hěn xǐ huan zhè dǐng cǎo mào!"
+      },
+      {
+        "id": "ready-for-the-garden-l3",
+        "speakerId": "mom",
+        "text": "别忘了你的园艺手套。",
+        "textVi": "Đừng quên găng tay làm vườn nhé.",
+        "pinyin": "Bié wàng le nǐ de yuán yì shǒu tào."
+      },
+      {
+        "id": "ready-for-the-garden-l4",
+        "speakerId": "lily",
+        "text": "手套让我的手保持干净。",
+        "textVi": "Găng tay giữ cho tay con sạch sẽ.",
+        "pinyin": "Shǒu tào ràng wǒ de shǒu bǎo chí gān jing."
+      },
+      {
+        "id": "ready-for-the-garden-l5",
+        "speakerId": "mom",
+        "text": "还有雨靴。今天地上有很多泥。",
+        "textVi": "Và đôi ủng cao su nữa. Hôm nay đất bùn lắm.",
+        "pinyin": "Hái yǒu yǔ xuē. Jīn tiān dì shàng yǒu hěn duō ní."
+      },
+      {
+        "id": "ready-for-the-garden-l6",
+        "speakerId": "lily",
+        "text": "我准备好了！",
+        "textVi": "Giờ con sẵn sàng rồi!",
+        "pinyin": "Wǒ zhǔn bèi hǎo le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "ready-for-the-garden-q1",
+        "prompt": "莉莉喜欢什么？",
+        "suggestedAnswer": "草帽。",
+        "promptPinyin": "Lì li xǐ huan shén me?",
+        "suggestedAnswerPinyin": "Cǎo mào."
+      },
+      {
+        "id": "ready-for-the-garden-q2",
+        "prompt": "莉莉为什么穿雨靴？",
+        "suggestedAnswer": "因为地上有泥。",
+        "promptPinyin": "Lì li wèi shén me chuān yǔ xuē?",
+        "suggestedAnswerPinyin": "Yīn wèi dì shàng yǒu ní."
+      }
+    ]
+  },
+  {
+    "id": "planting-seeds",
+    "sceneId": "tool-shed",
+    "title": "播种",
+    "order": 8,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "小本和妈妈种番茄种子。",
+    "lines": [
+      {
+        "id": "planting-seeds-l1",
+        "speakerId": "ben",
+        "text": "妈妈，这个种子袋里是什么？",
+        "textVi": "Mẹ ơi, trong gói hạt giống này có gì ạ?",
+        "pinyin": "Mā ma, zhè ge zhǒng zi dài lǐ shì shén me?"
+      },
+      {
+        "id": "planting-seeds-l2",
+        "speakerId": "mom",
+        "text": "番茄种子。我们来种吧。",
+        "textVi": "Hạt cà chua. Mình gieo nhé.",
+        "pinyin": "Fān qié zhǒng zi. Wǒ men lái zhòng ba."
+      },
+      {
+        "id": "planting-seeds-l3",
+        "speakerId": "ben",
+        "text": "我们需要肥料吗？",
+        "textVi": "Mình có cần phân bón không ạ?",
+        "pinyin": "Wǒ men xū yào féi liào ma?"
+      },
+      {
+        "id": "planting-seeds-l4",
+        "speakerId": "mom",
+        "text": "需要。肥料能帮助植物长大。",
+        "textVi": "Có. Phân bón giúp cây lớn.",
+        "pinyin": "Xū yào. Féi liào néng bāng zhù zhí wù zhǎng dà."
+      },
+      {
+        "id": "planting-seeds-l5",
+        "speakerId": "ben",
+        "text": "肥料袋太重了！",
+        "textVi": "Bao phân bón nặng quá!",
+        "pinyin": "Féi liào dài tài zhòng le!"
+      },
+      {
+        "id": "planting-seeds-l6",
+        "speakerId": "mom",
+        "text": "我们一起抬吧。",
+        "textVi": "Mình cùng khiêng nhé.",
+        "pinyin": "Wǒ men yì qǐ tái ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "planting-seeds-q1",
+        "prompt": "袋子里是什么种子？",
+        "suggestedAnswer": "番茄种子。",
+        "suggestedAnswerPinyin": "Fān qié zhǒng zi.",
+        "promptPinyin": "Dài zi lǐ shì shén me zhǒng zi?"
+      },
+      {
+        "id": "planting-seeds-q2",
+        "prompt": "肥料袋轻吗？",
+        "suggestedAnswer": "不轻，它很重。",
+        "promptPinyin": "Féi liào dài qīng ma?",
+        "suggestedAnswerPinyin": "Bù qīng, tā hěn zhòng."
+      }
+    ]
+  },
+  {
+    "id": "a-bucket-and-a-rope",
+    "sceneId": "tool-shed",
+    "title": "水桶和绳子",
+    "order": 9,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "莉莉和爸爸帮小树站直。",
+    "lines": [
+      {
+        "id": "a-bucket-and-a-rope-l1",
+        "speakerId": "lily",
+        "text": "爸爸，小树快倒了。",
+        "textVi": "Bố ơi, cây non sắp đổ rồi.",
+        "pinyin": "Bà ba, xiǎo shù kuài dǎo le."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l2",
+        "speakerId": "dad",
+        "text": "我们用绳子把它绑起来吧。",
+        "textVi": "Mình buộc nó bằng dây thừng nhé.",
+        "pinyin": "Wǒ men yòng shéng zi bǎ tā bǎng qǐ lái ba."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l3",
+        "speakerId": "lily",
+        "text": "绳子在工作台上。",
+        "textVi": "Dây thừng ở trên bàn làm việc ạ.",
+        "pinyin": "Shéng zi zài gōng zuò tái shàng."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l4",
+        "speakerId": "dad",
+        "text": "谢谢你。现在把铁桶装满水。",
+        "textVi": "Cảm ơn con. Giờ con đổ đầy nước vào xô nhé.",
+        "pinyin": "Xiè xiè nǐ. Xiàn zài bǎ tiě tǒng zhuāng mǎn shuǐ."
+      },
+      {
+        "id": "a-bucket-and-a-rope-l5",
+        "speakerId": "lily",
+        "text": "铁桶装满了！",
+        "textVi": "Xô đầy rồi ạ!",
+        "pinyin": "Tiě tǒng zhuāng mǎn le!"
+      },
+      {
+        "id": "a-bucket-and-a-rope-l6",
+        "speakerId": "dad",
+        "text": "太好了。我们给小树浇水吧。",
+        "textVi": "Tốt lắm. Mình tưới cây thôi.",
+        "pinyin": "Tài hǎo le. Wǒ men gěi xiǎo shù jiāo shuǐ ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-bucket-and-a-rope-q1",
+        "prompt": "他们用什么绑小树？",
+        "suggestedAnswer": "用绳子。",
+        "promptPinyin": "Tā men yòng shén me bǎng xiǎo shù?",
+        "suggestedAnswerPinyin": "Yòng shéng zi."
+      },
+      {
+        "id": "a-bucket-and-a-rope-q2",
+        "prompt": "铁桶里有什么？",
+        "suggestedAnswer": "水。",
+        "promptPinyin": "Tiě tǒng lǐ yǒu shén me?",
+        "suggestedAnswerPinyin": "Shuǐ."
+      }
+    ]
+  },
+  {
+    "id": "the-big-tractor",
+    "sceneId": "tool-shed",
+    "title": "大拖拉机",
+    "order": 10,
+    "poster": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+    "description": "小本坐在大拖拉机上。",
+    "lines": [
+      {
+        "id": "the-big-tractor-l1",
+        "speakerId": "ben",
+        "text": "爸爸，我可以坐在拖拉机上吗？",
+        "textVi": "Bố ơi, con ngồi lên máy kéo được không ạ?",
+        "pinyin": "Bà ba, wǒ kě yǐ zuò zài tuō lā jī shàng ma?"
+      },
+      {
+        "id": "the-big-tractor-l2",
+        "speakerId": "dad",
+        "text": "可以，但是不要碰钥匙。",
+        "textVi": "Được, nhưng đừng chạm vào chìa khóa nhé.",
+        "pinyin": "Kě yǐ, dàn shì bú yào pèng yào shi."
+      },
+      {
+        "id": "the-big-tractor-l3",
+        "speakerId": "ben",
+        "text": "轮子比我还大！",
+        "textVi": "Bánh xe còn to hơn con!",
+        "pinyin": "Lún zi bǐ wǒ hái dà!"
+      },
+      {
+        "id": "the-big-tractor-l4",
+        "speakerId": "dad",
+        "text": "拖拉机能拉很重的东西。",
+        "textVi": "Máy kéo kéo được những thứ nặng.",
+        "pinyin": "Tuō lā jī néng lā hěn zhòng de dōng xi."
+      },
+      {
+        "id": "the-big-tractor-l5",
+        "speakerId": "ben",
+        "text": "它能拉手推车吗？",
+        "textVi": "Nó kéo xe cút kít được không ạ?",
+        "pinyin": "Tā néng lā shǒu tuī chē ma?"
+      },
+      {
+        "id": "the-big-tractor-l6",
+        "speakerId": "dad",
+        "text": "哈哈，手推车我们用手推。",
+        "textVi": "Ha ha, xe cút kít thì mình đẩy bằng tay.",
+        "pinyin": "Hā hā, shǒu tuī chē wǒ men yòng shǒu tuī."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "the-big-tractor-q1",
+        "prompt": "小本想坐在哪里？",
+        "suggestedAnswer": "坐在拖拉机上。",
+        "promptPinyin": "Xiǎo Běn xiǎng zuò zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Zuò zài tuō lā jī shàng."
+      },
+      {
+        "id": "the-big-tractor-q2",
+        "prompt": "我们怎么推手推车？",
+        "suggestedAnswer": "用手推。",
+        "promptPinyin": "Wǒ men zěn me tuī shǒu tuī chē?",
+        "suggestedAnswerPinyin": "Yòng shǒu tuī."
+      }
+    ]
   }
 ]

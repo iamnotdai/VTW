@@ -323,3 +323,25 @@ describe('Fruit Garden', () => {
     expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
   });
 });
+
+describe('Tool Shed', () => {
+  const shed = getScene('tool-shed')!;
+
+  it('is an available Garden scene with 24 words, 10 conversations and one hotspot per word', () => {
+    expect(shed.status).toBe('available');
+    expect(shed.group).toBe('garden');
+    expect(getSceneWords(shed)).toHaveLength(24);
+    expect(getSceneConversations(shed)).toHaveLength(10);
+    expect(shed.hotspots.map((hotspot) => hotspot.wordId).sort()).toEqual([...shed.wordIds].sort());
+  });
+
+  it('uses traced contours, not one big box around the picture', () => {
+    const oversized = shed.hotspots.filter((hotspot) =>
+      hotspot.svgPath.split(/(?=M)/).some((subPath) => {
+        const bounds = getPathBounds(subPath)!;
+        return (bounds.width * bounds.height) / (shed.width * shed.height) >= 0.35;
+      }),
+    );
+    expect(oversized.map((hotspot) => hotspot.wordId)).toEqual([]);
+  });
+});

@@ -1,0 +1,181 @@
+{
+  "id": "tool-shed",
+  "title": "Tool Shed",
+  "group": "garden",
+  "order": 4,
+  "description": "Learn words and practice conversations in the tool shed.",
+  "status": "available",
+  "thumbnail": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+  "background": "/assets/scenes/tool-shed/tool-shed-desktop.webp",
+  "width": 1672,
+  "height": 941,
+  "wordIds": [
+    "shovel",
+    "garden-trowel",
+    "rake",
+    "hoe",
+    "garden-fork",
+    "pruning-shears",
+    "long-handled-broom",
+    "saw",
+    "hammer",
+    "screwdriver",
+    "wrench",
+    "pliers",
+    "wheelbarrow",
+    "lawn-mower",
+    "hedge-trimmer",
+    "tractor",
+    "shed-bucket",
+    "rope",
+    "nails",
+    "gardening-gloves",
+    "rubber-boots",
+    "gardening-outfit",
+    "seed-packet",
+    "fertilizer-bag"
+  ],
+  "conversationIds": [
+    "in-the-tool-shed",
+    "digging-a-hole",
+    "raking-leaves",
+    "fixing-the-gate",
+    "tools-on-the-board",
+    "cutting-the-grass",
+    "ready-for-the-garden",
+    "planting-seeds",
+    "a-bucket-and-a-rope",
+    "the-big-tractor"
+  ],
+  "hotspots": [
+    {
+      "wordId": "shovel",
+      "svgPath": "M 190 160 L 205 154 L 228 154 L 243 160 L 243 172 L 230 192 L 227 230 L 227 410 L 232 450 L 255 452 L 262 460 L 260 510 L 250 540 L 228 566 L 200 548 L 182 515 L 180 462 L 190 452 L 210 450 L 213 410 L 213 230 L 210 192 L 192 172 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "garden-trowel",
+      "svgPath": "M 640 240 L 645 232 L 651 232 L 656 240 L 655 283 L 651 297 L 662 300 L 664 318 L 658 335 L 648 354 L 638 335 L 632 318 L 633 300 L 645 297 L 640 283 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "rake",
+      "svgPath": "M 248 146 L 252 139 L 290 131 L 317 129 L 345 131 L 386 141 L 384 148 L 350 185 L 335 196 L 323 206 L 323 540 L 325 566 L 308 566 L 309 540 L 310 206 L 298 196 L 284 186 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "hoe",
+      "svgPath": "M 362 208 L 372 202 L 422 203 L 420 215 L 392 215 L 391 245 L 392 540 L 394 565 L 377 565 L 377 540 L 378 245 L 380 215 L 365 216 Z",
+      "zIndex": 2,
+      "touchPadding": 4
+    },
+    {
+      "wordId": "garden-fork",
+      "svgPath": "M 427 165 L 435 157 L 475 157 L 483 165 L 482 180 L 463 198 L 462 388 L 465 392 L 465 422 L 478 430 L 486 440 L 486 535 L 422 535 L 424 440 L 432 430 L 445 422 L 445 392 L 448 388 L 447 198 L 428 180 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "pruning-shears",
+      "svgPath": "M 701 248 L 707 247 L 713 270 L 718 248 L 724 248 L 727 262 L 721 285 L 728 296 L 735 300 L 734 320 L 736 345 L 726 349 L 720 330 L 714 312 L 707 330 L 703 348 L 693 346 L 694 320 L 692 300 L 700 296 L 707 285 L 700 262 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "long-handled-broom",
+      "svgPath": "M 518 145 L 524 140 L 531 145 L 532 400 L 538 404 L 538 420 L 548 440 L 556 462 L 564 500 L 572 548 L 540 552 L 505 552 L 484 548 L 490 500 L 500 462 L 508 440 L 516 420 L 516 404 L 518 400 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "saw",
+      "svgPath": "M 722 180 L 732 171 L 775 170 L 820 172 L 925 176 L 931 182 L 930 194 L 880 200 L 820 210 L 778 222 L 770 224 L 730 224 L 721 218 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "hammer",
+      "svgPath": "M 750 262 L 760 250 L 780 245 L 802 247 L 812 250 L 812 262 L 800 262 L 793 265 L 793 300 L 796 310 L 795 348 L 788 351 L 776 351 L 772 348 L 772 310 L 775 300 L 775 265 L 765 262 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "screwdriver",
+      "svgPath": "M 843 243 L 845 239 L 848 243 L 848 290 L 855 292 L 856 340 L 850 344 L 840 344 L 836 340 L 837 292 L 843 290 Z",
+      "zIndex": 3,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "wrench",
+      "svgPath": "M 882 252 L 888 245 L 893 255 L 899 255 L 902 245 L 908 252 L 906 264 L 902 270 L 902 322 L 908 330 L 907 340 L 897 344 L 886 340 L 885 330 L 890 322 L 890 270 L 885 264 Z",
+      "zIndex": 3,
+      "touchPadding": 8
+    },
+    {
+      "wordId": "pliers",
+      "svgPath": "M 950 255 L 955 245 L 960 252 L 965 245 L 970 255 L 969 280 L 975 290 L 978 315 L 979 340 L 970 344 L 965 330 L 960 300 L 955 300 L 950 330 L 945 344 L 934 341 L 934 315 L 938 290 L 946 280 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "wheelbarrow",
+      "svgPath": "M 200 650 L 210 644 L 245 656 L 258 672 L 292 718 L 295 690 L 292 685 L 300 676 L 312 670 L 296 656 L 274 648 L 276 640 L 292 641 L 314 650 L 318 662 L 332 676 L 420 670 L 515 675 L 545 688 L 540 698 L 528 708 L 518 740 L 525 760 L 523 820 L 505 850 L 470 852 L 445 830 L 438 812 L 410 800 L 405 820 L 390 825 L 370 818 L 365 800 L 345 790 L 342 830 L 330 840 L 318 838 L 312 815 L 320 775 L 308 766 L 285 738 L 252 695 L 240 677 L 204 672 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "lawn-mower",
+      "svgPath": "M 785 690 L 795 686 L 838 686 L 845 696 L 840 712 L 820 745 L 832 752 L 832 830 L 815 838 L 795 835 L 790 848 L 770 852 L 755 842 L 738 845 L 735 860 L 715 864 L 700 855 L 690 845 L 665 848 L 648 853 L 632 845 L 634 818 L 650 805 L 665 800 L 668 778 L 690 769 L 728 770 L 745 748 L 770 712 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "hedge-trimmer",
+      "svgPath": "M 820 468 L 835 462 L 925 458 L 925 440 L 932 432 L 945 433 L 948 420 L 960 412 L 975 413 L 985 418 L 990 414 L 1008 414 L 1012 424 L 1040 430 L 1052 445 L 1050 470 L 1040 480 L 1000 484 L 960 483 L 940 480 L 900 478 L 830 480 L 818 475 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "tractor",
+      "svgPath": "M 1364 435 L 1375 428 L 1500 428 L 1510 440 L 1508 525 L 1525 518 L 1556 520 L 1558 545 L 1600 560 L 1625 590 L 1640 640 L 1642 760 L 1630 820 L 1600 845 L 1540 850 L 1470 845 L 1420 830 L 1395 850 L 1385 885 L 1350 902 L 1250 902 L 1215 880 L 1200 840 L 1170 838 L 1130 840 L 1120 860 L 1095 868 L 1000 868 L 975 850 L 966 800 L 968 720 L 980 690 L 1040 678 L 1050 640 L 1046 610 L 1050 590 L 1080 548 L 1150 525 L 1270 518 L 1278 490 L 1300 474 L 1340 475 L 1370 488 L 1366 470 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "shed-bucket",
+      "svgPath": "M 735 418 L 742 410 L 805 410 L 810 418 L 806 440 L 802 485 L 748 485 L 742 440 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "rope",
+      "svgPath": "M 660 462 L 668 448 L 685 441 L 705 441 L 720 448 L 728 462 L 728 478 L 718 485 L 670 485 L 659 478 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "nails",
+      "svgPath": "M 588 460 L 600 456 L 610 451 L 625 452 L 645 458 L 646 486 L 588 486 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "gardening-gloves",
+      "svgPath": "M 1292 355 L 1310 349 L 1335 352 L 1345 350 L 1375 349 L 1386 356 L 1384 395 L 1376 418 L 1345 420 L 1338 410 L 1330 420 L 1300 420 L 1292 400 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "rubber-boots",
+      "svgPath": "M 1433 342 L 1465 338 L 1467 324 L 1481 324 L 1482 338 L 1490 342 L 1520 338 L 1521 324 L 1535 324 L 1537 340 L 1542 345 L 1540 380 L 1542 420 L 1530 427 L 1480 427 L 1420 427 L 1420 410 L 1432 385 L 1432 345 Z",
+      "zIndex": 3
+    },
+    {
+      "wordId": "gardening-outfit",
+      "svgPath": "M 1140 102 L 1152 102 L 1150 140 L 1175 140 L 1192 150 L 1200 165 L 1222 182 L 1222 205 L 1212 220 L 1200 228 L 1210 250 L 1225 300 L 1234 340 L 1232 358 L 1210 360 L 1205 345 L 1205 360 L 1210 400 L 1216 450 L 1210 466 L 1150 470 L 1080 466 L 1074 450 L 1080 400 L 1085 360 L 1082 345 L 1078 360 L 1052 358 L 1050 340 L 1060 300 L 1075 250 L 1085 228 L 1070 222 L 1058 205 L 1060 185 L 1090 160 L 1105 143 L 1138 140 Z",
+      "zIndex": 2
+    },
+    {
+      "wordId": "seed-packet",
+      "svgPath": "M 1310 236 L 1335 232 L 1363 236 L 1363 300 L 1310 300 Z",
+      "zIndex": 3,
+      "touchPadding": 6
+    },
+    {
+      "wordId": "fertilizer-bag",
+      "svgPath": "M 1404 150 L 1430 144 L 1500 144 L 1517 150 L 1516 175 L 1522 230 L 1530 290 L 1528 301 L 1395 301 L 1394 290 L 1402 230 L 1404 175 Z",
+      "zIndex": 3
+    }
+  ]
+}

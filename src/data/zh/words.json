@@ -5777,5 +5777,557 @@
     ],
     "relatedWordIds": ["apple", "banana", "grape"],
     "distractorWordIds": ["watermelon", "pineapple", "coconut"]
+  },
+  "shovel": {
+    "id": "shovel",
+    "text": "铁锹",
+    "pinyin": "tiěqiāo",
+    "measure": "把",
+    "meaningVi": "cái xẻng",
+    "image": "/assets/scenes/tool-shed/objects/01_shovel.webp",
+    "acceptedAnswers": ["铁锹", "铁铲", "铲子"],
+    "examples": [
+      {
+        "text": "我用铁锹挖一个坑。",
+        "vi": "Mình dùng xẻng để đào một cái hố.",
+        "pinyin": "Wǒ yòng tiě qiāo wā yí gè kēng."
+      },
+      {
+        "text": "铁锹挂在墙上。",
+        "vi": "Cái xẻng treo trên tường.",
+        "pinyin": "Tiě qiāo guà zài qiáng shàng."
+      }
+    ],
+    "relatedWordIds": ["garden-trowel", "garden-fork"],
+    "distractorWordIds": ["garden-trowel", "hoe", "rake"]
+  },
+  "garden-trowel": {
+    "id": "garden-trowel",
+    "text": "小铲子",
+    "pinyin": "xiǎochǎnzi",
+    "measure": "把",
+    "meaningVi": "xẻng nhỏ làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/02_garden-trowel.webp",
+    "acceptedAnswers": ["小铲子", "园艺铲", "小铲"],
+    "examples": [
+      {
+        "text": "这把小铲子很小。",
+        "vi": "Cái xẻng nhỏ làm vườn này bé xíu.",
+        "pinyin": "Zhè bǎ xiǎo chǎn zi hěn xiǎo."
+      },
+      {
+        "text": "我用小铲子播种。",
+        "vi": "Mình gieo hạt bằng xẻng nhỏ làm vườn.",
+        "pinyin": "Wǒ yòng xiǎo chǎn zi bō zhǒng."
+      }
+    ],
+    "relatedWordIds": ["shovel", "seed-packet"],
+    "distractorWordIds": ["shovel", "pruning-shears", "screwdriver"]
+  },
+  "rake": {
+    "id": "rake",
+    "text": "耙子",
+    "pinyin": "pázi",
+    "measure": "把",
+    "meaningVi": "cái cào làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/03_rake.webp",
+    "acceptedAnswers": ["耙子", "钉耙"],
+    "examples": [
+      {
+        "text": "我用耙子把树叶收起来。",
+        "vi": "Mình dùng cào để gom lá.",
+        "pinyin": "Wǒ yòng pá zi bǎ shù yè shōu qǐ lái."
+      },
+      {
+        "text": "耙子有很多齿。",
+        "vi": "Cái cào có nhiều răng.",
+        "pinyin": "Pá zi yǒu hěn duō chǐ."
+      }
+    ],
+    "relatedWordIds": ["long-handled-broom", "garden-fork"],
+    "distractorWordIds": ["garden-fork", "hoe", "long-handled-broom"]
+  },
+  "hoe": {
+    "id": "hoe",
+    "text": "锄头",
+    "pinyin": "chútou",
+    "measure": "把",
+    "meaningVi": "cái cuốc",
+    "image": "/assets/scenes/tool-shed/objects/04_hoe.webp",
+    "acceptedAnswers": ["锄头"],
+    "examples": [
+      {
+        "text": "锄头帮我松土。",
+        "vi": "Cái cuốc giúp mình xới tơi đất.",
+        "pinyin": "Chú tou bāng wǒ sōng tǔ."
+      },
+      {
+        "text": "爷爷用锄头干活。",
+        "vi": "Ông làm việc với cái cuốc.",
+        "pinyin": "Yé ye yòng chú tou gàn huó."
+      }
+    ],
+    "relatedWordIds": ["shovel", "rake"],
+    "distractorWordIds": ["rake", "shovel", "hammer"]
+  },
+  "garden-fork": {
+    "id": "garden-fork",
+    "text": "园艺叉",
+    "pinyin": "yuányìchā",
+    "measure": "把",
+    "meaningVi": "cái chĩa làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/05_garden-fork.webp",
+    "acceptedAnswers": ["园艺叉", "叉子"],
+    "examples": [
+      {
+        "text": "我用园艺叉翻土。",
+        "vi": "Mình dùng chĩa làm vườn để xới đất.",
+        "pinyin": "Wǒ yòng yuán yì chā fān tǔ."
+      },
+      {
+        "text": "园艺叉有四个齿。",
+        "vi": "Cái chĩa làm vườn có bốn răng.",
+        "pinyin": "Yuán yì chā yǒu sì gè chǐ."
+      }
+    ],
+    "relatedWordIds": ["rake", "shovel"],
+    "distractorWordIds": ["rake", "hoe", "shovel"]
+  },
+  "pruning-shears": {
+    "id": "pruning-shears",
+    "text": "修枝剪",
+    "pinyin": "xiūzhījiǎn",
+    "measure": "把",
+    "meaningVi": "kéo cắt tỉa cây",
+    "image": "/assets/scenes/tool-shed/objects/06_pruning-shears.webp",
+    "acceptedAnswers": ["修枝剪", "园艺剪", "剪刀"],
+    "examples": [
+      {
+        "text": "我用修枝剪剪小树枝。",
+        "vi": "Mình cắt cành nhỏ bằng kéo cắt tỉa cây.",
+        "pinyin": "Wǒ yòng xiū zhī jiǎn jiǎn xiǎo shù zhī."
+      },
+      {
+        "text": "小心，修枝剪很锋利。",
+        "vi": "Cẩn thận nhé, kéo cắt tỉa cây sắc lắm.",
+        "pinyin": "Xiǎo xīn, xiū zhī jiǎn hěn fēng lì."
+      }
+    ],
+    "relatedWordIds": ["hedge-trimmer", "gardening-gloves"],
+    "distractorWordIds": ["pliers", "hedge-trimmer", "saw"]
+  },
+  "long-handled-broom": {
+    "id": "long-handled-broom",
+    "text": "长柄扫帚",
+    "pinyin": "chángbǐng sàozhou",
+    "measure": "把",
+    "meaningVi": "chổi cán dài",
+    "image": "/assets/scenes/tool-shed/objects/07_long-handled-broom.webp",
+    "acceptedAnswers": ["长柄扫帚", "扫帚", "扫把"],
+    "examples": [
+      {
+        "text": "我用长柄扫帚扫地。",
+        "vi": "Mình quét sàn bằng chổi cán dài.",
+        "pinyin": "Wǒ yòng cháng bǐng sào zhou sǎo dì."
+      },
+      {
+        "text": "长柄扫帚在工作台旁边。",
+        "vi": "Cái chổi cán dài ở cạnh bàn làm việc.",
+        "pinyin": "Cháng bǐng sào zhou zài gōng zuò tái páng biān."
+      }
+    ],
+    "relatedWordIds": ["rake", "shed-bucket"],
+    "distractorWordIds": ["rake", "garden-fork", "hoe"]
+  },
+  "saw": {
+    "id": "saw",
+    "text": "锯子",
+    "pinyin": "jùzi",
+    "measure": "把",
+    "meaningVi": "cái cưa",
+    "image": "/assets/scenes/tool-shed/objects/08_saw.webp",
+    "acceptedAnswers": ["锯子", "锯"],
+    "examples": [
+      {
+        "text": "锯子在架子上。",
+        "vi": "Cái cưa ở trên kệ.",
+        "pinyin": "Jù zi zài jià zi shàng."
+      },
+      {
+        "text": "爸爸用锯子锯木头。",
+        "vi": "Bố cắt gỗ bằng cưa.",
+        "pinyin": "Bà ba yòng jù zi jù mù tou."
+      }
+    ],
+    "relatedWordIds": ["hammer", "nails"],
+    "distractorWordIds": ["hedge-trimmer", "pruning-shears", "wrench"]
+  },
+  "hammer": {
+    "id": "hammer",
+    "text": "锤子",
+    "pinyin": "chuízi",
+    "measure": "把",
+    "meaningVi": "cái búa",
+    "image": "/assets/scenes/tool-shed/objects/09_hammer.webp",
+    "acceptedAnswers": ["锤子", "榔头"],
+    "examples": [
+      {
+        "text": "我用锤子钉钉子。",
+        "vi": "Mình dùng búa để đóng đinh.",
+        "pinyin": "Wǒ yòng chuí zi dìng dīng zi."
+      },
+      {
+        "text": "锤子很重。",
+        "vi": "Cái búa nặng.",
+        "pinyin": "Chuí zi hěn zhòng."
+      }
+    ],
+    "relatedWordIds": ["nails", "saw"],
+    "distractorWordIds": ["wrench", "screwdriver", "pliers"]
+  },
+  "screwdriver": {
+    "id": "screwdriver",
+    "text": "螺丝刀",
+    "pinyin": "luósīdāo",
+    "measure": "把",
+    "meaningVi": "cái tua vít",
+    "image": "/assets/scenes/tool-shed/objects/10_screwdriver.webp",
+    "acceptedAnswers": ["螺丝刀", "改锥", "起子"],
+    "examples": [
+      {
+        "text": "我用螺丝刀拧螺丝。",
+        "vi": "Mình vặn con ốc bằng tua vít.",
+        "pinyin": "Wǒ yòng luó sī dāo nǐng luó sī."
+      },
+      {
+        "text": "螺丝刀的把手是黄色的。",
+        "vi": "Cái tua vít có tay cầm màu vàng.",
+        "pinyin": "Luó sī dāo de bǎ shǒu shì huáng sè de."
+      }
+    ],
+    "relatedWordIds": ["wrench", "pliers"],
+    "distractorWordIds": ["wrench", "hammer", "pliers"]
+  },
+  "wrench": {
+    "id": "wrench",
+    "text": "扳手",
+    "pinyin": "bānshou",
+    "measure": "把",
+    "meaningVi": "cái cờ lê",
+    "image": "/assets/scenes/tool-shed/objects/11_wrench.webp",
+    "acceptedAnswers": ["扳手", "扳子"],
+    "examples": [
+      {
+        "text": "我用扳手拧紧螺母。",
+        "vi": "Mình dùng cờ lê để siết đai ốc.",
+        "pinyin": "Wǒ yòng bān shou nǐng jǐn luó mǔ."
+      },
+      {
+        "text": "扳手挂在钳子旁边。",
+        "vi": "Cái cờ lê treo cạnh cái kìm.",
+        "pinyin": "Bān shou guà zài qián zi páng biān."
+      }
+    ],
+    "relatedWordIds": ["screwdriver", "pliers"],
+    "distractorWordIds": ["pliers", "screwdriver", "hammer"]
+  },
+  "pliers": {
+    "id": "pliers",
+    "text": "钳子",
+    "pinyin": "qiánzi",
+    "measure": "把",
+    "meaningVi": "cái kìm",
+    "image": "/assets/scenes/tool-shed/objects/12_pliers.webp",
+    "acceptedAnswers": ["钳子", "老虎钳"],
+    "examples": [
+      {
+        "text": "我用钳子夹住铁丝。",
+        "vi": "Mình giữ sợi dây điện bằng kìm.",
+        "pinyin": "Wǒ yòng qián zi jiā zhù tiě sī."
+      },
+      {
+        "text": "钳子的把手是绿色的。",
+        "vi": "Cái kìm có tay cầm màu xanh lá.",
+        "pinyin": "Qián zi de bǎ shǒu shì lǜ sè de."
+      }
+    ],
+    "relatedWordIds": ["wrench", "screwdriver"],
+    "distractorWordIds": ["pruning-shears", "wrench", "screwdriver"]
+  },
+  "wheelbarrow": {
+    "id": "wheelbarrow",
+    "text": "手推车",
+    "pinyin": "shǒutuīchē",
+    "measure": "辆",
+    "meaningVi": "xe cút kít",
+    "image": "/assets/scenes/tool-shed/objects/13_wheelbarrow.webp",
+    "acceptedAnswers": ["手推车", "独轮车"],
+    "examples": [
+      {
+        "text": "手推车可以运土。",
+        "vi": "Xe cút kít chở được đất.",
+        "pinyin": "Shǒu tuī chē kě yǐ yùn tǔ."
+      },
+      {
+        "text": "手推车只有一个轮子。",
+        "vi": "Xe cút kít chỉ có một bánh xe.",
+        "pinyin": "Shǒu tuī chē zhǐ yǒu yí gè lún zi."
+      }
+    ],
+    "relatedWordIds": ["shovel", "fertilizer-bag"],
+    "distractorWordIds": ["lawn-mower", "tractor", "shed-bucket"]
+  },
+  "lawn-mower": {
+    "id": "lawn-mower",
+    "text": "割草机",
+    "pinyin": "gēcǎojī",
+    "measure": "台",
+    "meaningVi": "máy cắt cỏ",
+    "image": "/assets/scenes/tool-shed/objects/14_lawn-mower.webp",
+    "acceptedAnswers": ["割草机"],
+    "examples": [
+      {
+        "text": "割草机在割草。",
+        "vi": "Máy cắt cỏ đang cắt cỏ.",
+        "pinyin": "Gē cǎo jī zài gē cǎo."
+      },
+      {
+        "text": "割草机在地毯上。",
+        "vi": "Máy cắt cỏ ở trên tấm thảm.",
+        "pinyin": "Gē cǎo jī zài dì tǎn shàng."
+      }
+    ],
+    "relatedWordIds": ["tractor", "hedge-trimmer"],
+    "distractorWordIds": ["hedge-trimmer", "tractor", "wheelbarrow"]
+  },
+  "hedge-trimmer": {
+    "id": "hedge-trimmer",
+    "text": "绿篱机",
+    "pinyin": "lǜlíjī",
+    "measure": "台",
+    "meaningVi": "máy tỉa hàng rào",
+    "image": "/assets/scenes/tool-shed/objects/15_hedge-trimmer.webp",
+    "acceptedAnswers": ["绿篱机", "修剪机"],
+    "examples": [
+      {
+        "text": "我用绿篱机修剪树篱。",
+        "vi": "Mình tỉa hàng rào cây bằng máy tỉa hàng rào.",
+        "pinyin": "Wǒ yòng lǜ lí jī xiū jiǎn shù lí."
+      },
+      {
+        "text": "绿篱机在工作台上。",
+        "vi": "Máy tỉa hàng rào ở trên bàn làm việc.",
+        "pinyin": "Lǜ lí jī zài gōng zuò tái shàng."
+      }
+    ],
+    "relatedWordIds": ["pruning-shears", "lawn-mower"],
+    "distractorWordIds": ["lawn-mower", "saw", "pruning-shears"]
+  },
+  "tractor": {
+    "id": "tractor",
+    "text": "拖拉机",
+    "pinyin": "tuōlājī",
+    "measure": "辆",
+    "meaningVi": "máy kéo",
+    "image": "/assets/scenes/tool-shed/objects/16_tractor.webp",
+    "acceptedAnswers": ["拖拉机"],
+    "examples": [
+      {
+        "text": "拖拉机停在小屋外面。",
+        "vi": "Máy kéo đỗ bên ngoài nhà kho.",
+        "pinyin": "Tuō lā jī tíng zài xiǎo wū wài miàn."
+      },
+      {
+        "text": "拖拉机的轮子很大。",
+        "vi": "Máy kéo có bánh xe to.",
+        "pinyin": "Tuō lā jī de lún zi hěn dà."
+      }
+    ],
+    "relatedWordIds": ["wheelbarrow", "lawn-mower"],
+    "distractorWordIds": ["lawn-mower", "wheelbarrow", "hedge-trimmer"]
+  },
+  "shed-bucket": {
+    "id": "shed-bucket",
+    "text": "铁桶",
+    "pinyin": "tiětǒng",
+    "measure": "个",
+    "meaningVi": "cái xô",
+    "image": "/assets/scenes/tool-shed/objects/17_shed-bucket.webp",
+    "acceptedAnswers": ["铁桶", "水桶", "桶"],
+    "examples": [
+      {
+        "text": "铁桶里装满了水。",
+        "vi": "Cái xô đầy nước.",
+        "pinyin": "Tiě tǒng lǐ zhuāng mǎn le shuǐ."
+      },
+      {
+        "text": "铁桶在绳子旁边。",
+        "vi": "Cái xô ở cạnh cuộn dây thừng.",
+        "pinyin": "Tiě tǒng zài shéng zi páng biān."
+      }
+    ],
+    "relatedWordIds": ["rope", "nails"],
+    "distractorWordIds": ["seed-packet", "fertilizer-bag", "rope"]
+  },
+  "rope": {
+    "id": "rope",
+    "text": "绳子",
+    "pinyin": "shéngzi",
+    "measure": "根",
+    "meaningVi": "dây thừng",
+    "image": "/assets/scenes/tool-shed/objects/18_rope.webp",
+    "acceptedAnswers": ["绳子", "麻绳"],
+    "examples": [
+      {
+        "text": "我用绳子把树枝绑起来。",
+        "vi": "Mình dùng dây thừng để buộc các cành cây.",
+        "pinyin": "Wǒ yòng shéng zi bǎ shù zhī bǎng qǐ lái."
+      },
+      {
+        "text": "这根绳子很长。",
+        "vi": "Sợi dây thừng này rất dài.",
+        "pinyin": "Zhè gēn shéng zi hěn cháng."
+      }
+    ],
+    "relatedWordIds": ["shed-bucket", "nails"],
+    "distractorWordIds": ["nails", "shed-bucket", "gardening-gloves"]
+  },
+  "nails": {
+    "id": "nails",
+    "text": "钉子",
+    "pinyin": "dīngzi",
+    "measure": "颗",
+    "meaningVi": "đinh",
+    "image": "/assets/scenes/tool-shed/objects/19_nails.webp",
+    "acceptedAnswers": ["钉子", "铁钉"],
+    "examples": [
+      {
+        "text": "钉子在一个小盒子里。",
+        "vi": "Những cái đinh ở trong một cái hộp nhỏ.",
+        "pinyin": "Dīng zi zài yí gè xiǎo hé zi lǐ."
+      },
+      {
+        "text": "爸爸需要两颗钉子。",
+        "vi": "Bố cần hai cái đinh.",
+        "pinyin": "Bà ba xū yào liǎng kē dīng zi."
+      }
+    ],
+    "relatedWordIds": ["hammer", "saw"],
+    "distractorWordIds": ["screwdriver", "rope", "wrench"]
+  },
+  "gardening-gloves": {
+    "id": "gardening-gloves",
+    "text": "园艺手套",
+    "pinyin": "yuányì shǒutào",
+    "measure": "双",
+    "meaningVi": "găng tay làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/20_gardening-gloves.webp",
+    "acceptedAnswers": ["园艺手套", "手套"],
+    "examples": [
+      {
+        "text": "我戴着园艺手套。",
+        "vi": "Mình đeo găng tay làm vườn.",
+        "pinyin": "Wǒ dài zhe yuán yì shǒu tào."
+      },
+      {
+        "text": "园艺手套在架子上。",
+        "vi": "Găng tay làm vườn ở trên kệ.",
+        "pinyin": "Yuán yì shǒu tào zài jià zi shàng."
+      }
+    ],
+    "relatedWordIds": ["rubber-boots", "gardening-outfit"],
+    "distractorWordIds": ["rubber-boots", "gardening-outfit", "rope"]
+  },
+  "rubber-boots": {
+    "id": "rubber-boots",
+    "text": "雨靴",
+    "pinyin": "yǔxuē",
+    "measure": "双",
+    "meaningVi": "ủng cao su",
+    "image": "/assets/scenes/tool-shed/objects/21_rubber-boots.webp",
+    "acceptedAnswers": ["雨靴", "雨鞋", "胶靴"],
+    "examples": [
+      {
+        "text": "我穿着雨靴在泥里走。",
+        "vi": "Mình đi ủng cao su khi lội bùn.",
+        "pinyin": "Wǒ chuān zhe yǔ xuē zài ní lǐ zǒu."
+      },
+      {
+        "text": "我的雨靴上有花。",
+        "vi": "Đôi ủng cao su của mình có hình hoa.",
+        "pinyin": "Wǒ de yǔ xuē shàng yǒu huā."
+      }
+    ],
+    "relatedWordIds": ["gardening-gloves", "gardening-outfit"],
+    "distractorWordIds": ["gardening-gloves", "gardening-outfit", "shed-bucket"]
+  },
+  "gardening-outfit": {
+    "id": "gardening-outfit",
+    "text": "园艺服",
+    "pinyin": "yuányìfú",
+    "measure": "套",
+    "meaningVi": "bộ quần áo làm vườn",
+    "image": "/assets/scenes/tool-shed/objects/22_gardening-outfit.webp",
+    "acceptedAnswers": ["园艺服", "工作服"],
+    "examples": [
+      {
+        "text": "这是我的园艺服。",
+        "vi": "Đây là bộ quần áo làm vườn của mình.",
+        "pinyin": "Zhè shì wǒ de yuán yì fú."
+      },
+      {
+        "text": "园艺服配了一顶草帽。",
+        "vi": "Bộ quần áo làm vườn có một chiếc mũ rơm.",
+        "pinyin": "Yuán yì fú pèi le yì dǐng cǎo mào."
+      }
+    ],
+    "relatedWordIds": ["gardening-gloves", "rubber-boots"],
+    "distractorWordIds": ["gardening-gloves", "rubber-boots", "fertilizer-bag"]
+  },
+  "seed-packet": {
+    "id": "seed-packet",
+    "text": "种子袋",
+    "pinyin": "zhǒngzidài",
+    "measure": "个",
+    "meaningVi": "gói hạt giống",
+    "image": "/assets/scenes/tool-shed/objects/23_seed-packet.webp",
+    "acceptedAnswers": ["种子袋", "种子包"],
+    "examples": [
+      {
+        "text": "种子袋在桌子上。",
+        "vi": "Gói hạt giống ở trên bàn.",
+        "pinyin": "Zhǒng zi dài zài zhuō zi shàng."
+      },
+      {
+        "text": "种子袋里有很小的种子。",
+        "vi": "Trong gói hạt giống có những hạt nhỏ xíu.",
+        "pinyin": "Zhǒng zi dài lǐ yǒu hěn xiǎo de zhǒng zi."
+      }
+    ],
+    "relatedWordIds": ["fertilizer-bag", "garden-trowel"],
+    "distractorWordIds": ["fertilizer-bag", "shed-bucket", "gardening-gloves"]
+  },
+  "fertilizer-bag": {
+    "id": "fertilizer-bag",
+    "text": "肥料袋",
+    "pinyin": "féiliàodài",
+    "measure": "个",
+    "meaningVi": "bao phân bón",
+    "image": "/assets/scenes/tool-shed/objects/24_fertilizer-bag.webp",
+    "acceptedAnswers": ["肥料袋", "化肥袋"],
+    "examples": [
+      {
+        "text": "肥料袋很重。",
+        "vi": "Bao phân bón nặng.",
+        "pinyin": "Féi liào dài hěn zhòng."
+      },
+      {
+        "text": "肥料能帮助植物长大。",
+        "vi": "Phân bón giúp cây lớn nhanh.",
+        "pinyin": "Féi liào néng bāng zhù zhí wù zhǎng dà."
+      }
+    ],
+    "relatedWordIds": ["seed-packet", "wheelbarrow"],
+    "distractorWordIds": ["seed-packet", "shed-bucket", "gardening-outfit"]
   }
 }
