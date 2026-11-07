@@ -25,8 +25,9 @@ differences). Team docs: `README.md` (Vietnamese), asset workflow: `docs/asset-p
 - Profile Setup collects name, age group, "can type words", boy/girl picture, plus the course picker
   (English / 中文) at the top. Never add upload.
 - Progress counts a word only after a CORRECT answer, once. Never hard-code progress.
-- `canTypeWords=false` → multiple choice only (and no Fill in the Blanks). Pick the answer
-  mode/options once per question.
+- `canTypeWords=false` → multiple choice only, never a text box. Fill in the Blanks is for everyone:
+  choosing the missing words by default, typing only for learners who can type (spec §9.6). Pick
+  the answer mode/options once per question (once per round for Fill in the Blanks).
 - Hotspots are traced contours in the background's pixel space. Never use loose bounding boxes.
   Background and SVG overlay must share one transformed container.
 - Every interaction must work with touch (no hover-only actions) and with the keyboard.

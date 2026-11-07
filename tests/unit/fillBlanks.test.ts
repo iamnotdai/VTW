@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import {
   blankLinePinyin,
+  buildBlankChoices,
   buildBlankLines,
   isBlankAnswerCorrect,
   normalizeBlankAnswer,
+  type BlankLine,
   type BlankPiece,
 } from '@/lib/fillBlanks';
+import { contentByCourse } from '@/data/content';
 import { createSeededRandom } from '@/lib/random';
 import type { DialogueLine } from '@/types/models';
 
@@ -157,4 +160,135 @@ describe('blankLinePinyin', () => {
     );
     expect(blankLinePinyin(blank(text, '书'), text, undefined)).toBeUndefined();
   });
+});
+
+describe('buildBlankChoices (choice mode)', () => {
+  const dialogue = (lines: [string, string, string?][]): DialogueLine[] =>
+    lines.map(([id, text, pinyin]) => ({
+      id,
+      speakerId: 'ben',
+      text,
+      ...(pinyin ? { pinyin } : {}),
+    }));
+
+  const englishLines = dialogue([
+    ['l1', 'Wow, your bed is so big!'],
+    ['l2', 'And this is my bunny.'],
+    ['l3', 'I read my book at the desk.'],
+  ]);
+
+  it('gives each blank the answer once and distinct distractors from the other blanks first', () => {
+    const random = createSeededRandom(7);
+    const blankLines = buildBlankLines(englishLines, { ...english, random });
+    const choices = buildBlankChoices(englishLines, blankLines, {
+      vocabulary: [{ text: 'lamp' }, { text: 'pillow' }],
+      lang: 'en-US',
+      random,
+    });
+    const blanks = blankLines.flatMap((blankLine) =>
+      blankLine.pieces.filter((piece) => piece.kind === 'blank'),
+    );
+    expect(blanks).toHaveLength(3);
+    for (const blank of blanks) {
+      const texts = choices[blank.id].map((choice) => choice.text);
+      expect(texts).toHaveLength(3);
+      expect(texts.filter((text) => text === blank.answer)).toHaveLength(1);
+      expect(new Set(texts).size).toBe(3);
+      // Two other blanks exist: they come before the vocabulary.
+      const others = blanks.filter((other) => other.id !== blank.id).map((other) => other.answer);
+      expect(texts.filter((text) => text !== blank.answer).sort()).toEqual(others.sort());
+    }
+  });
+
+  it('writes distractors like the answer and never offers "book" with "books"', () => {
+    const lines = dialogue([['l1', 'Books are fun.']]);
+    const blankLines: BlankLine[] = [
+      {
+        lineId: 'l1',
+        pieces: [
+          { kind: 'blank', id: 'b1', answer: 'Books' },
+          { kind: 'text', text: ' are fun.' },
+        ],
+      },
+    ];
+    for (let seed = 0; seed < 10; seed += 1) {
+      const texts = buildBlankChoices(lines, blankLines, {
+        vocabulary: [{ text: 'book' }, { text: 'lamp' }, { text: 'desk' }],
+        lang: 'en-US',
+        random: createSeededRandom(seed),
+      }).b1.map((choice) => choice.text);
+      expect(texts).toContain('Books');
+      expect(texts).not.toContain('Book');
+      expect(texts.every((text) => /^[A-Z]/.test(text))).toBe(true);
+    }
+  });
+
+  it('Chinese: Han distractors only, each with word-style pinyin', () => {
+    const lines = dialogue([
+      ['l1', '哇，你的床好大呀！', 'Wā, nǐ de chuáng hǎo dà ya!'],
+      ['l2', '莉莉，这是你的卧室吗？', 'Lì li, zhè shì nǐ de wò shì ma?'],
+    ]);
+    const random = createSeededRandom(3);
+    const blankLines = buildBlankLines(lines, {
+      vocabulary: ['床'],
+      names: ['莉莉'],
+      lang: 'zh-CN',
+      random,
+    });
+    const choices = buildBlankChoices(lines, blankLines, {
+      vocabulary: [{ text: '台灯', pinyin: 'táidēng' }, { text: 'lamp' }],
+      lang: 'zh-CN',
+      random,
+    });
+    expect(choices['l1:blank']).toEqual(
+      expect.arrayContaining([
+        { text: '床', pinyin: 'chuáng' },
+        { text: '卧室', pinyin: 'wòshì' },
+        { text: '台灯', pinyin: 'táidēng' },
+      ]),
+    );
+    expect(choices['l2:blank'].map((choice) => choice.text)).toContain('卧室');
+    expect(choices['l2:blank'].every((choice) => /\p{Script=Han}/u.test(choice.text))).toBe(true);
+  });
+
+  it.each(['en', 'zh'] as const)(
+    'every real conversation gets full options for every blank (%s course)',
+    (course) => {
+      const bundle = contentByCourse[course];
+      const lang = course === 'en' ? 'en-US' : 'zh-CN';
+      for (const conversation of bundle.conversations) {
+        const scene = bundle.scenes.find((item) => item.id === conversation.sceneId);
+        const vocabulary = (scene?.wordIds ?? []).flatMap((id) => {
+          const word = bundle.words[id];
+          return word ? [{ text: word.text, pinyin: word.pinyin }] : [];
+        });
+        for (let seed = 0; seed < 3; seed += 1) {
+          const random = createSeededRandom(seed);
+          const blankLines = buildBlankLines(conversation.lines, {
+            vocabulary: vocabulary.map((word) => word.text),
+            names: conversation.lines.map(
+              (item) => bundle.speakers[item.speakerId]?.name ?? item.speakerId,
+            ),
+            lang,
+            random,
+          });
+          const choices = buildBlankChoices(conversation.lines, blankLines, {
+            vocabulary,
+            lang,
+            random,
+          });
+          for (const [id, options] of Object.entries(choices)) {
+            const texts = options.map((option) => normalizeBlankAnswer(option.text));
+            expect(options, `${conversation.id} ${id}`).toHaveLength(3);
+            expect(new Set(texts).size, `${conversation.id} ${id}`).toBe(3);
+            // Chinese options always show pinyin; English ones never have any.
+            const withoutPinyin = options.filter((option) => !option.pinyin).length;
+            expect(withoutPinyin, `${conversation.id} ${id}`).toBe(course === 'zh' ? 0 : 3);
+          }
+        }
+      }
+    },
+    // Goes through every conversation of the course (slow next to the other unit tests).
+    30_000,
+  );
 });

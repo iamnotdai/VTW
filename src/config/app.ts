@@ -193,6 +193,8 @@ export const ROLE_PLAY_CONFIG = {
 
 /** Fill in the blanks (spec §9.6). */
 export const FILL_BLANKS_CONFIG = {
+  /** Options of a blank in choice mode, the right one included. */
+  choiceCount: 3,
   /** Shortest English word that may become a blank (vocabulary words always can). */
   minWordLength: 3,
   /** Shortest Chinese word, in characters, that may become a blank. */

@@ -1,10 +1,10 @@
 import { FILL_BLANKS_CONFIG } from '@/config/app';
 import type { DialogueLine } from '@/types/models';
-import type { RandomFn } from './random';
+import { shuffle, type RandomFn } from './random';
 
 /**
- * Fill in the blanks (spec §9.6): one word of each dialogue line is hidden and typed back by the
- * learner. Words of the scene's vocabulary are hidden first (they practise the words just learned),
+ * Fill in the blanks (spec §9.6): one word of each dialogue line is hidden; the learner chooses it
+ * among a few words (everyone) or types it back (learners who can type). Words of the scene's vocabulary are hidden first (they practise the words just learned),
  * then longer content words; little words ("the", "is", 的…) and the speakers' names never are.
  */
 
@@ -14,6 +14,16 @@ export type BlankPiece =
 export interface BlankLine {
   lineId: string;
   pieces: BlankPiece[];
+}
+
+/** A hidden word. */
+export type Blank = Extract<BlankPiece, { kind: 'blank' }>;
+
+/** The blanks of a round, in dialogue order. */
+export function blanksOf(blankLines: readonly BlankLine[]): Blank[] {
+  return blankLines.flatMap((line) =>
+    line.pieces.filter((piece): piece is Blank => piece.kind === 'blank'),
+  );
 }
 
 export interface BuildBlanksOptions {
@@ -102,11 +112,22 @@ function findAll(text: string, word: string, plurals = false): { start: number; 
 
 const hasSegmenter = () => typeof Intl !== 'undefined' && 'Segmenter' in Intl;
 
+/** One word segmenter per language: creating them is slow. */
+const segmenters = new Map<string, Intl.Segmenter>();
+function wordSegmenter(lang: string): Intl.Segmenter {
+  let segmenter = segmenters.get(lang);
+  if (!segmenter) {
+    segmenter = new Intl.Segmenter(lang, { granularity: 'word' });
+    segmenters.set(lang, segmenter);
+  }
+  return segmenter;
+}
+
 /** Every word boundary of the line, or `null` without Intl.Segmenter. */
 function wordBoundaries(text: string, lang: string): Set<number> | null {
   if (!hasSegmenter()) return null;
   const boundaries = new Set([0, text.length]);
-  for (const segment of new Intl.Segmenter(lang, { granularity: 'word' }).segment(text)) {
+  for (const segment of wordSegmenter(lang).segment(text)) {
     boundaries.add(segment.index);
     boundaries.add(segment.index + segment.segment.length);
   }
@@ -152,7 +173,7 @@ interface WordSpan {
 /** Words of the line with their positions (Intl.Segmenter splits Chinese into words too). */
 function wordSpans(text: string, lang: string): WordSpan[] {
   if (hasSegmenter()) {
-    const segmenter = new Intl.Segmenter(lang, { granularity: 'word' });
+    const segmenter = wordSegmenter(lang);
     return [...segmenter.segment(text)]
       .filter((segment) => segment.isWordLike)
       .map((segment) => ({
@@ -265,10 +286,44 @@ export function isBlankAnswerCorrect(answer: string, typed: string): boolean {
 
 const syllableLetters = (token: string) => token.replace(/[^\p{L}\p{M}]/gu, '').toLowerCase();
 
+interface SyllableMap {
+  /** The pinyin split into syllables and the spaces between them. */
+  tokens: string[];
+  /** Index in `text` of each Chinese character → index of its syllable in `tokens`. */
+  tokenAt: Map<number, number>;
+}
+
+/**
+ * Pairs each Chinese character of `text` with its syllable in `pinyin`. Each character takes one
+ * syllable; 儿 after a syllable ending in "r" shares it (哪儿 = nǎr). `null` when they don't match
+ * one by one.
+ */
+function mapSyllables(text: string, pinyin: string): SyllableMap | null {
+  const tokens = pinyin.split(/(\s+)/);
+  const syllables = tokens.flatMap((token, index) => (/\p{L}/u.test(token) ? [index] : []));
+  const tokenAt = new Map<number, number>();
+  let next = 0;
+  let position = 0;
+  for (const char of text) {
+    const at = position;
+    position += char.length;
+    if (!HAN.test(char)) continue;
+    const previous = next > 0 ? syllables[next - 1] : undefined;
+    const erhua =
+      char === '儿' &&
+      previous !== undefined &&
+      /r$/u.test(syllableLetters(tokens[previous])) &&
+      !/^[eéěèē]r$/u.test(syllableLetters(tokens[syllables[next]] ?? ''));
+    const token = erhua ? previous : syllables[next++];
+    if (token === undefined) return null;
+    tokenAt.set(at, token);
+  }
+  return next === syllables.length ? { tokens, tokenAt } : null;
+}
+
 /**
  * Chinese course: the line's pinyin with the blank's syllables hidden — "Wā, nǐ de ___ hǎo dà ya!"
- * — so it shows how to read the line without giving the answer away. Each character takes one
- * syllable; 儿 after a syllable ending in "r" shares it (哪儿 = nǎr). Returns the pinyin unchanged
+ * — so it shows how to read the line without giving the answer away. Returns the pinyin unchanged
  * when it doesn't match the characters one by one, and `undefined` without pinyin.
  */
 export function blankLinePinyin(
@@ -286,27 +341,123 @@ export function blankLinePinyin(
   }
   if (hidden.size === 0) return pinyin;
 
-  const tokens = pinyin.split(/(\s+)/);
-  const syllables = tokens.flatMap((token, index) => (/\p{L}/u.test(token) ? [index] : []));
-  const masked = new Set<number>();
-  let next = 0;
-  let position = 0;
-  for (const char of text) {
-    const at = position;
-    position += char.length;
-    if (!HAN.test(char)) continue;
-    const previous = next > 0 ? syllables[next - 1] : undefined;
-    const erhua =
-      char === '儿' &&
-      previous !== undefined &&
-      /r$/u.test(syllableLetters(tokens[previous])) &&
-      !/^[eéěèē]r$/u.test(syllableLetters(tokens[syllables[next]] ?? ''));
-    const token = erhua ? previous : syllables[next++];
-    if (token === undefined) return pinyin;
-    if (hidden.has(at)) masked.add(token);
-  }
-  if (next !== syllables.length) return pinyin;
-  return tokens
+  const map = mapSyllables(text, pinyin);
+  if (!map) return pinyin;
+  const masked = new Set([...hidden].flatMap((at) => map.tokenAt.get(at) ?? []));
+  return map.tokens
     .map((token, index) => (masked.has(index) ? token.replace(/[\p{L}\p{M}]+/gu, '___') : token))
     .join('');
+}
+
+/** Word-style pinyin ("wòshì") of `text.slice(start, end)`, read from the line's pinyin. */
+function spanPinyin(
+  text: string,
+  pinyin: string | undefined,
+  start: number,
+  end: number,
+): string | undefined {
+  if (!pinyin) return undefined;
+  const map = mapSyllables(text, pinyin);
+  if (!map) return undefined;
+  const indexes: number[] = [];
+  for (let at = start; at < end; at += 1) {
+    const token = map.tokenAt.get(at);
+    if (token !== undefined && !indexes.includes(token)) indexes.push(token);
+  }
+  if (indexes.length === 0) return undefined;
+  return indexes.map((index) => syllableLetters(map.tokens[index])).join('');
+}
+
+/* -------------------------------------------------------------------------------------------------
+ * Choice mode (spec §9.6): each blank offers a few words to choose from, one of them right.
+ * -----------------------------------------------------------------------------------------------*/
+
+export interface BlankChoice {
+  text: string;
+  /** Chinese course. */
+  pinyin?: string;
+}
+
+export interface BuildBlankChoicesOptions {
+  /** The scene's vocabulary, used after the other blanks' answers. */
+  vocabulary: readonly BlankChoice[];
+  /** Language of the lines (word boundaries), e.g. "en-US" or "zh-CN". */
+  lang: string;
+  /** Options per blank, the right one included. */
+  count?: number;
+  random?: RandomFn;
+}
+
+/** "books" and "book" are the same word to tell apart: never offered together. */
+const englishStem = (value: string) => normalizeBlankAnswer(value).replace(/(?:es|s)$/u, '');
+
+/** A distractor written like the answer: capital at the start of a line, else lower-case. */
+function matchCase(answer: string, word: string): string {
+  if (HAN.test(answer) || !word) return word;
+  const first = answer.charAt(0);
+  const capital = first !== first.toLowerCase();
+  const head = capital ? word.charAt(0).toUpperCase() : word.charAt(0).toLowerCase();
+  return head + word.slice(1);
+}
+
+/**
+ * The options of every blank, shuffled once (call once per round, like quiz options): the answer
+ * and distractors taken from, in order, the other blanks' answers, the scene's vocabulary, then the
+ * other content words of the conversation. Never two options with the same text, never a
+ * distractor in another script, never "book" next to "books".
+ */
+export function buildBlankChoices(
+  lines: readonly DialogueLine[],
+  blankLines: readonly BlankLine[],
+  options: BuildBlankChoicesOptions,
+): Record<string, BlankChoice[]> {
+  const random = options.random ?? Math.random;
+  const count = options.count ?? FILL_BLANKS_CONFIG.choiceCount;
+  const lineById = new Map(lines.map((line) => [line.id, line]));
+
+  const answers: (BlankChoice & { id: string })[] = blankLines.flatMap((blankLine) => {
+    const line = lineById.get(blankLine.lineId);
+    let offset = 0;
+    return blankLine.pieces.flatMap((piece) => {
+      const start = offset;
+      offset += piece.kind === 'text' ? piece.text.length : piece.answer.length;
+      if (piece.kind === 'text') return [];
+      const pinyin = line && spanPinyin(line.text, line.pinyin, start, offset);
+      return [{ id: piece.id, text: piece.answer, ...(pinyin ? { pinyin } : {}) }];
+    });
+  });
+
+  const contentWords: BlankChoice[] = lines.flatMap((line) =>
+    contentCandidates(line.text, options.lang).map(({ start, end }) => {
+      const pinyin = spanPinyin(line.text, line.pinyin, start, end);
+      return { text: line.text.slice(start, end), ...(pinyin ? { pinyin } : {}) };
+    }),
+  );
+
+  const result: Record<string, BlankChoice[]> = {};
+  for (const answer of answers) {
+    const han = HAN.test(answer.text);
+    const used = new Set([normalizeBlankAnswer(answer.text)]);
+    const stems = new Set([englishStem(answer.text)]);
+    const distractors: BlankChoice[] = [];
+    const tryAdd = (word: BlankChoice) => {
+      if (distractors.length >= count - 1) return;
+      const text = matchCase(answer.text, word.text.trim());
+      const normalized = normalizeBlankAnswer(text);
+      if (!normalized || used.has(normalized) || HAN.test(text) !== han) return;
+      if (!han && stems.has(englishStem(text))) return;
+      used.add(normalized);
+      if (!han) stems.add(englishStem(text));
+      distractors.push({ text, ...(word.pinyin ? { pinyin: word.pinyin } : {}) });
+    };
+    for (const other of shuffle(answers, random)) if (other.id !== answer.id) tryAdd(other);
+    for (const word of shuffle(options.vocabulary, random)) tryAdd(word);
+    for (const word of shuffle(contentWords, random)) tryAdd(word);
+    const right: BlankChoice = {
+      text: answer.text,
+      ...(answer.pinyin ? { pinyin: answer.pinyin } : {}),
+    };
+    result[answer.id] = shuffle([right, ...distractors], random);
+  }
+  return result;
 }

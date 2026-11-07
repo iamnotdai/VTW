@@ -122,11 +122,11 @@ export const conversation: Record<string, string> = {
   // Fill in the Blanks (spec §9.6)
   'Fill in the Blanks': '填空',
   '{title} · Fill in the Blanks': '{title} · 填空',
-  'This exercise is for learners who can type': '这个练习适合会打字的小朋友',
-  'Choose “Yes, I can type words” in Settings to fill in the blanks.':
-    '在设置里选择“会，我会打字”，就可以做填空练习了。',
-  'Open Settings': '打开设置',
+  'Listen to each line and choose the missing word.': '听一听每句话，选出缺少的词。',
   'Listen to each line and type the missing word.': '听一听每句话，把缺少的词打出来。',
+  'Type the words instead': '改成自己打字',
+  'Choose the words instead': '改成选择答案',
+  'Choices for missing word {number}': '第{number}个空的选项',
   'Missing word {number}': '第{number}个空',
   'Listen to line {number}': '听第{number}句',
   'Check Answers': '检查答案',

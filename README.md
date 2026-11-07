@@ -27,8 +27,8 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   dịch tĩnh), Speaking Practice (SpeechRecognition + fallback _Listen & Repeat_), Speaking Result.
 - **Luyện nói có chấm điểm** (mở rộng ngoài 16 màn): _Word Speaking_ sau Flashcards (nói từng từ,
   điểm 0–100, tô màu từng cụm âm như ELSA), _Role-play_ (chọn nhân vật trong hội thoại, đổi được bất kỳ
-  lúc nào; các nhân vật khác tự nói, mỗi câu của người học được chấm điểm) và _Fill in the Blanks_ (điền
-  từ còn thiếu trong hội thoại, **chỉ** cho người học chọn "Yes, I can type words"). Xem mục
+  lúc nào; các nhân vật khác tự nói, mỗi câu của người học được chấm điểm) và _Fill in the Blanks_ (chọn
+  từ còn thiếu trong hội thoại, cho mọi người học; ai gõ được chữ thì có thể chuyển sang tự gõ). Xem mục
   [Luyện nói có chấm điểm](#luyện-nói-có-chấm-điểm-spec-77-95-96).
 - **Pronunciation** (menu thứ ba, spec §24): danh sách scene như Vocabulary, mỗi thẻ hiện % số từ đã nói
   tốt (điểm tốt nhất ≥ 80); bấm thẻ mở **cùng màn Word Speaking**. Điểm tốt nhất mỗi từ được lưu
@@ -40,8 +40,8 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **230 test Vitest** (182 unit + 48 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **14 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, ba kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **237 test Vitest** (187 unit + 50 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **15 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
 
@@ -169,13 +169,13 @@ npm run test:e2e
 
 Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
 
-| Màn hình           | Route                                                    | Vào từ                                   |
-| ------------------ | -------------------------------------------------------- | ---------------------------------------- |
-| Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards         |
-| Word Speaking      | `/pronunciation/scene/:sceneId`                          | Thẻ scene ở menu Pronunciation           |
-| Pronunciation      | `/pronunciation`                                         | Menu                                     |
-| Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail          |
-| Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail (chỉ khi gõ được chữ) |
+| Màn hình           | Route                                                    | Vào từ                             |
+| ------------------ | -------------------------------------------------------- | ---------------------------------- |
+| Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards   |
+| Word Speaking      | `/pronunciation/scene/:sceneId`                          | Thẻ scene ở menu Pronunciation     |
+| Pronunciation      | `/pronunciation`                                         | Menu                               |
+| Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail    |
+| Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail, cuối Role-play |
 
 Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đã có hồ sơ thì `/setup` chuyển về Journey.
 Đường dẫn luôn tạo bằng `paths.*` trong `src/app/paths.ts`.
@@ -303,9 +303,17 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
 - **Fill in the Blanks** (`src/lib/fillBlanks.ts`): mỗi câu ẩn một từ — ưu tiên từ vựng của scene, sau
   đó từ dài; không bao giờ ẩn tên nhân vật, từ nhỏ (the, is, 的…) hay từ mà đáp án còn hiện ở chỗ khác
   trong cùng câu. Tiếng Trung tách từ bằng `Intl.Segmenter` (không ẩn 床 nằm trong 起床), vẫn hiện
-  pinyin nhưng che âm tiết của chỗ trống. Chỉ bỏ qua hoa/thường, dấu câu, khoảng trắng; không chấp
-  nhận sai chính tả. Người học không gõ được chữ (`canTypeWords = false`) không thấy nút này, mở link
-  trực tiếp thì được hướng dẫn vào Settings.
+  pinyin nhưng che âm tiết của chỗ trống.
+  - **Chọn đáp án** (mặc định, cho mọi người học): mỗi chỗ trống có 3 lựa chọn
+    (`FILL_BLANKS_CONFIG.choiceCount`), tạo một lần cùng bộ chỗ trống bằng `buildBlankChoices`. Từ nhiễu
+    lấy lần lượt từ đáp án của các chỗ trống khác, từ vựng của scene, rồi các từ dài khác trong hội
+    thoại; viết hoa/thường giống đáp án; không có hai lựa chọn trùng chữ, không đặt "book" cạnh "books";
+    tiếng Trung chỉ lấy chữ Hán, kèm pinyin lấy từ dữ liệu (không tải `pinyin-pro`). Chạm là chấm ngay:
+    đúng thì từ điền vào chỗ trống, sai thì nút vàng và bị khóa; bàn phím được chuyển sang chỗ trống kế
+    tiếp. Test quét mọi hội thoại của hai khóa học để chắc chỗ trống nào cũng đủ 3 lựa chọn.
+  - **Tự gõ** (chỉ khi `canTypeWords = true`, nút "Type the words instead"): chỉ bỏ qua hoa/thường, dấu
+    câu, khoảng trắng; không chấp nhận sai chính tả. Người học không gõ được chữ không bao giờ thấy ô gõ.
+  - Hai chế độ là hai component dùng chung `BlankDialogue` (`features/conversation/components/`).
 - Không hỗ trợ nhận dạng / micro bị chặn: cả hai màn nói đều chuyển sang _Listen & Repeat_ →
   _I said it!_, không chặn hành trình.
 
@@ -450,7 +458,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Storage hỏng/bị chặn không làm crash; deep link trên hosting tĩnh    | ✅ (test + E2E)                    |
 | Mic bị chặn / không hỗ trợ vẫn học tiếp được                         | ✅ (test + E2E)                    |
 | Word Speaking / Role-play chấm điểm, có fallback Listen & Repeat     | ✅ (test + E2E)                    |
-| Fill in the Blanks chỉ cho người gõ được chữ                         | ✅ (test + E2E)                    |
+| Fill in the Blanks: chọn đáp án cho mọi người, ô gõ chỉ khi gõ được  | ✅ (test + E2E)                    |
 | QA thiết bị thật iOS/Android, tối ưu asset thật                      | ⏳ khi có art và thiết bị thật     |
 
 ## Việc tiếp theo

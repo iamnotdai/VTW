@@ -2,7 +2,8 @@ import { expect, test, type Page } from '@playwright/test';
 
 /**
  * Speaking extensions (spec §7.7, §9.5, §9.6) on desktop and phone: Word Speaking after the
- * flashcards, Role-play with a chosen character, Fill in the Blanks for a learner who can type.
+ * flashcards, Role-play with a chosen character, Fill in the Blanks (choosing for everyone, typing
+ * for learners who can type).
  * The tests can't speak into a microphone, so they take the Listen & Repeat path where needed.
  */
 
@@ -71,11 +72,12 @@ test('Role-play: choose a character, play it, change character', async ({ page }
   await expect(page.getByRole('heading', { name: 'You are Lily!' })).toBeVisible();
 });
 
-test('Fill in the Blanks for a learner who can type', async ({ page }) => {
+test('Fill in the Blanks: a learner who can type may type the words', async ({ page }) => {
   await completeSetup(page, { canType: true });
   await page.goto('/conversation/my-bedroom');
   await page.getByRole('link', { name: 'Fill in the Blanks' }).click();
   await expect(page.getByRole('heading', { name: 'Fill in the Blanks' })).toBeVisible();
+  await page.getByRole('button', { name: 'Type the words instead' }).click();
 
   const blanks = page.getByRole('textbox');
   await expect(blanks.first()).toBeVisible();
@@ -84,5 +86,23 @@ test('Fill in the Blanks for a learner who can type', async ({ page }) => {
   await expect(page.getByText(/right\. Fix the yellow words and check again!/)).toBeVisible();
   await page.getByRole('button', { name: 'Show Answers' }).click();
   await expect(page.getByText(/Here are the answers\./)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'New Blanks' })).toBeVisible();
+});
+
+test('Fill in the Blanks: a learner who can’t type chooses the words', async ({ page }) => {
+  await completeSetup(page, { canType: false });
+  await page.goto('/conversation/my-bedroom');
+  await page.getByRole('link', { name: 'Fill in the Blanks' }).click();
+  await expect(page.getByText('Listen to each line and choose the missing word.')).toBeVisible();
+  await expect(page.getByRole('textbox')).toHaveCount(0);
+
+  const groups = page.getByRole('group', { name: /^Choices for missing word/ });
+  const total = await groups.count();
+  expect(total).toBeGreaterThan(3);
+  // Try the choices of each blank until the right one fills it (a wrong one is disabled).
+  while ((await groups.count()) > 0) {
+    await groups.first().getByRole('button', { disabled: false }).first().click();
+  }
+  await expect(page.getByText(/All the words are right|Here are the answers/)).toBeVisible();
   await expect(page.getByRole('button', { name: 'New Blanks' })).toBeVisible();
 });

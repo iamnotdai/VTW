@@ -14,7 +14,6 @@ import { optionalAssetUrl } from '@/lib/assets';
 import { playSfx } from '@/lib/sfx';
 import type { SpeakingScore } from '@/lib/speakingScore';
 import { useAudioStore } from '@/stores/audioStore';
-import { useProfileStore } from '@/stores/profileStore';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore } from '@/stores/settingsStore';
 import type { Conversation } from '@/types/models';
@@ -92,7 +91,6 @@ function RolePlaySession({
 }) {
   const soundEnabled = useSettingsStore((state) => state.settings.soundEnabled);
   const showVietnamese = useSettingsStore((state) => state.settings.showVietnameseMeaning);
-  const canType = useProfileStore((state) => state.profile?.canTypeWords ?? false);
   const completeConversation = useProgressStore((state) => state.completeConversation);
   const reducedMotion = usePrefersReducedMotion();
   const [phase, setPhase] = useState<Phase>('ready');
@@ -213,7 +211,6 @@ function RolePlaySession({
           role={role}
           results={results}
           canSwitch={canSwitch}
-          canType={canType}
           onReplay={begin}
           onChangeRole={onChangeRole}
         />

@@ -159,19 +159,14 @@ describe('Role-play', () => {
     expect(await screen.findByText('Yes, it is. Come in!', {}, SLOW)).toBeInTheDocument();
   });
 
-  it('is offered after the transcript; Fill in the Blanks only to learners who can type', async () => {
+  it('is offered after the transcript, with Fill in the Blanks for every learner', async () => {
     seedProfile({ canTypeWords: false });
-    const { unmount } = renderApp('/conversation/my-bedroom/transcript');
+    renderApp('/conversation/my-bedroom/transcript');
     expect(await screen.findByRole('link', { name: 'Role-play' })).toHaveAttribute(
       'href',
       '/conversation/my-bedroom/role-play',
     );
-    expect(screen.queryByRole('link', { name: 'Fill in the Blanks' })).toBeNull();
-    unmount();
-
-    seedProfile({ canTypeWords: true });
-    renderApp('/conversation/my-bedroom');
-    expect(await screen.findByRole('link', { name: 'Fill in the Blanks' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Fill in the Blanks' })).toHaveAttribute(
       'href',
       '/conversation/my-bedroom/fill-blanks',
     );
@@ -192,17 +187,77 @@ describe('Fill in the Blanks', () => {
     );
   }
 
-  it('is only for learners who can type', async () => {
+  it('learners who can’t type choose the words: a tap checks at once', async () => {
+    const user = userEvent.setup();
+    vi.spyOn(Math, 'random').mockReturnValue(0);
     seedProfile({ canTypeWords: false });
     renderApp('/conversation/my-bedroom/fill-blanks');
+    const answers = expectedAnswers();
+
     expect(
-      await screen.findByRole('heading', { name: 'This exercise is for learners who can type' }),
+      await screen.findByText('Listen to each line and choose the missing word.'),
     ).toBeInTheDocument();
     expect(screen.queryByRole('textbox')).toBeNull();
-    expect(screen.getByRole('link', { name: 'Open Settings' })).toHaveAttribute(
-      'href',
-      '/settings',
+    expect(screen.queryByRole('button', { name: 'Type the words instead' })).toBeNull();
+    const groups = screen.getAllByRole('group', { name: /^Choices for missing word \d+$/ });
+    expect(groups).toHaveLength(answers.length);
+    for (const group of groups) expect(within(group).getAllByRole('button')).toHaveLength(3);
+
+    // A wrong word first: it turns yellow and can't be picked again.
+    const first = groups[0];
+    const wrong = within(first)
+      .getAllByRole('button')
+      .find((button) => button.textContent !== answers[0])!;
+    await user.click(wrong);
+    expect(wrong).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Show Answers' })).toBeInTheDocument();
+
+    // Then every right word: the choices go away and the round ends.
+    for (const [index, answer] of answers.entries()) {
+      const group = screen.getByRole('group', { name: `Choices for missing word ${index + 1}` });
+      await user.click(within(group).getByRole('button', { name: answer }));
+    }
+    expect(screen.queryAllByRole('group', { name: /^Choices for missing word/ })).toHaveLength(0);
+    expect(await screen.findByText(/All the words are right/)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        new RegExp(`${answers.length - 1} of ${answers.length} right on the first try`),
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'New Blanks' })).toBeInTheDocument();
+    // Fill in the Blanks never counts as learning words.
+    expect(readStoredProgress()?.completedWordIdsByScene ?? {}).toEqual({});
+  });
+
+  it('choice mode: Show Answers reveals what was missing', async () => {
+    const user = userEvent.setup();
+    vi.spyOn(Math, 'random').mockReturnValue(0);
+    seedProfile({ canTypeWords: false });
+    renderApp('/conversation/my-bedroom/fill-blanks');
+    const answers = expectedAnswers();
+    const [first] = await screen.findAllByRole('group', { name: /^Choices for missing word/ });
+    await user.click(
+      within(first)
+        .getAllByRole('button')
+        .find((button) => button.textContent !== answers[0])!,
     );
+    await user.click(screen.getByRole('button', { name: 'Show Answers' }));
+    expect(screen.getByText('Here are the answers.', { exact: false })).toBeInTheDocument();
+    expect(screen.getByText(answers[0])).toBeInTheDocument();
+  });
+
+  it('learners who can type may switch to typing the words', async () => {
+    const user = userEvent.setup();
+    seedProfile({ canTypeWords: true });
+    renderApp('/conversation/my-bedroom/fill-blanks');
+    expect(
+      await screen.findAllByRole('group', { name: /^Choices for missing word/ }),
+    ).not.toHaveLength(0);
+    await user.click(screen.getByRole('button', { name: 'Type the words instead' }));
+    expect(screen.getByText('Listen to each line and type the missing word.')).toBeInTheDocument();
+    expect(screen.getAllByRole('textbox').length).toBeGreaterThan(3);
+    await user.click(screen.getByRole('button', { name: 'Choose the words instead' }));
+    expect(screen.queryByRole('textbox')).toBeNull();
   });
 
   it('checks the typed words, lets the learner fix them and shows the answers', async () => {
@@ -210,6 +265,7 @@ describe('Fill in the Blanks', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     seedProfile({ canTypeWords: true });
     renderApp('/conversation/my-bedroom/fill-blanks');
+    await user.click(await screen.findByRole('button', { name: 'Type the words instead' }));
     const answers = expectedAnswers();
     expect(answers.length).toBeGreaterThan(3);
 
@@ -242,11 +298,12 @@ describe('Fill in the Blanks', () => {
     expect(screen.getByRole('button', { name: 'New Blanks' })).toBeInTheDocument();
   });
 
-  it('Show Answers reveals what was missing', async () => {
+  it('typing mode: Show Answers reveals what was missing', async () => {
     const user = userEvent.setup();
     vi.spyOn(Math, 'random').mockReturnValue(0);
     seedProfile({ canTypeWords: true });
     renderApp('/conversation/my-bedroom/fill-blanks');
+    await user.click(await screen.findByRole('button', { name: 'Type the words instead' }));
     const [first] = await screen.findAllByRole('textbox');
     await user.type(first, 'nope');
     await user.click(screen.getByRole('button', { name: 'Check Answers' }));

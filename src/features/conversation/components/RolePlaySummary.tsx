@@ -18,7 +18,6 @@ export function RolePlaySummary({
   role,
   results,
   canSwitch,
-  canType,
   onReplay,
   onChangeRole,
 }: {
@@ -27,8 +26,6 @@ export function RolePlaySummary({
   results: Readonly<Record<string, RoleLineResult>>;
   /** The conversation has another character to play. */
   canSwitch: boolean;
-  /** The learner can type: offer Fill in the blanks. */
-  canType: boolean;
   onReplay: () => void;
   onChangeRole: () => void;
 }) {
@@ -107,17 +104,15 @@ export function RolePlaySummary({
             </Button>
           )}
         </div>
-        {canType && (
-          <ButtonLink
-            to={paths.fillBlanks(conversation.id)}
-            size="lg"
-            variant="warm"
-            fullWidth
-            leftIcon={<PencilLine aria-hidden className="size-5" />}
-          >
-            {t('Fill in the Blanks')}
-          </ButtonLink>
-        )}
+        <ButtonLink
+          to={paths.fillBlanks(conversation.id)}
+          size="lg"
+          variant="warm"
+          fullWidth
+          leftIcon={<PencilLine aria-hidden className="size-5" />}
+        >
+          {t('Fill in the Blanks')}
+        </ButtonLink>
         <ButtonLink
           to={paths.conversation(conversation.id)}
           size="lg"
