@@ -5,6 +5,7 @@ import {
   ChevronRight,
   CircleCheck,
   Flag,
+  Mic,
   RotateCcw,
   Search,
 } from 'lucide-react';
@@ -119,7 +120,8 @@ function Flashcards({ scene }: { scene: Scene }) {
                 {t(
                   'Now find these {count} things in the {scene} and answer a question about each one.',
                   { count: words.length, scene: scene.title.toLowerCase() },
-                )}
+                )}{' '}
+                {t('Or say each word out loud and get a speaking score.')}
               </p>
               {/* Full width: a long scene name ("House Exterior") wraps the row instead of overflowing. */}
               <div className="mt-2 flex w-full flex-col gap-3">
@@ -135,6 +137,17 @@ function Flashcards({ scene }: { scene: Scene }) {
                     </span>
                   </ButtonLink>
                   <ButtonLink
+                    to={paths.wordSpeaking(scene.id)}
+                    size="lg"
+                    variant="warm"
+                    className="sm:grow"
+                    leftIcon={<Mic aria-hidden className="size-5" />}
+                  >
+                    {t('Practice Speaking')}
+                  </ButtonLink>
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <ButtonLink
                     to={paths.topic(scene.id)}
                     size="lg"
                     variant="soft"
@@ -143,19 +156,19 @@ function Flashcards({ scene }: { scene: Scene }) {
                   >
                     {t('Back to Overview')}
                   </ButtonLink>
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    className="sm:grow"
+                    leftIcon={<RotateCcw aria-hidden className="size-5" />}
+                    onClick={() => {
+                      setFinished(false);
+                      goTo(0);
+                    }}
+                  >
+                    {t('Start the cards again')}
+                  </Button>
                 </div>
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  fullWidth
-                  leftIcon={<RotateCcw aria-hidden className="size-5" />}
-                  onClick={() => {
-                    setFinished(false);
-                    goTo(0);
-                  }}
-                >
-                  {t('Start the cards again')}
-                </Button>
               </div>
             </section>
           ) : (

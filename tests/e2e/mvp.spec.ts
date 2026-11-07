@@ -102,8 +102,9 @@ test('MVP journey: setup → explore → quiz → progress → conversation', as
   await page.reload();
   await expect(objectsFound.getByText('1 / 24')).toBeVisible();
 
-  // Conversation: video → transcript → speaking practice (Listen & Repeat works everywhere).
+  // Conversation: scene → video → transcript → speaking practice (Listen & Repeat works everywhere).
   await page.getByRole('link', { name: 'Conversation', exact: true }).click();
+  await page.getByRole('link', { name: /Bedroom/ }).click();
   await page.getByRole('link', { name: /My Bedroom/ }).click();
   await page.getByRole('link', { name: 'Watch the video' }).click();
   await page.getByRole('link', { name: 'View Conversation' }).click();

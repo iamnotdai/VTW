@@ -31,49 +31,81 @@ const CONTRACTIONS: Record<string, string[]> = {
   "i've": ['i', 'have'],
 };
 
-const NUMBER_WORDS: Record<string, string> = {
-  '0': 'zero',
-  '1': 'one',
-  '2': 'two',
-  '3': 'three',
-  '4': 'four',
-  '5': 'five',
-  '6': 'six',
-  '7': 'seven',
-  '8': 'eight',
-  '9': 'nine',
-  '10': 'ten',
-  '11': 'eleven',
-  '12': 'twelve',
-};
+/* Recognizers write numbers as digits ("30 minutes", "30分钟"); the samples spell them out. Both
+ * sides are compared spelled out, up to 9999. */
+const ONES = [
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+  'ten',
+  'eleven',
+  'twelve',
+  'thirteen',
+  'fourteen',
+  'fifteen',
+  'sixteen',
+  'seventeen',
+  'eighteen',
+  'nineteen',
+];
+const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 
-/* Chinese has no spaces between words: each character is matched on its own. Recognizers often
- * write numbers as digits ("3个") and say 两 or 二 for "two" — both are counted as the same. */
+/** 30 → ["thirty"], 24 → ["twenty", "four"] (like "twenty-four"), 105 → ["one", "hundred", "five"]. */
+export function numberWords(value: number): string[] {
+  if (value < 20) return [ONES[value]];
+  if (value < 100) {
+    const tens = TENS[Math.floor(value / 10)];
+    return value % 10 ? [tens, ONES[value % 10]] : [tens];
+  }
+  const [unit, size] = value < 1000 ? [100, 'hundred'] : [1000, 'thousand'];
+  const rest = value % unit;
+  return [...numberWords(Math.floor(value / unit)), size, ...(rest ? numberWords(rest) : [])];
+}
+
+/* Chinese has no spaces between words: each character is matched on its own. Digits become Chinese
+ * numerals (30 → 三十), and 两 / 二 ("two") are counted as the same. */
 const HAN = /\p{Script=Han}/u;
-const HAN_NUMBERS: Record<string, string> = {
-  '0': '零',
-  '1': '一',
-  '2': '二',
-  '3': '三',
-  '4': '四',
-  '5': '五',
-  '6': '六',
-  '7': '七',
-  '8': '八',
-  '9': '九',
-  '10': '十',
-  两: '二',
-};
+const HAN_DIGITS = '零一二三四五六七八九';
+
+/** 30 → 三十, 15 → 十五, 105 → 一百零五, 110 → 一百一十. */
+export function hanNumber(value: number): string {
+  if (value < 10) return HAN_DIGITS[value];
+  if (value < 100) {
+    const tens = Math.floor(value / 10);
+    return `${tens === 1 ? '' : HAN_DIGITS[tens]}十${value % 10 ? HAN_DIGITS[value % 10] : ''}`;
+  }
+  const [unit, size] = value < 1000 ? [100, '百'] : [1000, '千'];
+  const rest = value % unit;
+  const restText =
+    rest === 0
+      ? ''
+      : `${rest < unit / 10 ? '零' : ''}${rest >= 10 && rest < 20 ? '一' : ''}${hanNumber(rest)}`;
+  return `${HAN_DIGITS[Math.floor(value / unit)]}${size}${restText}`;
+}
+
+/** A Chinese character as both sides count it: 两 → 二, other characters unchanged. */
+export function hanUnit(char: string): string {
+  return char === '两' ? '二' : char;
+}
+
+const DIGITS = /^\d{1,4}$/;
 
 function hanTokens(word: string): string[] {
-  const parts = HAN_NUMBERS[word]
-    ? [word]
-    : (word.match(/\p{Script=Han}|[^\p{Script=Han}]+/gu) ?? []);
-  return parts.map((part) => HAN_NUMBERS[part] ?? part);
+  const parts = word.match(/\p{Script=Han}|[^\p{Script=Han}]+/gu) ?? [];
+  return parts.flatMap((part) =>
+    DIGITS.test(part) ? Array.from(hanNumber(Number(part))) : [hanUnit(part)],
+  );
 }
 
 /**
- * Lower-cases, strips punctuation, expands common contractions and small numbers. Text with Chinese
+ * Lower-cases, strips punctuation, expands common contractions and numbers. Text with Chinese
  * characters is split into single characters instead.
  */
 export function speechTokens(text: string): string[] {
@@ -87,7 +119,9 @@ export function speechTokens(text: string): string[] {
     .map((word) => word.replace(/^'+|'+$/g, ''))
     .filter(Boolean)
     .flatMap((word) =>
-      han ? hanTokens(word) : (CONTRACTIONS[word] ?? [NUMBER_WORDS[word] ?? word]),
+      han
+        ? hanTokens(word)
+        : (CONTRACTIONS[word] ?? (DIGITS.test(word) ? numberWords(Number(word)) : [word])),
     );
 }
 

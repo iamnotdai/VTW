@@ -54,6 +54,11 @@ export interface Word {
   /** e.g. "/assets/audio/words/lamp.mp3" — optional, Web Speech is the fallback */
   audio?: string;
   acceptedAnswers: string[];
+  /**
+   * @extension Words that sound exactly the same ("pear" → "pair"). A speech recognizer may write
+   * one of them for a well-said word, so Word Speaking counts them as the word (spec §7.7).
+   */
+  soundsLike?: string[];
   examples: WordExample[];
   relatedWordIds: string[];
   distractorWordIds?: string[];

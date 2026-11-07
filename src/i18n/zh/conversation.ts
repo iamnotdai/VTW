@@ -90,4 +90,52 @@ export const conversation: Record<string, string> = {
     '现在用不了语音识别，我们来跟着读吧。',
   'Something went wrong with the microphone. Let’s listen and repeat instead.':
     '麦克风出了点问题，我们来跟着读吧。',
+  // Role-play (spec §9.5)
+  'Role-play': '角色扮演',
+  '{title} · Role-play': '{title} · 角色扮演',
+  'Role-play: {title}': '角色扮演：{title}',
+  'Who do you want to be?': '你想扮演谁？',
+  'You say the lines of your character. The others speak by themselves.':
+    '你来说你的角色的台词，其他角色会自己说。',
+  '1 line': '1句台词',
+  '{count} lines': '{count}句台词',
+  'Be {name}': '扮演{name}',
+  'Back to the Conversation': '回到对话',
+  'You are {name}': '你是{name}',
+  'You are {name}!': '你是{name}！',
+  'Change Character': '换个角色',
+  'Listen to the other characters.': '听其他角色说话。',
+  'When it’s your turn, tap the microphone and say your line.':
+    '轮到你的时候，点麦克风，说出你的台词。',
+  'Each line you say gets a score.': '你说的每一句都会得到分数。',
+  '{name} is speaking…': '{name}正在说话……',
+  'Sound is off: read {name}’s line, then continue.': '声音关了：读一读{name}的台词，然后继续。',
+  '{name} (you)': '{name}（你）',
+  'Your turn': '轮到你了',
+  'Your turn!': '轮到你啦！',
+  'Listen to your line': '听一听你的台词',
+  'Tap and say your line': '点一下，说出你的台词',
+  'Listen to your line, say it out loud, then tap “I said it!”.':
+    '听一听你的台词，大声说出来，然后点“我说完了！”。',
+  'Role-play complete!': '角色扮演完成啦！',
+  'You played {name} in “{title}”.': '你在“{title}”里扮演了{name}。',
+  // Fill in the Blanks (spec §9.6)
+  'Fill in the Blanks': '填空',
+  '{title} · Fill in the Blanks': '{title} · 填空',
+  'This exercise is for learners who can type': '这个练习适合会打字的小朋友',
+  'Choose “Yes, I can type words” in Settings to fill in the blanks.':
+    '在设置里选择“会，我会打字”，就可以做填空练习了。',
+  'Open Settings': '打开设置',
+  'Listen to each line and type the missing word.': '听一听每句话，把缺少的词打出来。',
+  'Missing word {number}': '第{number}个空',
+  'Listen to line {number}': '听第{number}句',
+  'Check Answers': '检查答案',
+  'Check Again': '再检查一次',
+  'Show Answers': '看答案',
+  '{count} of {total} right. Fix the yellow words and check again!':
+    '答对了{count}个，共{total}个。改一改黄色的词，再检查一次吧！',
+  'All the words are right. Great job!': '所有的词都对了，真棒！',
+  'Here are the answers.': '答案在这里。',
+  '{count} of {total} right on the first try.': '第一次就答对了{count}个，共{total}个。',
+  'New Blanks': '换一组填空',
 };

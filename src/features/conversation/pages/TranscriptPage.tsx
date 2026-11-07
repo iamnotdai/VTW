@@ -6,6 +6,7 @@ import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { t } from '@/i18n';
 import type { Conversation, Scene } from '@/types/models';
+import { PracticeMoreLinks } from '../components/PracticeMoreLinks';
 import { TranscriptViewer } from '../components/TranscriptViewer';
 import { useConversationParam } from '../useConversationParam';
 
@@ -44,6 +45,7 @@ function Transcript({ conversation, scene }: { conversation: Conversation; scene
           >
             {t('Practice Speaking')}
           </ButtonLink>
+          <PracticeMoreLinks conversation={conversation} className="mt-3" />
         </PageContainer>
       </div>
     </>

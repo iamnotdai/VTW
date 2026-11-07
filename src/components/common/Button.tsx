@@ -5,8 +5,9 @@ import { cn } from '@/lib/cn';
 export type ButtonVariant = 'primary' | 'secondary' | 'soft' | 'ghost' | 'success' | 'warm';
 export type ButtonSize = 'sm' | 'md' | 'lg';
 
+/** Icons never shrink: a long label wraps or the layout stacks instead. */
 const BASE =
-  'inline-flex select-none items-center justify-center gap-2.5 whitespace-nowrap font-bold transition duration-150 active:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50';
+  'inline-flex select-none items-center justify-center gap-2.5 whitespace-nowrap font-bold transition duration-150 active:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&_svg]:shrink-0';
 
 /** Flat, bright buttons of the design board. `secondary` is the white outlined button. */
 const VARIANTS: Record<ButtonVariant, string> = {

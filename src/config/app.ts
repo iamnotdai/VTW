@@ -136,6 +136,9 @@ export const VIDEO_CONFIG = {
 export const SPEECH_CONFIG = {
   /** Slightly slower than normal for young learners. */
   rate: 0.9,
+  /** The snail button: browser voice speed, and recorded files' playback speed. */
+  slowRate: 0.55,
+  slowFileRate: 0.7,
   /** Pitch that makes an adult browser voice sound like a boy / girl (1 = unchanged). */
   stylePitch: { boy: 1.25, girl: 1.4 },
 } as const;
@@ -144,4 +147,54 @@ export const SPEECH_CONFIG = {
 export const SPEAKING_FEEDBACK = {
   great: 0.8,
   good: 0.5,
+} as const;
+
+/**
+ * Speaking scores of Word Speaking and Role-play (spec §7.7, §9.5), 0–100. They are estimated from
+ * what the browser's speech recognizer heard, so the screens present them as a guide — never as
+ * an acoustic pronunciation test.
+ */
+export const SPEAKING_SCORE = {
+  /** Levels: "Excellent!" from `great`, "Almost there!" from `good`, else "Let’s try again!". */
+  great: 80,
+  good: 55,
+  /** Recognizer alternatives to compare: more of them help with words that sound alike. */
+  maxAlternatives: 5,
+  /** Highest score of a word that was heard close to, but not exactly as, the target. */
+  nearMissMax: 85,
+  /**
+   * Points lost when the target was only the recognizer's 2nd, 3rd… guess (index = guess − 1):
+   * the learner's voice sounded more like the other guesses.
+   */
+  rankPenalty: { word: [0, 15, 22, 27, 30], sentence: [0, 4, 7, 9, 10] },
+  /** Share of the score that follows the recognizer's confidence, when it reports one. */
+  confidenceWeight: 0.15,
+  /** A word in a sentence at least this similar (letters) counts as "almost", not as missing. */
+  fairWordSimilarity: 0.5,
+  /** Cost of an extra word or character in the middle of a sentence (a missing one costs 1). */
+  insertionCost: 0.5,
+  /** Chinese: cost of a character heard with the right syllable but another tone (0–1). */
+  toneSlipCost: 0.3,
+} as const;
+
+/** "Listen to yourself" (Word Speaking, Role-play). The recording only lives in memory. */
+export const RECORDING_CONFIG = {
+  /** A recording whose loudest moment stays under this level (0–1) is silence. */
+  silencePeak: 0.02,
+  /** How often the loudness is sampled while recording (ms). */
+  levelSampleMs: 100,
+} as const;
+
+/** Role-play (spec §9.5). */
+export const ROLE_PLAY_CONFIG = {
+  /** Pause before the next line, so turns don't run into each other (ms). */
+  lineGapMs: 450,
+} as const;
+
+/** Fill in the blanks (spec §9.6). */
+export const FILL_BLANKS_CONFIG = {
+  /** Shortest English word that may become a blank (vocabulary words always can). */
+  minWordLength: 3,
+  /** Shortest Chinese word, in characters, that may become a blank. */
+  minHanLength: 2,
 } as const;

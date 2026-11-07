@@ -13,6 +13,7 @@ import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation, Scene } from '@/types/models';
 import { ConversationPlayer } from '../components/ConversationPlayer';
 import { PlayConversationButton } from '../components/PlayConversationButton';
+import { PracticeMoreLinks } from '../components/PracticeMoreLinks';
 import { TranscriptViewer } from '../components/TranscriptViewer';
 import { useConversationParam } from '../useConversationParam';
 
@@ -120,6 +121,7 @@ function ConversationDetail({ conversation, scene }: { conversation: Conversatio
             {t('Practice Speaking')}
           </ButtonLink>
         </div>
+        <PracticeMoreLinks conversation={conversation} className="-mt-2" />
       </PageContainer>
     </>
   );

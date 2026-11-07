@@ -19,6 +19,8 @@ export interface SoundRequest {
   voiceURI?: string | null;
   /** Boy/girl voice from Settings; its pitch applies only when `pitch` is not set (e.g. by a speaker). */
   voiceStyle?: VoiceStyle | null;
+  /** The snail button: noticeably slower, for listening closely (files play slower too). */
+  slow?: boolean;
 }
 
 export interface PlaybackCallbacks {
@@ -170,13 +172,18 @@ export function speakText(
   };
 }
 
-/** Plays an audio file. Returns a stop function. */
-export function playAudioFile(src: string, callbacks: PlaybackCallbacks = {}): () => void {
+/** Plays an audio file, optionally slower (`playbackRate` < 1, pitch kept). Returns a stop function. */
+export function playAudioFile(
+  src: string,
+  callbacks: PlaybackCallbacks = {},
+  playbackRate = 1,
+): () => void {
   if (typeof Audio === 'undefined') {
     callbacks.onError?.();
     return () => {};
   }
   const audio = new Audio(src);
+  audio.playbackRate = playbackRate;
   let settled = false;
   const settle = (callback?: () => void) => {
     if (settled) return;
@@ -228,7 +235,7 @@ export function playSound(request: SoundRequest, callbacks: PlaybackCallbacks = 
   const speakFallback = () => {
     if (settled) return;
     cancelCurrent = speakText(request.text, {
-      rate: request.rate,
+      rate: request.slow ? SPEECH_CONFIG.slowRate : request.rate,
       pitch: request.pitch,
       voiceURI: request.voiceURI,
       voiceStyle: request.voiceStyle,
@@ -239,10 +246,11 @@ export function playSound(request: SoundRequest, callbacks: PlaybackCallbacks = 
 
   activeStop = stop;
   if (request.src) {
-    cancelCurrent = playAudioFile(request.src, {
-      onEnd: () => settle(callbacks.onEnd),
-      onError: speakFallback,
-    });
+    cancelCurrent = playAudioFile(
+      request.src,
+      { onEnd: () => settle(callbacks.onEnd), onError: speakFallback },
+      request.slow ? SPEECH_CONFIG.slowFileRate : 1,
+    );
   } else {
     speakFallback();
   }

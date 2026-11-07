@@ -23,11 +23,15 @@ differences). Team docs: `README.md` (Vietnamese), asset workflow: `docs/asset-p
 - Profile Setup collects name, age group, "can type words", boy/girl picture, plus the course picker
   (English / 中文) at the top. Never add upload.
 - Progress counts a word only after a CORRECT answer, once. Never hard-code progress.
-- `canTypeWords=false` → multiple choice only. Pick the answer mode/options once per question.
+- `canTypeWords=false` → multiple choice only (and no Fill in the Blanks). Pick the answer
+  mode/options once per question.
 - Hotspots are traced contours in the background's pixel space. Never use loose bounding boxes.
   Background and SVG overlay must share one transformed container.
 - Every interaction must work with touch (no hover-only actions) and with the keyboard.
-- Speech recognition is optional and not a pronunciation score. Always keep Listen & Repeat.
+- Speech recognition is optional; always keep Listen & Repeat. Word Speaking and Role-play show a
+  0–100 score estimated from the recognizer's guesses (`src/lib/speakingScore.ts`, spec §7.7/§9.5):
+  present it as a guide, never as an acoustic pronunciation test. Voice recordings ("listen to
+  yourself") stay in memory only — never saved or uploaded. Speaking never adds word progress.
 - Don't present placeholder art or sample words as final content.
 
 ## Conventions

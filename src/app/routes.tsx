@@ -3,6 +3,8 @@ import { AppShell } from '@/components/layout/AppShell';
 import { ConversationDetailPage } from '@/features/conversation/pages/ConversationDetailPage';
 import { ConversationScenesPage } from '@/features/conversation/pages/ConversationScenesPage';
 import { ConversationVideoPage } from '@/features/conversation/pages/ConversationVideoPage';
+import { FillBlanksPage } from '@/features/conversation/pages/FillBlanksPage';
+import { RolePlayPage } from '@/features/conversation/pages/RolePlayPage';
 import { SpeakingPracticePage } from '@/features/conversation/pages/SpeakingPracticePage';
 import { SpeakingResultPage } from '@/features/conversation/pages/SpeakingResultPage';
 import { TranscriptPage } from '@/features/conversation/pages/TranscriptPage';
@@ -18,9 +20,10 @@ import { ResultPage } from '@/features/vocabulary/pages/ResultPage';
 import { TopicConversationsPage } from '@/features/vocabulary/pages/TopicConversationsPage';
 import { TopicOverviewPage } from '@/features/vocabulary/pages/TopicOverviewPage';
 import { VocabularyPage } from '@/features/vocabulary/pages/VocabularyPage';
+import { WordSpeakingPage } from '@/features/vocabulary/pages/WordSpeakingPage';
 import { RequireProfile, SetupOnly } from './guards';
 
-/** The 16 screens of spec §5 (numbers in comments). */
+/** The 16 screens of spec §5 (numbers in comments), plus the speaking extensions (spec §7.7, §9.5, §9.6). */
 export const routes: RouteObject[] = [
   {
     errorElement: <RouteErrorPage />,
@@ -57,6 +60,7 @@ export const routes: RouteObject[] = [
                 path: 'vocabulary/:sceneId/result/:wordId',
                 element: <ResultPage />,
               }, // 08
+              { path: 'vocabulary/:sceneId/speaking', element: <WordSpeakingPage /> }, // Word Speaking
               { path: 'vocabulary/:sceneId/conversations', element: <TopicConversationsPage /> }, // 09
               {
                 path: 'conversation/:conversationId/video', // 10
@@ -73,6 +77,11 @@ export const routes: RouteObject[] = [
               {
                 path: 'conversation/:conversationId/practice/result', // 13
                 element: <SpeakingResultPage />,
+              },
+              { path: 'conversation/:conversationId/role-play', element: <RolePlayPage /> }, // Role-play
+              {
+                path: 'conversation/:conversationId/fill-blanks', // Fill in the Blanks
+                element: <FillBlanksPage />,
               },
               { path: 'conversation', element: <ConversationScenesPage /> }, // 14
               {

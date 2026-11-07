@@ -87,6 +87,7 @@ First launch
         │   └── Scene/Topic List
         │       └── Topic Overview (Bedroom)
         │           ├── Flashcards
+        │           │   └── Word Speaking      [mở rộng §7.7]
         │           ├── Explore Scene
         │           │   ├── Select Object
         │           │   ├── Quiz: Type / Multiple Choice
@@ -98,7 +99,9 @@ First launch
         │       └── Conversation Detail
         │           ├── Video
         │           ├── Transcript
-        │           └── Speaking Practice
+        │           ├── Speaking Practice
+        │           ├── Role-play           [mở rộng §9.5]
+        │           └── Fill in the Blanks  [mở rộng §9.6, chỉ khi gõ được chữ]
         └── Settings
 ```
 
@@ -126,6 +129,14 @@ First launch
 | 14 | Conversation Scene List | `/conversation` | Nhóm hội thoại theo scene, số đã học |
 | 15 | Conversation Detail | `/conversation/:conversationId` | Video preview/detail, transcript preview, nút Video/Transcript/Practice |
 | 16 | Settings | `/settings` | Avatar, name, age, can type words, Save Changes |
+
+**Màn mở rộng (luyện nói có chấm điểm, bổ sung 11/2026):** đều có thanh trên (breadcrumb) như các màn phụ khác.
+
+| Màn hình | Route | Nội dung/Chức năng |
+| --- | --- | --- |
+| Word Speaking | `/vocabulary/:sceneId/speaking` | Nói từng từ của scene, điểm 0–100, tô màu từng cụm âm (§7.7) |
+| Role-play | `/conversation/:conversationId/role-play?as=<speakerId>` | Chọn/đổi nhân vật, nói câu của nhân vật đó, chấm điểm từng câu (§9.5) |
+| Fill in the Blanks | `/conversation/:conversationId/fill-blanks` | Điền từ còn thiếu trong hội thoại, chỉ khi `canTypeWords = true` (§9.6) |
 
 ### 5.1. Khung layout chung
 
@@ -189,7 +200,7 @@ First launch
 - Cho phép `Previous` (nếu có), `Next`, `Finish`. Không có nút `Skip`.
 - Màn này **không có header/breadcrumb**: ảnh nền scene phủ kín vùng nội dung; dải ảnh đồ vật ở dưới cùng luôn đầy cả hai bên thẻ (gần cuối không dồn sang trái).
 - `Next` chỉ chuyển thẻ (quy tắc đánh dấu “đã học” cần thống nhất; MVP ưu tiên **đã hoàn thành quiz** chứ không phải chỉ xem flashcard).
-- `Finish` (hoặc `Next` ở thẻ cuối) thoát về overview hoặc chuyển sang Explore qua CTA rõ ràng (thẻ "Great job!" với Explore, Back to Overview, Start the cards again).
+- `Finish` (hoặc `Next` ở thẻ cuối) thoát về overview hoặc chuyển sang Explore qua CTA rõ ràng (thẻ "Great job!" với Explore, **Practice Speaking** (§7.7), Back to Overview, Start the cards again).
 - Hỗ trợ bàn phím trái/phải khi desktop nếu không focus vào input.
 
 ### 7.4. Explore Scene
@@ -247,6 +258,18 @@ SceneViewport (responsive container, giữ đúng aspect-ratio)
 ```
 
 **Điều kiện bắt buộc:** Layer ảnh và SVG phải dùng **cùng một hộp tọa độ và cùng transform zoom/pan**. Nếu ảnh `object-fit: cover` bị crop nhưng SVG không crop tương ứng, vị trí click sẽ lệch. MVP ưu tiên `contain` hoặc viewport giữ `aspect-ratio`; nếu `cover` thì phải tính offset/crop chuẩn.
+
+### 7.7. Word Speaking — luyện nói theo flashcard *(mở rộng)*
+
+- Vào từ thẻ "Great job!" cuối Flashcards (`Practice Speaking`) → `/vocabulary/:sceneId/speaking`. Có thanh trên (breadcrumb Vocabulary › Scene › Speaking).
+- Lần lượt từng từ của scene (thứ tự flashcard): ảnh, từ, IPA (pinyin), nghĩa tiếng Việt (nếu bật trong Settings), nút nghe, **nghe chậm** (con ốc sên), **nghe lại chính mình** (khi có bản ghi), thanh tiến độ "Word 3 of 24".
+- Bấm micro và nói → điểm **0–100** trong vòng tròn + mức: ≥ 80 `Excellent!`, ≥ 55 `Almost there!`, còn lại `Let’s try again!` (ngưỡng trong `SPEAKING_SCORE`). Từ được **tô màu theo cụm âm** (th, ee, er…): xanh = đúng, vàng gạch chấm = gần đúng, đỏ gạch sóng = cần luyện; màu luôn kèm kiểu gạch chân để không chỉ dựa vào màu. Hiện "We heard: …".
+- Nút sau khi chấm: `Try Again` và `Next Word` (điểm thấp: `Try Again` là nút chính và `Skip`). Cuối lượt: điểm trung bình, điểm tốt nhất từng từ, `Practice the Tricky Words` (từ < 80 hoặc bỏ qua), `Practice All Words Again`, Explore, Back to Overview.
+- **Cách chấm (không backend):** trình duyệt chỉ trả về chữ (các phỏng đoán của `SpeechRecognition`, lấy tối đa 5). Điểm so phỏng đoán với từ mục tiêu: tìm cụm từ nghe được gần nhất ("it's a lamp" → "lamp"), so từng chữ cái; đúng ở phỏng đoán thứ 2, 3… bị trừ điểm; `confidence` ảnh hưởng nhẹ; còn phần đỏ thì không quá 79. `acceptedAnswers` và `Word.soundsLike` (từ đồng âm như "pair" cho "pear") tính là đúng. Tiếng Trung: so từng chữ Hán, chữ đồng âm cùng thanh là đúng, cùng âm khác thanh là gần đúng kèm nhắc thanh điệu (pinyin tra bằng `pinyin-pro`, tải lười).
+- **Ghi rõ giới hạn trên màn hình:** điểm là ước lượng từ những gì trình duyệt nghe được, không phải bài kiểm tra phát âm đầy đủ. Chấm theo âm vị/trọng âm thật như ELSA cần dịch vụ chấm phát âm có API key hoặc mô hình âm học lớn — ngoài phạm vi "không backend" (§1).
+- **Nghe lại chính mình:** nếu trình duyệt cho phép vừa nhận dạng vừa ghi âm (`MediaRecorder`), lần thử cuối được giữ **trong bộ nhớ** (object URL), xóa khi thử lại/sang từ/rời màn. Không lưu, không upload (§9.4). Không ghi trên Android; tự tắt khi phát hiện micro không dùng chung được.
+- Không hỗ trợ nhận dạng / micro bị chặn → `Listen & Repeat`: nghe, nói to, bấm `I said it!`.
+- Luyện nói **không** cộng tiến độ học từ (§8 Feedback, §11.2).
 
 ## 8. Vocabulary Quiz: luật nghiệp vụ
 
@@ -321,7 +344,25 @@ export function pickAnswerMode(
 - Một số trình duyệt không hỗ trợ speech recognition hoặc có thể xử lý âm thanh qua dịch vụ mạng. Vì vậy **không cam kết speech-to-text offline/hoàn toàn local**.
 - Nếu API không khả dụng hoặc người dùng từ chối microphone: cung cấp `Listen & Repeat`, phát audio mẫu và nút `Mark as Practiced`, không chặn hành trình học.
 - Chỉ xin quyền microphone **khi người dùng nhấn ghi âm**; hiển thị trạng thái và có nút dừng.
-- Không upload hay lưu file giọng nói trong MVP.
+- Không upload hay lưu file giọng nói trong MVP. (Word Speaking và Role-play chỉ giữ lần thử cuối trong bộ nhớ để "nghe lại chính mình", §7.7.)
+- Màn Speaking Practice vẫn so khớp đơn giản như trên. Các màn **có chấm điểm** (Word Speaking §7.7, Role-play §9.5) dùng điểm ước lượng từ phỏng đoán của trình duyệt và luôn ghi rõ đó không phải bài kiểm tra phát âm đầy đủ.
+
+### 9.5. Role-play — đóng vai theo hội thoại *(mở rộng)*
+
+- Vào từ Transcript hoặc Conversation Detail (`Role-play`) → `/conversation/:conversationId/role-play`. Có thanh trên (breadcrumb).
+- **Chọn nhân vật:** mỗi nhân vật của hội thoại là một thẻ (ảnh, tên, số câu, `Be <tên>`). Lựa chọn nằm trong URL (`?as=<speakerId>`, điều hướng kiểu replace để nút Back rời màn thay vì đi qua từng lần chọn). `Change Character` có ở mọi lúc (đang chơi hoặc ở màn kết quả) và quay lại màn chọn, đánh dấu nhân vật vừa chơi.
+- **Chơi:** bấm `Start` (thao tác của người dùng nên trình duyệt cho phép đọc). Câu của nhân vật khác tự đọc lần lượt (file audio nếu có, không thì giọng trình duyệt với cao độ riêng của nhân vật), hiện dạng bong bóng chat; có `Skip`. Đến câu của người học: khung `Your turn!` với nút nghe câu mẫu, nghe chậm, micro; chấm điểm như §7.7 nhưng **theo từng từ** (từ thiếu = đỏ, từ gần giống = vàng); `Try Again` / `Continue`. Điểm hiện ngay trên bong bóng của câu đó.
+- Tắt âm thanh trong Settings: câu của nhân vật khác không tự đọc, có nút `Continue`.
+- Không hỗ trợ nhận dạng / micro bị chặn: `Listen & Repeat` → `I said it!`.
+- **Kết thúc:** điểm trung bình các câu của người học (điểm tốt nhất mỗi câu), danh sách câu kèm điểm, `Play again`, `Change Character`, `Fill in the Blanks` (chỉ khi gõ được chữ), quay lại hội thoại. Xong một lượt Role-play cũng đánh dấu hội thoại **đã hoàn thành** (như xong Speaking Practice).
+
+### 9.6. Fill in the Blanks — điền từ theo hội thoại *(mở rộng)*
+
+- **Chỉ cho người học chọn "Yes, I can type words"** (`canTypeWords = true`); người khác không thấy nút, mở link trực tiếp thì thấy hướng dẫn vào Settings.
+- Hội thoại hiện đầy đủ, mỗi câu ẩn **một** từ thành ô nhập: ưu tiên từ vựng của scene có trong câu (kể cả số nhiều, cụm từ như "pencil cup"), không có thì một trong các từ dài nhất; **không** ẩn tên nhân vật, từ nhỏ (the, is, your…; 的, 我的…) và từ mà đáp án còn xuất hiện ở chỗ khác trong cùng câu. Tiếng Trung tách từ bằng `Intl.Segmenter` (chữ nằm trong từ khác, như 床 trong 起床, không được chọn); pinyin vẫn hiện nhưng che âm tiết của chỗ trống. Chọn ngẫu nhiên **một lần** khi tạo bài (như phương án quiz), `New Blanks` tạo bộ mới.
+- Mỗi câu có nút nghe (luyện nghe chép) và bản dịch tiếng Việt (nếu bật trong Settings).
+- `Check Answers`: chỉ bỏ qua hoa/thường, dấu câu, khoảng trắng — không chấp nhận sai chính tả (giống §8 Typing mode). Ô đúng xanh, ô sai vàng + rung nhẹ; sửa ô nào thì bỏ đánh dấu ô đó; `Check Again`, `Show Answers`. Kết thúc: "x / y đúng ngay lần đầu", `New Blanks`, `Role-play`, quay lại hội thoại. Không cộng tiến độ.
+- Bộ gõ tiếng Trung: Enter để chọn chữ trong bộ gõ không bị tính là nộp bài.
 
 ## 10. Data model TypeScript
 
@@ -350,6 +391,7 @@ export interface Word {
   image: string;       // "/assets/bedroom/objects/lamp.webp"
   audio?: string;      // "/assets/audio/lamp.mp3"
   acceptedAnswers: string[];
+  soundsLike?: string[]; // mở rộng §7.7: từ đồng âm, vd "pear" → ["pair", "pare"]
   examples: { en: string; vi?: string; audio?: string }[];
   relatedWordIds: string[];
   distractorWordIds?: string[];

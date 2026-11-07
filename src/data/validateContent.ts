@@ -40,6 +40,12 @@ export function validateContent(bundle: ContentBundle): string[] {
     else if (word.examples.some((example) => needsPinyin(example.text, example.pinyin)))
       errors.push(`${at}: every Chinese example needs "pinyin" (npm run content:pinyin)`);
 
+    if (
+      word.soundsLike !== undefined &&
+      (!Array.isArray(word.soundsLike) || word.soundsLike.some((item) => !item?.trim()))
+    )
+      errors.push(`${at}: "soundsLike" must be a list of words, e.g. ["pair"]`);
+
     if (needsPinyin(word.text, word.pinyin)) errors.push(`${at}: Chinese words need "pinyin"`);
     if (word.measure !== undefined && !/^\p{Script=Han}$/u.test(word.measure))
       errors.push(`${at}: "measure" must be one Chinese character, e.g. "张"`);

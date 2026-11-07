@@ -1,3 +1,4 @@
+import { Snail } from 'lucide-react';
 import { SpeakerMutedIcon, SpeakerSolidIcon } from '@/components/icons/AppIcons';
 import { t } from '@/i18n';
 import { optionalAssetUrl } from '@/lib/assets';
@@ -16,6 +17,8 @@ interface AudioButtonProps {
   /** Browser-voice tuning, e.g. per conversation speaker. */
   pitch?: number;
   rate?: number;
+  /** The snail button: plays slowly, for listening closely. Use its own `soundKey`. */
+  slow?: boolean;
   /** Accessible name, e.g. 'Listen to "lamp"'. */
   label: string;
   size?: 'sm' | 'md' | 'lg';
@@ -31,6 +34,7 @@ export function AudioButton({
   src,
   pitch,
   rate,
+  slow = false,
   label,
   size = 'md',
   variant = 'brand',
@@ -55,6 +59,7 @@ export function AudioButton({
     );
   }
 
+  const Icon = slow ? Snail : SpeakerSolidIcon;
   return (
     <IconButton
       label={playing ? t('Stop') : label}
@@ -63,10 +68,10 @@ export function AudioButton({
       aria-pressed={playing}
       className={cn(playing && 'ring-4 ring-sun-300', className)}
       onClick={() =>
-        playing ? stop() : play(soundKey, { text, src: optionalAssetUrl(src), pitch, rate })
+        playing ? stop() : play(soundKey, { text, src: optionalAssetUrl(src), pitch, rate, slow })
       }
     >
-      <SpeakerSolidIcon aria-hidden className={cn(playing && 'motion-safe:animate-pulse')} />
+      <Icon aria-hidden className={cn(playing && 'motion-safe:animate-pulse')} />
     </IconButton>
   );
 }

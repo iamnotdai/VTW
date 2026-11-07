@@ -5,6 +5,8 @@ import { paths, type NavigationState } from '@/app/paths';
 import { Button } from '@/components/common/Button';
 import { EmptyState } from '@/components/common/EmptyState';
 import { Breadcrumb, PageContainer, TopBar } from '@/components/layout/PageHeader';
+import { ListenRepeatBadge, MicButton } from '@/components/speaking/MicButton';
+import { speechErrorText } from '@/components/speaking/speechErrorText';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
@@ -13,13 +15,11 @@ import { useProgressStore } from '@/stores/progressStore';
 import type { Conversation } from '@/types/models';
 import {
   ExampleAnswerCard,
-  ListenRepeatBadge,
-  MicButton,
   QuestionHeader,
   SpeakingNote,
   YourAnswerCard,
 } from '../components/SpeakingParts';
-import { practiceCrumbs, speechErrorText } from '../speakingCopy';
+import { practiceCrumbs } from '../speakingCopy';
 import { useSpeakingSessionStore } from '../speakingSession';
 import { useConversationParam } from '../useConversationParam';
 

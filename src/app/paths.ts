@@ -10,6 +10,8 @@ export const paths = {
   explore: (sceneId: string) => `/vocabulary/${seg(sceneId)}/explore`,
   quiz: (sceneId: string, wordId: string) => `/vocabulary/${seg(sceneId)}/quiz/${seg(wordId)}`,
   result: (sceneId: string, wordId: string) => `/vocabulary/${seg(sceneId)}/result/${seg(wordId)}`,
+  /** @extension Word Speaking after the flashcards (spec §7.7). */
+  wordSpeaking: (sceneId: string) => `/vocabulary/${seg(sceneId)}/speaking`,
   topicConversations: (sceneId: string) => `/vocabulary/${seg(sceneId)}/conversations`,
   conversations: '/conversation',
   conversationScene: (sceneId: string) => `/conversation/scene/${seg(sceneId)}`,
@@ -19,6 +21,11 @@ export const paths = {
   practice: (conversationId: string) => `/conversation/${seg(conversationId)}/practice`,
   practiceResult: (conversationId: string) =>
     `/conversation/${seg(conversationId)}/practice/result`,
+  /** @extension Role-play (spec §9.5); `speakerId` = the character the learner plays. */
+  rolePlay: (conversationId: string, speakerId?: string) =>
+    `/conversation/${seg(conversationId)}/role-play${speakerId ? `?as=${seg(speakerId)}` : ''}`,
+  /** @extension Fill in the blanks, for learners who can type (spec §9.6). */
+  fillBlanks: (conversationId: string) => `/conversation/${seg(conversationId)}/fill-blanks`,
   settings: '/settings',
 } as const;
 

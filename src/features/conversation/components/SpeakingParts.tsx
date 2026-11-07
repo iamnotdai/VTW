@@ -1,18 +1,9 @@
-import {
-  Check,
-  Headphones,
-  LoaderCircle,
-  Mic,
-  RotateCcw,
-  Square,
-  type LucideIcon,
-} from 'lucide-react';
+import { Check, RotateCcw, type LucideIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { AudioButton } from '@/components/common/AudioButton';
 import { Avatar } from '@/components/common/Avatar';
 import { Pinyin } from '@/components/common/Pinyin';
 import { useCourse } from '@/hooks/useCourse';
-import type { SpeechStatus } from '@/hooks/useSpeechRecognition';
 import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
 import type { SpeechFeedbackLevel } from '@/lib/speechMatch';
@@ -54,86 +45,6 @@ export function QuestionHeader({
           <Pinyin text={question.promptPinyin} className="mt-0.5" />
         </div>
       </div>
-    </div>
-  );
-}
-
-/** Functions, so the copy is looked up in the active course when it is shown. */
-const MIC_LABEL: Partial<Record<SpeechStatus, () => string>> = {
-  idle: () => t('Tap to speak'),
-  result: () => t('Tap to speak'),
-  error: () => t('Tap to speak'),
-  'requesting-permission': () => t('Please allow the microphone…'),
-  listening: () => t('Listening… tap to stop'),
-  processing: () => t('Checking what you said…'),
-};
-
-/** Big round microphone with its light-blue halo. */
-export function MicButton({
-  status,
-  onStart,
-  onStop,
-  idleLabel = t('Tap to speak'),
-}: {
-  status: SpeechStatus;
-  onStart: () => void;
-  onStop: () => void;
-  idleLabel?: string;
-}) {
-  const busy = status === 'requesting-permission' || status === 'processing';
-  const listening = status === 'listening';
-  const label = listening || busy ? MIC_LABEL[status]?.() : idleLabel;
-  return (
-    <div className="flex flex-col items-center">
-      <div className="relative flex size-44 items-center justify-center">
-        <span aria-hidden className="absolute inset-0 rounded-full bg-brand-50" />
-        <span aria-hidden className="absolute inset-5 rounded-full bg-brand-100/80" />
-        {listening && (
-          <span
-            aria-hidden
-            className="absolute inset-7 rounded-full bg-coral-400/60 motion-safe:animate-ping"
-          />
-        )}
-        <button
-          type="button"
-          onClick={listening ? onStop : onStart}
-          disabled={busy}
-          aria-label={listening ? t('Stop listening') : idleLabel}
-          className={cn(
-            'relative flex size-24 items-center justify-center rounded-full text-white transition active:scale-95 disabled:opacity-80',
-            listening
-              ? 'bg-coral-500 shadow-[0_10px_22px_-10px_rgb(239_106_74/0.8)]'
-              : 'bg-brand-500 shadow-cta hover:bg-brand-600',
-          )}
-        >
-          {busy ? (
-            <LoaderCircle aria-hidden className="size-10 motion-safe:animate-spin" />
-          ) : listening ? (
-            <Square aria-hidden className="size-8 fill-current" />
-          ) : (
-            <Mic aria-hidden className="size-10" />
-          )}
-        </button>
-      </div>
-      <p role="status" className="mt-1 min-h-7 text-lg font-bold text-navy-900">
-        {label}
-      </p>
-    </div>
-  );
-}
-
-/** The Listen & Repeat fallback in place of the microphone (spec §9.4). */
-export function ListenRepeatBadge() {
-  return (
-    <div className="flex flex-col items-center">
-      <div className="relative flex size-44 items-center justify-center">
-        <span aria-hidden className="absolute inset-0 rounded-full bg-brand-50" />
-        <span aria-hidden className="absolute inset-5 rounded-full bg-brand-100/80" />
-        <span className="relative flex size-24 items-center justify-center rounded-full bg-brand-500 text-white shadow-cta">
-          <Headphones aria-hidden className="size-10" />
-        </span>
-      </div>
-      <h3 className="mt-1 text-lg font-bold text-navy-900">{t('Listen & Repeat')}</h3>
     </div>
   );
 }

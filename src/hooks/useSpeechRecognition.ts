@@ -6,6 +6,8 @@ import {
   type SpeechErrorKind,
   type SpeechRecognitionLike,
 } from '@/lib/speech';
+import type { HeardAlternative } from '@/lib/speakingScore';
+import { useAudioStore } from '@/stores/audioStore';
 
 /** idle → requesting-permission → listening → processing → result (spec §9.4). */
 export type SpeechStatus =
@@ -23,7 +25,21 @@ export interface SpeechRecognitionState {
   transcript: string;
   /** Final alternatives, best first. */
   alternatives: string[];
+  /** The same alternatives with the recognizer's confidence (0 = not reported). */
+  results: HeardAlternative[];
   error: SpeechErrorKind | null;
+}
+
+const empty = (): Omit<SpeechRecognitionState, 'status'> => ({
+  transcript: '',
+  alternatives: [],
+  results: [],
+  error: null,
+});
+
+export interface SpeechRecognitionOptions {
+  /** How many guesses the recognizer should return (default 3). */
+  maxAlternatives?: number;
 }
 
 /**
@@ -31,13 +47,11 @@ export interface SpeechRecognitionState {
  * only when `start()` is called from a user action. Nothing is recorded, uploaded or stored by
  * the app (the browser vendor may process audio online — see spec §9.4).
  */
-export function useSpeechRecognition() {
+export function useSpeechRecognition({ maxAlternatives = 3 }: SpeechRecognitionOptions = {}) {
   const supported = getSpeechRecognitionConstructor() !== null;
   const [state, setState] = useState<SpeechRecognitionState>(() => ({
     status: supported ? 'idle' : 'unsupported',
-    transcript: '',
-    alternatives: [],
-    error: null,
+    ...empty(),
   }));
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const stoppedByUserRef = useRef(false);
@@ -63,19 +77,21 @@ export function useSpeechRecognition() {
   const start = useCallback(() => {
     const Recognition = getSpeechRecognitionConstructor();
     if (!Recognition) {
-      setState({ status: 'unsupported', transcript: '', alternatives: [], error: null });
+      setState({ status: 'unsupported', ...empty() });
       return;
     }
     abortCurrent();
+    // A word still playing would be heard by the microphone.
+    useAudioStore.getState().stop();
 
     const recognition = new Recognition();
     recognition.lang = getCourseConfig().lang;
     recognition.continuous = false;
     recognition.interimResults = true;
-    recognition.maxAlternatives = 3;
+    recognition.maxAlternatives = maxAlternatives;
     stoppedByUserRef.current = false;
 
-    let finalAlternatives: string[] = [];
+    let finalResults: HeardAlternative[] = [];
     let error: SpeechErrorKind | null = null;
 
     recognition.onaudiostart = () =>
@@ -87,14 +103,15 @@ export function useSpeechRecognition() {
       for (let i = event.resultIndex; i < event.results.length; i += 1) {
         const result = event.results[i];
         if (result.isFinal) {
-          finalAlternatives = Array.from({ length: result.length }, (_, k) => result[k].transcript)
-            .map((text) => text.trim())
-            .filter(Boolean);
+          finalResults = Array.from({ length: result.length }, (_, k) => ({
+            transcript: result[k].transcript.trim(),
+            confidence: Number.isFinite(result[k].confidence) ? result[k].confidence : 0,
+          })).filter((alternative) => alternative.transcript !== '');
         } else {
           interim += result[0]?.transcript ?? '';
         }
       }
-      const transcript = finalAlternatives[0] ?? interim.trim();
+      const transcript = finalResults[0]?.transcript ?? interim.trim();
       setState((s) => ({ ...s, transcript }));
     };
     recognition.onerror = (event) => {
@@ -103,31 +120,32 @@ export function useSpeechRecognition() {
     recognition.onend = () => {
       if (recognitionRef.current !== recognition) return;
       recognitionRef.current = null;
-      if (finalAlternatives.length > 0) {
+      if (finalResults.length > 0) {
         setState({
           status: 'result',
-          transcript: finalAlternatives[0],
-          alternatives: finalAlternatives,
+          transcript: finalResults[0].transcript,
+          alternatives: finalResults.map((alternative) => alternative.transcript),
+          results: finalResults,
           error: null,
         });
       } else if (error) {
-        setState({ status: 'error', transcript: '', alternatives: [], error });
+        setState({ status: 'error', ...empty(), error });
       } else if (stoppedByUserRef.current) {
-        setState({ status: 'idle', transcript: '', alternatives: [], error: null });
+        setState({ status: 'idle', ...empty() });
       } else {
-        setState({ status: 'error', transcript: '', alternatives: [], error: 'no-speech' });
+        setState({ status: 'error', ...empty(), error: 'no-speech' });
       }
     };
 
     recognitionRef.current = recognition;
-    setState({ status: 'requesting-permission', transcript: '', alternatives: [], error: null });
+    setState({ status: 'requesting-permission', ...empty() });
     try {
       recognition.start();
     } catch {
       recognitionRef.current = null;
-      setState({ status: 'error', transcript: '', alternatives: [], error: 'unknown' });
+      setState({ status: 'error', ...empty(), error: 'unknown' });
     }
-  }, [abortCurrent]);
+  }, [abortCurrent, maxAlternatives]);
 
   /** Stops listening; whatever was heard so far is still processed. */
   const stop = useCallback(() => {
@@ -139,18 +157,13 @@ export function useSpeechRecognition() {
       recognition.stop();
     } catch {
       abortCurrent();
-      setState({ status: 'idle', transcript: '', alternatives: [], error: null });
+      setState({ status: 'idle', ...empty() });
     }
   }, [abortCurrent]);
 
   const reset = useCallback(() => {
     abortCurrent();
-    setState({
-      status: getSpeechRecognitionConstructor() ? 'idle' : 'unsupported',
-      transcript: '',
-      alternatives: [],
-      error: null,
-    });
+    setState({ status: getSpeechRecognitionConstructor() ? 'idle' : 'unsupported', ...empty() });
   }, [abortCurrent]);
 
   return { ...state, supported, start, stop, reset };

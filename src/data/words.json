@@ -2433,6 +2433,7 @@
     "meaningVi": "bông hoa",
     "image": "/assets/scenes/house-exterior/objects/15_flower.webp",
     "acceptedAnswers": ["flower", "a flower", "flowers"],
+    "soundsLike": ["flour"],
     "examples": [
       {
         "text": "This flower is pink.",
@@ -3783,6 +3784,7 @@
     "meaningVi": "bông hoa",
     "image": "/assets/scenes/flower-garden/objects/01_garden-flower.webp",
     "acceptedAnswers": ["flower", "a flower", "flowers"],
+    "soundsLike": ["flour"],
     "examples": [
       {
         "text": "This flower is beautiful.",
@@ -3803,6 +3805,7 @@
     "meaningVi": "hoa hồng",
     "image": "/assets/scenes/flower-garden/objects/02_rose.webp",
     "acceptedAnswers": ["rose", "a rose", "roses"],
+    "soundsLike": ["rows", "roes"],
     "examples": [
       {
         "text": "This is a red rose.",
@@ -3883,6 +3886,7 @@
     "meaningVi": "hoa ly",
     "image": "/assets/scenes/flower-garden/objects/06_lily.webp",
     "acceptedAnswers": ["lily", "a lily", "lilies"],
+    "soundsLike": ["lilly"],
     "examples": [
       {
         "text": "This lily is white.",
@@ -4286,6 +4290,7 @@
     "meaningVi": "cà rốt",
     "image": "/assets/scenes/vegetable-garden/objects/02_carrot.webp",
     "acceptedAnswers": ["carrot", "a carrot", "carrots"],
+    "soundsLike": ["carat", "karat", "caret"],
     "examples": [
       {
         "text": "The carrot is orange.",
@@ -5073,6 +5078,7 @@
     "meaningVi": "quả lê",
     "image": "/assets/scenes/fruit-garden/objects/17_pear.webp",
     "acceptedAnswers": ["pear", "a pear", "pears"],
+    "soundsLike": ["pair", "pare"],
     "examples": [
       {
         "text": "The pear is juicy.",
@@ -5293,6 +5299,7 @@
     "meaningVi": "cái cuốc",
     "image": "/assets/scenes/tool-shed/objects/04_hoe.webp",
     "acceptedAnswers": ["hoe", "a hoe", "the hoe"],
+    "soundsLike": ["ho"],
     "examples": [
       {
         "text": "The hoe helps me loosen the soil.",

@@ -70,3 +70,18 @@ describe('Chinese speech matching', () => {
     expect(scoreSpeechMatch('我有两本书。', '我有2本书').score).toBe(1);
   });
 });
+
+describe('numbers written as digits', () => {
+  it('spells English numbers out like the samples do', () => {
+    expect(speechTokens('Watch for 30 minutes')).toEqual(['watch', 'for', 'thirty', 'minutes']);
+    expect(speechTokens('24')).toEqual(speechTokens('twenty-four'));
+    expect(speechTokens('105')).toEqual(['one', 'hundred', 'five']);
+  });
+
+  it('turns digits into Chinese numerals', () => {
+    expect(speechTokens('30分钟')).toEqual(['三', '十', '分', '钟']);
+    expect(speechTokens('15个')).toEqual(['十', '五', '个']);
+    expect(speechTokens('110个')).toEqual(speechTokens('一百一十个'));
+    expect(speechTokens('105个')).toEqual(speechTokens('一百零五个'));
+  });
+});

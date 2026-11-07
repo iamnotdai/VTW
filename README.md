@@ -25,14 +25,21 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   Answer/Word Detail, Objects Found.
 - Conversation: danh sách theo scene, chi tiết, video (có fallback), transcript (phát từng câu,
   dịch tĩnh), Speaking Practice (SpeechRecognition + fallback _Listen & Repeat_), Speaking Result.
+- **Luyện nói có chấm điểm** (mở rộng ngoài 16 màn): _Word Speaking_ sau Flashcards (nói từng từ,
+  điểm 0–100, tô màu từng cụm âm như ELSA), _Role-play_ (chọn nhân vật trong hội thoại, đổi được bất kỳ
+  lúc nào; các nhân vật khác tự nói, mỗi câu của người học được chấm điểm) và _Fill in the Blanks_ (điền
+  từ còn thiếu trong hội thoại, **chỉ** cho người học chọn "Yes, I can type words"). Xem mục
+  [Luyện nói có chấm điểm](#luyện-nói-có-chấm-điểm-spec-77-95-96).
 - **Hai khóa học**: Tiếng Anh và Tiếng Trung (chọn ở đầu Profile Setup hoặc trong Settings). Hai khóa
   dùng chung ảnh và hotspot; từ, câu, hội thoại, giọng đọc và **toàn bộ giao diện** đổi theo khóa;
   tiến độ lưu riêng từng khóa. Xem mục [Khóa học](#khóa-học-tiếng-anh--tiếng-trung).
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **166 test Vitest** (132 unit + 34 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **10 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **223 test Vitest** (177 unit + 46 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **13 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, ba kịch bản luyện nói), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+  Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
+  `dad.webp` nhưng hai file này chưa có trong repo.
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
@@ -156,6 +163,14 @@ npm run test:e2e
 | 15  | Conversation Detail     | `/conversation/:conversationId`                 |
 | 16  | Settings                | `/settings`                                     |
 
+Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
+
+| Màn hình           | Route                                                    | Vào từ                                   |
+| ------------------ | -------------------------------------------------------- | ---------------------------------------- |
+| Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards         |
+| Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail          |
+| Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail (chỉ khi gõ được chữ) |
+
 Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đã có hồ sơ thì `/setup` chuyển về Journey.
 Đường dẫn luôn tạo bằng `paths.*` trong `src/app/paths.ts`.
 
@@ -167,6 +182,7 @@ Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đ
 - Các trường bổ sung so với spec (đánh dấu `@extension` trong `types/models.ts`): `Scene.status`
   (`available` | `coming-soon`), `Scene.order`, `SceneHotspot.anchor`, `Speaker`,
   `Conversation.description`, `Conversation.captionsSrc`, `Word.plural` (câu "They’re curtains."),
+  `Word.soundsLike` (từ đồng âm, ví dụ "pear" → "pair": Word Speaking tính là nói đúng),
   `LearningProgress.favoriteWordIds` (nút trái tim trên flashcard).
 - `npm run content:check` báo lỗi cụ thể theo file/id: tham chiếu sai, trùng id, `acceptedAnswers`
   thiếu chính từ đó, hotspot nằm ngoài viewBox, scene thiếu hotspot, asset 404. Ở chế độ dev, lỗi
@@ -240,11 +256,52 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
   cao độ cho giống giọng trẻ em) và một giọng cụ thể của máy, có nút nghe thử; lưu ngay vào
   `voiceURI` / `voiceStyle` của `AppSettings`. Hội thoại đặt cao độ riêng cho từng nhân vật vẫn giữ
   cao độ đó. Chi tiết và cách thu âm: `docs/asset-pipeline.md` mục 8.
-- Speaking: chỉ xin quyền micro khi người học bấm _Tap to speak_, không ghi âm hay upload gì. Kết quả
-  so khớp các từ nghe được với câu mẫu, **không phải chấm phát âm** (app có ghi rõ trên màn hình).
-  Trình duyệt không hỗ trợ, bị chặn micro hoặc lỗi mạng thì chuyển sang _Listen & Repeat_ →
-  _Mark as Practiced_.
-- Bài hội thoại được đánh dấu hoàn thành khi người học xong câu luyện nói cuối cùng.
+- Speaking Practice (màn 12–13): chỉ xin quyền micro khi người học bấm _Tap to speak_, không ghi âm hay
+  upload gì. Kết quả so khớp các từ nghe được với câu mẫu, **không phải chấm phát âm** (app có ghi rõ
+  trên màn hình). Trình duyệt không hỗ trợ, bị chặn micro hoặc lỗi mạng thì chuyển sang
+  _Listen & Repeat_ → _Mark as Practiced_.
+- Nút **con ốc sên** (_Listen slowly_) đọc chậm (`SPEECH_CONFIG.slowRate`, file audio phát ở
+  `slowFileRate`).
+- Bài hội thoại được đánh dấu hoàn thành khi người học xong câu luyện nói cuối cùng **hoặc** xong một
+  lượt Role-play.
+
+### Luyện nói có chấm điểm (spec §7.7, §9.5, §9.6)
+
+- **Không có backend/API key** nên không thể chấm phát âm theo âm vị như ELSA (ELSA dùng mô hình âm
+  học trên server). Thay vào đó `src/lib/speakingScore.ts` chấm từ **các phỏng đoán** mà
+  `SpeechRecognition` của trình duyệt trả về (tối đa `SPEAKING_SCORE.maxAlternatives` = 5):
+  - **Từ vựng**: tìm cụm từ nghe được gần nhất ("it's a lamp" → "lamp"; "night stand" → "nightstand"),
+    so **từng chữ cái** rồi tô màu theo **cụm âm** (th, ee, er, ll…): xanh = đúng, vàng gạch chấm = gần
+    đúng, đỏ gạch sóng = cần luyện. `acceptedAnswers` và `soundsLike` (đồng âm) tính là đúng.
+  - **Câu thoại**: so **từng từ** (hiểu từ rút gọn "It's" = "it is", số "2" = "two"); từ gần giống
+    ("you" thay "your") là gần đúng, từ thiếu là đỏ.
+  - **Tiếng Trung**: so **từng chữ Hán**; chữ khác nhưng **cùng âm và thanh** vẫn đúng, cùng âm khác
+    thanh là gần đúng và nhắc "注意声调" (bảng pinyin `pinyin-pro` tách thành chunk riêng ~140 kB, chỉ
+    tải khi mở màn luyện nói tiếng Trung).
+  - Điểm 0–100: đúng hoàn toàn = 100; đúng nhưng chỉ là phỏng đoán thứ 2, 3… của máy thì trừ điểm;
+    độ tin cậy (`confidence`) ảnh hưởng nhẹ; còn phần đỏ thì tối đa 79. Mức: ≥ 80 _Excellent!_,
+    ≥ 55 _Almost there!_, còn lại _Let’s try again!_ Mọi ngưỡng nằm trong `SPEAKING_SCORE`
+    (`src/config/app.ts`).
+  - Màn hình luôn ghi rõ: điểm chỉ là **ước lượng** từ những gì trình duyệt nghe được, không phải bài
+    kiểm tra phát âm đầy đủ.
+- **Nghe lại chính mình** (nút tai): khi trình duyệt cho phép vừa nhận dạng vừa ghi âm, giọng của lần
+  thử cuối được giữ **trong bộ nhớ** để phát lại, bị xóa khi thử lại / sang từ khác / rời màn; không lưu,
+  không upload. Android tắt sẵn (micro chỉ cấp cho một bên); nếu phát hiện xung đột (bản ghi im lặng,
+  hoặc nhận dạng không nghe thấy gì trong khi bản ghi có tiếng) thì tự tắt trong lượt truy cập đó.
+- **Word Speaking**: đi qua các từ của scene theo thứ tự flashcard; _Try Again_ / _Next Word_ (điểm thấp
+  thì _Skip_); cuối lượt có điểm trung bình, điểm tốt nhất từng từ, _Practice the Tricky Words_
+  (từ < 80 hoặc bỏ qua). **Không** cộng tiến độ học từ (chỉ trả lời đúng quiz mới cộng).
+- **Role-play**: chọn nhân vật (`?as=`, đổi bằng _Change Character_); bấm _Start_ thì các nhân vật khác
+  tự đọc (giọng trình duyệt với cao độ riêng), đến lượt mình thì bấm micro nói câu của mình, xem điểm,
+  _Try Again_ hoặc _Continue_. Tắt âm thanh trong Settings thì có nút _Continue_ cho câu của người khác.
+- **Fill in the Blanks** (`src/lib/fillBlanks.ts`): mỗi câu ẩn một từ — ưu tiên từ vựng của scene, sau
+  đó từ dài; không bao giờ ẩn tên nhân vật, từ nhỏ (the, is, 的…) hay từ mà đáp án còn hiện ở chỗ khác
+  trong cùng câu. Tiếng Trung tách từ bằng `Intl.Segmenter` (không ẩn 床 nằm trong 起床), vẫn hiện
+  pinyin nhưng che âm tiết của chỗ trống. Chỉ bỏ qua hoa/thường, dấu câu, khoảng trắng; không chấp
+  nhận sai chính tả. Người học không gõ được chữ (`canTypeWords = false`) không thấy nút này, mở link
+  trực tiếp thì được hướng dẫn vào Settings.
+- Không hỗ trợ nhận dạng / micro bị chặn: cả hai màn nói đều chuyển sang _Listen & Repeat_ →
+  _I said it!_, không chặn hành trình.
 
 ### Khóa học (Tiếng Anh / Tiếng Trung)
 
@@ -262,12 +319,13 @@ Layer 6  thanh Objects Found ngay dưới tranh: nút Back (trái) · tên (gi�
   thiếu pinyin.
 - **Giao diện**: chữ trong component viết bằng tiếng Anh và bọc `t('Start Quiz')`; câu tiếng Anh chính là
   khóa tra từ điển. Bản tiếng Trung nằm ở `src/i18n/zh/` (mỗi khu vực một file: `common`, `vocabulary`,
-  `conversation`, `profile`). Thiếu bản dịch thì hiện tiếng Anh và cảnh báo trong console (dev);
+  `conversation`, `speaking`, `profile`). Thiếu bản dịch thì hiện tiếng Anh và cảnh báo trong console (dev);
   `tests/unit/i18n.test.ts` kiểm tra mọi `t('...')` đều có bản dịch.
 - **Quiz**: trắc nghiệm hoặc gõ **chữ Hán** (bằng bộ gõ pinyin của máy; Enter để chọn chữ trong bộ gõ
   không bị tính là nộp bài). `acceptedAnswers` chỉ chứa chữ Hán.
 - **Luyện nói**: nhận dạng giọng `zh-CN`; so khớp **từng chữ Hán** (tiếng Trung không có dấu cách), số
-  "3" được hiểu là "三", "两" và "二" coi như nhau. Vẫn chỉ là so khớp chữ, không chấm phát âm.
+  "3" được hiểu là "三", "两" và "二" coi như nhau. Speaking Practice vẫn chỉ là so khớp chữ; Word
+  Speaking và Role-play còn dùng pinyin để chấp nhận chữ đồng âm và nhắc khi sai thanh điệu.
 - **Font**: Inter không có chữ Hán nên trình duyệt dùng font hệ thống (PingFang SC, Microsoft YaHei,
   Noto Sans SC…), không tải thêm font.
 
@@ -343,13 +401,17 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 ## Kiểm thử
 
 - `tests/unit`: quiz, progress, storage (JSON hỏng, storage bị chặn), profile, speech match,
+  chấm điểm nói (từ, câu, tiếng Trung có pinyin), chọn chỗ trống, phiên Word Speaking / Role-play,
   zoom/pan, parse SVG path, reducer của scene và quiz, kiểm tra nội dung + asset trên đĩa.
+- `tests/components/speaking.test.tsx`: Word Speaking, Role-play và Fill in the Blanks trên route tree
+  thật, dùng bộ nhận dạng giả (`tests/fakeSpeechRecognition.ts`) để "nghe" câu trả lời định sẵn.
 - `tests/components`: chạy trên route tree thật (memory router): setup, guard, menu đúng 4 mục,
   Journey không có CTA, Level ở menu, flashcards (trái tim không tính là đã học), Explore → Quiz →
   Result, tiến độ không tăng hai lần, đổi ảnh / `canTypeWords` trong Settings, hội thoại và
   fallback luyện nói.
 - `tests/e2e`: hành trình MVP §22 trên desktop và mobile, deep link trên bản build, zoom không làm
-  lệch hotspot, app vẫn chạy khi storage bị chặn.
+  lệch hotspot, app vẫn chạy khi storage bị chặn, ba màn luyện nói (đi đường _Listen & Repeat_ vì
+  test không nói vào micro được).
 
 ## Đối chiếu checklist QA (spec §18)
 
@@ -377,6 +439,8 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | `canTypeWords=false` không bao giờ ra câu gõ                         | ✅ (200 seed)                      |
 | Storage hỏng/bị chặn không làm crash; deep link trên hosting tĩnh    | ✅ (test + E2E)                    |
 | Mic bị chặn / không hỗ trợ vẫn học tiếp được                         | ✅ (test + E2E)                    |
+| Word Speaking / Role-play chấm điểm, có fallback Listen & Repeat     | ✅ (test + E2E)                    |
+| Fill in the Blanks chỉ cho người gõ được chữ                         | ✅ (test + E2E)                    |
 | QA thiết bị thật iOS/Android, tối ưu asset thật                      | ⏳ khi có art và thiết bị thật     |
 
 ## Việc tiếp theo
@@ -390,3 +454,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
    thanh điệu của từ đơn lẻ), thêm video + phụ đề `.vtt`.
 5. QA trên thiết bị thật (iOS Safari, Android Chrome), đo hiệu năng với ảnh WebP/AVIF thật.
 6. Tuỳ chọn: tách code theo route (lazy) nếu bundle tăng, export/import tiến độ dạng JSON.
+7. Muốn chấm phát âm **theo âm vị** thật như ELSA (trọng âm, từng âm /θ/, /æ/…): cần dịch vụ chấm phát
+   âm (Azure Pronunciation Assessment, SpeechAce…) qua một backend nhỏ giữ API key, hoặc mô hình chạy
+   trên máy (~100 MB). Cả hai đều vượt ra ngoài nguyên tắc "không backend, không API key" hiện tại —
+   cần chủ dự án quyết định. `scoreSpeaking()` là điểm duy nhất cần thay.
