@@ -1,9 +1,11 @@
 import { SCENE_GROUPS } from '@/config/app';
 import { getActiveCourse } from '@/lib/course';
+import { ipaHasSound, ipaSpellings, type IpaSymbol } from '@/lib/ipa';
 import { t } from '@/i18n';
 import type {
   Conversation,
   CourseId,
+  IpaSound,
   Scene,
   SceneGroup,
   SceneHotspot,
@@ -11,6 +13,7 @@ import type {
   Word,
 } from '@/types/models';
 import conversationsJson from './conversations.json';
+import ipaJson from './pronunciation/ipa.json';
 import speakersJson from './speakers.json';
 import wordsJson from './words.json';
 import zhConversationsJson from './zh/conversations.json';
@@ -36,6 +39,8 @@ export interface ContentBundle {
   words: Readonly<Record<string, Word>>;
   conversations: readonly Conversation[];
   speakers: Readonly<Record<string, Speaker>>;
+  /** The IPA chart (spec §24.2); empty for courses without one (Chinese uses pinyin). */
+  ipaSounds: readonly IpaSound[];
 }
 
 /** Per-course text of a shared scene. */
@@ -61,12 +66,14 @@ export const contentByCourse: Readonly<Record<CourseId, ContentBundle>> = {
     words: wordsJson as Record<string, Word>,
     conversations: conversationsJson as Conversation[],
     speakers: speakersJson as Record<string, Speaker>,
+    ipaSounds: ipaJson as IpaSound[],
   },
   zh: {
     scenes: translateScenes(zhScenesJson as Record<string, SceneText>),
     words: zhWordsJson as Record<string, Word>,
     conversations: zhConversationsJson as Conversation[],
     speakers: zhSpeakersJson as Record<string, Speaker>,
+    ipaSounds: [],
   },
 };
 
@@ -74,6 +81,7 @@ interface ContentIndex {
   scenesById: Map<string, Scene>;
   conversationsById: Map<string, Conversation>;
   allWordIds: readonly string[];
+  ipaSpellings: readonly IpaSymbol[];
 }
 
 const indexes = new Map<CourseId, ContentIndex>();
@@ -87,6 +95,7 @@ function getIndex(): ContentIndex {
       scenesById: new Map(bundle.scenes.map((scene) => [scene.id, scene])),
       conversationsById: new Map(bundle.conversations.map((item) => [item.id, item])),
       allWordIds: Object.keys(bundle.words),
+      ipaSpellings: ipaSpellings(bundle.ipaSounds),
     };
     indexes.set(course, index);
   }
@@ -166,4 +175,39 @@ export function getSceneConversations(scene: Scene): Conversation[] {
 
 export function getSpeaker(speakerId: string): Speaker | undefined {
   return getContent().speakers[speakerId];
+}
+
+/* -------------------------------------------------------------------------------------------------
+ * IPA chart (spec §24.2), English course only.
+ * -----------------------------------------------------------------------------------------------*/
+
+export function getIpaSounds(): readonly IpaSound[] {
+  return getContent().ipaSounds;
+}
+
+export function getIpaSound(soundId: string | undefined): IpaSound | undefined {
+  return soundId ? getIpaSounds().find((sound) => sound.id === soundId) : undefined;
+}
+
+/** The chart's spellings, longest first, for `tokenizeIpa` and `highlightIpaSound`. */
+export function getIpaSpellings(): readonly IpaSymbol[] {
+  return getIndex().ipaSpellings;
+}
+
+/**
+ * Words of the open scenes that have the sound, in scene and flashcard order (each word once).
+ * The chart's example words: they come with their picture.
+ */
+export function getIpaSoundWords(sound: IpaSound, limit = Infinity): Word[] {
+  const spellings = getIpaSpellings();
+  const found = new Map<string, Word>();
+  for (const scene of getScenes()) {
+    if (!isSceneAvailable(scene)) continue;
+    for (const word of getSceneWords(scene)) {
+      if (found.size >= limit) return [...found.values()];
+      if (!found.has(word.id) && word.ipa && ipaHasSound(word.ipa, sound.id, spellings))
+        found.set(word.id, word);
+    }
+  }
+  return [...found.values()];
 }

@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ee",
+    "symbol": "iː",
+    "aliases": ["i"],
+    "group": "vowel",
+    "tipVi": "Âm “i” dài: môi căng sang hai bên như đang cười, kéo dài hơi."
+  },
+  {
+    "id": "ih",
+    "symbol": "ɪ",
+    "group": "vowel",
+    "tipVi": "Âm “i” ngắn và lỏng, nằm giữa “i” và “ê”; miệng thả lỏng, không cười."
+  },
+  {
+    "id": "e",
+    "symbol": "e",
+    "group": "vowel",
+    "tipVi": "Giống “e” tiếng Việt nhưng ngắn, miệng mở vừa."
+  },
+  {
+    "id": "ae",
+    "symbol": "æ",
+    "group": "vowel",
+    "tipVi": "Hạ hàm dưới, mở miệng rộng; âm nằm giữa “a” và “e”."
+  },
+  {
+    "id": "ah",
+    "symbol": "ɑː",
+    "group": "vowel",
+    "tipVi": "Mở miệng thật rộng, lưỡi hạ thấp, kéo dài âm “a”."
+  },
+  {
+    "id": "aw",
+    "symbol": "ɔː",
+    "group": "vowel",
+    "tipVi": "Môi hơi tròn, kéo dài âm giống “o” tiếng Việt."
+  },
+  {
+    "id": "uu",
+    "symbol": "ʊ",
+    "group": "vowel",
+    "tipVi": "Âm “u” ngắn, môi hơi tròn và thả lỏng."
+  },
+  {
+    "id": "oo",
+    "symbol": "uː",
+    "group": "vowel",
+    "tipVi": "Chu tròn môi về phía trước, kéo dài âm “u”."
+  },
+  {
+    "id": "uh",
+    "symbol": "ʌ",
+    "group": "vowel",
+    "tipVi": "Âm “ă” ngắn và gọn, miệng mở vừa, lưỡi thả lỏng."
+  },
+  {
+    "id": "schwa",
+    "symbol": "ə",
+    "group": "vowel",
+    "tipVi": "Âm “ơ” rất nhẹ và ngắn, không nhấn — âm hay gặp nhất trong tiếng Anh."
+  },
+  {
+    "id": "ur",
+    "symbol": "ɜːr",
+    "group": "vowel",
+    "tipVi": "Âm “ơ” kéo dài, đầu lưỡi cong lên (không chạm vòm miệng) như âm r."
+  },
+  {
+    "id": "er",
+    "symbol": "ər",
+    "group": "vowel",
+    "tipVi": "Âm “ơ” ngắn, nhẹ, cuối âm cong lưỡi như âm r; hay ở cuối từ như “paper”."
+  },
+  {
+    "id": "ay",
+    "symbol": "eɪ",
+    "group": "diphthong",
+    "tipVi": "Bắt đầu bằng “ê” rồi trượt nhẹ sang “i”: nghe như “ây”."
+  },
+  {
+    "id": "eye",
+    "symbol": "aɪ",
+    "group": "diphthong",
+    "tipVi": "Bắt đầu bằng “a” rồi trượt sang “i”: nghe như “ai”."
+  },
+  {
+    "id": "oy",
+    "symbol": "ɔɪ",
+    "group": "diphthong",
+    "tipVi": "Bắt đầu bằng “o” rồi trượt sang “i”: nghe như “oi”."
+  },
+  {
+    "id": "ow",
+    "symbol": "aʊ",
+    "group": "diphthong",
+    "tipVi": "Bắt đầu bằng “a” rồi trượt sang “u”, môi tròn dần: nghe như “ao”."
+  },
+  {
+    "id": "oh",
+    "symbol": "oʊ",
+    "group": "diphthong",
+    "tipVi": "Bắt đầu bằng “ô” rồi trượt sang “u”, môi tròn dần: nghe như “âu”."
+  },
+  {
+    "id": "p",
+    "symbol": "p",
+    "group": "consonant",
+    "tipVi": "Mím hai môi rồi bật hơi mạnh; cổ họng không rung. Để tờ giấy trước miệng sẽ thấy giấy lay."
+  },
+  {
+    "id": "b",
+    "symbol": "b",
+    "group": "consonant",
+    "tipVi": "Mím hai môi rồi bật ra, cổ họng rung — như “b” tiếng Việt."
+  },
+  {
+    "id": "t",
+    "symbol": "t",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi chạm lợi trên rồi bật hơi; mạnh hơn “t” tiếng Việt, cổ họng không rung."
+  },
+  {
+    "id": "d",
+    "symbol": "d",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi chạm lợi trên rồi bật ra, cổ họng rung — như “đ” tiếng Việt."
+  },
+  {
+    "id": "k",
+    "symbol": "k",
+    "group": "consonant",
+    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau rồi bật hơi mạnh — như “c” nhưng có hơi."
+  },
+  {
+    "id": "g",
+    "symbol": "ɡ",
+    "group": "consonant",
+    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau rồi bật ra, cổ họng rung — như “g” trong “ga”."
+  },
+  {
+    "id": "f",
+    "symbol": "f",
+    "group": "consonant",
+    "tipVi": "Răng trên chạm nhẹ môi dưới, thổi hơi ra — như “ph” tiếng Việt."
+  },
+  {
+    "id": "v",
+    "symbol": "v",
+    "group": "consonant",
+    "tipVi": "Răng trên chạm môi dưới, thổi hơi và cổ họng rung — như “v” tiếng Việt."
+  },
+  {
+    "id": "th",
+    "symbol": "θ",
+    "group": "consonant",
+    "tipVi": "Đặt đầu lưỡi giữa hai hàm răng, thổi hơi nhẹ, cổ họng không rung. Tiếng Việt không có âm này."
+  },
+  {
+    "id": "dh",
+    "symbol": "ð",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi giữa hai hàm răng như /θ/, nhưng cổ họng rung.",
+    "extraExamples": [
+      { "text": "this", "ipa": "/ðɪs/", "meaningVi": "cái này" },
+      { "text": "mother", "ipa": "/ˈmʌðər/", "meaningVi": "mẹ" },
+      { "text": "father", "ipa": "/ˈfɑːðər/", "meaningVi": "bố" },
+      { "text": "brother", "ipa": "/ˈbrʌðər/", "meaningVi": "anh trai, em trai" }
+    ]
+  },
+  {
+    "id": "s",
+    "symbol": "s",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi gần lợi trên, thổi hơi qua khe hẹp thành tiếng “xì”."
+  },
+  {
+    "id": "z",
+    "symbol": "z",
+    "group": "consonant",
+    "tipVi": "Như /s/ nhưng cổ họng rung: tiếng “zzz” như con ong."
+  },
+  {
+    "id": "sh",
+    "symbol": "ʃ",
+    "group": "consonant",
+    "tipVi": "Chu môi, lưỡi lùi về sau, thổi hơi: tiếng “suỵt”."
+  },
+  { "id": "zh", "symbol": "ʒ", "group": "consonant", "tipVi": "Như /ʃ/ nhưng cổ họng rung." },
+  {
+    "id": "h",
+    "symbol": "h",
+    "group": "consonant",
+    "tipVi": "Thở hơi nhẹ ra từ cổ họng — như “h” tiếng Việt."
+  },
+  {
+    "id": "ch",
+    "symbol": "tʃ",
+    "group": "consonant",
+    "tipVi": "Bắt đầu như /t/ rồi chuyển ngay sang /ʃ/: “ch” bật mạnh, môi hơi chu."
+  },
+  {
+    "id": "j",
+    "symbol": "dʒ",
+    "group": "consonant",
+    "tipVi": "Như /tʃ/ nhưng cổ họng rung: bắt đầu bằng /d/ rồi chuyển sang /ʒ/."
+  },
+  {
+    "id": "m",
+    "symbol": "m",
+    "group": "consonant",
+    "tipVi": "Mím môi, cho hơi ra đằng mũi — như “m” tiếng Việt."
+  },
+  {
+    "id": "n",
+    "symbol": "n",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi chạm lợi trên, hơi ra đằng mũi — như “n” tiếng Việt."
+  },
+  {
+    "id": "ng",
+    "symbol": "ŋ",
+    "group": "consonant",
+    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau, hơi ra đằng mũi — như “ng” tiếng Việt."
+  },
+  {
+    "id": "l",
+    "symbol": "l",
+    "group": "consonant",
+    "tipVi": "Đầu lưỡi chạm lợi trên; ở cuối từ vẫn giữ lưỡi chạm để âm “l” nghe rõ."
+  },
+  {
+    "id": "r",
+    "symbol": "r",
+    "group": "consonant",
+    "tipVi": "Cong đầu lưỡi lên nhưng không chạm vòm miệng, môi hơi tròn; không rung lưỡi."
+  },
+  {
+    "id": "y",
+    "symbol": "j",
+    "group": "consonant",
+    "tipVi": "Lưỡi nâng gần vòm miệng, lướt nhanh như “i” — giống “y” trong “yêu”."
+  },
+  {
+    "id": "w",
+    "symbol": "w",
+    "group": "consonant",
+    "tipVi": "Chu tròn môi rồi mở nhanh, như “u” lướt nhanh — giống “o” trong “oa”."
+  }
+]

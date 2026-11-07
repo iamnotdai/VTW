@@ -1,4 +1,5 @@
 import { SCENE_GROUPS } from '@/config/app';
+import { ipaSpellings, tokenizeIpa } from '@/lib/ipa';
 import { getPathPoints } from '@/lib/svgPath';
 import { normalizeAnswer } from '@/lib/text';
 import type { ContentBundle } from './content';
@@ -185,6 +186,61 @@ export function validateContent(bundle: ContentBundle): string[] {
     }
   }
 
+  errors.push(...validateIpaChart(bundle));
+  return errors;
+}
+
+const IPA_GROUPS = new Set(['vowel', 'diphthong', 'consonant']);
+
+/**
+ * The IPA chart (spec §24.2): every sound is complete, every word's transcription is made of the
+ * chart's sounds only (no "ɚ", "ɝ", "t̬", syllable dots…), and every sound has an example word.
+ */
+function validateIpaChart(bundle: ContentBundle): string[] {
+  const errors: string[] = [];
+  if (bundle.ipaSounds.length === 0) return errors;
+  const spellings = ipaSpellings(bundle.ipaSounds);
+  const seenIds = new Set<string>();
+  const seenSpellings = new Set<string>();
+  const used = new Set<string>();
+
+  for (const word of Object.values(bundle.words)) {
+    if (!word.ipa) {
+      errors.push(`words.json › "${word.id}": "ipa" is required in the English course`);
+      continue;
+    }
+    if (!word.ipa.startsWith('/') || !word.ipa.endsWith('/') || word.ipa.length < 3)
+      errors.push(`words.json › "${word.id}": "ipa" must be written between slashes`);
+    const { tokens, unknown } = tokenizeIpa(word.ipa, spellings);
+    if (unknown.length > 0)
+      errors.push(
+        `words.json › "${word.id}": "ipa" ${word.ipa} has symbols outside the chart: ${[...new Set(unknown)].join(' ')}`,
+      );
+    for (const token of tokens) used.add(token.soundId);
+  }
+
+  for (const sound of bundle.ipaSounds) {
+    const at = `pronunciation/ipa.json › "${sound.id}"`;
+    if (!/^[a-z]+$/.test(sound.id)) errors.push(`${at}: "id" must be lower-case letters`);
+    if (seenIds.has(sound.id)) errors.push(`${at}: duplicate id`);
+    seenIds.add(sound.id);
+    for (const spelling of [sound.symbol, ...(sound.aliases ?? [])]) {
+      if (!spelling) errors.push(`${at}: empty symbol`);
+      if (seenSpellings.has(spelling)) errors.push(`${at}: "${spelling}" belongs to two sounds`);
+      seenSpellings.add(spelling);
+    }
+    if (!IPA_GROUPS.has(sound.group)) errors.push(`${at}: unknown group "${sound.group}"`);
+    if (!sound.tipVi?.trim()) errors.push(`${at}: "tipVi" is required`);
+    for (const example of sound.extraExamples ?? []) {
+      const { tokens, unknown } = tokenizeIpa(example.ipa, spellings);
+      if (!example.text?.trim() || !example.meaningVi?.trim())
+        errors.push(`${at}: extra examples need "text" and "meaningVi"`);
+      if (unknown.length > 0 || !tokens.some((token) => token.soundId === sound.id))
+        errors.push(`${at}: extra example "${example.text}" must contain the sound`);
+    }
+    if (!used.has(sound.id) && !sound.extraExamples?.length)
+      errors.push(`${at}: no word has this sound — add "extraExamples"`);
+  }
   return errors;
 }
 
@@ -194,6 +250,10 @@ export function collectAssetPaths(bundle: ContentBundle): string[] {
   const add = (path: string | undefined) => {
     if (path && path.startsWith('/')) paths.add(path);
   };
+  for (const sound of bundle.ipaSounds) {
+    add(sound.audio);
+    add(sound.mouthImage);
+  }
   for (const scene of bundle.scenes) {
     add(scene.thumbnail);
     add(scene.background);

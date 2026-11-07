@@ -186,6 +186,35 @@ export type ConversationStep = 'listen' | 'fill' | 'read' | 'speak';
 /** Steps stored in `conversationStepsById`; "speak" is the completed conversation itself. */
 export type TrackedConversationStep = Exclude<ConversationStep, 'speak'>;
 
+/** @extension Group of a sound in the IPA chart (spec §24.2). */
+export type IpaSoundGroup = 'vowel' | 'diphthong' | 'consonant';
+
+/** @extension A word that shows a sound when no scene word has it (e.g. /ð/ "mother"). */
+export interface IpaExtraExample {
+  text: string;
+  ipa: string;
+  meaningVi: string;
+}
+
+/** @extension One sound of the American English IPA chart (spec §24.2), English course only. */
+export interface IpaSound {
+  /** URL-safe id, e.g. "ae" for /æ/. */
+  id: string;
+  /** As written in `Word.ipa`, e.g. "æ", "tʃ". */
+  symbol: string;
+  /** Other spellings of the same sound in `Word.ipa`, e.g. "i" (happy) for "iː". */
+  aliases?: string[];
+  group: IpaSoundGroup;
+  /** How to make the sound, in Vietnamese (content, reviewed by a teacher). */
+  tipVi: string;
+  /** Extra example words, only for sounds the scenes' words don't have. */
+  extraExamples?: IpaExtraExample[];
+  /** Recorded sound (a browser voice can't say a sound on its own). */
+  audio?: string;
+  /** Picture of the mouth; never a placeholder. */
+  mouthImage?: string;
+}
+
 /** @extension The four language skills (spec §4), shown on each activity. */
 export type Skill = 'listening' | 'speaking' | 'reading' | 'writing';
 

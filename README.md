@@ -48,7 +48,7 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **241 test Vitest** (189 unit + 52 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+- Test tự động: **248 test Vitest** (196 unit + 52 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
   **15 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, một kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
@@ -201,6 +201,12 @@ Chưa có hồ sơ hợp lệ thì mọi route đều chuyển về `/setup`; đ
 - `npm run content:check` báo lỗi cụ thể theo file/id: tham chiếu sai, trùng id, `acceptedAnswers`
   thiếu chính từ đó, hotspot nằm ngoài viewBox, scene thiếu hotspot, asset 404. Ở chế độ dev, lỗi
   cũng được in ra console khi mở app.
+- **IPA (khóa tiếng Anh) theo bảng âm Anh-Mỹ** trong `src/data/pronunciation/ipa.json` (41 âm, spec
+  §24.2): `content:check` báo lỗi khi IPA của một từ có ký hiệu ngoài bảng (không dùng `ɚ`, `ɝ`, `t̬`,
+  dấu chấm tách âm tiết; âm "er" ghi là `ər` / `ɜːr`), hoặc khi một âm không có từ nào chứa nó (khi đó
+  thêm `extraExamples`, như `/ð/` với "this", "mother"). `i` ngắn cuối từ (bunny `/ˈbʌni/`) được tính là
+  âm `/iː/` (khai báo `aliases`). Bộ tách âm: `src/lib/ipa.ts`. Mẹo khẩu hình `tipVi` là bản nháp, **cần
+  giáo viên duyệt**.
 
 ### Lưu trữ (spec §11)
 

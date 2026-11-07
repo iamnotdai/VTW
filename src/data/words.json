@@ -22,7 +22,7 @@
   "pillow": {
     "id": "pillow",
     "text": "pillow",
-    "ipa": "/ˈpɪl.oʊ/",
+    "ipa": "/ˈpɪloʊ/",
     "meaningVi": "cái gối",
     "image": "/assets/scenes/bedroom/objects/02_pillow.webp",
     "acceptedAnswers": ["pillow", "a pillow"],
@@ -42,7 +42,7 @@
   "blanket": {
     "id": "blanket",
     "text": "blanket",
-    "ipa": "/ˈblæŋ.kɪt/",
+    "ipa": "/ˈblæŋkɪt/",
     "meaningVi": "cái chăn (mền)",
     "image": "/assets/scenes/bedroom/objects/03_blanket.webp",
     "acceptedAnswers": ["blanket", "a blanket"],
@@ -82,7 +82,7 @@
   "nightstand": {
     "id": "nightstand",
     "text": "nightstand",
-    "ipa": "/ˈnaɪt.stænd/",
+    "ipa": "/ˈnaɪtstænd/",
     "meaningVi": "tủ đầu giường",
     "image": "/assets/scenes/bedroom/objects/05_nightstand.webp",
     "acceptedAnswers": [
@@ -149,7 +149,7 @@
   "laptop": {
     "id": "laptop",
     "text": "laptop",
-    "ipa": "/ˈlæp.tɑːp/",
+    "ipa": "/ˈlæptɑːp/",
     "meaningVi": "máy tính xách tay",
     "image": "/assets/scenes/bedroom/objects/08_laptop.webp",
     "acceptedAnswers": ["laptop", "a laptop", "computer", "a computer"],
@@ -169,7 +169,7 @@
   "turtle": {
     "id": "turtle",
     "text": "turtle",
-    "ipa": "/ˈtɝː.t̬əl/",
+    "ipa": "/ˈtɜːrtəl/",
     "meaningVi": "con rùa",
     "image": "/assets/scenes/bedroom/objects/09_turtle.webp",
     "acceptedAnswers": ["turtle", "a turtle", "tortoise", "a tortoise"],
@@ -189,7 +189,7 @@
   "wardrobe": {
     "id": "wardrobe",
     "text": "wardrobe",
-    "ipa": "/ˈwɔːr.droʊb/",
+    "ipa": "/ˈwɔːrdroʊb/",
     "meaningVi": "tủ quần áo",
     "image": "/assets/scenes/bedroom/objects/10_wardrobe.webp",
     "acceptedAnswers": ["wardrobe", "a wardrobe", "closet", "a closet"],
@@ -209,7 +209,7 @@
   "mirror": {
     "id": "mirror",
     "text": "mirror",
-    "ipa": "/ˈmɪr.ɚ/",
+    "ipa": "/ˈmɪrər/",
     "meaningVi": "cái gương",
     "image": "/assets/scenes/bedroom/objects/11_mirror.webp",
     "acceptedAnswers": ["mirror", "a mirror"],
@@ -289,7 +289,7 @@
   "bookshelf": {
     "id": "bookshelf",
     "text": "bookshelf",
-    "ipa": "/ˈbʊk.ʃelf/",
+    "ipa": "/ˈbʊkʃelf/",
     "meaningVi": "giá sách",
     "image": "/assets/scenes/bedroom/objects/15_bookshelf.webp",
     "acceptedAnswers": ["bookshelf", "a bookshelf", "book shelf", "bookcase", "a bookcase"],
@@ -309,7 +309,7 @@
   "pencil-cup": {
     "id": "pencil-cup",
     "text": "pencil cup",
-    "ipa": "/ˈpen.səl ˌkʌp/",
+    "ipa": "/ˈpensəl ˌkʌp/",
     "meaningVi": "ống đựng bút",
     "image": "/assets/scenes/bedroom/objects/16_pencil-cup.webp",
     "acceptedAnswers": [
@@ -356,7 +356,7 @@
   "picture": {
     "id": "picture",
     "text": "picture",
-    "ipa": "/ˈpɪk.tʃɚ/",
+    "ipa": "/ˈpɪktʃər/",
     "meaningVi": "bức tranh",
     "image": "/assets/scenes/bedroom/objects/18_picture.webp",
     "acceptedAnswers": [
@@ -404,7 +404,7 @@
     "id": "slippers",
     "text": "slippers",
     "plural": true,
-    "ipa": "/ˈslɪp.ɚz/",
+    "ipa": "/ˈslɪpərz/",
     "meaningVi": "dép đi trong nhà",
     "image": "/assets/scenes/bedroom/objects/20_slippers.webp",
     "acceptedAnswers": ["slippers", "the slippers", "slipper", "a slipper"],
@@ -424,7 +424,7 @@
   "bunny": {
     "id": "bunny",
     "text": "bunny",
-    "ipa": "/ˈbʌn.i/",
+    "ipa": "/ˈbʌni/",
     "meaningVi": "thỏ bông",
     "image": "/assets/scenes/bedroom/objects/21_bunny.webp",
     "acceptedAnswers": ["bunny", "a bunny", "rabbit", "a rabbit"],
@@ -444,7 +444,7 @@
   "mattress": {
     "id": "mattress",
     "text": "mattress",
-    "ipa": "/ˈmæt.rəs/",
+    "ipa": "/ˈmætrəs/",
     "meaningVi": "cái nệm (đệm)",
     "image": "/assets/scenes/bedroom/objects/22_mattress.webp",
     "acceptedAnswers": ["mattress", "a mattress"],
@@ -464,7 +464,7 @@
   "backpack": {
     "id": "backpack",
     "text": "backpack",
-    "ipa": "/ˈbæk.pæk/",
+    "ipa": "/ˈbækpæk/",
     "meaningVi": "ba lô",
     "image": "/assets/scenes/bedroom/objects/23_backpack.webp",
     "acceptedAnswers": [
@@ -844,7 +844,7 @@
   "shower-curtain": {
     "id": "shower-curtain",
     "text": "shower curtain",
-    "ipa": "/ˈʃaʊər ˌkɝːtn/",
+    "ipa": "/ˈʃaʊər ˌkɜːrtn/",
     "meaningVi": "rèm tắm",
     "image": "/assets/scenes/bathroom/objects/16_shower-curtain.webp",
     "acceptedAnswers": ["shower curtain", "a shower curtain", "curtain", "a curtain"],
