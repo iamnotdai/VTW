@@ -5501,5 +5501,685 @@
         "suggestedAnswerPinyin": "Tā xǐ huan jú huā."
       }
     ]
+  },
+  {
+    "id": "our-vegetable-garden",
+    "sceneId": "vegetable-garden",
+    "title": "我们的菜园",
+    "order": 1,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "妈妈带小本看菜园里的蔬菜。",
+    "lines": [
+      {
+        "id": "our-vegetable-garden-l1",
+        "speakerId": "mom",
+        "text": "小本，快来看我们的菜园！",
+        "textVi": "Ben ơi, lại xem vườn rau của nhà mình này!",
+        "pinyin": "Xiǎo Běn, kuài lái kàn wǒ men de cài yuán!"
+      },
+      {
+        "id": "our-vegetable-garden-l2",
+        "speakerId": "ben",
+        "text": "哇！我看到西红柿和胡萝卜。",
+        "textVi": "Ồ! Con thấy cà chua và cà rốt.",
+        "pinyin": "Wā! Wǒ kàn dào xī hóng shì hé hú luó bo."
+      },
+      {
+        "id": "our-vegetable-garden-l3",
+        "speakerId": "mom",
+        "text": "你能找到卷心菜吗？",
+        "textVi": "Con có tìm thấy cây bắp cải không?",
+        "pinyin": "Nǐ néng zhǎo dào juǎn xīn cài ma?"
+      },
+      {
+        "id": "our-vegetable-garden-l4",
+        "speakerId": "ben",
+        "text": "能！它又大又绿。",
+        "textVi": "Có ạ! Nó to và xanh.",
+        "pinyin": "Néng! Tā yòu dà yòu lǜ."
+      },
+      {
+        "id": "our-vegetable-garden-l5",
+        "speakerId": "mom",
+        "text": "真棒。卷心菜旁边是什么？",
+        "textVi": "Giỏi lắm. Cạnh cây bắp cải là gì nào?",
+        "pinyin": "Zhēn bàng. Juǎn xīn cài páng biān shì shén me?"
+      },
+      {
+        "id": "our-vegetable-garden-l6",
+        "speakerId": "ben",
+        "text": "是生菜！",
+        "textVi": "Rau xà lách ạ!",
+        "pinyin": "Shì shēng cài!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-vegetable-garden-q1",
+        "prompt": "小本看到了什么？",
+        "suggestedAnswer": "他看到了西红柿和胡萝卜。",
+        "promptPinyin": "Xiǎo Běn kàn dào le shén me?",
+        "suggestedAnswerPinyin": "Tā kàn dào le xī hóng shì hé hú luó bo."
+      },
+      {
+        "id": "our-vegetable-garden-q2",
+        "prompt": "卷心菜是什么颜色的？",
+        "suggestedAnswer": "它是绿色的。",
+        "promptPinyin": "Juǎn xīn cài shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì lǜ sè de."
+      }
+    ]
+  },
+  {
+    "id": "picking-tomatoes",
+    "sceneId": "vegetable-garden",
+    "title": "摘西红柿",
+    "order": 2,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "莉莉和爸爸摘红红的西红柿。",
+    "lines": [
+      {
+        "id": "picking-tomatoes-l1",
+        "speakerId": "lily",
+        "text": "爸爸，西红柿红了。",
+        "textVi": "Bố ơi, cà chua chín đỏ rồi.",
+        "pinyin": "Bà ba, xī hóng shì hóng le."
+      },
+      {
+        "id": "picking-tomatoes-l2",
+        "speakerId": "dad",
+        "text": "我们一起摘吧。",
+        "textVi": "Mình cùng hái nhé.",
+        "pinyin": "Wǒ men yì qǐ zhāi ba."
+      },
+      {
+        "id": "picking-tomatoes-l3",
+        "speakerId": "lily",
+        "text": "这个又大又圆。",
+        "textVi": "Quả này to và tròn.",
+        "pinyin": "Zhè ge yòu dà yòu yuán."
+      },
+      {
+        "id": "picking-tomatoes-l4",
+        "speakerId": "dad",
+        "text": "请把它放进篮子里。",
+        "textVi": "Con bỏ nó vào giỏ nhé.",
+        "pinyin": "Qǐng bǎ tā fàng jìn lán zi lǐ."
+      },
+      {
+        "id": "picking-tomatoes-l5",
+        "speakerId": "lily",
+        "text": "绿色的也可以摘吗？",
+        "textVi": "Mình hái cả quả xanh được không ạ?",
+        "pinyin": "Lǜ sè de yě kě yǐ zhāi ma?"
+      },
+      {
+        "id": "picking-tomatoes-l6",
+        "speakerId": "dad",
+        "text": "还不行，它们还没熟。",
+        "textVi": "Chưa được con. Chúng chưa chín.",
+        "pinyin": "Hái bù xíng, tā men hái méi shú."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-tomatoes-q1",
+        "prompt": "西红柿是什么颜色的？",
+        "suggestedAnswer": "它们是红色的。",
+        "promptPinyin": "Xī hóng shì shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì hóng sè de."
+      },
+      {
+        "id": "picking-tomatoes-q2",
+        "prompt": "他们可以摘绿色的西红柿吗？",
+        "suggestedAnswer": "不可以，它们还没熟。",
+        "promptPinyin": "Tā men kě yǐ zhāi lǜ sè de xī hóng shì ma?",
+        "suggestedAnswerPinyin": "Bù kě yǐ, tā men hái méi shú."
+      }
+    ]
+  },
+  {
+    "id": "pulling-carrots",
+    "sceneId": "vegetable-garden",
+    "title": "拔胡萝卜",
+    "order": 3,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "小本从土里拔胡萝卜和小萝卜。",
+    "lines": [
+      {
+        "id": "pulling-carrots-l1",
+        "speakerId": "ben",
+        "text": "妈妈，我可以拔一根胡萝卜吗？",
+        "textVi": "Mẹ ơi, con nhổ một củ cà rốt được không?",
+        "pinyin": "Mā ma, wǒ kě yǐ bá yì gēn hú luó bo ma?"
+      },
+      {
+        "id": "pulling-carrots-l2",
+        "speakerId": "mom",
+        "text": "可以。抓住叶子往上拔。",
+        "textVi": "Được con. Nắm lá rồi kéo lên.",
+        "pinyin": "Kě yǐ. Zhuā zhù yè zi wǎng shàng bá."
+      },
+      {
+        "id": "pulling-carrots-l3",
+        "speakerId": "ben",
+        "text": "你看！它长长的，是橙色的。",
+        "textVi": "Mẹ xem! Nó dài và màu cam.",
+        "pinyin": "Nǐ kàn! Tā cháng cháng de, shì chéng sè de."
+      },
+      {
+        "id": "pulling-carrots-l4",
+        "speakerId": "mom",
+        "text": "真棒！现在试试小萝卜。",
+        "textVi": "Giỏi quá! Giờ con thử nhổ củ cải nhé.",
+        "pinyin": "Zhēn bàng! Xiàn zài shì shì xiǎo luó bo."
+      },
+      {
+        "id": "pulling-carrots-l5",
+        "speakerId": "ben",
+        "text": "小萝卜又小又红。",
+        "textVi": "Củ cải nhỏ và màu đỏ.",
+        "pinyin": "Xiǎo luó bo yòu xiǎo yòu hóng."
+      },
+      {
+        "id": "pulling-carrots-l6",
+        "speakerId": "mom",
+        "text": "我们把它们洗干净做晚饭吧。",
+        "textVi": "Mình rửa sạch để nấu bữa tối nhé.",
+        "pinyin": "Wǒ men bǎ tā men xǐ gān jing zuò wǎn fàn ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "pulling-carrots-q1",
+        "prompt": "胡萝卜是什么颜色的？",
+        "suggestedAnswer": "它是橙色的。",
+        "promptPinyin": "Hú luó bo shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā shì chéng sè de."
+      },
+      {
+        "id": "pulling-carrots-q2",
+        "prompt": "什么又小又红？",
+        "suggestedAnswer": "小萝卜又小又红。",
+        "promptPinyin": "Shén me yòu xiǎo yòu hóng?",
+        "suggestedAnswerPinyin": "Xiǎo luó bo yòu xiǎo yòu hóng."
+      }
+    ]
+  },
+  {
+    "id": "a-hungry-caterpillar",
+    "sceneId": "vegetable-garden",
+    "title": "饿肚子的毛毛虫",
+    "order": 4,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "莉莉和小本在叶子上发现一条毛毛虫。",
+    "lines": [
+      {
+        "id": "a-hungry-caterpillar-l1",
+        "speakerId": "lily",
+        "text": "小本，你看这片叶子！",
+        "textVi": "Ben ơi, nhìn chiếc lá này!",
+        "pinyin": "Xiǎo Běn, nǐ kàn zhè piàn yè zi!"
+      },
+      {
+        "id": "a-hungry-caterpillar-l2",
+        "speakerId": "ben",
+        "text": "上面有一条小毛毛虫。",
+        "textVi": "Có một con sâu nhỏ trên đó.",
+        "pinyin": "Shàng miàn yǒu yì tiáo xiǎo máo mao chóng."
+      },
+      {
+        "id": "a-hungry-caterpillar-l3",
+        "speakerId": "lily",
+        "text": "它在做什么？",
+        "textVi": "Nó đang làm gì thế?",
+        "pinyin": "Tā zài zuò shén me?"
+      },
+      {
+        "id": "a-hungry-caterpillar-l4",
+        "speakerId": "ben",
+        "text": "它在吃叶子。",
+        "textVi": "Nó đang ăn lá.",
+        "pinyin": "Tā zài chī yè zi."
+      },
+      {
+        "id": "a-hungry-caterpillar-l5",
+        "speakerId": "lily",
+        "text": "它是绿色的，跟叶子一样。",
+        "textVi": "Nó màu xanh, giống chiếc lá.",
+        "pinyin": "Tā shì lǜ sè de, gēn yè zi yí yàng."
+      },
+      {
+        "id": "a-hungry-caterpillar-l6",
+        "speakerId": "ben",
+        "text": "我们别碰它，它饿了！",
+        "textVi": "Mình đừng chạm vào nó. Nó đang đói mà!",
+        "pinyin": "Wǒ men bié pèng tā, tā è le!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-hungry-caterpillar-q1",
+        "prompt": "毛毛虫在哪里？",
+        "suggestedAnswer": "它在叶子上。",
+        "promptPinyin": "Máo mao chóng zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Tā zài yè zi shàng."
+      },
+      {
+        "id": "a-hungry-caterpillar-q2",
+        "prompt": "毛毛虫在做什么？",
+        "suggestedAnswer": "它在吃叶子。",
+        "promptPinyin": "Máo mao chóng zài zuò shén me?",
+        "suggestedAnswerPinyin": "Tā zài chī yè zi."
+      }
+    ]
+  },
+  {
+    "id": "a-big-pumpkin",
+    "sceneId": "vegetable-garden",
+    "title": "大南瓜",
+    "order": 5,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "小本和爸爸看橙色的大南瓜。",
+    "lines": [
+      {
+        "id": "a-big-pumpkin-l1",
+        "speakerId": "ben",
+        "text": "爸爸，这个南瓜好大呀！",
+        "textVi": "Bố ơi, quả bí ngô này to quá!",
+        "pinyin": "Bà ba, zhè ge nán guā hǎo dà ya!"
+      },
+      {
+        "id": "a-big-pumpkin-l2",
+        "speakerId": "dad",
+        "text": "对，它是菜园里最大的。",
+        "textVi": "Ừ, đó là quả to nhất trong vườn.",
+        "pinyin": "Duì, tā shì cài yuán lǐ zuì dà de."
+      },
+      {
+        "id": "a-big-pumpkin-l3",
+        "speakerId": "ben",
+        "text": "我能把它抬起来吗？",
+        "textVi": "Con nhấc nó lên được không?",
+        "pinyin": "Wǒ néng bǎ tā tái qǐ lái ma?"
+      },
+      {
+        "id": "a-big-pumpkin-l4",
+        "speakerId": "dad",
+        "text": "它太重了，我们一起搬吧。",
+        "textVi": "Nó nặng lắm. Mình cùng khiêng nhé.",
+        "pinyin": "Tā tài zhòng le, wǒ men yì qǐ bān ba."
+      },
+      {
+        "id": "a-big-pumpkin-l5",
+        "speakerId": "ben",
+        "text": "我们可以用它做什么？",
+        "textVi": "Mình làm món gì với nó được ạ?",
+        "pinyin": "Wǒ men kě yǐ yòng tā zuò shén me?"
+      },
+      {
+        "id": "a-big-pumpkin-l6",
+        "speakerId": "dad",
+        "text": "我们可以做南瓜汤。",
+        "textVi": "Mình có thể nấu súp bí ngô.",
+        "pinyin": "Wǒ men kě yǐ zuò nán guā tāng."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-big-pumpkin-q1",
+        "prompt": "南瓜重吗？",
+        "suggestedAnswer": "重，它太重了。",
+        "promptPinyin": "Nán guā zhòng ma?",
+        "suggestedAnswerPinyin": "Zhòng, tā tài zhòng le."
+      },
+      {
+        "id": "a-big-pumpkin-q2",
+        "prompt": "他们可以做什么？",
+        "suggestedAnswer": "他们可以做南瓜汤。",
+        "promptPinyin": "Tā men kě yǐ zuò shén me?",
+        "suggestedAnswerPinyin": "Tā men kě yǐ zuò nán guā tāng."
+      }
+    ]
+  },
+  {
+    "id": "digging-potatoes",
+    "sceneId": "vegetable-garden",
+    "title": "挖土豆",
+    "order": 6,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "爸爸和莉莉挖土豆和红薯。",
+    "lines": [
+      {
+        "id": "digging-potatoes-l1",
+        "speakerId": "dad",
+        "text": "莉莉，土豆在泥土下面。",
+        "textVi": "Lily ơi, khoai tây ở dưới đất.",
+        "pinyin": "Lì li, tǔ dòu zài ní tǔ xià miàn."
+      },
+      {
+        "id": "digging-potatoes-l2",
+        "speakerId": "lily",
+        "text": "我看不见它们。",
+        "textVi": "Con không nhìn thấy chúng.",
+        "pinyin": "Wǒ kàn bu jiàn tā men."
+      },
+      {
+        "id": "digging-potatoes-l3",
+        "speakerId": "dad",
+        "text": "我们轻轻地挖。找到了！",
+        "textVi": "Mình đào nhẹ nhàng nhé. Đây rồi!",
+        "pinyin": "Wǒ men qīng qīng de wā. Zhǎo dào le!"
+      },
+      {
+        "id": "digging-potatoes-l4",
+        "speakerId": "lily",
+        "text": "一个、两个、三个土豆！",
+        "textVi": "Một, hai, ba củ khoai tây!",
+        "pinyin": "Yí gè, liǎng gè, sān gè tǔ dòu!"
+      },
+      {
+        "id": "digging-potatoes-l5",
+        "speakerId": "dad",
+        "text": "这些是红薯。",
+        "textVi": "Còn đây là khoai lang.",
+        "pinyin": "Zhè xiē shì hóng shǔ."
+      },
+      {
+        "id": "digging-potatoes-l6",
+        "speakerId": "lily",
+        "text": "它们的皮是红色的！",
+        "textVi": "Vỏ của chúng màu đỏ!",
+        "pinyin": "Tā men de pí shì hóng sè de!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "digging-potatoes-q1",
+        "prompt": "土豆在哪里？",
+        "suggestedAnswer": "它们在泥土下面。",
+        "promptPinyin": "Tǔ dòu zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Tā men zài ní tǔ xià miàn."
+      },
+      {
+        "id": "digging-potatoes-q2",
+        "prompt": "莉莉数了几个土豆？",
+        "suggestedAnswer": "她数了三个土豆。",
+        "promptPinyin": "Lì li shǔ le jǐ gè tǔ dòu?",
+        "suggestedAnswerPinyin": "Tā shǔ le sān gè tǔ dòu."
+      }
+    ]
+  },
+  {
+    "id": "hot-chili-peppers",
+    "sceneId": "vegetable-garden",
+    "title": "辣辣的辣椒",
+    "order": 7,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "妈妈告诉小本辣椒很辣。",
+    "lines": [
+      {
+        "id": "hot-chili-peppers-l1",
+        "speakerId": "ben",
+        "text": "妈妈，这些红红的小东西是什么？",
+        "textVi": "Mẹ ơi, mấy quả nhỏ màu đỏ này là gì ạ?",
+        "pinyin": "Mā ma, zhè xiē hóng hóng de xiǎo dōng xi shì shén me?"
+      },
+      {
+        "id": "hot-chili-peppers-l2",
+        "speakerId": "mom",
+        "text": "它们是辣椒。",
+        "textVi": "Đó là quả ớt.",
+        "pinyin": "Tā men shì là jiāo."
+      },
+      {
+        "id": "hot-chili-peppers-l3",
+        "speakerId": "ben",
+        "text": "我可以吃一个吗？",
+        "textVi": "Con ăn một quả được không?",
+        "pinyin": "Wǒ kě yǐ chī yí gè ma?"
+      },
+      {
+        "id": "hot-chili-peppers-l4",
+        "speakerId": "mom",
+        "text": "不行！它们很辣。",
+        "textVi": "Không được! Ớt cay lắm.",
+        "pinyin": "Bù xíng! Tā men hěn là."
+      },
+      {
+        "id": "hot-chili-peppers-l5",
+        "speakerId": "ben",
+        "text": "那些紫色的呢？",
+        "textVi": "Còn mấy quả màu tím thì sao ạ?",
+        "pinyin": "Nà xiē zǐ sè de ne?"
+      },
+      {
+        "id": "hot-chili-peppers-l6",
+        "speakerId": "mom",
+        "text": "那些是茄子，我们可以做晚饭吃。",
+        "textVi": "Đó là cà tím. Mình có thể nấu cho bữa tối.",
+        "pinyin": "Nà xiē shì qié zi, wǒ men kě yǐ zuò wǎn fàn chī."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "hot-chili-peppers-q1",
+        "prompt": "小本可以吃辣椒吗？",
+        "suggestedAnswer": "不可以，它们很辣。",
+        "promptPinyin": "Xiǎo Běn kě yǐ chī là jiāo ma?",
+        "suggestedAnswerPinyin": "Bù kě yǐ, tā men hěn là."
+      },
+      {
+        "id": "hot-chili-peppers-q2",
+        "prompt": "茄子是什么颜色的？",
+        "suggestedAnswer": "它们是紫色的。",
+        "promptPinyin": "Qié zi shì shén me yán sè de?",
+        "suggestedAnswerPinyin": "Tā men shì zǐ sè de."
+      }
+    ]
+  },
+  {
+    "id": "beans-on-the-trellis",
+    "sceneId": "vegetable-garden",
+    "title": "藤架上的豆角",
+    "order": 8,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "莉莉和妈妈摘豆角和黄瓜。",
+    "lines": [
+      {
+        "id": "beans-on-the-trellis-l1",
+        "speakerId": "lily",
+        "text": "妈妈，豆角为什么这么高？",
+        "textVi": "Mẹ ơi, sao đậu lại ở cao thế ạ?",
+        "pinyin": "Mā ma, dòu jiǎo wèi shén me zhè me gāo?"
+      },
+      {
+        "id": "beans-on-the-trellis-l2",
+        "speakerId": "mom",
+        "text": "它们爬上了藤架。",
+        "textVi": "Chúng leo lên giàn.",
+        "pinyin": "Tā men pá shàng le téng jià."
+      },
+      {
+        "id": "beans-on-the-trellis-l3",
+        "speakerId": "lily",
+        "text": "豆角好长啊！",
+        "textVi": "Đậu que dài quá!",
+        "pinyin": "Dòu jiǎo hǎo cháng a!"
+      },
+      {
+        "id": "beans-on-the-trellis-l4",
+        "speakerId": "mom",
+        "text": "我们摘一些做午饭吧。",
+        "textVi": "Mình hái một ít để ăn trưa nhé.",
+        "pinyin": "Wǒ men zhāi yì xiē zuò wǔ fàn ba."
+      },
+      {
+        "id": "beans-on-the-trellis-l5",
+        "speakerId": "lily",
+        "text": "我们也可以摘一根黄瓜吗？",
+        "textVi": "Mình hái cả một quả dưa chuột được không ạ?",
+        "pinyin": "Wǒ men yě kě yǐ zhāi yì gēn huáng guā ma?"
+      },
+      {
+        "id": "beans-on-the-trellis-l6",
+        "speakerId": "mom",
+        "text": "当然可以。摘那根大的吧。",
+        "textVi": "Được chứ. Con hái quả to ấy.",
+        "pinyin": "Dāng rán kě yǐ. Zhāi nà gēn dà de ba."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "beans-on-the-trellis-q1",
+        "prompt": "豆角爬上了什么？",
+        "suggestedAnswer": "它们爬上了藤架。",
+        "promptPinyin": "Dòu jiǎo pá shàng le shén me?",
+        "suggestedAnswerPinyin": "Tā men pá shàng le téng jià."
+      },
+      {
+        "id": "beans-on-the-trellis-q2",
+        "prompt": "她们还摘了什么？",
+        "suggestedAnswer": "她们摘了一根黄瓜。",
+        "promptPinyin": "Tā men hái zhāi le shén me?",
+        "suggestedAnswerPinyin": "Tā men zhāi le yì gēn huáng guā."
+      }
+    ]
+  },
+  {
+    "id": "water-the-seedling",
+    "sceneId": "vegetable-garden",
+    "title": "给幼苗浇水",
+    "order": 9,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "莉莉给土里的小幼苗浇水。",
+    "lines": [
+      {
+        "id": "water-the-seedling-l1",
+        "speakerId": "mom",
+        "text": "莉莉，你看这棵小幼苗。",
+        "textVi": "Lily ơi, nhìn cây con này.",
+        "pinyin": "Lì li, nǐ kàn zhè kē xiǎo yòu miáo."
+      },
+      {
+        "id": "water-the-seedling-l2",
+        "speakerId": "lily",
+        "text": "它好小啊！",
+        "textVi": "Nó nhỏ quá!",
+        "pinyin": "Tā hǎo xiǎo a!"
+      },
+      {
+        "id": "water-the-seedling-l3",
+        "speakerId": "mom",
+        "text": "它需要水才能长大。",
+        "textVi": "Nó cần nước để lớn lên.",
+        "pinyin": "Tā xū yào shuǐ cái néng zhǎng dà."
+      },
+      {
+        "id": "water-the-seedling-l4",
+        "speakerId": "lily",
+        "text": "我每天都给它浇水。",
+        "textVi": "Con sẽ tưới nó mỗi ngày.",
+        "pinyin": "Wǒ měi tiān dōu gěi tā jiāo shuǐ."
+      },
+      {
+        "id": "water-the-seedling-l5",
+        "speakerId": "mom",
+        "text": "真乖。现在泥土很干。",
+        "textVi": "Ngoan lắm. Bây giờ đất đang khô.",
+        "pinyin": "Zhēn guāi. Xiàn zài ní tǔ hěn gān."
+      },
+      {
+        "id": "water-the-seedling-l6",
+        "speakerId": "lily",
+        "text": "好了！小幼苗，快快长大吧！",
+        "textVi": "Xong rồi! Lớn nhanh nhé, cây con!",
+        "pinyin": "Hǎo le! Xiǎo yòu miáo, kuài kuài zhǎng dà ba!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "water-the-seedling-q1",
+        "prompt": "幼苗需要什么？",
+        "suggestedAnswer": "它需要水。",
+        "promptPinyin": "Yòu miáo xū yào shén me?",
+        "suggestedAnswerPinyin": "Tā xū yào shuǐ."
+      },
+      {
+        "id": "water-the-seedling-q2",
+        "prompt": "莉莉什么时候给它浇水？",
+        "suggestedAnswer": "她每天都给它浇水。",
+        "promptPinyin": "Lì li shén me shí hou gěi tā jiāo shuǐ?",
+        "suggestedAnswerPinyin": "Tā měi tiān dōu gěi tā jiāo shuǐ."
+      }
+    ]
+  },
+  {
+    "id": "making-a-salad",
+    "sceneId": "vegetable-garden",
+    "title": "做沙拉",
+    "order": 10,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "小本和爸爸摘蔬菜做沙拉。",
+    "lines": [
+      {
+        "id": "making-a-salad-l1",
+        "speakerId": "dad",
+        "text": "小本，我们来做沙拉吧。",
+        "textVi": "Ben ơi, mình làm món sa-lát nhé.",
+        "pinyin": "Xiǎo Běn, wǒ men lái zuò shā lā ba."
+      },
+      {
+        "id": "making-a-salad-l2",
+        "speakerId": "ben",
+        "text": "太好了！我们需要什么？",
+        "textVi": "Hay quá! Mình cần những gì ạ?",
+        "pinyin": "Tài hǎo le! Wǒ men xū yào shén me?"
+      },
+      {
+        "id": "making-a-salad-l3",
+        "speakerId": "dad",
+        "text": "一些生菜、一根黄瓜和西红柿。",
+        "textVi": "Một ít xà lách, một quả dưa chuột và cà chua.",
+        "pinyin": "Yì xiē shēng cài, yì gēn huáng guā hé xī hóng shì."
+      },
+      {
+        "id": "making-a-salad-l4",
+        "speakerId": "ben",
+        "text": "我去拿生菜。",
+        "textVi": "Con sẽ đi lấy xà lách.",
+        "pinyin": "Wǒ qù ná shēng cài."
+      },
+      {
+        "id": "making-a-salad-l5",
+        "speakerId": "dad",
+        "text": "请走在小路上。",
+        "textVi": "Con đi trên lối đi trong vườn nhé.",
+        "pinyin": "Qǐng zǒu zài xiǎo lù shàng."
+      },
+      {
+        "id": "making-a-salad-l6",
+        "speakerId": "ben",
+        "text": "好的！我不会踩到菜。",
+        "textVi": "Vâng ạ! Con sẽ không giẫm lên cây.",
+        "pinyin": "Hǎo de! Wǒ bú huì cǎi dào cài."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-a-salad-q1",
+        "prompt": "他们在做什么？",
+        "suggestedAnswer": "他们在做沙拉。",
+        "promptPinyin": "Tā men zài zuò shén me?",
+        "suggestedAnswerPinyin": "Tā men zài zuò shā lā."
+      },
+      {
+        "id": "making-a-salad-q2",
+        "prompt": "小本应该走在哪里？",
+        "suggestedAnswer": "走在小路上。",
+        "promptPinyin": "Xiǎo Běn yīng gāi zǒu zài nǎ lǐ?",
+        "suggestedAnswerPinyin": "Zǒu zài xiǎo lù shàng."
+      }
+    ]
   }
 ]

@@ -9,5 +9,5 @@
   "kitchen": { "title": "厨房", "description": "在厨房里学词语，练对话。" },
   "living-room": { "title": "客厅", "description": "在客厅里学词语，练对话。" },
   "shed": { "title": "小木屋", "description": "学习小木屋和里面东西的词语。" },
-  "vegetable-garden": { "title": "菜园", "description": "学习胡萝卜、白菜和西红柿的词语。" }
+  "vegetable-garden": { "title": "菜园", "description": "在菜园里学词语，练对话。" }
 }

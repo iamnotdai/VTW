@@ -75,6 +75,12 @@ const READINGS = {
   安静地: 'ān jìng de',
   够不着: 'gòu bu zháo',
   夹在: 'jiā zài',
+  种生菜: 'zhòng shēng cài',
+  种大蒜: 'zhòng dà suàn',
+  长在: 'zhǎng zài',
+  长得: 'zhǎng de',
+  轻轻地: 'qīng qīng de',
+  数了: 'shǔ le',
 };
 
 /** The characters' names, written with capitals. */

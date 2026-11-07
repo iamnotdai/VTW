@@ -15,7 +15,7 @@ nói. Nghĩa và bản dịch luôn là tiếng Việt. Ứng dụng chạy
 ## Trạng thái hiện tại
 
 Bộ khung đã chạy được **hành trình MVP của spec §22 từ đầu đến cuối** cho scene Bedroom, Bathroom, Living
-Room, Kitchen, House Exterior, Dining Room, Garage và Flower Garden:
+Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden và Vegetable Garden:
 
 - Đủ **16 màn hình** (bảng route bên dưới), layout responsive: sidebar trên desktop, rail icon
   trên tablet, bottom navigation trên mobile.
@@ -31,14 +31,14 @@ Room, Kitchen, House Exterior, Dining Room, Garage và Flower Garden:
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **161 test Vitest** (126 unit + 35 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+- Test tự động: **163 test Vitest** (128 unit + 35 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
   **10 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
-> thoại của Bedroom, Bathroom, Kitchen, House Exterior, Garage và Flower Garden, 30 từ và 10 hội thoại của Living Room và Dining Room là **nội dung mẫu**, cần
+> thoại của Bedroom, Bathroom, Kitchen, House Exterior, Garage, Flower Garden và Vegetable Garden, 30 từ và 10 hội thoại của Living Room và Dining Room là **nội dung mẫu**, cần
 > giáo viên/biên tập duyệt lại trước khi phát
-> hành. Nội dung **khóa tiếng Trung** (204 từ, pinyin, câu ví dụ, 80 hội thoại) là **bản nháp do AI soạn**,
+> hành. Nội dung **khóa tiếng Trung** (228 từ, pinyin, câu ví dụ, 90 hội thoại) là **bản nháp do AI soạn**,
 > pinyin câu sinh tự động: bắt buộc người bản ngữ/giáo viên tiếng Trung duyệt trước khi phát hành. Chưa có
 > file video và audio thu âm: app dùng giọng đọc của trình duyệt (Web Speech) làm fallback.
 
@@ -366,6 +366,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Dining Room đủ 30 từ / 10 hội thoại / 30 hotspot                     | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Garage đủ 24 từ / 10 hội thoại / 24 hotspot                          | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Flower Garden đủ 24 từ / 10 hội thoại / 24 hotspot                   | ✅ dữ liệu mẫu, cần duyệt nội dung |
+| Vegetable Garden đủ 24 từ / 10 hội thoại / 24 hotspot                | ✅ dữ liệu mẫu, cần duyệt nội dung |
 | Flashcards có Next / Finish                                          | ✅ (test)                          |
 | Video luôn có đường vào transcript                                   | ✅ (test)                          |
 | Đổi `canTypeWords` áp dụng cho câu tiếp theo                         | ✅ (test)                          |

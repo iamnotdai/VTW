@@ -4692,5 +4692,585 @@
         "suggestedAnswer": "She loves chrysanthemums."
       }
     ]
+  },
+  {
+    "id": "our-vegetable-garden",
+    "sceneId": "vegetable-garden",
+    "title": "Our Vegetable Garden",
+    "order": 1,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Mom shows Ben the vegetables in the garden.",
+    "lines": [
+      {
+        "id": "our-vegetable-garden-l1",
+        "speakerId": "mom",
+        "text": "Ben, come and see our vegetable garden!",
+        "textVi": "Ben ơi, lại xem vườn rau của nhà mình này!"
+      },
+      {
+        "id": "our-vegetable-garden-l2",
+        "speakerId": "ben",
+        "text": "Wow! I see tomatoes and carrots.",
+        "textVi": "Ồ! Con thấy cà chua và cà rốt."
+      },
+      {
+        "id": "our-vegetable-garden-l3",
+        "speakerId": "mom",
+        "text": "Can you find the cabbage?",
+        "textVi": "Con có tìm thấy cây bắp cải không?"
+      },
+      {
+        "id": "our-vegetable-garden-l4",
+        "speakerId": "ben",
+        "text": "Yes! It’s big and green.",
+        "textVi": "Có ạ! Nó to và xanh."
+      },
+      {
+        "id": "our-vegetable-garden-l5",
+        "speakerId": "mom",
+        "text": "Good job. What’s next to the cabbage?",
+        "textVi": "Giỏi lắm. Cạnh cây bắp cải là gì nào?"
+      },
+      {
+        "id": "our-vegetable-garden-l6",
+        "speakerId": "ben",
+        "text": "The lettuce!",
+        "textVi": "Rau xà lách ạ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "our-vegetable-garden-q1",
+        "prompt": "What does Ben see?",
+        "suggestedAnswer": "He sees tomatoes and carrots."
+      },
+      {
+        "id": "our-vegetable-garden-q2",
+        "prompt": "What color is the cabbage?",
+        "suggestedAnswer": "It’s green."
+      }
+    ]
+  },
+  {
+    "id": "picking-tomatoes",
+    "sceneId": "vegetable-garden",
+    "title": "Picking Tomatoes",
+    "order": 2,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Lily and Dad pick red tomatoes.",
+    "lines": [
+      {
+        "id": "picking-tomatoes-l1",
+        "speakerId": "lily",
+        "text": "Dad, the tomatoes are red now.",
+        "textVi": "Bố ơi, cà chua chín đỏ rồi."
+      },
+      {
+        "id": "picking-tomatoes-l2",
+        "speakerId": "dad",
+        "text": "Let’s pick them together.",
+        "textVi": "Mình cùng hái nhé."
+      },
+      {
+        "id": "picking-tomatoes-l3",
+        "speakerId": "lily",
+        "text": "This one is big and round.",
+        "textVi": "Quả này to và tròn."
+      },
+      {
+        "id": "picking-tomatoes-l4",
+        "speakerId": "dad",
+        "text": "Put it in the basket, please.",
+        "textVi": "Con bỏ nó vào giỏ nhé."
+      },
+      {
+        "id": "picking-tomatoes-l5",
+        "speakerId": "lily",
+        "text": "Can we pick the green ones too?",
+        "textVi": "Mình hái cả quả xanh được không ạ?"
+      },
+      {
+        "id": "picking-tomatoes-l6",
+        "speakerId": "dad",
+        "text": "Not yet. They aren’t ready.",
+        "textVi": "Chưa được con. Chúng chưa chín."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "picking-tomatoes-q1",
+        "prompt": "What color are the tomatoes?",
+        "suggestedAnswer": "They’re red."
+      },
+      {
+        "id": "picking-tomatoes-q2",
+        "prompt": "Can they pick the green tomatoes?",
+        "suggestedAnswer": "No, they aren’t ready."
+      }
+    ]
+  },
+  {
+    "id": "pulling-carrots",
+    "sceneId": "vegetable-garden",
+    "title": "Pulling Carrots",
+    "order": 3,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Ben pulls a carrot and a radish from the soil.",
+    "lines": [
+      {
+        "id": "pulling-carrots-l1",
+        "speakerId": "ben",
+        "text": "Mom, can I pull a carrot?",
+        "textVi": "Mẹ ơi, con nhổ một củ cà rốt được không?"
+      },
+      {
+        "id": "pulling-carrots-l2",
+        "speakerId": "mom",
+        "text": "Yes. Hold the leaves and pull.",
+        "textVi": "Được con. Nắm lá rồi kéo lên."
+      },
+      {
+        "id": "pulling-carrots-l3",
+        "speakerId": "ben",
+        "text": "Look! It’s long and orange.",
+        "textVi": "Mẹ xem! Nó dài và màu cam."
+      },
+      {
+        "id": "pulling-carrots-l4",
+        "speakerId": "mom",
+        "text": "Great! Now try the radish.",
+        "textVi": "Giỏi quá! Giờ con thử nhổ củ cải nhé."
+      },
+      {
+        "id": "pulling-carrots-l5",
+        "speakerId": "ben",
+        "text": "The radish is small and red.",
+        "textVi": "Củ cải nhỏ và màu đỏ."
+      },
+      {
+        "id": "pulling-carrots-l6",
+        "speakerId": "mom",
+        "text": "Let’s wash them for dinner.",
+        "textVi": "Mình rửa sạch để nấu bữa tối nhé."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "pulling-carrots-q1",
+        "prompt": "What color is the carrot?",
+        "suggestedAnswer": "It’s orange."
+      },
+      {
+        "id": "pulling-carrots-q2",
+        "prompt": "What is small and red?",
+        "suggestedAnswer": "The radish is small and red."
+      }
+    ]
+  },
+  {
+    "id": "a-hungry-caterpillar",
+    "sceneId": "vegetable-garden",
+    "title": "A Hungry Caterpillar",
+    "order": 4,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Lily and Ben find a caterpillar on a leaf.",
+    "lines": [
+      {
+        "id": "a-hungry-caterpillar-l1",
+        "speakerId": "lily",
+        "text": "Ben, look at this leaf!",
+        "textVi": "Ben ơi, nhìn chiếc lá này!"
+      },
+      {
+        "id": "a-hungry-caterpillar-l2",
+        "speakerId": "ben",
+        "text": "There’s a little caterpillar on it.",
+        "textVi": "Có một con sâu nhỏ trên đó."
+      },
+      {
+        "id": "a-hungry-caterpillar-l3",
+        "speakerId": "lily",
+        "text": "What is it doing?",
+        "textVi": "Nó đang làm gì thế?"
+      },
+      {
+        "id": "a-hungry-caterpillar-l4",
+        "speakerId": "ben",
+        "text": "It’s eating the leaf.",
+        "textVi": "Nó đang ăn lá."
+      },
+      {
+        "id": "a-hungry-caterpillar-l5",
+        "speakerId": "lily",
+        "text": "It’s green, like the leaf.",
+        "textVi": "Nó màu xanh, giống chiếc lá."
+      },
+      {
+        "id": "a-hungry-caterpillar-l6",
+        "speakerId": "ben",
+        "text": "Let’s not touch it. It’s hungry!",
+        "textVi": "Mình đừng chạm vào nó. Nó đang đói mà!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-hungry-caterpillar-q1",
+        "prompt": "Where is the caterpillar?",
+        "suggestedAnswer": "It’s on a leaf."
+      },
+      {
+        "id": "a-hungry-caterpillar-q2",
+        "prompt": "What is the caterpillar doing?",
+        "suggestedAnswer": "It’s eating the leaf."
+      }
+    ]
+  },
+  {
+    "id": "a-big-pumpkin",
+    "sceneId": "vegetable-garden",
+    "title": "A Big Pumpkin",
+    "order": 5,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Ben and Dad look at the big orange pumpkin.",
+    "lines": [
+      {
+        "id": "a-big-pumpkin-l1",
+        "speakerId": "ben",
+        "text": "Dad, this pumpkin is so big!",
+        "textVi": "Bố ơi, quả bí ngô này to quá!"
+      },
+      {
+        "id": "a-big-pumpkin-l2",
+        "speakerId": "dad",
+        "text": "Yes, it’s the biggest one in the garden.",
+        "textVi": "Ừ, đó là quả to nhất trong vườn."
+      },
+      {
+        "id": "a-big-pumpkin-l3",
+        "speakerId": "ben",
+        "text": "Can I lift it?",
+        "textVi": "Con nhấc nó lên được không?"
+      },
+      {
+        "id": "a-big-pumpkin-l4",
+        "speakerId": "dad",
+        "text": "It’s too heavy. Let’s carry it together.",
+        "textVi": "Nó nặng lắm. Mình cùng khiêng nhé."
+      },
+      {
+        "id": "a-big-pumpkin-l5",
+        "speakerId": "ben",
+        "text": "What can we make with it?",
+        "textVi": "Mình làm món gì với nó được ạ?"
+      },
+      {
+        "id": "a-big-pumpkin-l6",
+        "speakerId": "dad",
+        "text": "We can make pumpkin soup.",
+        "textVi": "Mình có thể nấu súp bí ngô."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "a-big-pumpkin-q1",
+        "prompt": "Is the pumpkin heavy?",
+        "suggestedAnswer": "Yes, it’s too heavy."
+      },
+      {
+        "id": "a-big-pumpkin-q2",
+        "prompt": "What can they make?",
+        "suggestedAnswer": "They can make pumpkin soup."
+      }
+    ]
+  },
+  {
+    "id": "digging-potatoes",
+    "sceneId": "vegetable-garden",
+    "title": "Digging Potatoes",
+    "order": 6,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Dad and Lily dig up potatoes and sweet potatoes.",
+    "lines": [
+      {
+        "id": "digging-potatoes-l1",
+        "speakerId": "dad",
+        "text": "Lily, the potatoes are under the soil.",
+        "textVi": "Lily ơi, khoai tây ở dưới đất."
+      },
+      {
+        "id": "digging-potatoes-l2",
+        "speakerId": "lily",
+        "text": "I can’t see them.",
+        "textVi": "Con không nhìn thấy chúng."
+      },
+      {
+        "id": "digging-potatoes-l3",
+        "speakerId": "dad",
+        "text": "Let’s dig gently. Here they are!",
+        "textVi": "Mình đào nhẹ nhàng nhé. Đây rồi!"
+      },
+      {
+        "id": "digging-potatoes-l4",
+        "speakerId": "lily",
+        "text": "One, two, three potatoes!",
+        "textVi": "Một, hai, ba củ khoai tây!"
+      },
+      {
+        "id": "digging-potatoes-l5",
+        "speakerId": "dad",
+        "text": "And these are sweet potatoes.",
+        "textVi": "Còn đây là khoai lang."
+      },
+      {
+        "id": "digging-potatoes-l6",
+        "speakerId": "lily",
+        "text": "They’re red outside!",
+        "textVi": "Vỏ của chúng màu đỏ!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "digging-potatoes-q1",
+        "prompt": "Where are the potatoes?",
+        "suggestedAnswer": "They’re under the soil."
+      },
+      {
+        "id": "digging-potatoes-q2",
+        "prompt": "How many potatoes does Lily count?",
+        "suggestedAnswer": "She counts three potatoes."
+      }
+    ]
+  },
+  {
+    "id": "hot-chili-peppers",
+    "sceneId": "vegetable-garden",
+    "title": "Hot Chili Peppers",
+    "order": 7,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Mom tells Ben that chili peppers are very hot.",
+    "lines": [
+      {
+        "id": "hot-chili-peppers-l1",
+        "speakerId": "ben",
+        "text": "Mom, what are these little red things?",
+        "textVi": "Mẹ ơi, mấy quả nhỏ màu đỏ này là gì ạ?"
+      },
+      {
+        "id": "hot-chili-peppers-l2",
+        "speakerId": "mom",
+        "text": "They’re chili peppers.",
+        "textVi": "Đó là quả ớt."
+      },
+      {
+        "id": "hot-chili-peppers-l3",
+        "speakerId": "ben",
+        "text": "Can I eat one?",
+        "textVi": "Con ăn một quả được không?"
+      },
+      {
+        "id": "hot-chili-peppers-l4",
+        "speakerId": "mom",
+        "text": "No! They’re very hot.",
+        "textVi": "Không được! Ớt cay lắm."
+      },
+      {
+        "id": "hot-chili-peppers-l5",
+        "speakerId": "ben",
+        "text": "What about the purple ones?",
+        "textVi": "Còn mấy quả màu tím thì sao ạ?"
+      },
+      {
+        "id": "hot-chili-peppers-l6",
+        "speakerId": "mom",
+        "text": "Those are eggplants. We can cook them for dinner.",
+        "textVi": "Đó là cà tím. Mình có thể nấu cho bữa tối."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "hot-chili-peppers-q1",
+        "prompt": "Can Ben eat a chili pepper?",
+        "suggestedAnswer": "No, they’re very hot."
+      },
+      {
+        "id": "hot-chili-peppers-q2",
+        "prompt": "What color are the eggplants?",
+        "suggestedAnswer": "They’re purple."
+      }
+    ]
+  },
+  {
+    "id": "beans-on-the-trellis",
+    "sceneId": "vegetable-garden",
+    "title": "Beans on the Trellis",
+    "order": 8,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Lily and Mom pick green beans and a cucumber.",
+    "lines": [
+      {
+        "id": "beans-on-the-trellis-l1",
+        "speakerId": "lily",
+        "text": "Mom, why are the beans so high?",
+        "textVi": "Mẹ ơi, sao đậu lại ở cao thế ạ?"
+      },
+      {
+        "id": "beans-on-the-trellis-l2",
+        "speakerId": "mom",
+        "text": "They climb the trellis.",
+        "textVi": "Chúng leo lên giàn."
+      },
+      {
+        "id": "beans-on-the-trellis-l3",
+        "speakerId": "lily",
+        "text": "The green beans are long!",
+        "textVi": "Đậu que dài quá!"
+      },
+      {
+        "id": "beans-on-the-trellis-l4",
+        "speakerId": "mom",
+        "text": "Let’s pick some for lunch.",
+        "textVi": "Mình hái một ít để ăn trưa nhé."
+      },
+      {
+        "id": "beans-on-the-trellis-l5",
+        "speakerId": "lily",
+        "text": "Can we pick a cucumber too?",
+        "textVi": "Mình hái cả một quả dưa chuột được không ạ?"
+      },
+      {
+        "id": "beans-on-the-trellis-l6",
+        "speakerId": "mom",
+        "text": "Sure. Pick the big one.",
+        "textVi": "Được chứ. Con hái quả to ấy."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "beans-on-the-trellis-q1",
+        "prompt": "What do the beans climb?",
+        "suggestedAnswer": "They climb the trellis."
+      },
+      {
+        "id": "beans-on-the-trellis-q2",
+        "prompt": "What else do they pick?",
+        "suggestedAnswer": "They pick a cucumber."
+      }
+    ]
+  },
+  {
+    "id": "water-the-seedling",
+    "sceneId": "vegetable-garden",
+    "title": "Water the Seedling",
+    "order": 9,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Lily waters a little seedling in the soil.",
+    "lines": [
+      {
+        "id": "water-the-seedling-l1",
+        "speakerId": "mom",
+        "text": "Lily, look at this little seedling.",
+        "textVi": "Lily ơi, nhìn cây con này."
+      },
+      {
+        "id": "water-the-seedling-l2",
+        "speakerId": "lily",
+        "text": "It’s so small!",
+        "textVi": "Nó nhỏ quá!"
+      },
+      {
+        "id": "water-the-seedling-l3",
+        "speakerId": "mom",
+        "text": "It needs water to grow.",
+        "textVi": "Nó cần nước để lớn lên."
+      },
+      {
+        "id": "water-the-seedling-l4",
+        "speakerId": "lily",
+        "text": "I’ll water it every day.",
+        "textVi": "Con sẽ tưới nó mỗi ngày."
+      },
+      {
+        "id": "water-the-seedling-l5",
+        "speakerId": "mom",
+        "text": "Good. The soil is dry now.",
+        "textVi": "Ngoan lắm. Bây giờ đất đang khô."
+      },
+      {
+        "id": "water-the-seedling-l6",
+        "speakerId": "lily",
+        "text": "There! Grow big, little seedling!",
+        "textVi": "Xong rồi! Lớn nhanh nhé, cây con!"
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "water-the-seedling-q1",
+        "prompt": "What does the seedling need?",
+        "suggestedAnswer": "It needs water."
+      },
+      {
+        "id": "water-the-seedling-q2",
+        "prompt": "When will Lily water it?",
+        "suggestedAnswer": "She’ll water it every day."
+      }
+    ]
+  },
+  {
+    "id": "making-a-salad",
+    "sceneId": "vegetable-garden",
+    "title": "Making a Salad",
+    "order": 10,
+    "poster": "/assets/scenes/vegetable-garden/vegetable-garden-desktop.webp",
+    "description": "Ben and Dad pick vegetables for a salad.",
+    "lines": [
+      {
+        "id": "making-a-salad-l1",
+        "speakerId": "dad",
+        "text": "Ben, let’s make a salad.",
+        "textVi": "Ben ơi, mình làm món sa-lát nhé."
+      },
+      {
+        "id": "making-a-salad-l2",
+        "speakerId": "ben",
+        "text": "Yay! What do we need?",
+        "textVi": "Hay quá! Mình cần những gì ạ?"
+      },
+      {
+        "id": "making-a-salad-l3",
+        "speakerId": "dad",
+        "text": "Some lettuce, a cucumber and tomatoes.",
+        "textVi": "Một ít xà lách, một quả dưa chuột và cà chua."
+      },
+      {
+        "id": "making-a-salad-l4",
+        "speakerId": "ben",
+        "text": "I’ll get the lettuce.",
+        "textVi": "Con sẽ đi lấy xà lách."
+      },
+      {
+        "id": "making-a-salad-l5",
+        "speakerId": "dad",
+        "text": "Walk on the garden path, please.",
+        "textVi": "Con đi trên lối đi trong vườn nhé."
+      },
+      {
+        "id": "making-a-salad-l6",
+        "speakerId": "ben",
+        "text": "Okay! I won’t step on the plants.",
+        "textVi": "Vâng ạ! Con sẽ không giẫm lên cây."
+      }
+    ],
+    "practiceQuestions": [
+      {
+        "id": "making-a-salad-q1",
+        "prompt": "What are they making?",
+        "suggestedAnswer": "They’re making a salad."
+      },
+      {
+        "id": "making-a-salad-q2",
+        "prompt": "Where should Ben walk?",
+        "suggestedAnswer": "On the garden path."
+      }
+    ]
   }
 ]

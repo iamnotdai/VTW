@@ -4258,5 +4258,492 @@
     ],
     "relatedWordIds": ["rose", "stem", "garden-flower"],
     "distractorWordIds": ["bee", "butterfly", "petal"]
+  },
+  "tomato": {
+    "id": "tomato",
+    "text": "tomato",
+    "ipa": "/təˈmeɪtoʊ/",
+    "meaningVi": "cà chua",
+    "image": "/assets/scenes/vegetable-garden/objects/01_tomato.webp",
+    "acceptedAnswers": ["tomato", "a tomato", "tomatoes"],
+    "examples": [
+      {
+        "text": "This is a red tomato.",
+        "vi": "Đây là một quả cà chua đỏ."
+      },
+      {
+        "text": "There are many tomatoes on the plant.",
+        "vi": "Trên cây có rất nhiều quả cà chua."
+      }
+    ],
+    "relatedWordIds": ["chili-pepper", "eggplant"],
+    "distractorWordIds": ["pumpkin", "radish", "chili-pepper"]
+  },
+  "carrot": {
+    "id": "carrot",
+    "text": "carrot",
+    "ipa": "/ˈkærət/",
+    "meaningVi": "cà rốt",
+    "image": "/assets/scenes/vegetable-garden/objects/02_carrot.webp",
+    "acceptedAnswers": ["carrot", "a carrot", "carrots"],
+    "examples": [
+      {
+        "text": "The carrot is orange.",
+        "vi": "Củ cà rốt màu cam."
+      },
+      {
+        "text": "Rabbits like to eat carrots.",
+        "vi": "Thỏ thích ăn cà rốt."
+      }
+    ],
+    "relatedWordIds": ["radish", "garden-bed"],
+    "distractorWordIds": ["radish", "sweet-potato", "corn"]
+  },
+  "cabbage": {
+    "id": "cabbage",
+    "text": "cabbage",
+    "ipa": "/ˈkæbɪdʒ/",
+    "meaningVi": "bắp cải",
+    "image": "/assets/scenes/vegetable-garden/objects/03_cabbage.webp",
+    "acceptedAnswers": ["cabbage", "a cabbage", "cabbages"],
+    "examples": [
+      {
+        "text": "This cabbage is green.",
+        "vi": "Cây bắp cải này màu xanh lá."
+      },
+      {
+        "text": "The cabbage is big and round.",
+        "vi": "Cây bắp cải to và tròn."
+      }
+    ],
+    "relatedWordIds": ["lettuce", "broccoli"],
+    "distractorWordIds": ["lettuce", "cauliflower", "broccoli"]
+  },
+  "lettuce": {
+    "id": "lettuce",
+    "text": "lettuce",
+    "ipa": "/ˈletɪs/",
+    "meaningVi": "rau xà lách",
+    "image": "/assets/scenes/vegetable-garden/objects/04_lettuce.webp",
+    "acceptedAnswers": ["lettuce", "a lettuce", "lettuces"],
+    "examples": [
+      {
+        "text": "I grow lettuce in my garden.",
+        "vi": "Tôi trồng rau xà lách trong vườn."
+      },
+      {
+        "text": "Mom makes a salad with lettuce.",
+        "vi": "Mẹ làm món sa-lát với rau xà lách."
+      }
+    ],
+    "relatedWordIds": ["cabbage", "cucumber"],
+    "distractorWordIds": ["cabbage", "broccoli", "green-bean"]
+  },
+  "cucumber": {
+    "id": "cucumber",
+    "text": "cucumber",
+    "ipa": "/ˈkjuːkʌmbər/",
+    "meaningVi": "dưa chuột",
+    "image": "/assets/scenes/vegetable-garden/objects/05_cucumber.webp",
+    "acceptedAnswers": ["cucumber", "a cucumber", "cucumbers"],
+    "examples": [
+      {
+        "text": "The cucumber is long and green.",
+        "vi": "Quả dưa chuột dài và xanh."
+      },
+      {
+        "text": "The cucumbers hang from the vine.",
+        "vi": "Những quả dưa chuột treo trên dây leo."
+      }
+    ],
+    "relatedWordIds": ["trellis", "green-bean"],
+    "distractorWordIds": ["eggplant", "green-bean", "corn"]
+  },
+  "potato": {
+    "id": "potato",
+    "text": "potato",
+    "ipa": "/pəˈteɪtoʊ/",
+    "meaningVi": "khoai tây",
+    "image": "/assets/scenes/vegetable-garden/objects/06_potato.webp",
+    "acceptedAnswers": ["potato", "a potato", "potatoes"],
+    "examples": [
+      {
+        "text": "The potatoes grow underground.",
+        "vi": "Khoai tây mọc dưới đất."
+      },
+      {
+        "text": "Dad digs up a big potato.",
+        "vi": "Bố đào được một củ khoai tây to."
+      }
+    ],
+    "relatedWordIds": ["sweet-potato", "soil"],
+    "distractorWordIds": ["sweet-potato", "onion", "garlic"]
+  },
+  "sweet-potato": {
+    "id": "sweet-potato",
+    "text": "sweet potato",
+    "ipa": "/ˌswiːt pəˈteɪtoʊ/",
+    "meaningVi": "khoai lang",
+    "image": "/assets/scenes/vegetable-garden/objects/07_sweet-potato.webp",
+    "acceptedAnswers": ["sweet potato", "a sweet potato", "sweet potatoes"],
+    "examples": [
+      {
+        "text": "This is a sweet potato.",
+        "vi": "Đây là một củ khoai lang."
+      },
+      {
+        "text": "Sweet potatoes are yummy and sweet.",
+        "vi": "Khoai lang ngon và ngọt."
+      }
+    ],
+    "relatedWordIds": ["potato", "carrot"],
+    "distractorWordIds": ["potato", "radish", "eggplant"]
+  },
+  "onion": {
+    "id": "onion",
+    "text": "onion",
+    "ipa": "/ˈʌnjən/",
+    "meaningVi": "hành tây",
+    "image": "/assets/scenes/vegetable-garden/objects/08_onion.webp",
+    "acceptedAnswers": ["onion", "an onion", "onions"],
+    "examples": [
+      {
+        "text": "The onion grows in the soil.",
+        "vi": "Củ hành tây mọc trong đất."
+      },
+      {
+        "text": "Cutting an onion makes me cry.",
+        "vi": "Thái hành tây làm tôi chảy nước mắt."
+      }
+    ],
+    "relatedWordIds": ["garlic", "soil"],
+    "distractorWordIds": ["garlic", "potato", "pumpkin"]
+  },
+  "garlic": {
+    "id": "garlic",
+    "text": "garlic",
+    "ipa": "/ˈɡɑːrlɪk/",
+    "meaningVi": "tỏi",
+    "image": "/assets/scenes/vegetable-garden/objects/09_garlic.webp",
+    "acceptedAnswers": ["garlic", "a garlic", "garlic bulb"],
+    "examples": [
+      {
+        "text": "I plant garlic in the garden.",
+        "vi": "Tôi trồng tỏi trong vườn."
+      },
+      {
+        "text": "Garlic has a strong smell.",
+        "vi": "Tỏi có mùi rất mạnh."
+      }
+    ],
+    "relatedWordIds": ["onion"],
+    "distractorWordIds": ["onion", "cauliflower", "potato"]
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "text": "pumpkin",
+    "ipa": "/ˈpʌmpkɪn/",
+    "meaningVi": "bí ngô",
+    "image": "/assets/scenes/vegetable-garden/objects/10_pumpkin.webp",
+    "acceptedAnswers": ["pumpkin", "a pumpkin", "pumpkins"],
+    "examples": [
+      {
+        "text": "The pumpkin is big and orange.",
+        "vi": "Quả bí ngô to và màu cam."
+      },
+      {
+        "text": "We make pumpkin soup.",
+        "vi": "Chúng mình nấu súp bí ngô."
+      }
+    ],
+    "relatedWordIds": ["carrot", "tomato"],
+    "distractorWordIds": ["tomato", "carrot", "onion"]
+  },
+  "eggplant": {
+    "id": "eggplant",
+    "text": "eggplant",
+    "ipa": "/ˈeɡplænt/",
+    "meaningVi": "cà tím",
+    "image": "/assets/scenes/vegetable-garden/objects/11_eggplant.webp",
+    "acceptedAnswers": ["eggplant", "an eggplant", "eggplants"],
+    "examples": [
+      {
+        "text": "The eggplant is purple.",
+        "vi": "Quả cà tím màu tím."
+      },
+      {
+        "text": "Two eggplants hang on the plant.",
+        "vi": "Hai quả cà tím treo trên cây."
+      }
+    ],
+    "relatedWordIds": ["tomato", "chili-pepper"],
+    "distractorWordIds": ["cucumber", "tomato", "sweet-potato"]
+  },
+  "chili-pepper": {
+    "id": "chili-pepper",
+    "text": "chili pepper",
+    "ipa": "/ˈtʃɪli ˌpepər/",
+    "meaningVi": "ớt",
+    "image": "/assets/scenes/vegetable-garden/objects/12_chili-pepper.webp",
+    "acceptedAnswers": [
+      "chili pepper",
+      "a chili pepper",
+      "chili peppers",
+      "chili",
+      "chilli",
+      "chilli pepper"
+    ],
+    "examples": [
+      {
+        "text": "This chili pepper is red.",
+        "vi": "Quả ớt này màu đỏ."
+      },
+      {
+        "text": "Chili peppers are very hot!",
+        "vi": "Ớt rất cay!"
+      }
+    ],
+    "relatedWordIds": ["tomato", "eggplant"],
+    "distractorWordIds": ["tomato", "carrot", "green-bean"]
+  },
+  "caterpillar": {
+    "id": "caterpillar",
+    "text": "caterpillar",
+    "ipa": "/ˈkætərpɪlər/",
+    "meaningVi": "sâu rau",
+    "image": "/assets/scenes/vegetable-garden/objects/13_caterpillar.webp",
+    "acceptedAnswers": ["caterpillar", "a caterpillar", "caterpillars"],
+    "examples": [
+      {
+        "text": "A caterpillar is eating a leaf.",
+        "vi": "Một con sâu đang ăn lá cây."
+      },
+      {
+        "text": "The caterpillar is small and green.",
+        "vi": "Con sâu nhỏ và màu xanh."
+      }
+    ],
+    "relatedWordIds": ["cabbage", "lettuce"],
+    "distractorWordIds": ["seedling", "green-bean", "cucumber"]
+  },
+  "corn": {
+    "id": "corn",
+    "text": "corn",
+    "ipa": "/kɔːrn/",
+    "meaningVi": "ngô / bắp",
+    "image": "/assets/scenes/vegetable-garden/objects/14_corn.webp",
+    "acceptedAnswers": ["corn", "sweet corn", "corn cob", "an ear of corn"],
+    "examples": [
+      {
+        "text": "The corn grows tall.",
+        "vi": "Cây ngô mọc rất cao."
+      },
+      {
+        "text": "I like to eat sweet corn.",
+        "vi": "Tôi thích ăn ngô ngọt."
+      }
+    ],
+    "relatedWordIds": ["garden-fence", "pumpkin"],
+    "distractorWordIds": ["green-bean", "carrot", "pumpkin"]
+  },
+  "broccoli": {
+    "id": "broccoli",
+    "text": "broccoli",
+    "ipa": "/ˈbrɑːkəli/",
+    "meaningVi": "bông cải xanh",
+    "image": "/assets/scenes/vegetable-garden/objects/15_broccoli.webp",
+    "acceptedAnswers": ["broccoli", "a broccoli"],
+    "examples": [
+      {
+        "text": "The broccoli is green.",
+        "vi": "Bông cải xanh có màu xanh lá."
+      },
+      {
+        "text": "Broccoli looks like a little tree.",
+        "vi": "Bông cải xanh trông giống một cái cây nhỏ."
+      }
+    ],
+    "relatedWordIds": ["cauliflower", "cabbage"],
+    "distractorWordIds": ["cauliflower", "cabbage", "lettuce"]
+  },
+  "cauliflower": {
+    "id": "cauliflower",
+    "text": "cauliflower",
+    "ipa": "/ˈkɑːlɪflaʊər/",
+    "meaningVi": "súp lơ trắng",
+    "image": "/assets/scenes/vegetable-garden/objects/16_cauliflower.webp",
+    "acceptedAnswers": ["cauliflower", "a cauliflower"],
+    "examples": [
+      {
+        "text": "This cauliflower is white.",
+        "vi": "Cây súp lơ này màu trắng."
+      },
+      {
+        "text": "The cauliflower is next to the broccoli.",
+        "vi": "Súp lơ trắng ở cạnh bông cải xanh."
+      }
+    ],
+    "relatedWordIds": ["broccoli", "cabbage"],
+    "distractorWordIds": ["broccoli", "cabbage", "garlic"]
+  },
+  "radish": {
+    "id": "radish",
+    "text": "radish",
+    "ipa": "/ˈrædɪʃ/",
+    "meaningVi": "củ cải",
+    "image": "/assets/scenes/vegetable-garden/objects/17_radish.webp",
+    "acceptedAnswers": ["radish", "a radish", "radishes"],
+    "examples": [
+      {
+        "text": "I pull a radish from the soil.",
+        "vi": "Tôi nhổ một củ cải lên khỏi đất."
+      },
+      {
+        "text": "The radishes are small and red.",
+        "vi": "Những củ cải nhỏ và màu đỏ."
+      }
+    ],
+    "relatedWordIds": ["carrot", "soil"],
+    "distractorWordIds": ["tomato", "carrot", "onion"]
+  },
+  "green-bean": {
+    "id": "green-bean",
+    "text": "green bean",
+    "ipa": "/ˌɡriːn ˈbiːn/",
+    "meaningVi": "đậu que",
+    "image": "/assets/scenes/vegetable-garden/objects/18_green-bean.webp",
+    "acceptedAnswers": ["green bean", "a green bean", "green beans", "bean", "beans"],
+    "examples": [
+      {
+        "text": "Green beans grow on vines.",
+        "vi": "Đậu que mọc trên dây leo."
+      },
+      {
+        "text": "We pick the long green beans.",
+        "vi": "Chúng mình hái những quả đậu que dài."
+      }
+    ],
+    "relatedWordIds": ["trellis", "cucumber"],
+    "distractorWordIds": ["cucumber", "chili-pepper", "corn"]
+  },
+  "soil": {
+    "id": "soil",
+    "text": "soil",
+    "ipa": "/sɔɪl/",
+    "meaningVi": "đất trồng",
+    "image": "/assets/scenes/vegetable-garden/objects/19_soil.webp",
+    "acceptedAnswers": ["soil", "the soil", "dirt"],
+    "examples": [
+      {
+        "text": "The soil is soft and dark.",
+        "vi": "Đất trồng mềm và sẫm màu."
+      },
+      {
+        "text": "Plants need good soil to grow.",
+        "vi": "Cây cần đất tốt để lớn lên."
+      }
+    ],
+    "relatedWordIds": ["seedling", "garden-bed"],
+    "distractorWordIds": ["garden-path", "garden-bed", "seedling"]
+  },
+  "seedling": {
+    "id": "seedling",
+    "text": "seedling",
+    "ipa": "/ˈsiːdlɪŋ/",
+    "meaningVi": "cây con",
+    "image": "/assets/scenes/vegetable-garden/objects/20_seedling.webp",
+    "acceptedAnswers": ["seedling", "a seedling", "seedlings", "sprout"],
+    "examples": [
+      {
+        "text": "This seedling is small.",
+        "vi": "Cây con này còn nhỏ."
+      },
+      {
+        "text": "We water the seedling every day.",
+        "vi": "Chúng mình tưới cây con mỗi ngày."
+      }
+    ],
+    "relatedWordIds": ["soil", "garden-bed"],
+    "distractorWordIds": ["lettuce", "soil", "green-bean"]
+  },
+  "garden-bed": {
+    "id": "garden-bed",
+    "text": "garden bed",
+    "ipa": "/ˈɡɑːrdn bed/",
+    "meaningVi": "luống rau",
+    "image": "/assets/scenes/vegetable-garden/objects/21_garden-bed.webp",
+    "acceptedAnswers": ["garden bed", "a garden bed", "raised bed", "garden beds"],
+    "examples": [
+      {
+        "text": "The carrots grow in this garden bed.",
+        "vi": "Cà rốt mọc trong luống rau này."
+      },
+      {
+        "text": "The garden bed has wooden sides.",
+        "vi": "Luống rau có thành bằng gỗ."
+      }
+    ],
+    "relatedWordIds": ["soil", "carrot"],
+    "distractorWordIds": ["garden-fence", "garden-path", "soil"]
+  },
+  "trellis": {
+    "id": "trellis",
+    "text": "trellis",
+    "ipa": "/ˈtrelɪs/",
+    "meaningVi": "giàn leo",
+    "image": "/assets/scenes/vegetable-garden/objects/22_trellis.webp",
+    "acceptedAnswers": ["trellis", "a trellis", "the trellis"],
+    "examples": [
+      {
+        "text": "The beans climb the trellis.",
+        "vi": "Đậu leo lên giàn leo."
+      },
+      {
+        "text": "The trellis is made of sticks.",
+        "vi": "Giàn leo được làm bằng những cây gậy."
+      }
+    ],
+    "relatedWordIds": ["green-bean", "cucumber"],
+    "distractorWordIds": ["garden-fence", "garden-bed", "garden-path"]
+  },
+  "garden-fence": {
+    "id": "garden-fence",
+    "text": "fence",
+    "ipa": "/fens/",
+    "meaningVi": "hàng rào",
+    "image": "/assets/scenes/vegetable-garden/objects/23_garden-fence.webp",
+    "acceptedAnswers": ["fence", "a fence", "the fence"],
+    "examples": [
+      {
+        "text": "There is a fence around the garden.",
+        "vi": "Có một hàng rào quanh khu vườn."
+      },
+      {
+        "text": "The fence is tall and brown.",
+        "vi": "Hàng rào cao và màu nâu."
+      }
+    ],
+    "relatedWordIds": ["garden-path", "corn"],
+    "distractorWordIds": ["trellis", "garden-bed", "garden-path"]
+  },
+  "garden-path": {
+    "id": "garden-path",
+    "text": "garden path",
+    "ipa": "/ˈɡɑːrdn pæθ/",
+    "meaningVi": "lối đi trong vườn",
+    "image": "/assets/scenes/vegetable-garden/objects/24_garden-path.webp",
+    "acceptedAnswers": ["garden path", "a garden path", "the garden path", "path"],
+    "examples": [
+      {
+        "text": "I walk along the garden path.",
+        "vi": "Tôi đi dọc theo lối đi trong vườn."
+      },
+      {
+        "text": "The garden path has big flat stones.",
+        "vi": "Lối đi trong vườn có những hòn đá to và phẳng."
+      }
+    ],
+    "relatedWordIds": ["garden-bed", "garden-fence"],
+    "distractorWordIds": ["garden-bed", "trellis", "soil"]
   }
 }

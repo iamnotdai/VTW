@@ -4674,5 +4674,556 @@
     ],
     "relatedWordIds": ["rose", "stem", "garden-flower"],
     "distractorWordIds": ["bee", "butterfly", "petal"]
+  },
+  "tomato": {
+    "id": "tomato",
+    "text": "西红柿",
+    "pinyin": "xīhóngshì",
+    "measure": "个",
+    "meaningVi": "cà chua",
+    "image": "/assets/scenes/vegetable-garden/objects/01_tomato.webp",
+    "acceptedAnswers": ["西红柿", "番茄"],
+    "examples": [
+      {
+        "text": "这是一个红色的西红柿。",
+        "vi": "Đây là một quả cà chua đỏ.",
+        "pinyin": "Zhè shì yí gè hóng sè de xī hóng shì."
+      },
+      {
+        "text": "枝上有很多西红柿。",
+        "vi": "Trên cây có rất nhiều quả cà chua.",
+        "pinyin": "Zhī shàng yǒu hěn duō xī hóng shì."
+      }
+    ],
+    "relatedWordIds": ["chili-pepper", "eggplant"],
+    "distractorWordIds": ["pumpkin", "radish", "chili-pepper"]
+  },
+  "carrot": {
+    "id": "carrot",
+    "text": "胡萝卜",
+    "pinyin": "húluóbo",
+    "measure": "根",
+    "meaningVi": "cà rốt",
+    "image": "/assets/scenes/vegetable-garden/objects/02_carrot.webp",
+    "acceptedAnswers": ["胡萝卜"],
+    "examples": [
+      {
+        "text": "胡萝卜是橙色的。",
+        "vi": "Củ cà rốt màu cam.",
+        "pinyin": "Hú luó bo shì chéng sè de."
+      },
+      {
+        "text": "小兔子喜欢吃胡萝卜。",
+        "vi": "Thỏ thích ăn cà rốt.",
+        "pinyin": "Xiǎo tù zi xǐ huan chī hú luó bo."
+      }
+    ],
+    "relatedWordIds": ["radish", "garden-bed"],
+    "distractorWordIds": ["radish", "sweet-potato", "corn"]
+  },
+  "cabbage": {
+    "id": "cabbage",
+    "text": "卷心菜",
+    "pinyin": "juǎnxīncài",
+    "measure": "棵",
+    "meaningVi": "bắp cải",
+    "image": "/assets/scenes/vegetable-garden/objects/03_cabbage.webp",
+    "acceptedAnswers": ["卷心菜", "包菜", "圆白菜"],
+    "examples": [
+      {
+        "text": "这棵卷心菜是绿色的。",
+        "vi": "Cây bắp cải này màu xanh lá.",
+        "pinyin": "Zhè kē juǎn xīn cài shì lǜ sè de."
+      },
+      {
+        "text": "卷心菜又大又圆。",
+        "vi": "Cây bắp cải to và tròn.",
+        "pinyin": "Juǎn xīn cài yòu dà yòu yuán."
+      }
+    ],
+    "relatedWordIds": ["lettuce", "broccoli"],
+    "distractorWordIds": ["lettuce", "cauliflower", "broccoli"]
+  },
+  "lettuce": {
+    "id": "lettuce",
+    "text": "生菜",
+    "pinyin": "shēngcài",
+    "measure": "棵",
+    "meaningVi": "rau xà lách",
+    "image": "/assets/scenes/vegetable-garden/objects/04_lettuce.webp",
+    "acceptedAnswers": ["生菜"],
+    "examples": [
+      {
+        "text": "我在菜园里种生菜。",
+        "vi": "Tôi trồng rau xà lách trong vườn.",
+        "pinyin": "Wǒ zài cài yuán lǐ zhòng shēng cài."
+      },
+      {
+        "text": "妈妈用生菜做沙拉。",
+        "vi": "Mẹ làm món sa-lát với rau xà lách.",
+        "pinyin": "Mā ma yòng shēng cài zuò shā lā."
+      }
+    ],
+    "relatedWordIds": ["cabbage", "cucumber"],
+    "distractorWordIds": ["cabbage", "broccoli", "green-bean"]
+  },
+  "cucumber": {
+    "id": "cucumber",
+    "text": "黄瓜",
+    "pinyin": "huángguā",
+    "measure": "根",
+    "meaningVi": "dưa chuột",
+    "image": "/assets/scenes/vegetable-garden/objects/05_cucumber.webp",
+    "acceptedAnswers": ["黄瓜"],
+    "examples": [
+      {
+        "text": "黄瓜又长又绿。",
+        "vi": "Quả dưa chuột dài và xanh.",
+        "pinyin": "Huáng guā yòu cháng yòu lǜ."
+      },
+      {
+        "text": "黄瓜挂在藤上。",
+        "vi": "Những quả dưa chuột treo trên dây leo.",
+        "pinyin": "Huáng guā guà zài téng shàng."
+      }
+    ],
+    "relatedWordIds": ["trellis", "green-bean"],
+    "distractorWordIds": ["eggplant", "green-bean", "corn"]
+  },
+  "potato": {
+    "id": "potato",
+    "text": "土豆",
+    "pinyin": "tǔdòu",
+    "measure": "个",
+    "meaningVi": "khoai tây",
+    "image": "/assets/scenes/vegetable-garden/objects/06_potato.webp",
+    "acceptedAnswers": ["土豆", "马铃薯"],
+    "examples": [
+      {
+        "text": "土豆长在地下。",
+        "vi": "Khoai tây mọc dưới đất.",
+        "pinyin": "Tǔ dòu zhǎng zài dì xià."
+      },
+      {
+        "text": "爸爸挖出一个大土豆。",
+        "vi": "Bố đào được một củ khoai tây to.",
+        "pinyin": "Bà ba wā chū yí gè dà tǔ dòu."
+      }
+    ],
+    "relatedWordIds": ["sweet-potato", "soil"],
+    "distractorWordIds": ["sweet-potato", "onion", "garlic"]
+  },
+  "sweet-potato": {
+    "id": "sweet-potato",
+    "text": "红薯",
+    "pinyin": "hóngshǔ",
+    "measure": "个",
+    "meaningVi": "khoai lang",
+    "image": "/assets/scenes/vegetable-garden/objects/07_sweet-potato.webp",
+    "acceptedAnswers": ["红薯", "地瓜", "番薯"],
+    "examples": [
+      {
+        "text": "这是一个红薯。",
+        "vi": "Đây là một củ khoai lang.",
+        "pinyin": "Zhè shì yí gè hóng shǔ."
+      },
+      {
+        "text": "红薯又香又甜。",
+        "vi": "Khoai lang ngon và ngọt.",
+        "pinyin": "Hóng shǔ yòu xiāng yòu tián."
+      }
+    ],
+    "relatedWordIds": ["potato", "carrot"],
+    "distractorWordIds": ["potato", "radish", "eggplant"]
+  },
+  "onion": {
+    "id": "onion",
+    "text": "洋葱",
+    "pinyin": "yángcōng",
+    "measure": "个",
+    "meaningVi": "hành tây",
+    "image": "/assets/scenes/vegetable-garden/objects/08_onion.webp",
+    "acceptedAnswers": ["洋葱"],
+    "examples": [
+      {
+        "text": "洋葱长在土里。",
+        "vi": "Củ hành tây mọc trong đất.",
+        "pinyin": "Yáng cōng zhǎng zài tǔ lǐ."
+      },
+      {
+        "text": "切洋葱会让我流眼泪。",
+        "vi": "Thái hành tây làm tôi chảy nước mắt.",
+        "pinyin": "Qiè yáng cōng huì ràng wǒ liú yǎn lèi."
+      }
+    ],
+    "relatedWordIds": ["garlic", "soil"],
+    "distractorWordIds": ["garlic", "potato", "pumpkin"]
+  },
+  "garlic": {
+    "id": "garlic",
+    "text": "大蒜",
+    "pinyin": "dàsuàn",
+    "measure": "头",
+    "meaningVi": "tỏi",
+    "image": "/assets/scenes/vegetable-garden/objects/09_garlic.webp",
+    "acceptedAnswers": ["大蒜", "蒜", "蒜头"],
+    "examples": [
+      {
+        "text": "我在菜园里种大蒜。",
+        "vi": "Tôi trồng tỏi trong vườn.",
+        "pinyin": "Wǒ zài cài yuán lǐ zhòng dà suàn."
+      },
+      {
+        "text": "大蒜的味道很浓。",
+        "vi": "Tỏi có mùi rất mạnh.",
+        "pinyin": "Dà suàn de wèi dào hěn nóng."
+      }
+    ],
+    "relatedWordIds": ["onion"],
+    "distractorWordIds": ["onion", "cauliflower", "potato"]
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "text": "南瓜",
+    "pinyin": "nánguā",
+    "measure": "个",
+    "meaningVi": "bí ngô",
+    "image": "/assets/scenes/vegetable-garden/objects/10_pumpkin.webp",
+    "acceptedAnswers": ["南瓜"],
+    "examples": [
+      {
+        "text": "南瓜又大又圆，是橙色的。",
+        "vi": "Quả bí ngô to và màu cam.",
+        "pinyin": "Nán guā yòu dà yòu yuán, shì chéng sè de."
+      },
+      {
+        "text": "我们做南瓜汤。",
+        "vi": "Chúng mình nấu súp bí ngô.",
+        "pinyin": "Wǒ men zuò nán guā tāng."
+      }
+    ],
+    "relatedWordIds": ["carrot", "tomato"],
+    "distractorWordIds": ["tomato", "carrot", "onion"]
+  },
+  "eggplant": {
+    "id": "eggplant",
+    "text": "茄子",
+    "pinyin": "qiézi",
+    "measure": "个",
+    "meaningVi": "cà tím",
+    "image": "/assets/scenes/vegetable-garden/objects/11_eggplant.webp",
+    "acceptedAnswers": ["茄子"],
+    "examples": [
+      {
+        "text": "茄子是紫色的。",
+        "vi": "Quả cà tím màu tím.",
+        "pinyin": "Qié zi shì zǐ sè de."
+      },
+      {
+        "text": "两个茄子挂在枝上。",
+        "vi": "Hai quả cà tím treo trên cây.",
+        "pinyin": "Liǎng gè qié zi guà zài zhī shàng."
+      }
+    ],
+    "relatedWordIds": ["tomato", "chili-pepper"],
+    "distractorWordIds": ["cucumber", "tomato", "sweet-potato"]
+  },
+  "chili-pepper": {
+    "id": "chili-pepper",
+    "text": "辣椒",
+    "pinyin": "làjiāo",
+    "measure": "个",
+    "meaningVi": "ớt",
+    "image": "/assets/scenes/vegetable-garden/objects/12_chili-pepper.webp",
+    "acceptedAnswers": ["辣椒"],
+    "examples": [
+      {
+        "text": "这个辣椒是红色的。",
+        "vi": "Quả ớt này màu đỏ.",
+        "pinyin": "Zhè ge là jiāo shì hóng sè de."
+      },
+      {
+        "text": "辣椒非常辣！",
+        "vi": "Ớt rất cay!",
+        "pinyin": "Là jiāo fēi cháng là!"
+      }
+    ],
+    "relatedWordIds": ["tomato", "eggplant"],
+    "distractorWordIds": ["tomato", "carrot", "green-bean"]
+  },
+  "caterpillar": {
+    "id": "caterpillar",
+    "text": "毛毛虫",
+    "pinyin": "máomaochóng",
+    "measure": "条",
+    "meaningVi": "sâu rau",
+    "image": "/assets/scenes/vegetable-garden/objects/13_caterpillar.webp",
+    "acceptedAnswers": ["毛毛虫", "虫子"],
+    "examples": [
+      {
+        "text": "一条毛毛虫在吃叶子。",
+        "vi": "Một con sâu đang ăn lá cây.",
+        "pinyin": "Yì tiáo máo mao chóng zài chī yè zi."
+      },
+      {
+        "text": "毛毛虫又小又绿。",
+        "vi": "Con sâu nhỏ và màu xanh.",
+        "pinyin": "Máo mao chóng yòu xiǎo yòu lǜ."
+      }
+    ],
+    "relatedWordIds": ["cabbage", "lettuce"],
+    "distractorWordIds": ["seedling", "green-bean", "cucumber"]
+  },
+  "corn": {
+    "id": "corn",
+    "text": "玉米",
+    "pinyin": "yùmǐ",
+    "measure": "根",
+    "meaningVi": "ngô / bắp",
+    "image": "/assets/scenes/vegetable-garden/objects/14_corn.webp",
+    "acceptedAnswers": ["玉米", "玉米棒"],
+    "examples": [
+      {
+        "text": "玉米长得很高。",
+        "vi": "Cây ngô mọc rất cao.",
+        "pinyin": "Yù mǐ zhǎng de hěn gāo."
+      },
+      {
+        "text": "我喜欢吃甜玉米。",
+        "vi": "Tôi thích ăn ngô ngọt.",
+        "pinyin": "Wǒ xǐ huan chī tián yù mǐ."
+      }
+    ],
+    "relatedWordIds": ["garden-fence", "pumpkin"],
+    "distractorWordIds": ["green-bean", "carrot", "pumpkin"]
+  },
+  "broccoli": {
+    "id": "broccoli",
+    "text": "西兰花",
+    "pinyin": "xīlánhuā",
+    "measure": "棵",
+    "meaningVi": "bông cải xanh",
+    "image": "/assets/scenes/vegetable-garden/objects/15_broccoli.webp",
+    "acceptedAnswers": ["西兰花", "西蓝花", "绿菜花"],
+    "examples": [
+      {
+        "text": "西兰花是绿色的。",
+        "vi": "Bông cải xanh có màu xanh lá.",
+        "pinyin": "Xī lán huā shì lǜ sè de."
+      },
+      {
+        "text": "西兰花看起来像一棵小树。",
+        "vi": "Bông cải xanh trông giống một cái cây nhỏ.",
+        "pinyin": "Xī lán huā kàn qǐ lái xiàng yì kē xiǎo shù."
+      }
+    ],
+    "relatedWordIds": ["cauliflower", "cabbage"],
+    "distractorWordIds": ["cauliflower", "cabbage", "lettuce"]
+  },
+  "cauliflower": {
+    "id": "cauliflower",
+    "text": "菜花",
+    "pinyin": "càihuā",
+    "measure": "棵",
+    "meaningVi": "súp lơ trắng",
+    "image": "/assets/scenes/vegetable-garden/objects/16_cauliflower.webp",
+    "acceptedAnswers": ["菜花", "花菜", "花椰菜"],
+    "examples": [
+      {
+        "text": "这棵菜花是白色的。",
+        "vi": "Cây súp lơ này màu trắng.",
+        "pinyin": "Zhè kē cài huā shì bái sè de."
+      },
+      {
+        "text": "菜花在西兰花旁边。",
+        "vi": "Súp lơ trắng ở cạnh bông cải xanh.",
+        "pinyin": "Cài huā zài xī lán huā páng biān."
+      }
+    ],
+    "relatedWordIds": ["broccoli", "cabbage"],
+    "distractorWordIds": ["broccoli", "cabbage", "garlic"]
+  },
+  "radish": {
+    "id": "radish",
+    "text": "小萝卜",
+    "pinyin": "xiǎoluóbo",
+    "measure": "个",
+    "meaningVi": "củ cải",
+    "image": "/assets/scenes/vegetable-garden/objects/17_radish.webp",
+    "acceptedAnswers": ["小萝卜", "萝卜", "樱桃萝卜"],
+    "examples": [
+      {
+        "text": "我从土里拔出一个小萝卜。",
+        "vi": "Tôi nhổ một củ cải lên khỏi đất.",
+        "pinyin": "Wǒ cóng tǔ lǐ bá chū yí gè xiǎo luó bo."
+      },
+      {
+        "text": "小萝卜又小又红。",
+        "vi": "Những củ cải nhỏ và màu đỏ.",
+        "pinyin": "Xiǎo luó bo yòu xiǎo yòu hóng."
+      }
+    ],
+    "relatedWordIds": ["carrot", "soil"],
+    "distractorWordIds": ["tomato", "carrot", "onion"]
+  },
+  "green-bean": {
+    "id": "green-bean",
+    "text": "豆角",
+    "pinyin": "dòujiǎo",
+    "measure": "根",
+    "meaningVi": "đậu que",
+    "image": "/assets/scenes/vegetable-garden/objects/18_green-bean.webp",
+    "acceptedAnswers": ["豆角", "四季豆", "菜豆"],
+    "examples": [
+      {
+        "text": "豆角长在藤上。",
+        "vi": "Đậu que mọc trên dây leo.",
+        "pinyin": "Dòu jiǎo zhǎng zài téng shàng."
+      },
+      {
+        "text": "我们摘长长的豆角。",
+        "vi": "Chúng mình hái những quả đậu que dài.",
+        "pinyin": "Wǒ men zhāi cháng cháng de dòu jiǎo."
+      }
+    ],
+    "relatedWordIds": ["trellis", "cucumber"],
+    "distractorWordIds": ["cucumber", "chili-pepper", "corn"]
+  },
+  "soil": {
+    "id": "soil",
+    "text": "泥土",
+    "pinyin": "nítǔ",
+    "meaningVi": "đất trồng",
+    "image": "/assets/scenes/vegetable-garden/objects/19_soil.webp",
+    "acceptedAnswers": ["泥土", "土", "土壤"],
+    "examples": [
+      {
+        "text": "泥土又软又黑。",
+        "vi": "Đất trồng mềm và sẫm màu.",
+        "pinyin": "Ní tǔ yòu ruǎn yòu hēi."
+      },
+      {
+        "text": "植物需要好的泥土才能长大。",
+        "vi": "Cây cần đất tốt để lớn lên.",
+        "pinyin": "Zhí wù xū yào hǎo de ní tǔ cái néng zhǎng dà."
+      }
+    ],
+    "relatedWordIds": ["seedling", "garden-bed"],
+    "distractorWordIds": ["garden-path", "garden-bed", "seedling"]
+  },
+  "seedling": {
+    "id": "seedling",
+    "text": "幼苗",
+    "pinyin": "yòumiáo",
+    "measure": "棵",
+    "meaningVi": "cây con",
+    "image": "/assets/scenes/vegetable-garden/objects/20_seedling.webp",
+    "acceptedAnswers": ["幼苗", "小苗", "苗"],
+    "examples": [
+      {
+        "text": "这棵幼苗很小。",
+        "vi": "Cây con này còn nhỏ.",
+        "pinyin": "Zhè kē yòu miáo hěn xiǎo."
+      },
+      {
+        "text": "我们每天给幼苗浇水。",
+        "vi": "Chúng mình tưới cây con mỗi ngày.",
+        "pinyin": "Wǒ men měi tiān gěi yòu miáo jiāo shuǐ."
+      }
+    ],
+    "relatedWordIds": ["soil", "garden-bed"],
+    "distractorWordIds": ["lettuce", "soil", "green-bean"]
+  },
+  "garden-bed": {
+    "id": "garden-bed",
+    "text": "菜地",
+    "pinyin": "càidì",
+    "measure": "块",
+    "meaningVi": "luống rau",
+    "image": "/assets/scenes/vegetable-garden/objects/21_garden-bed.webp",
+    "acceptedAnswers": ["菜地", "菜畦", "种植箱"],
+    "examples": [
+      {
+        "text": "胡萝卜长在这块菜地里。",
+        "vi": "Cà rốt mọc trong luống rau này.",
+        "pinyin": "Hú luó bo zhǎng zài zhè kuài cài dì lǐ."
+      },
+      {
+        "text": "菜地四周有木板。",
+        "vi": "Luống rau có thành bằng gỗ.",
+        "pinyin": "Cài dì sì zhōu yǒu mù bǎn."
+      }
+    ],
+    "relatedWordIds": ["soil", "carrot"],
+    "distractorWordIds": ["garden-fence", "garden-path", "soil"]
+  },
+  "trellis": {
+    "id": "trellis",
+    "text": "藤架",
+    "pinyin": "téngjià",
+    "measure": "个",
+    "meaningVi": "giàn leo",
+    "image": "/assets/scenes/vegetable-garden/objects/22_trellis.webp",
+    "acceptedAnswers": ["藤架", "架子", "爬藤架", "瓜架"],
+    "examples": [
+      {
+        "text": "豆角爬上了藤架。",
+        "vi": "Đậu leo lên giàn leo.",
+        "pinyin": "Dòu jiǎo pá shàng le téng jià."
+      },
+      {
+        "text": "藤架是用木棍做的。",
+        "vi": "Giàn leo được làm bằng những cây gậy.",
+        "pinyin": "Téng jià shì yòng mù gùn zuò de."
+      }
+    ],
+    "relatedWordIds": ["green-bean", "cucumber"],
+    "distractorWordIds": ["garden-fence", "garden-bed", "garden-path"]
+  },
+  "garden-fence": {
+    "id": "garden-fence",
+    "text": "篱笆",
+    "pinyin": "líba",
+    "measure": "道",
+    "meaningVi": "hàng rào",
+    "image": "/assets/scenes/vegetable-garden/objects/23_garden-fence.webp",
+    "acceptedAnswers": ["篱笆", "栅栏", "围栏"],
+    "examples": [
+      {
+        "text": "菜园四周有一道篱笆。",
+        "vi": "Có một hàng rào quanh khu vườn.",
+        "pinyin": "Cài yuán sì zhōu yǒu yí dào lí ba."
+      },
+      {
+        "text": "篱笆又高又是棕色的。",
+        "vi": "Hàng rào cao và màu nâu.",
+        "pinyin": "Lí ba yòu gāo yòu shì zōng sè de."
+      }
+    ],
+    "relatedWordIds": ["garden-path", "corn"],
+    "distractorWordIds": ["trellis", "garden-bed", "garden-path"]
+  },
+  "garden-path": {
+    "id": "garden-path",
+    "text": "小路",
+    "pinyin": "xiǎolù",
+    "measure": "条",
+    "meaningVi": "lối đi trong vườn",
+    "image": "/assets/scenes/vegetable-garden/objects/24_garden-path.webp",
+    "acceptedAnswers": ["小路", "菜园小路", "石板路"],
+    "examples": [
+      {
+        "text": "我沿着菜园的小路走。",
+        "vi": "Tôi đi dọc theo lối đi trong vườn.",
+        "pinyin": "Wǒ yán zhe cài yuán de xiǎo lù zǒu."
+      },
+      {
+        "text": "小路上有又大又平的石头。",
+        "vi": "Lối đi trong vườn có những hòn đá to và phẳng.",
+        "pinyin": "Xiǎo lù shàng yǒu yòu dà yòu píng de shí tou."
+      }
+    ],
+    "relatedWordIds": ["garden-bed", "garden-fence"],
+    "distractorWordIds": ["garden-bed", "trellis", "soil"]
   }
 }
