@@ -1,0 +1,149 @@
+{
+  "id": "present-simple",
+  "time": "present",
+  "aspect": "simple",
+  "title": "Present Simple",
+  "titleVi": "Thì hiện tại đơn",
+  "level": "A1",
+  "status": "available",
+  "usageVi": [
+    "Thói quen, việc làm lặp lại hằng ngày.",
+    "Sự thật, điều luôn đúng.",
+    "Sở thích và cảm xúc (like, love, want)."
+  ],
+  "forms": [
+    {
+      "kind": "affirmative",
+      "pattern": "I / You / We / They + động từ · He / She / It + động từ thêm -s/-es",
+      "example": "She waters the flowers every day.",
+      "exampleVi": "Cô ấy tưới hoa mỗi ngày."
+    },
+    {
+      "kind": "negative",
+      "pattern": "I / You / We / They + don't + động từ · He / She / It + doesn't + động từ",
+      "example": "He doesn't like carrots.",
+      "exampleVi": "Cậu ấy không thích cà rốt."
+    },
+    {
+      "kind": "question",
+      "pattern": "Do + I / you / we / they + động từ…? · Does + he / she / it + động từ…?",
+      "example": "Do you have a bicycle?",
+      "exampleVi": "Bạn có xe đạp không?"
+    }
+  ],
+  "signalWords": ["every day", "always", "usually", "often", "sometimes", "never"],
+  "examples": [
+    {
+      "text": "I brush my teeth every morning.",
+      "textVi": "Mình đánh răng mỗi sáng.",
+      "wordIds": ["toothbrush"]
+    },
+    {
+      "text": "My dad reads the newspaper every day.",
+      "textVi": "Bố mình đọc báo mỗi ngày.",
+      "wordIds": ["newspaper"]
+    },
+    {
+      "text": "The cat sleeps on the sofa.",
+      "textVi": "Con mèo ngủ trên ghế sofa.",
+      "wordIds": ["sofa"]
+    },
+    {
+      "text": "Bees love flowers.",
+      "textVi": "Ong rất thích hoa.",
+      "wordIds": ["bee"]
+    },
+    {
+      "text": "We eat rice for dinner.",
+      "textVi": "Chúng mình ăn cơm vào bữa tối.",
+      "wordIds": ["rice"]
+    },
+    {
+      "text": "My sister doesn't like onions.",
+      "textVi": "Em gái mình không thích hành tây.",
+      "wordIds": ["onion"]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ps-1",
+      "kind": "choose",
+      "sentence": "She ___ her teeth every morning.",
+      "options": ["brush", "brushes", "brushing"],
+      "answer": "brushes",
+      "textVi": "Cô ấy đánh răng mỗi sáng."
+    },
+    {
+      "id": "ps-2",
+      "kind": "choose",
+      "sentence": "We ___ rice every day.",
+      "options": ["eat", "eats", "eating"],
+      "answer": "eat",
+      "textVi": "Chúng mình ăn cơm mỗi ngày."
+    },
+    {
+      "id": "ps-3",
+      "kind": "choose",
+      "sentence": "My dad ___ the newspaper in the morning.",
+      "options": ["read", "reads", "reading"],
+      "answer": "reads",
+      "textVi": "Bố mình đọc báo vào buổi sáng."
+    },
+    {
+      "id": "ps-4",
+      "kind": "choose",
+      "sentence": "He ___ like carrots.",
+      "options": ["don't", "doesn't", "isn't"],
+      "answer": "doesn't",
+      "textVi": "Cậu ấy không thích cà rốt."
+    },
+    {
+      "id": "ps-5",
+      "kind": "choose",
+      "sentence": "___ you have a bicycle?",
+      "options": ["Do", "Does", "Are"],
+      "answer": "Do",
+      "textVi": "Bạn có xe đạp không?"
+    },
+    {
+      "id": "ps-6",
+      "kind": "listen-choose",
+      "sentence": "The bee flies to the flower.",
+      "options": [
+        "The bee flies to the flower.",
+        "The bee is flying to the flower.",
+        "The bee flew to the flower."
+      ],
+      "textVi": "Con ong bay đến bông hoa."
+    },
+    {
+      "id": "ps-7",
+      "kind": "listen-choose",
+      "sentence": "My mom cooks soup on Sundays.",
+      "options": [
+        "My mom cooks soup on Sundays.",
+        "My mom cooked soup on Sunday.",
+        "My mom will cook soup on Sunday."
+      ],
+      "textVi": "Mẹ mình nấu canh vào các ngày Chủ nhật."
+    },
+    {
+      "id": "ps-8",
+      "kind": "order",
+      "sentence": "I water the plants every day.",
+      "textVi": "Mình tưới cây mỗi ngày."
+    },
+    {
+      "id": "ps-9",
+      "kind": "order",
+      "sentence": "She always makes her bed.",
+      "textVi": "Cô ấy luôn tự dọn giường."
+    },
+    {
+      "id": "ps-10",
+      "kind": "order",
+      "sentence": "Does your brother ride a bicycle?",
+      "textVi": "Anh trai bạn có đi xe đạp không?"
+    }
+  ]
+}

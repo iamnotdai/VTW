@@ -8,6 +8,7 @@ import { createEmptyProgress } from '@/lib/progress';
 import { STORAGE_KEYS } from '@/lib/storage';
 import type { AppSettings, LearningProgress } from '@/types/models';
 import { useAudioStore } from '@/stores/audioStore';
+import { useGrammarProgressStore } from '@/stores/grammarProgressStore';
 import { useProfileStore } from '@/stores/profileStore';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore } from '@/stores/settingsStore';
@@ -19,6 +20,7 @@ export function resetAppState() {
   useProfileStore.getState().reload();
   useProgressStore.getState().reload();
   useSpeakingProgressStore.getState().reload();
+  useGrammarProgressStore.getState().reload();
   useSettingsStore.getState().reload();
   useQuizSessionStore.getState().clear();
   useSpeakingSessionStore.getState().reset();

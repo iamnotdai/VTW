@@ -1,0 +1,148 @@
+{
+  "id": "present-continuous",
+  "time": "present",
+  "aspect": "continuous",
+  "title": "Present Continuous",
+  "titleVi": "Thì hiện tại tiếp diễn",
+  "level": "A1",
+  "status": "available",
+  "usageVi": [
+    "Việc đang xảy ra ngay lúc nói.",
+    "Việc đang diễn ra trong khoảng thời gian này (dạo này)."
+  ],
+  "forms": [
+    {
+      "kind": "affirmative",
+      "pattern": "I + am + động từ-ing · He / She / It + is + động từ-ing · You / We / They + are + động từ-ing",
+      "example": "The baby is sleeping now.",
+      "exampleVi": "Em bé đang ngủ."
+    },
+    {
+      "kind": "negative",
+      "pattern": "am / is / are + not + động từ-ing",
+      "example": "I am not watching TV now.",
+      "exampleVi": "Bây giờ mình không xem tivi."
+    },
+    {
+      "kind": "question",
+      "pattern": "Am / Is / Are + chủ ngữ + động từ-ing…?",
+      "example": "Are you doing your homework?",
+      "exampleVi": "Bạn đang làm bài tập à?"
+    }
+  ],
+  "signalWords": ["now", "right now", "at the moment", "Look!", "Listen!"],
+  "examples": [
+    {
+      "text": "Look! The butterfly is sitting on the rose.",
+      "textVi": "Nhìn kìa! Con bướm đang đậu trên bông hồng.",
+      "wordIds": ["butterfly", "rose"]
+    },
+    {
+      "text": "Mom is cooking soup.",
+      "textVi": "Mẹ đang nấu canh.",
+      "wordIds": ["cooking-pot"]
+    },
+    {
+      "text": "Grandpa is watering the flowers.",
+      "textVi": "Ông đang tưới hoa.",
+      "wordIds": ["watering-can"]
+    },
+    {
+      "text": "The children are reading books.",
+      "textVi": "Các bạn nhỏ đang đọc sách.",
+      "wordIds": ["book"]
+    },
+    {
+      "text": "Listen! The kettle is whistling.",
+      "textVi": "Nghe kìa! Ấm nước đang reo.",
+      "wordIds": ["kettle"]
+    },
+    {
+      "text": "I am not sleeping. I am reading.",
+      "textVi": "Mình không ngủ đâu. Mình đang đọc sách.",
+      "wordIds": ["bed"]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pc-1",
+      "kind": "choose",
+      "sentence": "Look! The bee ___ on the flower.",
+      "options": ["sits", "is sitting", "sat"],
+      "answer": "is sitting",
+      "textVi": "Nhìn kìa! Con ong đang đậu trên bông hoa."
+    },
+    {
+      "id": "pc-2",
+      "kind": "choose",
+      "sentence": "I ___ my homework now.",
+      "options": ["am doing", "is doing", "do"],
+      "answer": "am doing",
+      "textVi": "Bây giờ mình đang làm bài tập."
+    },
+    {
+      "id": "pc-3",
+      "kind": "choose",
+      "sentence": "They ___ football in the garden at the moment.",
+      "options": ["are playing", "is playing", "play"],
+      "answer": "are playing",
+      "textVi": "Lúc này các bạn ấy đang đá bóng trong vườn."
+    },
+    {
+      "id": "pc-4",
+      "kind": "choose",
+      "sentence": "She ___ watching TV right now.",
+      "options": ["isn't", "aren't", "don't"],
+      "answer": "isn't",
+      "textVi": "Bây giờ cô ấy không xem tivi."
+    },
+    {
+      "id": "pc-5",
+      "kind": "choose",
+      "sentence": "___ Dad washing the car?",
+      "options": ["Is", "Are", "Does"],
+      "answer": "Is",
+      "textVi": "Bố đang rửa xe à?"
+    },
+    {
+      "id": "pc-6",
+      "kind": "listen-choose",
+      "sentence": "The children are eating cake.",
+      "options": [
+        "The children are eating cake.",
+        "The children eat cake.",
+        "The children ate cake."
+      ],
+      "textVi": "Các bạn nhỏ đang ăn bánh."
+    },
+    {
+      "id": "pc-7",
+      "kind": "listen-choose",
+      "sentence": "My brother is riding his bicycle.",
+      "options": [
+        "My brother is riding his bicycle.",
+        "My brother rides his bicycle.",
+        "My brother rode his bicycle."
+      ],
+      "textVi": "Anh trai mình đang đạp xe."
+    },
+    {
+      "id": "pc-8",
+      "kind": "order",
+      "sentence": "Grandma is cutting the bread.",
+      "textVi": "Bà đang cắt bánh mì."
+    },
+    {
+      "id": "pc-9",
+      "kind": "order",
+      "sentence": "We are planting tomatoes now.",
+      "textVi": "Bây giờ chúng mình đang trồng cà chua."
+    },
+    {
+      "id": "pc-10",
+      "kind": "order",
+      "sentence": "Is the baby sleeping?",
+      "textVi": "Em bé đang ngủ à?"
+    }
+  ]
+}

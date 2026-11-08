@@ -215,6 +215,70 @@ export interface IpaSound {
   mouthImage?: string;
 }
 
+/* Grammar (spec §25) — English course only, optional. ---------------------------------------- */
+
+/** @extension Row of the tense chart. */
+export type GrammarTime = 'past' | 'present' | 'future';
+/** @extension Column of the tense chart. */
+export type GrammarAspect = 'simple' | 'continuous' | 'perfect' | 'perfect-continuous';
+export type GrammarLevel = 'A1' | 'A2' | 'B1' | 'B2';
+export type GrammarFormKind = 'affirmative' | 'negative' | 'question';
+
+/** @extension One form of a tense: its pattern (explained in Vietnamese) and an example. */
+export interface GrammarForm {
+  kind: GrammarFormKind;
+  /** e.g. "Chủ ngữ + will + động từ nguyên mẫu". */
+  pattern: string;
+  example: string;
+  exampleVi: string;
+}
+
+/** @extension A lesson sentence; `wordIds` show the scene objects it talks about. */
+export interface GrammarExample {
+  text: string;
+  textVi: string;
+  wordIds?: string[];
+}
+
+/**
+ * @extension A practice question. `choose`: pick the word for the "___"; `listen-choose`: hear
+ * `sentence`, pick it among `options`; `order`: tap the shuffled words of `sentence` in order.
+ */
+export type GrammarExercise =
+  | {
+      id: string;
+      kind: 'choose';
+      sentence: string;
+      options: string[];
+      answer: string;
+      textVi: string;
+    }
+  | { id: string; kind: 'listen-choose'; sentence: string; options: string[]; textVi: string }
+  | { id: string; kind: 'order'; sentence: string; textVi: string };
+
+/** @extension One of the 12 tenses. `coming-soon` topics have no lesson yet (not openable). */
+export interface GrammarTopic {
+  id: string;
+  time: GrammarTime;
+  aspect: GrammarAspect;
+  /** English name, e.g. "Present Simple" (content, never run through `t()`). */
+  title: string;
+  titleVi: string;
+  level: GrammarLevel;
+  status: SceneStatus;
+  usageVi: string[];
+  forms: GrammarForm[];
+  signalWords: string[];
+  examples: GrammarExample[];
+  exercises: GrammarExercise[];
+}
+
+/** @extension Exercises answered right, per topic, each counted once (spec §25). */
+export interface GrammarProgress {
+  correctExerciseIdsByTopic: Record<string, string[]>;
+  updatedAt: string;
+}
+
 /** @extension The four language skills (spec §4), shown on each activity. */
 export type Skill = 'listening' | 'speaking' | 'reading' | 'writing';
 

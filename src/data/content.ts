@@ -5,6 +5,7 @@ import { t } from '@/i18n';
 import type {
   Conversation,
   CourseId,
+  GrammarTopic,
   IpaSound,
   Scene,
   SceneGroup,
@@ -33,6 +34,11 @@ import zhWordsJson from './zh/words.json';
  */
 
 const sceneModules = import.meta.glob<Scene>('./scenes/*.json', { eager: true, import: 'default' });
+/** English course grammar (spec §25): one file per tense, picked up automatically. */
+const grammarModules = import.meta.glob<GrammarTopic>('./grammar/*.json', {
+  eager: true,
+  import: 'default',
+});
 
 export interface ContentBundle {
   scenes: readonly Scene[];
@@ -41,6 +47,8 @@ export interface ContentBundle {
   speakers: Readonly<Record<string, Speaker>>;
   /** The IPA chart (spec §24.2); empty for courses without one (Chinese uses pinyin). */
   ipaSounds: readonly IpaSound[];
+  /** The 12 tenses (spec §25); empty for courses without Grammar. */
+  grammarTopics: readonly GrammarTopic[];
 }
 
 /** Per-course text of a shared scene. */
@@ -56,6 +64,17 @@ function compareScenes(a: Scene, b: Scene): number {
 
 const sharedScenes = Object.values(sceneModules).sort(compareScenes);
 
+/** Chart order: past, present, future × simple, continuous, perfect, perfect continuous. */
+export const GRAMMAR_TIMES = ['past', 'present', 'future'] as const;
+export const GRAMMAR_ASPECTS = ['simple', 'continuous', 'perfect', 'perfect-continuous'] as const;
+
+function sortGrammarTopics(topics: GrammarTopic[]): GrammarTopic[] {
+  const rank = (topic: GrammarTopic) =>
+    GRAMMAR_TIMES.indexOf(topic.time) * GRAMMAR_ASPECTS.length +
+    GRAMMAR_ASPECTS.indexOf(topic.aspect);
+  return [...topics].sort((a, b) => rank(a) - rank(b));
+}
+
 function translateScenes(texts: Readonly<Record<string, SceneText>>): Scene[] {
   return sharedScenes.map((scene) => ({ ...scene, ...texts[scene.id] }));
 }
@@ -67,6 +86,7 @@ export const contentByCourse: Readonly<Record<CourseId, ContentBundle>> = {
     conversations: conversationsJson as Conversation[],
     speakers: speakersJson as Record<string, Speaker>,
     ipaSounds: ipaJson as IpaSound[],
+    grammarTopics: sortGrammarTopics(Object.values(grammarModules)),
   },
   zh: {
     scenes: translateScenes(zhScenesJson as Record<string, SceneText>),
@@ -74,6 +94,7 @@ export const contentByCourse: Readonly<Record<CourseId, ContentBundle>> = {
     conversations: zhConversationsJson as Conversation[],
     speakers: zhSpeakersJson as Record<string, Speaker>,
     ipaSounds: [],
+    grammarTopics: [],
   },
 };
 
@@ -220,4 +241,21 @@ export function getIpaSoundWords(sound: IpaSound, limit = Infinity): Word[] {
     }
   }
   return [...main, ...aliasOnly].slice(0, limit);
+}
+
+/* -------------------------------------------------------------------------------------------------
+ * Grammar (spec §25), English course only.
+ * -----------------------------------------------------------------------------------------------*/
+
+export function getGrammarTopics(): readonly GrammarTopic[] {
+  return getContent().grammarTopics;
+}
+
+export function getGrammarTopic(topicId: string | undefined): GrammarTopic | undefined {
+  return topicId ? getGrammarTopics().find((topic) => topic.id === topicId) : undefined;
+}
+
+/** A tense can be opened only when it has a lesson (like a scene, spec §7.1 "Coming soon"). */
+export function isGrammarTopicAvailable(topic: GrammarTopic): boolean {
+  return topic.status === 'available' && topic.exercises.length > 0;
 }

@@ -1,0 +1,141 @@
+{
+  "id": "future-simple",
+  "time": "future",
+  "aspect": "simple",
+  "title": "Future Simple",
+  "titleVi": "Thì tương lai đơn",
+  "level": "A1",
+  "status": "available",
+  "usageVi": [
+    "Quyết định ngay lúc nói.",
+    "Dự đoán điều sẽ xảy ra.",
+    "Lời hứa, lời đề nghị giúp đỡ."
+  ],
+  "forms": [
+    {
+      "kind": "affirmative",
+      "pattern": "Chủ ngữ + will + động từ nguyên mẫu",
+      "example": "I will help you.",
+      "exampleVi": "Mình sẽ giúp bạn."
+    },
+    {
+      "kind": "negative",
+      "pattern": "Chủ ngữ + won't (will not) + động từ nguyên mẫu",
+      "example": "It won't rain tomorrow.",
+      "exampleVi": "Ngày mai trời sẽ không mưa."
+    },
+    {
+      "kind": "question",
+      "pattern": "Will + chủ ngữ + động từ nguyên mẫu…?",
+      "example": "Will you come to my party?",
+      "exampleVi": "Bạn sẽ đến bữa tiệc của mình chứ?"
+    }
+  ],
+  "signalWords": ["tomorrow", "next week", "soon", "later", "I think…"],
+  "examples": [
+    {
+      "text": "I'm thirsty. I will get a glass of water.",
+      "textVi": "Mình khát. Mình sẽ đi lấy một cốc nước.",
+      "wordIds": ["glass"]
+    },
+    {
+      "text": "The tomatoes will be red soon.",
+      "textVi": "Những quả cà chua sẽ sớm chín đỏ.",
+      "wordIds": ["tomato"]
+    },
+    {
+      "text": "It is hot. I will turn on the fan.",
+      "textVi": "Trời nóng quá. Mình sẽ bật quạt.",
+      "wordIds": ["fan"]
+    },
+    {
+      "text": "We will plant sunflowers next week.",
+      "textVi": "Tuần sau chúng mình sẽ trồng hoa hướng dương.",
+      "wordIds": ["sunflower"]
+    },
+    {
+      "text": "Don't worry, I won't forget my backpack.",
+      "textVi": "Đừng lo, mình sẽ không quên ba lô đâu.",
+      "wordIds": ["backpack"]
+    },
+    {
+      "text": "Will you open the door, please?",
+      "textVi": "Bạn mở cửa giúp mình nhé?",
+      "wordIds": ["door"]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fut-1",
+      "kind": "choose",
+      "sentence": "I'm cold. I ___ close the window.",
+      "options": ["will", "am", "did"],
+      "answer": "will",
+      "textVi": "Mình lạnh. Mình sẽ đóng cửa sổ."
+    },
+    {
+      "id": "fut-2",
+      "kind": "choose",
+      "sentence": "We ___ visit the zoo tomorrow.",
+      "options": ["will", "were", "are"],
+      "answer": "will",
+      "textVi": "Ngày mai chúng mình sẽ đi sở thú."
+    },
+    {
+      "id": "fut-3",
+      "kind": "choose",
+      "sentence": "The sky is clear. It ___ rain today.",
+      "options": ["won't", "will", "didn't"],
+      "answer": "won't",
+      "textVi": "Bầu trời quang đãng. Hôm nay trời sẽ không mưa."
+    },
+    {
+      "id": "fut-4",
+      "kind": "choose",
+      "sentence": "She will ___ you with your homework.",
+      "options": ["help", "helps", "helped"],
+      "answer": "help",
+      "textVi": "Cô ấy sẽ giúp bạn làm bài tập."
+    },
+    {
+      "id": "fut-5",
+      "kind": "choose",
+      "sentence": "___ you come to my party next Sunday?",
+      "options": ["Will", "Did", "Are"],
+      "answer": "Will",
+      "textVi": "Chủ nhật tới bạn sẽ đến bữa tiệc của mình chứ?"
+    },
+    {
+      "id": "fut-6",
+      "kind": "listen-choose",
+      "sentence": "I will make a cake.",
+      "options": ["I will make a cake.", "I made a cake.", "I am making a cake."],
+      "textVi": "Mình sẽ làm một cái bánh."
+    },
+    {
+      "id": "fut-7",
+      "kind": "listen-choose",
+      "sentence": "The flowers will open soon.",
+      "options": ["The flowers will open soon.", "The flowers opened.", "The flowers are opening."],
+      "textVi": "Những bông hoa sẽ sớm nở."
+    },
+    {
+      "id": "fut-8",
+      "kind": "order",
+      "sentence": "I will turn off the lamp.",
+      "textVi": "Mình sẽ tắt đèn."
+    },
+    {
+      "id": "fut-9",
+      "kind": "order",
+      "sentence": "We will plant a tree tomorrow.",
+      "textVi": "Ngày mai chúng mình sẽ trồng một cái cây."
+    },
+    {
+      "id": "fut-10",
+      "kind": "order",
+      "sentence": "Will you help me, please?",
+      "textVi": "Bạn giúp mình nhé?"
+    }
+  ]
+}

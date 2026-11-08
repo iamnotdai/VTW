@@ -24,6 +24,11 @@ export interface CourseConfig {
   slogan: string;
   /** Questions asked on a quiz card, see `pickQuizPrompt`. */
   quizPrompts: readonly QuizPromptConfig[];
+  /** Optional parts of the app this course has. */
+  features: {
+    /** The Grammar menu (spec §25): the 12 English tenses. */
+    grammar: boolean;
+  };
 }
 
 const QUIZ_PROMPTS_ZH = [
@@ -86,6 +91,7 @@ export const COURSES: Readonly<Record<CourseId, CourseConfig>> = {
     fallbackVoiceLangs: ['en'],
     slogan: 'Explore Life. Learn English.',
     quizPrompts: QUIZ_PROMPTS,
+    features: { grammar: true },
   },
   zh: {
     id: 'zh',
@@ -97,6 +103,7 @@ export const COURSES: Readonly<Record<CourseId, CourseConfig>> = {
     fallbackVoiceLangs: [],
     slogan: '探索生活，学习中文。',
     quizPrompts: QUIZ_PROMPTS_ZH,
+    features: { grammar: false },
   },
 };
 

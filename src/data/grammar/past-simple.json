@@ -1,0 +1,145 @@
+{
+  "id": "past-simple",
+  "time": "past",
+  "aspect": "simple",
+  "title": "Past Simple",
+  "titleVi": "Thì quá khứ đơn",
+  "level": "A1",
+  "status": "available",
+  "usageVi": [
+    "Việc đã xảy ra và kết thúc trong quá khứ.",
+    "Nhiều việc xảy ra nối tiếp nhau trong quá khứ.",
+    "Động từ có quy tắc thêm -ed (play → played); động từ bất quy tắc phải học thuộc (go → went, eat → ate)."
+  ],
+  "forms": [
+    {
+      "kind": "affirmative",
+      "pattern": "Chủ ngữ + động từ thêm -ed (hoặc dạng quá khứ của động từ bất quy tắc)",
+      "example": "We visited Grandma yesterday.",
+      "exampleVi": "Hôm qua chúng mình đến thăm bà."
+    },
+    {
+      "kind": "negative",
+      "pattern": "Chủ ngữ + didn't + động từ nguyên mẫu",
+      "example": "I didn't eat the carrots.",
+      "exampleVi": "Mình đã không ăn chỗ cà rốt đó."
+    },
+    {
+      "kind": "question",
+      "pattern": "Did + chủ ngữ + động từ nguyên mẫu…?",
+      "example": "Did you clean your room?",
+      "exampleVi": "Bạn đã dọn phòng chưa?"
+    }
+  ],
+  "signalWords": ["yesterday", "last night", "last week", "two days ago", "in 2020"],
+  "examples": [
+    {
+      "text": "Dad lost his car key yesterday.",
+      "textVi": "Hôm qua bố làm mất chìa khóa xe.",
+      "wordIds": ["car-key"]
+    },
+    {
+      "text": "We ate fried chicken last night.",
+      "textVi": "Tối qua chúng mình ăn gà rán.",
+      "wordIds": ["fried-chicken"]
+    },
+    {
+      "text": "My sister painted a picture.",
+      "textVi": "Chị mình đã vẽ một bức tranh.",
+      "wordIds": ["picture"]
+    },
+    {
+      "text": "Grandpa planted a mango tree last year.",
+      "textVi": "Năm ngoái ông đã trồng một cây xoài.",
+      "wordIds": ["mango"]
+    },
+    {
+      "text": "The caterpillar ate the cabbage.",
+      "textVi": "Con sâu đã ăn cây bắp cải.",
+      "wordIds": ["caterpillar", "cabbage"]
+    },
+    {
+      "text": "I didn't find my slippers.",
+      "textVi": "Mình đã không tìm thấy đôi dép.",
+      "wordIds": ["slippers"]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "past-1",
+      "kind": "choose",
+      "sentence": "We ___ Grandma yesterday.",
+      "options": ["visit", "visited", "visiting"],
+      "answer": "visited",
+      "textVi": "Hôm qua chúng mình đến thăm bà."
+    },
+    {
+      "id": "past-2",
+      "kind": "choose",
+      "sentence": "I ___ a banana for breakfast this morning.",
+      "options": ["eat", "ate", "eaten"],
+      "answer": "ate",
+      "textVi": "Sáng nay mình ăn một quả chuối vào bữa sáng."
+    },
+    {
+      "id": "past-3",
+      "kind": "choose",
+      "sentence": "She ___ to school by bicycle last week.",
+      "options": ["goes", "went", "go"],
+      "answer": "went",
+      "textVi": "Tuần trước cô ấy đi học bằng xe đạp."
+    },
+    {
+      "id": "past-4",
+      "kind": "choose",
+      "sentence": "He ___ clean his room yesterday.",
+      "options": ["didn't", "doesn't", "wasn't"],
+      "answer": "didn't",
+      "textVi": "Hôm qua cậu ấy đã không dọn phòng."
+    },
+    {
+      "id": "past-5",
+      "kind": "choose",
+      "sentence": "___ you see the butterfly?",
+      "options": ["Did", "Do", "Were"],
+      "answer": "Did",
+      "textVi": "Bạn có thấy con bướm không?"
+    },
+    {
+      "id": "past-6",
+      "kind": "listen-choose",
+      "sentence": "Dad washed the car.",
+      "options": ["Dad washed the car.", "Dad washes the car.", "Dad is washing the car."],
+      "textVi": "Bố đã rửa xe."
+    },
+    {
+      "id": "past-7",
+      "kind": "listen-choose",
+      "sentence": "We played in the garden.",
+      "options": [
+        "We played in the garden.",
+        "We play in the garden.",
+        "We will play in the garden."
+      ],
+      "textVi": "Chúng mình đã chơi trong vườn."
+    },
+    {
+      "id": "past-8",
+      "kind": "order",
+      "sentence": "I found my book under the bed.",
+      "textVi": "Mình đã tìm thấy quyển sách dưới gầm giường."
+    },
+    {
+      "id": "past-9",
+      "kind": "order",
+      "sentence": "Mom bought apples yesterday.",
+      "textVi": "Hôm qua mẹ đã mua táo."
+    },
+    {
+      "id": "past-10",
+      "kind": "order",
+      "sentence": "Did you water the flowers?",
+      "textVi": "Bạn đã tưới hoa chưa?"
+    }
+  ]
+}

@@ -19,6 +19,8 @@ export const STORAGE_KEYS = {
   /** Best Word Speaking score of each word (spec §24.1), English course. */
   speaking: `vtw:v${STORAGE_VERSION}:speaking`,
   speakingZh: `vtw:v${STORAGE_VERSION}:zh:speaking`,
+  /** Grammar exercises answered right (spec §25), English course only. */
+  grammar: `vtw:v${STORAGE_VERSION}:grammar`,
 } as const;
 
 export type StorageKey = (typeof STORAGE_KEYS)[keyof typeof STORAGE_KEYS];

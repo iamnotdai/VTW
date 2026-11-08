@@ -1,10 +1,12 @@
 import type {
   AppSettings,
   CourseId,
+  GrammarProgress,
   LearningProgress,
   SpeakingProgress,
   UserProfile,
 } from '@/types/models';
+import { sanitizeGrammarProgress } from './grammar';
 import { sanitizeProfile } from './profile';
 import { sanitizeProgress } from './progress';
 import { sanitizeSettings } from './settings';
@@ -49,6 +51,12 @@ const speakingRepositories = Object.fromEntries(
 export function getSpeakingRepository(course: CourseId): Repository<SpeakingProgress> {
   return speakingRepositories[course];
 }
+
+/** Grammar progress (English course only, so one key). */
+export const grammarRepository: Repository<GrammarProgress> = createRepository(
+  STORAGE_KEYS.grammar,
+  sanitizeGrammarProgress,
+);
 
 export const settingsRepository: Repository<AppSettings> = createRepository(
   STORAGE_KEYS.settings,

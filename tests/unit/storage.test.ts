@@ -25,6 +25,7 @@ describe('storage keys (spec §11.1)', () => {
       settings: 'vtw:v1:settings',
       speaking: 'vtw:v1:speaking',
       speakingZh: 'vtw:v1:zh:speaking',
+      grammar: 'vtw:v1:grammar',
     });
   });
 });

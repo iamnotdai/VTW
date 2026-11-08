@@ -1,8 +1,9 @@
 import { SCENE_GROUPS } from '@/config/app';
+import { sentenceTiles } from '@/lib/grammar';
 import { ipaSpellings, tokenizeIpa } from '@/lib/ipa';
 import { getPathPoints } from '@/lib/svgPath';
 import { normalizeAnswer } from '@/lib/text';
-import type { ContentBundle } from './content';
+import { GRAMMAR_ASPECTS, GRAMMAR_TIMES, type ContentBundle } from './content';
 
 /**
  * Checks the static content (spec §10.3 "Data validation"): references between words, scenes,
@@ -187,6 +188,7 @@ export function validateContent(bundle: ContentBundle): string[] {
   }
 
   errors.push(...validateIpaChart(bundle));
+  errors.push(...validateGrammar(bundle));
   return errors;
 }
 
@@ -240,6 +242,90 @@ function validateIpaChart(bundle: ContentBundle): string[] {
     }
     if (!used.has(sound.id) && !sound.extraExamples?.length)
       errors.push(`${at}: no word has this sound — add "extraExamples"`);
+  }
+  return errors;
+}
+
+const GRAMMAR_LEVELS = new Set(['A1', 'A2', 'B1', 'B2']);
+const FORM_KINDS = ['affirmative', 'negative', 'question'] as const;
+
+/**
+ * Grammar (spec §25): the 12 tenses, one per cell of the chart; an available tense has a full
+ * lesson; every exercise can be answered (the answer is among the options, options differ, the
+ * words of an "order" sentence make it back); example words exist.
+ */
+function validateGrammar(bundle: ContentBundle): string[] {
+  const errors: string[] = [];
+  if (bundle.grammarTopics.length === 0) return errors;
+  const wordIds = new Set(Object.keys(bundle.words));
+  const topicIds = new Set<string>();
+  const exerciseIds = new Set<string>();
+  const cells = new Set<string>();
+  const norm = (value: string) => normalizeAnswer(value);
+
+  for (const topic of bundle.grammarTopics) {
+    const at = `grammar/${topic.id}.json`;
+    if (topicIds.has(topic.id)) errors.push(`${at}: duplicate id`);
+    topicIds.add(topic.id);
+    const cell = `${topic.time}/${topic.aspect}`;
+    if (!(GRAMMAR_TIMES as readonly string[]).includes(topic.time))
+      errors.push(`${at}: unknown time "${topic.time}"`);
+    if (!(GRAMMAR_ASPECTS as readonly string[]).includes(topic.aspect))
+      errors.push(`${at}: unknown aspect "${topic.aspect}"`);
+    if (cells.has(cell)) errors.push(`${at}: another tense is already "${cell}"`);
+    cells.add(cell);
+    if (!topic.title?.trim() || !topic.titleVi?.trim())
+      errors.push(`${at}: "title" and "titleVi" are required`);
+    if (!GRAMMAR_LEVELS.has(topic.level)) errors.push(`${at}: unknown level "${topic.level}"`);
+    if (topic.status !== 'available' && topic.status !== 'coming-soon')
+      errors.push(`${at}: "status" must be "available" or "coming-soon"`);
+    if (topic.status !== 'available') continue;
+
+    if (topic.usageVi.length === 0) errors.push(`${at}: "usageVi" needs at least one use`);
+    for (const kind of FORM_KINDS) {
+      const form = topic.forms.find((item) => item.kind === kind);
+      if (!form) errors.push(`${at}: needs the "${kind}" form`);
+      else if (!form.pattern?.trim() || !form.example?.trim() || !form.exampleVi?.trim())
+        errors.push(`${at}: the "${kind}" form needs "pattern", "example" and "exampleVi"`);
+    }
+    if (topic.signalWords.length === 0) errors.push(`${at}: "signalWords" is empty`);
+    if (topic.examples.length < 3) errors.push(`${at}: needs at least 3 examples`);
+    for (const example of topic.examples) {
+      if (!example.text?.trim() || !example.textVi?.trim())
+        errors.push(`${at}: every example needs "text" and "textVi"`);
+      for (const id of example.wordIds ?? []) {
+        if (!wordIds.has(id))
+          errors.push(`${at}: example "${example.text}" uses unknown word "${id}"`);
+      }
+    }
+    if (topic.exercises.length < 6) errors.push(`${at}: needs at least 6 exercises`);
+    for (const exercise of topic.exercises) {
+      const ex = `${at} › ${exercise.id}`;
+      if (exerciseIds.has(exercise.id)) errors.push(`${ex}: duplicate exercise id`);
+      exerciseIds.add(exercise.id);
+      if (!exercise.sentence?.trim() || !exercise.textVi?.trim())
+        errors.push(`${ex}: "sentence" and "textVi" are required`);
+      if (exercise.kind === 'order') {
+        const count = sentenceTiles(exercise.sentence).length;
+        if (count < 3 || count > 9) errors.push(`${ex}: an "order" sentence needs 3–9 words`);
+        continue;
+      }
+      const options = exercise.options ?? [];
+      if (options.length < 2 || options.length > 4) errors.push(`${ex}: needs 2–4 options`);
+      if (new Set(options.map(norm)).size !== options.length)
+        errors.push(`${ex}: two options are the same`);
+      const answer = exercise.kind === 'choose' ? exercise.answer : exercise.sentence;
+      if (options.filter((option) => norm(option) === norm(answer)).length !== 1)
+        errors.push(`${ex}: the answer must be one of the options`);
+      if (exercise.kind === 'choose' && exercise.sentence.split('___').length !== 2)
+        errors.push(`${ex}: the sentence needs exactly one "___"`);
+    }
+  }
+  for (const time of GRAMMAR_TIMES) {
+    for (const aspect of GRAMMAR_ASPECTS) {
+      if (!cells.has(`${time}/${aspect}`))
+        errors.push(`grammar: no tense for "${time}/${aspect}" (the chart has 12 tenses)`);
+    }
   }
   return errors;
 }
