@@ -18,9 +18,10 @@ public/assets/scenes/bedroom/
 
 Nền Setup/Home và ảnh nhân vật (avatar boy/girl) khai báo đường dẫn trong `src/config/assets.ts`.
 Ảnh chân dung người nói trong hội thoại (Mom, Dad…) khai báo ở `avatar` trong
-`src/data/speakers.json` (hiện là placeholder trong `public/assets/characters/`). App cắt tròn
-quanh khuôn mặt bằng CSS, nên vẽ nhân vật cùng khung 600×800 với khuôn mặt ở nửa trên như
-`avatar-girl.webp`.
+`src/data/speakers.json` (`public/assets/characters/mom.webp`, `dad.webp`). App cắt tròn quanh
+khuôn mặt bằng CSS (vùng hiện ra khoảng 24–76% chiều ngang, 4–43% chiều dọc của ảnh), nên xuất
+nhân vật trong khung 600×800, nền trong suốt, khuôn mặt nằm giữa theo chiều ngang và tâm mặt ở
+khoảng 1/4 chiều cao, như `mom.webp` / `dad.webp`.
 
 ## 2. Ảnh nền
 

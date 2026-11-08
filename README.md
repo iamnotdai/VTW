@@ -62,8 +62,6 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
 - Test tự động: **267 test Vitest** (203 unit + 64 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
   **17 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation, một kịch bản Grammar), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
-  Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
-  `dad.webp` nhưng hai file này chưa có trong repo.
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
