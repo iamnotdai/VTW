@@ -76,6 +76,7 @@ describe('Settings › Course', () => {
         'Vocabulary',
         'Pronunciation',
         'Conversation',
+        'Grammar',
         'Settings',
       ]);
     }

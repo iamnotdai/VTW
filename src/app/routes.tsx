@@ -8,6 +8,9 @@ import { RolePlayPage } from '@/features/conversation/pages/RolePlayPage';
 import { SpeakingPracticePage } from '@/features/conversation/pages/SpeakingPracticePage';
 import { SpeakingResultPage } from '@/features/conversation/pages/SpeakingResultPage';
 import { TranscriptPage } from '@/features/conversation/pages/TranscriptPage';
+import { GrammarLessonPage } from '@/features/grammar/pages/GrammarLessonPage';
+import { GrammarPage } from '@/features/grammar/pages/GrammarPage';
+import { GrammarPracticePage } from '@/features/grammar/pages/GrammarPracticePage';
 import { HomePage } from '@/features/home/HomePage';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { RouteErrorPage } from '@/features/misc/RouteErrorPage';
@@ -29,7 +32,7 @@ import { RequireProfile, SetupOnly } from './guards';
 
 /**
  * The 16 screens of spec §5 (numbers in comments), plus the speaking extensions (spec §7.7, §9.5,
- * §9.6) and the Pronunciation menu (spec §24).
+ * §9.6), the Pronunciation menu (spec §24) and Grammar (spec §25).
  */
 export const routes: RouteObject[] = [
   {
@@ -107,6 +110,9 @@ export const routes: RouteObject[] = [
                 element: <TopicConversationsPage menu="conversation" />,
               },
               { path: 'conversation/:conversationId', element: <ConversationDetailPage /> }, // 15
+              { path: 'grammar', element: <GrammarPage /> }, // Grammar (English course)
+              { path: 'grammar/:topicId', element: <GrammarLessonPage /> }, // Grammar lesson
+              { path: 'grammar/:topicId/practice', element: <GrammarPracticePage /> }, // Practice
               { path: 'settings', element: <SettingsPage /> }, // 16
               { path: '*', element: <NotFoundPage /> },
             ],

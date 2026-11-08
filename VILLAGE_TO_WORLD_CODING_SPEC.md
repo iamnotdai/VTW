@@ -31,7 +31,7 @@
 
 - Tên sản phẩm: **Village to World**.
 - Slogan: **Explore Life. Learn English.**
-- Giao diện có thanh menu dọc: **Journey, Vocabulary, Pronunciation, Conversation, Grammar, Settings** theo đúng thứ tự này (mục "Journey" trước đây tên "Home"; đổi tên để không trùng với nhóm scene "Home" và để sau này mở rộng timeline). **Grammar chỉ có ở khóa tiếng Anh**: khóa tiếng Trung có 5 mục. Grammar đứng cuối (trước Settings) để đổi khóa học không làm xê dịch các mục khác. Mục Grammar chỉ xuất hiện khi màn Grammar đã có nội dung (§25).
+- Giao diện có thanh menu dọc: **Journey, Vocabulary, Pronunciation, Conversation, Grammar, Settings** theo đúng thứ tự này (mục "Journey" trước đây tên "Home"; đổi tên để không trùng với nhóm scene "Home" và để sau này mở rộng timeline). **Grammar chỉ có ở khóa tiếng Anh**: khóa tiếng Trung có 5 mục. Grammar đứng cuối (trước Settings) để đổi khóa học không làm xê dịch các mục khác. Mục menu có thể gắn một tính năng của khóa học (`CourseConfig.features`) và chỉ hiện ở khóa có tính năng đó.
 - Menu chia theo **nội dung học** (từ, âm, hội thoại, ngữ pháp), không chia theo 4 kỹ năng Nghe/Nói/Đọc/Viết. Kỹ năng là cách luyện, gắn vào từng hoạt động (bảng ở §4).
 - Nội dung **Journey (route `/`) chỉ hiển thị ảnh**, không thêm nút, card có link, hoặc CTA trong vùng nội dung chính. Menu dọc vẫn dùng để chuyển màn hình.
 - Vocabulary phân nhóm theo topic/scene và hiển thị **phần trăm đã học**.
@@ -910,7 +910,8 @@ SCENE_READY
 - [ ] Setup không có upload ảnh.
 - [ ] Ảnh boy/girl hiển thị riêng, không bị méo/cắt mất phần quan trọng.
 - [ ] Journey vùng nội dung chỉ hiển thị hình, không thêm CTA.
-- [ ] Menu đúng thứ tự Journey, Vocabulary, Pronunciation, Conversation, Grammar, Settings; khóa tiếng Trung không có Grammar; mục Grammar chỉ có khi màn Grammar đã làm xong.
+- [ ] Menu đúng thứ tự Journey, Vocabulary, Pronunciation, Conversation, Grammar, Settings; khóa tiếng Trung không có Grammar.
+- [ ] Grammar: 12 thì, thì chưa có bài là `Coming soon`; luyện tập chỉ tính câu trả lời đúng, mỗi câu một lần; xem đáp án không tính.
 - [ ] Mobile: thanh dưới vừa màn 360px (chữ chỉ hiện ở mục đang chọn, mục khác vẫn có tên cho trình đọc màn hình).
 - [ ] Word Speaking mở từ Vocabulary và Pronunciation là cùng một màn; luyện nói không làm tăng % học từ.
 - [ ] Fill in the Blanks dùng được khi `canTypeWords=false` (chỉ chọn đáp án, không có ô gõ).
@@ -1046,8 +1047,8 @@ Menu thứ ba (`/pronunciation`), có ở cả hai khóa học. Trang có tiêu 
 
 Menu thứ năm (`/grammar`), **chỉ khóa tiếng Anh** và là phần **tùy chọn**: không gợi ý theo tuổi, không khóa bài, không tính vào Level hay % của scene. Mở `/grammar` khi đang học tiếng Trung thì thấy thông báo kèm nút vào Settings.
 
-- **Trang chính:** lưới 3 × 4 cho 12 thì — hàng Quá khứ / Hiện tại / Tương lai, cột Đơn / Tiếp diễn / Hoàn thành / Hoàn thành tiếp diễn — kèm trục thời gian; mỗi ô có % bài tập đã làm đúng. Thì chưa có nội dung là `Coming soon`, không mở được.
+- **Trang chính:** 12 thì theo 3 hàng Quá khứ / Hiện tại / Tương lai, mỗi hàng 4 thẻ Đơn / Tiếp diễn / Hoàn thành / Hoàn thành tiếp diễn (điện thoại: 1 cột, từ 480px: 2 cột, desktop: 4 cột); mỗi thẻ có tên tiếng Anh, tên tiếng Việt, trình độ (A1–B2, chỉ để tham khảo) và % bài tập đã làm đúng. Thì chưa có nội dung là `Coming soon`, không mở được.
 - **Lesson** (`/grammar/:topicId`): công thức khẳng định / phủ định / câu hỏi, cách dùng (tiếng Việt, là nội dung), dấu hiệu nhận biết, câu ví dụ có nút nghe. Câu ví dụ dùng lại từ vựng và ảnh đồ vật của scene (`wordIds`).
-- **Practice** (`/grammar/:topicId/practice`): từng câu một, 3 dạng: chọn dạng động từ đúng (`choose`), nghe câu rồi chọn (`listen-choose`), chạm thẻ từ theo thứ tự để xếp thành câu (`order`, không cần kéo thả, dùng được bằng bàn phím). Lựa chọn và thẻ từ xáo **một lần** mỗi câu. Kết thúc: số câu đúng, `Practice Again`, quay lại Lesson.
+- **Practice** (`/grammar/:topicId/practice`): từng câu một, 3 dạng: chọn dạng động từ đúng (`choose`), nghe câu rồi chọn (`listen-choose`), chạm thẻ từ theo thứ tự để xếp thành câu (`order`, không cần kéo thả, dùng được bằng bàn phím). Lựa chọn và thẻ từ xáo **một lần** mỗi câu. Câu chọn: chạm là chấm ngay (như §8); sai thì nút vàng và bị khóa, sau một lần sai có `Show Answer`. Câu nghe: nút nghe và nghe chậm, nghĩa tiếng Việt chỉ hiện sau khi trả lời (nó lộ thì của câu). Câu xếp thẻ: nghĩa tiếng Việt là đề bài, chạm thẻ đã đặt để lấy lại, `Check` khi đặt đủ thẻ. Kết thúc: "x / y đúng ngay lần đầu", `Practice Again`, quay lại Lesson, `All Tenses`.
 - **Tiến độ:** một bài tập chỉ tính sau khi trả lời **đúng**, và chỉ tính **một lần** (`vtw:v1:grammar`, §11.1).
-- **Dữ liệu:** `src/data/grammar/<topicId>.json` (không có bản `zh/`). `content:check` kiểm tra: đáp án nằm trong các lựa chọn, lựa chọn không trùng nhau, `wordIds` tồn tại, ghép các thẻ từ đúng bằng câu gốc. Nội dung viết mới và cần giáo viên tiếng Anh duyệt.
+- **Dữ liệu:** `src/data/grammar/<topicId>.json` (không có bản `zh/`). `content:check` kiểm tra: đáp án nằm trong các lựa chọn, lựa chọn không trùng nhau, `wordIds` tồn tại, ghép các thẻ từ đúng bằng câu gốc. Nội dung viết mới và cần giáo viên tiếng Anh duyệt. Hiện có bài của 4 thì A1 (hiện tại đơn, hiện tại tiếp diễn, quá khứ đơn, tương lai đơn): mỗi thì 2–3 cách dùng, 3 công thức, dấu hiệu nhận biết, 6 câu ví dụ, 10 bài tập (5 chọn, 2 nghe, 3 xếp thẻ). 8 thì còn lại là `coming-soon`.

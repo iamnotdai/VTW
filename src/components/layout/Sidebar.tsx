@@ -7,12 +7,13 @@ import { cn } from '@/lib/cn';
 import { useProfileStore } from '@/stores/profileStore';
 import { LearnerChip } from './LearnerChip';
 import { Logo } from './Logo';
-import { NAV_ITEMS } from './navItems';
+import { useNavItems } from './useNavItems';
 
 function MenuList({ iconOnly }: { iconOnly: boolean }) {
+  const items = useNavItems();
   return (
     <ul className={cn('flex flex-col gap-3', iconOnly && 'items-center')}>
-      {NAV_ITEMS.map(({ to, label, icon: Icon, end }) => (
+      {items.map(({ to, label, icon: Icon, end }) => (
         <li key={to} className={iconOnly ? undefined : 'w-full'}>
           <NavLink
             to={to}

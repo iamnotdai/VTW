@@ -20,7 +20,8 @@ differences). Team docs: `README.md` (Vietnamese), asset workflow: `docs/asset-p
 - The `/` screen (menu label "Journey", route `paths.home`) content area shows ONLY the picture: no
   buttons, cards or links. The main menu is, in this order: Journey, Vocabulary, Pronunciation,
   Conversation, Grammar, Settings (spec §2.1). Grammar exists only in the English course
-  (`CourseConfig.features.grammar`) and only once its screens ship. Menus are organized by content,
+  (`CourseConfig.features.grammar`; menu entries carry a `feature`, see `useNavItems`). Grammar is
+  optional: never part of the Level or a scene's %. Menus are organized by content,
   never by the four skills. ("Home" is only a vocabulary scene group, e.g. Bedroom.)
 - Profile Setup collects name, age group, "can type words", boy/girl picture, plus the course picker
   (English / 中文) at the top. Never add upload.

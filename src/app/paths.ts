@@ -34,6 +34,10 @@ export const paths = {
     `/conversation/${seg(conversationId)}/role-play${speakerId ? `?as=${seg(speakerId)}` : ''}`,
   /** @extension Fill in the blanks, for learners who can type (spec §9.6). */
   fillBlanks: (conversationId: string) => `/conversation/${seg(conversationId)}/fill-blanks`,
+  /** @extension Grammar, English course only (spec §25). */
+  grammar: '/grammar',
+  grammarTopic: (topicId: string) => `/grammar/${seg(topicId)}`,
+  grammarPractice: (topicId: string) => `/grammar/${seg(topicId)}/practice`,
   settings: '/settings',
 } as const;
 

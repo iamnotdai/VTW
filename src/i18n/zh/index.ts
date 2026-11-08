@@ -1,5 +1,6 @@
 import { common } from './common';
 import { conversation } from './conversation';
+import { grammar } from './grammar';
 import { profile } from './profile';
 import { pronunciation } from './pronunciation';
 import { speaking } from './speaking';
@@ -11,6 +12,7 @@ export const zhAreas = {
   vocabulary,
   pronunciation,
   conversation,
+  grammar,
   speaking,
   profile,
 } as const;

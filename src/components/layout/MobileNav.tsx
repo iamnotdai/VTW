@@ -1,20 +1,21 @@
 import { NavLink } from 'react-router';
 import { t } from '@/i18n';
 import { cn } from '@/lib/cn';
-import { NAV_ITEMS } from './navItems';
+import { useNavItems } from './useNavItems';
 
 /**
  * Bottom navigation for phones (< md). Large touch targets, safe-area aware. Only the current entry
  * shows its label (the others keep it for screen readers), so the whole menu fits a 360px phone.
  */
 export function MobileNav() {
+  const items = useNavItems();
   return (
     <nav
       aria-label={t('Main')}
       className="fixed inset-x-0 bottom-0 z-40 border-t border-navy-100 bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-nav backdrop-blur md:hidden"
     >
       <ul className="mx-auto flex h-18 max-w-lg items-stretch justify-around px-2">
-        {NAV_ITEMS.map(({ to, label, icon: Icon, end }) => (
+        {items.map(({ to, label, icon: Icon, end }) => (
           <li key={to} className="flex min-w-0 flex-1">
             <NavLink
               to={to}

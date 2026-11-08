@@ -47,14 +47,21 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   một lượt Word Speaking với các từ đó. Giọng trình duyệt không đọc được một âm đơn lẻ và nhận dạng giọng
   nói chỉ trả về chữ, nên chỉ chấm điểm **từ**; nút nghe âm và hình khẩu hình chỉ hiện khi có file thu
   sẵn (`audio`, `mouthImage` — hiện chưa có).
+- **Grammar** (menu thứ năm, chỉ khóa tiếng Anh, tùy chọn, spec §25): 12 thì theo hàng Quá khứ / Hiện tại /
+  Tương lai; mỗi thì có bài học (cách dùng tiếng Việt, 3 công thức, dấu hiệu nhận biết, câu ví dụ kèm ảnh
+  đồ vật và nút nghe) và luyện tập 3 dạng: chọn dạng động từ, nghe rồi chọn câu, chạm thẻ từ để xếp câu
+  (không cần gõ, không cần kéo thả). Mỗi bài chỉ tính khi trả lời đúng, một lần (`vtw:v1:grammar`), không
+  cộng vào Level. Hiện có bài của 4 thì A1; 8 thì còn lại là "Coming soon". Nội dung ở
+  `src/data/grammar/*.json` là bản viết mới, **cần giáo viên tiếng Anh duyệt**. Khóa tiếng Trung không có
+  mục Grammar (`CourseConfig.features.grammar`).
 - **Hai khóa học**: Tiếng Anh và Tiếng Trung (chọn ở đầu Profile Setup hoặc trong Settings). Hai khóa
   dùng chung ảnh và hotspot; từ, câu, hội thoại, giọng đọc và **toàn bộ giao diện** đổi theo khóa;
   tiến độ lưu riêng từng khóa. Xem mục [Khóa học](#khóa-học-tiếng-anh--tiếng-trung).
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **254 test Vitest** (196 unit + 58 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **16 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **267 test Vitest** (203 unit + 64 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **17 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation, một kịch bản Grammar), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
   Hiện có 2 test kiểm tra asset báo đỏ vì `speakers.json` trỏ tới `/assets/characters/mom.webp` và
   `dad.webp` nhưng hai file này chưa có trong repo.
 
@@ -190,6 +197,9 @@ Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
 | IPA Sounds         | `/pronunciation/sounds`                                  | Thẻ "IPA Sounds" ở Pronunciation   |
 | Sound Card         | `/pronunciation/sounds/:soundId`                         | Ô âm trên bảng IPA                 |
 | Sound Speaking     | `/pronunciation/sounds/:soundId/speaking`                | "Say These Words" trên Sound Card  |
+| Grammar            | `/grammar`                                               | Menu (khóa tiếng Anh)              |
+| Grammar Lesson     | `/grammar/:topicId`                                      | Thẻ thì trên trang Grammar         |
+| Grammar Practice   | `/grammar/:topicId/practice`                             | "Start Practice" trên bài học      |
 | Role-play          | `/conversation/:conversationId/role-play?as=<speakerId>` | Transcript, Conversation Detail    |
 | Fill in the Blanks | `/conversation/:conversationId/fill-blanks`              | Transcript, Detail, cuối Role-play |
 
@@ -374,7 +384,7 @@ Bản thiết kế 16 màn ở `flow.png` (thư mục gốc) là chuẩn hình �
   ảnh đồ vật `stone`. Font **Inter** cho giao diện; logo chữ "Village to World" vẽ bằng **Baloo 2**
   (quả địa cầu thay chữ "o") cho tới khi có file logo chính thức (`components/layout/Logo.tsx`).
 - **Khung**: sidebar navy (nền ảnh ngôi làng) với các mục Journey, Vocabulary, Pronunciation,
-  Conversation, Settings (Grammar, chỉ khóa tiếng Anh, sẽ thêm cùng màn của nó — spec §2.1)
+  Conversation, Grammar (chỉ khóa tiếng Anh), Settings — spec §2.1
   và người học (avatar, tên, **Level**) ở dưới; phần lớn màn có thanh trên (breadcrumb / Back /
   tiêu đề, không có avatar); Flashcards, Topic Overview và Explore không có header. **Level** = 1 + số từ
   đã học / `LEVEL_CONFIG.wordsPerLevel` (mặc định 10), luôn tính từ tiến độ, không lưu riêng.
@@ -446,6 +456,9 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
   tốt nhất nhưng không cộng tiến độ học từ; bảng IPA (41 âm, dấu ✓), Sound Card, lượt nói của một âm,
   khóa tiếng Trung không có bảng IPA. `tests/unit/ipa.test.ts`: tách âm, tô sáng, từ ví dụ, luật
   `content:check`.
+- `tests/components/grammar.test.tsx`: trang 12 thì, bài học, làm hết 10 câu (tiến độ chỉ tính câu đúng),
+  xem đáp án không tính, khóa tiếng Trung không có Grammar. `tests/unit/grammar.test.ts`: tiến độ, thẻ từ,
+  chấm câu, luật `content:check`.
 - `tests/components/speaking.test.tsx`: Word Speaking, Role-play và Fill in the Blanks trên route tree
   thật, dùng bộ nhận dạng giả (`tests/fakeSpeechRecognition.ts`) để "nghe" câu trả lời định sẵn.
 - `tests/components`: chạy trên route tree thật (memory router): setup, guard, menu đúng thứ tự,
@@ -485,6 +498,7 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
 | Word Speaking / Role-play chấm điểm, có fallback Listen & Repeat     | ✅ (test + E2E)                    |
 | Fill in the Blanks: chọn đáp án cho mọi người, ô gõ chỉ khi gõ được  | ✅ (test + E2E)                    |
 | Hội thoại có 4 bước, không khóa; ✓ chỉ sau khi làm xong bước         | ✅ (test + E2E)                    |
+| Grammar: 12 thì, chỉ khóa tiếng Anh, tiến độ chỉ tính câu đúng       | ✅ (test + E2E)                    |
 | QA thiết bị thật iOS/Android, tối ưu asset thật                      | ⏳ khi có art và thiết bị thật     |
 
 ## Việc tiếp theo
