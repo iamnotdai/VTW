@@ -1,15 +1,18 @@
 import { SCENE_GROUPS } from '@/config/app';
 import { getActiveCourse } from '@/lib/course';
 import { ipaSpellings, tokenizeIpa, type IpaSymbol } from '@/lib/ipa';
+import { tokenizePinyin } from '@/lib/pinyinChart';
+import type { SoundTokens } from '@/lib/soundChart';
 import { t } from '@/i18n';
 import type {
   Conversation,
   CourseId,
   GrammarTopic,
-  IpaSound,
+  ChartSound,
   Scene,
   SceneGroup,
   SceneHotspot,
+  SoundChart,
   Speaker,
   Word,
 } from '@/types/models';
@@ -20,6 +23,7 @@ import wordsJson from './words.json';
 import zhConversationsJson from './zh/conversations.json';
 import zhScenesJson from './zh/scenes.json';
 import zhSpeakersJson from './zh/speakers.json';
+import zhPinyinJson from './zh/pinyin.json';
 import zhWordsJson from './zh/words.json';
 
 /**
@@ -45,8 +49,8 @@ export interface ContentBundle {
   words: Readonly<Record<string, Word>>;
   conversations: readonly Conversation[];
   speakers: Readonly<Record<string, Speaker>>;
-  /** The IPA chart (spec §24.2); empty for courses without one (Chinese uses pinyin). */
-  ipaSounds: readonly IpaSound[];
+  /** The sound chart of Pronunciation (spec §24.2): IPA (English) or pinyin (Chinese). */
+  soundChart: SoundChart;
   /** The 12 tenses (spec §25); empty for courses without Grammar. */
   grammarTopics: readonly GrammarTopic[];
 }
@@ -85,7 +89,7 @@ export const contentByCourse: Readonly<Record<CourseId, ContentBundle>> = {
     words: wordsJson as Record<string, Word>,
     conversations: conversationsJson as Conversation[],
     speakers: speakersJson as Record<string, Speaker>,
-    ipaSounds: ipaJson as IpaSound[],
+    soundChart: { kind: 'ipa', sounds: ipaJson as ChartSound[] },
     grammarTopics: sortGrammarTopics(Object.values(grammarModules)),
   },
   zh: {
@@ -93,7 +97,7 @@ export const contentByCourse: Readonly<Record<CourseId, ContentBundle>> = {
     words: zhWordsJson as Record<string, Word>,
     conversations: zhConversationsJson as Conversation[],
     speakers: zhSpeakersJson as Record<string, Speaker>,
-    ipaSounds: [],
+    soundChart: { kind: 'pinyin', sounds: zhPinyinJson as ChartSound[] },
     grammarTopics: [],
   },
 };
@@ -102,6 +106,7 @@ interface ContentIndex {
   scenesById: Map<string, Scene>;
   conversationsById: Map<string, Conversation>;
   allWordIds: readonly string[];
+  /** IPA chart: its spellings, longest first. */
   ipaSpellings: readonly IpaSymbol[];
 }
 
@@ -116,7 +121,7 @@ function getIndex(): ContentIndex {
       scenesById: new Map(bundle.scenes.map((scene) => [scene.id, scene])),
       conversationsById: new Map(bundle.conversations.map((item) => [item.id, item])),
       allWordIds: Object.keys(bundle.words),
-      ipaSpellings: ipaSpellings(bundle.ipaSounds),
+      ipaSpellings: bundle.soundChart.kind === 'ipa' ? ipaSpellings(bundle.soundChart.sounds) : [],
     };
     indexes.set(course, index);
   }
@@ -199,43 +204,65 @@ export function getSpeaker(speakerId: string): Speaker | undefined {
 }
 
 /* -------------------------------------------------------------------------------------------------
- * IPA chart (spec §24.2), English course only.
+ * Sound chart (spec §24.2): IPA in the English course, pinyin in the Chinese course.
  * -----------------------------------------------------------------------------------------------*/
 
-export function getIpaSounds(): readonly IpaSound[] {
-  return getContent().ipaSounds;
+export function getSoundChart(): SoundChart {
+  return getContent().soundChart;
 }
 
-export function getIpaSound(soundId: string | undefined): IpaSound | undefined {
-  return soundId ? getIpaSounds().find((sound) => sound.id === soundId) : undefined;
+export function getChartSounds(): readonly ChartSound[] {
+  return getSoundChart().sounds;
 }
 
-/** The chart's spellings, longest first, for `tokenizeIpa` and `highlightIpaSound`. */
-export function getIpaSpellings(): readonly IpaSymbol[] {
-  return getIndex().ipaSpellings;
+export function getChartSound(soundId: string | undefined): ChartSound | undefined {
+  return soundId ? getChartSounds().find((sound) => sound.id === soundId) : undefined;
+}
+
+const hanCount = (text: string) =>
+  Array.from(text).filter((char) => /\p{Script=Han}/u.test(char)).length;
+
+/** How a word (or extra example) is written in the chart: its IPA, or its pinyin. */
+export function chartTranscription(entry: { ipa?: string; pinyin?: string }): string | undefined {
+  return getSoundChart().kind === 'ipa' ? entry.ipa : entry.pinyin;
 }
 
 /**
- * Words of the open scenes that have the sound, in scene and flashcard order (each word once):
- * the chart's example words, with their picture. Words with the sound's own symbol come first;
- * words that only have an alias (the short "i" of "balcony" for /iː/) come after.
+ * A transcription cut into chart sounds. `text` (the word itself) tells how many syllables a
+ * Chinese word has, which picks the right cut of joined pinyin.
  */
-export function getIpaSoundWords(sound: IpaSound, limit = Infinity): Word[] {
-  const spellings = getIpaSpellings();
+export function getSoundTokens(transcription: string, text?: string): SoundTokens {
+  const chart = getSoundChart();
+  if (chart.kind === 'ipa') return tokenizeIpa(transcription, getIndex().ipaSpellings);
+  const syllables = text ? hanCount(text) : 0;
+  return tokenizePinyin(transcription, chart.sounds, syllables > 0 ? syllables : undefined);
+}
+
+/**
+ * Words of the open scenes that have the sound, in scene and flashcard order (each written word once):
+ * the chart's example words, with their picture. IPA: words with the sound's own symbol come
+ * first, words that only have an alias (the short "i" of "balcony" for /iː/) after.
+ */
+export function getChartSoundWords(sound: ChartSound, limit = Infinity): Word[] {
+  const ipa = getSoundChart().kind === 'ipa';
   const main: Word[] = [];
   const aliasOnly: Word[] = [];
+  // Each word once — also two scenes' words written the same ("window" in two scenes).
   const seen = new Set<string>();
   for (const scene of getScenes()) {
     if (!isSceneAvailable(scene)) continue;
     for (const word of getSceneWords(scene)) {
-      if (seen.has(word.id) || !word.ipa) continue;
-      seen.add(word.id);
-      const ipa = word.ipa;
-      const tokens = tokenizeIpa(ipa, spellings).tokens.filter(
+      const transcription = chartTranscription(word);
+      const key = word.text.trim().toLowerCase();
+      if (seen.has(key) || !transcription) continue;
+      seen.add(key);
+      const tokens = getSoundTokens(transcription, word.text).tokens.filter(
         (token) => token.soundId === sound.id,
       );
       if (tokens.length === 0) continue;
-      const usesSymbol = tokens.some((token) => ipa.slice(token.start, token.end) === sound.symbol);
+      const usesSymbol =
+        !ipa ||
+        tokens.some((token) => transcription.slice(token.start, token.end) === sound.symbol);
       (usesSymbol ? main : aliasOnly).push(word);
       if (main.length >= limit) return main;
     }

@@ -1,8 +1,8 @@
 import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it } from 'vitest';
-import { getIpaSound } from '@/data/content';
-import { getSoundExampleWords } from '@/features/pronunciation/ipaText';
+import { getChartSound } from '@/data/content';
+import { getSoundExampleWords } from '@/features/pronunciation/soundChartText';
 import { STORAGE_KEYS } from '@/lib/storage';
 import { useSpeakingProgressStore } from '@/stores/speakingProgressStore';
 import { installFakeSpeechRecognition } from '../fakeSpeechRecognition';
@@ -99,7 +99,7 @@ describe('IPA Sounds (spec §24.2)', () => {
 
   it('a sound is checked once one of its words was said well', async () => {
     seedProfile();
-    const [first] = getSoundExampleWords(getIpaSound('sh')!);
+    const [first] = getSoundExampleWords(getChartSound('sh')!);
     localStorage.setItem(
       STORAGE_KEYS.speaking,
       JSON.stringify({
@@ -116,7 +116,7 @@ describe('IPA Sounds (spec §24.2)', () => {
   it('a sound card shows how to say it and scene words with the sound marked', async () => {
     seedProfile();
     renderApp('/pronunciation/sounds/ae');
-    const words = getSoundExampleWords(getIpaSound('ae')!);
+    const words = getSoundExampleWords(getChartSound('ae')!);
     expect(words).toHaveLength(6);
 
     expect(await screen.findByRole('heading', { level: 1, name: 'Sound /æ/' })).toBeVisible();
@@ -150,7 +150,7 @@ describe('IPA Sounds (spec §24.2)', () => {
   it('the words of a sound are practised in a Word Speaking round and the best score is saved', async () => {
     const user = userEvent.setup();
     seedProfile();
-    const [first] = getSoundExampleWords(getIpaSound('ae')!);
+    const [first] = getSoundExampleWords(getChartSound('ae')!);
     uninstall = installFakeSpeechRecognition({ guesses: [first.text], confidence: 0.95 });
     renderApp('/pronunciation/sounds/ae/speaking');
 
@@ -164,12 +164,43 @@ describe('IPA Sounds (spec §24.2)', () => {
     expect(await screen.findByRole('heading', { name: 'Excellent!' })).toBeInTheDocument();
     expect(storedSpeaking()?.bestScoreByWordId[first.id]).toBeGreaterThanOrEqual(80);
   });
+});
 
-  it('the Chinese course has no IPA chart', async () => {
+describe('Pinyin chart (Chinese course, spec §24.2)', () => {
+  it('the Pronunciation menu opens the pinyin chart: initials, finals, tones', async () => {
+    const user = userEvent.setup();
     seedProfile();
     seedSettings({ course: 'zh' });
     renderApp('/pronunciation');
     expect(await screen.findByRole('heading', { level: 1, name: '发音' })).toBeVisible();
     expect(screen.queryByRole('link', { name: /国际音标/ })).toBeNull();
+    await user.click(screen.getByRole('link', { name: /拼音表/ }));
+
+    expect(await screen.findByRole('heading', { level: 1, name: '拼音表' })).toBeVisible();
+    expect(within(screen.getByRole('region', { name: '声母' })).getAllByRole('link')).toHaveLength(
+      21,
+    );
+    expect(within(screen.getByRole('region', { name: '韵母' })).getAllByRole('link')).toHaveLength(
+      37,
+    );
+    const tones = screen.getByRole('region', { name: '声调' });
+    expect(within(tones).getAllByRole('link')).toHaveLength(5);
+    expect(within(tones).getByText('Thanh 3')).toBeInTheDocument();
+  });
+
+  it('a pinyin card marks the part in each word and practices the words', async () => {
+    seedProfile();
+    seedSettings({ course: 'zh' });
+    renderApp('/pronunciation/sounds/zh');
+    expect(await screen.findByRole('heading', { level: 1, name: '音 zh' })).toBeVisible();
+    expect(screen.getByText(/gần giống “tr”/)).toBeInTheDocument();
+    const list = screen.getByRole('region', { name: '含有 zh 的词' });
+    const marks = [...list.querySelectorAll('mark')].map((mark) => mark.textContent?.toLowerCase());
+    expect(marks.length).toBeGreaterThan(0);
+    expect(marks.every((text) => text === 'zh')).toBe(true);
+    expect(screen.getByRole('link', { name: '说一说这些词' })).toHaveAttribute(
+      'href',
+      '/pronunciation/sounds/zh/speaking',
+    );
   });
 });

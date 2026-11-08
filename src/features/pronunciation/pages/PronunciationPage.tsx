@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { paths } from '@/app/paths';
 import { PageContainer, PageTitle, TopBar } from '@/components/layout/PageHeader';
-import { getIpaSounds, getSceneGroups, isSceneAvailable } from '@/data/content';
+import { getSceneGroups, isSceneAvailable } from '@/data/content';
 import { SceneCard } from '@/features/vocabulary/components/SceneCard';
 import { SceneGroupSection } from '@/features/vocabulary/components/SceneGroupSection';
 import { VocabularyBackdrop } from '@/features/vocabulary/components/VocabularyBackdrop';
@@ -11,7 +11,7 @@ import { t } from '@/i18n';
 import { getSceneSpeakingStats } from '@/lib/speakingProgress';
 import { useSpeakingProgressStore } from '@/stores/speakingProgressStore';
 import type { Scene } from '@/types/models';
-import { IpaTopicCard } from '../components/IpaTopicCard';
+import { SoundChartCard } from '../components/SoundChartCard';
 
 /**
  * A scene with the share of its words said well (best score ≥ 80, spec §24.1). This is the
@@ -41,7 +41,7 @@ function PronunciationSceneCard({ scene }: { scene: Scene }) {
 }
 
 /**
- * Pronunciation (`/pronunciation`, spec §24): the IPA chart (English course), then the scenes,
+ * Pronunciation (`/pronunciation`, spec §24): the sound chart (IPA or pinyin), then the scenes,
  * grouped like the Vocabulary list; a scene card opens Word Speaking for that scene.
  */
 export function PronunciationPage() {
@@ -61,7 +61,7 @@ export function PronunciationPage() {
       </TopBar>
       <div className="relative min-h-0 flex-1 overflow-y-auto">
         <PageContainer width="full" className="flex flex-col">
-          {getIpaSounds().length > 0 && <IpaTopicCard />}
+          <SoundChartCard />
           {groups.map((group) => (
             <SceneGroupSection
               key={group.id}

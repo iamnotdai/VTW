@@ -1,3 +1,5 @@
+import type { SoundToken, SoundTokens } from './soundChart';
+
 /**
  * IPA of the English course (spec §24.2): splits a word's transcription ("/ˈlæmp/") into the
  * sounds of the American English chart, so the chart can find example words for each sound and
@@ -9,19 +11,6 @@ export interface IpaSymbol {
   soundId: string;
   /** As written in the transcription, e.g. "tʃ", or an alias like "i" for "iː". */
   spelling: string;
-}
-
-export interface IpaToken {
-  soundId: string;
-  /** Position in the transcription, for highlighting. */
-  start: number;
-  end: number;
-}
-
-export interface IpaTokens {
-  tokens: IpaToken[];
-  /** Characters that belong to no sound of the chart (`content:check` reports them). */
-  unknown: string[];
 }
 
 /** Stress marks, slashes and spaces carry no sound. */
@@ -42,8 +31,8 @@ export function ipaSpellings(
 }
 
 /** Splits a transcription into chart sounds, longest spelling first. */
-export function tokenizeIpa(ipa: string, spellings: readonly IpaSymbol[]): IpaTokens {
-  const tokens: IpaToken[] = [];
+export function tokenizeIpa(ipa: string, spellings: readonly IpaSymbol[]): SoundTokens {
+  const tokens: SoundToken[] = [];
   const unknown: string[] = [];
   let at = 0;
   while (at < ipa.length) {
@@ -62,28 +51,4 @@ export function tokenizeIpa(ipa: string, spellings: readonly IpaSymbol[]): IpaTo
     }
   }
   return { tokens, unknown };
-}
-
-export interface IpaPart {
-  text: string;
-  /** This part is the sound being studied. */
-  highlight: boolean;
-}
-
-/** The transcription cut into parts, with the given sound highlighted ("/l", "æ", "mp/"). */
-export function highlightIpaSound(
-  ipa: string,
-  soundId: string,
-  spellings: readonly IpaSymbol[],
-): IpaPart[] {
-  const parts: IpaPart[] = [];
-  let last = 0;
-  for (const token of tokenizeIpa(ipa, spellings).tokens) {
-    if (token.soundId !== soundId) continue;
-    if (token.start > last) parts.push({ text: ipa.slice(last, token.start), highlight: false });
-    parts.push({ text: ipa.slice(token.start, token.end), highlight: true });
-    last = token.end;
-  }
-  if (last < ipa.length) parts.push({ text: ipa.slice(last), highlight: false });
-  return parts;
 }

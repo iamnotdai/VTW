@@ -47,6 +47,12 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   một lượt Word Speaking với các từ đó. Giọng trình duyệt không đọc được một âm đơn lẻ và nhận dạng giọng
   nói chỉ trả về chữ, nên chỉ chấm điểm **từ**; nút nghe âm và hình khẩu hình chỉ hiện khi có file thu
   sẵn (`audio`, `mouthImage` — hiện chưa có).
+- **Bảng Pinyin** (khóa tiếng Trung, spec §24.3): cùng chỗ và cùng màn hình với bảng IPA — thẻ "拼音表" →
+  21 thanh mẫu, 37 vận mẫu (36 vận mẫu và `-i` của zhi/chi/shi…), 5 thanh điệu → flashcard từng âm với
+  mẹo phát âm đối chiếu tiếng Việt và từ ví dụ (chữ Hán, pinyin tô sáng phần của âm, nghĩa, nút nghe),
+  "说一说这些词" mở lượt Word Speaking. Bộ tách pinyin `src/lib/pinyinChart.ts` cắt pinyin viết liền theo
+  số chữ Hán (quy tắc dấu `'`: `dàngāo` = dàn + gāo). Dữ liệu `src/data/zh/pinyin.json`, mẹo phát âm
+  **cần giáo viên duyệt**.
 - **Grammar** (menu thứ năm, chỉ khóa tiếng Anh, tùy chọn, spec §25): 12 thì theo hàng Quá khứ / Hiện tại /
   Tương lai; mỗi thì có bài học (cách dùng tiếng Việt, 3 công thức, dấu hiệu nhận biết, câu ví dụ kèm ảnh
   đồ vật và nút nghe) và luyện tập 3 dạng: chọn dạng động từ, nghe rồi chọn câu, chạm thẻ từ để xếp câu
@@ -60,8 +66,8 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **267 test Vitest** (203 unit + 64 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
-  **17 kịch bản E2E Playwright** (có một kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation, một kịch bản Grammar), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
+- Test tự động: **273 test Vitest** (208 unit + 65 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+  **18 kịch bản E2E Playwright** (có hai kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation, một kịch bản Grammar), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,
 > nền Setup/Home, scene Bedroom, sprite đồ vật, thumbnail các scene "Coming soon". 24 từ và 10 hội
@@ -192,7 +198,7 @@ Màn mở rộng (luyện nói có chấm điểm, đều có `TopBar`):
 | Word Speaking      | `/vocabulary/:sceneId/speaking`                          | Thẻ "Great job!" cuối Flashcards   |
 | Word Speaking      | `/pronunciation/scene/:sceneId`                          | Thẻ scene ở menu Pronunciation     |
 | Pronunciation      | `/pronunciation`                                         | Menu                               |
-| IPA Sounds         | `/pronunciation/sounds`                                  | Thẻ "IPA Sounds" ở Pronunciation   |
+| Bảng âm (IPA/拼音) | `/pronunciation/sounds`                                  | Thẻ bảng âm ở Pronunciation        |
 | Sound Card         | `/pronunciation/sounds/:soundId`                         | Ô âm trên bảng IPA                 |
 | Sound Speaking     | `/pronunciation/sounds/:soundId/speaking`                | "Say These Words" trên Sound Card  |
 | Grammar            | `/grammar`                                               | Menu (khóa tiếng Anh)              |
@@ -452,8 +458,8 @@ Mọi đường dẫn asset trong JSON (`/assets/...`) đi qua `assetUrl()`, nê
   zoom/pan, parse SVG path, reducer của scene và quiz, kiểm tra nội dung + asset trên đĩa.
 - `tests/components/pronunciation.test.tsx`: menu Pronunciation (% từ nói tốt), Word Speaking lưu điểm
   tốt nhất nhưng không cộng tiến độ học từ; bảng IPA (41 âm, dấu ✓), Sound Card, lượt nói của một âm,
-  khóa tiếng Trung không có bảng IPA. `tests/unit/ipa.test.ts`: tách âm, tô sáng, từ ví dụ, luật
-  `content:check`.
+  bảng Pinyin của khóa tiếng Trung (21 / 37 / 5 âm, tô sáng phần của âm). `tests/unit/soundChart.test.ts`:
+  tách IPA và pinyin, tô sáng, từ ví dụ (không trùng), luật `content:check` của cả hai bảng.
 - `tests/components/grammar.test.tsx`: trang 12 thì, bài học, làm hết 10 câu (tiến độ chỉ tính câu đúng),
   xem đáp án không tính, khóa tiếng Trung không có Grammar. `tests/unit/grammar.test.ts`: tiến độ, thẻ từ,
   chấm câu, luật `content:check`.

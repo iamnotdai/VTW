@@ -186,33 +186,52 @@ export type ConversationStep = 'listen' | 'fill' | 'read' | 'speak';
 /** Steps stored in `conversationStepsById`; "speak" is the completed conversation itself. */
 export type TrackedConversationStep = Exclude<ConversationStep, 'speak'>;
 
-/** @extension Group of a sound in the IPA chart (spec §24.2). */
-export type IpaSoundGroup = 'vowel' | 'diphthong' | 'consonant';
+/**
+ * @extension Which sound chart a course has (spec §24.2): the American English IPA chart, or the
+ * pinyin chart (initials, finals, tones) of the Chinese course.
+ */
+export type SoundChartKind = 'ipa' | 'pinyin';
 
-/** @extension A word that shows a sound when no scene word has it (e.g. /ð/ "mother"). */
-export interface IpaExtraExample {
+/** @extension Group of a sound in its chart. */
+export type ChartSoundGroup = 'vowel' | 'diphthong' | 'consonant' | 'initial' | 'final' | 'tone';
+
+/** @extension A word that shows a sound when no scene word has it (e.g. /ð/ "mother", "er" 二). */
+export interface ChartExtraExample {
   text: string;
-  ipa: string;
+  /** IPA chart: "/ˈmʌðər/". */
+  ipa?: string;
+  /** Pinyin chart: "èr". */
+  pinyin?: string;
   meaningVi: string;
 }
 
-/** @extension One sound of the American English IPA chart (spec §24.2), English course only. */
-export interface IpaSound {
-  /** URL-safe id, e.g. "ae" for /æ/. */
+/** @extension One sound of a course's chart (spec §24.2). */
+export interface ChartSound {
+  /** URL-safe id, e.g. "ae" for /æ/, "zh" for the initial zh. */
   id: string;
-  /** As written in `Word.ipa`, e.g. "æ", "tʃ". */
+  /** As written in the words' transcription, e.g. "æ", "tʃ", "ang", "ā". */
   symbol: string;
-  /** Other spellings of the same sound in `Word.ipa`, e.g. "i" (happy) for "iː". */
+  /** IPA: other spellings of the same sound, e.g. "i" (happy) for "iː". */
   aliases?: string[];
-  group: IpaSoundGroup;
+  group: ChartSoundGroup;
+  /** Pinyin tones: 1–4, 5 = neutral tone. */
+  tone?: number;
+  /** Short name shown with the symbol, in Vietnamese (e.g. "Thanh 1"). */
+  nameVi?: string;
   /** How to make the sound, in Vietnamese (content, reviewed by a teacher). */
   tipVi: string;
   /** Extra example words, only for sounds the scenes' words don't have. */
-  extraExamples?: IpaExtraExample[];
+  extraExamples?: ChartExtraExample[];
   /** Recorded sound (a browser voice can't say a sound on its own). */
   audio?: string;
   /** Picture of the mouth; never a placeholder. */
   mouthImage?: string;
+}
+
+/** @extension A course's sound chart. */
+export interface SoundChart {
+  kind: SoundChartKind;
+  sounds: ChartSound[];
 }
 
 /* Grammar (spec §25) — English course only, optional. ---------------------------------------- */

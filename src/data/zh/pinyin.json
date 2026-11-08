@@ -1,0 +1,426 @@
+[
+  {
+    "id": "b",
+    "symbol": "b",
+    "group": "initial",
+    "tipVi": "Hai môi mím rồi mở ra nhẹ, không bật hơi — gần giống “p” trong “pin” của tiếng Việt."
+  },
+  {
+    "id": "p",
+    "symbol": "p",
+    "group": "initial",
+    "tipVi": "Như b nhưng bật hơi mạnh: đặt tay trước miệng sẽ thấy luồng hơi."
+  },
+  {
+    "id": "m",
+    "symbol": "m",
+    "group": "initial",
+    "tipVi": "Như “m” tiếng Việt."
+  },
+  {
+    "id": "f",
+    "symbol": "f",
+    "group": "initial",
+    "tipVi": "Răng trên chạm môi dưới, thổi hơi — như “ph” tiếng Việt."
+  },
+  {
+    "id": "d",
+    "symbol": "d",
+    "group": "initial",
+    "tipVi": "Đầu lưỡi chạm lợi trên, không bật hơi — gần giống “t” tiếng Việt."
+  },
+  {
+    "id": "t",
+    "symbol": "t",
+    "group": "initial",
+    "tipVi": "Như d nhưng bật hơi mạnh — gần giống “th” tiếng Việt."
+  },
+  {
+    "id": "n",
+    "symbol": "n",
+    "group": "initial",
+    "tipVi": "Như “n” tiếng Việt."
+  },
+  {
+    "id": "l",
+    "symbol": "l",
+    "group": "initial",
+    "tipVi": "Như “l” tiếng Việt."
+  },
+  {
+    "id": "g",
+    "symbol": "g",
+    "group": "initial",
+    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau, không bật hơi — gần giống “c/k” tiếng Việt."
+  },
+  {
+    "id": "k",
+    "symbol": "k",
+    "group": "initial",
+    "tipVi": "Như g nhưng bật hơi mạnh — gần giống “kh” nhưng bật hơi."
+  },
+  {
+    "id": "h",
+    "symbol": "h",
+    "group": "initial",
+    "tipVi": "Hơi ma sát ở cuống họng — gần giống “h” và “kh” tiếng Việt."
+  },
+  {
+    "id": "j",
+    "symbol": "j",
+    "group": "initial",
+    "tipVi": "Mặt lưỡi áp vào vòm miệng, không bật hơi — gần giống “ch” tiếng Việt."
+  },
+  {
+    "id": "q",
+    "symbol": "q",
+    "group": "initial",
+    "tipVi": "Như j nhưng bật hơi mạnh."
+  },
+  {
+    "id": "x",
+    "symbol": "x",
+    "group": "initial",
+    "tipVi": "Mặt lưỡi gần vòm miệng, thổi hơi — gần giống “x” tiếng Việt, môi dẹt."
+  },
+  {
+    "id": "zh",
+    "symbol": "zh",
+    "group": "initial",
+    "tipVi": "Cong đầu lưỡi lên, không bật hơi — gần giống “tr” tiếng Việt."
+  },
+  {
+    "id": "ch",
+    "symbol": "ch",
+    "group": "initial",
+    "tipVi": "Như zh nhưng bật hơi mạnh."
+  },
+  {
+    "id": "sh",
+    "symbol": "sh",
+    "group": "initial",
+    "tipVi": "Cong đầu lưỡi lên, thổi hơi — gần giống “s” cong lưỡi tiếng Việt."
+  },
+  {
+    "id": "r",
+    "symbol": "r",
+    "group": "initial",
+    "tipVi": "Cong đầu lưỡi như sh nhưng cổ họng rung — gần giống “r” nhẹ, không rung lưỡi."
+  },
+  {
+    "id": "z",
+    "symbol": "z",
+    "group": "initial",
+    "tipVi": "Đầu lưỡi thẳng chạm sau răng trên, không bật hơi — như “ch” đọc bằng đầu lưỡi (“dz”)."
+  },
+  {
+    "id": "c",
+    "symbol": "c",
+    "group": "initial",
+    "tipVi": "Như z nhưng bật hơi mạnh (“ts” có hơi)."
+  },
+  {
+    "id": "s",
+    "symbol": "s",
+    "group": "initial",
+    "tipVi": "Đầu lưỡi gần răng trên, thổi hơi — như “x” tiếng Việt."
+  },
+  {
+    "id": "a",
+    "symbol": "a",
+    "group": "final",
+    "tipVi": "Mở miệng rộng: như “a” tiếng Việt."
+  },
+  {
+    "id": "o",
+    "symbol": "o",
+    "group": "final",
+    "tipVi": "Môi tròn: gần như “ua” đọc lướt (bō ≈ “bua”)."
+  },
+  {
+    "id": "e",
+    "symbol": "e",
+    "group": "final",
+    "tipVi": "Miệng hơi mở, lưỡi lùi sau: gần như “ưa” đọc lướt (hē ≈ “hưa”)."
+  },
+  {
+    "id": "i",
+    "symbol": "i",
+    "group": "final",
+    "tipVi": "Như “i” tiếng Việt."
+  },
+  {
+    "id": "u",
+    "symbol": "u",
+    "group": "final",
+    "tipVi": "Môi chu tròn: như “u” tiếng Việt."
+  },
+  {
+    "id": "v",
+    "symbol": "ü",
+    "group": "final",
+    "tipVi": "Đọc “i” nhưng môi tròn lại: gần như “uy” tiếng Việt. Sau j, q, x, y viết là u."
+  },
+  {
+    "id": "ai",
+    "symbol": "ai",
+    "group": "final",
+    "tipVi": "Như “ai” tiếng Việt."
+  },
+  {
+    "id": "ei",
+    "symbol": "ei",
+    "group": "final",
+    "tipVi": "Như “ây” tiếng Việt."
+  },
+  {
+    "id": "ao",
+    "symbol": "ao",
+    "group": "final",
+    "tipVi": "Như “ao” tiếng Việt."
+  },
+  {
+    "id": "ou",
+    "symbol": "ou",
+    "group": "final",
+    "tipVi": "Như “âu” tiếng Việt."
+  },
+  {
+    "id": "ia",
+    "symbol": "ia",
+    "group": "final",
+    "tipVi": "i lướt sang a: “i-a” đọc liền."
+  },
+  {
+    "id": "ie",
+    "symbol": "ie",
+    "group": "final",
+    "tipVi": "Như “iê” tiếng Việt."
+  },
+  {
+    "id": "ua",
+    "symbol": "ua",
+    "group": "final",
+    "tipVi": "Như “oa” tiếng Việt."
+  },
+  {
+    "id": "uo",
+    "symbol": "uo",
+    "group": "final",
+    "tipVi": "Như “ua” / “uô” tiếng Việt."
+  },
+  {
+    "id": "ve",
+    "symbol": "üe",
+    "group": "final",
+    "tipVi": "ü lướt sang e: gần như “uê” với môi tròn. Sau j, q, x, y viết là ue."
+  },
+  {
+    "id": "iao",
+    "symbol": "iao",
+    "group": "final",
+    "tipVi": "i lướt sang ao: gần như “eo” kéo dài, “i-ao”."
+  },
+  {
+    "id": "iou",
+    "symbol": "iou",
+    "group": "final",
+    "tipVi": "Gần như “iêu”. Sau phụ âm viết gọn là iu (liù)."
+  },
+  {
+    "id": "uai",
+    "symbol": "uai",
+    "group": "final",
+    "tipVi": "Như “oai” tiếng Việt."
+  },
+  {
+    "id": "uei",
+    "symbol": "uei",
+    "group": "final",
+    "tipVi": "Gần như “uây”. Sau phụ âm viết gọn là ui (guì)."
+  },
+  {
+    "id": "an",
+    "symbol": "an",
+    "group": "final",
+    "tipVi": "Như “an” tiếng Việt."
+  },
+  {
+    "id": "en",
+    "symbol": "en",
+    "group": "final",
+    "tipVi": "Như “ân” tiếng Việt."
+  },
+  {
+    "id": "in",
+    "symbol": "in",
+    "group": "final",
+    "tipVi": "Như “in” tiếng Việt."
+  },
+  {
+    "id": "vn",
+    "symbol": "ün",
+    "group": "final",
+    "tipVi": "Gần như “uyn” với môi tròn. Sau j, q, x, y viết là un."
+  },
+  {
+    "id": "ian",
+    "symbol": "ian",
+    "group": "final",
+    "tipVi": "Như “iên” tiếng Việt."
+  },
+  {
+    "id": "uan",
+    "symbol": "uan",
+    "group": "final",
+    "tipVi": "Như “oan” tiếng Việt."
+  },
+  {
+    "id": "van",
+    "symbol": "üan",
+    "group": "final",
+    "tipVi": "Gần như “uyên” với môi tròn. Sau j, q, x, y viết là uan."
+  },
+  {
+    "id": "uen",
+    "symbol": "uen",
+    "group": "final",
+    "tipVi": "Gần như “uân”. Sau phụ âm viết gọn là un (dūn)."
+  },
+  {
+    "id": "ang",
+    "symbol": "ang",
+    "group": "final",
+    "tipVi": "Như “ang” tiếng Việt."
+  },
+  {
+    "id": "eng",
+    "symbol": "eng",
+    "group": "final",
+    "tipVi": "Như “âng” tiếng Việt."
+  },
+  {
+    "id": "ing",
+    "symbol": "ing",
+    "group": "final",
+    "tipVi": "Như “inh” đọc với “ng” ở cuối."
+  },
+  {
+    "id": "ong",
+    "symbol": "ong",
+    "group": "final",
+    "tipVi": "Gần như “ung” tiếng Việt."
+  },
+  {
+    "id": "iang",
+    "symbol": "iang",
+    "group": "final",
+    "tipVi": "i lướt sang ang: “i-ang” đọc liền."
+  },
+  {
+    "id": "uang",
+    "symbol": "uang",
+    "group": "final",
+    "tipVi": "Như “oang” tiếng Việt."
+  },
+  {
+    "id": "ueng",
+    "symbol": "ueng",
+    "group": "final",
+    "tipVi": "Gần như “uâng”; chỉ gặp khi viết là weng.",
+    "extraExamples": [
+      {
+        "text": "嗡嗡",
+        "pinyin": "wēngwēng",
+        "meaningVi": "tiếng vo ve (ong bay)"
+      }
+    ]
+  },
+  {
+    "id": "iong",
+    "symbol": "iong",
+    "group": "final",
+    "tipVi": "i lướt sang ong: gần như “i-ung”.",
+    "extraExamples": [
+      {
+        "text": "熊",
+        "pinyin": "xióng",
+        "meaningVi": "con gấu"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "meaningVi": "dùng"
+      }
+    ]
+  },
+  {
+    "id": "er",
+    "symbol": "er",
+    "group": "final",
+    "tipVi": "Đọc “ơ” rồi cong đầu lưỡi lên.",
+    "extraExamples": [
+      {
+        "text": "二",
+        "pinyin": "èr",
+        "meaningVi": "số hai"
+      },
+      {
+        "text": "耳朵",
+        "pinyin": "ěrduo",
+        "meaningVi": "cái tai"
+      },
+      {
+        "text": "儿子",
+        "pinyin": "érzi",
+        "meaningVi": "con trai"
+      }
+    ]
+  },
+  {
+    "id": "ih",
+    "symbol": "-i",
+    "group": "final",
+    "tipVi": "i sau zh, ch, sh, r, z, c, s không đọc là “i” mà gần như “ư”, giữ lưỡi ở vị trí của phụ âm."
+  },
+  {
+    "id": "tone1",
+    "symbol": "ā",
+    "group": "tone",
+    "tone": 1,
+    "nameVi": "Thanh 1",
+    "tipVi": "Cao và đều, giữ giọng ngang ở mức cao."
+  },
+  {
+    "id": "tone2",
+    "symbol": "á",
+    "group": "tone",
+    "tone": 2,
+    "nameVi": "Thanh 2",
+    "tipVi": "Đi lên từ giữa lên cao — gần giống dấu sắc tiếng Việt."
+  },
+  {
+    "id": "tone3",
+    "symbol": "ǎ",
+    "group": "tone",
+    "tone": 3,
+    "nameVi": "Thanh 3",
+    "tipVi": "Xuống thấp rồi lên — gần giống dấu hỏi, đọc trầm."
+  },
+  {
+    "id": "tone4",
+    "symbol": "à",
+    "group": "tone",
+    "tone": 4,
+    "nameVi": "Thanh 4",
+    "tipVi": "Từ cao xuống thấp, dứt khoát — gần giống dấu huyền đọc mạnh và nhanh."
+  },
+  {
+    "id": "tone5",
+    "symbol": "·",
+    "group": "tone",
+    "tone": 5,
+    "nameVi": "Thanh nhẹ",
+    "tipVi": "Đọc nhẹ và ngắn, không nhấn; không có dấu."
+  }
+]

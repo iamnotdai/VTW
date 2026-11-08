@@ -56,3 +56,19 @@ test('Chinese course: setup → bedroom quiz → answer with pinyin → transcri
   await expect(page.getByText('莉莉，这是你的卧室吗？').first()).toBeVisible();
   await expect(page.getByText('Lì li, zhè shì nǐ de wò shì ma?').first()).toBeVisible();
 });
+
+test('Chinese course: Pronunciation → pinyin chart → zh card → say its words', async ({ page }) => {
+  await completeSetupInChinese(page);
+  await page.goto('/pronunciation');
+  await page.getByRole('link', { name: /拼音表/ }).click();
+  await expect(page.getByRole('heading', { level: 1, name: '拼音表' })).toBeVisible();
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  );
+  expect(overflow).toBeLessThanOrEqual(0);
+
+  await page.getByRole('region', { name: '声母' }).getByRole('link', { name: /^zh/ }).click();
+  await expect(page.getByRole('heading', { level: 1, name: '音 zh' })).toBeVisible();
+  await page.getByRole('link', { name: '说一说这些词' }).click();
+  await expect(page).toHaveURL(/\/pronunciation\/sounds\/zh\/speaking$/);
+});

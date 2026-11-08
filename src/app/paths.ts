@@ -17,10 +17,10 @@ export const paths = {
   pronunciation: '/pronunciation',
   /** @extension The same Word Speaking screen, opened from the Pronunciation menu (spec §7.7). */
   pronunciationScene: (sceneId: string) => `/pronunciation/scene/${seg(sceneId)}`,
-  /** @extension The American English IPA chart (spec §24.2). */
-  ipaSounds: '/pronunciation/sounds',
-  ipaSound: (soundId: string) => `/pronunciation/sounds/${seg(soundId)}`,
-  ipaSoundSpeaking: (soundId: string) => `/pronunciation/sounds/${seg(soundId)}/speaking`,
+  /** @extension The sound chart of the course: IPA or pinyin (spec §24.2). */
+  soundChart: '/pronunciation/sounds',
+  chartSound: (soundId: string) => `/pronunciation/sounds/${seg(soundId)}`,
+  chartSoundSpeaking: (soundId: string) => `/pronunciation/sounds/${seg(soundId)}/speaking`,
   conversations: '/conversation',
   conversationScene: (sceneId: string) => `/conversation/scene/${seg(sceneId)}`,
   conversation: (conversationId: string) => `/conversation/${seg(conversationId)}`,

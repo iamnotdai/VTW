@@ -191,8 +191,8 @@ export const ROLE_PLAY_CONFIG = {
   lineGapMs: 450,
 } as const;
 
-/** IPA chart (spec §24.2). */
-export const IPA_CONFIG = {
+/** Sound charts of Pronunciation: IPA and pinyin (spec §24.2). */
+export const SOUND_CHART_CONFIG = {
   /** Example words on a sound card (and in its speaking round). */
   exampleWords: 6,
 } as const;

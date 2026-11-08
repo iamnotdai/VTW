@@ -5,10 +5,15 @@ export const pronunciation: Record<string, string> = {
   '{count}/{total} words said well, {percent}%': '{count}/{total} 个词说得很好，{percent}%',
   'Practice Pronunciation': '练习发音',
   'Back to Pronunciation': '返回发音',
-  // IPA chart (spec §24.2) — English course only; the Chinese course sees the notice below.
+  // Sound charts (spec §24.2): IPA in the English course, pinyin in the Chinese course.
   'IPA Sounds': '国际音标',
-  'IPA sounds are part of the English course': '国际音标属于英语课程',
-  'Practice the words of each scene in Pronunciation.': '在“发音”里练习每个场景的词语吧。',
+  'Pinyin Chart': '拼音表',
+  Initials: '声母',
+  Finals: '韵母',
+  Tones: '声调',
+  'Initials, finals and tones, with words from the scenes.': '声母、韵母和声调，配有场景里的词语。',
+  'The initials, finals and tones of Mandarin. Tap one to hear and say words with it.':
+    '普通话的声母、韵母和声调。点一个，听一听、说一说含有它的词。',
   'The {count} sounds of American English, with words from the scenes.':
     '美式英语的{count}个音，配有场景里的词语。',
   'The sounds of American English. Tap a sound to hear and say words with it.':

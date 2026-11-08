@@ -1,8 +1,10 @@
 import { SCENE_GROUPS } from '@/config/app';
 import { sentenceTiles } from '@/lib/grammar';
 import { ipaSpellings, tokenizeIpa } from '@/lib/ipa';
+import { tokenizePinyin } from '@/lib/pinyinChart';
 import { getPathPoints } from '@/lib/svgPath';
 import { normalizeAnswer } from '@/lib/text';
+import type { SoundChartKind } from '@/types/models';
 import { GRAMMAR_ASPECTS, GRAMMAR_TIMES, type ContentBundle } from './content';
 
 /**
@@ -187,58 +189,75 @@ export function validateContent(bundle: ContentBundle): string[] {
     }
   }
 
-  errors.push(...validateIpaChart(bundle));
+  errors.push(...validateSoundChart(bundle));
   errors.push(...validateGrammar(bundle));
   return errors;
 }
 
-const IPA_GROUPS = new Set(['vowel', 'diphthong', 'consonant']);
+const CHART_GROUPS: Readonly<Record<SoundChartKind, ReadonlySet<string>>> = {
+  ipa: new Set(['vowel', 'diphthong', 'consonant']),
+  pinyin: new Set(['initial', 'final', 'tone']),
+};
 
 /**
- * The IPA chart (spec §24.2): every sound is complete, every word's transcription is made of the
- * chart's sounds only (no "ɚ", "ɝ", "t̬", syllable dots…), and every sound has an example word.
+ * The sound chart (spec §24.2): every sound is complete, every word's transcription is made of
+ * the chart's sounds only (IPA: no "ɚ", "ɝ", "t̬", syllable dots…; pinyin: one valid syllable per
+ * character), and every sound has an example word.
  */
-function validateIpaChart(bundle: ContentBundle): string[] {
+function validateSoundChart(bundle: ContentBundle): string[] {
   const errors: string[] = [];
-  if (bundle.ipaSounds.length === 0) return errors;
-  const spellings = ipaSpellings(bundle.ipaSounds);
+  const { kind, sounds } = bundle.soundChart;
+  const file = kind === 'ipa' ? 'pronunciation/ipa.json' : 'zh/pinyin.json';
+  const field = kind === 'ipa' ? 'ipa' : 'pinyin';
+  const spellings = ipaSpellings(sounds);
+  const hanCount = (text: string) =>
+    Array.from(text).filter((char) => /\p{Script=Han}/u.test(char)).length;
+  const tokenize = (transcription: string, text: string) =>
+    kind === 'ipa'
+      ? tokenizeIpa(transcription, spellings)
+      : tokenizePinyin(transcription, sounds, hanCount(text) || undefined);
   const seenIds = new Set<string>();
   const seenSpellings = new Set<string>();
   const used = new Set<string>();
 
   for (const word of Object.values(bundle.words)) {
-    if (!word.ipa) {
-      errors.push(`words.json › "${word.id}": "ipa" is required in the English course`);
+    const transcription = kind === 'ipa' ? word.ipa : word.pinyin;
+    if (!transcription) {
+      if (kind === 'ipa') errors.push(`words.json › "${word.id}": "ipa" is required`);
       continue;
     }
-    if (!word.ipa.startsWith('/') || !word.ipa.endsWith('/') || word.ipa.length < 3)
+    if (kind === 'ipa' && (!transcription.startsWith('/') || !transcription.endsWith('/')))
       errors.push(`words.json › "${word.id}": "ipa" must be written between slashes`);
-    const { tokens, unknown } = tokenizeIpa(word.ipa, spellings);
+    const { tokens, unknown } = tokenize(transcription, word.text);
     if (unknown.length > 0)
       errors.push(
-        `words.json › "${word.id}": "ipa" ${word.ipa} has symbols outside the chart: ${[...new Set(unknown)].join(' ')}`,
+        `words.json › "${word.id}": "${field}" ${transcription} has parts outside the chart: ${[...new Set(unknown)].join(' ')}`,
       );
     for (const token of tokens) used.add(token.soundId);
   }
 
-  for (const sound of bundle.ipaSounds) {
-    const at = `pronunciation/ipa.json › "${sound.id}"`;
-    if (!/^[a-z]+$/.test(sound.id)) errors.push(`${at}: "id" must be lower-case letters`);
+  for (const sound of sounds) {
+    const at = `${file} › "${sound.id}"`;
+    if (!/^[a-z0-9]+$/.test(sound.id)) errors.push(`${at}: "id" must be lower-case letters/digits`);
     if (seenIds.has(sound.id)) errors.push(`${at}: duplicate id`);
     seenIds.add(sound.id);
     for (const spelling of [sound.symbol, ...(sound.aliases ?? [])]) {
+      const key = `${sound.group}:${spelling}`;
       if (!spelling) errors.push(`${at}: empty symbol`);
-      if (seenSpellings.has(spelling)) errors.push(`${at}: "${spelling}" belongs to two sounds`);
-      seenSpellings.add(spelling);
+      if (seenSpellings.has(key)) errors.push(`${at}: "${spelling}" belongs to two sounds`);
+      seenSpellings.add(key);
     }
-    if (!IPA_GROUPS.has(sound.group)) errors.push(`${at}: unknown group "${sound.group}"`);
+    if (!CHART_GROUPS[kind].has(sound.group)) errors.push(`${at}: unknown group "${sound.group}"`);
+    if (sound.group === 'tone' && !(sound.tone && sound.tone >= 1 && sound.tone <= 5))
+      errors.push(`${at}: a tone needs "tone" 1–5`);
     if (!sound.tipVi?.trim()) errors.push(`${at}: "tipVi" is required`);
     for (const example of sound.extraExamples ?? []) {
-      const { tokens, unknown } = tokenizeIpa(example.ipa, spellings);
+      const transcription = (kind === 'ipa' ? example.ipa : example.pinyin) ?? '';
+      const { tokens, unknown } = tokenize(transcription, example.text);
       if (!example.text?.trim() || !example.meaningVi?.trim())
         errors.push(`${at}: extra examples need "text" and "meaningVi"`);
       if (unknown.length > 0 || !tokens.some((token) => token.soundId === sound.id))
-        errors.push(`${at}: extra example "${example.text}" must contain the sound`);
+        errors.push(`${at}: extra example "${example.text}" must contain the sound (${field})`);
     }
     if (!used.has(sound.id) && !sound.extraExamples?.length)
       errors.push(`${at}: no word has this sound — add "extraExamples"`);
@@ -336,7 +355,7 @@ export function collectAssetPaths(bundle: ContentBundle): string[] {
   const add = (path: string | undefined) => {
     if (path && path.startsWith('/')) paths.add(path);
   };
-  for (const sound of bundle.ipaSounds) {
+  for (const sound of bundle.soundChart.sounds) {
     add(sound.audio);
     add(sound.mouthImage);
   }

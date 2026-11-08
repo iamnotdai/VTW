@@ -1,12 +1,12 @@
 import { useParams } from 'react-router';
 import { paths } from '@/app/paths';
-import { getIpaSound } from '@/data/content';
+import { getChartSound, getSoundChart } from '@/data/content';
 import { NotFoundPage } from '@/features/misc/NotFoundPage';
 import { WordSpeakingRound } from '@/features/vocabulary/speaking/WordSpeakingRound';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { t } from '@/i18n';
-import type { IpaSound } from '@/types/models';
-import { getSoundExampleWords, slashed } from '../ipaText';
+import type { ChartSound } from '@/types/models';
+import { chartSymbol, chartTitle, getSoundExampleWords } from '../soundChartText';
 
 /**
  * Speaking round of a sound (`/pronunciation/sounds/:soundId/speaking`, spec §24.2): the sound
@@ -15,25 +15,25 @@ import { getSoundExampleWords, slashed } from '../ipaText';
  */
 export function SoundSpeakingPage() {
   const { soundId } = useParams();
-  const sound = getIpaSound(soundId);
+  const sound = getChartSound(soundId);
   if (!sound || getSoundExampleWords(sound).length === 0) return <NotFoundPage />;
   return <SoundSpeaking key={sound.id} sound={sound} />;
 }
 
-function SoundSpeaking({ sound }: { sound: IpaSound }) {
-  const symbol = slashed(sound.symbol);
+function SoundSpeaking({ sound }: { sound: ChartSound }) {
+  const symbol = chartSymbol(sound);
   useDocumentTitle(t('Speaking · {symbol}', { symbol }));
   return (
     <WordSpeakingRound
       words={getSoundExampleWords(sound)}
       crumbs={[
         { label: t('Pronunciation'), to: paths.pronunciation },
-        { label: t('IPA Sounds'), to: paths.ipaSounds },
-        { label: symbol, to: paths.ipaSound(sound.id) },
+        { label: chartTitle(getSoundChart().kind), to: paths.soundChart },
+        { label: symbol, to: paths.chartSound(sound.id) },
         { label: t('Speaking') },
       ]}
       heading={t('Words with {symbol}: speaking practice', { symbol })}
-      back={{ to: paths.ipaSound(sound.id), label: t('Back to the Sound {symbol}', { symbol }) }}
+      back={{ to: paths.chartSound(sound.id), label: t('Back to the Sound {symbol}', { symbol }) }}
     />
   );
 }
