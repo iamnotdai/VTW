@@ -222,8 +222,14 @@ export interface ChartSound {
   tipVi: string;
   /** Extra example words, only for sounds the scenes' words don't have. */
   extraExamples?: ChartExtraExample[];
-  /** Recorded sound (a browser voice can't say a sound on its own). */
+  /** Recorded sound — the best: a browser voice can't say a sound on its own. */
   audio?: string;
+  /**
+   * What the browser voice says for the sound button while there is no recording: a short word or
+   * syllable that has the sound ("E" for /iː/, "pen" for /p/; pinyin initials as taught, 玻 bō for
+   * b). It is shown under the button.
+   */
+  say?: { text: string; ipa?: string; pinyin?: string };
   /** Picture of the mouth; never a placeholder. */
   mouthImage?: string;
 }

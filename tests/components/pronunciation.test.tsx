@@ -126,8 +126,9 @@ describe('IPA Sounds (spec §24.2)', () => {
     expect(items).toHaveLength(6);
     expect(within(items[0]).getByText(words[0].text)).toBeInTheDocument();
     expect(items[0].querySelector('mark')).toHaveTextContent('æ');
-    // A browser voice can't say a sound alone: no sound button without a recording.
-    expect(screen.queryByRole('button', { name: /Listen to the sound/ })).toBeNull();
+    // A browser voice can't say a sound alone: without a recording, the button says a word with it.
+    expect(screen.getByRole('button', { name: 'Listen to /æ/ as in “at”' })).toBeInTheDocument();
+    expect(screen.getByText('“at”')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Say These Words' })).toHaveAttribute(
       'href',
       '/pronunciation/sounds/ae/speaking',
@@ -194,6 +195,9 @@ describe('Pinyin chart (Chinese course, spec §24.2)', () => {
     renderApp('/pronunciation/sounds/zh');
     expect(await screen.findByRole('heading', { level: 1, name: '音 zh' })).toBeVisible();
     expect(screen.getByText(/gần giống “tr”/)).toBeInTheDocument();
+    // Pinyin initials are read as taught: zh → 知 zhī.
+    expect(screen.getByRole('button', { name: '听 zh，读作“知”' })).toBeInTheDocument();
+    expect(screen.getByText('读作')).toBeInTheDocument();
     const list = screen.getByRole('region', { name: '含有 zh 的词' });
     const marks = [...list.querySelectorAll('mark')].map((mark) => mark.textContent?.toLowerCase());
     expect(marks.length).toBeGreaterThan(0);

@@ -3,325 +3,541 @@
     "id": "b",
     "symbol": "b",
     "group": "initial",
-    "tipVi": "Hai môi mím rồi mở ra nhẹ, không bật hơi — gần giống “p” trong “pin” của tiếng Việt."
+    "tipVi": "Hai môi mím rồi mở ra nhẹ, không bật hơi — gần giống “p” trong “pin” của tiếng Việt.",
+    "say": {
+      "text": "玻",
+      "pinyin": "bō"
+    }
   },
   {
     "id": "p",
     "symbol": "p",
     "group": "initial",
-    "tipVi": "Như b nhưng bật hơi mạnh: đặt tay trước miệng sẽ thấy luồng hơi."
+    "tipVi": "Như b nhưng bật hơi mạnh: đặt tay trước miệng sẽ thấy luồng hơi.",
+    "say": {
+      "text": "坡",
+      "pinyin": "pō"
+    }
   },
   {
     "id": "m",
     "symbol": "m",
     "group": "initial",
-    "tipVi": "Như “m” tiếng Việt."
+    "tipVi": "Như “m” tiếng Việt.",
+    "say": {
+      "text": "摸",
+      "pinyin": "mō"
+    }
   },
   {
     "id": "f",
     "symbol": "f",
     "group": "initial",
-    "tipVi": "Răng trên chạm môi dưới, thổi hơi — như “ph” tiếng Việt."
+    "tipVi": "Răng trên chạm môi dưới, thổi hơi — như “ph” tiếng Việt.",
+    "say": {
+      "text": "佛",
+      "pinyin": "fó"
+    }
   },
   {
     "id": "d",
     "symbol": "d",
     "group": "initial",
-    "tipVi": "Đầu lưỡi chạm lợi trên, không bật hơi — gần giống “t” tiếng Việt."
+    "tipVi": "Đầu lưỡi chạm lợi trên, không bật hơi — gần giống “t” tiếng Việt.",
+    "say": {
+      "text": "得",
+      "pinyin": "dé"
+    }
   },
   {
     "id": "t",
     "symbol": "t",
     "group": "initial",
-    "tipVi": "Như d nhưng bật hơi mạnh — gần giống “th” tiếng Việt."
+    "tipVi": "Như d nhưng bật hơi mạnh — gần giống “th” tiếng Việt.",
+    "say": {
+      "text": "特",
+      "pinyin": "tè"
+    }
   },
   {
     "id": "n",
     "symbol": "n",
     "group": "initial",
-    "tipVi": "Như “n” tiếng Việt."
+    "tipVi": "Như “n” tiếng Việt.",
+    "say": {
+      "text": "讷",
+      "pinyin": "nè"
+    }
   },
   {
     "id": "l",
     "symbol": "l",
     "group": "initial",
-    "tipVi": "Như “l” tiếng Việt."
+    "tipVi": "Như “l” tiếng Việt.",
+    "say": {
+      "text": "勒",
+      "pinyin": "lè"
+    }
   },
   {
     "id": "g",
     "symbol": "g",
     "group": "initial",
-    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau, không bật hơi — gần giống “c/k” tiếng Việt."
+    "tipVi": "Cuống lưỡi chạm vòm miệng phía sau, không bật hơi — gần giống “c/k” tiếng Việt.",
+    "say": {
+      "text": "哥",
+      "pinyin": "gē"
+    }
   },
   {
     "id": "k",
     "symbol": "k",
     "group": "initial",
-    "tipVi": "Như g nhưng bật hơi mạnh — gần giống “kh” nhưng bật hơi."
+    "tipVi": "Như g nhưng bật hơi mạnh — gần giống “kh” nhưng bật hơi.",
+    "say": {
+      "text": "科",
+      "pinyin": "kē"
+    }
   },
   {
     "id": "h",
     "symbol": "h",
     "group": "initial",
-    "tipVi": "Hơi ma sát ở cuống họng — gần giống “h” và “kh” tiếng Việt."
+    "tipVi": "Hơi ma sát ở cuống họng — gần giống “h” và “kh” tiếng Việt.",
+    "say": {
+      "text": "喝",
+      "pinyin": "hē"
+    }
   },
   {
     "id": "j",
     "symbol": "j",
     "group": "initial",
-    "tipVi": "Mặt lưỡi áp vào vòm miệng, không bật hơi — gần giống “ch” tiếng Việt."
+    "tipVi": "Mặt lưỡi áp vào vòm miệng, không bật hơi — gần giống “ch” tiếng Việt.",
+    "say": {
+      "text": "基",
+      "pinyin": "jī"
+    }
   },
   {
     "id": "q",
     "symbol": "q",
     "group": "initial",
-    "tipVi": "Như j nhưng bật hơi mạnh."
+    "tipVi": "Như j nhưng bật hơi mạnh.",
+    "say": {
+      "text": "欺",
+      "pinyin": "qī"
+    }
   },
   {
     "id": "x",
     "symbol": "x",
     "group": "initial",
-    "tipVi": "Mặt lưỡi gần vòm miệng, thổi hơi — gần giống “x” tiếng Việt, môi dẹt."
+    "tipVi": "Mặt lưỡi gần vòm miệng, thổi hơi — gần giống “x” tiếng Việt, môi dẹt.",
+    "say": {
+      "text": "希",
+      "pinyin": "xī"
+    }
   },
   {
     "id": "zh",
     "symbol": "zh",
     "group": "initial",
-    "tipVi": "Cong đầu lưỡi lên, không bật hơi — gần giống “tr” tiếng Việt."
+    "tipVi": "Cong đầu lưỡi lên, không bật hơi — gần giống “tr” tiếng Việt.",
+    "say": {
+      "text": "知",
+      "pinyin": "zhī"
+    }
   },
   {
     "id": "ch",
     "symbol": "ch",
     "group": "initial",
-    "tipVi": "Như zh nhưng bật hơi mạnh."
+    "tipVi": "Như zh nhưng bật hơi mạnh.",
+    "say": {
+      "text": "吃",
+      "pinyin": "chī"
+    }
   },
   {
     "id": "sh",
     "symbol": "sh",
     "group": "initial",
-    "tipVi": "Cong đầu lưỡi lên, thổi hơi — gần giống “s” cong lưỡi tiếng Việt."
+    "tipVi": "Cong đầu lưỡi lên, thổi hơi — gần giống “s” cong lưỡi tiếng Việt.",
+    "say": {
+      "text": "诗",
+      "pinyin": "shī"
+    }
   },
   {
     "id": "r",
     "symbol": "r",
     "group": "initial",
-    "tipVi": "Cong đầu lưỡi như sh nhưng cổ họng rung — gần giống “r” nhẹ, không rung lưỡi."
+    "tipVi": "Cong đầu lưỡi như sh nhưng cổ họng rung — gần giống “r” nhẹ, không rung lưỡi.",
+    "say": {
+      "text": "日",
+      "pinyin": "rì"
+    }
   },
   {
     "id": "z",
     "symbol": "z",
     "group": "initial",
-    "tipVi": "Đầu lưỡi thẳng chạm sau răng trên, không bật hơi — như “ch” đọc bằng đầu lưỡi (“dz”)."
+    "tipVi": "Đầu lưỡi thẳng chạm sau răng trên, không bật hơi — như “ch” đọc bằng đầu lưỡi (“dz”).",
+    "say": {
+      "text": "资",
+      "pinyin": "zī"
+    }
   },
   {
     "id": "c",
     "symbol": "c",
     "group": "initial",
-    "tipVi": "Như z nhưng bật hơi mạnh (“ts” có hơi)."
+    "tipVi": "Như z nhưng bật hơi mạnh (“ts” có hơi).",
+    "say": {
+      "text": "雌",
+      "pinyin": "cí"
+    }
   },
   {
     "id": "s",
     "symbol": "s",
     "group": "initial",
-    "tipVi": "Đầu lưỡi gần răng trên, thổi hơi — như “x” tiếng Việt."
+    "tipVi": "Đầu lưỡi gần răng trên, thổi hơi — như “x” tiếng Việt.",
+    "say": {
+      "text": "思",
+      "pinyin": "sī"
+    }
   },
   {
     "id": "a",
     "symbol": "a",
     "group": "final",
-    "tipVi": "Mở miệng rộng: như “a” tiếng Việt."
+    "tipVi": "Mở miệng rộng: như “a” tiếng Việt.",
+    "say": {
+      "text": "啊",
+      "pinyin": "ā"
+    }
   },
   {
     "id": "o",
     "symbol": "o",
     "group": "final",
-    "tipVi": "Môi tròn: gần như “ua” đọc lướt (bō ≈ “bua”)."
+    "tipVi": "Môi tròn: gần như “ua” đọc lướt (bō ≈ “bua”).",
+    "say": {
+      "text": "喔",
+      "pinyin": "ō"
+    }
   },
   {
     "id": "e",
     "symbol": "e",
     "group": "final",
-    "tipVi": "Miệng hơi mở, lưỡi lùi sau: gần như “ưa” đọc lướt (hē ≈ “hưa”)."
+    "tipVi": "Miệng hơi mở, lưỡi lùi sau: gần như “ưa” đọc lướt (hē ≈ “hưa”).",
+    "say": {
+      "text": "鹅",
+      "pinyin": "é"
+    }
   },
   {
     "id": "i",
     "symbol": "i",
     "group": "final",
-    "tipVi": "Như “i” tiếng Việt."
+    "tipVi": "Như “i” tiếng Việt.",
+    "say": {
+      "text": "衣",
+      "pinyin": "yī"
+    }
   },
   {
     "id": "u",
     "symbol": "u",
     "group": "final",
-    "tipVi": "Môi chu tròn: như “u” tiếng Việt."
+    "tipVi": "Môi chu tròn: như “u” tiếng Việt.",
+    "say": {
+      "text": "乌",
+      "pinyin": "wū"
+    }
   },
   {
     "id": "v",
     "symbol": "ü",
     "group": "final",
-    "tipVi": "Đọc “i” nhưng môi tròn lại: gần như “uy” tiếng Việt. Sau j, q, x, y viết là u."
+    "tipVi": "Đọc “i” nhưng môi tròn lại: gần như “uy” tiếng Việt. Sau j, q, x, y viết là u.",
+    "say": {
+      "text": "迂",
+      "pinyin": "yū"
+    }
   },
   {
     "id": "ai",
     "symbol": "ai",
     "group": "final",
-    "tipVi": "Như “ai” tiếng Việt."
+    "tipVi": "Như “ai” tiếng Việt.",
+    "say": {
+      "text": "哀",
+      "pinyin": "āi"
+    }
   },
   {
     "id": "ei",
     "symbol": "ei",
     "group": "final",
-    "tipVi": "Như “ây” tiếng Việt."
+    "tipVi": "Như “ây” tiếng Việt.",
+    "say": {
+      "text": "诶",
+      "pinyin": "ēi"
+    }
   },
   {
     "id": "ao",
     "symbol": "ao",
     "group": "final",
-    "tipVi": "Như “ao” tiếng Việt."
+    "tipVi": "Như “ao” tiếng Việt.",
+    "say": {
+      "text": "凹",
+      "pinyin": "āo"
+    }
   },
   {
     "id": "ou",
     "symbol": "ou",
     "group": "final",
-    "tipVi": "Như “âu” tiếng Việt."
+    "tipVi": "Như “âu” tiếng Việt.",
+    "say": {
+      "text": "欧",
+      "pinyin": "ōu"
+    }
   },
   {
     "id": "ia",
     "symbol": "ia",
     "group": "final",
-    "tipVi": "i lướt sang a: “i-a” đọc liền."
+    "tipVi": "i lướt sang a: “i-a” đọc liền.",
+    "say": {
+      "text": "呀",
+      "pinyin": "yā"
+    }
   },
   {
     "id": "ie",
     "symbol": "ie",
     "group": "final",
-    "tipVi": "Như “iê” tiếng Việt."
+    "tipVi": "Như “iê” tiếng Việt.",
+    "say": {
+      "text": "耶",
+      "pinyin": "yē"
+    }
   },
   {
     "id": "ua",
     "symbol": "ua",
     "group": "final",
-    "tipVi": "Như “oa” tiếng Việt."
+    "tipVi": "Như “oa” tiếng Việt.",
+    "say": {
+      "text": "蛙",
+      "pinyin": "wā"
+    }
   },
   {
     "id": "uo",
     "symbol": "uo",
     "group": "final",
-    "tipVi": "Như “ua” / “uô” tiếng Việt."
+    "tipVi": "Như “ua” / “uô” tiếng Việt.",
+    "say": {
+      "text": "窝",
+      "pinyin": "wō"
+    }
   },
   {
     "id": "ve",
     "symbol": "üe",
     "group": "final",
-    "tipVi": "ü lướt sang e: gần như “uê” với môi tròn. Sau j, q, x, y viết là ue."
+    "tipVi": "ü lướt sang e: gần như “uê” với môi tròn. Sau j, q, x, y viết là ue.",
+    "say": {
+      "text": "约",
+      "pinyin": "yuē"
+    }
   },
   {
     "id": "iao",
     "symbol": "iao",
     "group": "final",
-    "tipVi": "i lướt sang ao: gần như “eo” kéo dài, “i-ao”."
+    "tipVi": "i lướt sang ao: gần như “eo” kéo dài, “i-ao”.",
+    "say": {
+      "text": "腰",
+      "pinyin": "yāo"
+    }
   },
   {
     "id": "iou",
     "symbol": "iou",
     "group": "final",
-    "tipVi": "Gần như “iêu”. Sau phụ âm viết gọn là iu (liù)."
+    "tipVi": "Gần như “iêu”. Sau phụ âm viết gọn là iu (liù).",
+    "say": {
+      "text": "优",
+      "pinyin": "yōu"
+    }
   },
   {
     "id": "uai",
     "symbol": "uai",
     "group": "final",
-    "tipVi": "Như “oai” tiếng Việt."
+    "tipVi": "Như “oai” tiếng Việt.",
+    "say": {
+      "text": "歪",
+      "pinyin": "wāi"
+    }
   },
   {
     "id": "uei",
     "symbol": "uei",
     "group": "final",
-    "tipVi": "Gần như “uây”. Sau phụ âm viết gọn là ui (guì)."
+    "tipVi": "Gần như “uây”. Sau phụ âm viết gọn là ui (guì).",
+    "say": {
+      "text": "威",
+      "pinyin": "wēi"
+    }
   },
   {
     "id": "an",
     "symbol": "an",
     "group": "final",
-    "tipVi": "Như “an” tiếng Việt."
+    "tipVi": "Như “an” tiếng Việt.",
+    "say": {
+      "text": "安",
+      "pinyin": "ān"
+    }
   },
   {
     "id": "en",
     "symbol": "en",
     "group": "final",
-    "tipVi": "Như “ân” tiếng Việt."
+    "tipVi": "Như “ân” tiếng Việt.",
+    "say": {
+      "text": "恩",
+      "pinyin": "ēn"
+    }
   },
   {
     "id": "in",
     "symbol": "in",
     "group": "final",
-    "tipVi": "Như “in” tiếng Việt."
+    "tipVi": "Như “in” tiếng Việt.",
+    "say": {
+      "text": "因",
+      "pinyin": "yīn"
+    }
   },
   {
     "id": "vn",
     "symbol": "ün",
     "group": "final",
-    "tipVi": "Gần như “uyn” với môi tròn. Sau j, q, x, y viết là un."
+    "tipVi": "Gần như “uyn” với môi tròn. Sau j, q, x, y viết là un.",
+    "say": {
+      "text": "晕",
+      "pinyin": "yūn"
+    }
   },
   {
     "id": "ian",
     "symbol": "ian",
     "group": "final",
-    "tipVi": "Như “iên” tiếng Việt."
+    "tipVi": "Như “iên” tiếng Việt.",
+    "say": {
+      "text": "烟",
+      "pinyin": "yān"
+    }
   },
   {
     "id": "uan",
     "symbol": "uan",
     "group": "final",
-    "tipVi": "Như “oan” tiếng Việt."
+    "tipVi": "Như “oan” tiếng Việt.",
+    "say": {
+      "text": "弯",
+      "pinyin": "wān"
+    }
   },
   {
     "id": "van",
     "symbol": "üan",
     "group": "final",
-    "tipVi": "Gần như “uyên” với môi tròn. Sau j, q, x, y viết là uan."
+    "tipVi": "Gần như “uyên” với môi tròn. Sau j, q, x, y viết là uan.",
+    "say": {
+      "text": "冤",
+      "pinyin": "yuān"
+    }
   },
   {
     "id": "uen",
     "symbol": "uen",
     "group": "final",
-    "tipVi": "Gần như “uân”. Sau phụ âm viết gọn là un (dūn)."
+    "tipVi": "Gần như “uân”. Sau phụ âm viết gọn là un (dūn).",
+    "say": {
+      "text": "温",
+      "pinyin": "wēn"
+    }
   },
   {
     "id": "ang",
     "symbol": "ang",
     "group": "final",
-    "tipVi": "Như “ang” tiếng Việt."
+    "tipVi": "Như “ang” tiếng Việt.",
+    "say": {
+      "text": "肮",
+      "pinyin": "āng"
+    }
   },
   {
     "id": "eng",
     "symbol": "eng",
     "group": "final",
-    "tipVi": "Như “âng” tiếng Việt."
+    "tipVi": "Như “âng” tiếng Việt.",
+    "say": {
+      "text": "灯",
+      "pinyin": "dēng"
+    }
   },
   {
     "id": "ing",
     "symbol": "ing",
     "group": "final",
-    "tipVi": "Như “inh” đọc với “ng” ở cuối."
+    "tipVi": "Như “inh” đọc với “ng” ở cuối.",
+    "say": {
+      "text": "英",
+      "pinyin": "yīng"
+    }
   },
   {
     "id": "ong",
     "symbol": "ong",
     "group": "final",
-    "tipVi": "Gần như “ung” tiếng Việt."
+    "tipVi": "Gần như “ung” tiếng Việt.",
+    "say": {
+      "text": "东",
+      "pinyin": "dōng"
+    }
   },
   {
     "id": "iang",
     "symbol": "iang",
     "group": "final",
-    "tipVi": "i lướt sang ang: “i-ang” đọc liền."
+    "tipVi": "i lướt sang ang: “i-ang” đọc liền.",
+    "say": {
+      "text": "央",
+      "pinyin": "yāng"
+    }
   },
   {
     "id": "uang",
     "symbol": "uang",
     "group": "final",
-    "tipVi": "Như “oang” tiếng Việt."
+    "tipVi": "Như “oang” tiếng Việt.",
+    "say": {
+      "text": "汪",
+      "pinyin": "wāng"
+    }
   },
   {
     "id": "ueng",
@@ -334,7 +550,11 @@
         "pinyin": "wēngwēng",
         "meaningVi": "tiếng vo ve (ong bay)"
       }
-    ]
+    ],
+    "say": {
+      "text": "翁",
+      "pinyin": "wēng"
+    }
   },
   {
     "id": "iong",
@@ -352,7 +572,11 @@
         "pinyin": "yòng",
         "meaningVi": "dùng"
       }
-    ]
+    ],
+    "say": {
+      "text": "拥",
+      "pinyin": "yōng"
+    }
   },
   {
     "id": "er",
@@ -375,13 +599,21 @@
         "pinyin": "érzi",
         "meaningVi": "con trai"
       }
-    ]
+    ],
+    "say": {
+      "text": "儿",
+      "pinyin": "ér"
+    }
   },
   {
     "id": "ih",
     "symbol": "-i",
     "group": "final",
-    "tipVi": "i sau zh, ch, sh, r, z, c, s không đọc là “i” mà gần như “ư”, giữ lưỡi ở vị trí của phụ âm."
+    "tipVi": "i sau zh, ch, sh, r, z, c, s không đọc là “i” mà gần như “ư”, giữ lưỡi ở vị trí của phụ âm.",
+    "say": {
+      "text": "资",
+      "pinyin": "zī"
+    }
   },
   {
     "id": "tone1",
@@ -389,7 +621,11 @@
     "group": "tone",
     "tone": 1,
     "nameVi": "Thanh 1",
-    "tipVi": "Cao và đều, giữ giọng ngang ở mức cao."
+    "tipVi": "Cao và đều, giữ giọng ngang ở mức cao.",
+    "say": {
+      "text": "妈",
+      "pinyin": "mā"
+    }
   },
   {
     "id": "tone2",
@@ -397,7 +633,11 @@
     "group": "tone",
     "tone": 2,
     "nameVi": "Thanh 2",
-    "tipVi": "Đi lên từ giữa lên cao — gần giống dấu sắc tiếng Việt."
+    "tipVi": "Đi lên từ giữa lên cao — gần giống dấu sắc tiếng Việt.",
+    "say": {
+      "text": "麻",
+      "pinyin": "má"
+    }
   },
   {
     "id": "tone3",
@@ -405,7 +645,11 @@
     "group": "tone",
     "tone": 3,
     "nameVi": "Thanh 3",
-    "tipVi": "Xuống thấp rồi lên — gần giống dấu hỏi, đọc trầm."
+    "tipVi": "Xuống thấp rồi lên — gần giống dấu hỏi, đọc trầm.",
+    "say": {
+      "text": "马",
+      "pinyin": "mǎ"
+    }
   },
   {
     "id": "tone4",
@@ -413,7 +657,11 @@
     "group": "tone",
     "tone": 4,
     "nameVi": "Thanh 4",
-    "tipVi": "Từ cao xuống thấp, dứt khoát — gần giống dấu huyền đọc mạnh và nhanh."
+    "tipVi": "Từ cao xuống thấp, dứt khoát — gần giống dấu huyền đọc mạnh và nhanh.",
+    "say": {
+      "text": "骂",
+      "pinyin": "mà"
+    }
   },
   {
     "id": "tone5",
@@ -421,6 +669,10 @@
     "group": "tone",
     "tone": 5,
     "nameVi": "Thanh nhẹ",
-    "tipVi": "Đọc nhẹ và ngắn, không nhấn; không có dấu."
+    "tipVi": "Đọc nhẹ và ngắn, không nhấn; không có dấu.",
+    "say": {
+      "text": "吗",
+      "pinyin": "ma"
+    }
   }
 ]

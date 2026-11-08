@@ -25,6 +25,8 @@ export const pronunciation: Record<string, string> = {
   'Sound {symbol}': '音 {symbol}',
   '{number} of {total}': '第{number}个，共{total}个',
   'Listen to the sound {symbol}': '听音 {symbol}',
+  'Listen to {symbol} as in “{text}”': '听 {symbol}，读作“{text}”',
+  'As in': '读作',
   'Mouth position for {symbol}': '{symbol} 的口型',
   'How to say it': '怎么发音',
   'Words with {symbol}': '含有 {symbol} 的词',

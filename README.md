@@ -45,8 +45,9 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
   âm (12 nguyên âm, 5 nguyên âm đôi, 24 phụ âm) → flashcard từng âm: ký hiệu, mẹo khẩu hình tiếng Việt, 6
   từ ví dụ lấy tự động từ các scene (ảnh, IPA tô sáng âm, nghĩa, nút nghe) và nút "Say These Words" mở
   một lượt Word Speaking với các từ đó. Giọng trình duyệt không đọc được một âm đơn lẻ và nhận dạng giọng
-  nói chỉ trả về chữ, nên chỉ chấm điểm **từ**; nút nghe âm và hình khẩu hình chỉ hiện khi có file thu
-  sẵn (`audio`, `mouthImage` — hiện chưa có).
+  nói chỉ trả về chữ, nên chỉ chấm điểm **từ**. Nút loa ở góc thẻ phát file thu âm (`audio`) nếu có; chưa
+  có thì giọng trình duyệt đọc `say` — một chữ ngắn chứa âm (“E” cho /iː/, “pen” cho /p/; tiếng Trung đọc
+  theo 呼读音: 玻 bō, 知 zhī…), hiện kèm dưới ký hiệu. Hình khẩu hình chỉ hiện khi có file (`mouthImage`).
 - **Bảng Pinyin** (khóa tiếng Trung, spec §24.3): cùng chỗ và cùng màn hình với bảng IPA — thẻ "拼音表" →
   21 thanh mẫu, 37 vận mẫu (36 vận mẫu và `-i` của zhi/chi/shi…), 5 thanh điệu → flashcard từng âm với
   mẹo phát âm đối chiếu tiếng Việt và từ ví dụ (chữ Hán, pinyin tô sáng phần của âm, nghĩa, nút nghe),
@@ -66,7 +67,7 @@ Room, Kitchen, House Exterior, Dining Room, Garage, Flower Garden, Vegetable Gar
 - Lưu trữ qua lớp repository có versioned key, migration, fallback bộ nhớ khi trình duyệt chặn storage.
 - Giao diện dựng theo **bản thiết kế `flow.png`** (16 màn): màu, font, logo chữ, menu (avatar + Level
   ở dưới sidebar), thẻ, nút… Xem mục [Giao diện theo bản thiết kế](#giao-diện-theo-bản-thiết-kế-flowpng).
-- Test tự động: **273 test Vitest** (208 unit + 65 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
+- Test tự động: **275 test Vitest** (210 unit + 65 component, gồm kiểm tra nội dung JSON, asset và bản dịch giao diện) và
   **18 kịch bản E2E Playwright** (có hai kịch bản khóa tiếng Trung, bốn kịch bản luyện nói, hai kịch bản Pronunciation, một kịch bản Grammar), mỗi kịch bản chạy trên 2 thiết bị (desktop dùng chuột, Pixel 7 cảm ứng).
 
 > ⚠️ **Toàn bộ hình ảnh hiện tại là PLACEHOLDER** (SVG vẽ tạm cho môi trường dev): logo, avatar,

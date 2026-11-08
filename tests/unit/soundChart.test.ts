@@ -149,3 +149,30 @@ describe('example words', () => {
     }
   });
 });
+
+describe('sound button text', () => {
+  it('content:check rejects a "say" text without the sound', () => {
+    const errors = validateContent({
+      ...english,
+      soundChart: {
+        kind: 'ipa',
+        sounds: english.soundChart.sounds.map((sound) =>
+          sound.id === 'p' ? { ...sound, say: { text: 'bed', ipa: '/bed/' } } : sound,
+        ),
+      },
+    });
+    expect(errors).toContain(
+      'pronunciation/ipa.json › "p": "say" bed /bed/ must contain the sound',
+    );
+  });
+
+  it('every sound of both charts has one', () => {
+    for (const course of ['en', 'zh'] as const) {
+      const missing = contentByCourse[course].soundChart.sounds.filter((sound) => !sound.say);
+      expect({ course, missing: missing.map((sound) => sound.id) }).toEqual({
+        course,
+        missing: [],
+      });
+    }
+  });
+});

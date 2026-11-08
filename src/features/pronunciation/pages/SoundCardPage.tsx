@@ -13,6 +13,7 @@ import { assetUrl } from '@/lib/assets';
 import { useSettingsStore } from '@/stores/settingsStore';
 import type { ChartSound } from '@/types/models';
 import { HighlightedSound } from '../components/HighlightedSound';
+import { SoundButton, SoundSaidAs } from '../components/SoundButton';
 import { chartGroupLabel, chartSymbol, chartTitle, getSoundExampleWords } from '../soundChartText';
 
 /**
@@ -72,7 +73,8 @@ function SoundCard({ sound }: { sound: ChartSound }) {
         />
       </TopBar>
       <PageContainer width="narrow" className="flex flex-col gap-5">
-        <section className="flex flex-col items-center gap-3 rounded-[1.25rem] bg-white p-6 text-center shadow-lift sm:p-8">
+        <section className="relative flex flex-col items-center gap-3 rounded-[1.25rem] bg-white p-6 text-center shadow-lift sm:p-8">
+          <SoundButton sound={sound} className="absolute top-3 right-3 sm:top-5 sm:right-5" />
           <p className="text-sm font-bold tracking-wide text-brand-600 uppercase">
             {chartGroupLabel(sound.group)} ·{' '}
             {t('{number} of {total}', { number: index + 1, total: sounds.length })}
@@ -86,16 +88,7 @@ function SoundCard({ sound }: { sound: ChartSound }) {
               {sound.nameVi}
             </p>
           )}
-          {sound.audio && (
-            <AudioButton
-              soundKey={`chart:${sound.id}`}
-              text={words[0]?.text ?? extras[0]?.text ?? ''}
-              src={sound.audio}
-              label={t('Listen to the sound {symbol}', { symbol })}
-              size="lg"
-              variant="brand"
-            />
-          )}
+          <SoundSaidAs sound={sound} />
           {sound.mouthImage && (
             <img
               src={assetUrl(sound.mouthImage)}

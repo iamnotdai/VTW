@@ -251,6 +251,15 @@ function validateSoundChart(bundle: ContentBundle): string[] {
     if (sound.group === 'tone' && !(sound.tone && sound.tone >= 1 && sound.tone <= 5))
       errors.push(`${at}: a tone needs "tone" 1–5`);
     if (!sound.tipVi?.trim()) errors.push(`${at}: "tipVi" is required`);
+    if (sound.say) {
+      // The sound button's text must really have the sound (checked through its IPA / pinyin).
+      const transcription = (kind === 'ipa' ? sound.say.ipa : sound.say.pinyin) ?? '';
+      const { tokens, unknown } = tokenize(transcription, sound.say.text);
+      if (!sound.say.text?.trim() || !transcription)
+        errors.push(`${at}: "say" needs "text" and "${field}"`);
+      else if (unknown.length > 0 || !tokens.some((token) => token.soundId === sound.id))
+        errors.push(`${at}: "say" ${sound.say.text} ${transcription} must contain the sound`);
+    }
     for (const example of sound.extraExamples ?? []) {
       const transcription = (kind === 'ipa' ? example.ipa : example.pinyin) ?? '';
       const { tokens, unknown } = tokenize(transcription, example.text);
